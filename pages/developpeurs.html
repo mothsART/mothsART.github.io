@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="fr" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Developpeurs - Le Labo Du Nerd</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="/pages/developpeurs.html">
+
+        <meta name="author" content="Ferry Jérémie" />
+        <meta name="description" content="Venez améliorer LinkManager" />
+
+    <meta property="og:site_name" content="Le Labo Du Nerd" />
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Developpeurs"/>
+    <meta property="og:url" content="/pages/developpeurs.html"/>
+    <meta property="og:description" content="Venez améliorer LinkManager" />
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments/native.css" rel="stylesheet">
+    <link href="/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+
+
+
+
+
+</head>
+<body class="lang-fr">
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+Le Labo Du Nerd            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li >
+                            <a href="/category/aide-memoire.html">Aide-memoire</a>
+                        </li>
+                        <li >
+                            <a href="/category/frontend.html">Frontend</a>
+                        </li>
+                        <li >
+                            <a href="/category/misc.html">Misc</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><span>
+                <form class="navbar-search" action="/search.html">
+                  <input type="text" class="search-query" placeholder="Rechercher" name="q" id="tipue_search_input" required>
+                </form></span>
+              </li>
+              <li><a href="/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content" class="body">
+        <h1 class="entry-title">Developpeurs</h1>
+        
+        <div class="entry-content">
+            <p>LinkManager est pour l'instant le fruit d'un développeur qui le peaufine sur son temps libre.
+Il n'est par conséquent pas adapté à tous les usages et nécessite d'être améliorer.</p>
+<p>Le dépôt du projet est présent sur : <a class="reference external" href="https://github.com/mothsART/linkmanager">https://github.com/mothsART/linkmanager</a></p>
+<p>Vous pouvez donc le forker facilement.</p>
+<div class="section" id="virtualenv">
+<h2>Virtualenv</h2>
+<p>Pour le développement, il est fortement conseillé d'utiliser virtualenv et virtualenvwrapper.
+Vous travaillerez, par conséquent, dans un environnement isolé.</p>
+<pre class="highlight"><code class="language-bash">mkvirtualenv -p /usr/bin/python3 linkmanager
+</code></pre>
+</div>
+<div class="section" id="git">
+<h2>Git</h2>
+<p>Un bon usage est de passer par git-flow.</p>
+<p>Une branch master pour la version actuellement disponible (stable)
+Une branch develop pour la version à venir (unstable)</p>
+<p>Des tags pour les versions majeurs publiés (v0.2, v0.4 etc.)</p>
+<p>Pour améliorer la qualité du code : il est également vivement conseillé d'utiliser des Hooks Git (flake8 par exemple).</p>
+</div>
+<div class="section" id="lib">
+<h2>Lib</h2>
+<ul class="simple">
+<li>flake8 : du PEP8 + Pyflakes (assurance qualité en python)</li>
+<li>argcomplete : programme cli d'auto-complétion</li>
+<li>clint : lib d'amélioration de la ligne de commande ()</li>
+<li>arrow : meilleur lib pour manipuler de dates/heures</li>
+<li>path.py : manipuler des chemins facilement</li>
+<li>Flask : Framework web minimaliste permettant de lancer LM en mode serveur web</li>
+<li>Flask-Assets : les ressources (css, js) sont compressés et inlinés (une requête)</li>
+<li>pytest : de meilleurs tests unitaires que <em>doctests</em> ou <em>unittest</em></li>
+<li>pytest-cov + coverage : couverture de tests</li>
+<li>invoke : permet d'automatiser des tâches (digne remplaçant de <em>fabric</em>)</li>
+<li>fakeredis : utilisation de Redis sous forme de Mock (objets simulés)</li>
+<li>tox : lancer les tests sur plusieurs versions de Python</li>
+<li>requests : API simple pour faire des requêtes</li>
+<li>requests-futures : permet d'étendre <strong>requests</strong> pour qu'il soit asynchrone</li>
+<li>beautifulsoup4 : API d'utilisation de HTML</li>
+</ul>
+</div>
+<div class="section" id="unit-test-coverage">
+<h2>Unit Test + Coverage</h2>
+<p>Dès le démarrage du projet, l'auteur a désiré l'orienté sur de l'intégration continue.
+Des tests unitaires pour l'api ont été développé ainsi que des test fonctionnels (scénarios d'usage).
+Pour éviter des zones non couvertes (donc potentiellement bugés), une couverture du code est également assuré.</p>
+<p>Pour lancer la couverture de test, il suffit de lancer</p>
+<pre class="highlight"><code class="language-bash">invoke <span class="nb">test</span>
+</code></pre>
+<p>et si on veut lancer un fichier de test en particulier :</p>
+<pre class="highlight"><code class="language-bash">python -m pytest linkmanager/tests/db.py
+</code></pre>
+<p>Afin de garantir le portage sur plusieurs version de python, on utilise Tox.
+Sur Github, Travis (via un fichier .travis.yml) assure qu'une version passe bien l'ensemble des tests unitaires.</p>
+</div>
+<div class="section" id="deploiement">
+<h2>Deploiement</h2>
+<p>Avant tout déploiement, il faut changer de version.
+Pour éviter de changer plusieurs fichiers et potentientiellement se tromper dans la manip, j'ai développé une petite tâche.</p>
+<p>Donner sa version actuelle</p>
+<pre class="highlight"><code class="language-bash">invoke version
+</code></pre>
+<p>Changer de version (ici : passage à la 1.0.1)</p>
+<pre class="highlight"><code class="language-bash">invoke version -e<span class="o">=</span>1.0.1
+</code></pre>
+<ul>
+<li><p class="first">Sur Pypi</p>
+<blockquote>
+<p>Enregistrer une version sur Pypi :</p>
+<pre class="highlight"><code class="language-bash">python setup.py register -r pypi
+</code></pre>
+<p>Mettre en ligne une nouvelle version :</p>
+<pre class="highlight"><code class="language-bash">python setup.py sdist upload -r pypi
+</code></pre>
+<p>Tester sur serveur Pypi de test :</p>
+<pre class="highlight"><code class="language-bash">python setup.py sdist upload -r <span class="nb">test</span> <span class="c"># (http://peterdowns.com/posts/first-time-with-pypi.html)</span>
+</code></pre>
+<p>Installation d'une version de test :</p>
+<pre class="highlight"><code class="language-bash">sudo pip3 install -i https://testpypi.python.org/pypi linkmanager
+</code></pre>
+</blockquote>
+</li>
+<li><p class="first">Sur PPA</p>
+<blockquote>
+<pre class="highlight"><code class="language-bash">dch -a
+
+dch -i --create
+dh_make --createorig
+debuild -S
+dput ppa:jerem-ferry/linkmanager linkmanager_0.1_source.changes
+</code></pre>
+<p>Installer sur PPA :</p>
+<pre class="highlight"><code class="language-bash">dput ppa:jerem-ferry/link-manager
+</code></pre>
+</blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="benchmarks">
+<h2>Benchmarks</h2>
+<p>En cours.
+Pour assurer un bench optimal, il me semble nécessaire d'utiliser une machine virtuel avec un cadre définit (RAM/CPU/IO)
+Vagrant ou Docker?</p>
+<p>Les éléments à tester :</p>
+<ul class="simple">
+<li>lib json vs simplejson</li>
+<li>Redis vs MongoDB</li>
+</ul>
+<p>Pour tester le serveur :</p>
+<ul>
+<li><p class="first">Boom (<a class="reference external" href="https://github.com/tarekziade/boom">https://github.com/tarekziade/boom</a>) :</p>
+<pre class="highlight"><code class="language-bash">boom http://localhost:8080 -c <span class="m">100</span> -n 100
+</code></pre>
+</li>
+</ul>
+</div>
+<div class="section" id="docker">
+<h2>Docker</h2>
+<p>Afin de garantir un bon fonctionnement de LinkManager, j'ai décidé d'utiliser ce manifique outil qu'est &quot;Docker&quot;.
+Ca m'a permis d'automatiser les règles d'installation et de me garantir le bon fonctionnement dans un environnement vierge.
+(gestion des dépendances etc.)</p>
+<p>Pour les retours de bugs, c'est idéal : on peut se mettre dans les mêmes conditions.</p>
+<p>Afin de partager à tous mes DockerFiles, j'ai créé un dépôt Github dédié :</p>
+<p><a class="reference external" href="https://github.com/mothsART/linkmanager_docker">https://github.com/mothsART/linkmanager_docker</a></p>
+</div>
+<div class="section" id="suivi-du-projet">
+<h2>Suivi du projet</h2>
+<p><a class="reference external" href="http://forum.ubuntu-fr.org/viewtopic.php?id=1552011">http://forum.ubuntu-fr.org/viewtopic.php?id=1552011</a></p>
+</div>
+
+        </div>
+    </section>
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+
+<section class="well well-sm">
+    <ul class="list-group list-group-flush">
+            <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+              <ul class="list-group" id="social">
+                <li class="list-group-item"><a href="https://github.com/mothsART"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+                <li class="list-group-item"><a href="https://www.linkedin.com/in/jérémie-ferry-0268a789"><i class="fa fa-linkedin-square fa-lg"></i> linkedin</a></li>
+              </ul>
+            </li>
+
+
+
+            <li class="list-group-item"><a href="/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+                <ul class="list-group " id="tags">
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/linux.html">
+                            linux
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/zsh.html">
+                            zsh
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/pelican.html">
+                            pelican
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/sublimetext.html">
+                            sublimetext
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/sh-linux.html">
+                            sh linux
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/frontend-js-css-html.html">
+                            frontend js css html
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/sql-db-bench-benchmark.html">
+                            sql db bench benchmark
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/git.html">
+                            git
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/vi.html">
+                            vi
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+
+    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+      <ul class="list-group" id="links">
+        <li class="list-group-item">
+            <a href="http://getpelican.com/" target="_blank">
+                Pelican
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://python.org/" target="_blank">
+                Python.org
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://jinja.pocoo.org/" target="_blank">
+                Jinja2
+            </a>
+        </li>
+      </ul>
+    </li>
+    </ul>
+</section>
+            </aside>
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2016 Jérémie Ferry
+            &middot; Réalisé à l'aide de  <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right">
+          <i class="fa fa-arrow-up"></i> <a href="#">Remonter</a>
+          </p></div>
+      </div>
+   </div>
+</footer>
+<script src="/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
+
+    <!-- Disqus -->
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'lelabodunerd'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script');
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+    <!-- End Disqus Code -->
+
+
+<script src="./ace-build/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script><style>td.linenos {
+    display: none;
+}
+
+pre {
+    box-sizing: content-box;
+    padding: 0;
+    border-radius: 0;
+}
+
+.ace_gutter-cell {
+    cursor: pointer;
+}
+
+.ace_layer {
+    height: 100% !important;
+}
+
+.ace-chrome .ace_marker-layer .ace_selection {
+    border-radius: 0;
+}
+
+span.o {
+    display: block;
+}</style><script>var ACE_EDITOR_SCROLL_TOP_MARGIN = 150;var ACE_EDITOR_THEME = 'chrome';var ACE_EDITOR_MAXLINES = 200;var ACE_EDITOR_READONLY = true;var ACE_EDITOR_AUTOSCROLL = true;var ACE_EDITOR_SHOW_INVISIBLE = true;var Range = ace.require("ace/range").Range;
+
+var editor_array = {};
+
+var correlationDic = {
+    'bash': 'sh'
+}
+
+// inspiration : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt#A_stricter_parse_function
+filterInt = function (value) {
+  if(/^(\-|\+)?([0-9]+|Infinity)$/.test(value))
+    return Number(value);
+  return NaN;
+}
+
+function linesInAnchor(anchor) {
+  anchorObject = {};
+  anchorObject.first = 0;
+  anchorObject.last = 0;
+  anchorObject.anchor = "";
+  var firstLineIndex = anchor.indexOf("-L");
+  var firstResult = anchor.substring(
+    firstLineIndex + 2
+  );
+  if(filterInt(firstResult)) {
+    anchorObject.first = filterInt(firstResult) - 1;
+    anchorObject.last = anchorObject.first;
+    anchorObject.anchor = anchor.substring(0, firstLineIndex + 2) + firstResult;
+    return anchorObject;
+  }
+  var secondLineIndex = firstResult.indexOf("-L");
+
+  if (!filterInt(firstResult.substring(0, secondLineIndex))) {
+    return anchorObject;
+  }
+  anchorObject.anchor = anchor.substring(0, firstLineIndex + 2) + firstResult.substring(0, secondLineIndex);
+
+  anchorObject.first = filterInt(firstResult.substring(0, secondLineIndex)) - 1;
+  var secondResult = firstResult.substring(
+    secondLineIndex + 2
+  );
+  if (!filterInt(secondResult)) {
+    anchorObject.last = anchorObject.first;
+    return anchorObject;
+  }
+  anchorObject.last = filterInt(secondResult) - 1;
+  return anchorObject;
+}
+
+var selectionCallback = function (event, editor) {
+    var editor_id = $(editor.container).attr('id');
+    var range = editor.selection.getRange();
+    location.hash = editor_id + '-L' + parseInt(range.start.row + 1);
+    if ($(editor.container).data().hasOwnProperty("id")) {
+        event.preventDefault();
+    }
+    else if (range.start.row != range.end.row) {
+        location.hash += '-L' + parseInt(range.end.row + 1);
+    }
+    $(editor.container).removeData();
+};
+
+$(function() {
+    var $pre_filter = $('pre.highlight');
+    var pre_len = $pre_filter.length;
+    $pre_filter.each(function(item) {
+        var lang = $(this).find("code").attr('class').substring(9);
+        if (lang in correlationDic) {
+            lang = correlationDic[lang];
+        }
+        var one_render = true;
+        // avoid the last carriage return
+        $(this).text($(this).text().substring(0, $(this).text().length));
+
+        // Give a unique id on all editor
+        var editor_id = 'editor' + parseInt(item + 1);
+        $(this).attr('id', editor_id);
+        var editor = ace.edit(editor_id);
+        editor_array[editor_id] = editor;
+        editor.setTheme("ace/theme/" + ACE_EDITOR_THEME);
+        editor.setShowInvisibles(ACE_EDITOR_SHOW_INVISIBLE);
+        editor.setOptions({
+            mode: "ace/mode/" + lang,
+            maxLines: ACE_EDITOR_MAXLINES,
+            readOnly: ACE_EDITOR_READONLY,
+            autoScrollEditorIntoView: ACE_EDITOR_AUTOSCROLL
+        });
+        editor.$blockScrolling = Infinity;
+
+        editor.renderer.on("afterRender", function(event) {
+            var anchor = linesInAnchor(location.hash);
+            var hash_editor = location.hash.substring(1, location.hash.indexOf("-"));
+            var line = $($(editor.container).find(".ace_gutter-cell")[parseInt(editor_id.substring(6))]);
+            if (hash_editor == editor_id && one_render) {
+                var offset = line.offset();
+                if (offset) {
+                    $(document).scrollTop(offset.top - ACE_EDITOR_SCROLL_TOP_MARGIN);
+                    editor.selection.setRange(new Range(
+                        anchor.first, 0, anchor.last,  Number.MAX_VALUE)
+                    );
+                    one_render = false;
+                }
+            }
+        });
+
+        editor.resize(true);
+        editor.selection.on("changeSelection", function(event) {
+            selectionCallback(event, editor);
+        });
+    });
+
+    $(".ace_gutter-cell").on("click", function(event) {
+        var editor_id = $(this).closest('pre.ace_editor').attr('id');
+        var editor = editor_array[editor_id];
+        var line = parseInt($(this).text()) - 1;
+        editor.selection.setRange(new Range(line, 0, line, Number.MAX_VALUE));
+        $(this).closest('.ace_editor').data({'id': parseInt($(this).text())});
+        selectionCallback(event, editor);
+    });
+});</script>
+
+</body>
+</html>

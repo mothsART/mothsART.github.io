@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A Pelican Blog</title><link href="/" rel="alternate"></link><link href="None/feeds/aide-memoire.atom.xml" rel="self"></link><id>/</id><updated>2015-12-11T00:00:00+00:00</updated><entry><title>Aide mémoire sh</title><link href="/aide-memoire-sh.html" rel="alternate"></link><updated>2015-12-11T00:00:00+00:00</updated><author><name>Jérémie Ferry</name></author><id>tag:,2015-12-11:aide-memoire-sh.html</id><summary type="html">&lt;h1&gt;Aide-Memoire sh&lt;/h1&gt;
+&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;find . &lt;span class="p"&gt;|&lt;/span&gt; grep actual
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</summary><category term="sh linux"></category></entry><entry><title>Aide mémoire Zsh</title><link href="/aide-memoire-zsh.html" rel="alternate"></link><updated>2015-12-11T00:00:00+00:00</updated><author><name>Jérémie Ferry</name></author><id>tag:,2015-12-11:aide-memoire-zsh.html</id><summary type="html">&lt;h1&gt;Aide-Memoire Zsh&lt;/h1&gt;
+&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Et oui, pauvre mortel, je ne retiens pas toujours les fonctions utiles de ZSH et son pendant naturel "Oh my Zsh"&lt;/p&gt;
+&lt;h2&gt;Utilitaires&lt;/h2&gt;
+&lt;h3&gt;Git&lt;/h3&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;git list &lt;span class="c"&gt;# donne la liste des gitignores pouvant être créé à la volé&lt;/span&gt;
+git rust &lt;span class="c"&gt;# créé un fichier .gitignore spécifique à rust&lt;/span&gt;
+cat monfichier.extension &lt;span class="p"&gt;|&lt;/span&gt; colorize &lt;span class="c"&gt;# afficher en couleur un fichier (utilise la lib python &amp;quot;pygmentize&amp;quot;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;h3&gt;Rust&lt;/h3&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;cargo &lt;span class="c"&gt;# autocomplétion de l&amp;#39;utilitaire cargo&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;h3&gt;Python&lt;/h3&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;pyfind &lt;span class="c"&gt;# recherche uniquement les fichiers .py&lt;/span&gt;
+pyclean &lt;span class="c"&gt;# supprime tous les fichiers bytes-code d&amp;#39;un projet&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;h3&gt;Rsync&lt;/h3&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;alias &lt;/span&gt;rsync-copy&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;rsync -avz --progress -h&amp;quot;&lt;/span&gt;
+&lt;span class="nb"&gt;alias &lt;/span&gt;rsync-move&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;rsync -avz --progress -h --remove-source-files&amp;quot;&lt;/span&gt;
+&lt;span class="nb"&gt;alias &lt;/span&gt;rsync-update&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;rsync -avzu --progress -h&amp;quot;&lt;/span&gt;
+&lt;span class="nb"&gt;alias &lt;/span&gt;rsync-synchronize&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;rsync -avzu --delete --progress -h&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;h3&gt;Editeur&lt;/h3&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;st &lt;span class="c"&gt;# sublime-text&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;h3&gt;Web search&lt;/h3&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4
+5
+6
+7&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;google pattern1 pattern2 &lt;span class="c"&gt;# va lancer un navigateur avec les mots recherchés&lt;/span&gt;
+&lt;span class="hll"&gt;github pattern1 pattern2 &lt;span class="c"&gt;# va lancer github avec les mots recherchés&lt;/span&gt;
+&lt;/span&gt;wiki pattern1 pattern2 &lt;span class="c"&gt;# va lancer duckduckgo avec les mots recherchés dans la catégorie &amp;quot;wiki&amp;quot;&lt;/span&gt;
+news pattern1 pattern2 &lt;span class="c"&gt;# va lancer duckduckgo avec les mots recherchés dans la catégorie &amp;quot;news&amp;quot;&lt;/span&gt;
+youtube pattern1 pattern2 &lt;span class="c"&gt;# va lancer duckduckgo avec les mots recherchés dans la catégorie &amp;quot;youtube&amp;quot;&lt;/span&gt;
+map pattern1 pattern2 &lt;span class="c"&gt;# va lancer duckduckgo avec les mots recherchés dans la catégorie &amp;quot;map&amp;quot;&lt;/span&gt;
+image pattern1 pattern2 &lt;span class="c"&gt;# va lancer duckduckgo avec les mots recherchés dans la catégorie &amp;quot;image&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;h3&gt;zsh-navigation-tools&lt;/h3&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;n-cd
+n-alias
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;h2&gt;Mes scripts d'à moi&lt;/h2&gt;</summary><category term="zsh"></category><category term="linux"></category></entry></feed>

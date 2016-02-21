@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- Bootstrap -->
+            <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css"/>
+    </head>
+    <body>
+        <!-- Large modal -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Modernizr</h1>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        Test de compatibilité du navigateur
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <h2>Liste des fonctionnalités non supportés</h2>
+                </div>
+            </div>
+          </div>
+        </div>
+        <script src="/theme/js/jquery.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="/theme/js/bootstrap.min.js"></script>  
+
+        <script src="./modernizr-custom.js"></script>
+        <script src="./script.js"></script> 
+    </body>
+</html>
