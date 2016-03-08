@@ -31,13 +31,13 @@
     <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="/theme/css/pygments/native.css" rel="stylesheet">
-    <link href="/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
-    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+        <link href="/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
 
 
 
 
 
+                <link href="/static/css/themes/classic.css" id="selected-css" rel="stylesheet">
 </head>
 <body class="lang-fr">
 
@@ -64,14 +64,36 @@ Le Labo Du Nerd            </a>
                         <li >
                             <a href="/category/misc.html">Misc</a>
                         </li>
+                        <li >
+                            <a href="/category/reflexion.html">Réflexion</a>
+                        </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><span>
-                <form class="navbar-search" action="/search.html">
-                  <input type="text" class="search-query" placeholder="Rechercher" name="q" id="tipue_search_input" required>
-                </form></span>
+              <li id='tipue-search'>
+                <span>
+                    <form class="navbar-search" action="/search.html">
+                        <span class="fa fa-search"></span>
+                        <input type="text" class="search-query" placeholder="Rechercher" name="q" id="tipue_search_input" required>
+                    </form>
+                </span>
               </li>
-              <li><a href="/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            <li >
+                <a href="/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a>
+            </li>
+              <li id="choose-css-theme">
+                  <div class="drodown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            CSS Themes
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                <!-- <li><a href="#">Thème classique (orange)</a></li> -->
+                                    <li><a class="default selected" href="/static/css/themes/classic.css">Thème classique (orange)</a></li>
+                                <!-- <li><a href="#">Thème océan (bleu)</a></li> -->
+                                    <li><a href="/static/css/themes/ocean.css">Thème océan (bleu)</a></li>
+                        </ul>
+                    </div>
+              </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -81,16 +103,12 @@ Le Labo Du Nerd            </a>
 <!-- End Banner -->
 <div class="container">
     <div class="row">
-        <div class="col-sm-9">
+            <div class="col-sm-10">
     <section id="content">
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="/aide-memoire-git.html"
-                       rel="bookmark"
-                       title="Permalink to Aide mémoire GIT">
-                        Aide mémoire GIT
-                    </a>
+                    Aide mémoire GIT
                 </h1>
             </header>
             <div class="entry-content">
@@ -107,14 +125,13 @@ Le Labo Du Nerd            </a>
 
 
 <span class="label label-default">Tags</span>
-	<a href="/tag/git.html">git</a>
+	<a href="/tag/git.html">git<span class="badge">11</span></a>
         /
-	<a href="/tag/linux.html">linux</a>
+	<a href="/tag/linux.html">linux<span class="badge">11</span></a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <h1>Aide-Memoire GIT</h1>
-<h2>Intro</h2>
+                <h2>Intro</h2>
 <p>GIT est un super utilitaire mais son nombre de commandes est juste exponentiel.</p>
 <h2>Tags</h2>
 <h3>ajout</h3>
@@ -195,7 +212,7 @@ git shortlog -sne --all | wc -l =&gt; liste les autheurs sur l'ensemble des dép
     </section>
 
         </div>
-        <div class="col-sm-3" id="sidebar">
+        <div class="col-sm-2" id="sidebar">
             <aside>
 
 <section class="well well-sm">
@@ -212,44 +229,32 @@ git shortlog -sne --all | wc -l =&gt; liste les autheurs sur l'ensemble des dép
             <li class="list-group-item"><a href="/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group " id="tags">
                     <li class="list-group-item tag-1">
+                        <a href="/tag/linux.html">
+                            linux
+                                <span class="badge">4</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
                         <a href="/tag/zsh.html">
                             zsh
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/linux.html">
-                            linux
+                        <a href="/tag/git.html">
+                            git
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/sql-db-bench-benchmark.html">
-                            sql db bench benchmark
+                        <a href="/tag/darcs.html">
+                            darcs
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/sublimetext.html">
-                            sublimetext
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/git.html">
-                            git
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/frontend-js-css-html.html">
-                            frontend js css html
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/vi.html">
-                            vi
+                        <a href="/tag/frontend.html">
+                            frontend
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -260,8 +265,80 @@ git shortlog -sne --all | wc -l =&gt; liste les autheurs sur l'ensemble des dép
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/sh-linux.html">
-                            sh linux
+                        <a href="/tag/js.html">
+                            js
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/html.html">
+                            html
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/css.html">
+                            css
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/tmux.html">
+                            tmux
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/vi.html">
+                            vi
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/tmuxp.html">
+                            tmuxp
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/imprimante.html">
+                            imprimante
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/python.html">
+                            python
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/hg.html">
+                            hg
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/sh.html">
+                            sh
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/mercurial.html">
+                            mercurial
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/sublimetext.html">
+                            sublimetext
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/3d.html">
+                            3D
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -296,15 +373,21 @@ git shortlog -sne --all | wc -l =&gt; liste les autheurs sur l'ensemble des dép
 </div>
 <footer>
    <div class="container">
-      <hr>
       <div class="row">
-         <div class="col-xs-10">&copy; 2016 Jérémie Ferry
-            &middot; Réalisé à l'aide de  <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
-            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
-            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
-         <div class="col-xs-2"><p class="pull-right">
-          <i class="fa fa-arrow-up"></i> <a href="#">Remonter</a>
-          </p></div>
+         <div class="col-xs-10">
+            <div>
+                &copy; 2016 Jérémie Ferry
+                &middot; Réalisé à l'aide de  <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+                <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+                <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>            </div>
+         </div>
+         <div class="col-xs-2">
+            <p class="pull-right">
+                <a href="#"><span>
+                  Remonter
+                </span></a>
+            </p>
+        </div>
       </div>
    </div>
 </footer>
@@ -332,6 +415,7 @@ git shortlog -sne --all | wc -l =&gt; liste les autheurs sur l'ensemble des dép
     </script>
     <!-- End Disqus Code -->
 
+<script src="/theme/js/theme_css.js"></script>
 
 <script src="./ace-build/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script><style>td.linenos {
     display: none;
@@ -428,6 +512,7 @@ $(function() {
             lang = correlationDic[lang];
         }
         var one_render = true;
+        var nb_of_lines = $(this).text().search('\n');
         // avoid the last carriage return
         $(this).text($(this).text().substring(0, $(this).text().length));
 
@@ -445,6 +530,9 @@ $(function() {
             autoScrollEditorIntoView: ACE_EDITOR_AUTOSCROLL
         });
         editor.$blockScrolling = Infinity;
+        if (nb_of_lines === -1) {
+            editor.renderer.setShowGutter(false);
+        }
 
         editor.renderer.on("afterRender", function(event) {
             var anchor = linesInAnchor(location.hash);
@@ -477,6 +565,7 @@ $(function() {
         selectionCallback(event, editor);
     });
 });</script>
+
 
 </body>
 </html>

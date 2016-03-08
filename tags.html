@@ -25,13 +25,13 @@
     <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="/theme/css/pygments/native.css" rel="stylesheet">
-    <link href="/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
-    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+        <link href="/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
 
 
 
 
 
+                <link href="/static/css/themes/classic.css" id="selected-css" rel="stylesheet">
 </head>
 <body class="lang-fr">
 
@@ -58,14 +58,36 @@ Le Labo Du Nerd            </a>
                         <li >
                             <a href="/category/misc.html">Misc</a>
                         </li>
+                        <li >
+                            <a href="/category/reflexion.html">Réflexion</a>
+                        </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><span>
-                <form class="navbar-search" action="/search.html">
-                  <input type="text" class="search-query" placeholder="Rechercher" name="q" id="tipue_search_input" required>
-                </form></span>
+              <li id='tipue-search'>
+                <span>
+                    <form class="navbar-search" action="/search.html">
+                        <span class="fa fa-search"></span>
+                        <input type="text" class="search-query" placeholder="Rechercher" name="q" id="tipue_search_input" required>
+                    </form>
+                </span>
               </li>
-              <li><a href="/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            <li >
+                <a href="/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a>
+            </li>
+              <li id="choose-css-theme">
+                  <div class="drodown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            CSS Themes
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                <!-- <li><a href="#">Thème classique (orange)</a></li> -->
+                                    <li><a class="default selected" href="/static/css/themes/classic.css">Thème classique (orange)</a></li>
+                                <!-- <li><a href="#">Thème océan (bleu)</a></li> -->
+                                    <li><a href="/static/css/themes/ocean.css">Thème océan (bleu)</a></li>
+                        </ul>
+                    </div>
+              </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -75,16 +97,28 @@ Le Labo Du Nerd            </a>
 <!-- End Banner -->
 <div class="container">
     <div class="row">
-        <div class="col-sm-9">
+            <div class="col-sm-10">
     <section id="tags">
         <h1>Tags for Le Labo Du Nerd</h1>
         <div class="panel-group" id="accordion">            <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-frontend-js-css-html">frontend js css html <span class="badge pull-right">1</span></a>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-3d">3D <span class="badge pull-right">1</span></a>
                     </h4>
                 </div>
-                <div id="collapse-frontend-js-css-html" class="panel-collapse collapse">
+                <div id="collapse-3d" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p><span class="categories-timestamp"><time datetime="2016-02-28T10:35:00+01:00">dim. 28 février 2016</time></span> <a href="/reflexion-imprimante-3D.html">Réflexion autours des Imprimantes 3D à usage domestique</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-css">css <span class="badge pull-right">1</span></a>
+                    </h4>
+                </div>
+                <div id="collapse-css" class="panel-collapse collapse">
                     <div class="panel-body">
                         <p><span class="categories-timestamp"><time datetime="2015-12-11T00:00:00+01:00">ven. 11 décembre 2015</time></span> <a href="/labo-du-dev-frontend.html">Labo du dev frontend</a></p>
                     </div>
@@ -93,11 +127,36 @@ Le Labo Du Nerd            </a>
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-git">git <span class="badge pull-right">1</span></a>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-darcs">darcs <span class="badge pull-right">1</span></a>
+                    </h4>
+                </div>
+                <div id="collapse-darcs" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p><span class="categories-timestamp"><time datetime="2016-02-26T20:48:00+01:00">ven. 26 février 2016</time></span> <a href="/reflexion-dvcs.html">Réflexion autours des DVCS</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-frontend">frontend <span class="badge pull-right">1</span></a>
+                    </h4>
+                </div>
+                <div id="collapse-frontend" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p><span class="categories-timestamp"><time datetime="2015-12-11T00:00:00+01:00">ven. 11 décembre 2015</time></span> <a href="/labo-du-dev-frontend.html">Labo du dev frontend</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-git">git <span class="badge pull-right">2</span></a>
                     </h4>
                 </div>
                 <div id="collapse-git" class="panel-collapse collapse">
                     <div class="panel-body">
+                        <p><span class="categories-timestamp"><time datetime="2016-02-26T20:48:00+01:00">ven. 26 février 2016</time></span> <a href="/reflexion-dvcs.html">Réflexion autours des DVCS</a></p>
                         <p><span class="categories-timestamp"><time datetime="2016-02-14T00:00:00+01:00">dim. 14 février 2016</time></span> <a href="/aide-memoire-git.html">Aide mémoire GIT</a></p>
                     </div>
                 </div>
@@ -105,13 +164,75 @@ Le Labo Du Nerd            </a>
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-linux">linux <span class="badge pull-right">2</span></a>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-hg">hg <span class="badge pull-right">1</span></a>
+                    </h4>
+                </div>
+                <div id="collapse-hg" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p><span class="categories-timestamp"><time datetime="2016-02-26T20:48:00+01:00">ven. 26 février 2016</time></span> <a href="/reflexion-dvcs.html">Réflexion autours des DVCS</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-html">html <span class="badge pull-right">1</span></a>
+                    </h4>
+                </div>
+                <div id="collapse-html" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p><span class="categories-timestamp"><time datetime="2015-12-11T00:00:00+01:00">ven. 11 décembre 2015</time></span> <a href="/labo-du-dev-frontend.html">Labo du dev frontend</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-imprimante">imprimante <span class="badge pull-right">1</span></a>
+                    </h4>
+                </div>
+                <div id="collapse-imprimante" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p><span class="categories-timestamp"><time datetime="2016-02-28T10:35:00+01:00">dim. 28 février 2016</time></span> <a href="/reflexion-imprimante-3D.html">Réflexion autours des Imprimantes 3D à usage domestique</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-js">js <span class="badge pull-right">1</span></a>
+                    </h4>
+                </div>
+                <div id="collapse-js" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p><span class="categories-timestamp"><time datetime="2015-12-11T00:00:00+01:00">ven. 11 décembre 2015</time></span> <a href="/labo-du-dev-frontend.html">Labo du dev frontend</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-linux">linux <span class="badge pull-right">4</span></a>
                     </h4>
                 </div>
                 <div id="collapse-linux" class="panel-collapse collapse">
                     <div class="panel-body">
+                        <p><span class="categories-timestamp"><time datetime="2016-02-26T20:48:00+01:00">ven. 26 février 2016</time></span> <a href="/aide-memoire-tmux.html">Aide mémoire Tmux</a></p>
                         <p><span class="categories-timestamp"><time datetime="2016-02-14T00:00:00+01:00">dim. 14 février 2016</time></span> <a href="/aide-memoire-git.html">Aide mémoire GIT</a></p>
+                        <p><span class="categories-timestamp"><time datetime="2015-12-11T00:00:00+01:00">ven. 11 décembre 2015</time></span> <a href="/aide-memoire-sh.html">Aide mémoire sh</a></p>
                         <p><span class="categories-timestamp"><time datetime="2015-12-11T00:00:00+01:00">ven. 11 décembre 2015</time></span> <a href="/aide-memoire-zsh.html">Aide mémoire Zsh</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-mercurial">mercurial <span class="badge pull-right">1</span></a>
+                    </h4>
+                </div>
+                <div id="collapse-mercurial" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p><span class="categories-timestamp"><time datetime="2016-02-26T20:48:00+01:00">ven. 26 février 2016</time></span> <a href="/reflexion-dvcs.html">Réflexion autours des DVCS</a></p>
                     </div>
                 </div>
             </div>
@@ -130,24 +251,24 @@ Le Labo Du Nerd            </a>
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-sh-linux">sh linux <span class="badge pull-right">1</span></a>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-python">python <span class="badge pull-right">1</span></a>
                     </h4>
                 </div>
-                <div id="collapse-sh-linux" class="panel-collapse collapse">
+                <div id="collapse-python" class="panel-collapse collapse">
                     <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2015-12-11T00:00:00+01:00">ven. 11 décembre 2015</time></span> <a href="/aide-memoire-sh.html">Aide mémoire sh</a></p>
+                        <p><span class="categories-timestamp"><time datetime="2016-02-26T20:48:00+01:00">ven. 26 février 2016</time></span> <a href="/aide-memoire-tmux.html">Aide mémoire Tmux</a></p>
                     </div>
                 </div>
             </div>
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-sql-db-bench-benchmark">sql db bench benchmark <span class="badge pull-right">1</span></a>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-sh">sh <span class="badge pull-right">1</span></a>
                     </h4>
                 </div>
-                <div id="collapse-sql-db-bench-benchmark" class="panel-collapse collapse">
+                <div id="collapse-sh" class="panel-collapse collapse">
                     <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2015-12-11T00:00:00+01:00">ven. 11 décembre 2015</time></span> <a href="/db-bench.html">Bench de bases de données</a></p>
+                        <p><span class="categories-timestamp"><time datetime="2015-12-11T00:00:00+01:00">ven. 11 décembre 2015</time></span> <a href="/aide-memoire-sh.html">Aide mémoire sh</a></p>
                     </div>
                 </div>
             </div>
@@ -160,6 +281,30 @@ Le Labo Du Nerd            </a>
                 <div id="collapse-sublimetext" class="panel-collapse collapse">
                     <div class="panel-body">
                         <p><span class="categories-timestamp"><time datetime="2016-01-15T00:00:00+01:00">ven. 15 janvier 2016</time></span> <a href="/aide-memoire-sublime-text.html">Aide mémoire Sublime Text 3</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-tmux">tmux <span class="badge pull-right">1</span></a>
+                    </h4>
+                </div>
+                <div id="collapse-tmux" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p><span class="categories-timestamp"><time datetime="2016-02-26T20:48:00+01:00">ven. 26 février 2016</time></span> <a href="/aide-memoire-tmux.html">Aide mémoire Tmux</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-tmuxp">tmuxp <span class="badge pull-right">1</span></a>
+                    </h4>
+                </div>
+                <div id="collapse-tmuxp" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p><span class="categories-timestamp"><time datetime="2016-02-26T20:48:00+01:00">ven. 26 février 2016</time></span> <a href="/aide-memoire-tmux.html">Aide mémoire Tmux</a></p>
                     </div>
                 </div>
             </div>
@@ -192,7 +337,7 @@ Le Labo Du Nerd            </a>
 
     </section>
         </div>
-        <div class="col-sm-3" id="sidebar">
+        <div class="col-sm-2" id="sidebar">
             <aside>
 
 <section class="well well-sm">
@@ -209,44 +354,32 @@ Le Labo Du Nerd            </a>
             <li class="list-group-item"><a href="/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group " id="tags">
                     <li class="list-group-item tag-1">
+                        <a href="/tag/linux.html">
+                            linux
+                                <span class="badge">4</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
                         <a href="/tag/zsh.html">
                             zsh
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/linux.html">
-                            linux
+                        <a href="/tag/git.html">
+                            git
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/sql-db-bench-benchmark.html">
-                            sql db bench benchmark
+                        <a href="/tag/darcs.html">
+                            darcs
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/sublimetext.html">
-                            sublimetext
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/git.html">
-                            git
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/frontend-js-css-html.html">
-                            frontend js css html
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/vi.html">
-                            vi
+                        <a href="/tag/frontend.html">
+                            frontend
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -257,8 +390,80 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/sh-linux.html">
-                            sh linux
+                        <a href="/tag/js.html">
+                            js
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/html.html">
+                            html
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/css.html">
+                            css
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/tmux.html">
+                            tmux
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/vi.html">
+                            vi
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/tmuxp.html">
+                            tmuxp
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/imprimante.html">
+                            imprimante
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/python.html">
+                            python
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/hg.html">
+                            hg
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/sh.html">
+                            sh
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/mercurial.html">
+                            mercurial
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/sublimetext.html">
+                            sublimetext
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/3d.html">
+                            3D
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -293,15 +498,21 @@ Le Labo Du Nerd            </a>
 </div>
 <footer>
    <div class="container">
-      <hr>
       <div class="row">
-         <div class="col-xs-10">&copy; 2016 Jérémie Ferry
-            &middot; Réalisé à l'aide de  <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
-            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
-            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
-         <div class="col-xs-2"><p class="pull-right">
-          <i class="fa fa-arrow-up"></i> <a href="#">Remonter</a>
-          </p></div>
+         <div class="col-xs-10">
+            <div>
+                &copy; 2016 Jérémie Ferry
+                &middot; Réalisé à l'aide de  <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+                <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+                <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>            </div>
+         </div>
+         <div class="col-xs-2">
+            <p class="pull-right">
+                <a href="#"><span>
+                  Remonter
+                </span></a>
+            </p>
+        </div>
       </div>
    </div>
 </footer>
@@ -329,6 +540,7 @@ Le Labo Du Nerd            </a>
     </script>
     <!-- End Disqus Code -->
 
+<script src="/theme/js/theme_css.js"></script>
 
 <script src="./ace-build/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script><style>td.linenos {
     display: none;
@@ -425,6 +637,7 @@ $(function() {
             lang = correlationDic[lang];
         }
         var one_render = true;
+        var nb_of_lines = $(this).text().search('\n');
         // avoid the last carriage return
         $(this).text($(this).text().substring(0, $(this).text().length));
 
@@ -442,6 +655,9 @@ $(function() {
             autoScrollEditorIntoView: ACE_EDITOR_AUTOSCROLL
         });
         editor.$blockScrolling = Infinity;
+        if (nb_of_lines === -1) {
+            editor.renderer.setShowGutter(false);
+        }
 
         editor.renderer.on("afterRender", function(event) {
             var anchor = linesInAnchor(location.hash);
@@ -474,6 +690,7 @@ $(function() {
         selectionCallback(event, editor);
     });
 });</script>
+
 
 </body>
 </html>

@@ -50,6 +50,29 @@ function xpath_count_a() {
     return linkCount;
 }
 
+// ------------------------------------------- //
+
+function jquery_offset() {
+    return $('#title').offset().top + ', ' + $('#title').offset().left;
+}
+
+function vanilla_offset() {
+    function offset(elt) {
+        var rect = elt.getBoundingClientRect(), bodyElt = document.body;
+
+        return {
+          top: rect.top + bodyElt .scrollTop,
+          left: rect.left + bodyElt .scrollLeft
+        }
+    }
+    var offsetElt = offset(document.getElementById('title'));
+    return offsetElt.top + ', ' + offsetElt.left;
+}
+
+function xpath_output() {
+    return "";
+}
+
 function display(destination, title, jquery_method, vanilla_method, xpath_method, nb_pass) {
     'use strict';
     $("#benchmark-table tbody").append(
@@ -89,4 +112,8 @@ $(function() {
     display("bench-h1", "Recherche du titre h1", jquery_h1, vanilla_h1, xpath_h1, 10000);
 
     display("bench-a", "Compter le nombre de liens", jquery_count_a, vanilla_count_a, xpath_count_a, 10000);
+
+    // http://www.debray-jerome.fr/js-performance-la-fonction-offset-de-jquery-vs-vanilla-javascript-23.html
+    // http://jsperf.com/test-offset-jquery-vs-vanilla
+    display("bench-offset", "Fonction offset", jquery_offset, vanilla_offset, xpath_output, 10000);
 });

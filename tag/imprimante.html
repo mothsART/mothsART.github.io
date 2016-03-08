@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Developpeurs - Le Labo Du Nerd</title>
+    <title>imprimante - Le Labo Du Nerd</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -9,16 +9,16 @@
 
 
 
-<link rel="canonical" href="/pages/developpeurs.html">
 
-        <meta name="author" content="Ferry Jérémie" />
-        <meta name="description" content="Venez améliorer LinkManager" />
+    <meta name="author" content="Jérémie Ferry" />
+    <meta name="keywords" content="imprimante" />
 
-    <meta property="og:site_name" content="Le Labo Du Nerd" />
-    <meta property="og:type" content="article"/>
-    <meta property="og:title" content="Developpeurs"/>
-    <meta property="og:url" content="/pages/developpeurs.html"/>
-    <meta property="og:description" content="Venez améliorer LinkManager" />
+    <!-- Open Graph tags -->
+        <meta property="og:site_name" content="Le Labo Du Nerd" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Le Labo Du Nerd"/>
+        <meta property="og:url" content=""/>
+        <meta property="og:description" content="Le Labo Du Nerd"/>
 
 
     <!-- Bootstrap -->
@@ -26,13 +26,13 @@
     <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="/theme/css/pygments/native.css" rel="stylesheet">
-    <link href="/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
-    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+        <link href="/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
 
 
 
 
 
+                <link href="/static/css/themes/classic.css" id="selected-css" rel="stylesheet">
 </head>
 <body class="lang-fr">
 
@@ -59,14 +59,36 @@ Le Labo Du Nerd            </a>
                         <li >
                             <a href="/category/misc.html">Misc</a>
                         </li>
+                        <li >
+                            <a href="/category/reflexion.html">Réflexion</a>
+                        </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><span>
-                <form class="navbar-search" action="/search.html">
-                  <input type="text" class="search-query" placeholder="Rechercher" name="q" id="tipue_search_input" required>
-                </form></span>
+              <li id='tipue-search'>
+                <span>
+                    <form class="navbar-search" action="/search.html">
+                        <span class="fa fa-search"></span>
+                        <input type="text" class="search-query" placeholder="Rechercher" name="q" id="tipue_search_input" required>
+                    </form>
+                </span>
               </li>
-              <li><a href="/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            <li >
+                <a href="/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a>
+            </li>
+              <li id="choose-css-theme">
+                  <div class="drodown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            CSS Themes
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                <!-- <li><a href="#">Thème classique (orange)</a></li> -->
+                                    <li><a class="default selected" href="/static/css/themes/classic.css">Thème classique (orange)</a></li>
+                                <!-- <li><a href="#">Thème océan (bleu)</a></li> -->
+                                    <li><a href="/static/css/themes/ocean.css">Thème océan (bleu)</a></li>
+                        </ul>
+                    </div>
+              </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -76,143 +98,20 @@ Le Labo Du Nerd            </a>
 <!-- End Banner -->
 <div class="container">
     <div class="row">
-        <div class="col-sm-9">
-    <section id="content" class="body">
-        <h1 class="entry-title">Developpeurs</h1>
-        
-        <div class="entry-content">
-            <p>LinkManager est pour l'instant le fruit d'un développeur qui le peaufine sur son temps libre.
-Il n'est par conséquent pas adapté à tous les usages et nécessite d'être améliorer.</p>
-<p>Le dépôt du projet est présent sur : <a class="reference external" href="https://github.com/mothsART/linkmanager">https://github.com/mothsART/linkmanager</a></p>
-<p>Vous pouvez donc le forker facilement.</p>
-<div class="section" id="virtualenv">
-<h2>Virtualenv</h2>
-<p>Pour le développement, il est fortement conseillé d'utiliser virtualenv et virtualenvwrapper.
-Vous travaillerez, par conséquent, dans un environnement isolé.</p>
-<pre class="highlight"><code class="language-bash">mkvirtualenv -p /usr/bin/python3 linkmanager
-</code></pre>
-</div>
-<div class="section" id="git">
-<h2>Git</h2>
-<p>Un bon usage est de passer par git-flow.</p>
-<p>Une branch master pour la version actuellement disponible (stable)
-Une branch develop pour la version à venir (unstable)</p>
-<p>Des tags pour les versions majeurs publiés (v0.2, v0.4 etc.)</p>
-<p>Pour améliorer la qualité du code : il est également vivement conseillé d'utiliser des Hooks Git (flake8 par exemple).</p>
-</div>
-<div class="section" id="lib">
-<h2>Lib</h2>
-<ul class="simple">
-<li>flake8 : du PEP8 + Pyflakes (assurance qualité en python)</li>
-<li>argcomplete : programme cli d'auto-complétion</li>
-<li>clint : lib d'amélioration de la ligne de commande ()</li>
-<li>arrow : meilleur lib pour manipuler de dates/heures</li>
-<li>path.py : manipuler des chemins facilement</li>
-<li>Flask : Framework web minimaliste permettant de lancer LM en mode serveur web</li>
-<li>Flask-Assets : les ressources (css, js) sont compressés et inlinés (une requête)</li>
-<li>pytest : de meilleurs tests unitaires que <em>doctests</em> ou <em>unittest</em></li>
-<li>pytest-cov + coverage : couverture de tests</li>
-<li>invoke : permet d'automatiser des tâches (digne remplaçant de <em>fabric</em>)</li>
-<li>fakeredis : utilisation de Redis sous forme de Mock (objets simulés)</li>
-<li>tox : lancer les tests sur plusieurs versions de Python</li>
-<li>requests : API simple pour faire des requêtes</li>
-<li>requests-futures : permet d'étendre <strong>requests</strong> pour qu'il soit asynchrone</li>
-<li>beautifulsoup4 : API d'utilisation de HTML</li>
-</ul>
-</div>
-<div class="section" id="unit-test-coverage">
-<h2>Unit Test + Coverage</h2>
-<p>Dès le démarrage du projet, l'auteur a désiré l'orienté sur de l'intégration continue.
-Des tests unitaires pour l'api ont été développé ainsi que des test fonctionnels (scénarios d'usage).
-Pour éviter des zones non couvertes (donc potentiellement bugés), une couverture du code est également assuré.</p>
-<p>Pour lancer la couverture de test, il suffit de lancer</p>
-<pre class="highlight"><code class="language-bash">invoke <span class="nb">test</span>
-</code></pre>
-<p>et si on veut lancer un fichier de test en particulier :</p>
-<pre class="highlight"><code class="language-bash">python -m pytest linkmanager/tests/db.py
-</code></pre>
-<p>Afin de garantir le portage sur plusieurs version de python, on utilise Tox.
-Sur Github, Travis (via un fichier .travis.yml) assure qu'une version passe bien l'ensemble des tests unitaires.</p>
-</div>
-<div class="section" id="deploiement">
-<h2>Deploiement</h2>
-<p>Avant tout déploiement, il faut changer de version.
-Pour éviter de changer plusieurs fichiers et potentientiellement se tromper dans la manip, j'ai développé une petite tâche.</p>
-<p>Donner sa version actuelle</p>
-<pre class="highlight"><code class="language-bash">invoke version
-</code></pre>
-<p>Changer de version (ici : passage à la 1.0.1)</p>
-<pre class="highlight"><code class="language-bash">invoke version -e<span class="o">=</span>1.0.1
-</code></pre>
-<ul>
-<li><p class="first">Sur Pypi</p>
-<blockquote>
-<p>Enregistrer une version sur Pypi :</p>
-<pre class="highlight"><code class="language-bash">python setup.py register -r pypi
-</code></pre>
-<p>Mettre en ligne une nouvelle version :</p>
-<pre class="highlight"><code class="language-bash">python setup.py sdist upload -r pypi
-</code></pre>
-<p>Tester sur serveur Pypi de test :</p>
-<pre class="highlight"><code class="language-bash">python setup.py sdist upload -r <span class="nb">test</span> <span class="c"># (http://peterdowns.com/posts/first-time-with-pypi.html)</span>
-</code></pre>
-<p>Installation d'une version de test :</p>
-<pre class="highlight"><code class="language-bash">sudo pip3 install -i https://testpypi.python.org/pypi linkmanager
-</code></pre>
-</blockquote>
-</li>
-<li><p class="first">Sur PPA</p>
-<blockquote>
-<pre class="highlight"><code class="language-bash">dch -a
-
-dch -i --create
-dh_make --createorig
-debuild -S
-dput ppa:jerem-ferry/linkmanager linkmanager_0.1_source.changes
-</code></pre>
-<p>Installer sur PPA :</p>
-<pre class="highlight"><code class="language-bash">dput ppa:jerem-ferry/link-manager
-</code></pre>
-</blockquote>
-</li>
-</ul>
-</div>
-<div class="section" id="benchmarks">
-<h2>Benchmarks</h2>
-<p>En cours.
-Pour assurer un bench optimal, il me semble nécessaire d'utiliser une machine virtuel avec un cadre définit (RAM/CPU/IO)
-Vagrant ou Docker?</p>
-<p>Les éléments à tester :</p>
-<ul class="simple">
-<li>lib json vs simplejson</li>
-<li>Redis vs MongoDB</li>
-</ul>
-<p>Pour tester le serveur :</p>
-<ul>
-<li><p class="first">Boom (<a class="reference external" href="https://github.com/tarekziade/boom">https://github.com/tarekziade/boom</a>) :</p>
-<pre class="highlight"><code class="language-bash">boom http://localhost:8080 -c <span class="m">100</span> -n 100
-</code></pre>
-</li>
-</ul>
-</div>
-<div class="section" id="docker">
-<h2>Docker</h2>
-<p>Afin de garantir un bon fonctionnement de LinkManager, j'ai décidé d'utiliser ce manifique outil qu'est &quot;Docker&quot;.
-Ca m'a permis d'automatiser les règles d'installation et de me garantir le bon fonctionnement dans un environnement vierge.
-(gestion des dépendances etc.)</p>
-<p>Pour les retours de bugs, c'est idéal : on peut se mettre dans les mêmes conditions.</p>
-<p>Afin de partager à tous mes DockerFiles, j'ai créé un dépôt Github dédié :</p>
-<p><a class="reference external" href="https://github.com/mothsART/linkmanager_docker">https://github.com/mothsART/linkmanager_docker</a></p>
-</div>
-<div class="section" id="suivi-du-projet">
-<h2>Suivi du projet</h2>
-<p><a class="reference external" href="http://forum.ubuntu-fr.org/viewtopic.php?id=1552011">http://forum.ubuntu-fr.org/viewtopic.php?id=1552011</a></p>
-</div>
+            <div class="col-sm-10">
+            <article>
+                <h2><a href="/reflexion-imprimante-3D.html">Réflexion autours des Imprimantes 3D à usage domestique</a></h2>
+                <div class="summary">
+                    <a class="btn btn-default btn-xs" href="/reflexion-imprimante-3D.html">
+                        <span class="fa fa-chevron-circle-right">
+                            lire la suite ...
+                        </span>
+                    </a>
+                </div>
+            </article>
 
         </div>
-    </section>
-        </div>
-        <div class="col-sm-3" id="sidebar">
+        <div class="col-sm-2" id="sidebar">
             <aside>
 
 <section class="well well-sm">
@@ -229,44 +128,32 @@ Ca m'a permis d'automatiser les règles d'installation et de me garantir le bon 
             <li class="list-group-item"><a href="/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group " id="tags">
                     <li class="list-group-item tag-1">
+                        <a href="/tag/linux.html">
+                            linux
+                                <span class="badge">4</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
                         <a href="/tag/zsh.html">
                             zsh
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/linux.html">
-                            linux
+                        <a href="/tag/git.html">
+                            git
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/sql-db-bench-benchmark.html">
-                            sql db bench benchmark
+                        <a href="/tag/darcs.html">
+                            darcs
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/sublimetext.html">
-                            sublimetext
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/git.html">
-                            git
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/frontend-js-css-html.html">
-                            frontend js css html
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/vi.html">
-                            vi
+                        <a href="/tag/frontend.html">
+                            frontend
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -277,8 +164,80 @@ Ca m'a permis d'automatiser les règles d'installation et de me garantir le bon 
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/sh-linux.html">
-                            sh linux
+                        <a href="/tag/js.html">
+                            js
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/html.html">
+                            html
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/css.html">
+                            css
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/tmux.html">
+                            tmux
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/vi.html">
+                            vi
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/tmuxp.html">
+                            tmuxp
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/imprimante.html">
+                            imprimante
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/python.html">
+                            python
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/hg.html">
+                            hg
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/sh.html">
+                            sh
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/mercurial.html">
+                            mercurial
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/sublimetext.html">
+                            sublimetext
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/3d.html">
+                            3D
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -313,15 +272,21 @@ Ca m'a permis d'automatiser les règles d'installation et de me garantir le bon 
 </div>
 <footer>
    <div class="container">
-      <hr>
       <div class="row">
-         <div class="col-xs-10">&copy; 2016 Jérémie Ferry
-            &middot; Réalisé à l'aide de  <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
-            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
-            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
-         <div class="col-xs-2"><p class="pull-right">
-          <i class="fa fa-arrow-up"></i> <a href="#">Remonter</a>
-          </p></div>
+         <div class="col-xs-10">
+            <div>
+                &copy; 2016 Jérémie Ferry
+                &middot; Réalisé à l'aide de  <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+                <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+                <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>            </div>
+         </div>
+         <div class="col-xs-2">
+            <p class="pull-right">
+                <a href="#"><span>
+                  Remonter
+                </span></a>
+            </p>
+        </div>
       </div>
    </div>
 </footer>
@@ -349,6 +314,7 @@ Ca m'a permis d'automatiser les règles d'installation et de me garantir le bon 
     </script>
     <!-- End Disqus Code -->
 
+<script src="/theme/js/theme_css.js"></script>
 
 <script src="./ace-build/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script><style>td.linenos {
     display: none;
@@ -445,6 +411,7 @@ $(function() {
             lang = correlationDic[lang];
         }
         var one_render = true;
+        var nb_of_lines = $(this).text().search('\n');
         // avoid the last carriage return
         $(this).text($(this).text().substring(0, $(this).text().length));
 
@@ -462,6 +429,9 @@ $(function() {
             autoScrollEditorIntoView: ACE_EDITOR_AUTOSCROLL
         });
         editor.$blockScrolling = Infinity;
+        if (nb_of_lines === -1) {
+            editor.renderer.setShowGutter(false);
+        }
 
         editor.renderer.on("afterRender", function(event) {
             var anchor = linesInAnchor(location.hash);
@@ -494,6 +464,7 @@ $(function() {
         selectionCallback(event, editor);
     });
 });</script>
+
 
 </body>
 </html>
