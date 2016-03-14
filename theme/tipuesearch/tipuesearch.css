@@ -25,10 +25,20 @@ http://www.tipue.com/search
 
 #tipue_search_content
 {
-     max-width: 650px;
 	padding-top: 15px;
 	margin: 0;
+     counter-reset: tipue-counter;
 }
+
+#tipue_search_content article {
+     background: white;
+     counter-increment: tipue-counter;
+}
+
+#tipue_search_content article:before {
+     content: counter(tipue-counter);
+}
+
 #tipue_search_loading
 {
      padding-top: 60px;
@@ -56,16 +66,10 @@ http://www.tipue.com/search
 {
      color: #333;
 }
-#tipue_search_results_count
-{
-     font: 300 13px/1.6 'Open Sans', sans-serif;
-	color: #333;
-}
 .tipue_search_content_title
 {
      font: 300 25px/1.7 'Open Sans', sans-serif;
      text-rendering: optimizelegibility;
-	margin-top: 23px;
 }
 .tipue_search_content_title a
 {

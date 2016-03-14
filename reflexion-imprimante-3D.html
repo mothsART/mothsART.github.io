@@ -37,7 +37,7 @@
 
 
 
-                <link href="/static/css/themes/classic.css" id="selected-css" rel="stylesheet">
+                <link href="/theme/css/orange.css" id="selected-css" rel="stylesheet" />
 </head>
 <body class="lang-fr">
 
@@ -69,11 +69,11 @@ Le Labo Du Nerd            </a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li id='tipue-search'>
+              <li class='tipue-search'>
                 <span>
                     <form class="navbar-search" action="/search.html">
-                        <span class="fa fa-search"></span>
                         <input type="text" class="search-query" placeholder="Rechercher" name="q" id="tipue_search_input" required>
+                        <input type="submit" value="&#xe003;" />
                     </form>
                 </span>
               </li>
@@ -83,14 +83,22 @@ Le Labo Du Nerd            </a>
               <li id="choose-css-theme">
                   <div class="drodown">
                         <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            CSS Themes
+                            Changer de thème CSS
                             <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
                                 <!-- <li><a href="#">Thème classique (orange)</a></li> -->
-                                    <li><a class="default selected" href="/static/css/themes/classic.css">Thème classique (orange)</a></li>
+                                    <li class="selected">
+                                        <a href="/theme/css/orange.css">
+                                            <span>Thème classique (orange)</span>
+                                        </a>
+                                    </li>
                                 <!-- <li><a href="#">Thème océan (bleu)</a></li> -->
-                                    <li><a href="/static/css/themes/ocean.css">Thème océan (bleu)</a></li>
+                                    <li>
+                                        <a href="/theme/css/ocean.css">
+                                            <span>Thème océan (bleu)</span>
+                                        </a>
+                                    </li>
                         </ul>
                     </div>
               </li>
@@ -115,19 +123,25 @@ Le Labo Du Nerd            </a>
                 <div class="panel">
                     <div class="panel-body">
 <footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2016-02-28T10:35:00+01:00"> dim. 28 février 2016</time>
-    </span>
+    <div>
+        <span class="label label-default">Date</span>
+        <span class="published">
+            <i class="fa fa-calendar"></i><time datetime="2016-02-28T10:35:00+01:00"> dim. 28 février 2016</time>
+        </span>
+    </div>
 
 
 
 
 
 <span class="label label-default">Tags</span>
-	<a href="/tag/imprimante.html">imprimante<span class="badge">11</span></a>
+
+
+	<a href="/tag/imprimante.html">imprimante
+                <span class="badge">1</span></a>
         /
-	<a href="/tag/3d.html">3D<span class="badge">11</span></a>
+	<a href="/tag/3d.html">3D
+                <span class="badge">1</span></a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
@@ -143,8 +157,8 @@ Bref, pour plusieurs foyers : il n'y a pas de retour sur investissement!
 C'est devenu un produit de luxe : il serait sans doute plus rentable de passer par des services de <strong>reprographie</strong> ou <strong>d'imprimerie</strong> : il manque pour l'instant la facilité et l'immédiateté pour que les imprimantes personnels soient abandonnées.</p>
 <h2>Prérequis</h2>
 <ul>
-<li>Il y a plusieurs technologies d'impression tridimensionnel mais l'<strong>FDM (Fused Deposition Modeling)</strong> semble la plus viable pour de l'usage Domestique : on utilise des filaments synthétique qu'on fusionne pour ajouter de la matière couche par couche.</li>
-<li>La technique précédente pour divers raisons (coût, taille etc.) réduit l'usage domestique aux matières plastiques de type <strong>ABS</strong> ou <strong>PLA</strong>.</li>
+<li>Il y a plusieurs technologies d'impression tridimensionnel mais l'<strong>FDM (Fused Deposition Modeling)</strong> semble la plus viable pour de l'usage Domestique : on utilise des filaments synthétiques qu'on fusionne pour ajouter de la matière couche par couche.</li>
+<li>La technique précédente, réduit l'usage domestique pour divers raisons (coût, taille etc.) aux matières plastiques de type <strong>ABS</strong> ou <strong>PLA</strong>.</li>
 </ul>
 <h2>L'impression 3D c'est simple</h2>
 <p>Réponse courte : <strong>Faux</strong>.</p>
@@ -227,74 +241,20 @@ Chercher une aiguille dans une botte de foin prend tout son sens et même si l'o
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/zsh.html">
-                            zsh
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="/tag/git.html">
                             git
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/darcs.html">
-                            darcs
-                                <span class="badge">1</span>
+                        <a href="/tag/zsh.html">
+                            zsh
+                                <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/frontend.html">
-                            frontend
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/pelican.html">
-                            pelican
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/js.html">
-                            js
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/html.html">
-                            html
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/css.html">
-                            css
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/tmux.html">
-                            tmux
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/vi.html">
-                            vi
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/tmuxp.html">
-                            tmuxp
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/imprimante.html">
-                            imprimante
+                        <a href="/tag/3d.html">
+                            3D
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -305,14 +265,56 @@ Chercher une aiguille dans une botte de foin prend tout son sens et même si l'o
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
+                        <a href="/tag/css.html">
+                            css
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
                         <a href="/tag/hg.html">
                             hg
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
+                        <a href="/tag/html.html">
+                            html
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/frontend.html">
+                            frontend
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/darcs.html">
+                            darcs
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/tmux.html">
+                            tmux
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
                         <a href="/tag/sh.html">
                             sh
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/vi.html">
+                            vi
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/imprimante.html">
+                            imprimante
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -329,8 +331,20 @@ Chercher une aiguille dans une botte de foin prend tout son sens et même si l'o
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/3d.html">
-                            3D
+                        <a href="/tag/tmuxp.html">
+                            tmuxp
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/js.html">
+                            js
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/pelican.html">
+                            pelican
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -409,7 +423,7 @@ Chercher une aiguille dans une botte de foin prend tout son sens et même si l'o
 
 <script src="/theme/js/theme_css.js"></script>
 
-<script src="./ace-build/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script><style>td.linenos {
+<script src="/ace-build/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script><style>td.linenos {
     display: none;
 }
 

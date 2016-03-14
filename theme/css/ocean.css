@@ -1,0 +1,447 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700,400);
+
+::-moz-selection {
+    background: #337ab7; /* Firefox */
+    color: white;
+}
+
+::-webkit-selection {
+    background: #337ab7; /* Webkit */
+    color: white;
+}
+
+::selection {
+    background: #337ab7;
+    color: white;
+}
+
+body {
+    padding-top: 70px;
+    color: #6B6969;
+}
+
+body.lang-fr h1 strong:before {
+    content: "«";
+}
+
+body.lang-fr h1 strong:after {
+    content: "»";
+}
+
+/* START Menu */
+.navbar {
+    font-family: Montserrat, sans-serif;
+    border-bottom: #30618B solid 6px;
+    background: #337ab7;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar-default .navbar-brand:before,
+.navbar-default .navbar-brand:after {
+    padding: 5px;
+    content: "-";
+}
+
+.navbar-default .navbar-nav >li > a {
+    color: white;
+    text-transform: uppercase;
+}
+/* START CSS Theme dropdown */
+
+#change-css-theme {
+    margin: 8px;
+}
+
+#change-css-theme .btn-default {
+    border-radius: 0;
+}
+
+#change-css-theme .btn-default:active {
+    box-shadow: none;
+    outline: none;
+}
+
+#change-css-theme .dropdown-menu {
+    border-radius: 0;
+}
+/* END CSS Theme dropdown */
+/* END menu */
+
+/* START Sidebar */
+
+#sidebar {
+    padding: 0;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+.well-sm {
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    border-radius: 0;
+    background: #337ab7;
+    color: white;
+    box-shadow: none;
+    border: none;
+    border-bottom: #30618B solid 6px;
+}
+
+.well-sm h4 {
+    color: #337ab7;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 30px;
+    border-bottom: #30618B solid 6px;
+}
+
+#sidebar a {
+    line-height: 20px;
+    display: block;
+    color: inherit;
+    font-size: 13px;
+}
+
+#sidebar a:hover {
+    color: #254866;
+    text-decoration: none;
+}
+
+#sidebar a .badge {
+    margin-top: -1px;
+    margin-left: 2px;
+    position: absolute;
+    padding: 2px 6px;
+    font-size: 11px;
+    background: #254866;
+}
+
+#sidebar .list-group, #sidebar .list-group-item {
+    background-color: transparent;
+    padding: 0 5px 0 0;
+}
+
+#sidebar .list-group {
+    padding-bottom: 10px;
+}
+
+#sidebar .list-group-item .list-group-item {
+    padding-left: 15px;
+}
+
+#sidebar .list-group-item .list-group-item:before {
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 18px;
+    line-height: 18px;
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+    opacity: 0;
+    margin-top: 2px;
+    margin-left: -25px;
+}
+
+#sidebar .list-group-item .list-group-item:hover:before,
+#sidebar .list-group-item .list-group-item:active:before {
+    color: #30618B;
+    opacity: 1;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    margin-left: -10px;
+}
+
+/* Example for how to control spacing between icon and label in specific
+   lists in the sidebar. To change, override in your CUSTOM_CSS */
+#sidebar #social i {
+    margin-right: 3px;
+}
+
+.list-group-item <span>.badge {
+    position: absolute;
+    margin-top: -5px;
+    margin-left: 2px;
+}
+/* for list-groups nested within a list-group-item, reset the bottom margin */
+.list-group-item > .list-group {
+    margin-bottom: 0px;
+}
+
+/* for list-group-items nested within a list-group-item, reset the bottom
+   padding of the last item, b/c the containing item has paddimg already
+ */
+.list-group-item .list-group-item:last-child {
+    padding-bottom: 0px;
+}
+
+.list-group-item {
+    font-size: 12pt;
+    padding: 5px 5px 5px 10px;
+    border: none;
+}
+
+.tag-0 {
+    font-size: 16pt;
+}
+
+.tag-1 {
+    font-size: 13pt;
+}
+
+.tag-2 {
+    font-size: 10pt;
+}
+
+.tag-3 {
+    font-size: 8pt;
+}
+
+.tag-4 {
+    font-size: 6pt;
+}
+/* END Sidebar */
+
+#aboutme {
+    padding-top: 0px;
+    padding-bottom: 5px;
+    -ms-word-break: normal;
+    word-break: normal;
+}
+
+.icon-label {
+    margin-left: 10px;
+}
+
+a, a:hover {
+    color: inherit;
+}
+
+.entry-content a {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+.entry-content a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+.entry-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.entry-content figcaption, .caption {
+    font-size: small;
+    margin-bottom: 2px;
+}
+
+.summary img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.floatright, .align-right {
+    float: right;
+}
+
+.floatleft, .align-left {
+    float: left;
+}
+
+.floatcenter, .align-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure.floatright, .align-right {
+    margin-left: 4px;
+}
+
+figure.floatleft, .align-left {
+    margin-right: 4px;
+}
+
+figure.floatcenter, .align-center {
+    margin-bottom: 11px;
+}
+
+.highlighttable pre {
+    /* Removes bootstrap default margin-bottom */
+    margin-bottom: 0px;
+}
+
+.highlighttable {
+    /* Adds them margin-bottom to highlightable instead of <pre> */
+    margin-bottom: 11px;
+}
+
+.highlighttable {
+    width: 100%;
+}
+
+#categories ul, #tags ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+}
+
+.docutils.footnote td.label {
+    display: table-cell;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    text-align: inherit;
+    white-space: inherit;
+    border-radius: inherit;
+}
+
+.categories-timestamp {
+    color: #AAAAAA;
+    font-size: 0.9em;
+    margin-right: 10px;
+}
+
+.tagcloud li {
+    padding: 0px;
+}
+
+#banner {
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: scroll;
+    background-size: cover;
+    background-color: #C4C4C4;
+    margin: 0 0 20px;
+    padding: 70px 0; /*controls padding around inner text*/
+    position: relative;
+}
+
+#banner .copy {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+    display: inline;
+    float: left;
+    max-width: 600px;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+#banner h1 {
+    color: #fff;
+    font-family: "HelveticaNeue-CondensedBold","Helvetica Neue CE 600 Condensed","Helvetica Neue LT Condensed","Helvetica Neue 600 Condensed","HelveticaNeue-BoldCondensed","Helvetica Neue BoldCondensed","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 60px;
+    font-stretch: condensed;
+    font-weight: 700;
+    line-height: 0.9;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+#banner .intro {
+    color: #fff;
+    font-size: 21px;
+    line-height: 1.33;
+    opacity: 0.75;
+}
+
+#banner .btn, #banner .intro {
+    margin-left: 4px;
+}
+
+kbd {
+    display: inline-block;
+    padding: 4px 5px;
+    margin: 2px;
+    font-size: 14px;
+    line-height: 10px;
+    color: #555;
+    vertical-align: middle;
+    background-color: #fcfcfc;
+    border: solid 1px #ccc;
+    border-bottom-color: #bbb;
+    border-radius: 3px;
+    box-shadow: inset 0 -1px 0 #bbb;
+}
+
+/* Tipue search Plugin */
+#tipue_search_input {
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 5px;
+    padding-left: 40px;
+    background-position-y: 8px;
+    border: none;
+    border-bottom: rgba(248, 172, 89, 0.8) solid 1px;
+}
+/* Ace Editor Plugin */
+.ace-chrome .ace_marker-layer .ace_selection {
+    background: #337ab7;
+}
+
+/* START Content */
+
+#content {
+    background: #337ab7;
+    padding: 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-shadow: #30618B 0px 2px 0px;
+}
+
+h1 strong:before {
+    content: "“";
+}
+
+h1 strong:after {
+    content: "”";
+}
+.page-header {
+    border-bottom-width: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+/* END Content */
+
+/* Solutions for mobile and small screens  */
+@media (max-width: 650px) {
+    #banner h1 {
+       font-size: 30px; /* !important;*/
+    }
+    #banner .intro {
+        font-size: 16px;
+    }
+    .navbar-nav {
+        margin: 0 -15px;
+    }
+    #tipue_search_input {
+        margin: 0 0 0 15px;
+    }
+}

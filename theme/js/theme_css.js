@@ -41,11 +41,7 @@ $(function() {
     }
     $('#choose-css-theme li a').removeClass('selected');
     $('#choose-css-theme li a[href="' + css_path + '"]').addClass('selected');
-    $('head').append(
-        '<link href="'
-        + css_path
-        + '" id="selected-css" rel="stylesheet">'
-    );
+    $('head #selected-css').attr("href", css_path);
 
     $('#choose-css-theme li a').on('click', function(e) {
         e.preventDefault();

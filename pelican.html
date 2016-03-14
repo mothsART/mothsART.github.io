@@ -36,7 +36,7 @@
 
 
 
-                <link href="/static/css/themes/classic.css" id="selected-css" rel="stylesheet">
+                <link href="/theme/css/orange.css" id="selected-css" rel="stylesheet" />
 </head>
 <body class="lang-fr">
 
@@ -68,11 +68,11 @@ Le Labo Du Nerd            </a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li id='tipue-search'>
+              <li class='tipue-search'>
                 <span>
                     <form class="navbar-search" action="/search.html">
-                        <span class="fa fa-search"></span>
                         <input type="text" class="search-query" placeholder="Rechercher" name="q" id="tipue_search_input" required>
+                        <input type="submit" value="&#xe003;" />
                     </form>
                 </span>
               </li>
@@ -82,14 +82,22 @@ Le Labo Du Nerd            </a>
               <li id="choose-css-theme">
                   <div class="drodown">
                         <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            CSS Themes
+                            Changer de thème CSS
                             <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
                                 <!-- <li><a href="#">Thème classique (orange)</a></li> -->
-                                    <li><a class="default selected" href="/static/css/themes/classic.css">Thème classique (orange)</a></li>
+                                    <li class="selected">
+                                        <a href="/theme/css/orange.css">
+                                            <span>Thème classique (orange)</span>
+                                        </a>
+                                    </li>
                                 <!-- <li><a href="#">Thème océan (bleu)</a></li> -->
-                                    <li><a href="/static/css/themes/ocean.css">Thème océan (bleu)</a></li>
+                                    <li>
+                                        <a href="/theme/css/ocean.css">
+                                            <span>Thème océan (bleu)</span>
+                                        </a>
+                                    </li>
                         </ul>
                     </div>
               </li>
@@ -114,17 +122,22 @@ Le Labo Du Nerd            </a>
                 <div class="panel">
                     <div class="panel-body">
 <footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2015-12-11T00:00:00+01:00"> ven. 11 décembre 2015</time>
-    </span>
+    <div>
+        <span class="label label-default">Date</span>
+        <span class="published">
+            <i class="fa fa-calendar"></i><time datetime="2015-12-11T00:00:00+01:00"> ven. 11 décembre 2015</time>
+        </span>
+    </div>
 
 
 
 
 
 <span class="label label-default">Tags</span>
-	<a href="/tag/zsh.html">zsh<span class="badge">11</span></a>
+
+
+	<a href="/tag/zsh.html">zsh
+                <span class="badge">2</span></a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
@@ -164,8 +177,8 @@ Pelican ne déroge pas à cette règle.</p>
 <p>Ace est juste fantastique -&gt; <a href="https://ace.c9.io/build/kitchen-sink.html">https://ace.c9.io/build/kitchen-sink.html</a> et sa page github <a href="https://github.com/ajaxorg/ace">https://github.com/ajaxorg/ace</a></p>
 <p>Il a beaucoup d'avantages :</p>
 <ul>
-<li>coloration synthaxique</li>
-</ul>
+<li>
+<p>coloration synthaxique</p>
 <p>Il lui manque cependant des choses :</p>
 <ul>
 <li>
@@ -179,19 +192,21 @@ Pelican ne déroge pas à cette règle.</p>
 </li>
 </ul>
 </li>
+</ul>
+</li>
 <li>
 <p>création d'un plugin permettant l'i18n sans l'obligatation d'avoir au minimum 2 langues. (pas trouvé via le plugin "i18n_subsite")</p>
 </li>
 <li>
 <p>création d'un thème perso :</p>
 <ul>
-<li>[en cours] I18n sur l'ensemble du site et des plugins</li>
-<li>[réalisé] Possibilité de changer de thème via un <strong>dropdown bootstrap</strong> + préservation du thème choisi dans un cookie. (qui a dit que les cookies avait besoin d'un site dynamique ?)</li>
-<li>[en cours] page 404</li>
-<li>[enc cours] Utilisation de <strong><a href="http://posativ.org/isso">Isso</a></strong> à la place de <strong>Disqus</strong> : permet des commentaires anonymes.</li>
-<li>[en cours] Des URLs avec une ancre peuvent avoir des soucis avec un menu fixe :
+<li>[] I18n sur l'ensemble du site et des plugins</li>
+<li>[x] Possibilité de changer de thème via un <strong>dropdown bootstrap</strong> + préservation du thème choisi dans un cookie. (qui a dit que les cookies avait besoin d'un site dynamique ?)</li>
+<li>[] <strong>en cours</strong> : page 404</li>
+<li>[] <strong>en cours</strong> : Utilisation de <strong><a href="http://posativ.org/isso">Isso</a></strong> à la place de <strong>Disqus</strong> : permet des commentaires anonymes.</li>
+<li>[] <strong>en cours</strong> : Des URLs avec une ancre peuvent avoir des soucis avec un menu fixe :
   l'option <strong> SCROLL_TOP_MARGIN</strong> permet de rajouter des pixels suplémentaires pour éviter cette contrainte.</li>
-<li>[en cours] Utilisation d'une page de référence pour mon template avec le maximum de régles : <a href="/pelicans-template.html">pelicans-template.html</a></li>
+<li>[] <strong>en cours</strong> : Utilisation d'une page de référence pour mon template avec le maximum de règles : <a href="/pelicans-template.html">pelicans-template.html</a></li>
 </ul>
 </li>
 </ul>
@@ -254,74 +269,20 @@ Pelican ne déroge pas à cette règle.</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/zsh.html">
-                            zsh
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="/tag/git.html">
                             git
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/darcs.html">
-                            darcs
-                                <span class="badge">1</span>
+                        <a href="/tag/zsh.html">
+                            zsh
+                                <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/frontend.html">
-                            frontend
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/pelican.html">
-                            pelican
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/js.html">
-                            js
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/html.html">
-                            html
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/css.html">
-                            css
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/tmux.html">
-                            tmux
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/vi.html">
-                            vi
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/tmuxp.html">
-                            tmuxp
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/imprimante.html">
-                            imprimante
+                        <a href="/tag/3d.html">
+                            3D
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -332,14 +293,56 @@ Pelican ne déroge pas à cette règle.</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
+                        <a href="/tag/css.html">
+                            css
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
                         <a href="/tag/hg.html">
                             hg
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
+                        <a href="/tag/html.html">
+                            html
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/frontend.html">
+                            frontend
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/darcs.html">
+                            darcs
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/tmux.html">
+                            tmux
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
                         <a href="/tag/sh.html">
                             sh
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/vi.html">
+                            vi
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/imprimante.html">
+                            imprimante
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -356,8 +359,20 @@ Pelican ne déroge pas à cette règle.</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/3d.html">
-                            3D
+                        <a href="/tag/tmuxp.html">
+                            tmuxp
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/js.html">
+                            js
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/pelican.html">
+                            pelican
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -436,7 +451,7 @@ Pelican ne déroge pas à cette règle.</p>
 
 <script src="/theme/js/theme_css.js"></script>
 
-<script src="./ace-build/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script><style>td.linenos {
+<script src="/ace-build/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script><style>td.linenos {
     display: none;
 }
 
