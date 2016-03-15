@@ -558,6 +558,7 @@ kbd {
 .ace_editor {
     margin: 0 0 0 30px;
     border: none;
+    border-top: solid 5px white;
     border-bottom: solid 5px white;
 }
 
