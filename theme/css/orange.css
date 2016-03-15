@@ -582,11 +582,54 @@ kbd {
     content: none;
 }
 
+#tipue_search_content
+{
+     padding-top: 5px;
+     margin: 0;
+     counter-reset: tipue-counter;
+}
+
+#tipue_search_content article {
+     background: white;
+     counter-increment: tipue-counter;
+}
+
+#tipue_search_content article:before {
+     content: counter(tipue-counter);
+}
+
+.tipue_search_content_text
+{
+    font: 300 15px/1.6 'Open Sans', sans-serif;
+    color: #555;
+    word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    margin-top: 3px;
+    width: 80%;
+    padding-left: 20px;
+}
+
 #tipue_search_content article:before {
     background: #F79E02;
     padding: 1px 6px;
     color: white;
     border-radius: 14px;
+}
+
+#tipue_search_content h3 {
+    margin-top: -19px;
+}
+
+#tipue_search_content h3 a {
+    text-decoration: none;
+    color: #F79E02;
+}
+
+#tipue_search_content h3 a:hover {
+    text-decoration: underline;
 }
 
 #tipue_search_input {
@@ -630,17 +673,13 @@ kbd {
 /* START Content */
 
 .panel {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    margin-left: 20px;
     background-color: #fff;
     border: 1px solid transparent;
     border-radius: 0;
     box-shadow: none;
     background: #DA862D;
-    position: absolute;
-    top: 10px;
-    bottom: 0px;
-    right: 10px;
-    min-width: 300px;
     height: auto;
 }
 
@@ -844,25 +883,35 @@ article > h2 a:focus {
     text-decoration: none;
 }
 
+article .entry-content {
+    width: 80%;
+}
+
+#content article .entry-content {
+    width: auto;
+}
+
 article .summary {
     margin-bottom: 5px;
+    position: absolute;
+    bottom: 10px;
+    width: 20%;
+    right: 0;
 }
 
 article .summary .btn {
-    color: #DA862D;
-    border: none;
     border-radius: 0;
     margin-left: 30px;
     padding: 4px;
-}
-
-article .summary .btn {
     border: solid 1px white;
     background: #DA862D;
     color: white;
     position: relative;
     font: normal normal normal 14px/1 FontAwesome;
     transition: all .5s ease-in-out;
+    right: 10px;
+    bottom: -5px;
+    position: absolute;
 }
 
 article .summary .btn:hover {
@@ -885,6 +934,10 @@ article .summary .btn:hover:before {
     background: white;
     color: #DA862D;
     width: 100%;
+}
+
+article .summary .btn .fa-chevron-circle-right:before {
+    margin-right: 5px;
 }
 
 /* END category */

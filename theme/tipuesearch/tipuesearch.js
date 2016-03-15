@@ -305,11 +305,17 @@ http://www.tipue.com/search
                                    {
                                         out += "<article>";
                                         if (fo[1]) {
-                                             out += '<div class="tipue_search_content_title"><a href="' + fo[3] + '"' + tipue_search_w + '>' +  fo[1] + '</a></div>';
+                                             out += '<h3 class="tipue_search_content_title"><a href="' + fo[3] + '"' + tipue_search_w + '>' +  fo[1] + '</a></h3>';
                                         }
                                         if (set.showURL)
                                         {
-                                             out += '<div class="tipue_search_content_url"><a href="' + fo[3] + '"' + tipue_search_w + '>' + fo[3] + '</a></div>';
+                                             out += '<div class="summary">
+                                                  <a class="btn btn-default btn-xs" href="' + fo[3] + '"' + tipue_search_w + '">
+                                                      <span class="fa fa-chevron-circle-right">
+                                                          lire la suite ...
+                                                      </span>
+                                                  </a>
+                                             </div>';
                                         }
 
                                         var t = fo[2];
