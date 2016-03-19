@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>imprimante - Le Labo Du Nerd</title>
+    <title>Pourquoi je boude Node.Js - Le Labo Du Nerd</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -9,16 +9,21 @@
 
 
 
+<link rel="canonical" href="/pourquoi-je-boude-nodejs.html">
 
-    <meta name="author" content="Jérémie Ferry" />
-    <meta name="keywords" content="imprimante" />
+        <meta name="author" content="Jérémie Ferry" />
+        <meta name="keywords" content="javascript,web" />
 
-    <!-- Open Graph tags -->
         <meta property="og:site_name" content="Le Labo Du Nerd" />
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="Le Labo Du Nerd"/>
-        <meta property="og:url" content=""/>
-        <meta property="og:description" content="Le Labo Du Nerd"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Pourquoi je boude Node.Js"/>
+        <meta property="og:url" content="/pourquoi-je-boude-nodejs.html"/>
+        <meta property="og:description" content=""/>
+        <meta property="article:published_time" content="2016-03-19" />
+            <meta property="article:section" content="reflexion" />
+            <meta property="article:tag" content="javascript" />
+            <meta property="article:tag" content="web" />
+            <meta property="article:author" content="Jérémie Ferry" />
 
 
     <!-- Bootstrap -->
@@ -59,7 +64,7 @@ Le Labo Du Nerd            </a>
                         <li >
                             <a href="/category/misc.html">Misc</a>
                         </li>
-                        <li >
+                        <li class="active">
                             <a href="/category/reflexion.html">Reflexion</a>
                         </li>
             </ul>
@@ -107,17 +112,21 @@ Le Labo Du Nerd            </a>
 <div class="container">
     <div class="row">
             <div class="col-sm-10">
-            <article>
-                <h2><a href="/reflexion-imprimante-3D.html">Réflexion autour des Imprimantes 3D à usage domestique</a></h2>
-
-                <div class="entry-content">
-                    <div class="panel">
-                        <div class="panel-body">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    Pourquoi je boude Node.Js
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
 <footer class="post-info">
     <span>
         <span class="label label-default">Date</span>
         <span class="published">
-            <i class="fa fa-calendar"></i><time datetime="2016-02-28T10:35:00+01:00"> dim. 28 février 2016</time>
+            <i class="fa fa-calendar"></i><time datetime="2016-03-19T16:00:00+01:00"> sam. 19 mars 2016</time>
         </span>
     </span>
 
@@ -128,22 +137,81 @@ Le Labo Du Nerd            </a>
 <span class="label label-default">Tags</span>
 
 
-	<a href="/tag/imprimante.html">imprimante
+	<a href="/tag/javascript.html">javascript
                 <span class="badge">1</span></a>
         /
-	<a href="/tag/3d.html">3D
+	<a href="/tag/web.html">web
                 <span class="badge">1</span></a>
     
-</footer><!-- /.post-info -->                        </div>
-                    </div>
+</footer><!-- /.post-info -->                    </div>
                 </div>
+                <h2>Intro</h2>
+<p>NodeJS est à la mode.
+Quand je parle de NodeJS, je parle bien entendu de toute la mouvance autours de Javascript.</p>
+<p>Le principe :
+    il n'existe pas d'alternative (simple) à Javascript à l'heure actuelle pour faire du web.</p>
+<p>Les avantages :
+    - la communauté
+    - les librairies/frameworks ne cessent de s'étoffer
+    - utiliser le même langage côté serveur et client
+    - langage asynchrone par nature</p>
+<p>Les inconvénients
+    - le bazar : plein de libs à l'état alpha : juste inutilisable en production!
+    - explosition de l'archive : 38 Ko de React.js + 85 Ko de Jquery + etc.
+    - code interprété donc lent (même avec du <strong>JIT</strong>)
+    - impératif donc de POO ou de fonctionnel : Ecmascript 6 et 7 améliore sensiblement les choses.
+    - notion de typage inexistant (oblige à faire des tests unitaires sur du typage!!!)
+    - très peu de tests de sécurité (mémoire, qualité) : <strong>use strict</strong> améliore les choses ainsi que l'utilisation d'outils tel que <strong>JSLint</strong>...
+    - l'asynchrone est basé sur les callback : pénalisant sur des projets complexes =&gt; ecmascript 7 va améliorer ça en utilisant nativement <strong>async</strong> et <strong>await</strong>.
+    - l'utilisation de libs bas niveau (C ou C++)
+    - Pour toutes les raisons si dessus, utiliser Javascript pour du serveur est sans doute un mauvais choix.</p>
+<h2>Bonne pratique aujourd'hui</h2>
+<p><strong>Babel.js</strong> et <strong>Emscripten</strong> semble être les bonnes technos du moment.</p>
+<h2>Et demain</h2>
+<p>Depuis la proposition d'un bytecode commun par Mozilla (asm.js), les choses ont pas mal évolués et (Webassembly)[http://www.developpez.com/actu/97050/Google-Microsoft-et-Mozilla-proposent-une-demonstration-fonctionnelle-de-WebAssembly-le-projet-ambitionne-de-devenir-le-code-binaire-du-web/]
+semble LA solution commune.</p>
+<p>Une fois que 90% navigateurs sur le marché auront cet API stable de disponible, il sera aisé de se passer complètement de Javascript : envisageable dans 5 à 10 ans selon mon indicateur pifométrique.</p>
+<p>La transition se fera avec des outils comme <strong>Emscripten</strong>.</p>
+<p>En attendant, il faudra implémenter cet API dans chacun des langages : Un boulot pharaonique en somme qui risque de prendre du temps.</p>
+<h2>Conclusion</h2>
+<p>Les besoins du web ne cesse de s'accroitre. Les usages se diversifies.
+Javascript est incontournable et vit son heure de gloire.
+Mais tout à une fin et il vaut mieux ammorcer la chute plutôt que de la subir.</p>
+<p>Il sera sans doute possible dans moins de 10 ans de faire du web en se passant totalement de Javascript et donc d'utiliser des langages plus modernes, moins permissifs et plus réactifs tel que <strong>Rust</strong>.</p>
+            </div>
+            <!-- /.entry-content -->
+    <hr/>
+    <section class="comments" id="comments">
+        <h2>Comments</h2>
 
-                <div class="summary">
-                    <a class="btn btn-default btn-xs" href="/reflexion-imprimante-3D.html">
-                        <span class="fa fa-chevron-circle-right">lire la suite ...</span>
-                    </a>
-                </div>
-            </article>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'lelabodunerd'; // required: replace example with your forum shortname
+
+                    var disqus_identifier = 'pourquoi-je-boude-nodejs';
+                var disqus_url = '/pourquoi-je-boude-nodejs.html';
+
+            var disqus_config = function () {
+                this.language = "fr";
+            };
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function () {
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </section>
+        </article>
+    </section>
 
         </div>
         <div class="col-sm-2" id="sidebar">
