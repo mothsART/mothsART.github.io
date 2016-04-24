@@ -66,6 +66,9 @@ Le Labo Du Nerd            </a>
                         <li >
                             <a href="/category/reflexion.html">Reflexion</a>
                         </li>
+                        <li >
+                            <a href="/category/rust.html">Rust</a>
+                        </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li class='tipue-search'>
@@ -137,42 +140,55 @@ Le Labo Du Nerd            </a>
 
 
 	<a href="/tag/rust.html">rust
+                <span class="badge">2</span></a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
                 <h2>Introduction</h2>
+<p>Depuis plusieurs mois, j'accorde un intérêt croissant pour le jeune language de programmation <strong>Rust</strong>.
+Ayant déjà de bons acquis en C/C#/Python/Javascript, on peut naturellement se poser la question de pourquoi s'investir dans un nouveau language.</p>
+<h2>Approfondir mes connaissances personnelles</h2>
+<p>Une raison, non dissimulé, vient du fait que j'exprime le besoin de sortir de mon périmètre de confort : d'apprendre ou ré-apprendre.
+Pour celà, j'ai testé pas mal de langages : Ocaml, Haskell, Go langage.
+Ni l'un ni l'autre n'a trouvé grâce à mes yeux (chacun pour des raisons différentes).</p>
+<h2>Faire du bas niveau</h2>
+<p>Il y a 2 types de dev: ceux qui font du bas niveau et les autres.
+Quant on fait du bas niveau, on s'oblige a comprendre comment fonctionne réellement un ordinateur.</p>
+<p>La première catégorie est forcément mieux armé pour faire face à des problématiques complexes : de performance, latence, empreinte mémoire etc.</p>
+<p>Bref, les problématiques rencontrés par tous les développeurs travaillant sur des projets sérieux.</p>
+<p>Python, Javascript et C# (dans une moindre mesure) ne sont tout simplement pas fait pour ce genre de chose.
+<em> D'une part, la gestion de la mémoire se fait via un ramasse-miettes (garbage collector).
+</em> Ces langages passent par des machines virtuelles qui interpréte (via du bytecode) et convertisse à la volé en code machine.
+Il est par conséquent impossible d'avoir du code aussi rapide en interprété quand compilé (par analogie, le chemin le plus court entre 2 points est la ligne droite). 
+Même si on peut s'en rapprocher, le soucis de l'empreinte mémoire d'une VM et son temps de lancement reste insoluble.</p>
+<p>J'imagine un avenir radieu (quoi, on y est déjà ?) ou l'on lancera en simultannée une appli Java, Python, Nodejs, C# et Perl.
+Chacun utilise sa propre VM et prend 50 Mo (et je suis optimiste).
+Résulat des courses : on utilise 250 Mo inutillement.
+Pour du desktop, ça peut paraitre anodin (quoi que) mais pour du serveur ou de l'embarqué, ça peut devenir vraiment pénalisant.</p>
+<h2>Oui, mais C fait du bas niveau</h2>
+<p>Le C (ou le C++) c'est idéal pour écrire du code bas niveau : pourquoi le remplacer par du Rust ?
+Parce que c'est pas safe du tout, que ça n'utilise qu'un paradigme et que c'est pas adapté à du dev concurrent.</p>
+<h2>Maitriser de bout en bout</h2>
+<p>La lubie du développeur est de maitriser son environnement au maximum.
+Pour celà, le choix de son hardware et de son OS semble déjà une bonne base.
+Open source et libre de préférence.</p>
+<p>Ensuite, des problématiques plus pointues viennent se rajouter pour le développeur : 
+En l'occurence, toute la stack employé pour aboutir à un résultat : soit les éditeurs et IDE choisit, les logiciels de versions, les hébergements etc.</p>
+<p>Rust s'inscrit, pour moi,  dans cette quête.
+D'une part, le language n'est pas initié par une grosse firme (Redmond, Google et cie) mais par un organisme à but non lucratif (Mozilla foundation).</p>
+<h2>Me lancer dans des nouveaux projets</h2>
+<h2>Inconvénients</h2>
+<ul>
+<li>
+<p>Ré-apprendre depuis le début entraine des frustrations (je ne pensais jamais autant) :
+Prendre 1 heure pour faire quelque chose qui nous prend 5 minutes dans un autre langage est forcément ingrat mais ça fait parti du jeu...</p>
+</li>
+<li>
+<p>Rust est un langage neuf ce qui sous-entend peu de doc (surtout dans la langue de molière), de topics sur des forums et des libs innexistantes, incomplètes etc.</p>
+</li>
+</ul>
             </div>
             <!-- /.entry-content -->
-    <hr/>
-    <section class="comments" id="comments">
-        <h2>Comments</h2>
-
-        <div id="disqus_thread"></div>
-        <script type="text/javascript">
-            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-            var disqus_shortname = 'lelabodunerd'; // required: replace example with your forum shortname
-
-                    var disqus_identifier = 'pourquoi-rust';
-                var disqus_url = '/drafts/pourquoi-rust.html';
-
-            var disqus_config = function () {
-                this.language = "fr";
-            };
-
-            /* * * DON'T EDIT BELOW THIS LINE * * */
-            (function () {
-                var dsq = document.createElement('script');
-                dsq.type = 'text/javascript';
-                dsq.async = true;
-                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
-            Disqus.</a></noscript>
-        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-    </section>
         </article>
     </section>
 
@@ -196,7 +212,37 @@ Le Labo Du Nerd            </a>
                     <li class="list-group-item tag-1">
                         <a href="/tag/linux.html">
                             linux
-                                <span class="badge">4</span>
+                                <span class="badge">5</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/c.html">
+                            C
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/javascript.html">
+                            javascript
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/git.html">
+                            git
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/frontend.html">
+                            frontend
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/python.html">
+                            python
+                                <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -206,15 +252,15 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/git.html">
-                            git
+                        <a href="/tag/rust.html">
+                            rust
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/python.html">
-                            python
-                                <span class="badge">1</span>
+                        <a href="/tag/css.html">
+                            css
+                                <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -224,8 +270,44 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/css.html">
-                            css
+                        <a href="/tag/tmux.html">
+                            tmux
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/hg.html">
+                            hg
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/js.html">
+                            js
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/darcs.html">
+                            darcs
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/html.html">
+                            html
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/3d.html">
+                            3D
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/web.html">
+                            web
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -242,14 +324,8 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/hg.html">
-                            hg
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/frontend.html">
-                            frontend
+                        <a href="/tag/sublimetext.html">
+                            sublimetext
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -260,50 +336,8 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/tmuxp.html">
-                            tmuxp
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/darcs.html">
-                            darcs
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/vi.html">
-                            vi
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/javascript.html">
-                            javascript
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/3d.html">
-                            3D
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/tmux.html">
-                            tmux
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/html.html">
-                            html
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/js.html">
-                            js
+                        <a href="/tag/java.html">
+                            Java
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -314,14 +348,14 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/sublimetext.html">
-                            sublimetext
+                        <a href="/tag/vi.html">
+                            vi
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/web.html">
-                            web
+                        <a href="/tag/tmuxp.html">
+                            tmuxp
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -382,21 +416,6 @@ Le Labo Du Nerd            </a>
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
 <script src="/theme/js/respond.min.js"></script>
 
-    <!-- Disqus -->
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'lelabodunerd'; // required: replace example with your forum shortname
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function () {
-            var s = document.createElement('script');
-            s.async = true;
-            s.type = 'text/javascript';
-            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-        }());
-    </script>
-    <!-- End Disqus Code -->
 
 <script src="/theme/js/theme_css.js"></script>
 
