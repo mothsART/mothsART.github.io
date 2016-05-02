@@ -151,12 +151,16 @@ Le Labo Du Nerd            </a>
 <li>Support de la coloration synthaxique de Rust (https://packagecontrol.io/installation)</li>
 <li>BeautifyRust : formate le code Rust pour qu'il suive les bonnes conventions de codage. (et évite d'y penser)
 Nécessite et utilise : <a href="https://github.com/rust-lang-nursery/rustfmt">rustfmt</a></li>
+<li>RustAutocomplete : utilise </li>
 </ul>
 <h2>Editeurs en ligne</h2>
 <ul>
 <li><a href="https://play.rust-lang.org/">editeur</a></li>
 <li><a href="http://www.tutorialspoint.com/compile_rust_online.php">editeur multi-fichiers</a> : permet d'éditer, compiler et exécuter des projets complets (répartis sur plusieurs fichiers) tout en proposant des outils d'import et d'export</li>
 </ul>
+<h2>Débuggage</h2>
+<p>Rust fait beaucoup de vérification au niveau de la compilation mais ne peut bien évidement pas couvrir la partie dynamique.
+Il subsite donc des erreurs à l'exécution : pour les débusquer, gdb est notre ami.</p>
             </div>
             <!-- /.entry-content -->
         </article>
@@ -204,8 +208,8 @@ Nécessite et utilise : <a href="https://github.com/rust-lang-nursery/rustfmt">r
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/frontend.html">
-                            frontend
+                        <a href="/tag/css.html">
+                            css
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -216,8 +220,8 @@ Nécessite et utilise : <a href="https://github.com/rust-lang-nursery/rustfmt">r
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/zsh.html">
-                            zsh
+                        <a href="/tag/frontend.html">
+                            frontend
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -228,32 +232,14 @@ Nécessite et utilise : <a href="https://github.com/rust-lang-nursery/rustfmt">r
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/css.html">
-                            css
+                        <a href="/tag/zsh.html">
+                            zsh
                                 <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/sh.html">
-                            sh
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/tmux.html">
-                            tmux
-                                <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
                         <a href="/tag/hg.html">
                             hg
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/js.html">
-                            js
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -264,26 +250,8 @@ Nécessite et utilise : <a href="https://github.com/rust-lang-nursery/rustfmt">r
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/html.html">
-                            html
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/3d.html">
-                            3D
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="/tag/web.html">
                             web
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/javascript-frontend-stockage-sql.html">
-                            javascript frontend stockage sql
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -294,20 +262,32 @@ Nécessite et utilise : <a href="https://github.com/rust-lang-nursery/rustfmt">r
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/sublimetext.html">
-                            sublimetext
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/pelican.html">
-                            pelican
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="/tag/java.html">
                             Java
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/js.html">
+                            js
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/tmuxp.html">
+                            tmuxp
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/sh.html">
+                            sh
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/bug.html">
+                            bug
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -324,8 +304,38 @@ Nécessite et utilise : <a href="https://github.com/rust-lang-nursery/rustfmt">r
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/tmuxp.html">
-                            tmuxp
+                        <a href="/tag/pelican.html">
+                            pelican
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/html.html">
+                            html
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/tmux.html">
+                            tmux
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/3d.html">
+                            3D
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/javascript-frontend-stockage-sql.html">
+                            javascript frontend stockage sql
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/sublimetext.html">
+                            sublimetext
                                 <span class="badge">1</span>
                         </a>
                     </li>
