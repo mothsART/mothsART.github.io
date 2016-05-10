@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="fr" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>The QuiZz : Parti 1 - Le Labo Du Nerd</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="/the-quizz-part-1.html">
+
+        <meta name="author" content="Jérémie Ferry" />
+        <meta name="keywords" content="rust,gettext,cli,postgresql" />
+
+        <meta property="og:site_name" content="Le Labo Du Nerd" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="The QuiZz : Parti 1"/>
+        <meta property="og:url" content="/the-quizz-part-1.html"/>
+        <meta property="og:description" content=""/>
+        <meta property="article:published_time" content="2016-10-05" />
+            <meta property="article:section" content="rust" />
+            <meta property="article:tag" content="rust" />
+            <meta property="article:tag" content="gettext" />
+            <meta property="article:tag" content="cli" />
+            <meta property="article:tag" content="postgresql" />
+            <meta property="article:author" content="Jérémie Ferry" />
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments/native.css" rel="stylesheet">
+        <link href="/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
+
+
+
+
+
+                <link href="/theme/css/orange.css" id="selected-css" rel="stylesheet" />
+</head>
+<body class="lang-fr">
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+Le Labo Du Nerd            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li >
+                            <a href="/category/aide-memoire.html">Aide-memoire</a>
+                        </li>
+                        <li >
+                            <a href="/category/frontend.html">Frontend</a>
+                        </li>
+                        <li >
+                            <a href="/category/misc.html">Misc</a>
+                        </li>
+                        <li >
+                            <a href="/category/reflexion.html">Reflexion</a>
+                        </li>
+                        <li class="active">
+                            <a href="/category/rust.html">Rust</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class='tipue-search'>
+                <span>
+                    <form class="navbar-search" action="/search.html">
+                        <input type="text" class="search-query" placeholder="Rechercher" name="q" id="tipue_search_input" required>
+                        <input type="submit" value="&#xe003;" />
+                    </form>
+                </span>
+              </li>
+            <li >
+                <a href="/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a>
+            </li>
+              <li id="choose-css-theme">
+                  <div class="drodown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Changer de thème CSS
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                <!-- <li><a href="#">Thème classique (orange)</a></li> -->
+                                    <li class="selected">
+                                        <a href="/theme/css/orange.css">
+                                            <span>Thème classique (orange)</span>
+                                        </a>
+                                    </li>
+                                <!-- <li><a href="#">Thème océan (bleu)</a></li> -->
+                                    <li>
+                                        <a href="/theme/css/ocean.css">
+                                            <span>Thème océan (bleu)</span>
+                                        </a>
+                                    </li>
+                        </ul>
+                    </div>
+              </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+            <div class="col-sm-10">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    The QuiZz : Parti 1
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span>
+        <span class="label label-default">Date</span>
+        <span class="published">
+            <i class="fa fa-calendar"></i><time datetime="2016-10-05T19:12:00+02:00"> mer. 05 octobre 2016</time>
+        </span>
+    </span>
+
+
+
+
+
+<span class="label label-default">Tags</span>
+
+
+	<a href="/tag/rust.html">rust
+                <span class="badge">3</span></a>
+        /
+	<a href="/tag/gettext.html">gettext
+                <span class="badge">1</span></a>
+        /
+	<a href="/tag/cli.html">cli
+                <span class="badge">1</span></a>
+        /
+	<a href="/tag/postgresql.html">postgresql
+                <span class="badge">2</span></a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <h2>The QuiZz : Partie 1</h2>
+<p>Après mon apprentissage de Rust (doc, des tutos etc.), j'ai décidé de m'atteler à un projet un peu plus abouti.</p>
+<p>Comme toujours, je pars du principe qu'il vaut mieux se lancer sur des projets minimalistes et allez au bout plutôt que de partir dans du gargantuesque et bacler.</p>
+<p><strong>The QuiZz</strong> c'est donc un logiciel créé dans l'optique d'apprendre <strong>Rust</strong> et ses librairies, le tout en plusieurs étapes :
+<a href="https://github.com/mothsART/the_quizz">https://github.com/mothsART/the_quizz</a></p>
+<h2>L'étape 1 : le minimum syndical mais quelques bases tout de même</h2>
+<h3>Utilisation de Rustbox</h3>
+<p><strong><a href="https://github.com/gchp/rustbox">RustBox</a></strong> est une implémentation de <strong>Termbox</strong> en Rust.</p>
+<p>En somme, ça permet de faire des appli en <strong>cli</strong> à la manière de <strong>NCurses</strong> mais via une API la plus simple possible.</p>
+<h3>The QuiZz en français</h3>
+<p>J'ai toujours préféré réfléchir à l'<strong>i18n</strong> dès la conception.
+Pour celà, <strong>gettext</strong> reste l'indispensable.</p>
+<p>La lib Rust qui l'implémente est vraiment très spartiate mais fait son job.
+Néanmoins, il m'a fallu utiliser <strong><a href="http://babel.pocoo.org/en/latest">Babel</a></strong> pour compiler mon <strong>.po</strong>.</p>
+<h3>Contenu dans PostGreSQL</h3>
+<p>En terme de base de donnée SQL, <strong>PostGreSQL</strong> est, pour ma part, ce qui se fait de mieux donc autant commmencer par là.</p>
+<p>Même constat : le wrapper est minimaliste mais suffisant.</p>
+<h2>Le concept</h2>
+<p>On abonde le soft de questions/réponses et l'utilisateur final utilise une IHM lui permettant d'obtenir des questions (au hasard pour l'instant) et d'y répondre.</p>
+<p>Pour simpler au maximum, <strong>The QuiZz</strong> ne permet que de poser des questions fermés : <kbd>Oui</kbd> ou <kbd>Non</kbd>.</p>
+<p>C'est très basique mais par conséquent très simple à appréhender.</p>
+<p>Enfin, le logiciel répond par <strong>✔</strong> ou <strong>✘</strong>.</p>
+<h2>Populariser sa base</h2>
+<pre class="highlight"><code class="language-sql">create TABLE questions (
+id SERIAL PRIMARY KEY,
+entitled VARCHAR NOT NULL,
+explanation VARCHAR NULL,
+source VARCHAR NULL,
+response BOOLEAN NOT NULL
+);
+
+insert into questions (entitled, response) values ('Rust est-il un langage interprété ?', false);
+insert into questions (entitled, response) values ('Cargo est-il le gestionnaire de paquets de Rust ?', true);</code></pre>
+
+
+<h2>IHM</h2>
+<ul>
+<li>Pour lancer le soft, on fait : <strong>cargo run</strong></li>
+<li>Pour en sortir, on appuie sur la touche <strong>q</strong></li>
+<li>Pour sélectionner une réponse, on peut s'aider des flêche gauche et droite</li>
+<li>Pour valider une sélection, on appuie sur entrée
+ Sinon, on peut utiliser les raccourcis clavier <kbd>o</kbd> pour <strong>Oui</strong> (Attention, en anglais, on utilise <kbd>y</kbd>) et <kbd>n</kbd> pour <strong>Non</strong>.</li>
+</ul>
+<h2>Evolution pour l'étape n° 2</h2>
+<p>Pour l'étape 2, je ne toucherais strictement à rien de l'existant.</p>
+<p>Mon but est de reproduire le comportement du soft cette fois ci sous la forme d'une appli web via <strong><a href="http://ironframework.io">Iron</a></strong> et d'utiliser <strong><a href="http://riotjs.com/fr">RiotJS</a></strong> côté client.</p>
+<h2>Vers l'infini et au delà</h2>
+<p>Dans le désordre, voici les évolutions possibles :</p>
+<ul>
+<li>abstraction pour utiliser d'autres bases de données SQL et NoSQL (<strong>Redis</strong> sans doute en priorité !)</li>
+<li>une IHM de type Dashboard : édition des questions, statistiques etc.</li>
+<li>une appli Android</li>
+<li>un choix de réponses possibles &gt; 2</li>
+<li>des réponses ouvertes</li>
+<li></li>
+<li>pfuu, j'avais dit que c'était pas un projet sérieux</li>
+</ul>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-2" id="sidebar">
+            <aside>
+
+<section class="well well-sm">
+    <ul class="list-group list-group-flush">
+            <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+              <ul class="list-group" id="social">
+                <li class="list-group-item"><a href="https://github.com/mothsART"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+                <li class="list-group-item"><a href="https://www.linkedin.com/in/jérémie-ferry-0268a789"><i class="fa fa-linkedin-square fa-lg"></i> linkedin</a></li>
+              </ul>
+            </li>
+
+
+
+            <li class="list-group-item"><a href="/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+                <ul class="list-group " id="tags">
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/linux.html">
+                            linux
+                                <span class="badge">5</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/javascript.html">
+                            javascript
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/c.html">
+                            C
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/rust.html">
+                            rust
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/git.html">
+                            git
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/frontend.html">
+                            frontend
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/css.html">
+                            css
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/postgresql.html">
+                            postgresql
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/zsh.html">
+                            zsh
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/python.html">
+                            python
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/js.html">
+                            js
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/web.html">
+                            web
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/3d.html">
+                            3D
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/hg.html">
+                            hg
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/sql.html">
+                            sql
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/pelican.html">
+                            pelican
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/bug.html">
+                            bug
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/javascript-frontend-stockage-sql.html">
+                            javascript frontend stockage sql
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/tmux.html">
+                            tmux
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/html.html">
+                            html
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/mercurial.html">
+                            mercurial
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/vi.html">
+                            vi
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/cli.html">
+                            cli
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/gettext.html">
+                            gettext
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/postgres.html">
+                            postgres
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/imprimante.html">
+                            imprimante
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/java.html">
+                            Java
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/sh.html">
+                            sh
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/tmuxp.html">
+                            tmuxp
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/sublimetext.html">
+                            sublimetext
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+
+    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+      <ul class="list-group" id="links">
+        <li class="list-group-item">
+            <a href="http://getpelican.com/" target="_blank">
+                Pelican
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://python.org/" target="_blank">
+                Python.org
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://jinja.pocoo.org/" target="_blank">
+                Jinja2
+            </a>
+        </li>
+      </ul>
+    </li>
+    </ul>
+</section>
+            </aside>
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <div class="row">
+         <div class="col-xs-10">
+            <div>
+                &copy; 2016 Jérémie Ferry
+                &middot; Réalisé à l'aide de  <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+                <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+                <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>            </div>
+         </div>
+         <div class="col-xs-2">
+            <p class="pull-right">
+                <a href="#"><span>
+                  Remonter
+                </span></a>
+            </p>
+        </div>
+      </div>
+   </div>
+</footer>
+<script src="/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
+
+
+<script src="/theme/js/theme_css.js"></script>
+
+<script src="/ace-build/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script><style>td.linenos {
+    display: none;
+}
+
+pre {
+    box-sizing: content-box;
+    padding: 0;
+    border-radius: 0;
+}
+
+.ace_gutter-cell {
+    cursor: pointer;
+}
+
+.ace_layer {
+    height: 100% !important;
+}
+
+.ace-chrome .ace_marker-layer .ace_selection {
+    border-radius: 0;
+}
+
+span.o {
+    display: block;
+}</style><script>var ACE_EDITOR_SCROLL_TOP_MARGIN = 150;var ACE_EDITOR_THEME = 'chrome';var ACE_EDITOR_MAXLINES = 200;var ACE_EDITOR_READONLY = true;var ACE_EDITOR_AUTOSCROLL = true;var ACE_EDITOR_SHOW_INVISIBLE = true;var Range = ace.require("ace/range").Range;
+
+var editor_array = {};
+
+var correlationDic = {
+    'bash': 'sh'
+}
+
+// inspiration : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt#A_stricter_parse_function
+filterInt = function (value) {
+  if(/^(\-|\+)?([0-9]+|Infinity)$/.test(value))
+    return Number(value);
+  return NaN;
+}
+
+function linesInAnchor(anchor) {
+  anchorObject = {};
+  anchorObject.first = 0;
+  anchorObject.last = 0;
+  anchorObject.anchor = "";
+  var firstLineIndex = anchor.indexOf("-L");
+  var firstResult = anchor.substring(
+    firstLineIndex + 2
+  );
+  if(filterInt(firstResult)) {
+    anchorObject.first = filterInt(firstResult) - 1;
+    anchorObject.last = anchorObject.first;
+    anchorObject.anchor = anchor.substring(0, firstLineIndex + 2) + firstResult;
+    return anchorObject;
+  }
+  var secondLineIndex = firstResult.indexOf("-L");
+
+  if (!filterInt(firstResult.substring(0, secondLineIndex))) {
+    return anchorObject;
+  }
+  anchorObject.anchor = anchor.substring(0, firstLineIndex + 2) + firstResult.substring(0, secondLineIndex);
+
+  anchorObject.first = filterInt(firstResult.substring(0, secondLineIndex)) - 1;
+  var secondResult = firstResult.substring(
+    secondLineIndex + 2
+  );
+  if (!filterInt(secondResult)) {
+    anchorObject.last = anchorObject.first;
+    return anchorObject;
+  }
+  anchorObject.last = filterInt(secondResult) - 1;
+  return anchorObject;
+}
+
+var selectionCallback = function (event, editor) {
+    var editor_id = $(editor.container).attr('id');
+    var range = editor.selection.getRange();
+    location.hash = editor_id + '-L' + parseInt(range.start.row + 1);
+    if ($(editor.container).data().hasOwnProperty("id")) {
+        event.preventDefault();
+    }
+    else if (range.start.row != range.end.row) {
+        location.hash += '-L' + parseInt(range.end.row + 1);
+    }
+    $(editor.container).removeData();
+};
+
+$(function() {
+    var $pre_filter = $('pre.highlight');
+    var pre_len = $pre_filter.length;
+    $pre_filter.each(function(item) {
+        var lang = $(this).find("code").attr('class').substring(9);
+        if (lang in correlationDic) {
+            lang = correlationDic[lang];
+        }
+        var one_render = true;
+        var nb_of_lines = $(this).text().search('\n');
+        // avoid the last carriage return
+        $(this).text($(this).text().substring(0, $(this).text().length));
+
+        // Give a unique id on all editor
+        var editor_id = 'editor' + parseInt(item + 1);
+        $(this).attr('id', editor_id);
+        var editor = ace.edit(editor_id);
+        editor_array[editor_id] = editor;
+        editor.setTheme("ace/theme/" + ACE_EDITOR_THEME);
+        editor.setShowInvisibles(ACE_EDITOR_SHOW_INVISIBLE);
+        editor.setOptions({
+            mode: "ace/mode/" + lang,
+            maxLines: ACE_EDITOR_MAXLINES,
+            readOnly: ACE_EDITOR_READONLY,
+            autoScrollEditorIntoView: ACE_EDITOR_AUTOSCROLL
+        });
+        editor.$blockScrolling = Infinity;
+        if (nb_of_lines === -1) {
+            editor.renderer.setShowGutter(false);
+        }
+
+        editor.renderer.on("afterRender", function(event) {
+            var anchor = linesInAnchor(location.hash);
+            var hash_editor = location.hash.substring(1, location.hash.indexOf("-"));
+            var line = $($(editor.container).find(".ace_gutter-cell")[parseInt(editor_id.substring(6))]);
+            if (hash_editor == editor_id && one_render) {
+                var offset = line.offset();
+                if (offset) {
+                    $(document).scrollTop(offset.top - ACE_EDITOR_SCROLL_TOP_MARGIN);
+                    editor.selection.setRange(new Range(
+                        anchor.first, 0, anchor.last,  Number.MAX_VALUE)
+                    );
+                    one_render = false;
+                }
+            }
+        });
+
+        editor.resize(true);
+        editor.selection.on("changeSelection", function(event) {
+            selectionCallback(event, editor);
+        });
+    });
+
+    $(".ace_gutter-cell").on("click", function(event) {
+        var editor_id = $(this).closest('pre.ace_editor').attr('id');
+        var editor = editor_array[editor_id];
+        var line = parseInt($(this).text()) - 1;
+        editor.selection.setRange(new Range(line, 0, line, Number.MAX_VALUE));
+        $(this).closest('.ace_editor').data({'id': parseInt($(this).text())});
+        selectionCallback(event, editor);
+    });
+});</script>
+
+
+</body>
+</html>
