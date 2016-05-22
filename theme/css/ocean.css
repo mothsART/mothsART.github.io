@@ -587,6 +587,7 @@ kbd {
     border: none;
     border-top: solid 5px white;
     border-bottom: solid 5px white;
+    padding-bottom: 2px;
 }
 
 .ace_gutter {
@@ -595,6 +596,7 @@ kbd {
 }
 
 .ace_scroller {
+    margin-left: 5px;
     margin-right: 5px;
     border: 1px solid #ccc;
 }

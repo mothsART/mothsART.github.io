@@ -49,7 +49,8 @@ $(function() {
             { title: "Cookies", rule: navigator.cookieEnabled },
             { title: "Plugin Flash", rule: hasFlashPlugin, precision: flashPluginPrecision },
             { title: "Plugin Java", rule: hasJavaPlugin, precision: javaPluginPrecision },
-            { title: "Css @keyframes", rule: Modernizr.atRule('@keyframes') }
+            { title: "Css @keyframes", rule: Modernizr.atRule('@keyframes') },
+            { title: "Websocket's support", rule: Modernizr.websockets }
         ];
 
         var nbOfTests = modernizrTests.length;

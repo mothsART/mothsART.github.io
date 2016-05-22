@@ -142,24 +142,95 @@ Le Labo Du Nerd            </a>
 
 
 	<a href="/tag/frontend.html">frontend
-                <span class="badge">2</span></a>
+                <span class="badge">3</span></a>
         /
 	<a href="/tag/css.html">css
-                <span class="badge">2</span></a>
+                <span class="badge">4</span></a>
         /
 	<a href="/tag/javascript.html">javascript
-                <span class="badge">4</span></a>
+                <span class="badge">9</span></a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <h2>Intro</h2>
+                <h2>Intro (Gros WIP Unstable!!!)</h2>
 <p>Ma stack côté frontend (en constante évolution).</p>
-<h2>Css</h2>
+<p>Comme tout <strong>bon</strong> développeur, je suis fainéant :
+faire et refaire des tâches ingrates (cqfd: automatisable) me répugne.
+De plus, j'aime avoir une certaine assurance sur le code produit. (surtout sur le javascript!)</p>
+<p>Pour la partie frontend, je me suis créé un socle de démarrage avec une compilation de tout ce qui est hype (presque tout) côté JS.</p>
+<p>mon dépôt : <a href="https://github.com/mothsART/frontend_workflow">https://github.com/mothsART/frontend_workflow</a></p>
+<p>Mon usage est de le cloner dans un projet mère et de supprimer le .git dès qu'il est suffisament mature.</p>
+<h2>Assurance qualité (QA)</h2>
 <ul>
-<li>CssLint</li>
+<li>Utilisation des linter : <strong>csslint</strong> et <strong>eslint</strong></li>
+</ul>
+<p>eslint est utilisé avec l'option <strong>fix</strong> qui permet de corriger automatiquement les soucis rencontrés.</p>
+<p>Csslint n'a malheureusement pas cette fonctionnalité.</p>
+<ul>
+<li><strong>csscomb</strong> : organise les instructions css</li>
+<li><strong>cssbeautify</strong> : arange le css pour qu'il soit lisible : espacements et les indentations parfaitement respectées.</li>
+</ul>
+<h2>Examples</h2>
+<p>Pour donner un réel périmètre fonctionnel de cette stack, je créé au fur à mesure des fichiers d'exemples css, javascript et tags riot.
+Le but est bien évidement de démmarrer un nouveau projet avec de la matière.</p>
+<p>Néanmoins, il est possible de partir, via une commande avec un projet vierge :</p>
+<pre class="highlight"><code class="language-sh">gulp clean</code></pre>
+
+
+<h2>Mise en prod</h2>
+<p>Une mise en prod de fichiers statiques a ses exigences.
+Il faut:</p>
+<ul>
+<li>concaténer les fichiers (une requête HTTP par ressource)</li>
+<li>les minifier</li>
+<li>vu qu'on utilise de la transpilation : générer des css.map/js.map</li>
+</ul>
+<p>L'usage des extrémistes de Nodejs va plus loin en incluant le css dans le javascript: Je ne suis pas fan donc vous ne trouverez rien de ce genre.</p>
+<h2>Frameworks et libs employés</h2>
+<ul>
+<li><a href="./npm.html">NPM</a></li>
+<li><a href="./nodejs.html">NodeJS</a></li>
+<li><a href="./gulp.html">Gulp</a></li>
+<li><a href="./babeljs.html">BabelJS</a></li>
+<li><a href="./riotjs.html">RiotJS</a></li>
+<li><a href="./postcss.html">PostCSS + CssNext</a></li>
+</ul>
+<h2>Sublime text</h2>
+<ul>
 <li>Css lisible : extension de Sublime text</li>
 </ul>
-<h2>Javascript</h2>
+<h2>Récapitulatif des commandes principales</h2>
+<ol>
+<li>Cloner le dépôt :</li>
+</ol>
+<p>Copier le projet</p>
+<pre class="highlight"><code class="language-sh">git clone https://github.com/mothsART/frontend_workflow.git
+cd frontend_workflow</code></pre>
+
+
+<ol>
+<li>Installer les dépendances</li>
+</ol>
+<p>on parcours le fichier package.json et on installe l'ensemble des dépendances</p>
+<pre class="highlight"><code class="language-sh">npm install</code></pre>
+
+
+<ol>
+<li>Commencer à travailler (ça fait un watch)</li>
+</ol>
+<p>On se met en mode debug :</p>
+<pre class="highlight"><code class="language-sh">npm start</code></pre>
+
+
+<ol>
+<li>Avant de commiter, on déclenche un process d'<strong>assurance qualité</strong></li>
+</ol>
+<p>Si l'on désire supprimer les fichiers d'exemples</p>
+<pre class="highlight"><code class="language-sh">gulp clean</code></pre>
+
+
+<p>Opération inverse (reafficher les exemples)</p>
+<pre class="highlight"><code class="language-sh">git checkout -- app/</code></pre>
             </div>
             <!-- /.entry-content -->
         </article>
@@ -183,14 +254,26 @@ Le Labo Du Nerd            </a>
             <li class="list-group-item"><a href="/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group " id="tags">
                     <li class="list-group-item tag-1">
+                        <a href="/tag/javascript.html">
+                            javascript
+                                <span class="badge">9</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
                         <a href="/tag/linux.html">
                             linux
                                 <span class="badge">5</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/javascript.html">
-                            javascript
+                        <a href="/tag/rust.html">
+                            rust
+                                <span class="badge">4</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/css.html">
+                            css
                                 <span class="badge">4</span>
                         </a>
                     </li>
@@ -201,38 +284,26 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/rust.html">
-                            rust
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="/tag/c.html">
                             C
                                 <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/frontend.html">
-                            frontend
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/python.html">
-                            python
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/css.html">
-                            css
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="/tag/postgresql.html">
                             postgresql
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/frontend.html">
+                            frontend
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/html.html">
+                            html
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -243,98 +314,44 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/pelican.html">
-                            pelican
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/hg.html">
-                            hg
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/sh.html">
-                            sh
-                                <span class="badge">1</span>
+                        <a href="/tag/python.html">
+                            python
+                                <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
                         <a href="/tag/js.html">
                             js
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/sql.html">
-                            sql
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/tmux.html">
-                            tmux
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/vi.html">
-                            vi
-                                <span class="badge">1</span>
+                                <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
                         <a href="/tag/cli.html">
                             cli
-                                <span class="badge">1</span>
+                                <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
                         <a href="/tag/gettext.html">
                             gettext
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/nodejs.html">
+                            nodejs
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/npm.html">
+                            npm
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/javascript-frontend-stockage-sql.html">
-                            javascript frontend stockage sql
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/bug.html">
-                            bug
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/postgres.html">
-                            postgres
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/html.html">
-                            html
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/3d.html">
-                            3D
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/java.html">
-                            Java
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/mercurial.html">
-                            mercurial
+                        <a href="/tag/web.html">
+                            web
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -345,20 +362,74 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/tmuxp.html">
-                            tmuxp
+                        <a href="/tag/postgres.html">
+                            postgres
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/sublimetext.html">
-                            sublimetext
+                        <a href="/tag/tmux.html">
+                            tmux
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/web.html">
-                            web
+                        <a href="/tag/3d.html">
+                            3D
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/babel.html">
+                            babel
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/bug.html">
+                            bug
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/hg.html">
+                            hg
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/riotjs.html">
+                            riotjs
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/darcs.html">
+                            darcs
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/mercurial.html">
+                            mercurial
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/pelican.html">
+                            pelican
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/javascript-frontend-stockage-sql.html">
+                            javascript frontend stockage sql
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/java.html">
+                            Java
                                 <span class="badge">1</span>
                         </a>
                     </li>
