@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>GIT config - Le Labo Du Nerd</title>
+    <title>Canto - Le Labo Du Nerd</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -9,20 +9,19 @@
 
 
 
-<link rel="canonical" href="/mon-gitconfig.html">
+<link rel="canonical" href="/drafts/canto.html">
 
         <meta name="author" content="Jérémie Ferry" />
-        <meta name="keywords" content="git,linux" />
+        <meta name="keywords" content="rss" />
 
         <meta property="og:site_name" content="Le Labo Du Nerd" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="GIT config"/>
-        <meta property="og:url" content="/mon-gitconfig.html"/>
+        <meta property="og:title" content="Canto"/>
+        <meta property="og:url" content="/drafts/canto.html"/>
         <meta property="og:description" content=""/>
-        <meta property="article:published_time" content="2016-02-14" />
+        <meta property="article:published_time" content="2016-06-04" />
             <meta property="article:section" content="Aide-memoire" />
-            <meta property="article:tag" content="git" />
-            <meta property="article:tag" content="linux" />
+            <meta property="article:tag" content="rss" />
             <meta property="article:author" content="Jérémie Ferry" />
 
 
@@ -119,7 +118,7 @@ Le Labo Du Nerd            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    GIT config
+                    Canto
                 </h1>
             </header>
             <div class="entry-content">
@@ -129,7 +128,7 @@ Le Labo Du Nerd            </a>
     <span>
         <span class="label label-default">Date</span>
         <span class="published">
-            <i class="fa fa-calendar"></i><time datetime="2016-02-14T00:00:00+01:00"> dim. 14 février 2016</time>
+            <i class="fa fa-calendar"></i><time datetime="2016-06-04T19:12:00+02:00"> sam. 04 juin 2016</time>
         </span>
     </span>
 
@@ -140,43 +139,12 @@ Le Labo Du Nerd            </a>
 <span class="label label-default">Tags</span>
 
 
-	<a href="/tag/git.html">git
-                <span class="badge">3</span></a>
-        /
-	<a href="/tag/linux.html">linux
-                <span class="badge">6</span></a>
+	<a href="/tag/rss.html">rss
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <h2>Intro</h2>
-<p>L'utilisateur avancé de GIT à forcément un gitconfig "couteau suisse" sous la main.
-Voici une partie du mien avec les commentaires adéquats.</p>
-<h2>config</h2>
-<pre class="highlight"><code>    !sh
-    [alias]
-        ci = commit
-        co = checkout
-        st = status
-        t = tag
-        c = commit
-        ch = checkout
-
-        br = branch
-
-        push = &quot;push --recurse-submodules=on-demand&quot;
-
-        prev = checkout HEAD^1
-
-        next = &quot;!sh -c 'git log --reverse --pretty=%H master | awk \&quot;/$(git rev-parse HEAD)/{getline;print}\&quot; | xargs git checkout'&quot;
-
-        last = &quot;!sh -c 'git checkout $(git describe --tags $(git rev-list --tags --max-count=1))'&quot;;</code></pre>
-
-
-<h2>Explication</h2>
-<h3>les alias</h3>
-<p>prev: permet d'aller au commit précédent (attention: vous serez en <strong>detached head</strong>)</p>
-<p>next: permet d'aller au commit suivant (attention: vous serez en <strong>detached head</strong>)</p>
-<p>last: permet de se déplacer à la dernière version, soit au tag ayant la valeur la plus grande. (attention: vous serez en <strong>detached head</strong>)</p>
+                <p><kbd>r</kbd> : définir tout un flux comme lu.
+<kbd>g</kbd> : lire dans le navigateur l'article.</p>
             </div>
             <!-- /.entry-content -->
         </article>

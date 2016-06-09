@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>GIT config - Le Labo Du Nerd</title>
+    <title>Que penser du langage Swift ? - Le Labo Du Nerd</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -9,20 +9,21 @@
 
 
 
-<link rel="canonical" href="/mon-gitconfig.html">
+<link rel="canonical" href="/que-penser-de-swift.html">
 
         <meta name="author" content="Jérémie Ferry" />
-        <meta name="keywords" content="git,linux" />
+        <meta name="keywords" content="rust,swift,apple" />
 
         <meta property="og:site_name" content="Le Labo Du Nerd" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="GIT config"/>
-        <meta property="og:url" content="/mon-gitconfig.html"/>
+        <meta property="og:title" content="Que penser du langage Swift ?"/>
+        <meta property="og:url" content="/que-penser-de-swift.html"/>
         <meta property="og:description" content=""/>
-        <meta property="article:published_time" content="2016-02-14" />
-            <meta property="article:section" content="Aide-memoire" />
-            <meta property="article:tag" content="git" />
-            <meta property="article:tag" content="linux" />
+        <meta property="article:published_time" content="2016-05-28" />
+            <meta property="article:section" content="reflexion" />
+            <meta property="article:tag" content="rust" />
+            <meta property="article:tag" content="swift" />
+            <meta property="article:tag" content="apple" />
             <meta property="article:author" content="Jérémie Ferry" />
 
 
@@ -55,7 +56,7 @@ Le Labo Du Nerd            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                        <li class="active">
+                        <li >
                             <a href="/category/aide-memoire.html">Aide-memoire</a>
                         </li>
                         <li >
@@ -64,7 +65,7 @@ Le Labo Du Nerd            </a>
                         <li >
                             <a href="/category/misc.html">Misc</a>
                         </li>
-                        <li >
+                        <li class="active">
                             <a href="/category/reflexion.html">Reflexion</a>
                         </li>
                         <li >
@@ -119,7 +120,7 @@ Le Labo Du Nerd            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    GIT config
+                    Que penser du langage Swift ?
                 </h1>
             </header>
             <div class="entry-content">
@@ -129,7 +130,7 @@ Le Labo Du Nerd            </a>
     <span>
         <span class="label label-default">Date</span>
         <span class="published">
-            <i class="fa fa-calendar"></i><time datetime="2016-02-14T00:00:00+01:00"> dim. 14 février 2016</time>
+            <i class="fa fa-calendar"></i><time datetime="2016-05-28T14:30:00+02:00"> sam. 28 mai 2016</time>
         </span>
     </span>
 
@@ -140,43 +141,40 @@ Le Labo Du Nerd            </a>
 <span class="label label-default">Tags</span>
 
 
-	<a href="/tag/git.html">git
-                <span class="badge">3</span></a>
+	<a href="/tag/rust.html">rust
+                <span class="badge">5</span></a>
         /
-	<a href="/tag/linux.html">linux
-                <span class="badge">6</span></a>
+	<a href="/tag/swift.html">swift
+                <span class="badge">1</span></a>
+        /
+	<a href="/tag/apple.html">apple
+                <span class="badge">2</span></a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
                 <h2>Intro</h2>
-<p>L'utilisateur avancé de GIT à forcément un gitconfig "couteau suisse" sous la main.
-Voici une partie du mien avec les commentaires adéquats.</p>
-<h2>config</h2>
-<pre class="highlight"><code>    !sh
-    [alias]
-        ci = commit
-        co = checkout
-        st = status
-        t = tag
-        c = commit
-        ch = checkout
-
-        br = branch
-
-        push = &quot;push --recurse-submodules=on-demand&quot;
-
-        prev = checkout HEAD^1
-
-        next = &quot;!sh -c 'git log --reverse --pretty=%H master | awk \&quot;/$(git rev-parse HEAD)/{getline;print}\&quot; | xargs git checkout'&quot;
-
-        last = &quot;!sh -c 'git checkout $(git describe --tags $(git rev-list --tags --max-count=1))'&quot;;</code></pre>
-
-
-<h2>Explication</h2>
-<h3>les alias</h3>
-<p>prev: permet d'aller au commit précédent (attention: vous serez en <strong>detached head</strong>)</p>
-<p>next: permet d'aller au commit suivant (attention: vous serez en <strong>detached head</strong>)</p>
-<p>last: permet de se déplacer à la dernière version, soit au tag ayant la valeur la plus grande. (attention: vous serez en <strong>detached head</strong>)</p>
+<p>Swift est le nouveau bébé d'Apple pour créer des applications.
+Il va partager un bon moment un environnement hétérogène avec Objective C...</p>
+<p>Voici mon analyse sur ce langage.</p>
+<h2>Pas mal de bons points</h2>
+<p>Objective C était à mon sens un langage vraiment brouillon... une réponse rapide à des problèmes complexes.</p>
+<p>On sens que dans Swift, il y a une réflexion beaucoup plus élaboré.</p>
+<p>Les arguments positifs :</p>
+<ul>
+<li>switch exhaustif : un peu un équivalent (pauvre) du <strong>Match</strong> de Rust</li>
+<li>Pas de <strong>bytecode</strong></li>
+<li>Pas de <strong>garbage collector</strong></li>
+<li>utilisation de <strong>LLVM</strong></li>
+<li>inférence de type</li>
+<li>full unicode (même si je suis contre la possibilité de nommer des variables en UTF-8 en dehors d'un tuto ou d'un prototype)</li>
+</ul>
+<h2>Je déteste toujours Apple</h2>
+<p>cf : <a href="dislike-apple.html">J'aime pas Apple</a></p>
+<p>Swift est bien meilleur que Java pour du mobile, c'est indéniable... j'espère que Google envisage sérieusement un remplaçant rapidement : Rust please, n'inventez pas un nième langage!!</p>
+<h2>Pourquoi créer un nouveau langage ?!</h2>
+<p>Rien dans Swift n'est réellement neuf.
+Pourquoi ne pas s'être greffé sur des langages déjà existants ?!
+Ca fragmente encore plus le marché du travail... c'est juste désespérant.</p>
             </div>
             <!-- /.entry-content -->
         </article>

@@ -146,7 +146,7 @@ Le Labo Du Nerd            </a>
 
 
 	<a href="/tag/rust.html">rust
-                <span class="badge">4</span></a>
+                <span class="badge">5</span></a>
         /
 	<a href="/tag/python.html">python
                 <span class="badge">2</span></a>
@@ -177,12 +177,12 @@ Qu'est ce qui peut motiver le choix d'un nouveau langage alors qu'il en existe d
 C'est un language incroyable pour du script et du prototypage.</p>
 <p><strong>C#</strong> est aussi un bon cru, même si, il faut l'avouer, c'est souvent l'IDE <strong>Visual Studio</strong> qui lui donne autant de pouvoir.</p>
 <p>Une raison, non dissimulé, vient du fait que j'exprime le besoin de sortir de mon périmètre de confort : d'apprendre ou ré-apprendre.
-Pour celà, j'ai testé pas mal de langages : Ocaml, Haskell, Go langage.
+Pour celà, j'ai testé pas mal de langages : <strong>Ocaml</strong>, <strong>Haskell</strong>, <strong>Go langage</strong>.
 Ni l'un ni l'autre n'a trouvé grâce à mes yeux (chacun pour des raisons différentes).</p>
 <h2>Faire du bas niveau</h2>
 <p>Il y a 2 types de dev: ceux qui font du bas niveau et les autres.
 Quant on fait du bas niveau, on s'oblige a comprendre comment fonctionne réellement un ordinateur.</p>
-<p>La première catégorie est forcément mieux armé pour faire face à des problématiques complexes : de performance, latence, empreinte mémoire etc.</p>
+<p>La première catégorie est forcément mieux armé pour faire face à des problématiques complexes : de performance, latence, empreinte mémoire, sécurité etc.</p>
 <p>Bref, les problématiques rencontrés par tous les développeurs travaillant sur des projets sérieux.</p>
 <p><strong>Python</strong>, <strong>Javascript</strong> et <strong>C#</strong> (dans une moindre mesure) ne sont tout simplement pas fait pour ce genre de chose.
 <em> D'une part, la gestion de la mémoire se fait via un ramasse-miettes (garbage collector).
@@ -196,9 +196,6 @@ Pour du desktop, ça peut paraitre anodin (quoi que) mais pour du serveur ou de 
 <h2>Oui, mais C fait du bas niveau</h2>
 <p>Le C (ou le C++) c'est idéal pour écrire du code bas niveau : pourquoi le remplacer par du Rust ?
 Parce que c'est pas safe du tout, que ça n'utilise qu'un paradigme et que c'est pas adapté à du dev concurrent.</p>
-<h2>Oui, mais C fait du bas niveau</h2>
-<p>Le <strong>C</strong> (ou le <strong>C++</strong>) c'est idéal pour écrire du code bas niveau : pourquoi le remplacer par du <strong>Rust</strong> ?
-Parce que c'est pas safe du tout, que ça n'utilise qu'un paradigme et que c'est pas adapté à du dev concurrent.</p>
 <h2>Maitriser de bout en bout</h2>
 <p>La lubie du développeur est de maitriser son environnement au maximum.
 Pour celà, le choix de son hardware et de son OS semble déjà une bonne base.
@@ -206,7 +203,7 @@ Open source et libre de préférence.</p>
 <p>Ensuite, des problématiques plus pointues viennent se rajouter pour le développeur : 
 En l'occurence, toute la stack employé pour aboutir à un résultat : soit les éditeurs et IDE choisit, les logiciels de versions, les hébergements etc.</p>
 <p><strong>Rust</strong> s'inscrit, pour moi,  dans cette quête.
-D'une part, le language n'est pas initié par une grosse firme (Redmond, Google et cie) mais par un organisme à but non lucratif (Mozilla foundation).</p>
+D'une part, le language n'est pas initié par une grosse firme (Redmond, Google et cie) mais par un organisme à but non lucratif (<strong>Mozilla foundation</strong>).</p>
 <h2>Me lancer dans des nouveaux projets</h2>
 <h2>Inconvénients</h2>
 <ul>
@@ -234,7 +231,7 @@ Réduire leur nombre, c'est assuré ses arrières et identifié la variable prob
 <p>détection des <strong>dead code</strong> dès la compilation</p>
 </li>
 <li>
-<p>spécification explicite de la durée de vie d'une variable.</p>
+<p>spécification explicite de la durée de vie d'une variable : ça fait parti des trucs les plus dur à assimilé mais après le mur passé, on produit vraiment du soft de qualité : la mémoire est cloisonné et par conséquent n'est pas gaché.</p>
 </li>
 <li>
 <p>Les objets <strong>invalides</strong> (vide) ne sont pas acceptés (ou difficilement contournables) : http://blog.guillaume-gomez.fr/Rust/1/10
@@ -244,9 +241,7 @@ Franchement, vu le nombre de bugs rencontrés en C# de ce genre (et la rigueur n
 <h2>Conclusion</h2>
 <p>Rust m'a supris : j'ai mis du temps avant d'avoir des bugs d'exécution vraiment pénalisant.
 En définitive, rust vous invite à réduire la partie <strong>dynamique</strong> de votre programme et par conséquent gère un grand nombre des soucis directement à la compilation.</p>
-<p>Peut importe le language utilisé, on ne peut garantir un programme comme stable!
-La notion de bug étant elle-même confuse : c'est un comportement non désiré mais le simple fait qu'un comportemnent non documenté soit 
-Néanmoins, on peut limiter le champ </p>
+<p>Peut importe le language utilisé, on ne peut garantir un programme comme stable! (cf: la notion de bug)</p>
 <p>zero-cost abstractions
 move semantics
 guaranteed memory safety
@@ -287,13 +282,13 @@ efficient C bindings</p>
                     <li class="list-group-item tag-1">
                         <a href="/tag/linux.html">
                             linux
-                                <span class="badge">5</span>
+                                <span class="badge">6</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
                         <a href="/tag/rust.html">
                             rust
-                                <span class="badge">4</span>
+                                <span class="badge">5</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -303,8 +298,8 @@ efficient C bindings</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/git.html">
-                            git
+                        <a href="/tag/frontend.html">
+                            frontend
                                 <span class="badge">3</span>
                         </a>
                     </li>
@@ -321,20 +316,26 @@ efficient C bindings</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/frontend.html">
-                            frontend
+                        <a href="/tag/git.html">
+                            git
                                 <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/html.html">
-                            html
+                        <a href="/tag/nodejs.html">
+                            nodejs
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/zsh.html">
-                            zsh
+                        <a href="/tag/gettext.html">
+                            gettext
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/apple.html">
+                            apple
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -351,92 +352,32 @@ efficient C bindings</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
+                        <a href="/tag/html.html">
+                            html
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
                         <a href="/tag/cli.html">
                             cli
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/gettext.html">
-                            gettext
+                        <a href="/tag/sh.html">
+                            sh
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/nodejs.html">
-                            nodejs
+                        <a href="/tag/zsh.html">
+                            zsh
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/npm.html">
-                            npm
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/web.html">
-                            web
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/imprimante.html">
-                            imprimante
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/postgres.html">
-                            postgres
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/tmux.html">
-                            tmux
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/3d.html">
-                            3D
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/babel.html">
-                            babel
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/bug.html">
-                            bug
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/hg.html">
-                            hg
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/riotjs.html">
-                            riotjs
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/darcs.html">
-                            darcs
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/mercurial.html">
-                            mercurial
+                        <a href="/tag/sql.html">
+                            sql
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -447,14 +388,68 @@ efficient C bindings</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/javascript-frontend-stockage-sql.html">
-                            javascript frontend stockage sql
+                        <a href="/tag/hg.html">
+                            hg
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/npm.html">
+                            npm
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/imprimante.html">
+                            imprimante
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/babeljs.html">
+                            babeljs
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
                         <a href="/tag/java.html">
                             Java
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/mercurial.html">
+                            mercurial
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/tablette.html">
+                            tablette
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/tmuxp.html">
+                            tmuxp
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/swift.html">
+                            swift
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/darcs.html">
+                            darcs
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/bug.html">
+                            bug
                                 <span class="badge">1</span>
                         </a>
                     </li>

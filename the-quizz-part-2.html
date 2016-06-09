@@ -143,7 +143,7 @@ Le Labo Du Nerd            </a>
 
 
 	<a href="/tag/rust.html">rust
-                <span class="badge">4</span></a>
+                <span class="badge">5</span></a>
         /
 	<a href="/tag/gettext.html">gettext
                 <span class="badge">2</span></a>
@@ -160,50 +160,74 @@ Le Labo Du Nerd            </a>
 <p>Comme promis, la partie 2 ne va s'atteler qu'à fournir le même cahier des charges que le soft de la partie 1 mais pour une appli web.</p>
 <h2>Pré-requis</h2>
 <p>Pour suivre, il vous faudra connaitre les grandes lignes de fonctionnement du dev web.</p>
-<p>On va donc utiliser le mini-framework <strong>iron</strong> pour celà et quelques plugins utiles (rajouté dans le fichier cargo.toml) : </p>
+<p>On va donc utiliser le mini-framework <a href="http://ironframework.io"><strong>Iron</strong></a> pour celà et quelques plugins utiles (rajouté dans le fichier <strong>cargo.toml</strong>).</p>
+<p>Pour donner un peu de charme au projet, je lui cole le framework <strong>Bootstrap</strong> avec le thème libre <a href="http://blackrockdigital.github.io/startbootstrap-sb-admin-2/pages/index.html"><strong>SB-Admin-2</strong></a></p>
+<p>Ok, c'est vraiment too much pour une partie 2 mais ça mais les bases pour les étapes suivantes.</p>
 <h2>côté serveur (Rust)</h2>
+<h3>Les plugins</h3>
 <ul>
-<li>staticfile : permet d'inclure des fichiers statiques (javascript, css, polices, images etc.)</li>
+<li>staticfile : permet d'inclure des fichiers statiques (javascript, css, html, polices, images etc.)</li>
 <li>router : préciser les différentes urls de l'applicatif (en GET et POST)</li>
 <li>mount : outil glue permettant de délivrer des routes et des données statiques au sein du même serveur.</li>
 </ul>
+<h3>Templates</h3>
+<p>Je suis encore un utilisateur de <strong>Django</strong> et <strong>Flask</strong> et des langages de templates tel que <strong>Jinja</strong>.</p>
+<p>J'ai découvert que <strong>Jinja</strong> était en parti supporté via <a href="https://github.com/Keats/tera"><strong>Tera</strong></a>
+Vu que j'ai carte libre, je parts donc sur cette techno.</p>
 <h2>côté client</h2>
 <p>Pour ceux qui ne l'on pas encore compris, j'ai un vrai mépris pour les technos autours de Javascript : c'est unsafe à souhait et à tous les désavantages d'un langage interpreté.</p>
-<p>Néanmoins va essayer d'en tirer le meilleur en utilisant RiotJS (raison <a href="">ici</a>) et Babel.js (raison <a href="">ici</a>)</p>
+<p>Néanmoins, je vais essayer d'en tirer le meilleur en utilisant <a href="stack-frontend.html"><strong>ma nouvelle stack frontend</strong></a></p>
 <h3>Si vous utilisez une mauvaise version de NodeJS</h3>
 <ul>
 <li>
-<p>1 Clear NPM's cache:</p>
+<p>1 Vider le cache de NPM</p>
 <pre class="highlight"><code class="language-sh">sudo npm cache clean -f</code></pre>
 
 
 </li>
 <li>
-<p>2 Install a little helper called 'n'</p>
+<p>2 Installer un mini soft appelé tout simplement <strong>n</strong> qui gère exclusivement l'installation de NPM</p>
 <pre class="highlight"><code class="language-sh">sudo npm install -g n</code></pre>
 
 
 </li>
 <li>
-<p>3 Install latest stable NodeJS version</p>
+<p>3 Installer la dernière version stable de NPM</p>
 <pre class="highlight"><code class="language-sh">sudo n stable</code></pre>
 
 
 </li>
 </ul>
-<h3>installation des dépendances</h3>
-<pre class="highlight"><code class="language-sh">sudo npm install riot -g
-sudo riot --type babel source.tag</code></pre>
+<h2>Bounty</h2>
+<p>Si vous utilisez <strong><a href="aide-memoire-tmux.html">Tmux et Tmuxp</a></strong>, voici une petite config qui devrait vous simplifier la vie :</p>
+<pre class="highlight"><code class="language-yaml">session_name: the quizz
+windows:
+    - window_name: watch (web)
+      layout:  main-vertical
+      shell_command_before:
+        - cd ~/misc/rust/the_quizz
+      panes:
+        - shell_command:
+          - cd static
+          - echo 'gulp riot'
+        - cargo run --bin compile_templates
+        - cargo run --bin the_quizz_web
+    - window_name: cli
+      layout:  main-vertical
+      shell_command_before:
+        - cd ~/misc/rust/the_quizz
+      panes:
+        - shell_command:
+          - cargo run --bin the_quizz
+        - git status</code></pre>
 
 
-<h3>installation de webpack</h3>
-<pre class="highlight"><code class="language-sh">sudo npm install webpack -g</code></pre>
-
-
-<h2>installation de postcss</h2>
-<p>sudo npm install postcss-loader --save-dev</p>
-<p>sudo npm install precss --save-dev
-sudo npm install autoprefixer --save-dev</p>
+<h2>Conclusion</h2>
+<p>Y'a vraiment beaucoup de dépendances abordés dans cette étape.
+J'espère n'avoir perdu personne en route.
+Les évolutions devraient ralentir de ce côté...</p>
+<h2>Evolution pour l'étape n° 3</h2>
+<p>Je viens de découvrir un ORM (viable) pour Rust : <a href="http://diesel.rs">diesel</a> ça serait vraiment bête de s'en priver!</p>
             </div>
             <!-- /.entry-content -->
         </article>
@@ -235,13 +259,13 @@ sudo npm install autoprefixer --save-dev</p>
                     <li class="list-group-item tag-1">
                         <a href="/tag/linux.html">
                             linux
-                                <span class="badge">5</span>
+                                <span class="badge">6</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
                         <a href="/tag/rust.html">
                             rust
-                                <span class="badge">4</span>
+                                <span class="badge">5</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -251,8 +275,8 @@ sudo npm install autoprefixer --save-dev</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/git.html">
-                            git
+                        <a href="/tag/frontend.html">
+                            frontend
                                 <span class="badge">3</span>
                         </a>
                     </li>
@@ -269,20 +293,26 @@ sudo npm install autoprefixer --save-dev</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/frontend.html">
-                            frontend
+                        <a href="/tag/git.html">
+                            git
                                 <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/html.html">
-                            html
+                        <a href="/tag/nodejs.html">
+                            nodejs
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/zsh.html">
-                            zsh
+                        <a href="/tag/gettext.html">
+                            gettext
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/apple.html">
+                            apple
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -299,92 +329,32 @@ sudo npm install autoprefixer --save-dev</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
+                        <a href="/tag/html.html">
+                            html
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
                         <a href="/tag/cli.html">
                             cli
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/gettext.html">
-                            gettext
+                        <a href="/tag/sh.html">
+                            sh
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/nodejs.html">
-                            nodejs
+                        <a href="/tag/zsh.html">
+                            zsh
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/npm.html">
-                            npm
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/web.html">
-                            web
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/imprimante.html">
-                            imprimante
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/postgres.html">
-                            postgres
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/tmux.html">
-                            tmux
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/3d.html">
-                            3D
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/babel.html">
-                            babel
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/bug.html">
-                            bug
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/hg.html">
-                            hg
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/riotjs.html">
-                            riotjs
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/darcs.html">
-                            darcs
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/mercurial.html">
-                            mercurial
+                        <a href="/tag/sql.html">
+                            sql
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -395,14 +365,68 @@ sudo npm install autoprefixer --save-dev</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/javascript-frontend-stockage-sql.html">
-                            javascript frontend stockage sql
+                        <a href="/tag/hg.html">
+                            hg
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/npm.html">
+                            npm
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/imprimante.html">
+                            imprimante
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/babeljs.html">
+                            babeljs
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
                         <a href="/tag/java.html">
                             Java
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/mercurial.html">
+                            mercurial
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/tablette.html">
+                            tablette
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/tmuxp.html">
+                            tmuxp
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/swift.html">
+                            swift
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/darcs.html">
+                            darcs
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/bug.html">
+                            bug
                                 <span class="badge">1</span>
                         </a>
                     </li>
