@@ -826,23 +826,35 @@ h1 strong:after {
     font-size: 18px;
 }
 
-h3 {
-    margin: 5px 10px 5px 30px;
+#content h3 {
+    background: white;
+    color: rgb(107, 105, 105);
+    margin: 0 0 0 30px;
+    padding: 5px;
     font-size: 17px;
 }
 
-h4 {
-    margin: 5px 10px 5px 30px;
+#content h4 {
+    background: white;
+    color: rgb(107, 105, 105);
+    margin: 0 0 0 30px;
+    padding: 5px;
     font-size: 16px;
 }
 
-h5 {
-    margin: 5px 10px 5px 30px;
+#content h5 {
+    background: white;
+    color: rgb(107, 105, 105);
+    margin: 0 0 0 30px;
+    padding: 5px;
     font-size: 15px;
 }
 
-h6 {
-    margin: 5px 10px 5px 30px;
+#content h6 {
+    background: white;
+    color: rgb(107, 105, 105);
+    margin: 0 0 0 30px;
+    padding: 5px;
     font-size: 14px;
 }
 

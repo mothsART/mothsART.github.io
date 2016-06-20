@@ -143,12 +143,12 @@ Le Labo Du Nerd            </a>
 
 
 	<a href="/tag/tmux.html">tmux
-        /
-	<a href="/tag/tmuxp.html">tmuxp
                 <span class="badge">1</span></a>
         /
+	<a href="/tag/tmuxp.html">tmuxp
+        /
 	<a href="/tag/python.html">python
-                <span class="badge">2</span></a>
+                <span class="badge">3</span></a>
         /
 	<a href="/tag/linux.html">linux
                 <span class="badge">6</span></a>
@@ -166,8 +166,14 @@ Le Labo Du Nerd            </a>
 </ul>
 <h2>Tmuxp</h2>
 <p>Cette lib python permet de configurer facilement des espaces de travail pour <strong>Tmux</strong>.</p>
+<h3>Configurer son .zshrc ou .bashrc</h3>
+<p>Ajouter ceci pour avoir l'autocompletion</p>
+<pre class="highlight"><code class="language-bash">eval &quot;$(_TMUXP_COMPLETE=source tmuxp)&quot;</code></pre>
+
+
+<h3>Tmuxp Load</h3>
 <p>Un simple :</p>
-<pre class="highlight"><code class="language-bash">tmuxp load</code></pre>
+<pre class="highlight"><code class="language-bash">cd ~/.tmuxp &amp;&amp; tmuxp load</code></pre>
 
 
 <p>va me proposer l'autocompletion et me donner ma liste de fichiers yaml d'espace de travail :</p>
@@ -212,11 +218,29 @@ windows:
 <p>et le résultat de son chargement :</p>
 <p><img alt="tmuxp load" src="static/images/tmuxp_labodunerd.png" /></p>
 <p>Si vous voulez concatener plusieurs espaces de travail en un, c'est possible.</p>
+<h3>Tmuxp freeze</h3>
+<p>Permet de faire un snapshot de votre tmux.</p>
+<h3>Tmuxp import</h3>
+<p>Il existe 2 gros concurrent à tmuxp : </p>
+<ul>
+<li>teamocil</li>
+<li>tmuxinator</li>
+</ul>
+<p>Les fichiers de configuration sont sensiblement différents mais les fonctionnalités restent les mêmes.
+Cet outil en cli permet de les convertir en un format lisible pour Tmuxp.</p>
+<h3>Tmuxp convert</h3>
+<p>On peut actuellement utiliser 3 types de fichiers de config différents :</p>
+<ul>
+<li>du python pure</li>
+<li>du yaml</li>
+<li>du json</li>
+</ul>
+<p>Si l'on veut passer de l'un à l'autre, cet outil en cli est juste indispensable</p>
 <h3>Remarques</h3>
 <p>Il manque sans doute le support de <strong>Toml</strong> : le meilleur format de conf de tout les temps!</p>
 <h2>Etendre vos super-pouvoirs avec Tmux</h2>
 <h3>une ligne de commande permettant de supprimer l'ensemble des sessions Tmux</h3>
-<p>Rajouter ceci dans votre zshrc ou votre bashrc :</p>
+<p>Rajouter ceci dans votre <strong>.zshrc</strong> ou votre <strong>.bashrc</strong> :</p>
 <pre class="highlight"><code class="language-bash">function tmux_kill_all_sessions() {
     tmux ls;
     local tmux_session=`tmux ls | grep --color=never : | cut -d. -f1 | awk '{print substr($1, 0, length($1))}' | awk -F: '{print $2}'`;
@@ -262,7 +286,7 @@ alias tmuxkillallsessions='tmux_kill_all_sessions'</code></pre>
                     <li class="list-group-item tag-1">
                         <a href="/tag/rust.html">
                             rust
-                                <span class="badge">5</span>
+                                <span class="badge">6</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -272,14 +296,20 @@ alias tmuxkillallsessions='tmux_kill_all_sessions'</code></pre>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/frontend.html">
-                            frontend
+                        <a href="/tag/git.html">
+                            git
                                 <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/c.html">
-                            C
+                        <a href="/tag/python.html">
+                            python
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/frontend.html">
+                            frontend
                                 <span class="badge">3</span>
                         </a>
                     </li>
@@ -290,14 +320,44 @@ alias tmuxkillallsessions='tmux_kill_all_sessions'</code></pre>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/git.html">
-                            git
+                        <a href="/tag/c.html">
+                            C
                                 <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/html.html">
+                            html
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/sh.html">
+                            sh
+                                <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
                         <a href="/tag/nodejs.html">
                             nodejs
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/cli.html">
+                            cli
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/js.html">
+                            js
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/zsh.html">
+                            zsh
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -314,39 +374,15 @@ alias tmuxkillallsessions='tmux_kill_all_sessions'</code></pre>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/python.html">
-                            python
-                                <span class="badge">2</span>
+                        <a href="/tag/tablette.html">
+                            tablette
+                                <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/js.html">
-                            js
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/html.html">
-                            html
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/cli.html">
-                            cli
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/sh.html">
-                            sh
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/zsh.html">
-                            zsh
-                                <span class="badge">2</span>
+                        <a href="/tag/tmux.html">
+                            tmux
+                                <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -356,32 +392,14 @@ alias tmuxkillallsessions='tmux_kill_all_sessions'</code></pre>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/pelican.html">
-                            pelican
+                        <a href="/tag/web.html">
+                            web
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/hg.html">
-                            hg
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/npm.html">
-                            npm
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/imprimante.html">
-                            imprimante
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/babeljs.html">
-                            babeljs
+                        <a href="/tag/offline.html">
+                            offline
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -392,38 +410,44 @@ alias tmuxkillallsessions='tmux_kill_all_sessions'</code></pre>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/mercurial.html">
-                            mercurial
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/tablette.html">
-                            tablette
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/tmuxp.html">
-                            tmuxp
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/swift.html">
-                            swift
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/darcs.html">
-                            darcs
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="/tag/bug.html">
                             bug
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/ssh.html">
+                            ssh
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/phonex.html">
+                            phonex
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/sublimetext.html">
+                            sublimetext
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/riotjs.html">
+                            riotjs
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/hg.html">
+                            hg
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/postcss.html">
+                            postcss
                                 <span class="badge">1</span>
                         </a>
                     </li>
