@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="fr" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>AbulEdu - Le Labo Du Nerd</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="/abuledu.html">
+
+        <meta name="author" content="Jérémie Ferry" />
+        <meta name="keywords" content="linux,libre" />
+
+        <meta property="og:site_name" content="Le Labo Du Nerd" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="AbulEdu"/>
+        <meta property="og:url" content="/abuledu.html"/>
+        <meta property="og:description" content=""/>
+        <meta property="article:published_time" content="2016-07-12" />
+            <meta property="article:section" content="misc" />
+            <meta property="article:tag" content="linux" />
+            <meta property="article:tag" content="libre" />
+            <meta property="article:author" content="Jérémie Ferry" />
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments/native.css" rel="stylesheet">
+        <link href="/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
+
+
+
+
+
+                <link href="/theme/css/orange.css" id="selected-css" rel="stylesheet" />
+</head>
+<body class="lang-fr">
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+Le Labo Du Nerd            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li >
+                            <a href="/category/aide-memoire.html">Aide-memoire</a>
+                        </li>
+                        <li >
+                            <a href="/category/frontend.html">Frontend</a>
+                        </li>
+                        <li class="active">
+                            <a href="/category/misc.html">Misc</a>
+                        </li>
+                        <li >
+                            <a href="/category/reflexion.html">Reflexion</a>
+                        </li>
+                        <li >
+                            <a href="/category/rust.html">Rust</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class='tipue-search'>
+                <span>
+                    <form class="navbar-search" action="/search.html">
+                        <input type="text" class="search-query" placeholder="Rechercher" name="q" id="tipue_search_input" required>
+                        <input type="submit" value="&#xe003;" />
+                    </form>
+                </span>
+              </li>
+            <li >
+                <a href="/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a>
+            </li>
+              <li id="choose-css-theme">
+                  <div class="drodown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Changer de thème CSS
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                <!-- <li><a href="#">Thème classique (orange)</a></li> -->
+                                    <li class="selected">
+                                        <a href="/theme/css/orange.css">
+                                            <span>Thème classique (orange)</span>
+                                        </a>
+                                    </li>
+                                <!-- <li><a href="#">Thème océan (bleu)</a></li> -->
+                                    <li>
+                                        <a href="/theme/css/ocean.css">
+                                            <span>Thème océan (bleu)</span>
+                                        </a>
+                                    </li>
+                        </ul>
+                    </div>
+              </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+            <div class="col-sm-10">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    AbulEdu
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span>
+        <span class="label label-default">Date</span>
+        <span class="published">
+            <i class="fa fa-calendar"></i><time datetime="2016-07-12T21:40:00+02:00"> mar. 12 juillet 2016</time>
+        </span>
+    </span>
+
+
+
+
+
+<span class="label label-default">Tags</span>
+
+
+	<a href="/tag/linux.html">linux
+                <span class="badge">13</span></a>
+        /
+	<a href="/tag/libre.html">libre
+                <span class="badge">2</span></a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <h2>Intro</h2>
+<p>Etant un jeune papa et défenseur d'un numérique ouvert, citoyen (liberté, égalité, fraternité) et responsable, j'ai décidé de participer au projet <strong><a href="https://fr.ulule.com/developpement-dabuledu">AbulEdu</a></strong>.</p>
+<p>Pour l'instant, ça ne concerne que la création d'illustrations.</p>
+<p>L'objectif est à multiple tranchants : elle va concerner <strong><a href="https://commons.wikimedia.org">Wikipédia Commons</a></strong> et <strong><a href="https://fr.vikidia.org">VikiDia</a></strong> dans la foulée.</p>
+<h2>Les pré-requis</h2>
+<p>Avant de participer bêtement, je me suis mis en relation avec des membres de l'association.</p>
+<p>Leurs directives étaient claires et fondées sur 3 axes</p>
+<ul>
+<li>
+<p>Besoin d'illustrations vectorielles en 
+<strong><a href="http://media.eduscol.education.fr/file/Progressions_pedagogiques/78/2/Progression-pedagogique_Cycle2_Decouverte_du_monde_203782.pdf">découverte du monde</a></strong></p>
+</li>
+<li>
+<p>L'inventaire systématique de ressources libres nécessaires pour les 8-11 ans en histoire, géographie, biologie et mathématiques :
+<a href="http://thesaurus.abuledu.org/thesaurus/vocab/index.php">Leur thésaurus</a></p>
+</li>
+<li>
+<p>Des productions artistiques sous la forme d'histoires courtes : je ne pense pas paticiper pour l'instant.</p>
+</li>
+</ul>
+<h2>Contraintes documentaires</h2>
+<p>Avant de me lancer dans la production d'une illustration, je vais tout d'abord m'assurer qu'elle n'existe pas et qu'il y ai une vrai valeur ajouté.</p>
+<p>Ensuite, je vais me documenter à minima sur le contexte.
+Par exemple, une illustration historique nécessitera de se documenter afin d'éviter les anachronismes.</p>
+<h2>Contraintes Techniques</h2>
+<p>Développeur avant tout, je me mets des jalons techniques pour :</p>
+<ul>
+<li>booster ma productivité (la contrainte de temps est hyper importante)</li>
+<li>Fournir une expérience utilisateur optimale</li>
+</ul>
+<p>Pour les illustrations vectorielles, j'utiliserais exclusivement <strong>Inkscape</strong> (Outil libre mature).</p>
+<p>Les couleurs choisis seront, dans l'idéal définit selon 2 contraintes :</p>
+<ul>
+<li>contraintes d'impression (conversion en CMJN possible sans que ce soit trop pénalisant)</li>
+<li>contrainte de dyschromatopsie (daltonnisme) :
+Le daltonisme représente 8 % de la population masculine et 0.5 % de la population féminine =&gt; ces chiffres sont par conséquent non anodin. (j'ai par ailleurs plusieurs personnes daltonniennes dans mon entourage)
+Les enfants sont bien entendus concernés par cette anomalie.
+Il est donc important que les illustrations soient pleinement fonctionnel avec leur déficience et n'entrave en rien leur apprentissage.</li>
+</ul>
+<p>Je n'utiliserais pas :</p>
+<ul>
+<li>de filtres SVG</li>
+<li>de flou (le seul usage possible serait pour une image avec une focale marqué)</li>
+<li>le moins possible de transparence</li>
+<li>peu ou pas de dégradés</li>
+<li>peu ou pas de courbes de béziers (là c'est clairement personnel et lié à mon style : je trouve que je passais beaucoup de temps à éditer des courbes de bézier alors que l'ajout d'un ou 2 points avec des arrêtes tranchantes était plus efficasse)</li>
+</ul>
+<p>On pourrais définir ça comme de l'extrémisme mais j'ai remarqué que ce type d'usage est :</p>
+<ul>
+<li>Rarement adéquate pour mon style de dessin. (plus pour du photo-montage)</li>
+<li>Gourmant en ressource à l'édition (et je déteste bosser sur mes illustrations avec un poste qui ram, tricher avec des calques masqués pour éviter les lenteurs etc.)</li>
+<li>Gourmant en ressource pour l'utilisateur final : ça c'est encore plus pénalisant car je souhaite que l'expérience utilisateur soit la meilleur et pour le champ le plus large possible.
+Dans l'idéal, il faudrait que l'illustration soit visible pour un pc reconditionné, ayant déjà d'autres applicatifs (plus ou moins gourmant d'ouvert).</li>
+<li>Support Hétérogène : là je parle principalement des filtres SVG : tous les moteurs de rendu ne les supportent pas ou pas pleinement.</li>
+</ul>
+<h2>Cohérence graphique</h2>
+<p>Ca peut paraitre évident mais néanmoins nécessaire.
+Mes illustrations resterons cantonnés sur le même style : plutôt réaliste (sans être photo-réaliste), stylisé (pas de détails inutiles et chronophage à la création) pas ou peu de contours, des contrastes de couleurs marqués.</p>
+<p>La plupart du temps, je vais composer mes dessins à partir de plusieurs sources sur Internet avec une étape intermédiaire papier pour composer mon image.</p>
+<p>Sur Inkscape, je pose les grandes lignes (propotions) et affine jusqu'à arriver au résultat final.</p>
+<h2>License</h2>
+<p>Comme la paternité de l'oeuvre n'a pas vraiment d'importance à mon sens, je choisi la <strong><a href="https://creativecommons.org/publicdomain/zero/1.0/deed.fr">License Creative Commons CC0 Transfert au Domaine Public</a></strong> ou plus occasionnellement la <strong><a href="https://creativecommons.org/licenses/by-sa/3.0/deed.fr">cc-by-sa</a></strong>.</p>
+<h2>Fréquence</h2>
+<p>Pou l'instant, je me met un objectif bas : 1 contribution par mois <strong>obligatoire</strong> pour la constance.
+Après, je serais quitte de dépasser...</p>
+<h2>L'épreuve du feu</h2>
+<p>Faire participer mes enfants au projet!
+Leur intérêt, avis, impression doit avoir une conséquence favorable ou une remise en question.</p>
+<h2>Conclusion</h2>
+<p>Après la réflexion, l'action !</p>
+<h2>Mes réalisation</h2>
+<p><a href="https://commons.wikimedia.org/wiki/File:Mastodonte.svg">Mastondonte</a></p>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-2" id="sidebar">
+            <aside>
+
+<section class="well well-sm">
+    <ul class="list-group list-group-flush">
+            <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+              <ul class="list-group" id="social">
+                <li class="list-group-item"><a href="https://github.com/mothsART"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+                <li class="list-group-item"><a href="https://www.linkedin.com/in/jérémie-ferry-0268a789"><i class="fa fa-linkedin-square fa-lg"></i> linkedin</a></li>
+              </ul>
+            </li>
+
+
+
+            <li class="list-group-item"><a href="/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+                <ul class="list-group " id="tags">
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/linux.html">
+                            linux
+                                <span class="badge">13</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/javascript.html">
+                            javascript
+                                <span class="badge">9</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/rust.html">
+                            rust
+                                <span class="badge">6</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/css.html">
+                            css
+                                <span class="badge">4</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/frontend.html">
+                            frontend
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/c.html">
+                            C
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/git.html">
+                            git
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/python.html">
+                            python
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/postgresql.html">
+                            postgresql
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/nodejs.html">
+                            nodejs
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/js.html">
+                            js
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/zsh.html">
+                            zsh
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/apple.html">
+                            apple
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/cli.html">
+                            cli
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/html.html">
+                            html
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/gettext.html">
+                            gettext
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/libre.html">
+                            libre
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/sql.html">
+                            sql
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/sh.html">
+                            sh
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/postcss.html">
+                            postcss
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/soft.html">
+                            soft
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/metaphone.html">
+                            metaphone
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/sublimetext.html">
+                            sublimetext
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/eduatif.html">
+                            éduatif
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/postgres.html">
+                            postgres
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/imprimante.html">
+                            imprimante
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/wayland.html">
+                            wayland
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/phonetic.html">
+                            phonetic
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/benchmark.html">
+                            benchmark
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/tmuxp.html">
+                            tmuxp
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+
+    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+      <ul class="list-group" id="links">
+        <li class="list-group-item">
+            <a href="http://getpelican.com/" target="_blank">
+                Pelican
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://python.org/" target="_blank">
+                Python.org
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://jinja.pocoo.org/" target="_blank">
+                Jinja2
+            </a>
+        </li>
+      </ul>
+    </li>
+    </ul>
+</section>
+            </aside>
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <div class="row">
+         <div class="col-xs-10">
+            <div>
+                &copy; 2016 Jérémie Ferry
+                &middot; Réalisé à l'aide de  <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+                <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+                <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>            </div>
+         </div>
+         <div class="col-xs-2">
+            <p class="pull-right">
+                <a href="#"><span>
+                  Remonter
+                </span></a>
+            </p>
+        </div>
+      </div>
+   </div>
+</footer>
+<script src="/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
+
+
+<script src="/theme/js/theme_css.js"></script>
+
+<script src="/ace-build/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script><style>td.linenos {
+    display: none;
+}
+
+pre {
+    box-sizing: content-box;
+    padding: 0;
+    border-radius: 0;
+}
+
+.ace_gutter-cell {
+    cursor: pointer;
+}
+
+.ace_layer {
+    height: 100% !important;
+}
+
+.ace-chrome .ace_marker-layer .ace_selection {
+    border-radius: 0;
+}
+
+span.o {
+    display: block;
+}</style><script>var ACE_EDITOR_SCROLL_TOP_MARGIN = 150;var ACE_EDITOR_THEME = 'chrome';var ACE_EDITOR_MAXLINES = 200;var ACE_EDITOR_READONLY = true;var ACE_EDITOR_AUTOSCROLL = true;var ACE_EDITOR_SHOW_INVISIBLE = true;var Range = ace.require("ace/range").Range;
+
+var editor_array = {};
+
+var correlationDic = {
+    'bash': 'sh'
+}
+
+// inspiration : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt#A_stricter_parse_function
+filterInt = function (value) {
+  if(/^(\-|\+)?([0-9]+|Infinity)$/.test(value))
+    return Number(value);
+  return NaN;
+}
+
+function linesInAnchor(anchor) {
+  anchorObject = {};
+  anchorObject.first = 0;
+  anchorObject.last = 0;
+  anchorObject.anchor = "";
+  var firstLineIndex = anchor.indexOf("-L");
+  var firstResult = anchor.substring(
+    firstLineIndex + 2
+  );
+  if(filterInt(firstResult)) {
+    anchorObject.first = filterInt(firstResult) - 1;
+    anchorObject.last = anchorObject.first;
+    anchorObject.anchor = anchor.substring(0, firstLineIndex + 2) + firstResult;
+    return anchorObject;
+  }
+  var secondLineIndex = firstResult.indexOf("-L");
+
+  if (!filterInt(firstResult.substring(0, secondLineIndex))) {
+    return anchorObject;
+  }
+  anchorObject.anchor = anchor.substring(0, firstLineIndex + 2) + firstResult.substring(0, secondLineIndex);
+
+  anchorObject.first = filterInt(firstResult.substring(0, secondLineIndex)) - 1;
+  var secondResult = firstResult.substring(
+    secondLineIndex + 2
+  );
+  if (!filterInt(secondResult)) {
+    anchorObject.last = anchorObject.first;
+    return anchorObject;
+  }
+  anchorObject.last = filterInt(secondResult) - 1;
+  return anchorObject;
+}
+
+var selectionCallback = function (event, editor) {
+    var editor_id = $(editor.container).attr('id');
+    var range = editor.selection.getRange();
+    location.hash = editor_id + '-L' + parseInt(range.start.row + 1);
+    if ($(editor.container).data().hasOwnProperty("id")) {
+        event.preventDefault();
+    }
+    else if (range.start.row != range.end.row) {
+        location.hash += '-L' + parseInt(range.end.row + 1);
+    }
+    $(editor.container).removeData();
+};
+
+$(function() {
+    var $pre_filter = $('pre.highlight');
+    var pre_len = $pre_filter.length;
+    $pre_filter.each(function(item) {
+        var lang = $(this).find("code").attr('class').substring(9);
+        if (lang in correlationDic) {
+            lang = correlationDic[lang];
+        }
+        var one_render = true;
+        var nb_of_lines = $(this).text().search('\n');
+        // avoid the last carriage return
+        $(this).text($(this).text().substring(0, $(this).text().length));
+
+        // Give a unique id on all editor
+        var editor_id = 'editor' + parseInt(item + 1);
+        $(this).attr('id', editor_id);
+        var editor = ace.edit(editor_id);
+        editor_array[editor_id] = editor;
+        editor.setTheme("ace/theme/" + ACE_EDITOR_THEME);
+        editor.setShowInvisibles(ACE_EDITOR_SHOW_INVISIBLE);
+        editor.setOptions({
+            mode: "ace/mode/" + lang,
+            maxLines: ACE_EDITOR_MAXLINES,
+            readOnly: ACE_EDITOR_READONLY,
+            autoScrollEditorIntoView: ACE_EDITOR_AUTOSCROLL
+        });
+        editor.$blockScrolling = Infinity;
+        if (nb_of_lines === -1) {
+            editor.renderer.setShowGutter(false);
+        }
+
+        editor.renderer.on("afterRender", function(event) {
+            var anchor = linesInAnchor(location.hash);
+            var hash_editor = location.hash.substring(1, location.hash.indexOf("-"));
+            var line = $($(editor.container).find(".ace_gutter-cell")[parseInt(editor_id.substring(6))]);
+            if (hash_editor == editor_id && one_render) {
+                var offset = line.offset();
+                if (offset) {
+                    $(document).scrollTop(offset.top - ACE_EDITOR_SCROLL_TOP_MARGIN);
+                    editor.selection.setRange(new Range(
+                        anchor.first, 0, anchor.last,  Number.MAX_VALUE)
+                    );
+                    one_render = false;
+                }
+            }
+        });
+
+        editor.resize(true);
+        editor.selection.on("changeSelection", function(event) {
+            selectionCallback(event, editor);
+        });
+    });
+
+    $(".ace_gutter-cell").on("click", function(event) {
+        var editor_id = $(this).closest('pre.ace_editor').attr('id');
+        var editor = editor_array[editor_id];
+        var line = parseInt($(this).text()) - 1;
+        editor.selection.setRange(new Range(line, 0, line, Number.MAX_VALUE));
+        $(this).closest('.ace_editor').data({'id': parseInt($(this).text())});
+        selectionCallback(event, editor);
+    });
+});</script>
+
+
+</body>
+</html>

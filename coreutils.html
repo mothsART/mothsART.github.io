@@ -144,14 +144,37 @@ Le Labo Du Nerd            </a>
                 <span class="badge">2</span></a>
         /
 	<a href="/tag/linux.html">linux
-                <span class="badge">6</span></a>
+                <span class="badge">13</span></a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
                 <h2>Intro</h2>
+<h2>sync</h2>
+<p>Découvert avec une installation de raspberry pi : permet de synchroniser les mémoires avec le disque.
+Ecrit sur le disque toutes les données dans les tampons en mémoire. Ceci peut inclure les superblocs modifiés, les inœuds modifiés, et les écritures différées.</p>
 <h2>strace</h2>
 <p>permet de tracer les appels systèmes.</p>
 <p>argument <strong>e</strong> : permet de filtrer avec un motif</p>
+<h2>dd (dcfldd : dd avec une barre de progression)</h2>
+<h2>df -h</h2>
+<p>donner la liste des périphériques montés</p>
+<h2>diff</h2>
+<p>diff -s <file1> <file2> : indique si 2 fichiers sont identiques</p>
+<p>équivalent à </p>
+<h2>split et cat</h2>
+<p>découper des fichiers (split) en morceaux de taille définit puis les réassembler.</p>
+<p>split -b50m fichier partie &gt; </p>
+<h2>Destruction de données</h2>
+<p>On force les zéro sur toute la partition :
+dd if=/dev/zero of=/dev/hda conv=notrunc</p>
+<p>shred</p>
+<h1>!/bin/bash</h1>
+<p>for n in <code>seq 7</code>; do dd if=/dev/urandom of=/dev/sda bs=8b conv=notrunc; done</p>
+<h2>hexum</h2>
+<h2>truncate</h2>
+<p>réduire la taille d'un fichier à 0
+truncate -s 0 /home/skyminds/error.log</p>
+<h2>eval</h2>
             </div>
             <!-- /.entry-content -->
         </article>
@@ -175,6 +198,12 @@ Le Labo Du Nerd            </a>
             <li class="list-group-item"><a href="/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group " id="tags">
                     <li class="list-group-item tag-1">
+                        <a href="/tag/linux.html">
+                            linux
+                                <span class="badge">13</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
                         <a href="/tag/javascript.html">
                             javascript
                                 <span class="badge">9</span>
@@ -187,20 +216,14 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/linux.html">
-                            linux
-                                <span class="badge">6</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="/tag/css.html">
                             css
                                 <span class="badge">4</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/python.html">
-                            python
+                        <a href="/tag/frontend.html">
+                            frontend
                                 <span class="badge">3</span>
                         </a>
                     </li>
@@ -217,8 +240,8 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/frontend.html">
-                            frontend
+                        <a href="/tag/python.html">
+                            python
                                 <span class="badge">3</span>
                         </a>
                     </li>
@@ -229,20 +252,8 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/gettext.html">
-                            gettext
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/html.html">
-                            html
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/apple.html">
-                            apple
+                        <a href="/tag/nodejs.html">
+                            nodejs
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -253,8 +264,44 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
+                        <a href="/tag/zsh.html">
+                            zsh
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/apple.html">
+                            apple
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
                         <a href="/tag/cli.html">
                             cli
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/html.html">
+                            html
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/gettext.html">
+                            gettext
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/libre.html">
+                            libre
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/sql.html">
+                            sql
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -265,26 +312,14 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/nodejs.html">
-                            nodejs
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/zsh.html">
-                            zsh
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/tmux.html">
-                            tmux
+                        <a href="/tag/postcss.html">
+                            postcss
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/bug.html">
-                            bug
+                        <a href="/tag/soft.html">
+                            soft
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -295,26 +330,14 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/3d.html">
-                            3D
+                        <a href="/tag/sublimetext.html">
+                            sublimetext
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/grammaire.html">
-                            grammaire
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/ios.html">
-                            ios
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/sql.html">
-                            sql
+                        <a href="/tag/eduatif.html">
+                            éduatif
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -325,32 +348,32 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/darcs.html">
-                            darcs
+                        <a href="/tag/imprimante.html">
+                            imprimante
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/phonex.html">
-                            phonex
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/javascript-frontend-stockage-sql.html">
-                            javascript frontend stockage sql
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/npm.html">
-                            npm
+                        <a href="/tag/wayland.html">
+                            wayland
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
                         <a href="/tag/phonetic.html">
                             phonetic
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/benchmark.html">
+                            benchmark
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/tmuxp.html">
+                            tmuxp
                                 <span class="badge">1</span>
                         </a>
                     </li>
