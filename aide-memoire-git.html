@@ -141,15 +141,30 @@ Le Labo Du Nerd            </a>
 
 
 	<a href="/tag/git.html">git
-                <span class="badge">3</span></a>
+                <span class="badge">3</span>
+    </a>
         /
 	<a href="/tag/linux.html">linux
-                <span class="badge">13</span></a>
+                <span class="badge">13</span>
+    </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
                 <h2>Intro</h2>
 <p>GIT est un super utilitaire mais son nombre de commandes est juste exponentiel.</p>
+<h2>Clone</h2>
+<p>Avec des sous-modules</p>
+<pre class="highlight"><code class="language-bash">git clone --recursive depot</code></pre>
+
+
+<h2>Recherche d'un bug</h2>
+<pre class="highlight"><code class="language-bash">git bisect</code></pre>
+
+
+<h2>Ajout/Reset Partiel</h2>
+<pre class="highlight"><code class="language-bash">git add -p/git reset -p</code></pre>
+
+
 <h2>Tags</h2>
 <h3>ajout</h3>
 <pre class="highlight"><code class="language-bash">git tag montag 1b2e1d63ff (numéro du commit)
@@ -160,7 +175,18 @@ git push --tags (envoi des commits en remote + les tags)</code></pre>
 
 <h3>suppression</h3>
 <pre class="highlight"><code class="language-bash">git tag -d mon_tag
-git push origin :refs/tags/mon_tag (supprime en remote)</code></pre>
+git push origin :refs/tags/mon_tag #supprime en remote</code></pre>
+
+
+<h2>Branches</h2>
+<h3>ajout</h3>
+<pre class="highlight"><code class="language-bash">git checkout -b ma_branche</code></pre>
+
+
+<h3>suppression</h3>
+<pre class="highlight"><code class="language-bash">git branch -D ma_branche
+git push origin --delete ma_branche #supprime en remote (GIT &gt;= 1.7)
+git push origin :ma_branche #supprime en remote (GIT &lt; 1.7)</code></pre>
 
 
 <h2>Reflog</h2>
@@ -171,6 +197,10 @@ Cette commande est très utile pour récupérer des commits/tags/branches qui on
 <p><strong>git cherry</strong> permet de lister la différence entre 2 branches</p>
 <p>Donne la liste des commits de différence entre les 2 branches</p>
 <pre class="highlight"><code class="language-bash">git cherry branch1 branch2</code></pre>
+
+
+<h2>log</h2>
+<pre class="highlight"><code class="language-bash">git log -n 10 # n'afficher que les 10 derniers commits</code></pre>
 
 
 <h2>shortlog</h2>
@@ -188,9 +218,93 @@ git shortlog -sne --all | wc -l =&gt; liste les autheurs sur l'ensemble des dép
 
 
 <h2>fetch</h2>
-<p>On récupère toutes les données du <strong>repository remote</strong>
-    #!bash
-    git fetch --all</p>
+<p>On récupère toutes les données du <strong>repository remote</strong></p>
+<pre class="highlight"><code class="language-bash">git fetch --all</code></pre>
+
+
+<h2>pull = fetch + merge</h2>
+<p>perso, j'ai définit mon pull pour faire un <strong>pull --rebase</strong> dans mon <strong>.gitrc</strong></p>
+<h2>rebase</h2>
+<p>soit</p>
+<pre class="highlight"><code class="language-bash">git checkout master
+git rebase serveur</code></pre>
+
+
+<p>soit</p>
+<pre class="highlight"><code class="language-bash">git rebase master serveur</code></pre>
+
+
+<p>git rebase -i : permet de changer l'entête d'un commit =&gt; squasher ses commits</p>
+<p>git rebase -p / git rebase --preserve-merges =&gt; permet de garder l'historique des fusions...</p>
+<p>garder un fichier local -&gt; git checkout --ours /path/to/file
+garder un fichier distant -&gt; git checkout --theirs /path/to/file</p>
+<p>puis git add /path/to/file</p>
+<h2>Ignore</h2>
+<p>exclusion globale (dans ~/.gitconfig):
+[core]
+    excludesfile = ~/.gitignore</p>
+<p>exclusion locale : .git/info/exclude</p>
+<p>Ignorer un fichier déjà tracké :
+git update-index --assume-unchanged <file>
+(en savoir + : https://www.kernel.org/pub/software/scm/git/docs/git-update-index.html)
+(opération inverse : git update-index --no-assume-unchanged <file>)</p>
+<pre class="highlight"><code class="language-bash">git update-index --no-assume-unchanged</code></pre>
+
+
+<h2>cherry</h2>
+<p>Considérons 2 branches =&gt; <strong>master</strong> et <strong>topic</strong></p>
+<pre class="highlight"><code class="language-bash">git cherry -v topic | grep -e &quot;^+&quot; | grep -v &quot;\[nc\]&quot; | tee /dev/tty | wc -l</code></pre>
+
+
+<p>donne la liste des commits présent dans la <strong>topic</strong> et non dans la <strong>master</strong></p>
+<p>et son inverse :</p>
+<pre class="highlight"><code class="language-bash">git cherry -v master | grep -e &quot;^+&quot; | grep -v &quot;\[nc\]&quot; | tee /dev/tty | wc -l</code></pre>
+
+
+<p>donne la liste des commits présent dans la <strong>master</strong> et non dans la <strong>topic</strong></p>
+<h2>Diff</h2>
+<pre class="highlight"><code class="language-bash">git diff -b (git diff --ignore-space-change)
+git diff -w (git diff --ignore-all-space)
+git diff --color-words=.</code></pre>
+
+
+<p>juste les fichiers : git diff --stat
+git diff --name-status</p>
+<h2>Amend</h2>
+<pre class="highlight"><code class="language-bash">git commit --amend --no-edit</code></pre>
+
+
+<p>Rajoute au dernier commit tous les fichiers du staging + tous les fichiers non traqués et renome l'intitulé du commit</p>
+<pre class="highlight"><code class="language-bash">git commit -a -u --amend -m &quot;new message&quot;</code></pre>
+
+
+<h2>Stash</h2>
+<pre class="highlight"><code class="language-bash">git stash --include-untracked === git stash save -u</code></pre>
+
+
+<p>réapplique le stash avec l'index originel :</p>
+<pre class="highlight"><code class="language-bash">git stash apply --index</code></pre>
+
+
+<p>Explication : http://www.git-attitude.fr/2014/09/15/30-options-git-qui-gagnent-a-etre-connues/#stasher-plus efficacement avec save et -u</p>
+<pre class="highlight"><code class="language-bash">git stash save -u 'Nom du stash'
+git stash pop --index</code></pre>
+
+
+<h2>Push</h2>
+<p>Pousser une branche qui vient d'être créé :</p>
+<pre class="highlight"><code class="language-bash">git push -u origin NomDeLaNouvelleBranche</code></pre>
+
+
+<p>Suppression d'un commit en remote : http://stackoverflow.com/questions/1338728/delete-commits-from-a-branch-in-git</p>
+<p>En local</p>
+<pre class="highlight"><code class="language-bash">git reset --hard HEAD~1</code></pre>
+
+
+<p>En remote</p>
+<pre class="highlight"><code class="language-bash">git push origin HEAD --force</code></pre>
+
+
 <h2>gc</h2>
 <h2>fsck</h2>
 <h2>Sous modules</h2>
@@ -204,6 +318,77 @@ cd ..
 git add -A
 git c -m &quot;...&quot;
 git push</code></pre>
+
+
+<h2>Suppression Branche remote</h2>
+<p>git push origin --delete <branchName> (exemple: git push origin --delete 14_79_000_0)
+(ancienne méthode (git &lt; 1.7): git push origin :<branchName>)nch </p>
+<h2>Suppression Commit en remote</h2>
+<p>supprime le dernier commit : git push -f origin HEAD^:ma_Branch_en_remote</p>
+<h2>Suppression répertoire de travail</h2>
+<pre class="highlight"><code class="language-bash">git reset HEAD === git reset HEAD^0</code></pre>
+
+
+<h2>Suppression de commit</h2>
+<pre class="highlight"><code class="language-bash">git reset HEAD^ === git reset HEAD^1</code></pre>
+
+
+<h2>Suppression d'un fichier sur un commit</h2>
+<pre class="highlight"><code class="language-bash">git reset HEAD^ -- $file
+git commit --amend</code></pre>
+
+
+<h2>Equivalences</h2>
+<pre class="highlight"><code class="language-bash">git checkout -b ticket-12 === git branch ticket-12 + git checkout ticket-12</code></pre>
+
+
+<p>git checkout --track origin/correctionserveur === git checkout -b correctionserveur origin/correctionserveur (--track évite donc les erreurs dans le nom des branches locales)</p>
+<h2>Compter le nombre de commits (sur toutes les branches)</h2>
+<p>http://stackoverflow.com/questions/1265040/how-to-count-total-lines-changed-by-a-specific-author-in-a-git-repository</p>
+<pre class="highlight"><code class="language-bash">git shortlog -sne --all
+
+#############
+# http://tilap.net/git-trouver-lister-les-fichiers-modifies-par-utilisateur/
+listFilesByAuthor = log --pretty=&quot;%H&quot; --author=&quot;Jeremie&quot; | while read commit_hash; do git show --oneline --name-only $commit_hash | tail -n+2; done | sort | uniq
+#############
+# must install Ruby
+#moststats = &quot;ls-files -z | xargs -0n1 git blame -w | ruby -n -e '$_ =~ /^.*\((.*?)\s[\d]{4}/; puts $1.strip' | sort -f | uniq -c | sort -n&quot;
+#############
+statsByAuthor = log --format='%aN' | sort -u | while read name; do echo -en &quot;$name\t&quot;; git log --author=&quot;$name&quot; --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf &quot;added lines: %s, removed lines: %s, total lines: %s\n&quot;, add, subs, loc }' -; done
+#############
+stats = &quot;!sh -c 'git log --pretty=\&quot;format:%aN\&quot; -&quot;</code></pre>
+
+
+<h2>Recherche</h2>
+<p>// rechercher dans le projet une expression précise -&gt; renvoi le(s) fichier(s) concerné(s)</p>
+<pre class="highlight"><code class="language-bash">git grep &quot;DossierDeDemande dossier = demandesSurServiceConnecte.First(); // lol&quot;</code></pre>
+
+
+<p>//rechercher une expression précise sur un fichier -&gt; renvoi le n° de commit, l'intitulé et son auteur</p>
+<pre class="highlight"><code class="language-bash">git log -Slol -- sources/Dicsit.SiteWeb/LogiresoNet/Areas/Coordination/Controllers/SuiviController.cs
+
+#!bash
+git diff -G &lt;regex&gt;
+git grep &lt;regex&gt;</code></pre>
+
+
+<h2>Dépôt distants</h2>
+<pre class="highlight"><code class="language-bash">git remote -v show =&gt; donne les url en fetch et en push
+
+git remote rm origin
+
+git remote add origin &lt;url&gt;
+
+git remote set-url origin http://FerryJ%40MARSH.LOCAL:monmotdepasse@southp/Git/Dicsit.Core.git =&gt; changer de dépôt
+git remote set-url origin http://FerryJ%40MARSH.LOCAL:monmotdepasse@southp/Git/Dicsit.git
+
+git clone --recursive http://FerryJ%40MARSH.LOCAL:monmotdepasse@southp/Git/Microsoins.NET.git
+git clone --recursive http://FerryJ%40MARSH.LOCAL:monmotdepasse@southp/Git/Dicsit.Core.git</code></pre>
+
+
+<h2>Liens</h2>
+<p><a href="http://www.git-attitude.fr/2014/09/15/30-options-git-qui-gagnent-a-etre-connues">http://www.git-attitude.fr/2014/09/15/30-options-git-qui-gagnent-a-etre-connues</a></p>
+<p><a href="http://stackoverflow.com/questions/2221658/whats-the-difference-between-head-and-head-in-git">http://stackoverflow.com/questions/2221658whats-the-difference-between-head-and-head-in-git</a></p>
             </div>
             <!-- /.entry-content -->
         </article>
@@ -235,13 +420,19 @@ git push</code></pre>
                     <li class="list-group-item tag-1">
                         <a href="/tag/javascript.html">
                             javascript
-                                <span class="badge">9</span>
+                                <span class="badge">10</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
                         <a href="/tag/rust.html">
                             rust
-                                <span class="badge">6</span>
+                                <span class="badge">7</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/frontend.html">
+                            frontend
+                                <span class="badge">4</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -251,8 +442,14 @@ git push</code></pre>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/frontend.html">
-                            frontend
+                        <a href="/tag/postgresql.html">
+                            postgresql
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/sql.html">
+                            sql
                                 <span class="badge">3</span>
                         </a>
                     </li>
@@ -275,44 +472,8 @@ git push</code></pre>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/postgresql.html">
-                            postgresql
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/nodejs.html">
-                            nodejs
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/js.html">
-                            js
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/zsh.html">
-                            zsh
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/apple.html">
-                            apple
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/cli.html">
-                            cli
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/html.html">
-                            html
+                        <a href="/tag/libre.html">
+                            libre
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -323,50 +484,80 @@ git push</code></pre>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/libre.html">
-                            libre
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/sql.html">
-                            sql
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="/tag/sh.html">
                             sh
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/postcss.html">
-                            postcss
+                        <a href="/tag/cli.html">
+                            cli
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/nodejs.html">
+                            nodejs
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/apple.html">
+                            apple
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/js.html">
+                            js
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/html.html">
+                            html
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/zsh.html">
+                            zsh
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/babeljs.html">
+                            babeljs
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/soft.html">
-                            soft
+                        <a href="/tag/bench.html">
+                            bench
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/metaphone.html">
-                            metaphone
+                        <a href="/tag/tablette.html">
+                            tablette
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/sublimetext.html">
-                            sublimetext
+                        <a href="/tag/tmuxp.html">
+                            tmuxp
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/eduatif.html">
-                            éduatif
+                        <a href="/tag/phonex.html">
+                            phonex
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/snap.html">
+                            snap
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -377,14 +568,8 @@ git push</code></pre>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/imprimante.html">
-                            imprimante
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/wayland.html">
-                            wayland
+                        <a href="/tag/hg.html">
+                            hg
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -395,14 +580,14 @@ git push</code></pre>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/benchmark.html">
-                            benchmark
+                        <a href="/tag/ssh.html">
+                            ssh
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/tmuxp.html">
-                            tmuxp
+                        <a href="/tag/template.html">
+                            template
                                 <span class="badge">1</span>
                         </a>
                     </li>

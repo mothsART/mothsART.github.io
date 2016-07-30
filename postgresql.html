@@ -142,32 +142,82 @@ Le Labo Du Nerd            </a>
 
 
 	<a href="/tag/postgres.html">postgres
-                <span class="badge">1</span></a>
+                <span class="badge">1</span>
+    </a>
         /
 	<a href="/tag/postgresql.html">postgresql
-                <span class="badge">3</span></a>
+                <span class="badge">3</span>
+    </a>
         /
 	<a href="/tag/sql.html">sql
-                <span class="badge">2</span></a>
+                <span class="badge">3</span>
+    </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
                 <h2>Intro</h2>
 <p>Mon aide-mémoire pour l'indéboulonable <strong>PostGreSQL</strong> : la meilleur base SQL libre !</p>
 <h2>Commandes</h2>
-<p><strong>\q</strong> : quitter
-<strong>\h</strong> : aide
-<strong>\d</strong> : liste les tables et les sequences
-<strong>\d nom_de_table</strong> : donne le détail d'une table
-<strong>\dt</strong> ou <strong>SELECT * FROM pg_catalog.pg_tables</strong> : liste uniquement les tables
-<strong>\l</strong> : liste les bases</p>
+<p><strong>\q</strong> : quitter</p>
+<p><strong>\h</strong> : aide</p>
+<p><strong>\d</strong> : liste les tables et les sequences</p>
+<p><strong>\d nom_de_table</strong> : donne le détail d'une table</p>
+<p><strong>\dt</strong> ou <strong>SELECT * FROM pg_catalog.pg_tables</strong> : liste uniquement les tables</p>
+<p><strong>\l</strong> : liste les bases</p>
+<h2>Changer le mot de passe (de l'utilisateur postgres)</h2>
+<pre class="highlight"><code class="language-bash">sudo -u postgres psql</code></pre>
+
+
+<p>puis</p>
+<pre class="highlight"><code class="language-bash">\password</code></pre>
+
+
 <h2>Load / Dump</h2>
 <p><strong>pg_dump dbname &gt; outfile</strong></p>
+<h2>Piste d'exploration</h2>
+<h3>Commits/RollBacks et save points</h3>
+<h3>Utilisation d'extensions</h3>
+<h2>Liste toutes les bases</h2>
+<pre class="highlight"><code class="language-sql">SELECT * datname FROM pg_database WHERE datistemplate = false;</code></pre>
+
+
+<h2>Liste toutes les tables</h2>
+<pre class="highlight"><code class="language-sql">SELECT * 
+FROM information_schema.tables 
+WHERE table_type = 'crossject_base' 
+    AND table_schema = 'public' 
+ORDER BY table_type, table_name;</code></pre>
+
+
+<h2>Création de table</h2>
+<pre class="highlight"><code class="language-sql">CREATE TABLE films (
+    code        char(5),
+    title       varchar(40),
+    did         integer,
+    date_prod   date,
+    kind        varchar(10),
+    len         interval hour to minute,
+    CONSTRAINT code_title PRIMARY KEY(code,title)
+);</code></pre>
+
+
+<h2>Insertion</h2>
+<pre class="highlight"><code class="language-sql">INSERT INTO films VALUES
+('UA502', 'Bananas', 105, DEFAULT, 'Comedy', '82 minutes');
+INSERT INTO films (code, title, did, date_prod, kind)
+VALUES ('T_601', 'Yojimbo', 106, DEFAULT, 'Drama');</code></pre>
+
+
+<p><a href="http://stackoverflow.com/questions/9025515/how-do-i-import-modules-or-install-extensions-in-postgresql-9-1-9-2-9-3-9-4">http://stackoverflow.com/questions/9025515/how-do-i-import-modules-or-install-extensions-in-postgresql-9-1-9-2-9-3-9-4</a></p>
+<pre class="highlight"><code class="language-sql">CREATE EXTENSION earthdistance;</code></pre>
+
+
+<p><a href="http://www.postgresql.org/docs/9.1/static/fuzzystrmatch">http://www.postgresql.org/docs/9.1/static/fuzzystrmatch</a></p>
 <h2>Sequences</h2>
 <p><a href="http://dgriessinger.developpez.com/postgresql/sequences">http://dgriessinger.developpez.com/postgresql/sequences</a></p>
 <h2>Liens</h2>
-<p><a href="http://www.gcolpart.com/howto/postgresql.php4">http://www.gcolpart.com/howto/postgresql.php4</a>
-<a href="http://www.system-linux.eu/index.php?post/2016/03/10/installation-et-administration-Postgresql">http://www.system-linux.eu/index.php?post/2016/03/10/installation-et-administration-Postgresql</a></p>
+<p><a href="http://www.gcolpart.com/howto/postgresql.php4">http://www.gcolpart.com/howto/postgresql.php4</a></p>
+<p><a href="http://www.system-linux.eu/index.php?post/2016/03/10/installation-et-administration-Postgresql">http://www.system-linux.eu/index.php?post/2016/03/10/installation-et-administration-Postgresql</a></p>
             </div>
             <!-- /.entry-content -->
         </article>
@@ -199,13 +249,19 @@ Le Labo Du Nerd            </a>
                     <li class="list-group-item tag-1">
                         <a href="/tag/javascript.html">
                             javascript
-                                <span class="badge">9</span>
+                                <span class="badge">10</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
                         <a href="/tag/rust.html">
                             rust
-                                <span class="badge">6</span>
+                                <span class="badge">7</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/frontend.html">
+                            frontend
+                                <span class="badge">4</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -215,8 +271,14 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/frontend.html">
-                            frontend
+                        <a href="/tag/postgresql.html">
+                            postgresql
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/sql.html">
+                            sql
                                 <span class="badge">3</span>
                         </a>
                     </li>
@@ -239,44 +301,8 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/postgresql.html">
-                            postgresql
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/nodejs.html">
-                            nodejs
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/js.html">
-                            js
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/zsh.html">
-                            zsh
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/apple.html">
-                            apple
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/cli.html">
-                            cli
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/html.html">
-                            html
+                        <a href="/tag/libre.html">
+                            libre
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -287,50 +313,80 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/libre.html">
-                            libre
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/sql.html">
-                            sql
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="/tag/sh.html">
                             sh
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/postcss.html">
-                            postcss
+                        <a href="/tag/cli.html">
+                            cli
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/nodejs.html">
+                            nodejs
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/apple.html">
+                            apple
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/js.html">
+                            js
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/html.html">
+                            html
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/zsh.html">
+                            zsh
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/babeljs.html">
+                            babeljs
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/soft.html">
-                            soft
+                        <a href="/tag/bench.html">
+                            bench
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/metaphone.html">
-                            metaphone
+                        <a href="/tag/tablette.html">
+                            tablette
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/sublimetext.html">
-                            sublimetext
+                        <a href="/tag/tmuxp.html">
+                            tmuxp
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/eduatif.html">
-                            éduatif
+                        <a href="/tag/phonex.html">
+                            phonex
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/snap.html">
+                            snap
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -341,14 +397,8 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/imprimante.html">
-                            imprimante
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/wayland.html">
-                            wayland
+                        <a href="/tag/hg.html">
+                            hg
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -359,14 +409,14 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/benchmark.html">
-                            benchmark
+                        <a href="/tag/ssh.html">
+                            ssh
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/tmuxp.html">
-                            tmuxp
+                        <a href="/tag/template.html">
+                            template
                                 <span class="badge">1</span>
                         </a>
                     </li>

@@ -143,16 +143,20 @@ Le Labo Du Nerd            </a>
 
 
 	<a href="/tag/rust.html">rust
-                <span class="badge">6</span></a>
+                <span class="badge">7</span>
+    </a>
         /
 	<a href="/tag/gettext.html">gettext
-                <span class="badge">2</span></a>
+                <span class="badge">2</span>
+    </a>
         /
 	<a href="/tag/cli.html">cli
-                <span class="badge">2</span></a>
+                <span class="badge">2</span>
+    </a>
         /
 	<a href="/tag/postgresql.html">postgresql
-                <span class="badge">3</span></a>
+                <span class="badge">3</span>
+    </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
@@ -176,8 +180,9 @@ Le Labo Du Nerd            </a>
 <p>J'ai découvert que <strong>Jinja</strong> était en parti supporté par <strong>Rust</strong> via <a href="https://github.com/Keats/tera"><strong>Tera</strong></a></p>
 <p>Vu que j'ai carte libre, je parts donc sur cette techno.</p>
 <p>Pour compiler le template, il suffit d'utiliser</p>
-<p>#!sh
-  cargo run --bin compile_templates</p>
+<pre class="highlight"><code class="language-sh">cargo run --bin compile_templates</code></pre>
+
+
 <h3>Refactoring</h3>
 <p>Vu que l'on a désormais 2 applicatifs (<strong>cli</strong> et <strong>web</strong>), il est utile de partager des ressources en commun : tout est centralisé dans le fichier <strong>lib.rs</strong></p>
 <h2>Côté client</h2>
@@ -211,28 +216,28 @@ Le Labo Du Nerd            </a>
 </ul>
 <h2>Bounty</h2>
 <p>Si vous utilisez <strong><a href="aide-memoire-tmux.html">Tmux et Tmuxp</a></strong>, voici une petite config qui devrait vous simplifier la vie :</p>
-<p>#!yaml
-    session_name: the quizz
-    windows:
-        - window_name: watch (web)
-          layout:  main-vertical
-          shell_command_before:
-            - cd ~/misc/rust/the_quizz
-          panes:
-            - shell_command:
-              - cd static
-              - echo 'gulp riot'
-            - cargo run --bin compile_templates
-            - cargo run --bin the_quizz_web
-        - window_name: cli
-          layout:  main-vertical
-          shell_command_before:
-            - cd ~/misc/rust/the_quizz
-          panes:
-            - shell_command:
-              - cargo run --bin the_quizz
-            - git status
-```</p>
+<pre class="highlight"><code class="language-yaml">session_name: the quizz
+windows:
+    - window_name: watch (web)
+      layout:  main-vertical
+      shell_command_before:
+        - cd ~/misc/rust/the_quizz
+      panes:
+        - shell_command:
+          - cd static
+          - echo 'gulp riot'
+        - cargo run --bin compile_templates
+        - cargo run --bin the_quizz_web
+    - window_name: cli
+      layout:  main-vertical
+      shell_command_before:
+        - cd ~/misc/rust/the_quizz
+      panes:
+        - shell_command:
+          - cargo run --bin the_quizz
+        - git status</code></pre>
+
+
 <h2>Conclusion</h2>
 <p>Y'a vraiment beaucoup de dépendances abordées dans cette étape.
 Les évolutions devraient ralentir de ce côté pour la suite.</p>
@@ -242,7 +247,7 @@ Les évolutions devraient ralentir de ce côté pour la suite.</p>
 <p>Je viens de découvrir un <strong>ORM</strong> (viable) pour Rust : <a href="http://diesel.rs">diesel</a> ça serait vraiment bête de s'en priver!</p>
 </li>
 <li>
-<p>Utilisation des <strong>API Html5</strong> de stockage http://caniuse.com/#search=namevalue-storage et d'utilisation du mode offline : http://caniuse.com/#feat=offline-apps</p>
+<p>Utilisation des <a href="http://caniuse.com/#search=namevalue-storage"><strong>API Html5</strong> de stockage</a> et d'utilisation du <a href="http://caniuse.com/#feat=offline-apps">mode offline</a></p>
 </li>
 <li>
 <p>Version Cli : détection des évènements souris</p>
@@ -279,13 +284,19 @@ Les évolutions devraient ralentir de ce côté pour la suite.</p>
                     <li class="list-group-item tag-1">
                         <a href="/tag/javascript.html">
                             javascript
-                                <span class="badge">9</span>
+                                <span class="badge">10</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
                         <a href="/tag/rust.html">
                             rust
-                                <span class="badge">6</span>
+                                <span class="badge">7</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/frontend.html">
+                            frontend
+                                <span class="badge">4</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -295,8 +306,14 @@ Les évolutions devraient ralentir de ce côté pour la suite.</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/frontend.html">
-                            frontend
+                        <a href="/tag/postgresql.html">
+                            postgresql
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/sql.html">
+                            sql
                                 <span class="badge">3</span>
                         </a>
                     </li>
@@ -319,44 +336,8 @@ Les évolutions devraient ralentir de ce côté pour la suite.</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/postgresql.html">
-                            postgresql
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/nodejs.html">
-                            nodejs
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/js.html">
-                            js
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/zsh.html">
-                            zsh
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/apple.html">
-                            apple
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/cli.html">
-                            cli
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/html.html">
-                            html
+                        <a href="/tag/libre.html">
+                            libre
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -367,50 +348,80 @@ Les évolutions devraient ralentir de ce côté pour la suite.</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/libre.html">
-                            libre
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/sql.html">
-                            sql
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="/tag/sh.html">
                             sh
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/postcss.html">
-                            postcss
+                        <a href="/tag/cli.html">
+                            cli
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/nodejs.html">
+                            nodejs
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/apple.html">
+                            apple
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/js.html">
+                            js
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/html.html">
+                            html
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/zsh.html">
+                            zsh
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/babeljs.html">
+                            babeljs
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/soft.html">
-                            soft
+                        <a href="/tag/bench.html">
+                            bench
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/metaphone.html">
-                            metaphone
+                        <a href="/tag/tablette.html">
+                            tablette
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/sublimetext.html">
-                            sublimetext
+                        <a href="/tag/tmuxp.html">
+                            tmuxp
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/eduatif.html">
-                            éduatif
+                        <a href="/tag/phonex.html">
+                            phonex
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/snap.html">
+                            snap
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -421,14 +432,8 @@ Les évolutions devraient ralentir de ce côté pour la suite.</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/imprimante.html">
-                            imprimante
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/wayland.html">
-                            wayland
+                        <a href="/tag/hg.html">
+                            hg
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -439,14 +444,14 @@ Les évolutions devraient ralentir de ce côté pour la suite.</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/benchmark.html">
-                            benchmark
+                        <a href="/tag/ssh.html">
+                            ssh
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/tmuxp.html">
-                            tmuxp
+                        <a href="/tag/template.html">
+                            template
                                 <span class="badge">1</span>
                         </a>
                     </li>

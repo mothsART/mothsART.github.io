@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Le stockage côté Javascript - Le Labo Du Nerd</title>
+    <title>PostgreSQL - Le Labo Du Nerd</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -12,16 +12,16 @@
 <link rel="canonical" href="/drafts/stockage-frontend.html">
 
         <meta name="author" content="Jérémie Ferry" />
-        <meta name="keywords" content="javascript frontend stockage sql" />
+        <meta name="keywords" content="PostgreSQL" />
 
         <meta property="og:site_name" content="Le Labo Du Nerd" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="Le stockage côté Javascript"/>
+        <meta property="og:title" content="PostgreSQL"/>
         <meta property="og:url" content="/drafts/stockage-frontend.html"/>
         <meta property="og:description" content=""/>
         <meta property="article:published_time" content="2016-03-19" />
             <meta property="article:section" content="frontend" />
-            <meta property="article:tag" content="javascript frontend stockage sql" />
+            <meta property="article:tag" content="PostgreSQL" />
             <meta property="article:author" content="Jérémie Ferry" />
 
 
@@ -118,7 +118,7 @@ Le Labo Du Nerd            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    Le stockage côté Javascript
+                    PostgreSQL
                 </h1>
             </header>
             <div class="entry-content">
@@ -139,11 +139,20 @@ Le Labo Du Nerd            </a>
 <span class="label label-default">Tags</span>
 
 
-	<a href="/tag/javascript-frontend-stockage-sql.html">javascript frontend stockage sql
+	<a href="/tag/postgresql.html">PostgreSQL
+                <span class="badge">3</span></a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <h2>Piste d'exploration</h2>
+                <h2>Changer le mot de passe (de l'utilisateur postgres)</h2>
+<pre class="highlight"><code class="language-bash">sudo -u postgres psql</code></pre>
+
+
+<p>puis</p>
+<pre class="highlight"><code class="language-bash">\password</code></pre>
+
+
+<h2>Piste d'exploration</h2>
 <h3>Commits/RollBacks et save points</h3>
 <h3>Utilisation d'extensions</h3>
 <h2>Liste toutes les bases</h2>
@@ -229,20 +238,8 @@ VALUES ('T_601', 'Yojimbo', 106, DEFAULT, 'Drama');</code></pre>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/frontend.html">
-                            frontend
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="/tag/c.html">
                             C
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/git.html">
-                            git
                                 <span class="badge">3</span>
                         </a>
                     </li>
@@ -253,9 +250,27 @@ VALUES ('T_601', 'Yojimbo', 106, DEFAULT, 'Drama');</code></pre>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
+                        <a href="/tag/git.html">
+                            git
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/frontend.html">
+                            frontend
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
                         <a href="/tag/postgresql.html">
                             postgresql
                                 <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/sql.html">
+                            sql
+                                <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -271,20 +286,8 @@ VALUES ('T_601', 'Yojimbo', 106, DEFAULT, 'Drama');</code></pre>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/zsh.html">
-                            zsh
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/apple.html">
-                            apple
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/cli.html">
-                            cli
+                        <a href="/tag/sh.html">
+                            sh
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -295,8 +298,14 @@ VALUES ('T_601', 'Yojimbo', 106, DEFAULT, 'Drama');</code></pre>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/gettext.html">
-                            gettext
+                        <a href="/tag/zsh.html">
+                            zsh
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/cli.html">
+                            cli
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -307,56 +316,26 @@ VALUES ('T_601', 'Yojimbo', 106, DEFAULT, 'Drama');</code></pre>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/sql.html">
-                            sql
+                        <a href="/tag/apple.html">
+                            apple
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/sh.html">
-                            sh
+                        <a href="/tag/gettext.html">
+                            gettext
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/postcss.html">
-                            postcss
+                        <a href="/tag/babel.html">
+                            babel
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/soft.html">
-                            soft
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/metaphone.html">
-                            metaphone
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/sublimetext.html">
-                            sublimetext
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/eduatif.html">
-                            éduatif
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/postgres.html">
-                            postgres
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/imprimante.html">
-                            imprimante
+                        <a href="/tag/offline.html">
+                            offline
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -367,20 +346,50 @@ VALUES ('T_601', 'Yojimbo', 106, DEFAULT, 'Drama');</code></pre>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/phonetic.html">
-                            phonetic
+                        <a href="/tag/tablette.html">
+                            tablette
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/benchmark.html">
-                            benchmark
+                        <a href="/tag/postcss.html">
+                            postcss
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/mercurial.html">
+                            mercurial
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/ios.html">
+                            ios
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/hg.html">
+                            hg
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/pelican.html">
+                            pelican
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
                         <a href="/tag/tmuxp.html">
                             tmuxp
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/3d.html">
+                            3D
                                 <span class="badge">1</span>
                         </a>
                     </li>
