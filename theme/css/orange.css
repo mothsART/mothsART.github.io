@@ -590,6 +590,10 @@ kbd {
     padding-bottom: 2px;
 }
 
+#content li .ace_editor {
+    margin: 0;
+}
+
 .ace_gutter {
     margin-left: 5px;
     border: 1px solid #ccc;
@@ -872,6 +876,10 @@ h1 strong:after {
     background: white;
 }
 
+#content li p {
+    margin: 0;
+}
+
 #content ol ol,
 #content ol ul,
 #content ul ol,
@@ -963,6 +971,12 @@ article .summary .btn {
     transition: all .5s ease-in-out;
 }
 
+article .summary .btn .fa {
+    text-transform: uppercase;
+    font-family: Montserrat,sans-serif;
+    font-size: 12px;
+}
+
 article .summary .btn:hover {
     border: solid 1px #DA862D;
     color: #DA862D;
@@ -986,6 +1000,7 @@ article .summary .btn:hover:before {
 }
 
 article .summary .btn .fa-chevron-circle-right:before {
+    font-family: FontAwesome;
     margin-right: 5px;
 }
 

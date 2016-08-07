@@ -182,6 +182,17 @@ Néanmoins, il m'a fallu utiliser <strong><a href="http://babel.pocoo.org/en/lat
 <p>Pour simpler au maximum, <strong>The QuiZz</strong> ne permet que de poser des questions fermés : <kbd>Oui</kbd> ou <kbd>Non</kbd>.</p>
 <p>C'est très basique mais par conséquent très simple à appréhender.</p>
 <p>Enfin, le logiciel répond par <strong>✔</strong> ou <strong>✘</strong>.</p>
+<h2>Config de PostGreSQL</h2>
+<p>Je pars du principe que vous savez configurer une base Postgres.</p>
+<p>Néanmoins, l'objectif de <strong>the_quizz</strong> étant la pédagogie, j'utilise une config volontairement simpliste : utilisation en <strong>localhost</strong> sans mot de passe.</p>
+<p>Si vous n'avez strictement aucun bagage, le mieux est de paramêtrer ainsi votre fichier <strong>/pg_hba.conf</strong></p>
+<pre class="highlight"><code class="language-ini">local   all             all                                     trust</code></pre>
+
+
+<p>et de le redémarrer via</p>
+<pre class="highlight"><code class="language-sh">sudo service postgres restart</code></pre>
+
+
 <h2>Populariser sa base</h2>
 <pre class="highlight"><code class="language-sql">create TABLE questions (
 id SERIAL PRIMARY KEY,
@@ -282,14 +293,8 @@ insert into questions (entitled, response) values ('Cargo est-il le gestionnaire
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/c.html">
-                            C
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/git.html">
-                            git
+                        <a href="/tag/3d.html">
+                            3D
                                 <span class="badge">3</span>
                         </a>
                     </li>
@@ -300,50 +305,20 @@ insert into questions (entitled, response) values ('Cargo est-il le gestionnaire
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
+                        <a href="/tag/git.html">
+                            git
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/c.html">
+                            C
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
                         <a href="/tag/libre.html">
                             libre
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/gettext.html">
-                            gettext
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/sh.html">
-                            sh
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/cli.html">
-                            cli
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/nodejs.html">
-                            nodejs
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/apple.html">
-                            apple
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/js.html">
-                            js
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/html.html">
-                            html
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -354,39 +329,51 @@ insert into questions (entitled, response) values ('Cargo est-il le gestionnaire
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/babeljs.html">
-                            babeljs
-                                <span class="badge">1</span>
+                        <a href="/tag/html.html">
+                            html
+                                <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/bench.html">
-                            bench
-                                <span class="badge">1</span>
+                        <a href="/tag/apple.html">
+                            apple
+                                <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/tablette.html">
-                            tablette
-                                <span class="badge">1</span>
+                        <a href="/tag/sh.html">
+                            sh
+                                <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/tmuxp.html">
-                            tmuxp
-                                <span class="badge">1</span>
+                        <a href="/tag/gettext.html">
+                            gettext
+                                <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/phonex.html">
-                            phonex
-                                <span class="badge">1</span>
+                        <a href="/tag/cli.html">
+                            cli
+                                <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/snap.html">
-                            snap
-                                <span class="badge">1</span>
+                        <a href="/tag/js.html">
+                            js
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/nodejs.html">
+                            nodejs
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/picture.html">
+                            picture
+                                <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -396,26 +383,50 @@ insert into questions (entitled, response) values ('Cargo est-il le gestionnaire
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/hg.html">
-                            hg
+                        <a href="/tag/grammaire.html">
+                            grammaire
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/phonetic.html">
-                            phonetic
+                        <a href="/tag/riotjs.html">
+                            riotjs
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/ssh.html">
-                            ssh
+                        <a href="/tag/web.html">
+                            web
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/template.html">
-                            template
+                        <a href="/tag/npm.html">
+                            npm
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/encodage.html">
+                            encodage
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/windows.html">
+                            windows
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/mercurial.html">
+                            mercurial
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/java.html">
+                            Java
                                 <span class="badge">1</span>
                         </a>
                     </li>

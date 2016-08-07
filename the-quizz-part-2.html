@@ -169,6 +169,15 @@ Le Labo Du Nerd            </a>
 <p>Pour donner un peu de charme au projet, je lui cole le framework <strong>Bootstrap</strong> avec le thème libre <a href="http://blackrockdigital.github.io/startbootstrap-sb-admin-2/pages/index.html"><strong>SB-Admin-2</strong></a></p>
 <p>Ok, c'est vraiment too much pour une partie 2 mais ça met les bases pour les étapes suivantes.</p>
 <h2>côté serveur (Rust)</h2>
+<p>Nous avons désormais plusieurs binaires à gérer.</p>
+<p>Désormais pour lancer l'appli Cli :</p>
+<pre class="highlight"><code class="language-sh">cargo run --bin the_quizz</code></pre>
+
+
+<p>Et pour l'appli web :</p>
+<pre class="highlight"><code class="language-sh">cargo run --bin the_quizz_web</code></pre>
+
+
 <h3>Les plugins</h3>
 <ul>
 <li>staticfile : permet d'inclure des fichiers statiques (javascript, css, html, polices, images etc.)</li>
@@ -177,7 +186,7 @@ Le Labo Du Nerd            </a>
 </ul>
 <h3>Templates</h3>
 <p>Je suis encore un utilisateur de <strong>Django</strong> et <strong>Flask</strong> et des langages de templates tel que <strong>Jinja</strong>.</p>
-<p>J'ai découvert que <strong>Jinja</strong> était en parti supporté par <strong>Rust</strong> via <a href="https://github.com/Keats/tera"><strong>Tera</strong></a></p>
+<p>J'ai découvert que <strong>Jinja</strong> était en parti supporté par <strong>Rust</strong> via <strong><a href="https://github.com/Keats/tera">Tera</a></strong></p>
 <p>Vu que j'ai carte libre, je parts donc sur cette techno.</p>
 <p>Pour compiler le template, il suffit d'utiliser</p>
 <pre class="highlight"><code class="language-sh">cargo run --bin compile_templates</code></pre>
@@ -188,12 +197,20 @@ Le Labo Du Nerd            </a>
 <h2>Côté client</h2>
 <p>Pour ceux qui ne l'on pas encore compris, j'ai un vrai mépris pour les technos autours de <strong>Javascript</strong> : c'est unsafe à souhait et à tous les désavantages d'un langage interpreté.</p>
 <p>Néanmoins, je vais essayer d'en tirer le meilleur en utilisant <a href="stack-frontend.html"><strong>ma nouvelle stack frontend</strong></a></p>
+<p>Afin de créer l'ensemble des fichiers statiques du projet, il vous suffirat de faire :</p>
+<pre class="highlight"><code class="language-sh">cd static &amp;&amp; gulp</code></pre>
+
+
 <h2>IHM</h2>
 <p>L'utilisation d'une interface web n'étant pas véritablement équivalente, il y a quelques différences :</p>
 <ul>
 <li>pas de possibilité de quitter l'applicatif</li>
+<li>les raccourcis clavier ne peuvent être équivalent : en revanche, vous pouvez passez d'un bouton à un autre avec <kbd>Tab</kbd> ou <kbd>MAJ</kbd> + <kbd>Tab</kbd> et valider ce choix avec <kbd>↵</kbd> (touche entrée)</li>
 </ul>
 <h3>Si vous utilisez une mauvaise version de NodeJS</h3>
+<p>Plusieurs librairies sont encore imcompatibles avec la dernière version de NodeJS (6).
+Un sous-dépendance me pose encore soucis à l'heure actuel : il est donc nécessaire de passer par une version plus ancienne.
+Si vous souhaitez être tranquille, je pense que Node 4 (une version LTS) me semble le plus approprié.</p>
 <ul>
 <li>
 <p>1 Vider le cache de NPM</p>
@@ -202,14 +219,14 @@ Le Labo Du Nerd            </a>
 
 </li>
 <li>
-<p>2 Installer un mini soft appelé tout simplement <strong>n</strong> qui gère exclusivement l'installation de NPM</p>
+<p>2 Installer un mini soft appelé tout simplement <strong>n</strong> qui gère exclusivement l'installation de <strong>Node</strong></p>
 <pre class="highlight"><code class="language-sh">sudo npm install -g n</code></pre>
 
 
 </li>
 <li>
 <p>3 Installer la dernière version stable de NPM</p>
-<pre class="highlight"><code class="language-sh">sudo n stable</code></pre>
+<pre class="highlight"><code class="language-sh">sudo n stable # pour node 5 et sudo n lts pour la version 4</code></pre>
 
 
 </li>
@@ -225,7 +242,8 @@ windows:
       panes:
         - shell_command:
           - cd static
-          - echo 'gulp riot'
+          - echo 'gulp'
+          - gulp
         - cargo run --bin compile_templates
         - cargo run --bin the_quizz_web
     - window_name: cli
@@ -239,8 +257,10 @@ windows:
 
 
 <h2>Conclusion</h2>
-<p>Y'a vraiment beaucoup de dépendances abordées dans cette étape.
-Les évolutions devraient ralentir de ce côté pour la suite.</p>
+<p>Y'a vraiment beaucoup de dépendances abordées dans cette étape.</p>
+<p>D'ailleurs, il est désormais possible de les voir via un graphique.</p>
+<p>Vous pouvez en faire autant : <a href="./stack-rust.html#cargo-graph">créer un graphique de dépendance Rust</a></p>
+<p>Les évolutions devraient ralentir de ce côté pour la suite.</p>
 <h2>Evolution pour l'étape n° 3</h2>
 <ul>
 <li>
@@ -318,14 +338,8 @@ Les évolutions devraient ralentir de ce côté pour la suite.</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/c.html">
-                            C
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/git.html">
-                            git
+                        <a href="/tag/3d.html">
+                            3D
                                 <span class="badge">3</span>
                         </a>
                     </li>
@@ -336,50 +350,20 @@ Les évolutions devraient ralentir de ce côté pour la suite.</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
+                        <a href="/tag/git.html">
+                            git
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/c.html">
+                            C
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
                         <a href="/tag/libre.html">
                             libre
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/gettext.html">
-                            gettext
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/sh.html">
-                            sh
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/cli.html">
-                            cli
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/nodejs.html">
-                            nodejs
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/apple.html">
-                            apple
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/js.html">
-                            js
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/html.html">
-                            html
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -390,39 +374,51 @@ Les évolutions devraient ralentir de ce côté pour la suite.</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/babeljs.html">
-                            babeljs
-                                <span class="badge">1</span>
+                        <a href="/tag/html.html">
+                            html
+                                <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/bench.html">
-                            bench
-                                <span class="badge">1</span>
+                        <a href="/tag/apple.html">
+                            apple
+                                <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/tablette.html">
-                            tablette
-                                <span class="badge">1</span>
+                        <a href="/tag/sh.html">
+                            sh
+                                <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/tmuxp.html">
-                            tmuxp
-                                <span class="badge">1</span>
+                        <a href="/tag/gettext.html">
+                            gettext
+                                <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/phonex.html">
-                            phonex
-                                <span class="badge">1</span>
+                        <a href="/tag/cli.html">
+                            cli
+                                <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/snap.html">
-                            snap
-                                <span class="badge">1</span>
+                        <a href="/tag/js.html">
+                            js
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/nodejs.html">
+                            nodejs
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/picture.html">
+                            picture
+                                <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -432,26 +428,50 @@ Les évolutions devraient ralentir de ce côté pour la suite.</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/hg.html">
-                            hg
+                        <a href="/tag/grammaire.html">
+                            grammaire
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/phonetic.html">
-                            phonetic
+                        <a href="/tag/riotjs.html">
+                            riotjs
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/ssh.html">
-                            ssh
+                        <a href="/tag/web.html">
+                            web
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/template.html">
-                            template
+                        <a href="/tag/npm.html">
+                            npm
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/encodage.html">
+                            encodage
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/windows.html">
+                            windows
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/mercurial.html">
+                            mercurial
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/java.html">
+                            Java
                                 <span class="badge">1</span>
                         </a>
                     </li>
