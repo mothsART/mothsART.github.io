@@ -146,14 +146,23 @@ Le Labo Du Nerd            </a>
 </footer><!-- /.post-info -->                    </div>
                 </div>
                 <h2>Intro</h2>
+<p>Ce cahier est dédié à de l'usage de javascript dit <strong>classique</strong>  ce qui sous-entend, pas de frameworks révolutionnaires style <strong>Angular</strong>, <strong>React</strong> et autre.
+Pas d'utilisation de transpiler tel que Typescript, CofeeScript ou même BabelJS.</p>
+<p>Du javascript en mode vanilla avec potentiellement un peu de Jquery.</p>
+<h2>Mode strict</h2>
 <ul>
 <li>Javascript : utiliser le mode strict =&gt; https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Strict_mode dans des fonctions</li>
 </ul>
 <p>Résoud pas mal de soucis de navigateurs : variables non déclarés et autre</p>
-<ul>
-<li>Javascript utilise plusieurs types : undefined, null, undeclared, bool</li>
-</ul>
-<p>Le mieux est de faire un test sans égalité =&gt; if (maVar) ou if(!var)</p>
+<h2>Les différents types de Javascript</h2>
+<p>Javascript utilise plusieurs types : undefined, null, undeclared, bool.</p>
+<p>Si l'on ne connait pas le type par avance et qu'on veut un test d'existance, le mieux est de faire :</p>
+<p><strong>if (maVar)</strong> ou <strong>if(!var)</strong></p>
+<h2>Les appels d'évenements sur les éléments HTML (ou unobstrusive)</h2>
+<p>Même si les outils de développement sont de plus en plus efficace, ne pas savoir d'ou provient un action peut devenir agacent.
+De plus, avec le tout mobile, l'utilisation ingénieuses des ressources est primordiale.
+Un évènement devrait être dans 99% du temps sur l'élément en lui evitant les observeurs gourmand.</p>
+<h3>Un lien avec un évènement onclick doit utiliser un return false</h3>
 <ul>
 <li><a href="..." onclick="monappel();return false;"></a></li>
 </ul>
@@ -187,7 +196,7 @@ Le Labo Du Nerd            </a>
                     <li class="list-group-item tag-1">
                         <a href="/tag/linux.html">
                             linux
-                                <span class="badge">13</span>
+                                <span class="badge">16</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -199,13 +208,7 @@ Le Labo Du Nerd            </a>
                     <li class="list-group-item tag-1">
                         <a href="/tag/rust.html">
                             rust
-                                <span class="badge">7</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/frontend.html">
-                            frontend
-                                <span class="badge">4</span>
+                                <span class="badge">8</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -215,8 +218,20 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/postgresql.html">
-                            postgresql
+                        <a href="/tag/frontend.html">
+                            frontend
+                                <span class="badge">4</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/libre.html">
+                            libre
+                                <span class="badge">4</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/git.html">
+                            git
                                 <span class="badge">3</span>
                         </a>
                     </li>
@@ -239,32 +254,26 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/git.html">
-                            git
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="/tag/c.html">
                             C
                                 <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/libre.html">
-                            libre
-                                <span class="badge">2</span>
+                        <a href="/tag/js.html">
+                            js
+                                <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/zsh.html">
-                            zsh
-                                <span class="badge">2</span>
+                        <a href="/tag/postgresql.html">
+                            postgresql
+                                <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/html.html">
-                            html
+                        <a href="/tag/cli.html">
+                            cli
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -275,32 +284,8 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/sh.html">
-                            sh
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/gettext.html">
-                            gettext
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/cli.html">
-                            cli
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/js.html">
-                            js
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/nodejs.html">
-                            nodejs
+                        <a href="/tag/html.html">
+                            html
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -311,8 +296,44 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/postgres.html">
-                            postgres
+                        <a href="/tag/zsh.html">
+                            zsh
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/nodejs.html">
+                            nodejs
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/gettext.html">
+                            gettext
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/sh.html">
+                            sh
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/wayland.html">
+                            wayland
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/blender.html">
+                            blender
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/utf.html">
+                            utf
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -323,44 +344,32 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/riotjs.html">
-                            riotjs
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/web.html">
-                            web
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="/tag/npm.html">
                             npm
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/encodage.html">
-                            encodage
+                        <a href="/tag/offline.html">
+                            offline
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/windows.html">
-                            windows
+                        <a href="/tag/algo.html">
+                            algo
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/mercurial.html">
-                            mercurial
+                        <a href="/tag/snap.html">
+                            snap
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/java.html">
-                            Java
+                        <a href="/tag/ios.html">
+                            ios
                                 <span class="badge">1</span>
                         </a>
                     </li>

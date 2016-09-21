@@ -870,7 +870,8 @@ h1 strong:after {
 
 #content p,
 #content ol,
-#content ul {
+#content ul,
+#content .videobox {
     margin: 0 0 0 30px;
     padding: 5px;
     background: white;

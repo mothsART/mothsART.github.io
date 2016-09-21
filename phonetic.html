@@ -153,9 +153,64 @@ Le Labo Du Nerd            </a>
 </footer><!-- /.post-info -->                    </div>
                 </div>
                 <h2>Phonetic</h2>
-<h3>Double metaphone</h3>
+<p>Sur PostgreSQL : https://www.postgresql.org/docs/9.1/static/fuzzystrmatch.html</p>
+<p>https://fr.wikipedia.org/wiki/Homonymie
+http://www.easter-eggs.com/Recherche-approximative-avec
+http://sebsauvage.net/wiki/doku.php?id=php:recherche_floue</p>
+<p>CREATE EXTENSION fuzzystrmatch;</p>
+<h3>Soundex</h3>
 <h3>Phonex</h3>
 <p>Soundex pour le français : http://www.trickytools.com/downloads/phonex2.c</p>
+<h3>Double metaphone</h3>
+<p>Il est dit double car il peut retourner un code primaire et secondaire. (0 à 4 caractères)
+Il est par conséquent bien plus précis que le <strong>Soundex</strong> et également plus adapté aux langues non anglophone.</p>
+<p>Il a <strong>16 consonnes</strong> (le 0 représente le th anglais) :
+      B  X  S  K  J  T  F  H  L  M  N  P  R  0  W  Y</p>
+<p>Transformations:</p>
+<p>B ----&gt; B      unless at the end of word after "m", as in "dumb", "McComb"</p>
+<p>C ----&gt; X      (sh) if "-cia-" or "-ch-"
+           S      if "-ci-", "-ce-", or "-cy-"
+                  SILENT if "-sci-", "-sce-", or "-scy-"
+           K      otherwise, including in "-sch-"</p>
+<p>D ----&gt; J      if in "-dge-", "-dgy-", or "-dgi-"
+           T      otherwise</p>
+<p>F ----&gt; F</p>
+<p>G ----&gt;        SILENT if in "-gh-" and not at end or before a vowel
+                            in "-gn" or "-gned"
+                            in "-dge-" etc., as in above rule
+           J      if before "i", or "e", or "y" if not double "gg"
+           K      otherwise</p>
+<p>H ----&gt;        SILENT if after vowel and no vowel follows
+                         or after "-ch-", "-sh-", "-ph-", "-th-", "-gh-"
+           H      otherwise</p>
+<p>J ----&gt; J</p>
+<p>K ----&gt;        SILENT if after "c"
+           K      otherwise</p>
+<p>L ----&gt; L</p>
+<p>M ----&gt; M</p>
+<p>N ----&gt; N</p>
+<p>P ----&gt; F      if before "h"
+           P      otherwise</p>
+<p>Q ----&gt; K</p>
+<p>R ----&gt; R</p>
+<p>S ----&gt; X      (sh) if before "h" or in "-sio-" or "-sia-"
+           S      otherwise</p>
+<p>T ----&gt; X      (sh) if "-tia-" or "-tio-"
+           0      (th) if before "h"
+                  silent if in "-tch-"
+           T      otherwise</p>
+<p>V ----&gt; F</p>
+<p>W ----&gt;        SILENT if not followed by a vowel
+           W      if followed by a vowel</p>
+<p>X ----&gt; KS</p>
+<p>Y ----&gt;        SILENT if not followed by a vowel
+           Y      if followed by a vowel</p>
+<p>Z ----&gt; S</p>
+<p>https://github.com/Freyskeyd/nlp
+http://aspell.net/metaphone/metaphone-kuhn.txt
+http://aspell.net/metaphone/dmetaph.cpp</p>
+<p>Sous PostGreSQL : select dmetaphone('gumbo');
+=&gt; ça ne marche pas bien dès qu'il y a des caractères accentués.</p>
 <h3>Distance de Levenstein</h3>
 <h3>Références</h3>
 <p>http://www.norvig.com/spell-correct.html</p>
@@ -187,7 +242,7 @@ Le Labo Du Nerd            </a>
                     <li class="list-group-item tag-1">
                         <a href="/tag/linux.html">
                             linux
-                                <span class="badge">13</span>
+                                <span class="badge">16</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -199,13 +254,7 @@ Le Labo Du Nerd            </a>
                     <li class="list-group-item tag-1">
                         <a href="/tag/rust.html">
                             rust
-                                <span class="badge">7</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/frontend.html">
-                            frontend
-                                <span class="badge">4</span>
+                                <span class="badge">8</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -215,8 +264,20 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/postgresql.html">
-                            postgresql
+                        <a href="/tag/frontend.html">
+                            frontend
+                                <span class="badge">4</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/libre.html">
+                            libre
+                                <span class="badge">4</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/git.html">
+                            git
                                 <span class="badge">3</span>
                         </a>
                     </li>
@@ -239,32 +300,26 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/git.html">
-                            git
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="/tag/c.html">
                             C
                                 <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/libre.html">
-                            libre
-                                <span class="badge">2</span>
+                        <a href="/tag/js.html">
+                            js
+                                <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/zsh.html">
-                            zsh
-                                <span class="badge">2</span>
+                        <a href="/tag/postgresql.html">
+                            postgresql
+                                <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/html.html">
-                            html
+                        <a href="/tag/cli.html">
+                            cli
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -275,32 +330,8 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/sh.html">
-                            sh
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/gettext.html">
-                            gettext
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/cli.html">
-                            cli
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/js.html">
-                            js
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/nodejs.html">
-                            nodejs
+                        <a href="/tag/html.html">
+                            html
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -311,8 +342,44 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/postgres.html">
-                            postgres
+                        <a href="/tag/zsh.html">
+                            zsh
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/nodejs.html">
+                            nodejs
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/gettext.html">
+                            gettext
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/sh.html">
+                            sh
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/wayland.html">
+                            wayland
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/blender.html">
+                            blender
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/utf.html">
+                            utf
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -323,44 +390,32 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/riotjs.html">
-                            riotjs
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/web.html">
-                            web
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="/tag/npm.html">
                             npm
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/encodage.html">
-                            encodage
+                        <a href="/tag/offline.html">
+                            offline
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/windows.html">
-                            windows
+                        <a href="/tag/algo.html">
+                            algo
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/mercurial.html">
-                            mercurial
+                        <a href="/tag/snap.html">
+                            snap
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/java.html">
-                            Java
+                        <a href="/tag/ios.html">
+                            ios
                                 <span class="badge">1</span>
                         </a>
                     </li>

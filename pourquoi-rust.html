@@ -146,7 +146,7 @@ Le Labo Du Nerd            </a>
 
 
 	<a href="/tag/rust.html">rust
-                <span class="badge">7</span>
+                <span class="badge">8</span>
     </a>
         /
 	<a href="/tag/python.html">python
@@ -154,7 +154,6 @@ Le Labo Du Nerd            </a>
     </a>
         /
 	<a href="/tag/java.html">Java
-                <span class="badge">1</span>
     </a>
         /
 	<a href="/tag/javascript.html">Javascript
@@ -192,10 +191,12 @@ Quant on fait du bas niveau, on s'oblige a comprendre comment fonctionne réelle
 <p>La première catégorie est forcément mieux armé pour faire face à des problématiques complexes : de performance, latence, empreinte mémoire, sécurité etc.</p>
 <p>Bref, les problématiques rencontrés par tous les développeurs travaillant sur des projets sérieux.</p>
 <p><strong>Python</strong>, <strong>Javascript</strong> et <strong>C#</strong> (dans une moindre mesure) ne sont tout simplement pas fait pour ce genre de chose.
-<em> D'une part, la gestion de la mémoire se fait via un ramasse-miettes (garbage collector).
-</em> Ces langages passent par des machines virtuelles qui interpréte (via du bytecode) et convertisse à la volé en code machine.
+* D'une part, la gestion de la mémoire se fait via un ramasse-miettes (garbage collector) donc mémoire sur le tas (https://github.com/GuillaumeGomez/fr_rust_book/blob/master/la-pile-et-le-tas.md) et soucis quasi insoluble de libération total.</p>
+<ul>
+<li>Ces langages passent par des machines virtuelles qui interpréte (via du bytecode) et convertisse à la volé en code machine.
 Il est par conséquent impossible d'avoir du code aussi rapide en interprété quand compilé (par analogie, le chemin le plus court entre 2 points est la ligne droite). 
-Même si on peut s'en rapprocher, le soucis de l'empreinte mémoire d'une VM et son temps de lancement reste insoluble.</p>
+Même si on peut s'en rapprocher, le soucis de l'empreinte mémoire d'une VM et son temps de lancement reste insoluble.</li>
+</ul>
 <p>J'imagine un avenir radieu (quoi, on y est déjà ?) ou l'on lancera en simultannée une appli <strong>Java</strong>, <strong>Python</strong>, <strong>Nodejs</strong>, <strong>C#</strong>, <strong>Ruby</strong> et <strong>Perl</strong>.
 Chacun utilise sa propre VM et prend 50 Mo (et je suis optimiste).
 Résulat des courses : on utilise 250 Mo inutillement.
@@ -225,7 +226,7 @@ Prendre 1 heure pour faire quelque chose qui nous prend 5 minutes dans un autre 
 <h2>Les gros avantages</h2>
 <ul>
 <li>
-<p>différenciation entre <em>espace de nommage</em> et appel d'un attribut (propriété et méthodes).
+<p>différenciation entre <strong>espace de nommage</strong> et appel d'un attribut (propriété et méthodes).
 C'est un peu déroutant quand on vient de <strong>Python</strong> et <strong>C#</strong> qui utilise que le <strong>.</strong> point délimiter les 2 aspects.
 Problème =&gt; des confusions et des conflits possibles entre un nom et une propriété! En un mot : inadmissible !
 <strong>Rust</strong> a choisi de distinguer les 2 et c'est tout bonnement pythonnesque : explicite is better than implicite =&gt; <strong>::</strong> délimiter les espaces de nommage et <strong>.</strong> pour appeler un attribut.</p>
@@ -283,7 +284,7 @@ efficient C bindings</p>
                     <li class="list-group-item tag-1">
                         <a href="/tag/linux.html">
                             linux
-                                <span class="badge">13</span>
+                                <span class="badge">16</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -295,13 +296,7 @@ efficient C bindings</p>
                     <li class="list-group-item tag-1">
                         <a href="/tag/rust.html">
                             rust
-                                <span class="badge">7</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/frontend.html">
-                            frontend
-                                <span class="badge">4</span>
+                                <span class="badge">8</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -311,8 +306,20 @@ efficient C bindings</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/postgresql.html">
-                            postgresql
+                        <a href="/tag/frontend.html">
+                            frontend
+                                <span class="badge">4</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/libre.html">
+                            libre
+                                <span class="badge">4</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/git.html">
+                            git
                                 <span class="badge">3</span>
                         </a>
                     </li>
@@ -335,32 +342,26 @@ efficient C bindings</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/git.html">
-                            git
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="/tag/c.html">
                             C
                                 <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/libre.html">
-                            libre
-                                <span class="badge">2</span>
+                        <a href="/tag/js.html">
+                            js
+                                <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/zsh.html">
-                            zsh
-                                <span class="badge">2</span>
+                        <a href="/tag/postgresql.html">
+                            postgresql
+                                <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/html.html">
-                            html
+                        <a href="/tag/cli.html">
+                            cli
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -371,32 +372,8 @@ efficient C bindings</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/sh.html">
-                            sh
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/gettext.html">
-                            gettext
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/cli.html">
-                            cli
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/js.html">
-                            js
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/nodejs.html">
-                            nodejs
+                        <a href="/tag/html.html">
+                            html
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -407,8 +384,44 @@ efficient C bindings</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/postgres.html">
-                            postgres
+                        <a href="/tag/zsh.html">
+                            zsh
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/nodejs.html">
+                            nodejs
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/gettext.html">
+                            gettext
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/sh.html">
+                            sh
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/wayland.html">
+                            wayland
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/blender.html">
+                            blender
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/utf.html">
+                            utf
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -419,44 +432,32 @@ efficient C bindings</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/riotjs.html">
-                            riotjs
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/web.html">
-                            web
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="/tag/npm.html">
                             npm
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/encodage.html">
-                            encodage
+                        <a href="/tag/offline.html">
+                            offline
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/windows.html">
-                            windows
+                        <a href="/tag/algo.html">
+                            algo
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/mercurial.html">
-                            mercurial
+                        <a href="/tag/snap.html">
+                            snap
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/java.html">
-                            Java
+                        <a href="/tag/ios.html">
+                            ios
                                 <span class="badge">1</span>
                         </a>
                     </li>
