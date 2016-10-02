@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>http://mothsart.github.io/</link><description></description><lastBuildDate>Mon, 03 Oct 2016 00:56:09 +0200</lastBuildDate><item><title>Snap</title><link>http://mothsart.github.io/snap.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;http://korben.info/installer-paquets-snap-ubuntu-ligne-de-commande.html&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:snap.html</guid><category>snap</category><category>ubuntu</category><category>linux</category></item><item><title>Pourquoi Wayland</title><link>http://mothsart.github.io/pourquoi-wayland.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Beaucoup de bruit autours de &lt;strong&gt;Wayland&lt;/strong&gt; (et de &lt;strong&gt;Mir&lt;/strong&gt;) sans savoir ce que ça va apporter par rapport au serveur X (Xorg).
+Du coup, j'essai d'éclaircir un peu par mes recherches.&lt;/p&gt;
+&lt;h2&gt;De la sécurité&lt;/h2&gt;
+&lt;h2&gt;De l'abstraction&lt;/h2&gt;
+&lt;p&gt;On sépare les clients : typiquement chaque zone de rendu (pour simplifier on peut dire fenêtres)&lt;/p&gt;
+&lt;p&gt;Chaque client passe par un protocole pour émettre des événements, en recevoir et pour mettre à jour son buffer.&lt;/p&gt;
+&lt;p&gt;Ce protocole c'est Wayland qui passe toutes ces infos normalisés à un compositeur.&lt;/p&gt;
+&lt;p&gt;Le compositeur est donc complétement isolé des fenêtres.&lt;/p&gt;
+&lt;h2&gt;KISS&lt;/h2&gt;
+&lt;p&gt;Wayland sert grosso modo à récupérer les buffers CPU (&lt;strong&gt;shared memory (SHM)&lt;/strong&gt;) et GPU (&lt;strong&gt;GEM’s buffer sharing&lt;/strong&gt;) des différentes fenêtres et les transmettre avec leur ordre d'affichage à un composer via un protocole.
+Ni plus, ni moins.&lt;/p&gt;
+&lt;p&gt;Une API C minimal sans prise en charge de buffer exotique.&lt;/p&gt;
+&lt;p&gt;Par conséquent plus simple à développer et à entretenir.&lt;/p&gt;
+&lt;h2&gt;Les bienfaits de la page blanche&lt;/h2&gt;
+&lt;p&gt;Wayland c'est aussi un projet jeune qui ne traine pas les &lt;strong&gt;deadcodes&lt;/strong&gt; de Xorg et son historique.&lt;/p&gt;
+&lt;p&gt;De plus, plein de nouvelles technos linux ont émmergé depuis quelques années :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Edev&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;KMS&lt;/strong&gt; (&lt;strong&gt;Kernel-based mode-setting&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;EGL&lt;/strong&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Compositeurs&lt;/h2&gt;
+&lt;p&gt;Les devs de Wayland fournisse &lt;strong&gt;weston&lt;/strong&gt; : compositeur de référence et de démo de Wayland.&lt;/p&gt;
+&lt;h2&gt;Et Mir dans tout ça&lt;/h2&gt;
+&lt;p&gt;Ubuntu a décidé depuis 2013 de se la jouer perso en créant &lt;strong&gt;Mir&lt;/strong&gt;.
+Ce choix est fait principalement pour répondre à un besoin criant d'avoir quelques chose d'opérationnel pour du tactile.
+A priori, ça porte du fruit.&lt;/p&gt;
+&lt;p&gt;Néanmoins, Mir fait office de protocole et de compositeur.
+Il est donc &lt;/p&gt;
+&lt;h2&gt;liens&lt;/h2&gt;
+&lt;p&gt;http://mupuf.org/blog/2014/02/19/wayland-compositors-why-and-how-to-handle/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:pourquoi-wayland.html</guid><category>wayland</category><category>linux</category></item><item><title>Windows vs Linux</title><link>http://mothsart.github.io/windows-vs-linux.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Comparer Windows à Linux c'est comme comparer &lt;/p&gt;
+&lt;h2&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:windows-vs-linux.html</guid><category>windows</category><category>linux</category></item><item><title>Correcteur</title><link>http://mothsart.github.io/correcteur.html</link><description>&lt;h2&gt;&lt;/h2&gt;
+&lt;p&gt;http://www.norvig.com/spell-correct.html&lt;/p&gt;
+&lt;p&gt;http://www.reverso.net/spell-checker/french-spelling-grammar/
+http://bescherelle.com/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 03 Oct 2016 00:56:09 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:correcteur.html</guid><category>correcteur</category><category>grammaire</category></item><item><title>Phonetic</title><link>http://mothsart.github.io/phonetic.html</link><description>&lt;h2&gt;Phonetic&lt;/h2&gt;
+&lt;p&gt;Sur PostgreSQL : https://www.postgresql.org/docs/9.1/static/fuzzystrmatch.html&lt;/p&gt;
+&lt;p&gt;https://fr.wikipedia.org/wiki/Homonymie
+http://www.easter-eggs.com/Recherche-approximative-avec
+http://sebsauvage.net/wiki/doku.php?id=php:recherche_floue&lt;/p&gt;
+&lt;p&gt;CREATE EXTENSION fuzzystrmatch;&lt;/p&gt;
+&lt;h3&gt;Soundex&lt;/h3&gt;
+&lt;h3&gt;Phonex&lt;/h3&gt;
+&lt;p&gt;Soundex pour le français : http://www.trickytools.com/downloads/phonex2.c&lt;/p&gt;
+&lt;h3&gt;Double metaphone&lt;/h3&gt;
+&lt;p&gt;Il est dit double car il peut retourner un code primaire et secondaire. (0 à 4 caractères)
+Il est par conséquent bien plus précis que le &lt;strong&gt;Soundex&lt;/strong&gt; et également plus adapté aux langues non anglophone.&lt;/p&gt;
+&lt;p&gt;Il a &lt;strong&gt;16 consonnes&lt;/strong&gt; (le 0 représente le th anglais) :
+      B  X  S  K  J  T  F  H  L  M  N  P  R  0  W  Y&lt;/p&gt;
+&lt;p&gt;Transformations:&lt;/p&gt;
+&lt;p&gt;B ----&amp;gt; B      unless at the end of word after "m", as in "dumb", "McComb"&lt;/p&gt;
+&lt;p&gt;C ----&amp;gt; X      (sh) if "-cia-" or "-ch-"
+           S      if "-ci-", "-ce-", or "-cy-"
+                  SILENT if "-sci-", "-sce-", or "-scy-"
+           K      otherwise, including in "-sch-"&lt;/p&gt;
+&lt;p&gt;D ----&amp;gt; J      if in "-dge-", "-dgy-", or "-dgi-"
+           T      otherwise&lt;/p&gt;
+&lt;p&gt;F ----&amp;gt; F&lt;/p&gt;
+&lt;p&gt;G ----&amp;gt;        SILENT if in "-gh-" and not at end or before a vowel
+                            in "-gn" or "-gned"
+                            in "-dge-" etc., as in above rule
+           J      if before "i", or "e", or "y" if not double "gg"
+           K      otherwise&lt;/p&gt;
+&lt;p&gt;H ----&amp;gt;        SILENT if after vowel and no vowel follows
+                         or after "-ch-", "-sh-", "-ph-", "-th-", "-gh-"
+           H      otherwise&lt;/p&gt;
+&lt;p&gt;J ----&amp;gt; J&lt;/p&gt;
+&lt;p&gt;K ----&amp;gt;        SILENT if after "c"
+           K      otherwise&lt;/p&gt;
+&lt;p&gt;L ----&amp;gt; L&lt;/p&gt;
+&lt;p&gt;M ----&amp;gt; M&lt;/p&gt;
+&lt;p&gt;N ----&amp;gt; N&lt;/p&gt;
+&lt;p&gt;P ----&amp;gt; F      if before "h"
+           P      otherwise&lt;/p&gt;
+&lt;p&gt;Q ----&amp;gt; K&lt;/p&gt;
+&lt;p&gt;R ----&amp;gt; R&lt;/p&gt;
+&lt;p&gt;S ----&amp;gt; X      (sh) if before "h" or in "-sio-" or "-sia-"
+           S      otherwise&lt;/p&gt;
+&lt;p&gt;T ----&amp;gt; X      (sh) if "-tia-" or "-tio-"
+           0      (th) if before "h"
+                  silent if in "-tch-"
+           T      otherwise&lt;/p&gt;
+&lt;p&gt;V ----&amp;gt; F&lt;/p&gt;
+&lt;p&gt;W ----&amp;gt;        SILENT if not followed by a vowel
+           W      if followed by a vowel&lt;/p&gt;
+&lt;p&gt;X ----&amp;gt; KS&lt;/p&gt;
+&lt;p&gt;Y ----&amp;gt;        SILENT if not followed by a vowel
+           Y      if followed by a vowel&lt;/p&gt;
+&lt;p&gt;Z ----&amp;gt; S&lt;/p&gt;
+&lt;p&gt;https://github.com/Freyskeyd/nlp
+http://aspell.net/metaphone/metaphone-kuhn.txt
+http://aspell.net/metaphone/dmetaph.cpp&lt;/p&gt;
+&lt;p&gt;Sous PostGreSQL : select dmetaphone('gumbo');
+=&amp;gt; ça ne marche pas bien dès qu'il y a des caractères accentués.&lt;/p&gt;
+&lt;h3&gt;Distance de Levenstein&lt;/h3&gt;
+&lt;h3&gt;Références&lt;/h3&gt;
+&lt;p&gt;http://www.norvig.com/spell-correct.html&lt;/p&gt;
+&lt;p&gt;http://stackoverflow.com/questions/487003/how-to-detect-a-typo-in-a-product-search-and-suggest-possible-corrections&lt;/p&gt;
+&lt;p&gt;PostGreSQL implémente la distance de levenstein, le double metaphone :&lt;/p&gt;
+&lt;p&gt;https://github.com/Freyskeyd/nlp&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:phonetic.html</guid><category>phonetic</category><category>phonex</category><category>metaphone</category></item><item><title>Que penser du langage Swift ?</title><link>http://mothsart.github.io/que-penser-de-swift.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Swift est le nouveau bébé d'Apple pour créer des applications.
+Il va partager un bon moment un environnement hétérogène avec Objective C...&lt;/p&gt;
+&lt;p&gt;Voici mon analyse sur ce langage.&lt;/p&gt;
+&lt;h2&gt;Pas mal de bons points&lt;/h2&gt;
+&lt;p&gt;Objective C était à mon sens un langage vraiment brouillon... une réponse rapide à des problèmes complexes.&lt;/p&gt;
+&lt;p&gt;On sens que dans Swift, il y a une réflexion beaucoup plus élaboré.&lt;/p&gt;
+&lt;p&gt;Les arguments positifs :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;switch exhaustif : un peu un équivalent (pauvre) du &lt;strong&gt;Match&lt;/strong&gt; de Rust&lt;/li&gt;
+&lt;li&gt;Pas de &lt;strong&gt;bytecode&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Pas de &lt;strong&gt;garbage collector&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;utilisation de &lt;strong&gt;LLVM&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;inférence de type&lt;/li&gt;
+&lt;li&gt;full unicode (même si je suis contre la possibilité de nommer des variables en UTF-8 en dehors d'un tuto ou d'un prototype)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Je déteste toujours Apple&lt;/h2&gt;
+&lt;p&gt;cf : &lt;a href="dislike-apple.html"&gt;J'aime pas Apple&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Swift est bien meilleur que Java pour du mobile, c'est indéniable... j'espère que Google envisage sérieusement un remplaçant rapidement : Rust please, n'inventez pas un nième langage!!&lt;/p&gt;
+&lt;h2&gt;Pourquoi créer un nouveau langage ?!&lt;/h2&gt;
+&lt;p&gt;Rien dans Swift n'est réellement neuf.
+Pourquoi ne pas s'être greffé sur des langages déjà existants ?!
+Ca fragmente encore plus le marché du travail... c'est juste désespérant.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 09 Jun 2016 20:19:28 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-09:que-penser-de-swift.html</guid><category>rust</category><category>swift</category><category>apple</category></item><item><title>Bug</title><link>http://mothsart.github.io/bug.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Mais qu'est-ce qu'un bug et pourquoi le développeur à ce sentiment d'inachevé ?
+Je vais tenter via cet article de remettre les choses à plat sur ces notions, pris comme acquis et qui ne le sont généralement pas.&lt;/p&gt;
+&lt;h2&gt;Garantir un logiciel comme stable&lt;/h2&gt;
+&lt;p&gt;Pour les développeur, je vous invite à vous mettre l'espace d'un instant dans la peau d'un commercial, décisionnaire ou tout simplement du client final.&lt;/p&gt;
+&lt;p&gt;Quel sont ses attentes : un logiciel qui &lt;strong&gt;marche&lt;/strong&gt; si on pousse la naïveté à son paroxisme.
+Mais derrière ce constat relativement simpliste, ce cache énormément de subtilité : 
+- quel sont les temps de réactivité maximal autorisés pour que l'applicatif ne réponde plus au attente ?
+- qu'est ce que l'on peut clairement identifié comme non désiré ? L'ergonomie, par exemple peut tout à fait être fonctionnel sans tout de fois satisfaire le client.&lt;/p&gt;
+&lt;h2&gt;Constat&lt;/h2&gt;
+&lt;p&gt;Le problème est pris bien souvent à l'envers.
+Ce qui régis les lois de l'informatique, se sont des lois physiques et mathématiques même si certaines abstractions nous semble parfois oublier cette dimension.&lt;/p&gt;
+&lt;p&gt;Pour comprendre un fonctionnement complexe, il est utile bien souvent de le fractionner en plusieurs problématique simples : https://fr.wikipedia.org/wiki/Diviser_pour_r%C3%A9gner_(informatique)&lt;/p&gt;
+&lt;h2&gt;Entrée / sortie&lt;/h2&gt;
+&lt;p&gt;Un programme informatique est un ensemble d'opérations destinées à être exécutées par un ordinateur.
+Il se résume donc à des entrées et des sorties possibles. (cf: univers des possibles)&lt;/p&gt;
+&lt;p&gt;Imaginons un programme qui renvoi une réponse en fonction de 2 entrées.
+Les entrées sont 2 valeurs booléennes (vrai ou faux) et la sortie est une valeur booléenne.
+Notre programme se prénome "démarrer la voiture" et les entrées sont respectivement : "insérer la clé" et "mettre sa ceinture".&lt;/p&gt;
+&lt;p&gt;Notre cahier des charges de se programme définit que la seul condition pour que la voiture démarre est que les 2 conditions initiales soit valides.&lt;/p&gt;
+&lt;p&gt;Combien de possibilité s'offre à nous ?
+4 : 
+- on a pas inséré la clé
+- on a inséré la clé mais pas mis sa ceinture
+- on a inséré la ceinture mais pas la clé
+- on a inséré la clé et mis sa ceinture&lt;/p&gt;
+&lt;p&gt;Dans ce cas simple, il est facile de déterminer que notre programme fonctionne dans tous les cas possibles.&lt;/p&gt;
+&lt;h2&gt;Logiciels complexes : explosion combinatoire&lt;/h2&gt;
+&lt;p&gt;Maintenant, abordont des logiciels tel que nous les connaissons.
+Les entrées sont : les saisies du clavier, de évènements provenant de la souris, le système d'exploitation ainsi que navigateur utilisé, de Web services interrogés etc.&lt;/p&gt;
+&lt;p&gt;On peut vite se rendre compte que l'arbre des possibles est difficile à estimer mais qu'il se rapproche innexorablement vers l'infini. (surtout si il y a de la récursivité)&lt;/p&gt;
+&lt;h2&gt;Le leure du générique&lt;/h2&gt;
+&lt;p&gt;Une lubie de beaucoup de programmeur est la généricité.
+Un point commun pour plusieurs parties du logiciel.
+Celà part souvent d'une bonne intension -&amp;gt; moins de code à produire donc une meilleur maintenance.
+Néanmoins, l'effet pervers est de créer des parties qui font trop de choses, qui sont difficiles à retoucher et qui engendre par conséquent trop de conditions différentes. 
+De plus : si le code générique comporte un bug, il risque fortement d'impacter tout l'applicatif là ou un autre bug n'aurait toucher qu'un effet marginal. &lt;/p&gt;
+&lt;h2&gt;Solutions à envisager&lt;/h2&gt;
+&lt;h3&gt;l'approche fonctionnel ou comment réduire les effets de bord&lt;/h3&gt;
+&lt;p&gt;l'effet de bord fait parti de la hantise du programmeur.
+Un correctif va entrainer une régression à un ou plusieurs endroits de l'applicatif sans lien direct avec la partie en question.
+Le bug est par conséquent détecté plus tard, au plus mauvais moment (en production, par le client, le vendredi soir à la veille du départ en vacances)
+Je parlais tout à l'heure de fractionnement et d'entrées / sorties.
+L'effet de bord provient des variables globales réutilisés dans différents contexte.
+L'approche fonctionnel annule totalement ce comportement : on déclare explicitement les variables muables (ça réduit déjà) puis on donne une durée de vie à ces dernières.
+Résultat : on peut raisonner en réel boite noir ou une boite n'a strictement aucune influence sur une autre.&lt;/p&gt;
+&lt;h3&gt;API&lt;/h3&gt;
+&lt;p&gt;C'est à la mode surtout avec les web services qui poussent comme les champignons.
+Les meilleurs API sont les plus concices à mon sens.
+Elles doivent également cacher les coulisses. (le fonctionnement interne)
+L'utilisation doit de se fait être intuitive.&lt;/p&gt;
+&lt;h3&gt;Soigner les points d'entrée&lt;/h3&gt;
+&lt;p&gt;Il vaut mieux contraindre un utilisateur plutôt que lui donner trop de libertés.
+Moins de libertés sous-entend moins de possibles et par extension, moins de bugs.
+Il vaut mieux avoir une politique de droits minimum et les étendre si besoin plutôt que l'inverse.&lt;/p&gt;
+&lt;p&gt;Dans une appli web, les points d'entrée peuvent être la grande variété de navigateurs (ayant chacun des comportements spécifiques).
+Effectuer certains traitement côté serveur plutôt que côté client vont éviter ce type de bugs.&lt;/p&gt;
+&lt;h3&gt;tests unitaires et couverture&lt;/h3&gt;
+&lt;p&gt;Si l'on veut donner un cadre à notre logiciel, les tests automatisés sont primordiaux.
+Ces derniers obligent à mieux fractionner notre code en des zones minimales et donc réduire le champ des possible.
+De même, ça oblige à chainer les process : chaque étapes sont indépendantes et leur concaténation réalise un scénario.
+Si toutes nos fonctions sont testés et que par conséquent tout le code de notre applicatif est utilisé pendant l'automatisation des tests, on parle d'une couverture total.&lt;/p&gt;
+&lt;p&gt;Une couverture partiel donnera un indicatif : les zones non couvertes sont potentiellement moins sécurisé que celles couvertes.&lt;/p&gt;
+&lt;p&gt;Autre avantage des tests : la lecture des tests unitaires par un développeur donne directement le cahier des charges en réel de l'applicatif.&lt;/p&gt;
+&lt;p&gt;Si l'on met au point des tests unitaires dans un applicatif qui n'en avait pas auparavant, il faut impérativement s'attaquer aux parties génériques en priorité et au stockage de données (la suppression étant le point critique par excellence).&lt;/p&gt;
+&lt;h3&gt;Fuzzing ou comment le hasard peut être notre allié&lt;/h3&gt;
+&lt;p&gt;Le fuzzing est un sujet à part. C'est un bon moyen de débusquer des bugs que l'on aurait sans doute difficilement trouvé par des méthodes classiques.
+C'est une technique qui nécessite néanmoins de l'investissement et de l'expertise.
+A privilégier sur des logiciels finis, ou l'on veut débusquer des soucis de sécurité.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;On peut dire qu'un logiciel à atteind ses objectifs si il fonctionne dans l'ensemble des cas d'un cahier fonctionnel. (donc une liste fini)
+Il n'est dans ce cas aucunement exent de bugs, bien au contraire : il en reste sans doute une infinité.
+La nuance est qu'ils ne sont pas pénalisant pour l'utilisateur.&lt;/p&gt;
+&lt;p&gt;Cette réflexion ne parle pas des autres aspects quant à la satisfaction cliente : à savoir la qualité du suivi, de l'assistance, de la réactivité, de l'ergonomie, de la pédagogie etc.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 11 May 2016 00:01:18 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:bug.html</guid><category>bug</category></item><item><title>Pourquoi Rust</title><link>http://mothsart.github.io/pourquoi-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Depuis maintenant 1 an, je m'intéresse de près au langage &lt;strong&gt;Rust&lt;/strong&gt;.
+Qu'est ce qui peut motiver le choix d'un nouveau langage alors qu'il en existe déjà un nombre incalculable ?&lt;/p&gt;
+&lt;p&gt;Ayant déjà de bons acquis en C/C#/Python/Javascript, on peut naturellement se poser la question de pourquoi s'investir dans un nouveau language.&lt;/p&gt;
+&lt;h2&gt;Approfondir mes connaissances personnelles&lt;/h2&gt;
+&lt;p&gt;Sur tous les langages cité, j'ai une nette préférence pour le &lt;strong&gt;Python&lt;/strong&gt; : simple, explicite, haut niveau.
+C'est un language incroyable pour du script et du prototypage.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;C#&lt;/strong&gt; est aussi un bon cru, même si, il faut l'avouer, c'est souvent l'IDE &lt;strong&gt;Visual Studio&lt;/strong&gt; qui lui donne autant de pouvoir.&lt;/p&gt;
+&lt;p&gt;Une raison, non dissimulé, vient du fait que j'exprime le besoin de sortir de mon périmètre de confort : d'apprendre ou ré-apprendre.
+Pour celà, j'ai testé pas mal de langages : &lt;strong&gt;Ocaml&lt;/strong&gt;, &lt;strong&gt;Haskell&lt;/strong&gt;, &lt;strong&gt;Go langage&lt;/strong&gt;.
+Ni l'un ni l'autre n'a trouvé grâce à mes yeux (chacun pour des raisons différentes).&lt;/p&gt;
+&lt;h2&gt;Faire du bas niveau&lt;/h2&gt;
+&lt;p&gt;Il y a 2 types de dev: ceux qui font du bas niveau et les autres.
+Quant on fait du bas niveau, on s'oblige a comprendre comment fonctionne réellement un ordinateur.&lt;/p&gt;
+&lt;p&gt;La première catégorie est forcément mieux armé pour faire face à des problématiques complexes : de performance, latence, empreinte mémoire, sécurité etc.&lt;/p&gt;
+&lt;p&gt;Bref, les problématiques rencontrés par tous les développeurs travaillant sur des projets sérieux.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Python&lt;/strong&gt;, &lt;strong&gt;Javascript&lt;/strong&gt; et &lt;strong&gt;C#&lt;/strong&gt; (dans une moindre mesure) ne sont tout simplement pas fait pour ce genre de chose.
+* D'une part, la gestion de la mémoire se fait via un ramasse-miettes (garbage collector) donc mémoire sur le tas (https://github.com/GuillaumeGomez/fr_rust_book/blob/master/la-pile-et-le-tas.md) et soucis quasi insoluble de libération total.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ces langages passent par des machines virtuelles qui interpréte (via du bytecode) et convertisse à la volé en code machine.
+Il est par conséquent impossible d'avoir du code aussi rapide en interprété quand compilé (par analogie, le chemin le plus court entre 2 points est la ligne droite). 
+Même si on peut s'en rapprocher, le soucis de l'empreinte mémoire d'une VM et son temps de lancement reste insoluble.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;J'imagine un avenir radieu (quoi, on y est déjà ?) ou l'on lancera en simultannée une appli &lt;strong&gt;Java&lt;/strong&gt;, &lt;strong&gt;Python&lt;/strong&gt;, &lt;strong&gt;Nodejs&lt;/strong&gt;, &lt;strong&gt;C#&lt;/strong&gt;, &lt;strong&gt;Ruby&lt;/strong&gt; et &lt;strong&gt;Perl&lt;/strong&gt;.
+Chacun utilise sa propre VM et prend 50 Mo (et je suis optimiste).
+Résulat des courses : on utilise 250 Mo inutillement.
+Pour du desktop, ça peut paraitre anodin (quoi que) mais pour du serveur ou de l'embarqué, ça peut devenir vraiment pénalisant.&lt;/p&gt;
+&lt;h2&gt;Oui, mais C fait du bas niveau&lt;/h2&gt;
+&lt;p&gt;Le C (ou le C++) c'est idéal pour écrire du code bas niveau : pourquoi le remplacer par du Rust ?
+Parce que c'est pas safe du tout, que ça n'utilise qu'un paradigme et que c'est pas adapté à du dev concurrent.&lt;/p&gt;
+&lt;h2&gt;Maitriser de bout en bout&lt;/h2&gt;
+&lt;p&gt;La lubie du développeur est de maitriser son environnement au maximum.
+Pour celà, le choix de son hardware et de son OS semble déjà une bonne base.
+Open source et libre de préférence.&lt;/p&gt;
+&lt;p&gt;Ensuite, des problématiques plus pointues viennent se rajouter pour le développeur : 
+En l'occurence, toute la stack employé pour aboutir à un résultat : soit les éditeurs et IDE choisit, les logiciels de versions, les hébergements etc.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Rust&lt;/strong&gt; s'inscrit, pour moi,  dans cette quête.
+D'une part, le language n'est pas initié par une grosse firme (Redmond, Google et cie) mais par un organisme à but non lucratif (&lt;strong&gt;Mozilla foundation&lt;/strong&gt;).&lt;/p&gt;
+&lt;h2&gt;Me lancer dans des nouveaux projets&lt;/h2&gt;
+&lt;h2&gt;Inconvénients&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Ré-apprendre depuis le début entraine des frustrations (je ne pensais jamais autant) :
+Prendre 1 heure pour faire quelque chose qui nous prend 5 minutes dans un autre langage est forcément ingrat mais ça fait parti du jeu...&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Rust&lt;/strong&gt; est un langage neuf ce qui sous-entend peu de doc (surtout dans la langue de molière), de topics sur des forums et des libs innexistantes, incomplètes etc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Les gros avantages&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;différenciation entre &lt;strong&gt;espace de nommage&lt;/strong&gt; et appel d'un attribut (propriété et méthodes).
+C'est un peu déroutant quand on vient de &lt;strong&gt;Python&lt;/strong&gt; et &lt;strong&gt;C#&lt;/strong&gt; qui utilise que le &lt;strong&gt;.&lt;/strong&gt; point délimiter les 2 aspects.
+Problème =&amp;gt; des confusions et des conflits possibles entre un nom et une propriété! En un mot : inadmissible !
+&lt;strong&gt;Rust&lt;/strong&gt; a choisi de distinguer les 2 et c'est tout bonnement pythonnesque : explicite is better than implicite =&amp;gt; &lt;strong&gt;::&lt;/strong&gt; délimiter les espaces de nommage et &lt;strong&gt;.&lt;/strong&gt; pour appeler un attribut.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;variable immuable par défaut : parce qu'au final, il y a pas besoin d'avoir beaucoup de variables qui sont réécrites et que si elles le sont, c'est elles qui sont la cause d'effets de bord.
+Réduire leur nombre, c'est assuré ses arrières et identifié la variable problématique plus rapidement.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;détection des &lt;strong&gt;dead code&lt;/strong&gt; dès la compilation&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;spécification explicite de la durée de vie d'une variable : ça fait parti des trucs les plus dur à assimilé mais après le mur passé, on produit vraiment du soft de qualité : la mémoire est cloisonné et par conséquent n'est pas gaché.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Les objets &lt;strong&gt;invalides&lt;/strong&gt; (vide) ne sont pas acceptés (ou difficilement contournables) : http://blog.guillaume-gomez.fr/Rust/1/10
+Franchement, vu le nombre de bugs rencontrés en C# de ce genre (et la rigueur nécessaire pour les éviter au maximum), ce choix est pour moi du pain béni.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Rust m'a supris : j'ai mis du temps avant d'avoir des bugs d'exécution vraiment pénalisant.
+En définitive, rust vous invite à réduire la partie &lt;strong&gt;dynamique&lt;/strong&gt; de votre programme et par conséquent gère un grand nombre des soucis directement à la compilation.&lt;/p&gt;
+&lt;p&gt;Peut importe le language utilisé, on ne peut garantir un programme comme stable! (cf: la notion de bug)&lt;/p&gt;
+&lt;p&gt;zero-cost abstractions
+move semantics
+guaranteed memory safety
+threads without data races
+trait-based generics
+pattern matching
+type inference
+minimal runtime
+efficient C bindings&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:pourquoi-rust.html</guid><category>rust</category><category>python</category><category>Java</category><category>Javascript</category><category>C</category><category>C++</category><category>C#</category></item><item><title>Pourquoi je boude Node.Js</title><link>http://mothsart.github.io/pourquoi-je-boude-nodejs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;NodeJS est à la mode.
+Quand je parle de NodeJS, je parle bien entendu de toute la mouvance autours de Javascript.&lt;/p&gt;
+&lt;p&gt;Le principe :
+    il n'existe pas d'alternative (simple) à Javascript à l'heure actuelle pour faire du web.&lt;/p&gt;
+&lt;p&gt;Les avantages :
+    - la communauté
+    - les librairies/frameworks ne cessent de s'étoffer
+    - utiliser le même langage côté serveur et client
+    - langage asynchrone par nature&lt;/p&gt;
+&lt;p&gt;Les inconvénients
+    - le bazar : plein de libs à l'état alpha : juste inutilisable en production!
+    - explosition de l'archive : 38 Ko de React.js + 85 Ko de Jquery + etc.
+    - code interprété donc lent (même avec du &lt;strong&gt;JIT&lt;/strong&gt;)
+    - impératif donc de POO ou de fonctionnel : Ecmascript 6 et 7 améliore sensiblement les choses.
+    - notion de typage inexistant (oblige à faire des tests unitaires sur du typage!!!)
+    - très peu de tests de sécurité (mémoire, qualité) : &lt;strong&gt;use strict&lt;/strong&gt; améliore les choses ainsi que l'utilisation d'outils tel que &lt;strong&gt;JSLint&lt;/strong&gt;...
+    - l'asynchrone est basé sur les callback : pénalisant sur des projets complexes =&amp;gt; ecmascript 7 va améliorer ça en utilisant nativement &lt;strong&gt;async&lt;/strong&gt; et &lt;strong&gt;await&lt;/strong&gt;.
+    - l'utilisation de libs bas niveau (C ou C++)
+    - Pour toutes les raisons si dessus, utiliser Javascript pour du serveur est sans doute un mauvais choix.&lt;/p&gt;
+&lt;h2&gt;Bonne pratique aujourd'hui&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Babel.js&lt;/strong&gt; et &lt;strong&gt;Emscripten&lt;/strong&gt; semble être les bonnes technos du moment.&lt;/p&gt;
+&lt;h2&gt;Et demain&lt;/h2&gt;
+&lt;p&gt;Depuis la proposition d'un bytecode commun par Mozilla (asm.js), les choses ont pas mal évolués et &lt;a href="http://www.developpez.com/actu/97050/Google-Microsoft-et-Mozilla-proposent-une-demonstration-fonctionnelle-de-WebAssembly-le-projet-ambitionne-de-devenir-le-code-binaire-du-web"&gt;Webassembly&lt;/a&gt;
+semble LA solution commune.&lt;/p&gt;
+&lt;p&gt;Une fois que 90% navigateurs sur le marché auront cet API stable de disponible, il sera aisé de se passer complètement de Javascript : envisageable dans 5 à 10 ans selon mon indicateur pifométrique.&lt;/p&gt;
+&lt;p&gt;La transition se fera avec des outils comme &lt;strong&gt;Emscripten&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;En attendant, il faudra implémenter cet API dans chacun des langages : Un boulot pharaonique en somme qui risque de prendre du temps.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Les besoins du web ne cesse de s'accroitre. Les usages se diversifies.
+Javascript est incontournable et vit son heure de gloire.
+Mais tout à une fin et il vaut mieux ammorcer la chute plutôt que de la subir.&lt;/p&gt;
+&lt;p&gt;Il sera sans doute possible dans moins de 10 ans de faire du web en se passant totalement de Javascript (Plus de CoffeeScript, TypeScript et autre BullshitScript ou VaporWareScript) et donc d'utiliser des langages plus modernes, moins permissifs et plus réactifs tel que &lt;strong&gt;Rust&lt;/strong&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-03-19:pourquoi-je-boude-nodejs.html</guid><category>javascript</category><category>web</category></item><item><title>Réflexion autour des DVCS</title><link>http://mothsart.github.io/reflexion-dvcs.html</link><description>&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;GIT a semble-t-il gagner dans la guerre des &lt;strong&gt;Logiciel de gestion de versions&lt;/strong&gt; (&lt;strong&gt;DVCS&lt;/strong&gt;)&lt;/p&gt;
+&lt;p&gt;Pourtant, son remplaçant est peut-être à la porte.&lt;/p&gt;
+&lt;p&gt;Je vais lister ici les points positifs et négatifs de GIT.&lt;/p&gt;
+&lt;h2&gt;Points positifs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Popularité : Github et quelques autres forges (&lt;strong&gt;Bitbucket&lt;/strong&gt;, &lt;strong&gt;Gitlab&lt;/strong&gt;) ainsi que l'utilisation par de gros projets ont assis sa domination.&lt;/li&gt;
+&lt;li&gt;Documentation : la doc est clair est exhaustive et le net permet de trouver une réponse à quasiment toutes les questions s'y référent&lt;/li&gt;
+&lt;li&gt;Instantanéité sur de très gros projet : GIT fonctionne sous forme de snapshot et ressemble, à s'y méprendre à un Système de fichier.
+Ce fonctionnement lui garanti une réactivité innégalable (qui a évincé Bazaar et Mercurial)&lt;/li&gt;
+&lt;li&gt;la gestion des branches : le parti pris de GIT est d'avoir des commits, totalement indépendant des uns des autres dont le seul lien sont des tags : et oui, une branche sous GIT est en réalité un ensemble de commits ayant le même tag.
+Du coup, ça donne une vrai souplesse d'utilisation.&lt;/li&gt;
+&lt;li&gt;possibilité d'utiliser une vrai API via &lt;strong&gt;libgit2&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Fork et contribution à un projet facilité avec &lt;strong&gt;Gihub&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;les hooks : des triggers à chaque&lt;/li&gt;
+&lt;li&gt;la config : l'historique et la popularité de GIT lui on donné la possibilité d'une configuration très abouti&lt;/li&gt;
+&lt;li&gt;interfaces graphiques : un large choix : &lt;strong&gt;gitk&lt;/strong&gt;, &lt;strong&gt;GIT Extensions&lt;/strong&gt; etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Points négatifs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;pas de suivi de bugs ni de wiki (voir &lt;strong&gt;fossil&lt;/strong&gt;) mais pourrait être facilement possible en normalisant des sous-modules.
+http://sebsauvage.net/wiki/doku.php?id=fossil&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ne fonctionne pas selon la &lt;strong&gt;théorie des patchs&lt;/strong&gt; tel que le fait &lt;strong&gt;Darcs&lt;/strong&gt; ou &lt;strong&gt;&lt;a href="http://pijul.org"&gt;PIJUL&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;permettre des hooks à partir de langages de haut niveau est souvent délicat et nécessite de passer un fichier shell en amont&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-03-10:reflexion-dvcs.html</guid><category>git</category><category>darcs</category><category>hg</category><category>mercurial</category></item><item><title>Réflexion autour des Imprimantes 3D à usage domestique</title><link>http://mothsart.github.io/reflexion-imprimante-3D.html</link><description>&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;La révolution est à notre porte! L'imprimante 3D va révolutionner nos usages, elle va réinventer l'industrie, relocalisé après une délocalisation massive etc.
+Que ça soit dans les médias ou sur Internet, on l'annonce comme LE vecteur du changement.&lt;/p&gt;
+&lt;p&gt;Voici un condensé du pourquoi je ne crois pas que &lt;strong&gt;le changement c'est pour maintenant&lt;/strong&gt;!&lt;/p&gt;
+&lt;h2&gt;Imprimante 2D&lt;/h2&gt;
+&lt;p&gt;Bon, l'analogie est faite sur l'imprimante classique : elle a innondé nos foyers...
+Permettez moi d'en douter : en l'espace de 10 ans, j'ai du changer 3 fois d'imprimante car ces bestioles sont souvent capricieuses et tout simplement irréparable. Le tarif des cartouches d'encre est excessif.
+La plupart des imprimantes peuvent imprimer des photos mais qui le fait encore : des services en ligne sont tellement plus simple, moins contraignant etc.
+Bref, pour plusieurs foyers : il n'y a pas de retour sur investissement!
+C'est devenu un produit de luxe : il serait sans doute plus rentable de passer par des services de &lt;strong&gt;reprographie&lt;/strong&gt; ou &lt;strong&gt;d'imprimerie&lt;/strong&gt; : il manque pour l'instant la facilité et l'immédiateté pour que les imprimantes personnels soient abandonnées.&lt;/p&gt;
+&lt;h2&gt;Prérequis&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Il y a plusieurs technologies d'impression tridimensionnel mais l'&lt;strong&gt;FDM (Fused Deposition Modeling)&lt;/strong&gt; semble la plus viable pour de l'usage Domestique : on utilise des filaments synthétiques qu'on fusionne pour ajouter de la matière couche par couche.&lt;/li&gt;
+&lt;li&gt;La technique précédente, réduit l'usage domestique pour divers raisons (coût, taille etc.) aux matières plastiques de type &lt;strong&gt;ABS&lt;/strong&gt; ou &lt;strong&gt;PLA&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;L'impression 3D c'est simple&lt;/h2&gt;
+&lt;p&gt;Réponse courte : &lt;strong&gt;Faux&lt;/strong&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Mme Michu&lt;/strong&gt; ne sait pas se servir d'un logiciel 3D&lt;/li&gt;
+&lt;li&gt;Même un modeleur 3D risque d'être supris des contraintes de l'imprimante 3D&lt;/li&gt;
+&lt;li&gt;Le temps d'impression est non négligeable&lt;/li&gt;
+&lt;li&gt;les formats d'impression&lt;/li&gt;
+&lt;li&gt;Il faut plusieurs impressions pour arriver à un résultat concluant&lt;/li&gt;
+&lt;li&gt;la maintenance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;L'imprimante 3D permettra de réparer un matériel défectueux&lt;/h2&gt;
+&lt;p&gt;Réponse courte : &lt;strong&gt;Faux&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Plusieurs raisons :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;il faut que la pièce soit en plastique (voir prérequis)&lt;/li&gt;
+&lt;li&gt;il faut que la pièce soit non mécanique ! Et oui, les contraintes mécaniques sont la plupart incompatible avec une pièce additive.
+De plus, certaines pièces (engrenage par exemple) sont de mauvaise qualité
+La solution à ça ressemble plus à l'utilisation de &lt;strong&gt;Machine-Outil à Commande Numérique&lt;/strong&gt; : &lt;a href="http://faitmain.org/volume-1/cncs.html"&gt;faimain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;s'il l'on veut reproduire des pièces (souvent le cas : 4 pièces identiques dont 1 défectueuse), il faut s'équiper d'un scanner 3D : la pièce issu du scanner demandera souvent d'être retouché avant d'être utilisable par l'imprimante.&lt;/li&gt;
+&lt;li&gt;Un ou plusieurs annuaire de pièces : si l'on ne veut pas créer sa pièce de toute part, c'est qu'on veut la récupérer sur le web...
+Chercher une aiguille dans une botte de foin prend tout son sens et même si l'on trouve, la qualité de la pièce peut être très discutable.&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-03-10:reflexion-imprimante-3D.html</guid><category>imprimante</category><category>3D</category></item></channel></rss>

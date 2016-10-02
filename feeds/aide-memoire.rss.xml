@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>http://mothsart.github.io/</link><description></description><lastBuildDate>Mon, 03 Oct 2016 01:38:01 +0200</lastBuildDate><item><title>Python-pip</title><link>http://mothsart.github.io/python-pip.html</link><description>&lt;h2&gt;pip -e&lt;/h2&gt;
+&lt;p&gt;utiliser une dépendance perso : pip -e ~/ma_lib&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 03 Oct 2016 01:38:01 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-03:python-pip.html</guid><category>python</category><category>pip</category></item><item><title>Bench Linux</title><link>http://mothsart.github.io/bench-linux.html</link><description>&lt;h2&gt;Vérifier si l'accélération graphique est actif&lt;/h2&gt;
+&lt;p&gt;glxinfo | grep "direct rendering"&lt;/p&gt;
+&lt;h2&gt;lancement du benchmark de Mesa (implémentation libre d'opengl)&lt;/h2&gt;
+&lt;p&gt;Afin de ne pas être limité par la fréquence de rafraichissement (en général 60) Il peut être préférable d'entrer la commande suivante. N'oubliez pas d'exécuter dans la fenêtre du terminal ctrl+c pour shunter glxgears.&lt;/p&gt;
+&lt;p&gt;vblank_mode=0 glxgears&lt;/p&gt;
+&lt;h2&gt;Bench CPU&lt;/h2&gt;
+&lt;p&gt;7z b&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:bench-linux.html</guid><category>linux</category></item><item><title>Aide mémoire GIT</title><link>http://mothsart.github.io/aide-memoire-git.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;GIT est un super utilitaire mais son nombre de commandes est juste exponentiel.&lt;/p&gt;
+&lt;h2&gt;Clone&lt;/h2&gt;
+&lt;p&gt;Avec des sous-modules&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git clone --recursive depot&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Recherche d'un bug&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git bisect&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Ajout/Reset Partiel&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git add -p/git reset -p&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Tags&lt;/h2&gt;
+&lt;h3&gt;ajout&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git tag montag 1b2e1d63ff (numéro du commit)
+git tag montag mon_nom_de_branch
+git tag montag (ajout du tag sur le commit pointé par le **Head**)
+git push --tags (envoi des commits en remote + les tags)&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;suppression&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git tag -d mon_tag
+git push origin :refs/tags/mon_tag #supprime en remote&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Branches&lt;/h2&gt;
+&lt;h3&gt;ajout&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git checkout -b ma_branche&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;suppression&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git branch -D ma_branche
+git push origin --delete ma_branche #supprime en remote (GIT &amp;gt;= 1.7)
+git push origin :ma_branche #supprime en remote (GIT &amp;lt; 1.7)&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Reflog&lt;/h2&gt;
+&lt;p&gt;Reflog permet de lister toutes les actions faites sur un dépôt.
+A la différence de &lt;strong&gt;git log&lt;/strong&gt;, il va lister également les actions de suppression qui ne sont plus présente sur notre historique GIT.
+Cette commande est très utile pour récupérer des commits/tags/branches qui ont été supprimé ou pour revenir sur un historique précédent !&lt;/p&gt;
+&lt;h2&gt;Cherry-pick + cherry&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;git cherry&lt;/strong&gt; permet de lister la différence entre 2 branches&lt;/p&gt;
+&lt;p&gt;Donne la liste des commits de différence entre les 2 branches&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git cherry branch1 branch2&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;log&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git log -n 10 # n'afficher que les 10 derniers commits&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;shortlog&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git shortlog -sne --all
+git shortlog -sne --all | wc -l =&amp;gt; liste les autheurs sur l'ensemble des dépôts&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;remote&lt;/h2&gt;
+&lt;p&gt;On supprime de notre &lt;strong&gt;repository local&lt;/strong&gt; toutes les branches remote qui n'existent plus&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git remote prune origin&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;On compte toutes les branches &lt;strong&gt;remote mergées&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git branch -r --merged origin/integration | wc -l&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;fetch&lt;/h2&gt;
+&lt;p&gt;On récupère toutes les données du &lt;strong&gt;repository remote&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git fetch --all&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;pull = fetch + merge&lt;/h2&gt;
+&lt;p&gt;perso, j'ai définit mon pull pour faire un &lt;strong&gt;pull --rebase&lt;/strong&gt; dans mon &lt;strong&gt;.gitrc&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;rebase&lt;/h2&gt;
+&lt;p&gt;soit&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git checkout master
+git rebase serveur&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;soit&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git rebase master serveur&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;git rebase -i : permet de changer l'entête d'un commit =&amp;gt; squasher ses commits&lt;/p&gt;
+&lt;p&gt;git rebase -p / git rebase --preserve-merges =&amp;gt; permet de garder l'historique des fusions...&lt;/p&gt;
+&lt;p&gt;garder un fichier local -&amp;gt; git checkout --ours /path/to/file (si l'on veut tous les fichiers :  git checkout --ours *)
+garder un fichier distant -&amp;gt; git checkout --theirs /path/to/file&lt;/p&gt;
+&lt;p&gt;puis git add /path/to/file&lt;/p&gt;
+&lt;h2&gt;Ignore&lt;/h2&gt;
+&lt;p&gt;exclusion globale (dans ~/.gitconfig):
+[core]
+    excludesfile = ~/.gitignore&lt;/p&gt;
+&lt;p&gt;exclusion locale : .git/info/exclude&lt;/p&gt;
+&lt;p&gt;Ignorer un fichier déjà tracké :
+git update-index --assume-unchanged &lt;file&gt;
+(en savoir + : https://www.kernel.org/pub/software/scm/git/docs/git-update-index.html)
+(opération inverse : git update-index --no-assume-unchanged &lt;file&gt;)&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git update-index --no-assume-unchanged&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;cherry&lt;/h2&gt;
+&lt;p&gt;Considérons 2 branches =&amp;gt; &lt;strong&gt;master&lt;/strong&gt; et &lt;strong&gt;topic&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git cherry -v topic | grep -e &amp;quot;^+&amp;quot; | grep -v &amp;quot;\[nc\]&amp;quot; | tee /dev/tty | wc -l&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;donne la liste des commits présent dans la &lt;strong&gt;topic&lt;/strong&gt; et non dans la &lt;strong&gt;master&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;et son inverse :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git cherry -v master | grep -e &amp;quot;^+&amp;quot; | grep -v &amp;quot;\[nc\]&amp;quot; | tee /dev/tty | wc -l&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;donne la liste des commits présent dans la &lt;strong&gt;master&lt;/strong&gt; et non dans la &lt;strong&gt;topic&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Diff&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git diff -b (git diff --ignore-space-change)
+git diff -w (git diff --ignore-all-space)
+git diff --color-words=.&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;juste les fichiers : git diff --stat
+git diff --name-status&lt;/p&gt;
+&lt;h2&gt;Amend&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git commit --amend --no-edit&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Rajoute au dernier commit tous les fichiers du staging + tous les fichiers non traqués et renome l'intitulé du commit&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git commit -a -u --amend -m &amp;quot;new message&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Stash&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git stash --include-untracked === git stash save -u&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;réapplique le stash avec l'index originel :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git stash apply --index&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Explication : http://www.git-attitude.fr/2014/09/15/30-options-git-qui-gagnent-a-etre-connues/#stasher-plus efficacement avec save et -u&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git stash save -u 'Nom du stash'
+git stash pop --index&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Push&lt;/h2&gt;
+&lt;p&gt;Pousser une branche qui vient d'être créé :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git push -u origin NomDeLaNouvelleBranche&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Suppression d'un commit en remote : http://stackoverflow.com/questions/1338728/delete-commits-from-a-branch-in-git&lt;/p&gt;
+&lt;p&gt;En local&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git reset --hard HEAD~1&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;En remote&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git push origin HEAD --force&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;gc&lt;/h2&gt;
+&lt;h2&gt;fsck&lt;/h2&gt;
+&lt;h2&gt;Sous modules&lt;/h2&gt;
+&lt;p&gt;J'oubli à chaque fois l'ordre pour mettre à jour un sous-module.
+Mon exemple pour mon plugin &lt;strong&gt;Ace Editor&lt;/strong&gt; :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git clone --recursive https://github.com/mothsART/pelican-plugins.git
+cd ace_editor
+git checkout master
+git pull
+cd ..
+git add -A
+git c -m &amp;quot;...&amp;quot;
+git push&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Suppression Branche remote&lt;/h2&gt;
+&lt;p&gt;git push origin --delete &lt;branchName&gt; (exemple: git push origin --delete 14_79_000_0)
+(ancienne méthode (git &amp;lt; 1.7): git push origin :&lt;branchName&gt;)nch &lt;/p&gt;
+&lt;h2&gt;Suppression Commit en remote&lt;/h2&gt;
+&lt;p&gt;supprime le dernier commit : git push -f origin HEAD^:ma_Branch_en_remote&lt;/p&gt;
+&lt;h2&gt;Suppression répertoire de travail&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git reset HEAD === git reset HEAD^0&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Suppression de commit&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git reset HEAD^ === git reset HEAD^1&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Suppression d'un fichier sur un commit&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git reset HEAD^ -- $file
+git commit --amend&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Equivalences&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git checkout -b ticket-12 === git branch ticket-12 + git checkout ticket-12&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;git checkout --track origin/correctionserveur === git checkout -b correctionserveur origin/correctionserveur (--track évite donc les erreurs dans le nom des branches locales)&lt;/p&gt;
+&lt;h2&gt;Compter le nombre de commits (sur toutes les branches)&lt;/h2&gt;
+&lt;p&gt;http://stackoverflow.com/questions/1265040/how-to-count-total-lines-changed-by-a-specific-author-in-a-git-repository&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git shortlog -sne --all
+
+#############
+# http://tilap.net/git-trouver-lister-les-fichiers-modifies-par-utilisateur/
+listFilesByAuthor = log --pretty=&amp;quot;%H&amp;quot; --author=&amp;quot;Jeremie&amp;quot; | while read commit_hash; do git show --oneline --name-only $commit_hash | tail -n+2; done | sort | uniq
+#############
+# must install Ruby
+#moststats = &amp;quot;ls-files -z | xargs -0n1 git blame -w | ruby -n -e '$_ =~ /^.*\((.*?)\s[\d]{4}/; puts $1.strip' | sort -f | uniq -c | sort -n&amp;quot;
+#############
+statsByAuthor = log --format='%aN' | sort -u | while read name; do echo -en &amp;quot;$name\t&amp;quot;; git log --author=&amp;quot;$name&amp;quot; --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf &amp;quot;added lines: %s, removed lines: %s, total lines: %s\n&amp;quot;, add, subs, loc }' -; done
+#############
+stats = &amp;quot;!sh -c 'git log --pretty=\&amp;quot;format:%aN\&amp;quot; -&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Recherche&lt;/h2&gt;
+&lt;p&gt;// rechercher dans le projet une expression précise -&amp;gt; renvoi le(s) fichier(s) concerné(s)&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git grep &amp;quot;DossierDeDemande dossier = demandesSurServiceConnecte.First(); // lol&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;//rechercher une expression précise sur un fichier -&amp;gt; renvoi le n° de commit, l'intitulé et son auteur&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git log -Slol -- sources/Dicsit.SiteWeb/LogiresoNet/Areas/Coordination/Controllers/SuiviController.cs
+
+#!bash
+git diff -G &amp;lt;regex&amp;gt;
+git grep &amp;lt;regex&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Dépôt distants&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git remote -v show =&amp;gt; donne les url en fetch et en push
+
+git remote rm origin
+
+git remote add origin &amp;lt;url&amp;gt;
+
+git remote set-url origin http://FerryJ%40MARSH.LOCAL:monmotdepasse@southp/Git/Dicsit.Core.git =&amp;gt; changer de dépôt
+git remote set-url origin http://FerryJ%40MARSH.LOCAL:monmotdepasse@southp/Git/Dicsit.git
+
+git clone --recursive http://FerryJ%40MARSH.LOCAL:monmotdepasse@southp/Git/Microsoins.NET.git
+git clone --recursive http://FerryJ%40MARSH.LOCAL:monmotdepasse@southp/Git/Dicsit.Core.git&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Github&lt;/h2&gt;
+&lt;p&gt;La problématique : j'ai forké un projet git et j'ai soumis un fork il y a longtemps.
+Le projet en lui même à évolué et on me demande de rebasé mes commits.&lt;/p&gt;
+&lt;p&gt;https://github.com/edx/edx-platform/wiki/How-to-Rebase-a-Pull-Request&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git remote add pelican https://github.com/getpelican/pelican
+git fetch pelican
+git rebase -i HEAD~3
+git rebase pelican/master
+git push -f&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.git-attitude.fr/2014/09/15/30-options-git-qui-gagnent-a-etre-connues"&gt;http://www.git-attitude.fr/2014/09/15/30-options-git-qui-gagnent-a-etre-connues&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/2221658/whats-the-difference-between-head-and-head-in-git"&gt;http://stackoverflow.com/questions/2221658whats-the-difference-between-head-and-head-in-git&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 03 Oct 2016 00:56:09 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-git.html</guid><category>git</category><category>linux</category></item><item><title>Aide mémoire sh</title><link>http://mothsart.github.io/aide-memoire-sh.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;find . | grep actual&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Sed&lt;/h2&gt;
+&lt;p&gt;Remplacer une occurence par une autre sur un ensemble de fichiers&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;sed -i s/leMauvaisTexte/leBonTexte/g *&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-sh.html</guid><category>sh</category><category>linux</category></item><item><title>Aide mémoire Sublime Text 3</title><link>http://mothsart.github.io/aide-memoire-sublime-text.html</link><description>&lt;h2&gt;Fonctionnalités&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://sametmax.com/10-astuces-pour-sublime-text-2"&gt;http://sametmax.com/10-astuces-pour-sublime-text-2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Edit/StringEncode : permet d'encoder des chaines de caractères&lt;/p&gt;
+&lt;p&gt;&lt;kbd&gt;Alt&lt;/kbd&gt;&lt;kbd&gt;Q&lt;/kbd&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 15 Jan 2016 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-sublime-text.html</guid><category>sublimetext</category></item><item><title>Aide mémoire Tmux</title><link>http://mothsart.github.io/aide-memoire-tmux.html</link><description>&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Ca fait maintenant 2 bonnes années que j'utilise &lt;strong&gt;Tmux&lt;/strong&gt; à la place du viellissant &lt;strong&gt;Screen&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Tmux est un &lt;strong&gt;multiplexeur&lt;/strong&gt; de terminal &lt;strong&gt;configurable&lt;/strong&gt; qui gère aussi bien les raccourcis clavier que les interactions de la souris.&lt;/p&gt;
+&lt;h2&gt;Raccourci dans Tmux&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;killer la fenêtre courante et tous les panes qu'elle contient
+&lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;a&lt;/kbd&gt; puis &lt;kbd&gt;&amp;amp;&lt;/kbd&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Tmuxp&lt;/h2&gt;
+&lt;p&gt;Cette lib python permet de configurer facilement des espaces de travail pour &lt;strong&gt;Tmux&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;Configurer son .zshrc ou .bashrc&lt;/h3&gt;
+&lt;p&gt;Ajouter ceci pour avoir l'autocompletion&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;eval &amp;quot;$(_TMUXP_COMPLETE=source tmuxp)&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;Tmuxp Load&lt;/h3&gt;
+&lt;p&gt;Un simple :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;cd ~/.tmuxp &amp;amp;&amp;amp; tmuxp load&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;va me proposer l'autocompletion et me donner ma liste de fichiers yaml d'espace de travail :&lt;/p&gt;
+&lt;p&gt;&lt;img alt="tmuxp load" src="static/images/tmuxp_load_labodunerd.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Par exemple, pour manager ce site, j'utilise cette config :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-yaml"&gt;session_name: labodunerd website
+windows:
+
+- window_name: labodunerd
+  layout:  main-vertical
+  shell_command_before:
+  - workon labodunerd
+  panes:
+    - pelican content
+    - shell_command:
+      - cd output
+      - python -m http.server
+
+- window_name: labodunerd (git)
+  layout:  main-vertical
+  shell_command_before:
+    - workon labodunerd
+  panes:
+    - git st
+    - shell_command:
+      - cd output
+      - git st
+
+- window_name: ace_editor plugin (git)
+  layout:  main-vertical
+  shell_command_before:
+    - workon labodunerd
+  panes:
+    - shell_command:
+      - cd pelican-plugins/ace_editor
+      - git st
+    - shell_command:
+      - cd themes/lab
+      - git st&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;et le résultat de son chargement :&lt;/p&gt;
+&lt;p&gt;&lt;img alt="tmuxp load" src="static/images/tmuxp_labodunerd.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Si vous voulez concatener plusieurs espaces de travail en un, c'est possible.&lt;/p&gt;
+&lt;h3&gt;Tmuxp freeze&lt;/h3&gt;
+&lt;p&gt;Permet de faire un snapshot de votre tmux.&lt;/p&gt;
+&lt;h3&gt;Tmuxp import&lt;/h3&gt;
+&lt;p&gt;Il existe 2 gros concurrent à tmuxp : &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;teamocil&lt;/li&gt;
+&lt;li&gt;tmuxinator&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Les fichiers de configuration sont sensiblement différents mais les fonctionnalités restent les mêmes.
+Cet outil en cli permet de les convertir en un format lisible pour Tmuxp.&lt;/p&gt;
+&lt;h3&gt;Tmuxp convert&lt;/h3&gt;
+&lt;p&gt;On peut actuellement utiliser 3 types de fichiers de config différents :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;du python pure&lt;/li&gt;
+&lt;li&gt;du yaml&lt;/li&gt;
+&lt;li&gt;du json&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Si l'on veut passer de l'un à l'autre, cet outil en cli est juste indispensable&lt;/p&gt;
+&lt;h3&gt;Remarques&lt;/h3&gt;
+&lt;p&gt;Il manque sans doute le support de &lt;strong&gt;Toml&lt;/strong&gt; : le meilleur format de conf de tout les temps!&lt;/p&gt;
+&lt;h2&gt;Etendre vos super-pouvoirs avec Tmux&lt;/h2&gt;
+&lt;h3&gt;une ligne de commande permettant de supprimer l'ensemble des sessions Tmux&lt;/h3&gt;
+&lt;p&gt;Rajouter ceci dans votre &lt;strong&gt;.zshrc&lt;/strong&gt; ou votre &lt;strong&gt;.bashrc&lt;/strong&gt; :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;function tmux_kill_all_sessions() {
+    tmux ls;
+    local tmux_session=`tmux ls | grep --color=never : | cut -d. -f1 | awk '{print substr($1, 0, length($1))}' | awk -F: '{print $2}'`;
+    # &amp;quot;awk -F: '{print $2}'&amp;quot; =&amp;gt; permet de supprimer le numéro de ligne
+    # préfixé par grep (dût à GREP_OPTIONS='-n')
+    tmux kill-session -t &amp;quot;$tmux_session&amp;quot;;
+}
+alias tmuxkillallsessions='tmux_kill_all_sessions'&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 03 Oct 2016 00:56:09 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-tmux.html</guid><category>tmux</category><category>tmuxp</category><category>python</category><category>linux</category></item><item><title>Aide mémoire Vi</title><link>http://mothsart.github.io/aide-memoire-vi.html</link><description>&lt;h2&gt;Fonctionnalités&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 15 Jan 2016 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-vi.html</guid><category>vi</category></item><item><title>Aide mémoire Zsh</title><link>http://mothsart.github.io/aide-memoire-zsh.html</link><description>&lt;p&gt;Et oui, pauvre mortel, je ne retiens pas toujours les fonctions utiles de ZSH et son pendant naturel "Oh my Zsh"&lt;/p&gt;
+&lt;h2&gt;Utilitaires&lt;/h2&gt;
+&lt;h3&gt;Git&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git list # donne la liste des gitignores pouvant être créé à la volé
+git rust # créé un fichier .gitignore spécifique à rust
+cat monfichier.extension | colorize # afficher en couleur un fichier (utilise la lib python &amp;quot;pygmentize&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;Rust&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;cargo # autocomplétion de l'utilitaire cargo&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;Python&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;pyfind # recherche uniquement les fichiers .py
+pyclean # supprime tous les fichiers bytes-code d'un projet&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;Rsync&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;alias rsync-copy=&amp;quot;rsync -avz --progress -h&amp;quot;
+alias rsync-move=&amp;quot;rsync -avz --progress -h --remove-source-files&amp;quot;
+alias rsync-update=&amp;quot;rsync -avzu --progress -h&amp;quot;
+alias rsync-synchronize=&amp;quot;rsync -avzu --delete --progress -h&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;Editeur&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;st # sublime-text&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;Web search&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;google pattern1 pattern2 # va lancer un navigateur avec les mots recherchés
+github pattern1 pattern2 # va lancer github avec les mots recherchés
+wiki pattern1 pattern2 # va lancer duckduckgo avec les mots recherchés dans la catégorie &amp;quot;wiki&amp;quot;
+news pattern1 pattern2 # va lancer duckduckgo avec les mots recherchés dans la catégorie &amp;quot;news&amp;quot;
+youtube pattern1 pattern2 # va lancer duckduckgo avec les mots recherchés dans la catégorie &amp;quot;youtube&amp;quot;
+map pattern1 pattern2 # va lancer duckduckgo avec les mots recherchés dans la catégorie &amp;quot;map&amp;quot;
+image pattern1 pattern2 # va lancer duckduckgo avec les mots recherchés dans la catégorie &amp;quot;image&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;zsh-navigation-tools&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;n-cd
+n-alias&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Mes scripts d'à moi&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-zsh.html</guid><category>zsh</category><category>linux</category></item><item><title>SSH</title><link>http://mothsart.github.io/ssh.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;SSH fait parti des outils indispensables de l'admin sys (surtout linuxien).&lt;/p&gt;
+&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;https://github.com/emre/storm&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:ssh.html</guid><category>ssh</category><category>python</category></item><item><title>Coreutils</title><link>http://mothsart.github.io/coreutils.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;h2&gt;$PATH&lt;/h2&gt;
+&lt;p&gt;variable linux incontournable donnant la liste des répertoires contenant des programmes executables.&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;echo $PATH | tr : \\n&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;pk-config&lt;/h2&gt;
+&lt;h2&gt;stat&lt;/h2&gt;
+&lt;p&gt;permet de tester si un fichier existe et donner le &lt;/p&gt;
+&lt;h2&gt;sync&lt;/h2&gt;
+&lt;p&gt;Découvert avec une installation de &lt;strong&gt;raspberry pi&lt;/strong&gt; : permet de synchroniser les mémoires avec le disque.
+Ecrit sur le disque toutes les données dans les tampons en mémoire. Ceci peut inclure les superblocs modifiés, les inœuds modifiés, et les écritures différées.&lt;/p&gt;
+&lt;h2&gt;strace&lt;/h2&gt;
+&lt;p&gt;permet de tracer les appels systèmes.&lt;/p&gt;
+&lt;p&gt;argument &lt;strong&gt;e&lt;/strong&gt; : permet de filtrer avec un motif&lt;/p&gt;
+&lt;h2&gt;dd (dcfldd : dd avec une barre de progression)&lt;/h2&gt;
+&lt;h2&gt;df -h&lt;/h2&gt;
+&lt;p&gt;donner la liste des périphériques montés&lt;/p&gt;
+&lt;h2&gt;diff&lt;/h2&gt;
+&lt;p&gt;diff -s &lt;file1&gt; &lt;file2&gt; : indique si 2 fichiers sont identiques&lt;/p&gt;
+&lt;p&gt;équivalent à &lt;/p&gt;
+&lt;h2&gt;split et cat&lt;/h2&gt;
+&lt;p&gt;découper des fichiers (split) en morceaux de taille définit puis les réassembler.&lt;/p&gt;
+&lt;p&gt;split -b50m fichier partie &amp;gt; &lt;/p&gt;
+&lt;h2&gt;Destruction de données&lt;/h2&gt;
+&lt;p&gt;On force les zéro sur toute la partition :
+dd if=/dev/zero of=/dev/hda conv=notrunc&lt;/p&gt;
+&lt;p&gt;shred&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;for n in `seq 7`; do dd if=/dev/urandom of=/dev/sda bs=8b conv=notrunc; done&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;hexum&lt;/h2&gt;
+&lt;h2&gt;truncate&lt;/h2&gt;
+&lt;p&gt;réduire la taille d'un fichier à 0
+truncate -s 0 /home/skyminds/error.log&lt;/p&gt;
+&lt;h2&gt;eval&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 07 Aug 2016 15:15:35 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-09:coreutils.html</guid><category>sh</category><category>linux</category></item><item><title>PostGreSQL</title><link>http://mothsart.github.io/postgresql.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Mon aide-mémoire pour l'indéboulonable &lt;strong&gt;PostGreSQL&lt;/strong&gt; : la meilleur base SQL libre !&lt;/p&gt;
+&lt;h2&gt;Commandes&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;\q&lt;/strong&gt; : quitter&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;\h&lt;/strong&gt; : aide&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;\d&lt;/strong&gt; : liste les tables et les sequences&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;\d nom_de_table&lt;/strong&gt; : donne le détail d'une table&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;\dt&lt;/strong&gt; ou &lt;strong&gt;SELECT * FROM pg_catalog.pg_tables&lt;/strong&gt; : liste uniquement les tables&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;\l&lt;/strong&gt; : liste les bases&lt;/p&gt;
+&lt;h2&gt;Changer le mot de passe (de l'utilisateur postgres)&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;sudo -u postgres psql&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;puis&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;\password&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Load / Dump&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;pg_dump dbname &amp;gt; outfile&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Piste d'exploration&lt;/h2&gt;
+&lt;h3&gt;Commits/RollBacks et save points&lt;/h3&gt;
+&lt;h3&gt;Utilisation d'extensions&lt;/h3&gt;
+&lt;h2&gt;Liste toutes les bases&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sql"&gt;SELECT * datname FROM pg_database WHERE datistemplate = false;&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Liste toutes les tables&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sql"&gt;SELECT * 
+FROM information_schema.tables 
+WHERE table_type = 'crossject_base' 
+    AND table_schema = 'public' 
+ORDER BY table_type, table_name;&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Création de table&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sql"&gt;CREATE TABLE films (
+    code        char(5),
+    title       varchar(40),
+    did         integer,
+    date_prod   date,
+    kind        varchar(10),
+    len         interval hour to minute,
+    CONSTRAINT code_title PRIMARY KEY(code,title)
+);&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Insertion&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sql"&gt;INSERT INTO films VALUES
+('UA502', 'Bananas', 105, DEFAULT, 'Comedy', '82 minutes');
+INSERT INTO films (code, title, did, date_prod, kind)
+VALUES ('T_601', 'Yojimbo', 106, DEFAULT, 'Drama');&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/9025515/how-do-i-import-modules-or-install-extensions-in-postgresql-9-1-9-2-9-3-9-4"&gt;http://stackoverflow.com/questions/9025515/how-do-i-import-modules-or-install-extensions-in-postgresql-9-1-9-2-9-3-9-4&lt;/a&gt;&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sql"&gt;CREATE EXTENSION earthdistance;&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;&lt;a href="http://www.postgresql.org/docs/9.1/static/fuzzystrmatch"&gt;http://www.postgresql.org/docs/9.1/static/fuzzystrmatch&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Sequences&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://dgriessinger.developpez.com/postgresql/sequences"&gt;http://dgriessinger.developpez.com/postgresql/sequences&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.gcolpart.com/howto/postgresql.php4"&gt;http://www.gcolpart.com/howto/postgresql.php4&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.system-linux.eu/index.php?post/2016/03/10/installation-et-administration-Postgresql"&gt;http://www.system-linux.eu/index.php?post/2016/03/10/installation-et-administration-Postgresql&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-11:postgresql.html</guid><category>postgres</category><category>postgresql</category><category>sql</category></item><item><title>GIT config</title><link>http://mothsart.github.io/mon-gitconfig.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;L'utilisateur avancé de &lt;strong&gt;GIT&lt;/strong&gt; à forcément un gitconfig "couteau suisse" sous la main.
+Voici une partie du mien avec les commentaires adéquats.&lt;/p&gt;
+&lt;h2&gt;config&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;[alias]
+    ci = commit
+    co = checkout
+    st = status
+    t = tag
+    c = commit
+    ch = checkout
+
+    br = branch
+
+    push = &amp;quot;push --recurse-submodules=on-demand&amp;quot;
+
+    prev = checkout HEAD^1
+
+    next = &amp;quot;!sh -c 'git log --reverse --pretty=%H master | awk \&amp;quot;/$(git rev-parse HEAD)/{getline;print}\&amp;quot; | xargs git checkout'&amp;quot;
+
+    last = &amp;quot;!sh -c 'git checkout $(git describe --tags $(git rev-list --tags --max-count=1))'&amp;quot;;
+
+    lpush = &amp;quot;!git --no-pager log origin/$(git currentbranch)..HEAD --oneline&amp;quot;
+    lpull = &amp;quot;!git --no-pager log HEAD..origin/$(git currentbranch) --oneline&amp;quot;
+    whatsnew = &amp;quot;!git diff origin/$(git currentbranch)...HEAD&amp;quot;
+    whatscoming = &amp;quot;!git diff HEAD...origin/$(git currentbranch)&amp;quot;
+
+[pull]
+    rebase = true&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Explication&lt;/h2&gt;
+&lt;h3&gt;les alias&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;prev&lt;/strong&gt;: permet d'aller au commit précédent (attention: vous serez en &lt;strong&gt;detached head&lt;/strong&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;next&lt;/strong&gt;: permet d'aller au commit suivant (attention: vous serez en &lt;strong&gt;detached head&lt;/strong&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;last&lt;/strong&gt;: permet de se déplacer à la dernière version, soit au tag ayant la valeur la plus grande. (attention: vous serez en &lt;strong&gt;detached head&lt;/strong&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;lpush&lt;/strong&gt;: listera les commits qui seront poussés lors du prochain git push origin $(git currentbranch)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;lpull&lt;/strong&gt;: listera les commits que l’on s’apprête à merger lors du prochain git pull&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;whatsnew&lt;/strong&gt;: détaillera sous forme d’un diff ce qui va être poussé au prochain git push origin $(git currentbranch)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;whatscoming&lt;/strong&gt;: détaillera sous forme d’un diff ce qui va être mergé au prochain git pull.&lt;/p&gt;
+&lt;h3&gt;le pull&lt;/h3&gt;
+&lt;p&gt;Petit rappel : le &lt;strong&gt;pull&lt;/strong&gt; est en réalité un &lt;strong&gt;fetch&lt;/strong&gt; suivi d'un &lt;strong&gt;merge&lt;/strong&gt;.
+On s'en rend pas forcément compte (surtout quand il n'y a rien à mergé).&lt;/p&gt;
+&lt;p&gt;Mais, ça c'est le comportement par défault du &lt;strong&gt;pull&lt;/strong&gt;.
+Il est possible de le forcer à faire un &lt;strong&gt;rebase&lt;/strong&gt; (git pull --rebase) et ceci directement dans la config de GIT.&lt;/p&gt;
+&lt;p&gt;Si ponctuellement, vous désirez faire un merge, ça reste possible :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;git pull --no-rebase&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:mon-gitconfig.html</guid><category>git</category><category>linux</category></item></channel></rss>

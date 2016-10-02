@@ -1,0 +1,1885 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>http://mothsart.github.io/</link><description></description><lastBuildDate>Mon, 03 Oct 2016 01:38:01 +0200</lastBuildDate><item><title>OpenClipart</title><link>http://mothsart.github.io/openclipart.html</link><description>&lt;h2&gt;Meilleur contributeurs&lt;/h2&gt;
+&lt;p&gt;https://openclipart.org/user-detail/cirenovy&lt;/p&gt;
+&lt;p&gt;https://openclipart.org/user-detail/vectorsme&lt;/p&gt;
+&lt;p&gt;https://openclipart.org/user-detail/GDJ&lt;/p&gt;
+&lt;p&gt;https://openclipart.org/user-cliparts/gnokii&lt;/p&gt;
+&lt;p&gt;https://openclipart.org/user-detail/Lazur%20URH&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 03 Oct 2016 01:38:01 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-03:openclipart.html</guid><category>openclipart</category></item><item><title>Pelican's Template</title><link>http://mothsart.github.io/pelicans-template.html</link><description>&lt;h2&gt;Title 2&lt;/h2&gt;
+&lt;h3&gt;Title 3&lt;/h3&gt;
+&lt;h4&gt;Title 4&lt;/h4&gt;
+&lt;h5&gt;Title 5&lt;/h5&gt;
+&lt;h6&gt;Title 6&lt;/h6&gt;
+&lt;p&gt;&lt;strong&gt;strong text&lt;/strong&gt; + &lt;em&gt;italic text&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://blog.getpelican.com"&gt;http://blog.getpelican.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://docs.getpelican.com"&gt;link to pelican's doc&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://docs.getpelican.com" target="_blank"&gt;link to pelican's doc with a target _blank&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://docs.getpelican.com" title="read pelican's doc"&gt;link to pelican's doc with title&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Keyboard shortcuts : &lt;kbd&gt;Alt&lt;/kbd&gt;&lt;kbd&gt;Q&lt;/kbd&gt;&lt;/p&gt;
+&lt;h2&gt;Lists&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;1&lt;/li&gt;
+&lt;li&gt;2&lt;/li&gt;
+&lt;li&gt;3&lt;ul&gt;
+&lt;li&gt;3.1&lt;/li&gt;
+&lt;li&gt;3.2&lt;ul&gt;
+&lt;li&gt;3.2.1&lt;/li&gt;
+&lt;li&gt;3.2.2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;3.3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;4&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Bash code&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;cat file | wc&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Python code&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-python"&gt;def fib(n):
+    a, b = 0, 1
+    while a &amp;lt; n:
+    print(a, end=' ')
+    a, b = b, a+b
+    print()
+fib(1000)&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Picture&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="tmuxp load" src="static/images/tmuxp_load_labodunerd.png" /&gt;&lt;/p&gt;
+&lt;h2&gt;Movie&lt;/h2&gt;
+&lt;p&gt;&lt;span class="videobox"&gt;
+            &lt;video width="100%" height="100%" preload="none" controls poster="/./static/images/camp_paleolithic.jpg"&gt;&lt;source src='/static/movies/camp_paleolithic.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'&gt;&lt;/video&gt;&lt;/span&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 24 Sep 2016 22:45:00 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-03:pelicans-template.html</guid><category>template</category></item><item><title>Python-pip</title><link>http://mothsart.github.io/python-pip.html</link><description>&lt;h2&gt;pip -e&lt;/h2&gt;
+&lt;p&gt;utiliser une dépendance perso : pip -e ~/ma_lib&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 03 Oct 2016 01:38:01 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-03:python-pip.html</guid><category>python</category><category>pip</category></item><item><title>Vectoriel</title><link>http://mothsart.github.io/vectoriel.html</link><description>&lt;h2&gt;Logiciel de vectorisation d'image&lt;/h2&gt;
+&lt;p&gt;Vector Magic
+https://www.vectorizer.io/
+Inkscape&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-03:vectoriel.html</guid><category>vectoriel</category></item><item><title>Camp paleolithique</title><link>http://mothsart.github.io/abuledu-camp-paleolithique.html</link><description>&lt;h2&gt;Campement du Paléolithique&lt;/h2&gt;
+&lt;p&gt;le fichier en question : &lt;a href="https://commons.wikimedia.org/wiki/File:Campement.svg"&gt;Campement&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;L'article Vikidia : &lt;a href="https://fr.vikidia.org/wiki/Pal%C3%A9olithique"&gt;Paléolithique&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Le fichier sur OpenClipArt : &lt;a href="https://openclipart.org/detail/262113/prehistoric-camp"&gt;Prehistoric-camp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Une version interactive (encore experimental) : &lt;a href="./labo/frontend/interactive_svg/" target="_blank"&gt;Campement du Paléolithique interactif&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Les étapes de réalisations :&lt;/p&gt;
+&lt;p&gt;&lt;span class="videobox"&gt;
+            &lt;video width="100%" height="100%" preload="none" controls poster="/./static/images/camp_paleolithic.jpg"&gt;&lt;source src='/static/movies/camp_paleolithic.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'&gt;&lt;/video&gt;&lt;/span&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 03 Oct 2016 00:56:09 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:abuledu-camp-paleolithique.html</guid><category>linux</category><category>libre</category></item><item><title>Oh Merde Git</title><link>http://mothsart.github.io/oh-merde-git.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;http://ohshitgit.com/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:oh-merde-git.html</guid><category>linux</category><category>libre</category></item><item><title>Librairies et frameworks</title><link>http://mothsart.github.io/rust-libs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Depuis que Rust est en version 1.0, les choses se sont accélérés et beaucoup de librairies et frameworks ont pointé le bout de leur nez.
+Voici les plus connus trié par thème.&lt;/p&gt;
+&lt;h1&gt;Base de données&lt;/h1&gt;
+&lt;p&gt;diesel
+rust-redis&lt;/p&gt;
+&lt;h1&gt;serialisation&lt;/h1&gt;
+&lt;p&gt;serde
+rust_serialize&lt;/p&gt;
+&lt;h1&gt;parser&lt;/h1&gt;
+&lt;p&gt;nom&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:rust-libs.html</guid><category>rust</category></item><item><title>TTS</title><link>http://mothsart.github.io/tts.html</link><description>&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;https://fr.wikipedia.org/wiki/Formant&lt;/p&gt;
+&lt;p&gt;http://milk.com/&lt;/p&gt;
+&lt;h2&gt;utilisation de Alsa&lt;/h2&gt;
+&lt;p&gt;libasound-dev&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:tts.html</guid><category>tts</category></item><item><title>videos</title><link>http://mothsart.github.io/videos.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;h2&gt;ffmpeg&lt;/h2&gt;
+&lt;p&gt;ffmpeg -framerate 1/1 -i camp%3d.png -c:v libx264 -vf "scale=trunc(iw/2)&lt;em&gt;2:trunc(ih/2)&lt;/em&gt;2" -pix_fmt yuv420p out.mp4 | ffmpeg -i out.mp4 etape.gif&lt;/p&gt;
+&lt;h2&gt;Mencoder&lt;/h2&gt;
+&lt;p&gt;mencoder -oac mp3lame -ovc lavc -lavcopts vcodec=mpeg4:mbd=2:trell -vf flip,mirror premier_toboggan.MOV -o premier_toboggan.avi&lt;/p&gt;
+&lt;p&gt;mencoder -vf flip,mirror premier_toboggan.MOV -o premier_toboggan.avi&lt;/p&gt;
+&lt;p&gt;mencoder -oac mp3lame -ovc lavc -lavcopts vcodec=mpeg4:mbd=2:trell -vf flip,mirror premier_toboggan.MOV -lavdopts threads=4 -o premier_toboggan.avi&lt;/p&gt;
+&lt;h3&gt;convertir le son en mp3 + retourner la vidéo + traitement sur 4 threads&lt;/h3&gt;
+&lt;p&gt;mencoder -oac mp3lame -ovc x264 -vf flip,mirror premier_toboggan.MOV -lavdopts threads=4 -o premier_toboggan.avi&lt;/p&gt;
+&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;http://sebsauvage.net/wiki/doku.php?id=ffmpeg&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:videos.html</guid><category>linux</category><category>ffmpeg</category><category>mencoder</category></item><item><title>Webassembly</title><link>http://mothsart.github.io/webassembly.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;h2&gt;l'existant&lt;/h2&gt;
+&lt;p&gt;http://caniuse.com/#feat=asmjs&lt;/p&gt;
+&lt;p&gt;emscripten&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:webassembly.html</guid><category>js</category></item><item><title>3D</title><link>http://mothsart.github.io/3D.html</link><description>&lt;h2&gt;&lt;/h2&gt;
+&lt;p&gt;http://polycount.com/
+https://fr.wikipedia.org/wiki/Sketchfab
+https://sketchfab.com/&lt;/p&gt;
+&lt;p&gt;Pour visualiser les fichiers .fbx dans Blender, il faut utiliser l'import.&lt;/p&gt;
+&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;http://sebsauvage.net/temp/blender/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:3D.html</guid><category>3D</category></item><item><title>algo images</title><link>http://mothsart.github.io/algo-images.html</link><description>&lt;h2&gt;&lt;/h2&gt;
+&lt;p&gt;https://29a.ch/
+https://github.com/jwagner/smartcrop.js&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:algo-images.html</guid><category>picture</category><category>algo</category></item><item><title>Blender</title><link>http://mothsart.github.io/blender.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;h2&gt;liens&lt;/h2&gt;
+&lt;p&gt;https://www.blender.org/manual/render/freestyle/export_svg.html
+http://goinkscape.com/use-blender-freestyle-to-export-svg-artwork&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:blender.html</guid><category>3D</category><category>blender</category></item><item><title>Cette photo est-elle retouché ?</title><link>http://mothsart.github.io/photo-retouche.html</link><description>&lt;h2&gt;&lt;/h2&gt;
+&lt;p&gt;https://en.wikipedia.org/wiki/Error_level_analysis&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:photo-retouche.html</guid><category>picture</category></item><item><title>Snap</title><link>http://mothsart.github.io/snap.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;http://korben.info/installer-paquets-snap-ubuntu-ligne-de-commande.html&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:snap.html</guid><category>snap</category><category>ubuntu</category><category>linux</category></item><item><title>Des exemples Rust</title><link>http://mothsart.github.io/exemples-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Des exemples de code Rust que je réutilise (mais que je n'arrive pas à mémoriser)&lt;/p&gt;
+&lt;h2&gt;Enum récursif&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-rust"&gt;#[derive(Debug)]
+enum A {
+    G(i32),
+    H(Vec&amp;lt;A&amp;gt;),
+}
+
+fn main() {
+    let a1: A = A::G(2);
+    let a2: A = A::G(3);
+    let a3: A = A::H(vec![a1, a2]);
+    println!(&amp;quot;{:?}&amp;quot;, a3);
+}&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;BTreeMap&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-rust"&gt;use std::collections::BTreeMap;
+
+#[derive(Debug)]
+enum A {
+    G(i32),
+    H(Vec&amp;lt;A&amp;gt;),
+    I(BTreeMap&amp;lt;i32, A&amp;gt;),
+}
+
+fn main() {
+    let ah = A::H(vec![A::G(2), A::G(3)]);
+
+    let mut map = BTreeMap::new();
+    map.insert(1, A::G(20));
+    map.insert(1, A::H(vec![A::G(10), A::G(20)]));
+
+    let ai = A::I(map);
+    println!(&amp;quot;{:?}&amp;quot;, ah);
+    println!(&amp;quot;{:?}&amp;quot;, ai);
+}&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Passer de str à String et inversement&lt;/h2&gt;
+&lt;h3&gt;str à string&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-rust"&gt;let machaine_str:&amp;amp;'static str = &amp;quot;ma chaine&amp;quot;;
+let machaine_string:String = machaine_str.to_owned();&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;ou&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-rust"&gt;let machaine_str:&amp;amp;'static str = &amp;quot;ma chaine&amp;quot;;
+let machaine_string:String = machaine_str.to_string();&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;String to str&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-rust"&gt;let manouvellechaine_str:&amp;amp;str = &amp;amp;*machaine_string;&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Des traits pour de la programmation générique :
+https://github.com/apasel422/eclectic&lt;/p&gt;
+&lt;p&gt;des websockets :&lt;/p&gt;
+&lt;p&gt;https://github.com/housleyjk/ws-rs&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-30:exemples-rust.html</guid><category>rust</category></item><item><title>AbulEdu</title><link>http://mothsart.github.io/abuledu.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Etant un jeune papa et défenseur d'un numérique ouvert, citoyen (liberté, égalité, fraternité) et responsable, j'ai décidé de participer au projet &lt;strong&gt;&lt;a href="https://fr.ulule.com/developpement-dabuledu"&gt;AbulEdu&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Pour l'instant, ça ne concerne que la création d'illustrations.&lt;/p&gt;
+&lt;p&gt;L'objectif est à multiple tranchants : elle va concerner &lt;strong&gt;&lt;a href="https://fr.wikipedia.org/wiki/Utilisateur:MothsART"&gt;Wikipédia Commons&lt;/a&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;a href="https://fr.vikidia.org/wiki/Utilisateur:MothsART"&gt;VikiDia&lt;/a&gt;&lt;/strong&gt; et &lt;strong&gt;&lt;a href="https://openclipart.org/user-detail/mothsart"&gt;OpenClipArt&lt;/a&gt;&lt;/strong&gt; dans la foulée.&lt;/p&gt;
+&lt;h2&gt;Les pré-requis&lt;/h2&gt;
+&lt;p&gt;Avant de participer bêtement, je me suis mis en relation avec des membres de l'association.&lt;/p&gt;
+&lt;p&gt;Leurs directives étaient claires et fondées sur 3 axes&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Besoin d'illustrations vectorielles en 
+&lt;strong&gt;&lt;a href="http://media.eduscol.education.fr/file/Progressions_pedagogiques/78/2/Progression-pedagogique_Cycle2_Decouverte_du_monde_203782.pdf"&gt;découverte du monde&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;L'inventaire systématique de ressources libres nécessaires pour les 8-11 ans en histoire, géographie, biologie et mathématiques :
+&lt;a href="http://thesaurus.abuledu.org/thesaurus/vocab/index.php"&gt;Leur thésaurus&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Des productions artistiques sous la forme d'histoires courtes : je ne pense pas paticiper pour l'instant.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Contraintes documentaires&lt;/h2&gt;
+&lt;p&gt;Avant de me lancer dans la production d'une illustration, je vais tout d'abord m'assurer qu'elle n'existe pas et qu'il y ai une vrai valeur ajouté.&lt;/p&gt;
+&lt;p&gt;Ensuite, je vais me documenter à minima sur le contexte.
+Par exemple, une illustration historique nécessitera de se documenter afin d'éviter les anachronismes.&lt;/p&gt;
+&lt;h2&gt;Contraintes Techniques&lt;/h2&gt;
+&lt;p&gt;Développeur avant tout, je me mets des jalons techniques pour :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;booster ma productivité (la contrainte de temps est hyper importante)&lt;/li&gt;
+&lt;li&gt;Fournir une expérience utilisateur optimale&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pour les illustrations vectorielles, j'utiliserais exclusivement &lt;strong&gt;Inkscape&lt;/strong&gt; (Outil libre mature).&lt;/p&gt;
+&lt;p&gt;Les couleurs choisis seront, dans l'idéal définit selon 2 contraintes :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;contraintes d'impression (conversion en CMJN possible sans que ce soit trop pénalisant)&lt;/li&gt;
+&lt;li&gt;contrainte de dyschromatopsie (daltonnisme) :
+Le daltonisme représente 8 % de la population masculine et 0.5 % de la population féminine =&amp;gt; ces chiffres sont par conséquent non anodin. (j'ai par ailleurs plusieurs personnes daltonniennes dans mon entourage)
+Les enfants sont bien entendus concernés par cette anomalie.
+Il est donc important que les illustrations soient pleinement fonctionnel avec leur déficience et n'entrave en rien leur apprentissage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Je n'utiliserais pas :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;de filtres SVG&lt;/li&gt;
+&lt;li&gt;de flou (le seul usage possible serait pour une image avec une focale marqué)&lt;/li&gt;
+&lt;li&gt;le moins possible de transparence&lt;/li&gt;
+&lt;li&gt;peu ou pas de dégradés&lt;/li&gt;
+&lt;li&gt;peu ou pas de courbes de béziers (là c'est clairement personnel et lié à mon style : je trouve que je passais beaucoup de temps à éditer des courbes de bézier alors que l'ajout d'un ou 2 points avec des arrêtes tranchantes était plus efficasse)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;On pourrais définir ça comme de l'extrémisme mais j'ai remarqué que ce type d'usage est :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Rarement adéquate pour mon style de dessin. (plus pour du photo-montage)&lt;/li&gt;
+&lt;li&gt;Gourmant en ressource à l'édition (et je déteste bosser sur mes illustrations avec un poste qui ram, tricher avec des calques masqués pour éviter les lenteurs etc.)&lt;/li&gt;
+&lt;li&gt;Gourmant en ressource pour l'utilisateur final : ça c'est encore plus pénalisant car je souhaite que l'expérience utilisateur soit la meilleur et pour le champ le plus large possible.
+Dans l'idéal, il faudrait que l'illustration soit visible pour un pc reconditionné, ayant déjà d'autres applicatifs (plus ou moins gourmant d'ouvert).&lt;/li&gt;
+&lt;li&gt;Support Hétérogène : là je parle principalement des filtres SVG : tous les moteurs de rendu ne les supportent pas ou pas pleinement.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Optimisation du SVG&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/svg/svgo"&gt;SVGO&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/179313779"&gt;Bien comprendre SVG&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Cohérence graphique&lt;/h2&gt;
+&lt;p&gt;Ca peut paraitre évident mais néanmoins nécessaire.
+Mes illustrations resterons cantonnés sur le même style : plutôt réaliste (sans être photo-réaliste), stylisé (pas de détails inutiles et chronophage à la création) pas ou peu de contours, des contrastes de couleurs marqués.&lt;/p&gt;
+&lt;p&gt;La plupart du temps, je vais composer mes dessins à partir de plusieurs sources sur Internet avec une étape intermédiaire papier pour composer mon image.&lt;/p&gt;
+&lt;p&gt;Sur Inkscape, je pose les grandes lignes (proportions) et affine jusqu'à arriver au résultat final.&lt;/p&gt;
+&lt;h2&gt;License&lt;/h2&gt;
+&lt;p&gt;Comme la paternité de l'oeuvre n'a pas vraiment d'importance à mon sens, je choisi la &lt;strong&gt;&lt;a href="https://creativecommons.org/publicdomain/zero/1.0/deed.fr"&gt;License Creative Commons CC0 Transfert au Domaine Public&lt;/a&gt;&lt;/strong&gt; ou plus occasionnellement la &lt;strong&gt;&lt;a href="https://creativecommons.org/licenses/by-sa/3.0/deed.fr"&gt;cc-by-sa&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;Fréquence&lt;/h2&gt;
+&lt;p&gt;Pou l'instant, je me met un objectif bas : 1 contribution par mois &lt;strong&gt;obligatoire&lt;/strong&gt; pour la constance.
+Après, je serais quitte de dépasser...&lt;/p&gt;
+&lt;h2&gt;L'épreuve du feu&lt;/h2&gt;
+&lt;p&gt;Faire participer mes enfants au projet!&lt;/p&gt;
+&lt;p&gt;Leur intérêt, avis, impression doit avoir une conséquence favorable ou une remise en question.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Après la réflexion, l'action !&lt;/p&gt;
+&lt;h2&gt;Mes réalisation&lt;/h2&gt;
+&lt;p&gt;&lt;a href="./abuledu-camp-paleolithique.html"&gt;Campement du Paléolithique&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://commons.wikimedia.org/wiki/File:Mastodonte.svg"&gt;Mastondonte&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:abuledu.html</guid><category>linux</category><category>libre</category></item><item><title>Bench Linux</title><link>http://mothsart.github.io/bench-linux.html</link><description>&lt;h2&gt;Vérifier si l'accélération graphique est actif&lt;/h2&gt;
+&lt;p&gt;glxinfo | grep "direct rendering"&lt;/p&gt;
+&lt;h2&gt;lancement du benchmark de Mesa (implémentation libre d'opengl)&lt;/h2&gt;
+&lt;p&gt;Afin de ne pas être limité par la fréquence de rafraichissement (en général 60) Il peut être préférable d'entrer la commande suivante. N'oubliez pas d'exécuter dans la fenêtre du terminal ctrl+c pour shunter glxgears.&lt;/p&gt;
+&lt;p&gt;vblank_mode=0 glxgears&lt;/p&gt;
+&lt;h2&gt;Bench CPU&lt;/h2&gt;
+&lt;p&gt;7z b&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:bench-linux.html</guid><category>linux</category></item><item><title>Logiciels Linux</title><link>http://mothsart.github.io/logiciels-linux.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;J'ai découvert des applis sympas au fil de ma pérégrination&lt;/p&gt;
+&lt;h2&gt;Liste&lt;/h2&gt;
+&lt;p&gt;Midori
+PCManFM : rempace allègrement Nautilus
+LXTerminal&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 03 Oct 2016 00:56:09 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:logiciels-linux.html</guid><category>linux</category><category>soft</category></item><item><title>Pourquoi Wayland</title><link>http://mothsart.github.io/pourquoi-wayland.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Beaucoup de bruit autours de &lt;strong&gt;Wayland&lt;/strong&gt; (et de &lt;strong&gt;Mir&lt;/strong&gt;) sans savoir ce que ça va apporter par rapport au serveur X (Xorg).
+Du coup, j'essai d'éclaircir un peu par mes recherches.&lt;/p&gt;
+&lt;h2&gt;De la sécurité&lt;/h2&gt;
+&lt;h2&gt;De l'abstraction&lt;/h2&gt;
+&lt;p&gt;On sépare les clients : typiquement chaque zone de rendu (pour simplifier on peut dire fenêtres)&lt;/p&gt;
+&lt;p&gt;Chaque client passe par un protocole pour émettre des événements, en recevoir et pour mettre à jour son buffer.&lt;/p&gt;
+&lt;p&gt;Ce protocole c'est Wayland qui passe toutes ces infos normalisés à un compositeur.&lt;/p&gt;
+&lt;p&gt;Le compositeur est donc complétement isolé des fenêtres.&lt;/p&gt;
+&lt;h2&gt;KISS&lt;/h2&gt;
+&lt;p&gt;Wayland sert grosso modo à récupérer les buffers CPU (&lt;strong&gt;shared memory (SHM)&lt;/strong&gt;) et GPU (&lt;strong&gt;GEM’s buffer sharing&lt;/strong&gt;) des différentes fenêtres et les transmettre avec leur ordre d'affichage à un composer via un protocole.
+Ni plus, ni moins.&lt;/p&gt;
+&lt;p&gt;Une API C minimal sans prise en charge de buffer exotique.&lt;/p&gt;
+&lt;p&gt;Par conséquent plus simple à développer et à entretenir.&lt;/p&gt;
+&lt;h2&gt;Les bienfaits de la page blanche&lt;/h2&gt;
+&lt;p&gt;Wayland c'est aussi un projet jeune qui ne traine pas les &lt;strong&gt;deadcodes&lt;/strong&gt; de Xorg et son historique.&lt;/p&gt;
+&lt;p&gt;De plus, plein de nouvelles technos linux ont émmergé depuis quelques années :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Edev&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;KMS&lt;/strong&gt; (&lt;strong&gt;Kernel-based mode-setting&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;EGL&lt;/strong&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Compositeurs&lt;/h2&gt;
+&lt;p&gt;Les devs de Wayland fournisse &lt;strong&gt;weston&lt;/strong&gt; : compositeur de référence et de démo de Wayland.&lt;/p&gt;
+&lt;h2&gt;Et Mir dans tout ça&lt;/h2&gt;
+&lt;p&gt;Ubuntu a décidé depuis 2013 de se la jouer perso en créant &lt;strong&gt;Mir&lt;/strong&gt;.
+Ce choix est fait principalement pour répondre à un besoin criant d'avoir quelques chose d'opérationnel pour du tactile.
+A priori, ça porte du fruit.&lt;/p&gt;
+&lt;p&gt;Néanmoins, Mir fait office de protocole et de compositeur.
+Il est donc &lt;/p&gt;
+&lt;h2&gt;liens&lt;/h2&gt;
+&lt;p&gt;http://mupuf.org/blog/2014/02/19/wayland-compositors-why-and-how-to-handle/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:pourquoi-wayland.html</guid><category>wayland</category><category>linux</category></item><item><title>Projets libres éducatifs</title><link>http://mothsart.github.io/projets-libre-educatif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Voici un condensé des projets libres que je suis concernant l'éducation.&lt;/p&gt;
+&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://sitespe.fr"&gt;http://sitespe.fr&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://pepit.be"&gt;http://pepit.be&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://odysseuslibre.be/mondelibre"&gt;http://odysseuslibre.be/mondelibre&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Manilux Télé : &lt;a href="http://malinuxtele.tuxfamily.org"&gt;http://malinuxtele.tuxfamily.org&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://fr.ulule.com/developpement-dabuledu"&gt;AbulEdu&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://fr.vikidia.org"&gt;VikiDia&lt;/a&gt;&lt;/strong&gt; : Wikipédia pour le primaire (8 à 13 ans en réalité)&lt;/p&gt;
+&lt;p&gt;La suite Gcompris
+TuxPaint&lt;/p&gt;
+&lt;p&gt;Tux Typing&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:projets-libre-educatif.html</guid><category>libre</category><category>linux</category><category>éduatif</category></item><item><title>Windows vs Linux</title><link>http://mothsart.github.io/windows-vs-linux.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Comparer Windows à Linux c'est comme comparer &lt;/p&gt;
+&lt;h2&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:windows-vs-linux.html</guid><category>windows</category><category>linux</category></item><item><title>Correcteur</title><link>http://mothsart.github.io/correcteur.html</link><description>&lt;h2&gt;&lt;/h2&gt;
+&lt;p&gt;http://www.norvig.com/spell-correct.html&lt;/p&gt;
+&lt;p&gt;http://www.reverso.net/spell-checker/french-spelling-grammar/
+http://bescherelle.com/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 03 Oct 2016 00:56:09 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:correcteur.html</guid><category>correcteur</category><category>grammaire</category></item><item><title>Macros rust</title><link>http://mothsart.github.io/macros-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;println!&lt;/p&gt;
+&lt;p&gt;format!&lt;/p&gt;
+&lt;p&gt;write!&lt;/p&gt;
+&lt;p&gt;try!&lt;/p&gt;
+&lt;p&gt;undefined!&lt;/p&gt;
+&lt;p&gt;assert!&lt;/p&gt;
+&lt;p&gt;assert_eq!&lt;/p&gt;
+&lt;p&gt;panic!&lt;/p&gt;
+&lt;p&gt;unreachable!&lt;/p&gt;
+&lt;p&gt;unimplemented!&lt;/p&gt;
+&lt;p&gt;column!&lt;/p&gt;
+&lt;p&gt;line!&lt;/p&gt;
+&lt;p&gt;file!&lt;/p&gt;
+&lt;p&gt;vec!&lt;/p&gt;
+&lt;p&gt;log_syntax!&lt;/p&gt;
+&lt;p&gt;trace_macros!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:macros-rust.html</guid><category>rust</category></item><item><title>Phonetic</title><link>http://mothsart.github.io/phonetic.html</link><description>&lt;h2&gt;Phonetic&lt;/h2&gt;
+&lt;p&gt;Sur PostgreSQL : https://www.postgresql.org/docs/9.1/static/fuzzystrmatch.html&lt;/p&gt;
+&lt;p&gt;https://fr.wikipedia.org/wiki/Homonymie
+http://www.easter-eggs.com/Recherche-approximative-avec
+http://sebsauvage.net/wiki/doku.php?id=php:recherche_floue&lt;/p&gt;
+&lt;p&gt;CREATE EXTENSION fuzzystrmatch;&lt;/p&gt;
+&lt;h3&gt;Soundex&lt;/h3&gt;
+&lt;h3&gt;Phonex&lt;/h3&gt;
+&lt;p&gt;Soundex pour le français : http://www.trickytools.com/downloads/phonex2.c&lt;/p&gt;
+&lt;h3&gt;Double metaphone&lt;/h3&gt;
+&lt;p&gt;Il est dit double car il peut retourner un code primaire et secondaire. (0 à 4 caractères)
+Il est par conséquent bien plus précis que le &lt;strong&gt;Soundex&lt;/strong&gt; et également plus adapté aux langues non anglophone.&lt;/p&gt;
+&lt;p&gt;Il a &lt;strong&gt;16 consonnes&lt;/strong&gt; (le 0 représente le th anglais) :
+      B  X  S  K  J  T  F  H  L  M  N  P  R  0  W  Y&lt;/p&gt;
+&lt;p&gt;Transformations:&lt;/p&gt;
+&lt;p&gt;B ----&amp;gt; B      unless at the end of word after "m", as in "dumb", "McComb"&lt;/p&gt;
+&lt;p&gt;C ----&amp;gt; X      (sh) if "-cia-" or "-ch-"
+           S      if "-ci-", "-ce-", or "-cy-"
+                  SILENT if "-sci-", "-sce-", or "-scy-"
+           K      otherwise, including in "-sch-"&lt;/p&gt;
+&lt;p&gt;D ----&amp;gt; J      if in "-dge-", "-dgy-", or "-dgi-"
+           T      otherwise&lt;/p&gt;
+&lt;p&gt;F ----&amp;gt; F&lt;/p&gt;
+&lt;p&gt;G ----&amp;gt;        SILENT if in "-gh-" and not at end or before a vowel
+                            in "-gn" or "-gned"
+                            in "-dge-" etc., as in above rule
+           J      if before "i", or "e", or "y" if not double "gg"
+           K      otherwise&lt;/p&gt;
+&lt;p&gt;H ----&amp;gt;        SILENT if after vowel and no vowel follows
+                         or after "-ch-", "-sh-", "-ph-", "-th-", "-gh-"
+           H      otherwise&lt;/p&gt;
+&lt;p&gt;J ----&amp;gt; J&lt;/p&gt;
+&lt;p&gt;K ----&amp;gt;        SILENT if after "c"
+           K      otherwise&lt;/p&gt;
+&lt;p&gt;L ----&amp;gt; L&lt;/p&gt;
+&lt;p&gt;M ----&amp;gt; M&lt;/p&gt;
+&lt;p&gt;N ----&amp;gt; N&lt;/p&gt;
+&lt;p&gt;P ----&amp;gt; F      if before "h"
+           P      otherwise&lt;/p&gt;
+&lt;p&gt;Q ----&amp;gt; K&lt;/p&gt;
+&lt;p&gt;R ----&amp;gt; R&lt;/p&gt;
+&lt;p&gt;S ----&amp;gt; X      (sh) if before "h" or in "-sio-" or "-sia-"
+           S      otherwise&lt;/p&gt;
+&lt;p&gt;T ----&amp;gt; X      (sh) if "-tia-" or "-tio-"
+           0      (th) if before "h"
+                  silent if in "-tch-"
+           T      otherwise&lt;/p&gt;
+&lt;p&gt;V ----&amp;gt; F&lt;/p&gt;
+&lt;p&gt;W ----&amp;gt;        SILENT if not followed by a vowel
+           W      if followed by a vowel&lt;/p&gt;
+&lt;p&gt;X ----&amp;gt; KS&lt;/p&gt;
+&lt;p&gt;Y ----&amp;gt;        SILENT if not followed by a vowel
+           Y      if followed by a vowel&lt;/p&gt;
+&lt;p&gt;Z ----&amp;gt; S&lt;/p&gt;
+&lt;p&gt;https://github.com/Freyskeyd/nlp
+http://aspell.net/metaphone/metaphone-kuhn.txt
+http://aspell.net/metaphone/dmetaph.cpp&lt;/p&gt;
+&lt;p&gt;Sous PostGreSQL : select dmetaphone('gumbo');
+=&amp;gt; ça ne marche pas bien dès qu'il y a des caractères accentués.&lt;/p&gt;
+&lt;h3&gt;Distance de Levenstein&lt;/h3&gt;
+&lt;h3&gt;Références&lt;/h3&gt;
+&lt;p&gt;http://www.norvig.com/spell-correct.html&lt;/p&gt;
+&lt;p&gt;http://stackoverflow.com/questions/487003/how-to-detect-a-typo-in-a-product-search-and-suggest-possible-corrections&lt;/p&gt;
+&lt;p&gt;PostGreSQL implémente la distance de levenstein, le double metaphone :&lt;/p&gt;
+&lt;p&gt;https://github.com/Freyskeyd/nlp&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:phonetic.html</guid><category>phonetic</category><category>phonex</category><category>metaphone</category></item><item><title>Web Offline</title><link>http://mothsart.github.io/web-offline.html</link><description>&lt;h2&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:web-offline.html</guid><category>offline</category></item><item><title>Aide mémoire GIT</title><link>http://mothsart.github.io/aide-memoire-git.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;GIT est un super utilitaire mais son nombre de commandes est juste exponentiel.&lt;/p&gt;
+&lt;h2&gt;Clone&lt;/h2&gt;
+&lt;p&gt;Avec des sous-modules&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git clone --recursive depot&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Recherche d'un bug&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git bisect&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Ajout/Reset Partiel&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git add -p/git reset -p&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Tags&lt;/h2&gt;
+&lt;h3&gt;ajout&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git tag montag 1b2e1d63ff (numéro du commit)
+git tag montag mon_nom_de_branch
+git tag montag (ajout du tag sur le commit pointé par le **Head**)
+git push --tags (envoi des commits en remote + les tags)&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;suppression&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git tag -d mon_tag
+git push origin :refs/tags/mon_tag #supprime en remote&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Branches&lt;/h2&gt;
+&lt;h3&gt;ajout&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git checkout -b ma_branche&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;suppression&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git branch -D ma_branche
+git push origin --delete ma_branche #supprime en remote (GIT &amp;gt;= 1.7)
+git push origin :ma_branche #supprime en remote (GIT &amp;lt; 1.7)&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Reflog&lt;/h2&gt;
+&lt;p&gt;Reflog permet de lister toutes les actions faites sur un dépôt.
+A la différence de &lt;strong&gt;git log&lt;/strong&gt;, il va lister également les actions de suppression qui ne sont plus présente sur notre historique GIT.
+Cette commande est très utile pour récupérer des commits/tags/branches qui ont été supprimé ou pour revenir sur un historique précédent !&lt;/p&gt;
+&lt;h2&gt;Cherry-pick + cherry&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;git cherry&lt;/strong&gt; permet de lister la différence entre 2 branches&lt;/p&gt;
+&lt;p&gt;Donne la liste des commits de différence entre les 2 branches&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git cherry branch1 branch2&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;log&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git log -n 10 # n'afficher que les 10 derniers commits&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;shortlog&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git shortlog -sne --all
+git shortlog -sne --all | wc -l =&amp;gt; liste les autheurs sur l'ensemble des dépôts&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;remote&lt;/h2&gt;
+&lt;p&gt;On supprime de notre &lt;strong&gt;repository local&lt;/strong&gt; toutes les branches remote qui n'existent plus&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git remote prune origin&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;On compte toutes les branches &lt;strong&gt;remote mergées&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git branch -r --merged origin/integration | wc -l&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;fetch&lt;/h2&gt;
+&lt;p&gt;On récupère toutes les données du &lt;strong&gt;repository remote&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git fetch --all&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;pull = fetch + merge&lt;/h2&gt;
+&lt;p&gt;perso, j'ai définit mon pull pour faire un &lt;strong&gt;pull --rebase&lt;/strong&gt; dans mon &lt;strong&gt;.gitrc&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;rebase&lt;/h2&gt;
+&lt;p&gt;soit&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git checkout master
+git rebase serveur&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;soit&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git rebase master serveur&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;git rebase -i : permet de changer l'entête d'un commit =&amp;gt; squasher ses commits&lt;/p&gt;
+&lt;p&gt;git rebase -p / git rebase --preserve-merges =&amp;gt; permet de garder l'historique des fusions...&lt;/p&gt;
+&lt;p&gt;garder un fichier local -&amp;gt; git checkout --ours /path/to/file (si l'on veut tous les fichiers :  git checkout --ours *)
+garder un fichier distant -&amp;gt; git checkout --theirs /path/to/file&lt;/p&gt;
+&lt;p&gt;puis git add /path/to/file&lt;/p&gt;
+&lt;h2&gt;Ignore&lt;/h2&gt;
+&lt;p&gt;exclusion globale (dans ~/.gitconfig):
+[core]
+    excludesfile = ~/.gitignore&lt;/p&gt;
+&lt;p&gt;exclusion locale : .git/info/exclude&lt;/p&gt;
+&lt;p&gt;Ignorer un fichier déjà tracké :
+git update-index --assume-unchanged &lt;file&gt;
+(en savoir + : https://www.kernel.org/pub/software/scm/git/docs/git-update-index.html)
+(opération inverse : git update-index --no-assume-unchanged &lt;file&gt;)&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git update-index --no-assume-unchanged&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;cherry&lt;/h2&gt;
+&lt;p&gt;Considérons 2 branches =&amp;gt; &lt;strong&gt;master&lt;/strong&gt; et &lt;strong&gt;topic&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git cherry -v topic | grep -e &amp;quot;^+&amp;quot; | grep -v &amp;quot;\[nc\]&amp;quot; | tee /dev/tty | wc -l&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;donne la liste des commits présent dans la &lt;strong&gt;topic&lt;/strong&gt; et non dans la &lt;strong&gt;master&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;et son inverse :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git cherry -v master | grep -e &amp;quot;^+&amp;quot; | grep -v &amp;quot;\[nc\]&amp;quot; | tee /dev/tty | wc -l&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;donne la liste des commits présent dans la &lt;strong&gt;master&lt;/strong&gt; et non dans la &lt;strong&gt;topic&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Diff&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git diff -b (git diff --ignore-space-change)
+git diff -w (git diff --ignore-all-space)
+git diff --color-words=.&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;juste les fichiers : git diff --stat
+git diff --name-status&lt;/p&gt;
+&lt;h2&gt;Amend&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git commit --amend --no-edit&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Rajoute au dernier commit tous les fichiers du staging + tous les fichiers non traqués et renome l'intitulé du commit&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git commit -a -u --amend -m &amp;quot;new message&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Stash&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git stash --include-untracked === git stash save -u&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;réapplique le stash avec l'index originel :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git stash apply --index&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Explication : http://www.git-attitude.fr/2014/09/15/30-options-git-qui-gagnent-a-etre-connues/#stasher-plus efficacement avec save et -u&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git stash save -u 'Nom du stash'
+git stash pop --index&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Push&lt;/h2&gt;
+&lt;p&gt;Pousser une branche qui vient d'être créé :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git push -u origin NomDeLaNouvelleBranche&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Suppression d'un commit en remote : http://stackoverflow.com/questions/1338728/delete-commits-from-a-branch-in-git&lt;/p&gt;
+&lt;p&gt;En local&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git reset --hard HEAD~1&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;En remote&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git push origin HEAD --force&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;gc&lt;/h2&gt;
+&lt;h2&gt;fsck&lt;/h2&gt;
+&lt;h2&gt;Sous modules&lt;/h2&gt;
+&lt;p&gt;J'oubli à chaque fois l'ordre pour mettre à jour un sous-module.
+Mon exemple pour mon plugin &lt;strong&gt;Ace Editor&lt;/strong&gt; :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git clone --recursive https://github.com/mothsART/pelican-plugins.git
+cd ace_editor
+git checkout master
+git pull
+cd ..
+git add -A
+git c -m &amp;quot;...&amp;quot;
+git push&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Suppression Branche remote&lt;/h2&gt;
+&lt;p&gt;git push origin --delete &lt;branchName&gt; (exemple: git push origin --delete 14_79_000_0)
+(ancienne méthode (git &amp;lt; 1.7): git push origin :&lt;branchName&gt;)nch &lt;/p&gt;
+&lt;h2&gt;Suppression Commit en remote&lt;/h2&gt;
+&lt;p&gt;supprime le dernier commit : git push -f origin HEAD^:ma_Branch_en_remote&lt;/p&gt;
+&lt;h2&gt;Suppression répertoire de travail&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git reset HEAD === git reset HEAD^0&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Suppression de commit&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git reset HEAD^ === git reset HEAD^1&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Suppression d'un fichier sur un commit&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git reset HEAD^ -- $file
+git commit --amend&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Equivalences&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git checkout -b ticket-12 === git branch ticket-12 + git checkout ticket-12&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;git checkout --track origin/correctionserveur === git checkout -b correctionserveur origin/correctionserveur (--track évite donc les erreurs dans le nom des branches locales)&lt;/p&gt;
+&lt;h2&gt;Compter le nombre de commits (sur toutes les branches)&lt;/h2&gt;
+&lt;p&gt;http://stackoverflow.com/questions/1265040/how-to-count-total-lines-changed-by-a-specific-author-in-a-git-repository&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git shortlog -sne --all
+
+#############
+# http://tilap.net/git-trouver-lister-les-fichiers-modifies-par-utilisateur/
+listFilesByAuthor = log --pretty=&amp;quot;%H&amp;quot; --author=&amp;quot;Jeremie&amp;quot; | while read commit_hash; do git show --oneline --name-only $commit_hash | tail -n+2; done | sort | uniq
+#############
+# must install Ruby
+#moststats = &amp;quot;ls-files -z | xargs -0n1 git blame -w | ruby -n -e '$_ =~ /^.*\((.*?)\s[\d]{4}/; puts $1.strip' | sort -f | uniq -c | sort -n&amp;quot;
+#############
+statsByAuthor = log --format='%aN' | sort -u | while read name; do echo -en &amp;quot;$name\t&amp;quot;; git log --author=&amp;quot;$name&amp;quot; --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf &amp;quot;added lines: %s, removed lines: %s, total lines: %s\n&amp;quot;, add, subs, loc }' -; done
+#############
+stats = &amp;quot;!sh -c 'git log --pretty=\&amp;quot;format:%aN\&amp;quot; -&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Recherche&lt;/h2&gt;
+&lt;p&gt;// rechercher dans le projet une expression précise -&amp;gt; renvoi le(s) fichier(s) concerné(s)&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git grep &amp;quot;DossierDeDemande dossier = demandesSurServiceConnecte.First(); // lol&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;//rechercher une expression précise sur un fichier -&amp;gt; renvoi le n° de commit, l'intitulé et son auteur&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git log -Slol -- sources/Dicsit.SiteWeb/LogiresoNet/Areas/Coordination/Controllers/SuiviController.cs
+
+#!bash
+git diff -G &amp;lt;regex&amp;gt;
+git grep &amp;lt;regex&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Dépôt distants&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git remote -v show =&amp;gt; donne les url en fetch et en push
+
+git remote rm origin
+
+git remote add origin &amp;lt;url&amp;gt;
+
+git remote set-url origin http://FerryJ%40MARSH.LOCAL:monmotdepasse@southp/Git/Dicsit.Core.git =&amp;gt; changer de dépôt
+git remote set-url origin http://FerryJ%40MARSH.LOCAL:monmotdepasse@southp/Git/Dicsit.git
+
+git clone --recursive http://FerryJ%40MARSH.LOCAL:monmotdepasse@southp/Git/Microsoins.NET.git
+git clone --recursive http://FerryJ%40MARSH.LOCAL:monmotdepasse@southp/Git/Dicsit.Core.git&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Github&lt;/h2&gt;
+&lt;p&gt;La problématique : j'ai forké un projet git et j'ai soumis un fork il y a longtemps.
+Le projet en lui même à évolué et on me demande de rebasé mes commits.&lt;/p&gt;
+&lt;p&gt;https://github.com/edx/edx-platform/wiki/How-to-Rebase-a-Pull-Request&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git remote add pelican https://github.com/getpelican/pelican
+git fetch pelican
+git rebase -i HEAD~3
+git rebase pelican/master
+git push -f&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.git-attitude.fr/2014/09/15/30-options-git-qui-gagnent-a-etre-connues"&gt;http://www.git-attitude.fr/2014/09/15/30-options-git-qui-gagnent-a-etre-connues&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/2221658/whats-the-difference-between-head-and-head-in-git"&gt;http://stackoverflow.com/questions/2221658whats-the-difference-between-head-and-head-in-git&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 03 Oct 2016 00:56:09 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-git.html</guid><category>git</category><category>linux</category></item><item><title>Aide mémoire sh</title><link>http://mothsart.github.io/aide-memoire-sh.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;find . | grep actual&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Sed&lt;/h2&gt;
+&lt;p&gt;Remplacer une occurence par une autre sur un ensemble de fichiers&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;sed -i s/leMauvaisTexte/leBonTexte/g *&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-sh.html</guid><category>sh</category><category>linux</category></item><item><title>Aide mémoire Sublime Text 3</title><link>http://mothsart.github.io/aide-memoire-sublime-text.html</link><description>&lt;h2&gt;Fonctionnalités&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://sametmax.com/10-astuces-pour-sublime-text-2"&gt;http://sametmax.com/10-astuces-pour-sublime-text-2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Edit/StringEncode : permet d'encoder des chaines de caractères&lt;/p&gt;
+&lt;p&gt;&lt;kbd&gt;Alt&lt;/kbd&gt;&lt;kbd&gt;Q&lt;/kbd&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 15 Jan 2016 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-sublime-text.html</guid><category>sublimetext</category></item><item><title>Aide mémoire Tmux</title><link>http://mothsart.github.io/aide-memoire-tmux.html</link><description>&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Ca fait maintenant 2 bonnes années que j'utilise &lt;strong&gt;Tmux&lt;/strong&gt; à la place du viellissant &lt;strong&gt;Screen&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Tmux est un &lt;strong&gt;multiplexeur&lt;/strong&gt; de terminal &lt;strong&gt;configurable&lt;/strong&gt; qui gère aussi bien les raccourcis clavier que les interactions de la souris.&lt;/p&gt;
+&lt;h2&gt;Raccourci dans Tmux&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;killer la fenêtre courante et tous les panes qu'elle contient
+&lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;a&lt;/kbd&gt; puis &lt;kbd&gt;&amp;amp;&lt;/kbd&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Tmuxp&lt;/h2&gt;
+&lt;p&gt;Cette lib python permet de configurer facilement des espaces de travail pour &lt;strong&gt;Tmux&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;Configurer son .zshrc ou .bashrc&lt;/h3&gt;
+&lt;p&gt;Ajouter ceci pour avoir l'autocompletion&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;eval &amp;quot;$(_TMUXP_COMPLETE=source tmuxp)&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;Tmuxp Load&lt;/h3&gt;
+&lt;p&gt;Un simple :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;cd ~/.tmuxp &amp;amp;&amp;amp; tmuxp load&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;va me proposer l'autocompletion et me donner ma liste de fichiers yaml d'espace de travail :&lt;/p&gt;
+&lt;p&gt;&lt;img alt="tmuxp load" src="static/images/tmuxp_load_labodunerd.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Par exemple, pour manager ce site, j'utilise cette config :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-yaml"&gt;session_name: labodunerd website
+windows:
+
+- window_name: labodunerd
+  layout:  main-vertical
+  shell_command_before:
+  - workon labodunerd
+  panes:
+    - pelican content
+    - shell_command:
+      - cd output
+      - python -m http.server
+
+- window_name: labodunerd (git)
+  layout:  main-vertical
+  shell_command_before:
+    - workon labodunerd
+  panes:
+    - git st
+    - shell_command:
+      - cd output
+      - git st
+
+- window_name: ace_editor plugin (git)
+  layout:  main-vertical
+  shell_command_before:
+    - workon labodunerd
+  panes:
+    - shell_command:
+      - cd pelican-plugins/ace_editor
+      - git st
+    - shell_command:
+      - cd themes/lab
+      - git st&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;et le résultat de son chargement :&lt;/p&gt;
+&lt;p&gt;&lt;img alt="tmuxp load" src="static/images/tmuxp_labodunerd.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Si vous voulez concatener plusieurs espaces de travail en un, c'est possible.&lt;/p&gt;
+&lt;h3&gt;Tmuxp freeze&lt;/h3&gt;
+&lt;p&gt;Permet de faire un snapshot de votre tmux.&lt;/p&gt;
+&lt;h3&gt;Tmuxp import&lt;/h3&gt;
+&lt;p&gt;Il existe 2 gros concurrent à tmuxp : &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;teamocil&lt;/li&gt;
+&lt;li&gt;tmuxinator&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Les fichiers de configuration sont sensiblement différents mais les fonctionnalités restent les mêmes.
+Cet outil en cli permet de les convertir en un format lisible pour Tmuxp.&lt;/p&gt;
+&lt;h3&gt;Tmuxp convert&lt;/h3&gt;
+&lt;p&gt;On peut actuellement utiliser 3 types de fichiers de config différents :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;du python pure&lt;/li&gt;
+&lt;li&gt;du yaml&lt;/li&gt;
+&lt;li&gt;du json&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Si l'on veut passer de l'un à l'autre, cet outil en cli est juste indispensable&lt;/p&gt;
+&lt;h3&gt;Remarques&lt;/h3&gt;
+&lt;p&gt;Il manque sans doute le support de &lt;strong&gt;Toml&lt;/strong&gt; : le meilleur format de conf de tout les temps!&lt;/p&gt;
+&lt;h2&gt;Etendre vos super-pouvoirs avec Tmux&lt;/h2&gt;
+&lt;h3&gt;une ligne de commande permettant de supprimer l'ensemble des sessions Tmux&lt;/h3&gt;
+&lt;p&gt;Rajouter ceci dans votre &lt;strong&gt;.zshrc&lt;/strong&gt; ou votre &lt;strong&gt;.bashrc&lt;/strong&gt; :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;function tmux_kill_all_sessions() {
+    tmux ls;
+    local tmux_session=`tmux ls | grep --color=never : | cut -d. -f1 | awk '{print substr($1, 0, length($1))}' | awk -F: '{print $2}'`;
+    # &amp;quot;awk -F: '{print $2}'&amp;quot; =&amp;gt; permet de supprimer le numéro de ligne
+    # préfixé par grep (dût à GREP_OPTIONS='-n')
+    tmux kill-session -t &amp;quot;$tmux_session&amp;quot;;
+}
+alias tmuxkillallsessions='tmux_kill_all_sessions'&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 03 Oct 2016 00:56:09 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-tmux.html</guid><category>tmux</category><category>tmuxp</category><category>python</category><category>linux</category></item><item><title>Aide mémoire Vi</title><link>http://mothsart.github.io/aide-memoire-vi.html</link><description>&lt;h2&gt;Fonctionnalités&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 15 Jan 2016 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-vi.html</guid><category>vi</category></item><item><title>Aide mémoire Zsh</title><link>http://mothsart.github.io/aide-memoire-zsh.html</link><description>&lt;p&gt;Et oui, pauvre mortel, je ne retiens pas toujours les fonctions utiles de ZSH et son pendant naturel "Oh my Zsh"&lt;/p&gt;
+&lt;h2&gt;Utilitaires&lt;/h2&gt;
+&lt;h3&gt;Git&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git list # donne la liste des gitignores pouvant être créé à la volé
+git rust # créé un fichier .gitignore spécifique à rust
+cat monfichier.extension | colorize # afficher en couleur un fichier (utilise la lib python &amp;quot;pygmentize&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;Rust&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;cargo # autocomplétion de l'utilitaire cargo&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;Python&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;pyfind # recherche uniquement les fichiers .py
+pyclean # supprime tous les fichiers bytes-code d'un projet&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;Rsync&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;alias rsync-copy=&amp;quot;rsync -avz --progress -h&amp;quot;
+alias rsync-move=&amp;quot;rsync -avz --progress -h --remove-source-files&amp;quot;
+alias rsync-update=&amp;quot;rsync -avzu --progress -h&amp;quot;
+alias rsync-synchronize=&amp;quot;rsync -avzu --delete --progress -h&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;Editeur&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;st # sublime-text&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;Web search&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;google pattern1 pattern2 # va lancer un navigateur avec les mots recherchés
+github pattern1 pattern2 # va lancer github avec les mots recherchés
+wiki pattern1 pattern2 # va lancer duckduckgo avec les mots recherchés dans la catégorie &amp;quot;wiki&amp;quot;
+news pattern1 pattern2 # va lancer duckduckgo avec les mots recherchés dans la catégorie &amp;quot;news&amp;quot;
+youtube pattern1 pattern2 # va lancer duckduckgo avec les mots recherchés dans la catégorie &amp;quot;youtube&amp;quot;
+map pattern1 pattern2 # va lancer duckduckgo avec les mots recherchés dans la catégorie &amp;quot;map&amp;quot;
+image pattern1 pattern2 # va lancer duckduckgo avec les mots recherchés dans la catégorie &amp;quot;image&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;zsh-navigation-tools&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;n-cd
+n-alias&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Mes scripts d'à moi&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-zsh.html</guid><category>zsh</category><category>linux</category></item><item><title>SSH</title><link>http://mothsart.github.io/ssh.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;SSH fait parti des outils indispensables de l'admin sys (surtout linuxien).&lt;/p&gt;
+&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;https://github.com/emre/storm&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:ssh.html</guid><category>ssh</category><category>python</category></item><item><title>J'aime pas Apple</title><link>http://mothsart.github.io/dislike-apple.html</link><description>&lt;h2&gt;Mon usage de IOS&lt;/h2&gt;
+&lt;p&gt;Autant le dire de façon clair : je n'aime pas (et n'ai jamais aimé) Apple.
+J'ai du travaillé sur support IOs au boulot et j'ai vraiment essayé de me contre-dire.&lt;/p&gt;
+&lt;p&gt;J'ai une tablette archos Android (- de 100€) @home sans doute mal configuré (y'a des jeux, des applis à gogos) qui tourne en définitive mieux que des tablettes Apple fraichement acheté au prix fort!&lt;/p&gt;
+&lt;p&gt;Je comprend toujours pas cet engoument entours de leurs produits? 
+C'est sensé être du produit de luxe, non ?
+Mon doigt est reconnu une fois sur 2 (alors que sous Android avec un film de protection, j'ai aucun soucis), l'interface est juste trop lente...&lt;/p&gt;
+&lt;p&gt;L'ergonomie c'est juste pas possible... et en plus le design, je le trouve &lt;strong&gt;old scool&lt;/strong&gt; (i really love flat design)&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-09:dislike-apple.html</guid><category>apple</category><category>ios</category><category>tablette</category></item><item><title>Que penser du langage Swift ?</title><link>http://mothsart.github.io/que-penser-de-swift.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Swift est le nouveau bébé d'Apple pour créer des applications.
+Il va partager un bon moment un environnement hétérogène avec Objective C...&lt;/p&gt;
+&lt;p&gt;Voici mon analyse sur ce langage.&lt;/p&gt;
+&lt;h2&gt;Pas mal de bons points&lt;/h2&gt;
+&lt;p&gt;Objective C était à mon sens un langage vraiment brouillon... une réponse rapide à des problèmes complexes.&lt;/p&gt;
+&lt;p&gt;On sens que dans Swift, il y a une réflexion beaucoup plus élaboré.&lt;/p&gt;
+&lt;p&gt;Les arguments positifs :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;switch exhaustif : un peu un équivalent (pauvre) du &lt;strong&gt;Match&lt;/strong&gt; de Rust&lt;/li&gt;
+&lt;li&gt;Pas de &lt;strong&gt;bytecode&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Pas de &lt;strong&gt;garbage collector&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;utilisation de &lt;strong&gt;LLVM&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;inférence de type&lt;/li&gt;
+&lt;li&gt;full unicode (même si je suis contre la possibilité de nommer des variables en UTF-8 en dehors d'un tuto ou d'un prototype)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Je déteste toujours Apple&lt;/h2&gt;
+&lt;p&gt;cf : &lt;a href="dislike-apple.html"&gt;J'aime pas Apple&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Swift est bien meilleur que Java pour du mobile, c'est indéniable... j'espère que Google envisage sérieusement un remplaçant rapidement : Rust please, n'inventez pas un nième langage!!&lt;/p&gt;
+&lt;h2&gt;Pourquoi créer un nouveau langage ?!&lt;/h2&gt;
+&lt;p&gt;Rien dans Swift n'est réellement neuf.
+Pourquoi ne pas s'être greffé sur des langages déjà existants ?!
+Ca fragmente encore plus le marché du travail... c'est juste désespérant.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 09 Jun 2016 20:19:28 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-09:que-penser-de-swift.html</guid><category>rust</category><category>swift</category><category>apple</category></item><item><title>Coreutils</title><link>http://mothsart.github.io/coreutils.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;h2&gt;$PATH&lt;/h2&gt;
+&lt;p&gt;variable linux incontournable donnant la liste des répertoires contenant des programmes executables.&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;echo $PATH | tr : \\n&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;pk-config&lt;/h2&gt;
+&lt;h2&gt;stat&lt;/h2&gt;
+&lt;p&gt;permet de tester si un fichier existe et donner le &lt;/p&gt;
+&lt;h2&gt;sync&lt;/h2&gt;
+&lt;p&gt;Découvert avec une installation de &lt;strong&gt;raspberry pi&lt;/strong&gt; : permet de synchroniser les mémoires avec le disque.
+Ecrit sur le disque toutes les données dans les tampons en mémoire. Ceci peut inclure les superblocs modifiés, les inœuds modifiés, et les écritures différées.&lt;/p&gt;
+&lt;h2&gt;strace&lt;/h2&gt;
+&lt;p&gt;permet de tracer les appels systèmes.&lt;/p&gt;
+&lt;p&gt;argument &lt;strong&gt;e&lt;/strong&gt; : permet de filtrer avec un motif&lt;/p&gt;
+&lt;h2&gt;dd (dcfldd : dd avec une barre de progression)&lt;/h2&gt;
+&lt;h2&gt;df -h&lt;/h2&gt;
+&lt;p&gt;donner la liste des périphériques montés&lt;/p&gt;
+&lt;h2&gt;diff&lt;/h2&gt;
+&lt;p&gt;diff -s &lt;file1&gt; &lt;file2&gt; : indique si 2 fichiers sont identiques&lt;/p&gt;
+&lt;p&gt;équivalent à &lt;/p&gt;
+&lt;h2&gt;split et cat&lt;/h2&gt;
+&lt;p&gt;découper des fichiers (split) en morceaux de taille définit puis les réassembler.&lt;/p&gt;
+&lt;p&gt;split -b50m fichier partie &amp;gt; &lt;/p&gt;
+&lt;h2&gt;Destruction de données&lt;/h2&gt;
+&lt;p&gt;On force les zéro sur toute la partition :
+dd if=/dev/zero of=/dev/hda conv=notrunc&lt;/p&gt;
+&lt;p&gt;shred&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;for n in `seq 7`; do dd if=/dev/urandom of=/dev/sda bs=8b conv=notrunc; done&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;hexum&lt;/h2&gt;
+&lt;h2&gt;truncate&lt;/h2&gt;
+&lt;p&gt;réduire la taille d'un fichier à 0
+truncate -s 0 /home/skyminds/error.log&lt;/p&gt;
+&lt;h2&gt;eval&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 07 Aug 2016 15:15:35 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-09:coreutils.html</guid><category>sh</category><category>linux</category></item><item><title>Cahier de bonnes pratiques Javascript</title><link>http://mothsart.github.io/bonnes-pratiques-js.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Ce cahier est dédié à de l'usage de javascript dit &lt;strong&gt;classique&lt;/strong&gt;  ce qui sous-entend, pas de frameworks révolutionnaires style &lt;strong&gt;Angular&lt;/strong&gt;, &lt;strong&gt;React&lt;/strong&gt; et autre.
+Pas d'utilisation de transpiler tel que Typescript, CofeeScript ou même BabelJS.&lt;/p&gt;
+&lt;p&gt;Du javascript en mode vanilla avec potentiellement un peu de Jquery.&lt;/p&gt;
+&lt;h2&gt;Mode strict&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Javascript : utiliser le mode strict =&amp;gt; https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Strict_mode dans des fonctions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Résoud pas mal de soucis de navigateurs : variables non déclarés et autre&lt;/p&gt;
+&lt;h2&gt;Les différents types de Javascript&lt;/h2&gt;
+&lt;p&gt;Javascript utilise plusieurs types : undefined, null, undeclared, bool.&lt;/p&gt;
+&lt;p&gt;Si l'on ne connait pas le type par avance et qu'on veut un test d'existance, le mieux est de faire :&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;if (maVar)&lt;/strong&gt; ou &lt;strong&gt;if(!var)&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Les appels d'évenements sur les éléments HTML (ou unobstrusive)&lt;/h2&gt;
+&lt;p&gt;Même si les outils de développement sont de plus en plus efficace, ne pas savoir d'ou provient un action peut devenir agacent.
+De plus, avec le tout mobile, l'utilisation ingénieuses des ressources est primordiale.
+Un évènement devrait être dans 99% du temps sur l'élément en lui evitant les observeurs gourmand.&lt;/p&gt;
+&lt;h3&gt;Un lien avec un évènement onclick doit utiliser un return false&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="..." onclick="monappel();return false;"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ou &lt;a href="..." onclick="monappel();"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;function monappel() {
+    ...;
+    return false;
+}&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-23:bonnes-pratiques-js.html</guid><category>javascript</category></item><item><title>Gulp</title><link>http://mothsart.github.io/gulp.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-23:gulp.html</guid><category>frontend</category><category>js</category><category>css</category><category>html</category></item><item><title>NodeJS</title><link>http://mothsart.github.io/nodejs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;C'est bien de redéfinir ce qu'est &lt;strong&gt;NodeJS&lt;/strong&gt; car il y a souvent beaucoup de confusion (et d'enthousiasme irrationnel) autours de cette techno.&lt;/p&gt;
+&lt;p&gt;Historiquement, &lt;strong&gt;Javascript&lt;/strong&gt; à pris réellement ses titres de noblesse lorsque Google à lancé son navigateur Chrome.
+Pour ce démarquer, ce navigateur disposait d'un moteur indépendant, dopé aux emphétamines (grâce à son &lt;strong&gt;JIT&lt;/strong&gt;) implémentant le &lt;strong&gt;Javascript&lt;/strong&gt; comme jamais : ce moteur, c'est &lt;strong&gt;V8&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;En rajoutant des API (&lt;strong&gt;CommonJS&lt;/strong&gt;) à ce moteur, &lt;strong&gt;NodeJS&lt;/strong&gt; est né avec la possibilité d'utiliser des outils en ligne de commande (&lt;strong&gt;CLI&lt;/strong&gt;) ainsi que l'accès au disque, tout ça en utilisant un langage basé sur les évènements et par conséquent du code non bloquant (l'asynchrone)!&lt;/p&gt;
+&lt;p&gt;Le gros buzz autours de &lt;strong&gt;NodeJS&lt;/strong&gt; (plus précisément &lt;strong&gt;Meteor&lt;/strong&gt;), c'est la possibilité de créer un serveur de toute pièce et par conséquent se passer d'un serveur tel que Apache et d'un langage de serveur tel que Python.&lt;/p&gt;
+&lt;p&gt;L'idée est attrayante en soit si et seulement si le Javascript n'était pas un langage aussi mauvais...&lt;/p&gt;
+&lt;h2&gt;Quand utiliser NodeJS&lt;/h2&gt;
+&lt;h3&gt;Pour moi, NodeJS c'est excellent pour :&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;les pré/post-processeur tel que postcss&lt;/li&gt;
+&lt;li&gt;l'utilisation de transpileur tel que babel.js&lt;/li&gt;
+&lt;li&gt;la création de bundles : fichiers concaténer et minifier&lt;/li&gt;
+&lt;li&gt;de l'assurance qualité sur des fichiers statiques : css/js&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Néanmoins, tous ces points dépendent en grande partie d'une énorme communauté très active. Ces 4 points auraient sans doute été bien plus prolifique si ils avaient été développé dans un vrai langage bas niveau (Rust par exemple)... mais bon, il faut savoir être pragmatique et profiter des atouts de cette techno.&lt;/p&gt;
+&lt;h3&gt;C'est plus que passable pour :&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;du serveur web (comparer &lt;strong&gt;Nodejs&lt;/strong&gt; à &lt;strong&gt;Nginx&lt;/strong&gt; c'est comme comparer mon neveu a Nadal au tennis... juste pas au même niveau)&lt;/li&gt;
+&lt;li&gt;du langage serveur : les &lt;strong&gt;ORMs&lt;/strong&gt; et &lt;strong&gt;Frameworks&lt;/strong&gt; sont trop jeune et le langage est vraiment, mais vraiment trop permissif!
+Ne pas oublier que plus un langage et permissif, et plus le temps de débuggage (surtout après mise en prod !!) est considérable.
+Aucun développeur, aussi masochiste soit-t-il ne devrait s'imposer ça.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Un site web ou une appli en prod n'a pas les mêmes contraintes que &lt;/p&gt;
+&lt;h3&gt;C'est franchement mauvais pour :&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;tout traitement non lié directement au web et principalement quand ça nécessite d'exploiter le &lt;strong&gt;CPU/GPU&lt;/strong&gt;, que la &lt;strong&gt;gestion de la mémoire&lt;/strong&gt; est critique (JIT + ramasse-miette ne pourra jamais rivaliser avec un langage compilé)
+Même si la facilité de rendre asynchrone certaines tâches peut sembler une solution à tous les problèmes d'optimisation, il n'en ai rien.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Exemple expliquant tout le leurre autours de la techno NodeJS:
+Si un moteur permet de lancer en simultannée 3 tâches de 10 secondes chacune,on se retrouve avec une durée totale de 10 secondes.
+Un deuxième moteur permet de lancer les mêmes tâches mais en 1 secondes chacune.
+Que le traitement du second moteur soit synchrone ou asynchrone, il sera de toute façon au moins 3 fois plus rapide que le premier.&lt;/p&gt;
+&lt;p&gt;J'ai souvent remarqué que certaines solutions de perfs résolus par de l'asynchronisme était en réalité un déni du réel problème.
+La solution se trouvait plutôt dans un comportement &lt;strong&gt;lazy&lt;/strong&gt;, du &lt;strong&gt;caching&lt;/strong&gt;, des soucis d'architecture, d'algorithme ou pire, de requêtage (sql or no)...
+Bref, la solution était ailleurs.&lt;/p&gt;
+&lt;p&gt;C'est pas adapté pour faire du langage serveur. &lt;strong&gt;Meteor&lt;/strong&gt; est un projet très intéressant, un proof of concept assez révolutionnaire mais rien, absolument rien de ce qui est fait en &lt;strong&gt;Javascript&lt;/strong&gt; côté serveur n'est pas reproductible avec un autre langage... et surtout, pour un coût très différent (un code plus concis, une équipe plus réduite etc).&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-23:nodejs.html</guid><category>javascript</category><category>nodejs</category></item><item><title>NPM</title><link>http://mothsart.github.io/npm.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Si l'on veut faire du dev frontend de qualité, NodeJS et son gestionnaire de dépendance, NPM est désormais indispensable.&lt;/p&gt;
+&lt;h2&gt;NPM&lt;/h2&gt;
+&lt;p&gt;Npm va chercher ses dépendances dans un fichier packages.json (éditable via npm init)&lt;/p&gt;
+&lt;h3&gt;installer les dépendances&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;npm install&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Si certaines dépendances facultatives pose soucis :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;npm install --no-optional&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;installer les dépendances utilisé uniquement en développement&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;npm install --save-dev&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;installer une dépendance de manière global&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;npm install -g eslint&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;Lancer le site web localement&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;npm start&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;Mise en production&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;npm run build --production&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Installer la bonne version de NodeJS&lt;/h2&gt;
+&lt;p&gt;Si vous installer une version trop récente, vous courez tout droit à la catastrophe.&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;sudo npm install n
+sudo n 5.11.1&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 07 Aug 2016 15:15:35 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-23:npm.html</guid><category>nodejs</category><category>npm</category><category>javascript</category></item><item><title>PostCSS</title><link>http://mothsart.github.io/postcss.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Le css a des lacunes dont plusieurs pré-processeurs ont essayé (less, sass, stylus) de combler les lacunes.&lt;/p&gt;
+&lt;p&gt;Le soucis d'une surcouche c'est que ça nécessite d'apprendre un langage supplémentaire tout en connaissant bien le css généré.&lt;/p&gt;
+&lt;p&gt;En parallèle, les dernières spécifications du W3C comblent pas mal du déficit.
+Elles ne seront pas implémenté sur tous les navigateurs avant un moment... alors qu'est-ce qu'on peut faire ?&lt;/p&gt;
+&lt;p&gt;Ben utiliser les dernières nouveautés et les compiler dans un format supporté actuellement ?!&lt;/p&gt;
+&lt;p&gt;C'est là, tout le défi et tout l'intérêt de &lt;strong&gt;PostCSS&lt;/strong&gt; !&lt;/p&gt;
+&lt;h2&gt;Goodies&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;On choisi quels sont les navigateurs impactés : on génére par conséquent du css valide pour ces navigateurs !&lt;/li&gt;
+&lt;li&gt;utilisation de variables&lt;/li&gt;
+&lt;li&gt;détecter des erreurs à la compilation plutôt qu'à l'execution.&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-23:postcss.html</guid><category>css</category><category>postcss</category><category>javascript</category></item><item><title>The QuiZz : Partie 2</title><link>http://mothsart.github.io/the-quizz-part-2.html</link><description>&lt;h2&gt;The QuiZz : Partie 2&lt;/h2&gt;
+&lt;p&gt;Comme promis, la partie 2 ne va s'atteler qu'à fournir le même cahier des charges que le soft de la partie 1 mais pour une appli web.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/mothsART/the_quizz/releases/tag/part2"&gt;dépôt Git : Etape 2&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Pré-requis&lt;/h2&gt;
+&lt;p&gt;Pour suivre, il vous faudra connaitre les grandes lignes de fonctionnement du dev web.&lt;/p&gt;
+&lt;p&gt;On va donc utiliser le mini-framework &lt;a href="http://ironframework.io"&gt;&lt;strong&gt;Iron&lt;/strong&gt;&lt;/a&gt; pour celà et quelques plugins utiles (rajouté dans le fichier &lt;strong&gt;cargo.toml&lt;/strong&gt;).&lt;/p&gt;
+&lt;p&gt;Pour donner un peu de charme au projet, je lui cole le framework &lt;strong&gt;Bootstrap&lt;/strong&gt; avec le thème libre &lt;a href="http://blackrockdigital.github.io/startbootstrap-sb-admin-2/pages/index.html"&gt;&lt;strong&gt;SB-Admin-2&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ok, c'est vraiment too much pour une partie 2 mais ça met les bases pour les étapes suivantes.&lt;/p&gt;
+&lt;h2&gt;côté serveur (Rust)&lt;/h2&gt;
+&lt;p&gt;Nous avons désormais plusieurs binaires à gérer.&lt;/p&gt;
+&lt;p&gt;Désormais pour lancer l'appli Cli :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;cargo run --bin the_quizz&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Et pour l'appli web :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;cargo run --bin the_quizz_web&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;Les plugins&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;staticfile : permet d'inclure des fichiers statiques (javascript, css, html, polices, images etc.)&lt;/li&gt;
+&lt;li&gt;router : préciser les différentes urls de l'applicatif (en GET et POST)&lt;/li&gt;
+&lt;li&gt;mount : outil glue permettant de délivrer des routes et des données statiques au sein du même serveur.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Templates&lt;/h3&gt;
+&lt;p&gt;Je suis encore un utilisateur de &lt;strong&gt;Django&lt;/strong&gt; et &lt;strong&gt;Flask&lt;/strong&gt; et des langages de templates tel que &lt;strong&gt;Jinja&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;J'ai découvert que &lt;strong&gt;Jinja&lt;/strong&gt; était en parti supporté par &lt;strong&gt;Rust&lt;/strong&gt; via &lt;strong&gt;&lt;a href="https://github.com/Keats/tera"&gt;Tera&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Vu que j'ai carte libre, je parts donc sur cette techno.&lt;/p&gt;
+&lt;p&gt;Pour compiler le template, il suffit d'utiliser&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;cargo run --bin compile_templates&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;Refactoring&lt;/h3&gt;
+&lt;p&gt;Vu que l'on a désormais 2 applicatifs (&lt;strong&gt;cli&lt;/strong&gt; et &lt;strong&gt;web&lt;/strong&gt;), il est utile de partager des ressources en commun : tout est centralisé dans le fichier &lt;strong&gt;lib.rs&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Côté client&lt;/h2&gt;
+&lt;p&gt;Pour ceux qui ne l'on pas encore compris, j'ai un vrai mépris pour les technos autours de &lt;strong&gt;Javascript&lt;/strong&gt; : c'est unsafe à souhait et à tous les désavantages d'un langage interpreté.&lt;/p&gt;
+&lt;p&gt;Néanmoins, je vais essayer d'en tirer le meilleur en utilisant &lt;a href="stack-frontend.html"&gt;&lt;strong&gt;ma nouvelle stack frontend&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Afin de créer l'ensemble des fichiers statiques du projet, il vous suffirat de faire :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;cd static &amp;amp;&amp;amp; gulp&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;IHM&lt;/h2&gt;
+&lt;p&gt;L'utilisation d'une interface web n'étant pas véritablement équivalente, il y a quelques différences :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;pas de possibilité de quitter l'applicatif&lt;/li&gt;
+&lt;li&gt;les raccourcis clavier ne peuvent être équivalent : en revanche, vous pouvez passez d'un bouton à un autre avec &lt;kbd&gt;Tab&lt;/kbd&gt; ou &lt;kbd&gt;MAJ&lt;/kbd&gt; + &lt;kbd&gt;Tab&lt;/kbd&gt; et valider ce choix avec &lt;kbd&gt;↵&lt;/kbd&gt; (touche entrée)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Si vous utilisez une mauvaise version de NodeJS&lt;/h3&gt;
+&lt;p&gt;Plusieurs librairies sont encore imcompatibles avec la dernière version de NodeJS (6).
+Un sous-dépendance me pose encore soucis à l'heure actuel : il est donc nécessaire de passer par une version plus ancienne.
+Si vous souhaitez être tranquille, je pense que Node 4 (une version LTS) me semble le plus approprié.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;1 Vider le cache de NPM&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;sudo npm cache clean -f&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2 Installer un mini soft appelé tout simplement &lt;strong&gt;n&lt;/strong&gt; qui gère exclusivement l'installation de &lt;strong&gt;Node&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;sudo npm install -g n&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;3 Installer la dernière version stable de NPM&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;sudo n stable # pour node 5 et sudo n lts pour la version 4&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Bounty&lt;/h2&gt;
+&lt;p&gt;Si vous utilisez &lt;strong&gt;&lt;a href="aide-memoire-tmux.html"&gt;Tmux et Tmuxp&lt;/a&gt;&lt;/strong&gt;, voici une petite config qui devrait vous simplifier la vie :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-yaml"&gt;session_name: the quizz
+windows:
+    - window_name: watch (web)
+      layout:  main-vertical
+      shell_command_before:
+        - cd ~/misc/rust/the_quizz
+      panes:
+        - shell_command:
+          - cd static
+          - echo 'gulp'
+          - gulp
+        - cargo run --bin compile_templates
+        - cargo run --bin the_quizz_web
+    - window_name: cli
+      layout:  main-vertical
+      shell_command_before:
+        - cd ~/misc/rust/the_quizz
+      panes:
+        - shell_command:
+          - cargo run --bin the_quizz
+        - git status&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Y'a vraiment beaucoup de dépendances abordées dans cette étape.&lt;/p&gt;
+&lt;p&gt;D'ailleurs, il est désormais possible de les voir via un graphique.&lt;/p&gt;
+&lt;p&gt;Vous pouvez en faire autant : &lt;a href="./stack-rust.html#cargo-graph"&gt;créer un graphique de dépendance Rust&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Les évolutions devraient ralentir de ce côté pour la suite.&lt;/p&gt;
+&lt;h2&gt;Evolution pour l'étape n° 3&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Je viens de découvrir un &lt;strong&gt;ORM&lt;/strong&gt; (viable) pour Rust : &lt;a href="http://diesel.rs"&gt;diesel&lt;/a&gt; ça serait vraiment bête de s'en priver!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Utilisation des &lt;a href="http://caniuse.com/#search=namevalue-storage"&gt;&lt;strong&gt;API Html5&lt;/strong&gt; de stockage&lt;/a&gt; et d'utilisation du &lt;a href="http://caniuse.com/#feat=offline-apps"&gt;mode offline&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Version Cli : détection des évènements souris&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 07 Aug 2016 15:15:35 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-23:the-quizz-part-2.html</guid><category>rust</category><category>gettext</category><category>cli</category><category>postgresql</category></item><item><title>PostGreSQL</title><link>http://mothsart.github.io/postgresql.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Mon aide-mémoire pour l'indéboulonable &lt;strong&gt;PostGreSQL&lt;/strong&gt; : la meilleur base SQL libre !&lt;/p&gt;
+&lt;h2&gt;Commandes&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;\q&lt;/strong&gt; : quitter&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;\h&lt;/strong&gt; : aide&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;\d&lt;/strong&gt; : liste les tables et les sequences&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;\d nom_de_table&lt;/strong&gt; : donne le détail d'une table&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;\dt&lt;/strong&gt; ou &lt;strong&gt;SELECT * FROM pg_catalog.pg_tables&lt;/strong&gt; : liste uniquement les tables&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;\l&lt;/strong&gt; : liste les bases&lt;/p&gt;
+&lt;h2&gt;Changer le mot de passe (de l'utilisateur postgres)&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;sudo -u postgres psql&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;puis&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;\password&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Load / Dump&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;pg_dump dbname &amp;gt; outfile&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Piste d'exploration&lt;/h2&gt;
+&lt;h3&gt;Commits/RollBacks et save points&lt;/h3&gt;
+&lt;h3&gt;Utilisation d'extensions&lt;/h3&gt;
+&lt;h2&gt;Liste toutes les bases&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sql"&gt;SELECT * datname FROM pg_database WHERE datistemplate = false;&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Liste toutes les tables&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sql"&gt;SELECT * 
+FROM information_schema.tables 
+WHERE table_type = 'crossject_base' 
+    AND table_schema = 'public' 
+ORDER BY table_type, table_name;&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Création de table&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sql"&gt;CREATE TABLE films (
+    code        char(5),
+    title       varchar(40),
+    did         integer,
+    date_prod   date,
+    kind        varchar(10),
+    len         interval hour to minute,
+    CONSTRAINT code_title PRIMARY KEY(code,title)
+);&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Insertion&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sql"&gt;INSERT INTO films VALUES
+('UA502', 'Bananas', 105, DEFAULT, 'Comedy', '82 minutes');
+INSERT INTO films (code, title, did, date_prod, kind)
+VALUES ('T_601', 'Yojimbo', 106, DEFAULT, 'Drama');&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/9025515/how-do-i-import-modules-or-install-extensions-in-postgresql-9-1-9-2-9-3-9-4"&gt;http://stackoverflow.com/questions/9025515/how-do-i-import-modules-or-install-extensions-in-postgresql-9-1-9-2-9-3-9-4&lt;/a&gt;&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sql"&gt;CREATE EXTENSION earthdistance;&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;&lt;a href="http://www.postgresql.org/docs/9.1/static/fuzzystrmatch"&gt;http://www.postgresql.org/docs/9.1/static/fuzzystrmatch&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Sequences&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://dgriessinger.developpez.com/postgresql/sequences"&gt;http://dgriessinger.developpez.com/postgresql/sequences&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.gcolpart.com/howto/postgresql.php4"&gt;http://www.gcolpart.com/howto/postgresql.php4&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.system-linux.eu/index.php?post/2016/03/10/installation-et-administration-Postgresql"&gt;http://www.system-linux.eu/index.php?post/2016/03/10/installation-et-administration-Postgresql&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-11:postgresql.html</guid><category>postgres</category><category>postgresql</category><category>sql</category></item><item><title>The QuiZz : Partie 1</title><link>http://mothsart.github.io/the-quizz-part-1.html</link><description>&lt;h2&gt;The QuiZz : Partie 1&lt;/h2&gt;
+&lt;p&gt;Après mon apprentissage de Rust (doc, tutos etc.), j'ai décidé de m'atteler à un projet un peu plus abouti.&lt;/p&gt;
+&lt;p&gt;Comme toujours, je pars du principe qu'il vaut mieux se lancer sur des projets minimalistes et allez au bout plutôt que de partir dans du gargantuesque et bacler.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The QuiZz&lt;/strong&gt; c'est donc un logiciel créé dans l'optique d'apprendre &lt;strong&gt;Rust&lt;/strong&gt; et ses librairies, le tout en plusieurs étapes :
+&lt;a href="https://github.com/mothsART/the_quizz/releases/tag/part1"&gt;dépôt Git : Etape 1&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;L'étape 1 : le minimum syndical mais quelques bases tout de même&lt;/h2&gt;
+&lt;h3&gt;Utilisation de Rustbox&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/gchp/rustbox"&gt;RustBox&lt;/a&gt;&lt;/strong&gt; est une implémentation de &lt;strong&gt;Termbox&lt;/strong&gt; en Rust.&lt;/p&gt;
+&lt;p&gt;En somme, ça permet de faire des appli en &lt;strong&gt;cli&lt;/strong&gt; à la manière de &lt;strong&gt;NCurses&lt;/strong&gt; mais via une API la plus simple possible.&lt;/p&gt;
+&lt;h3&gt;The QuiZz en français&lt;/h3&gt;
+&lt;p&gt;J'ai toujours préféré réfléchir à l'&lt;strong&gt;i18n&lt;/strong&gt; dès la conception.
+Pour celà, &lt;strong&gt;gettext&lt;/strong&gt; reste l'indispensable.&lt;/p&gt;
+&lt;p&gt;La lib Rust qui l'implémente est vraiment très spartiate mais fait son job.
+Néanmoins, il m'a fallu utiliser &lt;strong&gt;&lt;a href="http://babel.pocoo.org/en/latest"&gt;Babel&lt;/a&gt;&lt;/strong&gt; pour compiler mon &lt;strong&gt;.po&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;Contenu dans PostGreSQL&lt;/h3&gt;
+&lt;p&gt;En terme de base de donnée SQL, &lt;strong&gt;PostGreSQL&lt;/strong&gt; est, pour ma part, ce qui se fait de mieux (principalement en open-source) donc autant commmencer par là.&lt;/p&gt;
+&lt;p&gt;Même constat : le wrapper est minimaliste mais suffisant.&lt;/p&gt;
+&lt;h2&gt;Le concept&lt;/h2&gt;
+&lt;p&gt;On abonde le soft de questions/réponses et l'utilisateur final utilise une IHM lui permettant d'obtenir des questions (au hasard pour l'instant) et d'y répondre.&lt;/p&gt;
+&lt;p&gt;Pour simpler au maximum, &lt;strong&gt;The QuiZz&lt;/strong&gt; ne permet que de poser des questions fermés : &lt;kbd&gt;Oui&lt;/kbd&gt; ou &lt;kbd&gt;Non&lt;/kbd&gt;.&lt;/p&gt;
+&lt;p&gt;C'est très basique mais par conséquent très simple à appréhender.&lt;/p&gt;
+&lt;p&gt;Enfin, le logiciel répond par &lt;strong&gt;✔&lt;/strong&gt; ou &lt;strong&gt;✘&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;Config de PostGreSQL&lt;/h2&gt;
+&lt;p&gt;Je pars du principe que vous savez configurer une base Postgres.&lt;/p&gt;
+&lt;p&gt;Néanmoins, l'objectif de &lt;strong&gt;the_quizz&lt;/strong&gt; étant la pédagogie, j'utilise une config volontairement simpliste : utilisation en &lt;strong&gt;localhost&lt;/strong&gt; sans mot de passe.&lt;/p&gt;
+&lt;p&gt;Si vous n'avez strictement aucun bagage, le mieux est de paramêtrer ainsi votre fichier &lt;strong&gt;/pg_hba.conf&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-ini"&gt;local   all             all                                     trust&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;et de le redémarrer via&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;sudo service postgres restart&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Populariser sa base&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sql"&gt;create TABLE questions (
+id SERIAL PRIMARY KEY,
+entitled VARCHAR NOT NULL,
+explanation VARCHAR NULL,
+source VARCHAR NULL,
+response BOOLEAN NOT NULL
+);
+
+insert into questions (entitled, response) values ('Rust est-il un langage interprété ?', false);
+insert into questions (entitled, response) values ('Cargo est-il le gestionnaire de paquets de Rust ?', true);&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;IHM&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Pour lancer le soft, on fait : &lt;strong&gt;cargo run&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Pour en sortir, on appuie sur la touche &lt;strong&gt;q&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Pour sélectionner une réponse, on peut s'aider des flêches gauche &lt;kbd&gt;←&lt;/kbd&gt; et droite &lt;kbd&gt;→&lt;/kbd&gt;&lt;/li&gt;
+&lt;li&gt;Pour valider une sélection, on appuie sur &lt;kbd&gt;entrée&lt;/kbd&gt;
+ Sinon, on peut utiliser les raccourcis clavier &lt;kbd&gt;o&lt;/kbd&gt; pour &lt;strong&gt;Oui&lt;/strong&gt; (Attention, en anglais, on utilise &lt;kbd&gt;y&lt;/kbd&gt;) et &lt;kbd&gt;n&lt;/kbd&gt; pour &lt;strong&gt;Non&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Evolution pour l'étape n° 2&lt;/h2&gt;
+&lt;p&gt;Pour l'étape 2, je ne toucherais strictement à rien de l'existant.&lt;/p&gt;
+&lt;p&gt;Mon but est de reproduire le comportement du soft cette fois ci sous la forme d'une appli web via &lt;strong&gt;&lt;a href="http://ironframework.io"&gt;Iron&lt;/a&gt;&lt;/strong&gt; et d'utiliser &lt;strong&gt;&lt;a href="http://riotjs.com/fr"&gt;RiotJS&lt;/a&gt;&lt;/strong&gt; côté client.&lt;/p&gt;
+&lt;h2&gt;Vers l'infini et au delà&lt;/h2&gt;
+&lt;p&gt;Dans le désordre, voici les évolutions possibles :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;abstraction pour utiliser d'autres bases de données &lt;strong&gt;SQL&lt;/strong&gt; et &lt;strong&gt;NoSQL&lt;/strong&gt; (&lt;strong&gt;Redis&lt;/strong&gt; sans doute en priorité !)&lt;/li&gt;
+&lt;li&gt;une &lt;strong&gt;IHM&lt;/strong&gt; de type &lt;strong&gt;Dashboard&lt;/strong&gt; : édition des questions, statistiques etc.&lt;/li&gt;
+&lt;li&gt;une appli Android&lt;/li&gt;
+&lt;li&gt;un choix de réponses possibles &amp;gt; 2&lt;/li&gt;
+&lt;li&gt;des réponses ouvertes&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;pfuu, j'avais dit que c'était pas un projet sérieux.&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 07 Aug 2016 15:15:35 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-11:the-quizz-part-1.html</guid><category>rust</category><category>gettext</category><category>cli</category><category>postgresql</category></item><item><title>BabelJS</title><link>http://mothsart.github.io/babeljs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Le développement frontend passe désormais par &lt;a href="https://babeljs.io/"&gt;Babel&lt;/a&gt;
+Il permet de passer par Ecmascript 6, appelé également Ecmascript 2015 (super la confusion) et de le compiler dans une version supporté par les navigateurs actuels.&lt;/p&gt;
+&lt;p&gt;C'est à mon sens plus pérenne que tous les transpiler tel que Typescript, Cofeescript etc.&lt;/p&gt;
+&lt;h2&gt;Les avantages&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;utilisation de constantes &lt;strong&gt;const&lt;/strong&gt; et de vrai variable à porté limité &lt;strong&gt;let&lt;/strong&gt;!&lt;/li&gt;
+&lt;li&gt;de la vrai POO avec des &lt;strong&gt;classes&lt;/strong&gt; !&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;yield&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:babeljs.html</guid><category>babel</category><category>babeljs</category><category>javascript</category></item><item><title>Bug</title><link>http://mothsart.github.io/bug.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Mais qu'est-ce qu'un bug et pourquoi le développeur à ce sentiment d'inachevé ?
+Je vais tenter via cet article de remettre les choses à plat sur ces notions, pris comme acquis et qui ne le sont généralement pas.&lt;/p&gt;
+&lt;h2&gt;Garantir un logiciel comme stable&lt;/h2&gt;
+&lt;p&gt;Pour les développeur, je vous invite à vous mettre l'espace d'un instant dans la peau d'un commercial, décisionnaire ou tout simplement du client final.&lt;/p&gt;
+&lt;p&gt;Quel sont ses attentes : un logiciel qui &lt;strong&gt;marche&lt;/strong&gt; si on pousse la naïveté à son paroxisme.
+Mais derrière ce constat relativement simpliste, ce cache énormément de subtilité : 
+- quel sont les temps de réactivité maximal autorisés pour que l'applicatif ne réponde plus au attente ?
+- qu'est ce que l'on peut clairement identifié comme non désiré ? L'ergonomie, par exemple peut tout à fait être fonctionnel sans tout de fois satisfaire le client.&lt;/p&gt;
+&lt;h2&gt;Constat&lt;/h2&gt;
+&lt;p&gt;Le problème est pris bien souvent à l'envers.
+Ce qui régis les lois de l'informatique, se sont des lois physiques et mathématiques même si certaines abstractions nous semble parfois oublier cette dimension.&lt;/p&gt;
+&lt;p&gt;Pour comprendre un fonctionnement complexe, il est utile bien souvent de le fractionner en plusieurs problématique simples : https://fr.wikipedia.org/wiki/Diviser_pour_r%C3%A9gner_(informatique)&lt;/p&gt;
+&lt;h2&gt;Entrée / sortie&lt;/h2&gt;
+&lt;p&gt;Un programme informatique est un ensemble d'opérations destinées à être exécutées par un ordinateur.
+Il se résume donc à des entrées et des sorties possibles. (cf: univers des possibles)&lt;/p&gt;
+&lt;p&gt;Imaginons un programme qui renvoi une réponse en fonction de 2 entrées.
+Les entrées sont 2 valeurs booléennes (vrai ou faux) et la sortie est une valeur booléenne.
+Notre programme se prénome "démarrer la voiture" et les entrées sont respectivement : "insérer la clé" et "mettre sa ceinture".&lt;/p&gt;
+&lt;p&gt;Notre cahier des charges de se programme définit que la seul condition pour que la voiture démarre est que les 2 conditions initiales soit valides.&lt;/p&gt;
+&lt;p&gt;Combien de possibilité s'offre à nous ?
+4 : 
+- on a pas inséré la clé
+- on a inséré la clé mais pas mis sa ceinture
+- on a inséré la ceinture mais pas la clé
+- on a inséré la clé et mis sa ceinture&lt;/p&gt;
+&lt;p&gt;Dans ce cas simple, il est facile de déterminer que notre programme fonctionne dans tous les cas possibles.&lt;/p&gt;
+&lt;h2&gt;Logiciels complexes : explosion combinatoire&lt;/h2&gt;
+&lt;p&gt;Maintenant, abordont des logiciels tel que nous les connaissons.
+Les entrées sont : les saisies du clavier, de évènements provenant de la souris, le système d'exploitation ainsi que navigateur utilisé, de Web services interrogés etc.&lt;/p&gt;
+&lt;p&gt;On peut vite se rendre compte que l'arbre des possibles est difficile à estimer mais qu'il se rapproche innexorablement vers l'infini. (surtout si il y a de la récursivité)&lt;/p&gt;
+&lt;h2&gt;Le leure du générique&lt;/h2&gt;
+&lt;p&gt;Une lubie de beaucoup de programmeur est la généricité.
+Un point commun pour plusieurs parties du logiciel.
+Celà part souvent d'une bonne intension -&amp;gt; moins de code à produire donc une meilleur maintenance.
+Néanmoins, l'effet pervers est de créer des parties qui font trop de choses, qui sont difficiles à retoucher et qui engendre par conséquent trop de conditions différentes. 
+De plus : si le code générique comporte un bug, il risque fortement d'impacter tout l'applicatif là ou un autre bug n'aurait toucher qu'un effet marginal. &lt;/p&gt;
+&lt;h2&gt;Solutions à envisager&lt;/h2&gt;
+&lt;h3&gt;l'approche fonctionnel ou comment réduire les effets de bord&lt;/h3&gt;
+&lt;p&gt;l'effet de bord fait parti de la hantise du programmeur.
+Un correctif va entrainer une régression à un ou plusieurs endroits de l'applicatif sans lien direct avec la partie en question.
+Le bug est par conséquent détecté plus tard, au plus mauvais moment (en production, par le client, le vendredi soir à la veille du départ en vacances)
+Je parlais tout à l'heure de fractionnement et d'entrées / sorties.
+L'effet de bord provient des variables globales réutilisés dans différents contexte.
+L'approche fonctionnel annule totalement ce comportement : on déclare explicitement les variables muables (ça réduit déjà) puis on donne une durée de vie à ces dernières.
+Résultat : on peut raisonner en réel boite noir ou une boite n'a strictement aucune influence sur une autre.&lt;/p&gt;
+&lt;h3&gt;API&lt;/h3&gt;
+&lt;p&gt;C'est à la mode surtout avec les web services qui poussent comme les champignons.
+Les meilleurs API sont les plus concices à mon sens.
+Elles doivent également cacher les coulisses. (le fonctionnement interne)
+L'utilisation doit de se fait être intuitive.&lt;/p&gt;
+&lt;h3&gt;Soigner les points d'entrée&lt;/h3&gt;
+&lt;p&gt;Il vaut mieux contraindre un utilisateur plutôt que lui donner trop de libertés.
+Moins de libertés sous-entend moins de possibles et par extension, moins de bugs.
+Il vaut mieux avoir une politique de droits minimum et les étendre si besoin plutôt que l'inverse.&lt;/p&gt;
+&lt;p&gt;Dans une appli web, les points d'entrée peuvent être la grande variété de navigateurs (ayant chacun des comportements spécifiques).
+Effectuer certains traitement côté serveur plutôt que côté client vont éviter ce type de bugs.&lt;/p&gt;
+&lt;h3&gt;tests unitaires et couverture&lt;/h3&gt;
+&lt;p&gt;Si l'on veut donner un cadre à notre logiciel, les tests automatisés sont primordiaux.
+Ces derniers obligent à mieux fractionner notre code en des zones minimales et donc réduire le champ des possible.
+De même, ça oblige à chainer les process : chaque étapes sont indépendantes et leur concaténation réalise un scénario.
+Si toutes nos fonctions sont testés et que par conséquent tout le code de notre applicatif est utilisé pendant l'automatisation des tests, on parle d'une couverture total.&lt;/p&gt;
+&lt;p&gt;Une couverture partiel donnera un indicatif : les zones non couvertes sont potentiellement moins sécurisé que celles couvertes.&lt;/p&gt;
+&lt;p&gt;Autre avantage des tests : la lecture des tests unitaires par un développeur donne directement le cahier des charges en réel de l'applicatif.&lt;/p&gt;
+&lt;p&gt;Si l'on met au point des tests unitaires dans un applicatif qui n'en avait pas auparavant, il faut impérativement s'attaquer aux parties génériques en priorité et au stockage de données (la suppression étant le point critique par excellence).&lt;/p&gt;
+&lt;h3&gt;Fuzzing ou comment le hasard peut être notre allié&lt;/h3&gt;
+&lt;p&gt;Le fuzzing est un sujet à part. C'est un bon moyen de débusquer des bugs que l'on aurait sans doute difficilement trouvé par des méthodes classiques.
+C'est une technique qui nécessite néanmoins de l'investissement et de l'expertise.
+A privilégier sur des logiciels finis, ou l'on veut débusquer des soucis de sécurité.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;On peut dire qu'un logiciel à atteind ses objectifs si il fonctionne dans l'ensemble des cas d'un cahier fonctionnel. (donc une liste fini)
+Il n'est dans ce cas aucunement exent de bugs, bien au contraire : il en reste sans doute une infinité.
+La nuance est qu'ils ne sont pas pénalisant pour l'utilisateur.&lt;/p&gt;
+&lt;p&gt;Cette réflexion ne parle pas des autres aspects quant à la satisfaction cliente : à savoir la qualité du suivi, de l'assistance, de la réactivité, de l'ergonomie, de la pédagogie etc.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 11 May 2016 00:01:18 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:bug.html</guid><category>bug</category></item><item><title>GIT config</title><link>http://mothsart.github.io/mon-gitconfig.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;L'utilisateur avancé de &lt;strong&gt;GIT&lt;/strong&gt; à forcément un gitconfig "couteau suisse" sous la main.
+Voici une partie du mien avec les commentaires adéquats.&lt;/p&gt;
+&lt;h2&gt;config&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;[alias]
+    ci = commit
+    co = checkout
+    st = status
+    t = tag
+    c = commit
+    ch = checkout
+
+    br = branch
+
+    push = &amp;quot;push --recurse-submodules=on-demand&amp;quot;
+
+    prev = checkout HEAD^1
+
+    next = &amp;quot;!sh -c 'git log --reverse --pretty=%H master | awk \&amp;quot;/$(git rev-parse HEAD)/{getline;print}\&amp;quot; | xargs git checkout'&amp;quot;
+
+    last = &amp;quot;!sh -c 'git checkout $(git describe --tags $(git rev-list --tags --max-count=1))'&amp;quot;;
+
+    lpush = &amp;quot;!git --no-pager log origin/$(git currentbranch)..HEAD --oneline&amp;quot;
+    lpull = &amp;quot;!git --no-pager log HEAD..origin/$(git currentbranch) --oneline&amp;quot;
+    whatsnew = &amp;quot;!git diff origin/$(git currentbranch)...HEAD&amp;quot;
+    whatscoming = &amp;quot;!git diff HEAD...origin/$(git currentbranch)&amp;quot;
+
+[pull]
+    rebase = true&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Explication&lt;/h2&gt;
+&lt;h3&gt;les alias&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;prev&lt;/strong&gt;: permet d'aller au commit précédent (attention: vous serez en &lt;strong&gt;detached head&lt;/strong&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;next&lt;/strong&gt;: permet d'aller au commit suivant (attention: vous serez en &lt;strong&gt;detached head&lt;/strong&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;last&lt;/strong&gt;: permet de se déplacer à la dernière version, soit au tag ayant la valeur la plus grande. (attention: vous serez en &lt;strong&gt;detached head&lt;/strong&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;lpush&lt;/strong&gt;: listera les commits qui seront poussés lors du prochain git push origin $(git currentbranch)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;lpull&lt;/strong&gt;: listera les commits que l’on s’apprête à merger lors du prochain git pull&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;whatsnew&lt;/strong&gt;: détaillera sous forme d’un diff ce qui va être poussé au prochain git push origin $(git currentbranch)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;whatscoming&lt;/strong&gt;: détaillera sous forme d’un diff ce qui va être mergé au prochain git pull.&lt;/p&gt;
+&lt;h3&gt;le pull&lt;/h3&gt;
+&lt;p&gt;Petit rappel : le &lt;strong&gt;pull&lt;/strong&gt; est en réalité un &lt;strong&gt;fetch&lt;/strong&gt; suivi d'un &lt;strong&gt;merge&lt;/strong&gt;.
+On s'en rend pas forcément compte (surtout quand il n'y a rien à mergé).&lt;/p&gt;
+&lt;p&gt;Mais, ça c'est le comportement par défault du &lt;strong&gt;pull&lt;/strong&gt;.
+Il est possible de le forcer à faire un &lt;strong&gt;rebase&lt;/strong&gt; (git pull --rebase) et ceci directement dans la config de GIT.&lt;/p&gt;
+&lt;p&gt;Si ponctuellement, vous désirez faire un merge, ça reste possible :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;git pull --no-rebase&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:mon-gitconfig.html</guid><category>git</category><category>linux</category></item><item><title>Pourquoi Rust</title><link>http://mothsart.github.io/pourquoi-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Depuis maintenant 1 an, je m'intéresse de près au langage &lt;strong&gt;Rust&lt;/strong&gt;.
+Qu'est ce qui peut motiver le choix d'un nouveau langage alors qu'il en existe déjà un nombre incalculable ?&lt;/p&gt;
+&lt;p&gt;Ayant déjà de bons acquis en C/C#/Python/Javascript, on peut naturellement se poser la question de pourquoi s'investir dans un nouveau language.&lt;/p&gt;
+&lt;h2&gt;Approfondir mes connaissances personnelles&lt;/h2&gt;
+&lt;p&gt;Sur tous les langages cité, j'ai une nette préférence pour le &lt;strong&gt;Python&lt;/strong&gt; : simple, explicite, haut niveau.
+C'est un language incroyable pour du script et du prototypage.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;C#&lt;/strong&gt; est aussi un bon cru, même si, il faut l'avouer, c'est souvent l'IDE &lt;strong&gt;Visual Studio&lt;/strong&gt; qui lui donne autant de pouvoir.&lt;/p&gt;
+&lt;p&gt;Une raison, non dissimulé, vient du fait que j'exprime le besoin de sortir de mon périmètre de confort : d'apprendre ou ré-apprendre.
+Pour celà, j'ai testé pas mal de langages : &lt;strong&gt;Ocaml&lt;/strong&gt;, &lt;strong&gt;Haskell&lt;/strong&gt;, &lt;strong&gt;Go langage&lt;/strong&gt;.
+Ni l'un ni l'autre n'a trouvé grâce à mes yeux (chacun pour des raisons différentes).&lt;/p&gt;
+&lt;h2&gt;Faire du bas niveau&lt;/h2&gt;
+&lt;p&gt;Il y a 2 types de dev: ceux qui font du bas niveau et les autres.
+Quant on fait du bas niveau, on s'oblige a comprendre comment fonctionne réellement un ordinateur.&lt;/p&gt;
+&lt;p&gt;La première catégorie est forcément mieux armé pour faire face à des problématiques complexes : de performance, latence, empreinte mémoire, sécurité etc.&lt;/p&gt;
+&lt;p&gt;Bref, les problématiques rencontrés par tous les développeurs travaillant sur des projets sérieux.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Python&lt;/strong&gt;, &lt;strong&gt;Javascript&lt;/strong&gt; et &lt;strong&gt;C#&lt;/strong&gt; (dans une moindre mesure) ne sont tout simplement pas fait pour ce genre de chose.
+* D'une part, la gestion de la mémoire se fait via un ramasse-miettes (garbage collector) donc mémoire sur le tas (https://github.com/GuillaumeGomez/fr_rust_book/blob/master/la-pile-et-le-tas.md) et soucis quasi insoluble de libération total.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ces langages passent par des machines virtuelles qui interpréte (via du bytecode) et convertisse à la volé en code machine.
+Il est par conséquent impossible d'avoir du code aussi rapide en interprété quand compilé (par analogie, le chemin le plus court entre 2 points est la ligne droite). 
+Même si on peut s'en rapprocher, le soucis de l'empreinte mémoire d'une VM et son temps de lancement reste insoluble.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;J'imagine un avenir radieu (quoi, on y est déjà ?) ou l'on lancera en simultannée une appli &lt;strong&gt;Java&lt;/strong&gt;, &lt;strong&gt;Python&lt;/strong&gt;, &lt;strong&gt;Nodejs&lt;/strong&gt;, &lt;strong&gt;C#&lt;/strong&gt;, &lt;strong&gt;Ruby&lt;/strong&gt; et &lt;strong&gt;Perl&lt;/strong&gt;.
+Chacun utilise sa propre VM et prend 50 Mo (et je suis optimiste).
+Résulat des courses : on utilise 250 Mo inutillement.
+Pour du desktop, ça peut paraitre anodin (quoi que) mais pour du serveur ou de l'embarqué, ça peut devenir vraiment pénalisant.&lt;/p&gt;
+&lt;h2&gt;Oui, mais C fait du bas niveau&lt;/h2&gt;
+&lt;p&gt;Le C (ou le C++) c'est idéal pour écrire du code bas niveau : pourquoi le remplacer par du Rust ?
+Parce que c'est pas safe du tout, que ça n'utilise qu'un paradigme et que c'est pas adapté à du dev concurrent.&lt;/p&gt;
+&lt;h2&gt;Maitriser de bout en bout&lt;/h2&gt;
+&lt;p&gt;La lubie du développeur est de maitriser son environnement au maximum.
+Pour celà, le choix de son hardware et de son OS semble déjà une bonne base.
+Open source et libre de préférence.&lt;/p&gt;
+&lt;p&gt;Ensuite, des problématiques plus pointues viennent se rajouter pour le développeur : 
+En l'occurence, toute la stack employé pour aboutir à un résultat : soit les éditeurs et IDE choisit, les logiciels de versions, les hébergements etc.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Rust&lt;/strong&gt; s'inscrit, pour moi,  dans cette quête.
+D'une part, le language n'est pas initié par une grosse firme (Redmond, Google et cie) mais par un organisme à but non lucratif (&lt;strong&gt;Mozilla foundation&lt;/strong&gt;).&lt;/p&gt;
+&lt;h2&gt;Me lancer dans des nouveaux projets&lt;/h2&gt;
+&lt;h2&gt;Inconvénients&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Ré-apprendre depuis le début entraine des frustrations (je ne pensais jamais autant) :
+Prendre 1 heure pour faire quelque chose qui nous prend 5 minutes dans un autre langage est forcément ingrat mais ça fait parti du jeu...&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Rust&lt;/strong&gt; est un langage neuf ce qui sous-entend peu de doc (surtout dans la langue de molière), de topics sur des forums et des libs innexistantes, incomplètes etc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Les gros avantages&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;différenciation entre &lt;strong&gt;espace de nommage&lt;/strong&gt; et appel d'un attribut (propriété et méthodes).
+C'est un peu déroutant quand on vient de &lt;strong&gt;Python&lt;/strong&gt; et &lt;strong&gt;C#&lt;/strong&gt; qui utilise que le &lt;strong&gt;.&lt;/strong&gt; point délimiter les 2 aspects.
+Problème =&amp;gt; des confusions et des conflits possibles entre un nom et une propriété! En un mot : inadmissible !
+&lt;strong&gt;Rust&lt;/strong&gt; a choisi de distinguer les 2 et c'est tout bonnement pythonnesque : explicite is better than implicite =&amp;gt; &lt;strong&gt;::&lt;/strong&gt; délimiter les espaces de nommage et &lt;strong&gt;.&lt;/strong&gt; pour appeler un attribut.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;variable immuable par défaut : parce qu'au final, il y a pas besoin d'avoir beaucoup de variables qui sont réécrites et que si elles le sont, c'est elles qui sont la cause d'effets de bord.
+Réduire leur nombre, c'est assuré ses arrières et identifié la variable problématique plus rapidement.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;détection des &lt;strong&gt;dead code&lt;/strong&gt; dès la compilation&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;spécification explicite de la durée de vie d'une variable : ça fait parti des trucs les plus dur à assimilé mais après le mur passé, on produit vraiment du soft de qualité : la mémoire est cloisonné et par conséquent n'est pas gaché.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Les objets &lt;strong&gt;invalides&lt;/strong&gt; (vide) ne sont pas acceptés (ou difficilement contournables) : http://blog.guillaume-gomez.fr/Rust/1/10
+Franchement, vu le nombre de bugs rencontrés en C# de ce genre (et la rigueur nécessaire pour les éviter au maximum), ce choix est pour moi du pain béni.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Rust m'a supris : j'ai mis du temps avant d'avoir des bugs d'exécution vraiment pénalisant.
+En définitive, rust vous invite à réduire la partie &lt;strong&gt;dynamique&lt;/strong&gt; de votre programme et par conséquent gère un grand nombre des soucis directement à la compilation.&lt;/p&gt;
+&lt;p&gt;Peut importe le language utilisé, on ne peut garantir un programme comme stable! (cf: la notion de bug)&lt;/p&gt;
+&lt;p&gt;zero-cost abstractions
+move semantics
+guaranteed memory safety
+threads without data races
+trait-based generics
+pattern matching
+type inference
+minimal runtime
+efficient C bindings&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:pourquoi-rust.html</guid><category>rust</category><category>python</category><category>Java</category><category>Javascript</category><category>C</category><category>C++</category><category>C#</category></item><item><title>RiotJS</title><link>http://mothsart.github.io/riotjs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Dans la mode des framework orienté &lt;strong&gt;composants&lt;/strong&gt;, on est passé par &lt;strong&gt;Angular.js&lt;/strong&gt;, remplacé désormais par &lt;strong&gt;React.js&lt;/strong&gt; en attendant que &lt;strong&gt;Angular 2&lt;/strong&gt; se stabilise.&lt;/p&gt;
+&lt;p&gt;Pourquoi ne pas suivre la mouvance ?
+Parce que j'estime que ces frameworks sont trop volumineux pour répondre au besoin!&lt;/p&gt;
+&lt;p&gt;Une API trop complète, ça nécessite beaucoup de développement, une documentation en conséquence et de la formation, de l'intégration pour d'autres outils (bower, gulp, des IDE etc.)&lt;/p&gt;
+&lt;p&gt;Le web est en constante évolution et une fois que c'est suffisament mature, ça ne correspond plus vraiment au besoin.&lt;/p&gt;
+&lt;p&gt;Un des besoins fort actuel est le mobile et pour ça, il faut réfléchir au poid de son appli : chaque Ko à son importance!&lt;/p&gt;
+&lt;p&gt;Pour tous ces points, RiotJS est à mon sens le grand gagnant !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:riotjs.html</guid><category>riotjs</category><category>javascript</category></item><item><title>Ma stack Frontend</title><link>http://mothsart.github.io/stack-frontend.html</link><description>&lt;h2&gt;Intro (Gros WIP Unstable!!!)&lt;/h2&gt;
+&lt;p&gt;Ma stack côté frontend (en constante évolution).&lt;/p&gt;
+&lt;p&gt;Comme tout &lt;strong&gt;bon&lt;/strong&gt; développeur, je suis fainéant :
+faire et refaire des tâches ingrates (cqfd: automatisable) me répugne.
+De plus, j'aime avoir une certaine assurance sur le code produit. (surtout sur le javascript!)&lt;/p&gt;
+&lt;p&gt;Pour la partie frontend, je me suis créé un socle de démarrage avec une compilation de tout ce qui est hype (presque tout) côté JS.&lt;/p&gt;
+&lt;p&gt;mon dépôt : &lt;a href="https://github.com/mothsART/frontend_workflow"&gt;https://github.com/mothsART/frontend_workflow&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Mon usage est de le cloner dans un projet mère et de supprimer le .git dès qu'il est suffisament mature.&lt;/p&gt;
+&lt;h2&gt;Assurance qualité (QA)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Utilisation des linter : &lt;strong&gt;csslint&lt;/strong&gt; et &lt;strong&gt;eslint&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;eslint est utilisé avec l'option &lt;strong&gt;fix&lt;/strong&gt; qui permet de corriger automatiquement les soucis rencontrés.&lt;/p&gt;
+&lt;p&gt;Csslint n'a malheureusement pas cette fonctionnalité.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;csscomb&lt;/strong&gt; : organise les instructions css&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;cssbeautify&lt;/strong&gt; : arange le css pour qu'il soit lisible : espacements et les indentations parfaitement respectées.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Examples&lt;/h2&gt;
+&lt;p&gt;Pour donner un réel périmètre fonctionnel de cette stack, je créé au fur à mesure des fichiers d'exemples css, javascript et tags riot.
+Le but est bien évidement de démmarrer un nouveau projet avec de la matière.&lt;/p&gt;
+&lt;p&gt;Néanmoins, il est possible de partir, via une commande avec un projet vierge :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;gulp clean&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Mise en prod&lt;/h2&gt;
+&lt;p&gt;Une mise en prod de fichiers statiques a ses exigences.
+Il faut:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;concaténer les fichiers (une requête HTTP par ressource)&lt;/li&gt;
+&lt;li&gt;les minifier&lt;/li&gt;
+&lt;li&gt;vu qu'on utilise de la transpilation : générer des css.map/js.map&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;L'usage des extrémistes de Nodejs va plus loin en incluant le css dans le javascript: Je ne suis pas fan donc vous ne trouverez rien de ce genre.&lt;/p&gt;
+&lt;h2&gt;Frameworks et libs employés&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="./npm.html"&gt;NPM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="./nodejs.html"&gt;NodeJS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="./gulp.html"&gt;Gulp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="./babeljs.html"&gt;BabelJS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="./riotjs.html"&gt;RiotJS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="./postcss.html"&gt;PostCSS + CssNext&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Sublime text&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Css lisible : extension de Sublime text&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Récapitulatif des commandes principales&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Cloner le dépôt :&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Copier le projet&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;git clone https://github.com/mothsART/frontend_workflow.git
+cd frontend_workflow&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Installer les dépendances&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;on parcours le fichier package.json et on installe l'ensemble des dépendances&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;npm install&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Commencer à travailler (ça fait un watch)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;On se met en mode debug :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;npm start&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Avant de commiter, on déclenche un process d'&lt;strong&gt;assurance qualité&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Si l'on désire supprimer les fichiers d'exemples&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;gulp clean&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Opération inverse (reafficher les exemples)&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;git checkout -- app/&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-frontend.html</guid><category>frontend</category><category>css</category><category>javascript</category></item><item><title>Ma stack Rust</title><link>http://mothsart.github.io/stack-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;En vrac, les outils que j'utilise et perfectionne dans mon apprentissage et mon utilisation du language &lt;strong&gt;Rust&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;Sublime-Text&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Support de la coloration synthaxique de Rust &lt;a href="https://packagecontrol.io/"&gt;https://packagecontrol.io/installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;BeautifyRust : formate le code Rust pour qu'il suive les bonnes conventions de codage. (et évite d'y penser)
+Nécessite et utilise : &lt;a href="https://github.com/rust-lang-nursery/rustfmt"&gt;rustfmt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RustAutocomplete&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Vous n'utilisez pas &lt;strong&gt;Sublime&lt;/strong&gt; ou vous désirez en savoir d'avantage : https://areweideyet.com/&lt;/p&gt;
+&lt;h2&gt;Editeurs en ligne&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://play.rust-lang.org"&gt;editeur&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.tutorialspoint.com/compile_rust_online.php"&gt;editeur multi-fichiers&lt;/a&gt; : permet d'éditer, compiler et exécuter des projets complets (répartis sur plusieurs fichiers) tout en proposant des outils d'import et d'export&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://rust.godbolt.org"&gt;compilateur GCC&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a href="#cargo-graph"&gt;Cargo graph&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Si vous désirez connaitre les dépendance de votre projet, vous pouvez étendre les fonctionnalités de &lt;strong&gt;cargo&lt;/strong&gt; avec &lt;strong&gt;&lt;a href="https://github.com/kbknapp/cargo-graph"&gt;cargo graph&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Pour simplifier encore les choses, je me suis créé un petit script python :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-python"&gt;import os
+import sys
+import subprocess
+import toml
+
+os.chdir(sys.argv[1])
+package_name = ''
+with open(&amp;quot;Cargo.toml&amp;quot;, &amp;quot;r&amp;quot;) as conffile:
+    config = toml.loads(conffile.read())
+    package_name = config[&amp;quot;package&amp;quot;][&amp;quot;name&amp;quot;]
+
+subprocess.call(
+    &amp;quot;cargo graph --optional-line-style dashed --optional-line-color red&amp;quot;
+    * &amp;quot; --optional-shape box --build-shape diamond&amp;quot;
+    * &amp;quot; --build-color green --build-line-color orange&amp;quot;
+    * &amp;quot; &amp;gt;| {0}.dot&amp;quot;.format(package_name),
+    shell=True
+)
+subprocess.call(
+    &amp;quot;dot -Tpng &amp;gt; {0}.png {0}.dot&amp;quot;.format(package_name),
+    shell=True
+)&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;et dans mon &lt;strong&gt;.zshrc&lt;/strong&gt; :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;graph () {
+    CARGO_PACKAGE_PATH=$PWD;
+    VIRTUAL_PATH=&amp;quot;my_scripts&amp;quot;
+    launchPythonScript &amp;quot;python3 ./cargo_graph.py $CARGO_PACKAGE_PATH&amp;quot;
+}&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Du coup, en appelant mon utilitaire &lt;strong&gt;graph&lt;/strong&gt;, je vais créer automatiquement à la source de mon projet, un fichier &lt;strong&gt;projet.dot&lt;/strong&gt; et &lt;strong&gt;projet.png&lt;/strong&gt; correspondant.
+Le nom du projet est directement récupérer dans le Cargo.toml.&lt;/p&gt;
+&lt;h2&gt;bot Irc &lt;a href="https://github.com/redox-os/playbot"&gt;Playbot&lt;/a&gt;&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-rust"&gt;playbot: std::mem::size_of::&amp;lt;bool&amp;gt;()&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;équivalent à :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-rust"&gt;fn main() {
+    println!(&amp;quot;{:?}&amp;quot;, std::mem::size_of::&amp;lt;bool&amp;gt;());
+}&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Coverage&lt;/h2&gt;
+&lt;p&gt;https://users.rust-lang.org/t/tutorial-how-to-collect-test-coverages-for-rust-project/650&lt;/p&gt;
+&lt;p&gt;https://github.com/hyperium/hyper/blob/master/.travis.yml&lt;/p&gt;
+&lt;h2&gt;Débuggage&lt;/h2&gt;
+&lt;p&gt;Dans votre bashrc et/ou zshrc :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;export RUST_BACKTRACE=1
+
+#sh
+strace cargo run --bin projet&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Rust fait beaucoup de vérifications au niveau de la compilation mais ne peut bien évidement pas couvrir la partie dynamique.
+Il subsite donc des erreurs à l'exécution : pour les débusquer, &lt;strong&gt;gdb&lt;/strong&gt; est notre ami.&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;gdb target/debug/le_fichier_concerne
+(gdb) run&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Déploiement&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;cargo build --release&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;https://github.com/mmstick/cargo-deb&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-rust.html</guid><category>rust</category></item><item><title>Pourquoi je boude Node.Js</title><link>http://mothsart.github.io/pourquoi-je-boude-nodejs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;NodeJS est à la mode.
+Quand je parle de NodeJS, je parle bien entendu de toute la mouvance autours de Javascript.&lt;/p&gt;
+&lt;p&gt;Le principe :
+    il n'existe pas d'alternative (simple) à Javascript à l'heure actuelle pour faire du web.&lt;/p&gt;
+&lt;p&gt;Les avantages :
+    - la communauté
+    - les librairies/frameworks ne cessent de s'étoffer
+    - utiliser le même langage côté serveur et client
+    - langage asynchrone par nature&lt;/p&gt;
+&lt;p&gt;Les inconvénients
+    - le bazar : plein de libs à l'état alpha : juste inutilisable en production!
+    - explosition de l'archive : 38 Ko de React.js + 85 Ko de Jquery + etc.
+    - code interprété donc lent (même avec du &lt;strong&gt;JIT&lt;/strong&gt;)
+    - impératif donc de POO ou de fonctionnel : Ecmascript 6 et 7 améliore sensiblement les choses.
+    - notion de typage inexistant (oblige à faire des tests unitaires sur du typage!!!)
+    - très peu de tests de sécurité (mémoire, qualité) : &lt;strong&gt;use strict&lt;/strong&gt; améliore les choses ainsi que l'utilisation d'outils tel que &lt;strong&gt;JSLint&lt;/strong&gt;...
+    - l'asynchrone est basé sur les callback : pénalisant sur des projets complexes =&amp;gt; ecmascript 7 va améliorer ça en utilisant nativement &lt;strong&gt;async&lt;/strong&gt; et &lt;strong&gt;await&lt;/strong&gt;.
+    - l'utilisation de libs bas niveau (C ou C++)
+    - Pour toutes les raisons si dessus, utiliser Javascript pour du serveur est sans doute un mauvais choix.&lt;/p&gt;
+&lt;h2&gt;Bonne pratique aujourd'hui&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Babel.js&lt;/strong&gt; et &lt;strong&gt;Emscripten&lt;/strong&gt; semble être les bonnes technos du moment.&lt;/p&gt;
+&lt;h2&gt;Et demain&lt;/h2&gt;
+&lt;p&gt;Depuis la proposition d'un bytecode commun par Mozilla (asm.js), les choses ont pas mal évolués et &lt;a href="http://www.developpez.com/actu/97050/Google-Microsoft-et-Mozilla-proposent-une-demonstration-fonctionnelle-de-WebAssembly-le-projet-ambitionne-de-devenir-le-code-binaire-du-web"&gt;Webassembly&lt;/a&gt;
+semble LA solution commune.&lt;/p&gt;
+&lt;p&gt;Une fois que 90% navigateurs sur le marché auront cet API stable de disponible, il sera aisé de se passer complètement de Javascript : envisageable dans 5 à 10 ans selon mon indicateur pifométrique.&lt;/p&gt;
+&lt;p&gt;La transition se fera avec des outils comme &lt;strong&gt;Emscripten&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;En attendant, il faudra implémenter cet API dans chacun des langages : Un boulot pharaonique en somme qui risque de prendre du temps.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Les besoins du web ne cesse de s'accroitre. Les usages se diversifies.
+Javascript est incontournable et vit son heure de gloire.
+Mais tout à une fin et il vaut mieux ammorcer la chute plutôt que de la subir.&lt;/p&gt;
+&lt;p&gt;Il sera sans doute possible dans moins de 10 ans de faire du web en se passant totalement de Javascript (Plus de CoffeeScript, TypeScript et autre BullshitScript ou VaporWareScript) et donc d'utiliser des langages plus modernes, moins permissifs et plus réactifs tel que &lt;strong&gt;Rust&lt;/strong&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-03-19:pourquoi-je-boude-nodejs.html</guid><category>javascript</category><category>web</category></item><item><title>Encodage</title><link>http://mothsart.github.io/encodage.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;L'encodage fait parti de la culture du développeur.
+Comme souvent, elle s'impose à lui : c'est quand il est confronté à des soucis d'encodage qu'il doit l'affronter.&lt;/p&gt;
+&lt;p&gt;Une fois confronté à ce type de problématique, il a besoin d'avoir les outils appropriés. En voici quelques un.&lt;/p&gt;
+&lt;h2&gt;BOM&lt;/h2&gt;
+&lt;p&gt;Test si un fichier est en &lt;strong&gt;UT-8 BOM&lt;/strong&gt; (courant sur windows pour distinguer que le fichier est bien encodé en UTF-8 et non pas en ISO-* ou Windows-1252)  :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;function has_bom {
+    &amp;quot;Test if a file has an UT8 BOM (byte order mark)&amp;quot;
+    echo $1;
+    # echo `head -c 3 $1 | hexdump -C`;
+    has=`head -c3 &amp;quot;$1&amp;quot; | grep -q $'\xef\xbb\xbf'`;
+    if [ $? -gt 0 ]; then
+        echo &amp;quot;no (error code -&amp;gt; $?)&amp;quot;;
+    else
+        echo &amp;quot;yes (error code -&amp;gt; $?)&amp;quot;;
+    fi
+}&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Lister les fichiers en &lt;strong&gt;UT-8 BOM&lt;/strong&gt; (récursivement) :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;function bom_files {
+    &amp;quot;List files on a tree with an UT8 BOM (byte order mark)&amp;quot;
+    find . -type f -print0 | xargs -0 awk '/^\xEF\xBB\xBF/ {print FILENAME} {nextfile}';
+}&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 12 Jul 2016 23:29:54 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-03-19:encodage.html</guid><category>utf</category><category>encodage</category></item><item><title>Le stockage côté Javascript</title><link>http://mothsart.github.io/stockage-frontend.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;L'émergence de l'utilisation du web pour de l'appli nécessite d'améliorer le caching de données et la synchronisation.&lt;/p&gt;
+&lt;h2&gt;L'existant&lt;/h2&gt;
+&lt;p&gt;http://caniuse.com/#feat=sql-storage =&amp;gt; en mode disparition&lt;/p&gt;
+&lt;p&gt;http://caniuse.com/#feat=indexeddb&lt;/p&gt;
+&lt;p&gt;http://www.alsacreations.com/article/lire/1402-web-storage-localstorage-sessionstorage.html&lt;/p&gt;
+&lt;h2&gt;Oui, mais rien ne passe partout ?!&lt;/h2&gt;
+&lt;p&gt;Et pourquoi pas : https://github.com/kripken/sql.js
+Exemple : http://kripken.github.io/sql.js/GUI/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-03-19:stockage-frontend.html</guid><category>javascript</category><category>frontend</category><category>stockage</category><category>sql</category></item><item><title>Réflexion autour des DVCS</title><link>http://mothsart.github.io/reflexion-dvcs.html</link><description>&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;GIT a semble-t-il gagner dans la guerre des &lt;strong&gt;Logiciel de gestion de versions&lt;/strong&gt; (&lt;strong&gt;DVCS&lt;/strong&gt;)&lt;/p&gt;
+&lt;p&gt;Pourtant, son remplaçant est peut-être à la porte.&lt;/p&gt;
+&lt;p&gt;Je vais lister ici les points positifs et négatifs de GIT.&lt;/p&gt;
+&lt;h2&gt;Points positifs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Popularité : Github et quelques autres forges (&lt;strong&gt;Bitbucket&lt;/strong&gt;, &lt;strong&gt;Gitlab&lt;/strong&gt;) ainsi que l'utilisation par de gros projets ont assis sa domination.&lt;/li&gt;
+&lt;li&gt;Documentation : la doc est clair est exhaustive et le net permet de trouver une réponse à quasiment toutes les questions s'y référent&lt;/li&gt;
+&lt;li&gt;Instantanéité sur de très gros projet : GIT fonctionne sous forme de snapshot et ressemble, à s'y méprendre à un Système de fichier.
+Ce fonctionnement lui garanti une réactivité innégalable (qui a évincé Bazaar et Mercurial)&lt;/li&gt;
+&lt;li&gt;la gestion des branches : le parti pris de GIT est d'avoir des commits, totalement indépendant des uns des autres dont le seul lien sont des tags : et oui, une branche sous GIT est en réalité un ensemble de commits ayant le même tag.
+Du coup, ça donne une vrai souplesse d'utilisation.&lt;/li&gt;
+&lt;li&gt;possibilité d'utiliser une vrai API via &lt;strong&gt;libgit2&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Fork et contribution à un projet facilité avec &lt;strong&gt;Gihub&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;les hooks : des triggers à chaque&lt;/li&gt;
+&lt;li&gt;la config : l'historique et la popularité de GIT lui on donné la possibilité d'une configuration très abouti&lt;/li&gt;
+&lt;li&gt;interfaces graphiques : un large choix : &lt;strong&gt;gitk&lt;/strong&gt;, &lt;strong&gt;GIT Extensions&lt;/strong&gt; etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Points négatifs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;pas de suivi de bugs ni de wiki (voir &lt;strong&gt;fossil&lt;/strong&gt;) mais pourrait être facilement possible en normalisant des sous-modules.
+http://sebsauvage.net/wiki/doku.php?id=fossil&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ne fonctionne pas selon la &lt;strong&gt;théorie des patchs&lt;/strong&gt; tel que le fait &lt;strong&gt;Darcs&lt;/strong&gt; ou &lt;strong&gt;&lt;a href="http://pijul.org"&gt;PIJUL&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;permettre des hooks à partir de langages de haut niveau est souvent délicat et nécessite de passer un fichier shell en amont&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-03-10:reflexion-dvcs.html</guid><category>git</category><category>darcs</category><category>hg</category><category>mercurial</category></item><item><title>Réflexion autour des Imprimantes 3D à usage domestique</title><link>http://mothsart.github.io/reflexion-imprimante-3D.html</link><description>&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;La révolution est à notre porte! L'imprimante 3D va révolutionner nos usages, elle va réinventer l'industrie, relocalisé après une délocalisation massive etc.
+Que ça soit dans les médias ou sur Internet, on l'annonce comme LE vecteur du changement.&lt;/p&gt;
+&lt;p&gt;Voici un condensé du pourquoi je ne crois pas que &lt;strong&gt;le changement c'est pour maintenant&lt;/strong&gt;!&lt;/p&gt;
+&lt;h2&gt;Imprimante 2D&lt;/h2&gt;
+&lt;p&gt;Bon, l'analogie est faite sur l'imprimante classique : elle a innondé nos foyers...
+Permettez moi d'en douter : en l'espace de 10 ans, j'ai du changer 3 fois d'imprimante car ces bestioles sont souvent capricieuses et tout simplement irréparable. Le tarif des cartouches d'encre est excessif.
+La plupart des imprimantes peuvent imprimer des photos mais qui le fait encore : des services en ligne sont tellement plus simple, moins contraignant etc.
+Bref, pour plusieurs foyers : il n'y a pas de retour sur investissement!
+C'est devenu un produit de luxe : il serait sans doute plus rentable de passer par des services de &lt;strong&gt;reprographie&lt;/strong&gt; ou &lt;strong&gt;d'imprimerie&lt;/strong&gt; : il manque pour l'instant la facilité et l'immédiateté pour que les imprimantes personnels soient abandonnées.&lt;/p&gt;
+&lt;h2&gt;Prérequis&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Il y a plusieurs technologies d'impression tridimensionnel mais l'&lt;strong&gt;FDM (Fused Deposition Modeling)&lt;/strong&gt; semble la plus viable pour de l'usage Domestique : on utilise des filaments synthétiques qu'on fusionne pour ajouter de la matière couche par couche.&lt;/li&gt;
+&lt;li&gt;La technique précédente, réduit l'usage domestique pour divers raisons (coût, taille etc.) aux matières plastiques de type &lt;strong&gt;ABS&lt;/strong&gt; ou &lt;strong&gt;PLA&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;L'impression 3D c'est simple&lt;/h2&gt;
+&lt;p&gt;Réponse courte : &lt;strong&gt;Faux&lt;/strong&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Mme Michu&lt;/strong&gt; ne sait pas se servir d'un logiciel 3D&lt;/li&gt;
+&lt;li&gt;Même un modeleur 3D risque d'être supris des contraintes de l'imprimante 3D&lt;/li&gt;
+&lt;li&gt;Le temps d'impression est non négligeable&lt;/li&gt;
+&lt;li&gt;les formats d'impression&lt;/li&gt;
+&lt;li&gt;Il faut plusieurs impressions pour arriver à un résultat concluant&lt;/li&gt;
+&lt;li&gt;la maintenance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;L'imprimante 3D permettra de réparer un matériel défectueux&lt;/h2&gt;
+&lt;p&gt;Réponse courte : &lt;strong&gt;Faux&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Plusieurs raisons :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;il faut que la pièce soit en plastique (voir prérequis)&lt;/li&gt;
+&lt;li&gt;il faut que la pièce soit non mécanique ! Et oui, les contraintes mécaniques sont la plupart incompatible avec une pièce additive.
+De plus, certaines pièces (engrenage par exemple) sont de mauvaise qualité
+La solution à ça ressemble plus à l'utilisation de &lt;strong&gt;Machine-Outil à Commande Numérique&lt;/strong&gt; : &lt;a href="http://faitmain.org/volume-1/cncs.html"&gt;faimain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;s'il l'on veut reproduire des pièces (souvent le cas : 4 pièces identiques dont 1 défectueuse), il faut s'équiper d'un scanner 3D : la pièce issu du scanner demandera souvent d'être retouché avant d'être utilisable par l'imprimante.&lt;/li&gt;
+&lt;li&gt;Un ou plusieurs annuaire de pièces : si l'on ne veut pas créer sa pièce de toute part, c'est qu'on veut la récupérer sur le web...
+Chercher une aiguille dans une botte de foin prend tout son sens et même si l'on trouve, la qualité de la pièce peut être très discutable.&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-03-10:reflexion-imprimante-3D.html</guid><category>imprimante</category><category>3D</category></item><item><title>Bench de bases de données</title><link>http://mothsart.github.io/db-bench.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Le stockage de données est omniprésent.
+Pour celà, le développeur a à sa disposition une gamme incroyable de bases de données.&lt;/p&gt;
+&lt;p&gt;La diversé est tel que le choix peut vite devenir cornélien.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;les raisons sont rarement &lt;strong&gt;que&lt;/strong&gt; technique : licence, accord commerciaux, habitude et compétence de l'équipe etc.&lt;/li&gt;
+&lt;li&gt;bon nombre de projets gagneraient à utiliser plusieurs type de bases.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Constat 1&lt;/h3&gt;
+&lt;p&gt;La contrainte de vitesse d'exécution est rarement contournable.
+Un jour ou l'autre, un dev, une équipe, une société y sera confronté : au pire des moments et de la pire des manière.&lt;/p&gt;
+&lt;h3&gt;Constat 2&lt;/h3&gt;
+&lt;p&gt;Le cadre est souvent mal définit : à partir de quand un site web/une appli ne rempli pas/plus ses objectifs en terme de réactivité ?&lt;/p&gt;
+&lt;h3&gt;Constat 3&lt;/h3&gt;
+&lt;p&gt;La résolution est souvent hasardeuse, lié aux préjugés, croyances, aux expériences précédentes ou que sais-je encore.
+La réalité est souvent bien différente et plus complexe qu'elle n'y parait et le résultat peu concluent, inachevé etc.&lt;/p&gt;
+&lt;p&gt;L'objectif est ici de remettre tout à plat et de gommer les préjugés.
+La démarche d'un bench est avant tout de répondre avec objectivité à une contraine sans opinion.&lt;/p&gt;
+&lt;p&gt;N'étant pas expérimenté dans l'exercice, je sais d'avance que je pars sur un terrain vierge avec une certaine naïveté.
+Mais ne dit-on pas qu'&lt;strong&gt;un idiot qui marche va plus loin qu'un intelligent assis&lt;/strong&gt;?&lt;/p&gt;
+&lt;h2&gt;Type de bases&lt;/h2&gt;
+&lt;p&gt;Si on parcours le net, le résumé serait de dire qu'il existe 2 types de SGBD : les full SQL et les autres.
+En réalité, les bases SQL ont tellement monopolisé le marché qu'on aurait tendance à mettre toutes les autres architectures dans le grand panier &lt;strong&gt;ésotérique&lt;/strong&gt; du NoSQL.&lt;/p&gt;
+&lt;p&gt;Sauf qu'en étrapolent, un simple fichier .csv pourrait être du NoSQL.&lt;/p&gt;
+&lt;p&gt;il existe en réalité 4 grandes familles de NoSQL :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;base orientée &lt;strong&gt;document&lt;/strong&gt; : mongoDb, couchDb, Riack&lt;/li&gt;
+&lt;li&gt;base orientée &lt;strong&gt;clé/valeur&lt;/strong&gt; : Redis&lt;/li&gt;
+&lt;li&gt;base orientée &lt;strong&gt;graph&lt;/strong&gt; : Neo4JS, OrientDb&lt;/li&gt;
+&lt;li&gt;orienté &lt;strong&gt;object&lt;/strong&gt; :ZoDb&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Raison du Bench =&amp;gt; le caching&lt;/h2&gt;
+&lt;p&gt;Soyons clair, cet article ne cherche pas à promouvoir quoi que ce soit.
+Le comparatif ne se limitera qu'à des modèles de cache.
+Le principe d'un cache est d'être &lt;strong&gt;principalement&lt;/strong&gt; rapide d'accès en lecture.
+J'occulte donc volontairement les benchs sur autre chose que l'accès à des données précédement stocké.&lt;/p&gt;
+&lt;p&gt;Un bench, pour qu'il soit un minimum pertinent, doit se faire au plus proche des conditions réels.
+Ce Bench n'est donc qu'un point d'entrée, une démarche à suivre et se doit d'être étendu sur des recherches correspondant à des scénarios en situation réels :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;scénarios prévisionnels empiriques et exhaustifs dans le cas d'une pré-prod.&lt;/li&gt;
+&lt;li&gt;scénarios exhaustifs construit à partir des logs sur un échelle de temps suffisament significative si possible majoré d'une marge : prévision d'une augmentation de l'activité, de changements d'usages etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Vos contraintes techniques, vous étant propre, elles peuvent être lié à plusieurs facteurs :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;besoin de type ACID ou non ?&lt;/li&gt;
+&lt;li&gt;base de type client-serveur ou embarqué ?&lt;/li&gt;
+&lt;li&gt;base réparti sur plusieurs serveurs ou non ?&lt;/li&gt;
+&lt;li&gt;taille de base définit ou perspective de scalabilité ?&lt;/li&gt;
+&lt;li&gt;transactions possibles ?&lt;/li&gt;
+&lt;li&gt;procédures stockés ?&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Langage et architecture&lt;/h2&gt;
+&lt;p&gt;J'ai hésité sur le langage utilisé : comment donner une certaine généricité à ce projet alors que le langage de programmation a tendance à cloisonner les lecteurs, éventuels contributeurs etc.&lt;/p&gt;
+&lt;p&gt;Mais vu qu'il en fallait un, je suis parti en définitive sur Python (longue hésitation avec le C# et Rust).&lt;/p&gt;
+&lt;p&gt;Pourquoi :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;langage simple, proche du pseudo-code : juste idéal pour du prototypage&lt;/li&gt;
+&lt;li&gt;mature (plus de 20 ans d'âge, ça commence à être un bon crue) et disposant de connecteurs tout aussi matures pour une variété incroyable de base de données&lt;/li&gt;
+&lt;li&gt;haut-niveau pleinement orienté Objet&lt;/li&gt;
+&lt;li&gt;interprété et disponible sur une variété d'archi&lt;/li&gt;
+&lt;li&gt;ma propre expérience : c'est mon langage de prédilection (très peu d'aller/retour sur le net) quasi fluent.&lt;/li&gt;
+&lt;li&gt;ipython, pardon &lt;strong&gt;Jupyter&lt;/strong&gt; (je m'y ferais jamais) en mode &lt;strong&gt;notebook&lt;/strong&gt; couplé aux libs &lt;strong&gt;matplotlib&lt;/strong&gt;, &lt;strong&gt;numpy&lt;/strong&gt;, &lt;strong&gt;scipy&lt;/strong&gt; et &lt;strong&gt;pylab&lt;/strong&gt; ... c'est juste une tuerie pour créer des graphiques complexes facilement et rapidement!
+Aucun langage ne propose un combo de se genre à ma connaissance mais je serais ravi de me tromper.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pour la version, je suis parti sur python 3.4+. (pas envie d'assurer sur ce type de projet de la rétro-compatibilité avec Python 2)&lt;/p&gt;
+&lt;p&gt;Pour l'architecture, je me suis basé sur le design pattern Adapter. (même si ça ressemble plutôt à un Proxy jusqu'à présent)&lt;/p&gt;
+&lt;p&gt;Les schéma parle mieux que les mots.&lt;/p&gt;
+&lt;p&gt;Je distingue le source de mon executable.
+En effet, pour tester ce banc, j'utilise Docker : Ca permet de cloisonner l'environnement et surtout d'assurer des dépendances identiques pour chacun des utilisateurs.&lt;/p&gt;
+&lt;p&gt;Il serait sans doute judicieux d'utiliser une vrai VM afin d'ajouter des contraintes physiques bien définit : taille de la RAM, dimensionnement des CPUs etc. mais mon choix n'est pas encore arrêté (Qemu, VirtualBox, autre?) et l'int"rêt me semble minime.
+(je suis prêt à changer d'avis : argumentaire et si possible chiffres à l'appui)&lt;/p&gt;
+&lt;p&gt;Poour l'utiliser, il vous faudra donc le DockerFile =&amp;gt;&lt;/p&gt;
+&lt;h2&gt;Et après ?&lt;/h2&gt;
+&lt;p&gt;Ce n'est qu'un début... un amuse bouche.
+Rome ne c'est pas contruit en 1 jour donc je me laisse l'experimentation pour perfectionner ce banc d'essai!
+Le projet est sur Github et ne demande que des contributions.&lt;/p&gt;
+&lt;p&gt;Rajouter des types de base est l'objectif premier.
+Le reste viendra ensuite.&lt;/p&gt;
+&lt;p&gt;Si vous désirez participer, n'ayez aucune hésitation!
+La participation peut être de différents ordre.
+Néanmoins, relancer d'un autre poste le banc de test et me témoigner des éventuels différences serait sans doute le point le plus
+entousiasmant!&lt;/p&gt;
+&lt;p&gt;Mes intentions sont d'apprendre, perfectionner, consolider ou confronter mes acquis et je tolererais sans sourciller les critiques "constructives".&lt;/p&gt;
+&lt;p&gt;L'intérêt étant justement la remise en question, l'apprentissage et l'ouverture d'esprit.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-02-14:db-bench.html</guid><category>sql</category><category>db</category><category>bench</category><category>benchmark</category></item><item><title>Labo du dev frontend</title><link>http://mothsart.github.io/labo-du-dev-frontend.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Afin de perfectionner mes connaissances et mes acquis dans le dev frontend, j'entreprend ici de tester des libs tel que:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;postcss&lt;/li&gt;
+&lt;li&gt;backbone/_underscore&lt;/li&gt;
+&lt;li&gt;casper.js&lt;/li&gt;
+&lt;li&gt;riotjs (et non, pas d'angular, de react etc. minimize is better)&lt;/li&gt;
+&lt;li&gt;&lt;strike&gt;webpack&lt;/strike&gt; (manque de souplesse) &lt;strong&gt;gulp&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;mais aussi :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;de la rigueur : &lt;a href="http://www.alsacreations.com/article/lire/1641-bonnes-pratiques-en-css-bem-et-oocss.html#bem"&gt;BEM&lt;/a&gt;, &lt;a href="http://vanilla-js.com"&gt;vanillaJS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Le labo&lt;/h2&gt;
+&lt;p&gt;Voici quelques une de mes recherches actuelles ou passés :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/labo/frontend/modernizr"&gt;Tests de navigateur (avec et sans user-agent) + tests de fonctionnalités&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/labo/frontend/ripple_onclick"&gt;Animation au clic&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/labo/frontend/vanilla"&gt;Bench de comparaison de Jquery/VanillaJS/Xpath (en natif)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-02-14:labo-du-dev-frontend.html</guid><category>frontend</category><category>js</category><category>css</category><category>html</category></item><item><title>Pelican</title><link>http://mothsart.github.io/pelican.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Ce site est mon 2ème essai d'utilisation d'un générateur de site statique.
+J'utilise pour la 2ème fois Pelican : j'ai hésité à passer par autre chose : Jekyl ou Hexo principalement.&lt;/p&gt;
+&lt;p&gt;Néanmoins, j'ai préféré continuer avec Pelican... je sais que le diable ce cache dans les détails, et qu'après un usage intensif, je ne vais trouver que les défauts mais néanmoins avoir des difficultés à les résoudres via des patchs.&lt;/p&gt;
+&lt;h2&gt;Pré-requis technique&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Markdown : J'ai finalement abandonné RestructuredText pour Markdown :
+    plus de doc, plus flexible, (si je veux un jour changer de moteur statique) des éditeurs WYSIWYG plus aboutis.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Gestionnaire de commentaires : &lt;del&gt;Disqus&lt;/del&gt; &lt;strong&gt;&lt;a href="http://posativ.org/isso/"&gt;Isso&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Moteur de template pratique : &lt;strong&gt;&lt;a href="http://jinja.pocoo.org/"&gt;Jinja&lt;/a&gt;&lt;/strong&gt; est un bon cru ;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Possibilité de créer des pages avec des templates personnalisés&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Plugins utilisés&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Tag cloud : ajout de badges&lt;/li&gt;
+&lt;li&gt;Ace editor&lt;/li&gt;
+&lt;li&gt;Sitemap&lt;/li&gt;
+&lt;li&gt;assets&lt;/li&gt;
+&lt;li&gt;liquid_tags.video&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;tag_cloud&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;filetime_from_git : juste indispensable pour les feignasse comme moi qui n'ont pas envie d'éditer les dates de création et de modification d'un article. (attention, les dates sont modifiés sur l'article produit et non le source en markdown)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Plugins à intégrer&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;post_stats : étendre les fonctionnalités&lt;/li&gt;
+&lt;li&gt;subcategory&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Mes contributions&lt;/h3&gt;
+&lt;p&gt;Comme souvent, je trouve souvent des limitations/bugs à mes usages lorsque j'utilise une lib.
+Pelican ne déroge pas à cette règle.&lt;/p&gt;
+&lt;p&gt;Voici mes contributions à ce générateur de site statique qui ne demande qu'à être connu :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Rajout de badges (compte le nombre de tags) sur le plugin &lt;strong&gt;tag_cloud&lt;/strong&gt;
+&lt;a href="https://github.com/getpelican/pelican-plugins/commit/f4d717ff2d7b4c6ec621e82fdb441f6b1e37a3fc"&gt;https://github.com/getpelican/pelican-plugins/commit/f4d717ff2d7b4c6ec621e82fdb441f6b1e37a3fc&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://github.com/getpelican/pelican-plugins/commit/b5aaca7a68b993754e79e50e6dbbfcc8114ed761"&gt;https://github.com/getpelican/pelican-plugins/commit/b5aaca7a68b993754e79e50e6dbbfcc8114ed761&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/getpelican/pelican-plugins/commit/9e1d20653afb170b7bb5753e138ca64ce39af276"&gt;https://github.com/getpelican/pelican-plugins/commit/9e1d20653afb170b7bb5753e138ca64ce39af276&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;création d'un plugin permettant l'utilisation aisé de Ace Editor :&lt;/p&gt;
+&lt;p&gt;Ace est juste fantastique -&amp;gt; &lt;a href="https://ace.c9.io/build/kitchen-sink.html"&gt;https://ace.c9.io/build/kitchen-sink.html&lt;/a&gt; et sa page github &lt;a href="https://github.com/ajaxorg/ace"&gt;https://github.com/ajaxorg/ace&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Il a beaucoup d'avantages :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;coloration synthaxique&lt;/p&gt;
+&lt;p&gt;Il lui manque cependant des choses :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;la création d'un id par ligne -&amp;gt; url avec une ancre&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;doc : &lt;a href="http://prismjs.com/plugins/wpd"&gt;http://prismjs.com/plugins/wpd&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Autolinker : &lt;a href="http://prismjs.com/plugins/autolinker"&gt;http://prismjs.com/plugins/autolinker&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;création d'un thème perso :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[] I18n sur l'ensemble du site et des plugins&lt;/li&gt;
+&lt;li&gt;[x] Possibilité de changer de thème via un &lt;strong&gt;dropdown bootstrap&lt;/strong&gt; + préservation du thème choisi dans un cookie. (qui a dit que les cookies avait besoin d'un site dynamique ?)&lt;/li&gt;
+&lt;li&gt;[] &lt;strong&gt;en cours&lt;/strong&gt; : page 404&lt;/li&gt;
+&lt;li&gt;[] &lt;strong&gt;en cours&lt;/strong&gt; : Utilisation de &lt;strong&gt;&lt;a href="http://posativ.org/isso"&gt;Isso&lt;/a&gt;&lt;/strong&gt; à la place de &lt;strong&gt;Disqus&lt;/strong&gt; : permet des commentaires anonymes.&lt;/li&gt;
+&lt;li&gt;[] &lt;strong&gt;en cours&lt;/strong&gt; : Des URLs avec une ancre peuvent avoir des soucis avec un menu fixe :
+  l'option &lt;strong&gt; SCROLL_TOP_MARGIN&lt;/strong&gt; permet de rajouter des pixels suplémentaires pour éviter cette contrainte.&lt;/li&gt;
+&lt;li&gt;[] &lt;strong&gt;en cours&lt;/strong&gt; : Utilisation d'une page de référence pour mon template avec le maximum de règles : &lt;a href="/pelicans-template.html"&gt;pelicans-template.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Contribution à venir&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;création d'un plugin permettant l'i18n sans l'obligatation d'avoir au minimum 2 langues. (pas trouvé via le plugin "i18n_subsite")&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;transformation des [] et [X] en checkbox =&amp;gt; utile pour des todolistes&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 03 Oct 2016 00:56:09 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-02-14:pelican.html</guid><category>zsh</category></item></channel></rss>

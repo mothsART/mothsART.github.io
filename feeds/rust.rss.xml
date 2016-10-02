@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>http://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 21 Sep 2016 19:39:51 +0200</lastBuildDate><item><title>Librairies et frameworks</title><link>http://mothsart.github.io/rust-libs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Depuis que Rust est en version 1.0, les choses se sont accélérés et beaucoup de librairies et frameworks ont pointé le bout de leur nez.
+Voici les plus connus trié par thème.&lt;/p&gt;
+&lt;h1&gt;Base de données&lt;/h1&gt;
+&lt;p&gt;diesel
+rust-redis&lt;/p&gt;
+&lt;h1&gt;serialisation&lt;/h1&gt;
+&lt;p&gt;serde
+rust_serialize&lt;/p&gt;
+&lt;h1&gt;parser&lt;/h1&gt;
+&lt;p&gt;nom&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:rust-libs.html</guid><category>rust</category></item><item><title>Des exemples Rust</title><link>http://mothsart.github.io/exemples-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Des exemples de code Rust que je réutilise (mais que je n'arrive pas à mémoriser)&lt;/p&gt;
+&lt;h2&gt;Enum récursif&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-rust"&gt;#[derive(Debug)]
+enum A {
+    G(i32),
+    H(Vec&amp;lt;A&amp;gt;),
+}
+
+fn main() {
+    let a1: A = A::G(2);
+    let a2: A = A::G(3);
+    let a3: A = A::H(vec![a1, a2]);
+    println!(&amp;quot;{:?}&amp;quot;, a3);
+}&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;BTreeMap&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-rust"&gt;use std::collections::BTreeMap;
+
+#[derive(Debug)]
+enum A {
+    G(i32),
+    H(Vec&amp;lt;A&amp;gt;),
+    I(BTreeMap&amp;lt;i32, A&amp;gt;),
+}
+
+fn main() {
+    let ah = A::H(vec![A::G(2), A::G(3)]);
+
+    let mut map = BTreeMap::new();
+    map.insert(1, A::G(20));
+    map.insert(1, A::H(vec![A::G(10), A::G(20)]));
+
+    let ai = A::I(map);
+    println!(&amp;quot;{:?}&amp;quot;, ah);
+    println!(&amp;quot;{:?}&amp;quot;, ai);
+}&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Passer de str à String et inversement&lt;/h2&gt;
+&lt;h3&gt;str à string&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-rust"&gt;let machaine_str:&amp;amp;'static str = &amp;quot;ma chaine&amp;quot;;
+let machaine_string:String = machaine_str.to_owned();&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;ou&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-rust"&gt;let machaine_str:&amp;amp;'static str = &amp;quot;ma chaine&amp;quot;;
+let machaine_string:String = machaine_str.to_string();&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;String to str&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-rust"&gt;let manouvellechaine_str:&amp;amp;str = &amp;amp;*machaine_string;&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Des traits pour de la programmation générique :
+https://github.com/apasel422/eclectic&lt;/p&gt;
+&lt;p&gt;des websockets :&lt;/p&gt;
+&lt;p&gt;https://github.com/housleyjk/ws-rs&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-30:exemples-rust.html</guid><category>rust</category></item><item><title>Macros rust</title><link>http://mothsart.github.io/macros-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;println!&lt;/p&gt;
+&lt;p&gt;format!&lt;/p&gt;
+&lt;p&gt;write!&lt;/p&gt;
+&lt;p&gt;try!&lt;/p&gt;
+&lt;p&gt;undefined!&lt;/p&gt;
+&lt;p&gt;assert!&lt;/p&gt;
+&lt;p&gt;assert_eq!&lt;/p&gt;
+&lt;p&gt;panic!&lt;/p&gt;
+&lt;p&gt;unreachable!&lt;/p&gt;
+&lt;p&gt;unimplemented!&lt;/p&gt;
+&lt;p&gt;column!&lt;/p&gt;
+&lt;p&gt;line!&lt;/p&gt;
+&lt;p&gt;file!&lt;/p&gt;
+&lt;p&gt;vec!&lt;/p&gt;
+&lt;p&gt;log_syntax!&lt;/p&gt;
+&lt;p&gt;trace_macros!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:macros-rust.html</guid><category>rust</category></item><item><title>The QuiZz : Partie 2</title><link>http://mothsart.github.io/the-quizz-part-2.html</link><description>&lt;h2&gt;The QuiZz : Partie 2&lt;/h2&gt;
+&lt;p&gt;Comme promis, la partie 2 ne va s'atteler qu'à fournir le même cahier des charges que le soft de la partie 1 mais pour une appli web.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/mothsART/the_quizz/releases/tag/part2"&gt;dépôt Git : Etape 2&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Pré-requis&lt;/h2&gt;
+&lt;p&gt;Pour suivre, il vous faudra connaitre les grandes lignes de fonctionnement du dev web.&lt;/p&gt;
+&lt;p&gt;On va donc utiliser le mini-framework &lt;a href="http://ironframework.io"&gt;&lt;strong&gt;Iron&lt;/strong&gt;&lt;/a&gt; pour celà et quelques plugins utiles (rajouté dans le fichier &lt;strong&gt;cargo.toml&lt;/strong&gt;).&lt;/p&gt;
+&lt;p&gt;Pour donner un peu de charme au projet, je lui cole le framework &lt;strong&gt;Bootstrap&lt;/strong&gt; avec le thème libre &lt;a href="http://blackrockdigital.github.io/startbootstrap-sb-admin-2/pages/index.html"&gt;&lt;strong&gt;SB-Admin-2&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ok, c'est vraiment too much pour une partie 2 mais ça met les bases pour les étapes suivantes.&lt;/p&gt;
+&lt;h2&gt;côté serveur (Rust)&lt;/h2&gt;
+&lt;p&gt;Nous avons désormais plusieurs binaires à gérer.&lt;/p&gt;
+&lt;p&gt;Désormais pour lancer l'appli Cli :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;cargo run --bin the_quizz&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Et pour l'appli web :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;cargo run --bin the_quizz_web&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;Les plugins&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;staticfile : permet d'inclure des fichiers statiques (javascript, css, html, polices, images etc.)&lt;/li&gt;
+&lt;li&gt;router : préciser les différentes urls de l'applicatif (en GET et POST)&lt;/li&gt;
+&lt;li&gt;mount : outil glue permettant de délivrer des routes et des données statiques au sein du même serveur.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Templates&lt;/h3&gt;
+&lt;p&gt;Je suis encore un utilisateur de &lt;strong&gt;Django&lt;/strong&gt; et &lt;strong&gt;Flask&lt;/strong&gt; et des langages de templates tel que &lt;strong&gt;Jinja&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;J'ai découvert que &lt;strong&gt;Jinja&lt;/strong&gt; était en parti supporté par &lt;strong&gt;Rust&lt;/strong&gt; via &lt;strong&gt;&lt;a href="https://github.com/Keats/tera"&gt;Tera&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Vu que j'ai carte libre, je parts donc sur cette techno.&lt;/p&gt;
+&lt;p&gt;Pour compiler le template, il suffit d'utiliser&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;cargo run --bin compile_templates&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h3&gt;Refactoring&lt;/h3&gt;
+&lt;p&gt;Vu que l'on a désormais 2 applicatifs (&lt;strong&gt;cli&lt;/strong&gt; et &lt;strong&gt;web&lt;/strong&gt;), il est utile de partager des ressources en commun : tout est centralisé dans le fichier &lt;strong&gt;lib.rs&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Côté client&lt;/h2&gt;
+&lt;p&gt;Pour ceux qui ne l'on pas encore compris, j'ai un vrai mépris pour les technos autours de &lt;strong&gt;Javascript&lt;/strong&gt; : c'est unsafe à souhait et à tous les désavantages d'un langage interpreté.&lt;/p&gt;
+&lt;p&gt;Néanmoins, je vais essayer d'en tirer le meilleur en utilisant &lt;a href="stack-frontend.html"&gt;&lt;strong&gt;ma nouvelle stack frontend&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Afin de créer l'ensemble des fichiers statiques du projet, il vous suffirat de faire :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;cd static &amp;amp;&amp;amp; gulp&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;IHM&lt;/h2&gt;
+&lt;p&gt;L'utilisation d'une interface web n'étant pas véritablement équivalente, il y a quelques différences :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;pas de possibilité de quitter l'applicatif&lt;/li&gt;
+&lt;li&gt;les raccourcis clavier ne peuvent être équivalent : en revanche, vous pouvez passez d'un bouton à un autre avec &lt;kbd&gt;Tab&lt;/kbd&gt; ou &lt;kbd&gt;MAJ&lt;/kbd&gt; + &lt;kbd&gt;Tab&lt;/kbd&gt; et valider ce choix avec &lt;kbd&gt;↵&lt;/kbd&gt; (touche entrée)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Si vous utilisez une mauvaise version de NodeJS&lt;/h3&gt;
+&lt;p&gt;Plusieurs librairies sont encore imcompatibles avec la dernière version de NodeJS (6).
+Un sous-dépendance me pose encore soucis à l'heure actuel : il est donc nécessaire de passer par une version plus ancienne.
+Si vous souhaitez être tranquille, je pense que Node 4 (une version LTS) me semble le plus approprié.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;1 Vider le cache de NPM&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;sudo npm cache clean -f&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2 Installer un mini soft appelé tout simplement &lt;strong&gt;n&lt;/strong&gt; qui gère exclusivement l'installation de &lt;strong&gt;Node&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;sudo npm install -g n&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;3 Installer la dernière version stable de NPM&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;sudo n stable # pour node 5 et sudo n lts pour la version 4&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Bounty&lt;/h2&gt;
+&lt;p&gt;Si vous utilisez &lt;strong&gt;&lt;a href="aide-memoire-tmux.html"&gt;Tmux et Tmuxp&lt;/a&gt;&lt;/strong&gt;, voici une petite config qui devrait vous simplifier la vie :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-yaml"&gt;session_name: the quizz
+windows:
+    - window_name: watch (web)
+      layout:  main-vertical
+      shell_command_before:
+        - cd ~/misc/rust/the_quizz
+      panes:
+        - shell_command:
+          - cd static
+          - echo 'gulp'
+          - gulp
+        - cargo run --bin compile_templates
+        - cargo run --bin the_quizz_web
+    - window_name: cli
+      layout:  main-vertical
+      shell_command_before:
+        - cd ~/misc/rust/the_quizz
+      panes:
+        - shell_command:
+          - cargo run --bin the_quizz
+        - git status&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Y'a vraiment beaucoup de dépendances abordées dans cette étape.&lt;/p&gt;
+&lt;p&gt;D'ailleurs, il est désormais possible de les voir via un graphique.&lt;/p&gt;
+&lt;p&gt;Vous pouvez en faire autant : &lt;a href="./stack-rust.html#cargo-graph"&gt;créer un graphique de dépendance Rust&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Les évolutions devraient ralentir de ce côté pour la suite.&lt;/p&gt;
+&lt;h2&gt;Evolution pour l'étape n° 3&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Je viens de découvrir un &lt;strong&gt;ORM&lt;/strong&gt; (viable) pour Rust : &lt;a href="http://diesel.rs"&gt;diesel&lt;/a&gt; ça serait vraiment bête de s'en priver!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Utilisation des &lt;a href="http://caniuse.com/#search=namevalue-storage"&gt;&lt;strong&gt;API Html5&lt;/strong&gt; de stockage&lt;/a&gt; et d'utilisation du &lt;a href="http://caniuse.com/#feat=offline-apps"&gt;mode offline&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Version Cli : détection des évènements souris&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 07 Aug 2016 15:15:35 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-23:the-quizz-part-2.html</guid><category>rust</category><category>gettext</category><category>cli</category><category>postgresql</category></item><item><title>The QuiZz : Partie 1</title><link>http://mothsart.github.io/the-quizz-part-1.html</link><description>&lt;h2&gt;The QuiZz : Partie 1&lt;/h2&gt;
+&lt;p&gt;Après mon apprentissage de Rust (doc, tutos etc.), j'ai décidé de m'atteler à un projet un peu plus abouti.&lt;/p&gt;
+&lt;p&gt;Comme toujours, je pars du principe qu'il vaut mieux se lancer sur des projets minimalistes et allez au bout plutôt que de partir dans du gargantuesque et bacler.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The QuiZz&lt;/strong&gt; c'est donc un logiciel créé dans l'optique d'apprendre &lt;strong&gt;Rust&lt;/strong&gt; et ses librairies, le tout en plusieurs étapes :
+&lt;a href="https://github.com/mothsART/the_quizz/releases/tag/part1"&gt;dépôt Git : Etape 1&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;L'étape 1 : le minimum syndical mais quelques bases tout de même&lt;/h2&gt;
+&lt;h3&gt;Utilisation de Rustbox&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/gchp/rustbox"&gt;RustBox&lt;/a&gt;&lt;/strong&gt; est une implémentation de &lt;strong&gt;Termbox&lt;/strong&gt; en Rust.&lt;/p&gt;
+&lt;p&gt;En somme, ça permet de faire des appli en &lt;strong&gt;cli&lt;/strong&gt; à la manière de &lt;strong&gt;NCurses&lt;/strong&gt; mais via une API la plus simple possible.&lt;/p&gt;
+&lt;h3&gt;The QuiZz en français&lt;/h3&gt;
+&lt;p&gt;J'ai toujours préféré réfléchir à l'&lt;strong&gt;i18n&lt;/strong&gt; dès la conception.
+Pour celà, &lt;strong&gt;gettext&lt;/strong&gt; reste l'indispensable.&lt;/p&gt;
+&lt;p&gt;La lib Rust qui l'implémente est vraiment très spartiate mais fait son job.
+Néanmoins, il m'a fallu utiliser &lt;strong&gt;&lt;a href="http://babel.pocoo.org/en/latest"&gt;Babel&lt;/a&gt;&lt;/strong&gt; pour compiler mon &lt;strong&gt;.po&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;Contenu dans PostGreSQL&lt;/h3&gt;
+&lt;p&gt;En terme de base de donnée SQL, &lt;strong&gt;PostGreSQL&lt;/strong&gt; est, pour ma part, ce qui se fait de mieux (principalement en open-source) donc autant commmencer par là.&lt;/p&gt;
+&lt;p&gt;Même constat : le wrapper est minimaliste mais suffisant.&lt;/p&gt;
+&lt;h2&gt;Le concept&lt;/h2&gt;
+&lt;p&gt;On abonde le soft de questions/réponses et l'utilisateur final utilise une IHM lui permettant d'obtenir des questions (au hasard pour l'instant) et d'y répondre.&lt;/p&gt;
+&lt;p&gt;Pour simpler au maximum, &lt;strong&gt;The QuiZz&lt;/strong&gt; ne permet que de poser des questions fermés : &lt;kbd&gt;Oui&lt;/kbd&gt; ou &lt;kbd&gt;Non&lt;/kbd&gt;.&lt;/p&gt;
+&lt;p&gt;C'est très basique mais par conséquent très simple à appréhender.&lt;/p&gt;
+&lt;p&gt;Enfin, le logiciel répond par &lt;strong&gt;✔&lt;/strong&gt; ou &lt;strong&gt;✘&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;Config de PostGreSQL&lt;/h2&gt;
+&lt;p&gt;Je pars du principe que vous savez configurer une base Postgres.&lt;/p&gt;
+&lt;p&gt;Néanmoins, l'objectif de &lt;strong&gt;the_quizz&lt;/strong&gt; étant la pédagogie, j'utilise une config volontairement simpliste : utilisation en &lt;strong&gt;localhost&lt;/strong&gt; sans mot de passe.&lt;/p&gt;
+&lt;p&gt;Si vous n'avez strictement aucun bagage, le mieux est de paramêtrer ainsi votre fichier &lt;strong&gt;/pg_hba.conf&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-ini"&gt;local   all             all                                     trust&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;et de le redémarrer via&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;sudo service postgres restart&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Populariser sa base&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sql"&gt;create TABLE questions (
+id SERIAL PRIMARY KEY,
+entitled VARCHAR NOT NULL,
+explanation VARCHAR NULL,
+source VARCHAR NULL,
+response BOOLEAN NOT NULL
+);
+
+insert into questions (entitled, response) values ('Rust est-il un langage interprété ?', false);
+insert into questions (entitled, response) values ('Cargo est-il le gestionnaire de paquets de Rust ?', true);&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;IHM&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Pour lancer le soft, on fait : &lt;strong&gt;cargo run&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Pour en sortir, on appuie sur la touche &lt;strong&gt;q&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Pour sélectionner une réponse, on peut s'aider des flêches gauche &lt;kbd&gt;←&lt;/kbd&gt; et droite &lt;kbd&gt;→&lt;/kbd&gt;&lt;/li&gt;
+&lt;li&gt;Pour valider une sélection, on appuie sur &lt;kbd&gt;entrée&lt;/kbd&gt;
+ Sinon, on peut utiliser les raccourcis clavier &lt;kbd&gt;o&lt;/kbd&gt; pour &lt;strong&gt;Oui&lt;/strong&gt; (Attention, en anglais, on utilise &lt;kbd&gt;y&lt;/kbd&gt;) et &lt;kbd&gt;n&lt;/kbd&gt; pour &lt;strong&gt;Non&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Evolution pour l'étape n° 2&lt;/h2&gt;
+&lt;p&gt;Pour l'étape 2, je ne toucherais strictement à rien de l'existant.&lt;/p&gt;
+&lt;p&gt;Mon but est de reproduire le comportement du soft cette fois ci sous la forme d'une appli web via &lt;strong&gt;&lt;a href="http://ironframework.io"&gt;Iron&lt;/a&gt;&lt;/strong&gt; et d'utiliser &lt;strong&gt;&lt;a href="http://riotjs.com/fr"&gt;RiotJS&lt;/a&gt;&lt;/strong&gt; côté client.&lt;/p&gt;
+&lt;h2&gt;Vers l'infini et au delà&lt;/h2&gt;
+&lt;p&gt;Dans le désordre, voici les évolutions possibles :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;abstraction pour utiliser d'autres bases de données &lt;strong&gt;SQL&lt;/strong&gt; et &lt;strong&gt;NoSQL&lt;/strong&gt; (&lt;strong&gt;Redis&lt;/strong&gt; sans doute en priorité !)&lt;/li&gt;
+&lt;li&gt;une &lt;strong&gt;IHM&lt;/strong&gt; de type &lt;strong&gt;Dashboard&lt;/strong&gt; : édition des questions, statistiques etc.&lt;/li&gt;
+&lt;li&gt;une appli Android&lt;/li&gt;
+&lt;li&gt;un choix de réponses possibles &amp;gt; 2&lt;/li&gt;
+&lt;li&gt;des réponses ouvertes&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;pfuu, j'avais dit que c'était pas un projet sérieux.&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 07 Aug 2016 15:15:35 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-11:the-quizz-part-1.html</guid><category>rust</category><category>gettext</category><category>cli</category><category>postgresql</category></item><item><title>Ma stack Rust</title><link>http://mothsart.github.io/stack-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;En vrac, les outils que j'utilise et perfectionne dans mon apprentissage et mon utilisation du language &lt;strong&gt;Rust&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;Sublime-Text&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Support de la coloration synthaxique de Rust &lt;a href="https://packagecontrol.io/"&gt;https://packagecontrol.io/installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;BeautifyRust : formate le code Rust pour qu'il suive les bonnes conventions de codage. (et évite d'y penser)
+Nécessite et utilise : &lt;a href="https://github.com/rust-lang-nursery/rustfmt"&gt;rustfmt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RustAutocomplete&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Vous n'utilisez pas &lt;strong&gt;Sublime&lt;/strong&gt; ou vous désirez en savoir d'avantage : https://areweideyet.com/&lt;/p&gt;
+&lt;h2&gt;Editeurs en ligne&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://play.rust-lang.org"&gt;editeur&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.tutorialspoint.com/compile_rust_online.php"&gt;editeur multi-fichiers&lt;/a&gt; : permet d'éditer, compiler et exécuter des projets complets (répartis sur plusieurs fichiers) tout en proposant des outils d'import et d'export&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://rust.godbolt.org"&gt;compilateur GCC&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a href="#cargo-graph"&gt;Cargo graph&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Si vous désirez connaitre les dépendance de votre projet, vous pouvez étendre les fonctionnalités de &lt;strong&gt;cargo&lt;/strong&gt; avec &lt;strong&gt;&lt;a href="https://github.com/kbknapp/cargo-graph"&gt;cargo graph&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Pour simplifier encore les choses, je me suis créé un petit script python :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-python"&gt;import os
+import sys
+import subprocess
+import toml
+
+os.chdir(sys.argv[1])
+package_name = ''
+with open(&amp;quot;Cargo.toml&amp;quot;, &amp;quot;r&amp;quot;) as conffile:
+    config = toml.loads(conffile.read())
+    package_name = config[&amp;quot;package&amp;quot;][&amp;quot;name&amp;quot;]
+
+subprocess.call(
+    &amp;quot;cargo graph --optional-line-style dashed --optional-line-color red&amp;quot;
+    * &amp;quot; --optional-shape box --build-shape diamond&amp;quot;
+    * &amp;quot; --build-color green --build-line-color orange&amp;quot;
+    * &amp;quot; &amp;gt;| {0}.dot&amp;quot;.format(package_name),
+    shell=True
+)
+subprocess.call(
+    &amp;quot;dot -Tpng &amp;gt; {0}.png {0}.dot&amp;quot;.format(package_name),
+    shell=True
+)&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;et dans mon &lt;strong&gt;.zshrc&lt;/strong&gt; :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;graph () {
+    CARGO_PACKAGE_PATH=$PWD;
+    VIRTUAL_PATH=&amp;quot;my_scripts&amp;quot;
+    launchPythonScript &amp;quot;python3 ./cargo_graph.py $CARGO_PACKAGE_PATH&amp;quot;
+}&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Du coup, en appelant mon utilitaire &lt;strong&gt;graph&lt;/strong&gt;, je vais créer automatiquement à la source de mon projet, un fichier &lt;strong&gt;projet.dot&lt;/strong&gt; et &lt;strong&gt;projet.png&lt;/strong&gt; correspondant.
+Le nom du projet est directement récupérer dans le Cargo.toml.&lt;/p&gt;
+&lt;h2&gt;bot Irc &lt;a href="https://github.com/redox-os/playbot"&gt;Playbot&lt;/a&gt;&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-rust"&gt;playbot: std::mem::size_of::&amp;lt;bool&amp;gt;()&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;équivalent à :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-rust"&gt;fn main() {
+    println!(&amp;quot;{:?}&amp;quot;, std::mem::size_of::&amp;lt;bool&amp;gt;());
+}&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Coverage&lt;/h2&gt;
+&lt;p&gt;https://users.rust-lang.org/t/tutorial-how-to-collect-test-coverages-for-rust-project/650&lt;/p&gt;
+&lt;p&gt;https://github.com/hyperium/hyper/blob/master/.travis.yml&lt;/p&gt;
+&lt;h2&gt;Débuggage&lt;/h2&gt;
+&lt;p&gt;Dans votre bashrc et/ou zshrc :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;export RUST_BACKTRACE=1
+
+#sh
+strace cargo run --bin projet&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Rust fait beaucoup de vérifications au niveau de la compilation mais ne peut bien évidement pas couvrir la partie dynamique.
+Il subsite donc des erreurs à l'exécution : pour les débusquer, &lt;strong&gt;gdb&lt;/strong&gt; est notre ami.&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;gdb target/debug/le_fichier_concerne
+(gdb) run&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Déploiement&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;cargo build --release&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;https://github.com/mmstick/cargo-deb&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-rust.html</guid><category>rust</category></item></channel></rss>

@@ -1,0 +1,22 @@
+html, body, nav * {
+    margin: 0;
+    height: 0;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 50px;
+}
+
+.interactive_element {
+    margin-top: 50px;
+    height: calc(-54px + 100vh);
+    width: 100%;
+    /*background: url(campement.min.svg) no-repeat center center fixed;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;*/
+}

@@ -4,1051 +4,1121 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>/</loc>
-<lastmod>2016-09-21T19:37:33-00:00</lastmod>
+<loc>http://mothsart.github.io/</loc>
+<lastmod>2016-10-03T01:42:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/archives.html</loc>
-<lastmod>2016-09-21T19:37:33-00:00</lastmod>
+<loc>http://mothsart.github.io/archives.html</loc>
+<lastmod>2016-10-03T01:42:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tags.html</loc>
-<lastmod>2016-09-21T19:37:33-00:00</lastmod>
+<loc>http://mothsart.github.io/tags.html</loc>
+<lastmod>2016-10-03T01:42:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/categories.html</loc>
-<lastmod>2016-09-21T19:37:33-00:00</lastmod>
+<loc>http://mothsart.github.io/categories.html</loc>
+<lastmod>2016-10-03T01:42:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/labo/frontend/dragndrop/script.js</loc>
-<lastmod>2016-09-21T19:37:33-00:00</lastmod>
+<loc>http://mothsart.github.io/labo/frontend/modernizr/pluginDetect.js</loc>
+<lastmod>2016-10-03T01:42:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/labo/base.html</loc>
-<lastmod>2016-09-21T19:37:33-00:00</lastmod>
+<loc>http://mothsart.github.io/labo/frontend/modernizr/index.html</loc>
+<lastmod>2016-10-03T01:42:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/labo/frontend/modernizr/pluginDetect.js</loc>
-<lastmod>2016-09-21T19:37:33-00:00</lastmod>
+<loc>http://mothsart.github.io/labo/frontend/menu_dragndrop/index.html</loc>
+<lastmod>2016-10-03T01:42:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/labo/frontend/vanilla/script.js</loc>
-<lastmod>2016-09-21T19:37:33-00:00</lastmod>
+<loc>http://mothsart.github.io/labo/frontend/modernizr/modernizr-custom.js</loc>
+<lastmod>2016-10-03T01:42:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/labo/frontend/ripple_onclick/script.js</loc>
-<lastmod>2016-09-21T19:37:33-00:00</lastmod>
+<loc>http://mothsart.github.io/labo/frontend/vanilla/script.js</loc>
+<lastmod>2016-10-03T01:42:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/labo/frontend/menu_dragndrop/index.html</loc>
-<lastmod>2016-09-21T19:37:33-00:00</lastmod>
+<loc>http://mothsart.github.io/labo/frontend/vanilla/index.html</loc>
+<lastmod>2016-10-03T01:42:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/labo/frontend/dragndrop/index.html</loc>
-<lastmod>2016-09-21T19:37:33-00:00</lastmod>
+<loc>http://mothsart.github.io/labo/frontend/ripple_onclick/index.html</loc>
+<lastmod>2016-10-03T01:42:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/labo/frontend/modernizr/duckTypingBrowserDetection.js</loc>
-<lastmod>2016-09-21T19:37:33-00:00</lastmod>
+<loc>http://mothsart.github.io/labo/frontend/ripple_onclick/script.js</loc>
+<lastmod>2016-10-03T01:42:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/labo/frontend/ripple_onclick/index.html</loc>
-<lastmod>2016-09-21T19:37:33-00:00</lastmod>
+<loc>http://mothsart.github.io/labo/frontend/vanilla/benchmark.js</loc>
+<lastmod>2016-10-03T01:42:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/labo/frontend/ripple_onclick/animate.css</loc>
-<lastmod>2016-09-21T19:37:33-00:00</lastmod>
+<loc>http://mothsart.github.io/labo/frontend/interactive_svg/campement.min.svg</loc>
+<lastmod>2016-10-03T01:42:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/labo/frontend/vanilla/benchmark.js</loc>
-<lastmod>2016-09-21T19:37:33-00:00</lastmod>
+<loc>http://mothsart.github.io/labo/frontend/interactive_svg/interactive_svg.css</loc>
+<lastmod>2016-10-03T01:42:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/labo/frontend/modernizr/script.js</loc>
-<lastmod>2016-09-21T19:37:33-00:00</lastmod>
+<loc>http://mothsart.github.io/labo/frontend/dragndrop/script.js</loc>
+<lastmod>2016-10-03T01:42:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/labo/frontend/modernizr/is.js</loc>
-<lastmod>2016-09-21T19:37:33-00:00</lastmod>
+<loc>http://mothsart.github.io/labo/frontend/ripple_onclick/animate.css</loc>
+<lastmod>2016-10-03T01:42:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/labo/frontend/modernizr/index.html</loc>
-<lastmod>2016-09-21T19:37:33-00:00</lastmod>
+<loc>http://mothsart.github.io/labo/frontend/interactive_svg/index.html</loc>
+<lastmod>2016-10-03T01:42:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/labo/frontend/modernizr/modernizr-custom.js</loc>
-<lastmod>2016-09-21T19:37:33-00:00</lastmod>
+<loc>http://mothsart.github.io/labo/frontend/modernizr/duckTypingBrowserDetection.js</loc>
+<lastmod>2016-10-03T01:42:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/labo/frontend/menu_dragndrop/script.js</loc>
-<lastmod>2016-09-21T19:37:33-00:00</lastmod>
+<loc>http://mothsart.github.io/labo/frontend/modernizr/is.js</loc>
+<lastmod>2016-10-03T01:42:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/labo/frontend/vanilla/index.html</loc>
-<lastmod>2016-09-21T19:37:33-00:00</lastmod>
+<loc>http://mothsart.github.io/labo/frontend/modernizr/script.js</loc>
+<lastmod>2016-10-03T01:42:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/pages/le-labo-du-nerd.html</loc>
-<lastmod>2016-04-24T11:30:00+02:00</lastmod>
+<loc>http://mothsart.github.io/labo/frontend/dragndrop/index.html</loc>
+<lastmod>2016-10-03T01:42:14-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://mothsart.github.io/labo/frontend/interactive_svg/interactive_svg.js</loc>
+<lastmod>2016-10-03T01:42:14-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://mothsart.github.io/labo/base.html</loc>
+<lastmod>2016-10-03T01:42:14-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://mothsart.github.io/labo/frontend/menu_dragndrop/script.js</loc>
+<lastmod>2016-10-03T01:42:14-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://mothsart.github.io/pages/le-labo-du-nerd.html</loc>
+<lastmod>2016-06-22T19:24:14+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/exemples-rust.html</loc>
-<lastmod>2016-12-11T00:00:00+01:00</lastmod>
+<loc>http://mothsart.github.io/openclipart.html</loc>
+<lastmod>2016-10-03T01:38:01+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/the-quizz-part-1.html</loc>
-<lastmod>2016-06-20T21:05:00+02:00</lastmod>
+<loc>http://mothsart.github.io/pelicans-template.html</loc>
+<lastmod>2016-09-24T22:45:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/abuledu.html</loc>
-<lastmod>2016-07-12T21:40:00+02:00</lastmod>
+<loc>http://mothsart.github.io/python-pip.html</loc>
+<lastmod>2016-10-03T01:38:01+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/abuledu-camp-paleolithique.html</loc>
-<lastmod>2016-07-12T21:40:00+02:00</lastmod>
+<loc>http://mothsart.github.io/vectoriel.html</loc>
+<lastmod>2015-12-11T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/oh-merde-git.html</loc>
-<lastmod>2016-07-12T21:40:00+02:00</lastmod>
+<loc>http://mothsart.github.io/abuledu-camp-paleolithique.html</loc>
+<lastmod>2016-10-03T00:56:09+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/coreutils.html</loc>
-<lastmod>2016-05-28T18:30:00+02:00</lastmod>
+<loc>http://mothsart.github.io/oh-merde-git.html</loc>
+<lastmod>2016-09-21T19:39:51+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/que-penser-de-swift.html</loc>
-<lastmod>2016-05-28T14:30:00+02:00</lastmod>
+<loc>http://mothsart.github.io/rust-libs.html</loc>
+<lastmod>2015-12-11T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/dislike-apple.html</loc>
-<lastmod>2016-07-28T12:44:00+02:00</lastmod>
+<loc>http://mothsart.github.io/tts.html</loc>
+<lastmod>2015-12-11T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/nodejs.html</loc>
-<lastmod>2016-05-23T23:10:00+02:00</lastmod>
+<loc>http://mothsart.github.io/videos.html</loc>
+<lastmod>2015-12-11T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/npm.html</loc>
-<lastmod>2016-05-15T14:05:00+02:00</lastmod>
+<loc>http://mothsart.github.io/webassembly.html</loc>
+<lastmod>2015-12-11T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/gulp.html</loc>
-<lastmod>2016-05-14T20:31:00+02:00</lastmod>
+<loc>http://mothsart.github.io/3D.html</loc>
+<lastmod>2016-09-21T19:39:51+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/postcss.html</loc>
-<lastmod>2016-05-14T13:40:00+02:00</lastmod>
+<loc>http://mothsart.github.io/algo-images.html</loc>
+<lastmod>2015-12-11T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/the-quizz-part-2.html</loc>
-<lastmod>2016-08-07T14:35:00+02:00</lastmod>
+<loc>http://mothsart.github.io/blender.html</loc>
+<lastmod>2015-12-11T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/postgresql.html</loc>
-<lastmod>2016-05-04T19:55:00+02:00</lastmod>
+<loc>http://mothsart.github.io/photo-retouche.html</loc>
+<lastmod>2015-12-11T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/bug.html</loc>
-<lastmod>2016-05-01T13:30:00+02:00</lastmod>
+<loc>http://mothsart.github.io/snap.html</loc>
+<lastmod>2015-12-11T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/babeljs.html</loc>
-<lastmod>2016-04-24T12:40:00+02:00</lastmod>
+<loc>http://mothsart.github.io/exemples-rust.html</loc>
+<lastmod>2016-09-21T19:39:51+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/riotjs.html</loc>
-<lastmod>2016-04-24T12:40:00+02:00</lastmod>
+<loc>http://mothsart.github.io/abuledu.html</loc>
+<lastmod>2016-09-21T19:39:51+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/stack-frontend.html</loc>
-<lastmod>2016-04-24T12:20:00+02:00</lastmod>
+<loc>http://mothsart.github.io/bench-linux.html</loc>
+<lastmod>2015-12-11T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/stack-rust.html</loc>
-<lastmod>2016-04-24T12:00:00+02:00</lastmod>
+<loc>http://mothsart.github.io/logiciels-linux.html</loc>
+<lastmod>2016-10-03T00:56:09+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/pourquoi-rust.html</loc>
-<lastmod>2016-03-20T10:00:00+01:00</lastmod>
+<loc>http://mothsart.github.io/pourquoi-wayland.html</loc>
+<lastmod>2015-12-11T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/pourquoi-je-boude-nodejs.html</loc>
-<lastmod>2016-07-30T13:00:00+02:00</lastmod>
+<loc>http://mothsart.github.io/projets-libre-educatif.html</loc>
+<lastmod>2016-07-30T14:01:26+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/stockage-frontend.html</loc>
-<lastmod>2016-03-19T16:00:00+01:00</lastmod>
+<loc>http://mothsart.github.io/windows-vs-linux.html</loc>
+<lastmod>2015-12-11T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/reflexion-imprimante-3D.html</loc>
-<lastmod>2016-07-28T13:05:00+02:00</lastmod>
+<loc>http://mothsart.github.io/correcteur.html</loc>
+<lastmod>2016-10-03T00:56:09+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/reflexion-dvcs.html</loc>
-<lastmod>2016-07-28T13:09:00+02:00</lastmod>
+<loc>http://mothsart.github.io/macros-rust.html</loc>
+<lastmod>2016-09-21T19:39:51+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/aide-memoire-tmux.html</loc>
-<lastmod>2016-02-26T20:48:00+01:00</lastmod>
+<loc>http://mothsart.github.io/phonetic.html</loc>
+<lastmod>2016-09-21T19:39:51+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/pelicans-template.html</loc>
-<lastmod>2016-07-28T12:45:00+02:00</lastmod>
+<loc>http://mothsart.github.io/web-offline.html</loc>
+<lastmod>2015-12-11T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/aide-memoire-git.html</loc>
-<lastmod>2016-02-14T00:00:00+01:00</lastmod>
+<loc>http://mothsart.github.io/aide-memoire-git.html</loc>
+<lastmod>2016-10-03T00:56:09+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/mon-gitconfig.html</loc>
-<lastmod>2016-02-14T00:00:00+01:00</lastmod>
+<loc>http://mothsart.github.io/aide-memoire-sh.html</loc>
+<lastmod>2016-07-30T14:01:26+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/aide-memoire-sublime-text.html</loc>
+<loc>http://mothsart.github.io/aide-memoire-sublime-text.html</loc>
 <lastmod>2016-01-15T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/aide-memoire-vi.html</loc>
+<loc>http://mothsart.github.io/aide-memoire-tmux.html</loc>
+<lastmod>2016-10-03T00:56:09+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://mothsart.github.io/aide-memoire-vi.html</loc>
 <lastmod>2016-01-15T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/db-bench.html</loc>
-<lastmod>2016-07-28T12:50:00+02:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>/projets-libre-educatif.html</loc>
-<lastmod>2016-07-30T12:55:00+02:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>/3D.html</loc>
+<loc>http://mothsart.github.io/aide-memoire-zsh.html</loc>
 <lastmod>2015-12-11T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/aide-memoire-sh.html</loc>
+<loc>http://mothsart.github.io/ssh.html</loc>
 <lastmod>2015-12-11T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/aide-memoire-zsh.html</loc>
-<lastmod>2015-12-11T00:00:00+01:00</lastmod>
+<loc>http://mothsart.github.io/dislike-apple.html</loc>
+<lastmod>2016-07-30T14:01:26+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/algo-images.html</loc>
-<lastmod>2015-12-11T00:00:00+01:00</lastmod>
+<loc>http://mothsart.github.io/que-penser-de-swift.html</loc>
+<lastmod>2016-06-09T20:19:28+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/bench-linux.html</loc>
-<lastmod>2015-12-11T00:00:00+01:00</lastmod>
+<loc>http://mothsart.github.io/coreutils.html</loc>
+<lastmod>2016-08-07T15:15:35+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/blender.html</loc>
-<lastmod>2015-12-11T00:00:00+01:00</lastmod>
+<loc>http://mothsart.github.io/bonnes-pratiques-js.html</loc>
+<lastmod>2016-09-21T19:39:51+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/bonnes-pratiques-js.html</loc>
-<lastmod>2015-12-11T00:00:00+01:00</lastmod>
+<loc>http://mothsart.github.io/gulp.html</loc>
+<lastmod>2016-05-23T01:00:20+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/correcteur.html</loc>
-<lastmod>2015-12-11T00:00:00+01:00</lastmod>
+<loc>http://mothsart.github.io/nodejs.html</loc>
+<lastmod>2016-05-23T01:00:20+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/encodage.html</loc>
-<lastmod>2015-12-11T00:00:00+01:00</lastmod>
+<loc>http://mothsart.github.io/npm.html</loc>
+<lastmod>2016-08-07T15:15:35+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/labo-du-dev-frontend.html</loc>
-<lastmod>2015-12-11T00:00:00+01:00</lastmod>
+<loc>http://mothsart.github.io/postcss.html</loc>
+<lastmod>2016-05-23T01:00:20+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/logiciels-linux.html</loc>
-<lastmod>2015-12-11T00:00:00+01:00</lastmod>
+<loc>http://mothsart.github.io/the-quizz-part-2.html</loc>
+<lastmod>2016-08-07T15:15:35+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/macros-rust.html</loc>
-<lastmod>2015-12-11T00:00:00+01:00</lastmod>
+<loc>http://mothsart.github.io/postgresql.html</loc>
+<lastmod>2016-07-30T14:01:26+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/pelican.html</loc>
-<lastmod>2015-12-11T00:00:00+01:00</lastmod>
+<loc>http://mothsart.github.io/the-quizz-part-1.html</loc>
+<lastmod>2016-08-07T15:15:35+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/phonetic.html</loc>
-<lastmod>2015-12-11T00:00:00+01:00</lastmod>
+<loc>http://mothsart.github.io/babeljs.html</loc>
+<lastmod>2016-05-23T01:00:20+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/photo-retouche.html</loc>
-<lastmod>2015-12-11T00:00:00+01:00</lastmod>
+<loc>http://mothsart.github.io/bug.html</loc>
+<lastmod>2016-05-11T00:01:18+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/pourquoi-wayland.html</loc>
-<lastmod>2015-12-11T00:00:00+01:00</lastmod>
+<loc>http://mothsart.github.io/mon-gitconfig.html</loc>
+<lastmod>2016-07-30T14:01:26+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/rust-libs.html</loc>
-<lastmod>2015-12-11T00:00:00+01:00</lastmod>
+<loc>http://mothsart.github.io/pourquoi-rust.html</loc>
+<lastmod>2016-09-21T19:39:51+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/snap.html</loc>
-<lastmod>2015-12-11T00:00:00+01:00</lastmod>
+<loc>http://mothsart.github.io/riotjs.html</loc>
+<lastmod>2016-05-23T01:00:20+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/ssh.html</loc>
-<lastmod>2015-12-11T00:00:00+01:00</lastmod>
+<loc>http://mothsart.github.io/stack-frontend.html</loc>
+<lastmod>2016-05-23T01:00:20+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tts.html</loc>
-<lastmod>2015-12-11T00:00:00+01:00</lastmod>
+<loc>http://mothsart.github.io/stack-rust.html</loc>
+<lastmod>2016-09-21T19:39:51+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/videos.html</loc>
-<lastmod>2015-12-11T00:00:00+01:00</lastmod>
+<loc>http://mothsart.github.io/pourquoi-je-boude-nodejs.html</loc>
+<lastmod>2016-07-30T14:01:26+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/web-offline.html</loc>
-<lastmod>2015-12-11T00:00:00+01:00</lastmod>
+<loc>http://mothsart.github.io/encodage.html</loc>
+<lastmod>2016-07-12T23:29:54+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/webassembly.html</loc>
-<lastmod>2015-12-11T00:00:00+01:00</lastmod>
+<loc>http://mothsart.github.io/stockage-frontend.html</loc>
+<lastmod>2016-07-30T14:01:26+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/windows-vs-linux.html</loc>
-<lastmod>2015-12-11T00:00:00+01:00</lastmod>
+<loc>http://mothsart.github.io/reflexion-dvcs.html</loc>
+<lastmod>2016-09-21T19:39:51+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/category/aide-memoire.html</loc>
-<lastmod>2016-05-28T18:30:00+00:09</lastmod>
+<loc>http://mothsart.github.io/reflexion-imprimante-3D.html</loc>
+<lastmod>2016-07-30T14:01:26+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://mothsart.github.io/db-bench.html</loc>
+<lastmod>2016-07-30T14:01:26+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://mothsart.github.io/labo-du-dev-frontend.html</loc>
+<lastmod>2016-05-23T01:00:20+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://mothsart.github.io/pelican.html</loc>
+<lastmod>2016-10-03T00:56:09+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://mothsart.github.io/category/aide-memoire.html</loc>
+<lastmod>2016-10-03T01:38:01+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://mothsart.github.io/category/frontend.html</loc>
+<lastmod>2016-09-21T19:39:51+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://mothsart.github.io/category/misc.html</loc>
+<lastmod>2016-10-03T01:38:01+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://mothsart.github.io/category/reflexion.html</loc>
+<lastmod>2016-10-03T00:56:09+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/category/frontend.html</loc>
-<lastmod>2016-05-23T23:10:00+00:09</lastmod>
+<loc>http://mothsart.github.io/category/rust.html</loc>
+<lastmod>2016-09-21T19:39:51+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/category/misc.html</loc>
-<lastmod>2016-07-30T12:55:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/ssh.html</loc>
+<lastmod>2016-06-20T20:45:10+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/category/reflexion.html</loc>
-<lastmod>2016-07-30T13:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/utf.html</loc>
+<lastmod>2016-07-12T23:29:54+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/category/rust.html</loc>
-<lastmod>2016-12-11T00:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/postgres.html</loc>
+<lastmod>2016-07-30T14:01:26+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/wayland.html</loc>
-<lastmod>2015-12-11T00:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/babeljs.html</loc>
+<lastmod>2016-05-23T01:00:20+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/cli.html</loc>
-<lastmod>2016-10-05T19:12:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/nodejs.html</loc>
+<lastmod>2016-08-07T15:15:35+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/blender.html</loc>
-<lastmod>2015-12-11T00:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/blender.html</loc>
+<lastmod>2016-08-07T15:15:35+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/utf.html</loc>
-<lastmod>2015-12-11T00:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/bug.html</loc>
+<lastmod>2016-05-11T00:01:18+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/grammaire.html</loc>
-<lastmod>2015-12-11T00:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/apple.html</loc>
+<lastmod>2016-07-30T14:01:26+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/npm.html</loc>
-<lastmod>2016-05-15T14:05:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/web.html</loc>
+<lastmod>2016-07-30T14:01:26+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/offline.html</loc>
-<lastmod>2015-12-11T00:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/postcss.html</loc>
+<lastmod>2016-05-23T01:00:20+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/algo.html</loc>
-<lastmod>2015-12-11T00:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/c.html</loc>
+<lastmod>2016-09-21T19:39:51+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/apple.html</loc>
-<lastmod>2016-07-28T12:44:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/tmux.html</loc>
+<lastmod>2016-10-03T00:56:09+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/snap.html</loc>
-<lastmod>2015-12-11T00:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/ios.html</loc>
+<lastmod>2016-07-30T14:01:26+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/css.html</loc>
-<lastmod>2016-05-14T20:31:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/grammaire.html</loc>
+<lastmod>2016-10-03T00:56:09+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/ios.html</loc>
-<lastmod>2016-07-28T12:44:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/libre.html</loc>
+<lastmod>2016-10-03T00:56:09+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/encodage.html</loc>
-<lastmod>2015-12-11T00:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/picture.html</loc>
+<lastmod>2016-08-07T15:15:35+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/tablette.html</loc>
-<lastmod>2016-07-28T12:44:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/phonetic.html</loc>
+<lastmod>2016-09-21T19:39:51+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/metaphone.html</loc>
-<lastmod>2015-12-11T00:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/html.html</loc>
+<lastmod>2016-05-23T01:00:20+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/html.html</loc>
-<lastmod>2016-05-14T20:31:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/template.html</loc>
+<lastmod>2016-10-03T00:56:09+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/git.html</loc>
-<lastmod>2016-07-28T13:09:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/db.html</loc>
+<lastmod>2016-07-30T14:01:26+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/sql.html</loc>
-<lastmod>2016-07-28T12:50:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/python.html</loc>
+<lastmod>2016-10-03T01:38:01+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/tts.html</loc>
-<lastmod>2015-12-11T00:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/bench.html</loc>
+<lastmod>2016-07-30T14:01:26+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/frontend.html</loc>
-<lastmod>2016-05-14T20:31:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/pip.html</loc>
+<lastmod>2016-10-03T01:38:01+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/3d.html</loc>
-<lastmod>2016-07-28T13:05:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/npm.html</loc>
+<lastmod>2016-08-07T15:15:35+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/windows.html</loc>
-<lastmod>2015-12-11T00:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/zsh.html</loc>
+<lastmod>2016-10-03T00:56:09+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/python.html</loc>
-<lastmod>2016-03-20T10:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/js.html</loc>
+<lastmod>2016-09-21T19:39:51+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/template.html</loc>
-<lastmod>2016-07-28T12:45:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/javascript.html</loc>
+<lastmod>2016-09-21T19:39:51+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/ssh.html</loc>
-<lastmod>2015-12-11T00:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/phonex.html</loc>
+<lastmod>2016-09-21T19:39:51+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/linux.html</loc>
-<lastmod>2016-07-30T12:55:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/ubuntu.html</loc>
+<lastmod>2016-08-07T15:15:35+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/javascript.html</loc>
-<lastmod>2016-07-30T13:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/sql.html</loc>
+<lastmod>2016-07-30T14:01:26+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/mencoder.html</loc>
-<lastmod>2015-12-11T00:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/rust.html</loc>
+<lastmod>2016-09-21T19:39:51+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/phonex.html</loc>
-<lastmod>2015-12-11T00:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/gettext.html</loc>
+<lastmod>2016-08-07T15:15:35+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/vi.html</loc>
-<lastmod>2016-01-15T00:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/soft.html</loc>
+<lastmod>2016-10-03T00:56:09+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/swift.html</loc>
-<lastmod>2016-05-28T14:30:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/eduatif.html</loc>
+<lastmod>2016-07-30T14:01:26+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/riotjs.html</loc>
-<lastmod>2016-04-24T12:40:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/hg.html</loc>
+<lastmod>2016-09-21T19:39:51+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/benchmark.html</loc>
-<lastmod>2016-07-28T12:50:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/sh.html</loc>
+<lastmod>2016-08-07T15:15:35+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/c.html</loc>
-<lastmod>2016-03-20T10:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/mercurial.html</loc>
+<lastmod>2016-09-21T19:39:51+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/tmux.html</loc>
-<lastmod>2016-02-26T20:48:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/wayland.html</loc>
+<lastmod>2016-07-12T23:29:54+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/correcteur.html</loc>
-<lastmod>2015-12-11T00:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/babel.html</loc>
+<lastmod>2016-05-23T01:00:20+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/babel.html</loc>
-<lastmod>2016-04-24T12:40:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/vi.html</loc>
+<lastmod>2016-06-20T20:45:10+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/ubuntu.html</loc>
-<lastmod>2015-12-11T00:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/algo.html</loc>
+<lastmod>2016-08-07T15:15:35+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/stockage.html</loc>
-<lastmod>2016-03-19T16:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/tts.html</loc>
+<lastmod>2016-09-21T19:39:51+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/libre.html</loc>
-<lastmod>2016-07-30T12:55:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/frontend.html</loc>
+<lastmod>2016-07-30T14:01:26+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/js.html</loc>
-<lastmod>2016-05-14T20:31:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/java.html</loc>
+<lastmod>2016-09-21T19:39:51+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/postcss.html</loc>
-<lastmod>2016-05-14T13:40:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/swift.html</loc>
+<lastmod>2016-06-09T20:19:28+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/sublimetext.html</loc>
-<lastmod>2016-01-15T00:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/offline.html</loc>
+<lastmod>2016-06-20T20:53:59+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/postgres.html</loc>
-<lastmod>2016-05-04T19:55:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/tablette.html</loc>
+<lastmod>2016-07-30T14:01:26+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/picture.html</loc>
-<lastmod>2015-12-11T00:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/linux.html</loc>
+<lastmod>2016-10-03T00:56:09+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/imprimante.html</loc>
-<lastmod>2016-07-28T13:05:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/tmuxp.html</loc>
+<lastmod>2016-10-03T00:56:09+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/postgresql.html</loc>
-<lastmod>2016-10-05T19:12:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/sublimetext.html</loc>
+<lastmod>2016-06-20T20:45:10+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/phonetic.html</loc>
-<lastmod>2015-12-11T00:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/postgresql.html</loc>
+<lastmod>2016-08-07T15:15:35+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/babeljs.html</loc>
-<lastmod>2016-04-24T12:40:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/openclipart.html</loc>
+<lastmod>2016-10-03T01:38:01+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/bug.html</loc>
-<lastmod>2016-05-01T13:30:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/imprimante.html</loc>
+<lastmod>2016-07-30T14:01:26+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/eduatif.html</loc>
-<lastmod>2016-07-30T12:55:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/darcs.html</loc>
+<lastmod>2016-09-21T19:39:51+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/zsh.html</loc>
-<lastmod>2015-12-11T00:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/correcteur.html</loc>
+<lastmod>2016-10-03T00:56:09+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/web.html</loc>
-<lastmod>2016-07-30T13:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/ffmpeg.html</loc>
+<lastmod>2016-09-21T19:39:51+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/bench.html</loc>
-<lastmod>2016-07-28T12:50:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/git.html</loc>
+<lastmod>2016-10-03T00:56:09+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/nodejs.html</loc>
-<lastmod>2016-05-23T23:10:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/metaphone.html</loc>
+<lastmod>2016-09-21T19:39:51+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/darcs.html</loc>
-<lastmod>2016-07-28T13:09:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/css.html</loc>
+<lastmod>2016-05-23T01:00:20+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/java.html</loc>
-<lastmod>2016-03-20T10:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/stockage.html</loc>
+<lastmod>2016-07-30T14:01:26+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/ffmpeg.html</loc>
-<lastmod>2015-12-11T00:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/3d.html</loc>
+<lastmod>2016-09-21T19:39:51+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/soft.html</loc>
-<lastmod>2015-12-11T00:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/encodage.html</loc>
+<lastmod>2016-07-12T23:29:54+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/gettext.html</loc>
-<lastmod>2016-10-05T19:12:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/snap.html</loc>
+<lastmod>2016-08-07T15:15:35+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/rust.html</loc>
-<lastmod>2016-12-11T00:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/vectoriel.html</loc>
+<lastmod>2016-10-03T00:56:09+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/hg.html</loc>
-<lastmod>2016-07-28T13:09:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/cli.html</loc>
+<lastmod>2016-08-07T15:15:35+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/tmuxp.html</loc>
-<lastmod>2016-02-26T20:48:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/mencoder.html</loc>
+<lastmod>2016-09-21T19:39:51+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/db.html</loc>
-<lastmod>2016-07-28T12:50:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/windows.html</loc>
+<lastmod>2016-07-12T23:29:54+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/sh.html</loc>
-<lastmod>2016-05-28T18:30:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/riotjs.html</loc>
+<lastmod>2016-05-23T01:00:20+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/mercurial.html</loc>
-<lastmod>2016-07-28T13:09:00+00:09</lastmod>
+<loc>http://mothsart.github.io/tag/benchmark.html</loc>
+<lastmod>2016-07-30T14:01:26+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/author/jeremie-ferry.html</loc>
-<lastmod>2016-12-11T00:00:00+00:09</lastmod>
+<loc>http://mothsart.github.io/author/jeremie-ferry.html</loc>
+<lastmod>2016-10-03T01:38:01+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

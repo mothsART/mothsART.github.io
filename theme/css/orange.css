@@ -481,6 +481,14 @@ figure.floatcenter,
     margin-bottom: 11px;
 }
 
+pre {
+    margin: 11px 5px 11px 35px;
+    background: white;
+    border-radius: 0;
+    border: none;
+    box-shadow: 0 0 0 1px rgb(204, 204, 204), 0 0 0 6px white;
+}
+
 .highlighttable pre {
     margin-bottom: 0;
 }
@@ -588,6 +596,7 @@ kbd {
     border-top: solid 5px white;
     border-bottom: solid 5px white;
     padding-bottom: 2px;
+    box-shadow: none;
 }
 
 #content li .ace_editor {
@@ -870,10 +879,13 @@ h1 strong:after {
 
 #content p,
 #content ol,
-#content ul,
-#content .videobox {
+#content ul {
     margin: 0 0 0 30px;
     padding: 5px;
+    background: white;
+}
+
+#content .videobox {
     background: white;
 }
 
