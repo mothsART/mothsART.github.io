@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html>
-
   <head>
+    <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="./interactive_svg.css">
   </head>
-
   <body>
-    <nav>
-      <h1>Demo for svg-pan-zoom: SVG in HTML 'embed' element</h1>
-    </nav>
+    <section class="legend">
+      <label>
+        <span class="indice">1</span>
+        <input name="name" class="zoom-trigger" id="dame-brassempouy-zoom" type="checkbox" />Dame de Brassempouy
+      </label>
+    </section>
+    <section class="description">
+      <article id="dame-brassempouy-description">
+        <h2><span class="indice">1</span>Dame de Brassempouy</h2>
+        <p>Cette illustration fait une allusion à la <strong>dame de Brassempouy</strong>.<br />
+        Cette dernière est un fragment de statuette en ivoire datant du Paléolithique supérieur.<br />
+        Sur sa tête, un quadrillage formé d’incisions perpendiculaires a été interprété, ici, par une chevelure tressée.<br />
+        Son visage porte des stries ou scarifications, interprété dans cette illustration par un maquillage tribal.
+        </p>
+        <p>
+          Référence : <a href="https://fr.wikipedia.org/wiki/Dame_de_Brassempouy">Page wikipédia</a>
+        </p>
+      </article>
+    </section>
+    <section class="indices">
+      <article>
+        <span class="indice" id="dame-brassempouy-indice">1</span>
+      </article>
+    </section>
     <!--<div class="interactive_element"></div>-->
-    <embed class="interactive_element" type="image/svg+xml" src="campement.min.svg" />
+    <object id="campement" class="interactive_element" type="image/svg+xml" data="campement.min.svg" />
     <script src="/theme/js/jquery.min.js"></script>
     <script src="./interactive_svg.js"></script>
   </body>
