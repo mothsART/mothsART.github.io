@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>http://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 21 Sep 2016 19:39:51 +0200</lastBuildDate><item><title>Librairies et frameworks</title><link>http://mothsart.github.io/rust-libs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>http://mothsart.github.io/</link><description></description><lastBuildDate>Sat, 15 Oct 2016 15:17:18 +0200</lastBuildDate><item><title>Librairies et frameworks</title><link>http://mothsart.github.io/rust-libs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Depuis que Rust est en version 1.0, les choses se sont accélérés et beaucoup de librairies et frameworks ont pointé le bout de leur nez.
 Voici les plus connus trié par thème.&lt;/p&gt;
 &lt;h1&gt;Base de données&lt;/h1&gt;
@@ -68,7 +68,17 @@ let machaine_string:String = machaine_str.to_string();&lt;/code&gt;&lt;/pre&gt;
 https://github.com/apasel422/eclectic&lt;/p&gt;
 &lt;p&gt;des websockets :&lt;/p&gt;
 &lt;p&gt;https://github.com/housleyjk/ws-rs&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-30:exemples-rust.html</guid><category>rust</category></item><item><title>Macros rust</title><link>http://mothsart.github.io/macros-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
-&lt;p&gt;println!&lt;/p&gt;
+&lt;h3&gt;println!&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-rust"&gt;use std::fs::File;
+
+fn main() {
+    let x = File::open(&amp;quot;nop&amp;quot;);
+    println!(&amp;quot;{:?}&amp;quot;, x);
+    println!(&amp;quot;&amp;quot;);
+    println!(&amp;quot;{:#?}&amp;quot;, x);
+}&lt;/code&gt;&lt;/pre&gt;
+
+
 &lt;p&gt;format!&lt;/p&gt;
 &lt;p&gt;write!&lt;/p&gt;
 &lt;p&gt;try!&lt;/p&gt;
@@ -83,7 +93,7 @@ https://github.com/apasel422/eclectic&lt;/p&gt;
 &lt;p&gt;file!&lt;/p&gt;
 &lt;p&gt;vec!&lt;/p&gt;
 &lt;p&gt;log_syntax!&lt;/p&gt;
-&lt;p&gt;trace_macros!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:macros-rust.html</guid><category>rust</category></item><item><title>The QuiZz : Partie 2</title><link>http://mothsart.github.io/the-quizz-part-2.html</link><description>&lt;h2&gt;The QuiZz : Partie 2&lt;/h2&gt;
+&lt;p&gt;trace_macros!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Oct 2016 15:17:18 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:macros-rust.html</guid><category>rust</category></item><item><title>The QuiZz : Partie 2</title><link>http://mothsart.github.io/the-quizz-part-2.html</link><description>&lt;h2&gt;The QuiZz : Partie 2&lt;/h2&gt;
 &lt;p&gt;Comme promis, la partie 2 ne va s'atteler qu'à fournir le même cahier des charges que le soft de la partie 1 mais pour une appli web.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://github.com/mothsART/the_quizz/releases/tag/part2"&gt;dépôt Git : Etape 2&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Pré-requis&lt;/h2&gt;
@@ -325,6 +335,9 @@ Le nom du projet est directement récupérer dans le Cargo.toml.&lt;/p&gt;
 }&lt;/code&gt;&lt;/pre&gt;
 
 
+&lt;h2&gt;Recherche de libs&lt;/h2&gt;
+&lt;p&gt;https://docs.rs/
+https://crates.io/&lt;/p&gt;
 &lt;h2&gt;Coverage&lt;/h2&gt;
 &lt;p&gt;https://users.rust-lang.org/t/tutorial-how-to-collect-test-coverages-for-rust-project/650&lt;/p&gt;
 &lt;p&gt;https://github.com/hyperium/hyper/blob/master/.travis.yml&lt;/p&gt;
@@ -346,4 +359,4 @@ Il subsite donc des erreurs à l'exécution : pour les débusquer, &lt;strong&gt
 &lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;cargo build --release&lt;/code&gt;&lt;/pre&gt;
 
 
-&lt;p&gt;https://github.com/mmstick/cargo-deb&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-rust.html</guid><category>rust</category></item></channel></rss>
+&lt;p&gt;https://github.com/mmstick/cargo-deb&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Oct 2016 15:17:18 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-rust.html</guid><category>rust</category></item></channel></rss>

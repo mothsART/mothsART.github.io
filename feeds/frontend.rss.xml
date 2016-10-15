@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>http://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 21 Sep 2016 19:39:51 +0200</lastBuildDate><item><title>Webassembly</title><link>http://mothsart.github.io/webassembly.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>http://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 21 Sep 2016 19:39:51 +0200</lastBuildDate><item><title>Debuggage Javascript</title><link>http://mothsart.github.io/debug-js.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Debugger du JS ainsi que du html mal formé n'est pas toujours aisé : surtout quand c'est le code de quelqu'un autre ou un très vieux dev.&lt;/p&gt;
+&lt;p&gt;Voici une base d'outils qui permettent de simplifier les choses.&lt;/p&gt;
+&lt;h2&gt;diff DOM contre le HTML mal formé&lt;/h2&gt;
+&lt;p&gt;https://github.com/fiduswriter/diffDOM&lt;/p&gt;
+&lt;h2&gt;tester des objets&lt;/h2&gt;
+&lt;p&gt;http://is.js.org/&lt;/p&gt;
+&lt;h2&gt;Astuces chrome&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-15:debug-js.html</guid><category>javascript</category></item><item><title>Webassembly</title><link>http://mothsart.github.io/webassembly.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;h2&gt;l'existant&lt;/h2&gt;
 &lt;p&gt;http://caniuse.com/#feat=asmjs&lt;/p&gt;
 &lt;p&gt;emscripten&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:webassembly.html</guid><category>js</category></item><item><title>Web Offline</title><link>http://mothsart.github.io/web-offline.html</link><description>&lt;h2&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:web-offline.html</guid><category>offline</category></item><item><title>Cahier de bonnes pratiques Javascript</title><link>http://mothsart.github.io/bonnes-pratiques-js.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;

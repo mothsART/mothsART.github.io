@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>http://mothsart.github.io/</link><description></description><lastBuildDate>Mon, 03 Oct 2016 01:38:01 +0200</lastBuildDate><item><title>OpenClipart</title><link>http://mothsart.github.io/openclipart.html</link><description>&lt;h2&gt;Meilleur contributeurs&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>http://mothsart.github.io/</link><description></description><lastBuildDate>Sat, 15 Oct 2016 15:17:18 +0200</lastBuildDate><item><title>Debuggage Javascript</title><link>http://mothsart.github.io/debug-js.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Debugger du JS ainsi que du html mal formé n'est pas toujours aisé : surtout quand c'est le code de quelqu'un autre ou un très vieux dev.&lt;/p&gt;
+&lt;p&gt;Voici une base d'outils qui permettent de simplifier les choses.&lt;/p&gt;
+&lt;h2&gt;diff DOM contre le HTML mal formé&lt;/h2&gt;
+&lt;p&gt;https://github.com/fiduswriter/diffDOM&lt;/p&gt;
+&lt;h2&gt;tester des objets&lt;/h2&gt;
+&lt;p&gt;http://is.js.org/&lt;/p&gt;
+&lt;h2&gt;Astuces chrome&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-15:debug-js.html</guid><category>javascript</category></item><item><title>dev des web app Ubuntu</title><link>http://mothsart.github.io/dev-webapp-ubuntu.html</link><description>&lt;h2&gt;Dev d'applications polymorphes&lt;/h2&gt;
+&lt;p&gt;Quand je pense appli, je pense &lt;strong&gt;utilisateur&lt;/strong&gt;.
+Une application moderne à mon sens doit être modulable au besoin de son utilisateur.
+C'est lui et lui seul qui doit en avoir le contrôle.
+Constat actuel : l'utilisateur est dépendant de G.A.F.A.M (Google, Apple, FaceBook, Amazon et Microsoft) et Cie.&lt;/p&gt;
+&lt;p&gt;C'est dans une démarche proche de celle de Framasoft (https://degooglisons-internet.org) que j'ai choisi de créer mes applications.&lt;/p&gt;
+&lt;h2&gt;Les grandes lignes&lt;/h2&gt;
+&lt;p&gt;https://developer.ubuntu.com/en/phone/web/tutorials/web-app-tutorial/
+https://developer.ubuntu.com/api/devel/ubuntu-13.10/javascript/web-docs/
+https://developer.ubuntu.com/api/devel/ubuntu-13.10/javascript/web-docs/unity-web-api-reference.html&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-15:dev-webapp-ubuntu.html</guid><category>ubuntu</category><category>linux</category><category>dev</category></item><item><title>Independance logiciel</title><link>http://mothsart.github.io/independance-logiciel.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-15:independance-logiciel.html</guid></item><item><title>Développement Ubuntu</title><link>http://mothsart.github.io/ubuntu-dev.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Ubuntu est une distro vraiment agréable. Même si ces detracteurs lui reproche pas mal de choses : Unity au lieu de gnome shell, Mir au lieu de Wayland etc.&lt;/p&gt;
+&lt;p&gt;Même si je n'approuve pas tous leurs choix, je trouve néanmoins qu'il y a plein de bonnes idées.&lt;/p&gt;
+&lt;h2&gt;Les idées intéressantes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;dépôts PPA de launchpad&lt;/li&gt;
+&lt;li&gt;les snaps&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;les web apps.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;liens tel que href="app://gnome-terminal"
+href="apt://gnome-terminal"&amp;gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-15:ubuntu-dev.html</guid><category>ubuntu</category><category>linux</category><category>dev</category></item><item><title>OpenClipart</title><link>http://mothsart.github.io/openclipart.html</link><description>&lt;h2&gt;Meilleur contributeurs&lt;/h2&gt;
 &lt;p&gt;https://openclipart.org/user-detail/cirenovy&lt;/p&gt;
 &lt;p&gt;https://openclipart.org/user-detail/vectorsme&lt;/p&gt;
 &lt;p&gt;https://openclipart.org/user-detail/GDJ&lt;/p&gt;
@@ -101,7 +131,11 @@ https://github.com/jwagner/smartcrop.js&lt;/p&gt;</description><dc:creator xmlns
 &lt;p&gt;https://www.blender.org/manual/render/freestyle/export_svg.html
 http://goinkscape.com/use-blender-freestyle-to-export-svg-artwork&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:blender.html</guid><category>3D</category><category>blender</category></item><item><title>Cette photo est-elle retouché ?</title><link>http://mothsart.github.io/photo-retouche.html</link><description>&lt;h2&gt;&lt;/h2&gt;
 &lt;p&gt;https://en.wikipedia.org/wiki/Error_level_analysis&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:photo-retouche.html</guid><category>picture</category></item><item><title>Snap</title><link>http://mothsart.github.io/snap.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
-&lt;p&gt;http://korben.info/installer-paquets-snap-ubuntu-ligne-de-commande.html&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:snap.html</guid><category>snap</category><category>ubuntu</category><category>linux</category></item><item><title>Des exemples Rust</title><link>http://mothsart.github.io/exemples-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;http://korben.info/installer-paquets-snap-ubuntu-ligne-de-commande.html&lt;/p&gt;
+&lt;h2&gt;Explorer les snap via un moteur de recherche&lt;/h2&gt;
+&lt;p&gt;https://uappexplorer.com/&lt;/p&gt;
+&lt;h2&gt;API&lt;/h2&gt;
+&lt;p&gt;https://wiki.ubuntu.com/AppStore/Interfaces/ClickPackageIndex&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Oct 2016 15:17:18 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:snap.html</guid><category>snap</category><category>ubuntu</category><category>linux</category></item><item><title>Des exemples Rust</title><link>http://mothsart.github.io/exemples-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Des exemples de code Rust que je réutilise (mais que je n'arrive pas à mémoriser)&lt;/p&gt;
 &lt;h2&gt;Enum récursif&lt;/h2&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-rust"&gt;#[derive(Debug)]
@@ -293,7 +327,17 @@ TuxPaint&lt;/p&gt;
 &lt;p&gt;http://www.norvig.com/spell-correct.html&lt;/p&gt;
 &lt;p&gt;http://www.reverso.net/spell-checker/french-spelling-grammar/
 http://bescherelle.com/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 03 Oct 2016 00:56:09 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:correcteur.html</guid><category>correcteur</category><category>grammaire</category></item><item><title>Macros rust</title><link>http://mothsart.github.io/macros-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
-&lt;p&gt;println!&lt;/p&gt;
+&lt;h3&gt;println!&lt;/h3&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-rust"&gt;use std::fs::File;
+
+fn main() {
+    let x = File::open(&amp;quot;nop&amp;quot;);
+    println!(&amp;quot;{:?}&amp;quot;, x);
+    println!(&amp;quot;&amp;quot;);
+    println!(&amp;quot;{:#?}&amp;quot;, x);
+}&lt;/code&gt;&lt;/pre&gt;
+
+
 &lt;p&gt;format!&lt;/p&gt;
 &lt;p&gt;write!&lt;/p&gt;
 &lt;p&gt;try!&lt;/p&gt;
@@ -308,7 +352,7 @@ http://bescherelle.com/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl
 &lt;p&gt;file!&lt;/p&gt;
 &lt;p&gt;vec!&lt;/p&gt;
 &lt;p&gt;log_syntax!&lt;/p&gt;
-&lt;p&gt;trace_macros!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:macros-rust.html</guid><category>rust</category></item><item><title>Phonetic</title><link>http://mothsart.github.io/phonetic.html</link><description>&lt;h2&gt;Phonetic&lt;/h2&gt;
+&lt;p&gt;trace_macros!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Oct 2016 15:17:18 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:macros-rust.html</guid><category>rust</category></item><item><title>Phonetic</title><link>http://mothsart.github.io/phonetic.html</link><description>&lt;h2&gt;Phonetic&lt;/h2&gt;
 &lt;p&gt;Sur PostgreSQL : https://www.postgresql.org/docs/9.1/static/fuzzystrmatch.html&lt;/p&gt;
 &lt;p&gt;https://fr.wikipedia.org/wiki/Homonymie
 http://www.easter-eggs.com/Recherche-approximative-avec
@@ -1538,6 +1582,9 @@ Le nom du projet est directement récupérer dans le Cargo.toml.&lt;/p&gt;
 }&lt;/code&gt;&lt;/pre&gt;
 
 
+&lt;h2&gt;Recherche de libs&lt;/h2&gt;
+&lt;p&gt;https://docs.rs/
+https://crates.io/&lt;/p&gt;
 &lt;h2&gt;Coverage&lt;/h2&gt;
 &lt;p&gt;https://users.rust-lang.org/t/tutorial-how-to-collect-test-coverages-for-rust-project/650&lt;/p&gt;
 &lt;p&gt;https://github.com/hyperium/hyper/blob/master/.travis.yml&lt;/p&gt;
@@ -1559,7 +1606,7 @@ Il subsite donc des erreurs à l'exécution : pour les débusquer, &lt;strong&gt
 &lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;cargo build --release&lt;/code&gt;&lt;/pre&gt;
 
 
-&lt;p&gt;https://github.com/mmstick/cargo-deb&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-rust.html</guid><category>rust</category></item><item><title>Pourquoi je boude Node.Js</title><link>http://mothsart.github.io/pourquoi-je-boude-nodejs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;https://github.com/mmstick/cargo-deb&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Oct 2016 15:17:18 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-rust.html</guid><category>rust</category></item><item><title>Pourquoi je boude Node.Js</title><link>http://mothsart.github.io/pourquoi-je-boude-nodejs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;NodeJS est à la mode.
 Quand je parle de NodeJS, je parle bien entendu de toute la mouvance autours de Javascript.&lt;/p&gt;
 &lt;p&gt;Le principe :
