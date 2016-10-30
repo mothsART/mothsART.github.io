@@ -9,32 +9,34 @@
 
 
 
-<link rel="canonical" href="/.html">
+<link rel="canonical" href="https://mothsart.github.io/.html">
 
         <meta name="author" content="Jérémie Ferry" />
 
         <meta property="og:site_name" content="Le Labo Du Nerd" />
         <meta property="og:type" content="article"/>
         <meta property="og:title" content=""/>
-        <meta property="og:url" content="/.html"/>
+        <meta property="og:url" content="https://mothsart.github.io/.html"/>
         <meta property="og:description" content=""/>
-        <meta property="article:published_time" content="2016-10-11" />
-            <meta property="article:section" content="rust" />
+        <meta property="article:published_time" content="2016-10-17" />
+            <meta property="article:section" content="misc" />
             <meta property="article:author" content="Jérémie Ferry" />
 
 
     <!-- Bootstrap -->
-        <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css"/>
-    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://mothsart.github.io/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="https://mothsart.github.io/theme/css/font-awesome.min.css" rel="stylesheet">
 
-    <link href="/theme/css/pygments/native.css" rel="stylesheet">
-        <link href="/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
-
-
+    <link href="https://mothsart.github.io/theme/css/pygments/native.css" rel="stylesheet">
+        <link href="https://mothsart.github.io/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
 
 
+        <link href="https://mothsart.github.io/feeds/all.rss.xml" type="application/rss+xml" rel="alternate"
+              title="Le Labo Du Nerd RSS Feed"/>
 
-                <link href="/theme/css/orange.css" id="selected-css" rel="stylesheet" />
+
+
+                <link href="https://mothsart.github.io/theme/css/orange.css" id="selected-css" rel="stylesheet" />
 </head>
 <body class="lang-fr">
 
@@ -47,25 +49,25 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="/" class="navbar-brand">
+            <a href="https://mothsart.github.io/" class="navbar-brand">
 Le Labo Du Nerd            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                         <li >
-                            <a href="/category/aide-memoire.html">Aide-memoire</a>
+                            <a href="https://mothsart.github.io/category/aide-memoire.html">Aide-memoire</a>
                         </li>
                         <li >
-                            <a href="/category/frontend.html">Frontend</a>
-                        </li>
-                        <li >
-                            <a href="/category/misc.html">Misc</a>
-                        </li>
-                        <li >
-                            <a href="/category/reflexion.html">Reflexion</a>
+                            <a href="https://mothsart.github.io/category/frontend.html">Frontend</a>
                         </li>
                         <li class="active">
-                            <a href="/category/rust.html">Rust</a>
+                            <a href="https://mothsart.github.io/category/misc.html">Misc</a>
+                        </li>
+                        <li >
+                            <a href="https://mothsart.github.io/category/reflexion.html">Reflexion</a>
+                        </li>
+                        <li >
+                            <a href="https://mothsart.github.io/category/rust.html">Rust</a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -78,7 +80,7 @@ Le Labo Du Nerd            </a>
                 </span>
               </li>
             <li >
-                <a href="/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a>
+                <a href="https://mothsart.github.io/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a>
             </li>
               <li id="choose-css-theme">
                   <div class="drodown">
@@ -89,13 +91,13 @@ Le Labo Du Nerd            </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
                                 <!-- <li><a href="#">Thème classique (orange)</a></li> -->
                                     <li class="selected">
-                                        <a href="/theme/css/orange.css">
+                                        <a href="https://mothsart.github.io/theme/css/orange.css">
                                             <span>Thème classique (orange)</span>
                                         </a>
                                     </li>
                                 <!-- <li><a href="#">Thème océan (bleu)</a></li> -->
                                     <li>
-                                        <a href="/theme/css/ocean.css">
+                                        <a href="https://mothsart.github.io/theme/css/ocean.css">
                                             <span>Thème océan (bleu)</span>
                                         </a>
                                     </li>
@@ -126,7 +128,7 @@ Le Labo Du Nerd            </a>
     <span>
         <span class="label label-default">Date</span>
         <span class="published">
-            <i class="fa fa-calendar"></i><time datetime="2016-10-11T21:01:01.534377+02:00"> mar. 11 octobre 2016</time>
+            <i class="fa fa-calendar"></i><time datetime="2016-10-17T23:56:03.695818+02:00"> lun. 17 octobre 2016</time>
         </span>
     </span>
 
@@ -137,8 +139,14 @@ Le Labo Du Nerd            </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <h2></h2>
-<p>echo DATABASE_URL=postgresql://postgres@localhost &gt; .env</p>
+                <h2>Intro</h2>
+<p>Le XSS pour les nuls.</p>
+<h2>Comment éviter le XSS</h2>
+<ul>
+<li>supprimer les balises <script></li>
+<li>supprimer les attributs xml qui commencent par <strong>on</strong>.</li>
+</ul>
+<p>https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet#XSS_Locator</p>
             </div>
             <!-- /.entry-content -->
         </article>
@@ -159,185 +167,185 @@ Le Labo Du Nerd            </a>
 
 
 
-            <li class="list-group-item"><a href="/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+            <li class="list-group-item"><a href="https://mothsart.github.io/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group " id="tags">
                     <li class="list-group-item tag-1">
-                        <a href="/tag/linux.html">
+                        <a href="https://mothsart.github.io/tag/linux.html">
                             linux
                                 <span class="badge">18</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/javascript.html">
+                        <a href="https://mothsart.github.io/tag/javascript.html">
                             javascript
                                 <span class="badge">11</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/rust.html">
+                        <a href="https://mothsart.github.io/tag/rust.html">
                             rust
                                 <span class="badge">8</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/css.html">
-                            css
-                                <span class="badge">4</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/python.html">
+                        <a href="https://mothsart.github.io/tag/python.html">
                             python
-                                <span class="badge">4</span>
+                                <span class="badge">5</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/libre.html">
+                        <a href="https://mothsart.github.io/tag/libre.html">
                             libre
                                 <span class="badge">4</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/frontend.html">
+                        <a href="https://mothsart.github.io/tag/css.html">
+                            css
+                                <span class="badge">4</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/frontend.html">
                             frontend
                                 <span class="badge">4</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/postgresql.html">
+                        <a href="https://mothsart.github.io/tag/postgresql.html">
                             postgresql
                                 <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/git.html">
-                            git
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/c.html">
-                            C
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/js.html">
+                        <a href="https://mothsart.github.io/tag/js.html">
                             js
                                 <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/ubuntu.html">
-                            ubuntu
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/sql.html">
-                            sql
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/3d.html">
+                        <a href="https://mothsart.github.io/tag/3d.html">
                             3D
                                 <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/apple.html">
-                            apple
-                                <span class="badge">2</span>
+                        <a href="https://mothsart.github.io/tag/c.html">
+                            C
+                                <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/gettext.html">
-                            gettext
-                                <span class="badge">2</span>
+                        <a href="https://mothsart.github.io/tag/ubuntu.html">
+                            ubuntu
+                                <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/picture.html">
-                            picture
-                                <span class="badge">2</span>
+                        <a href="https://mothsart.github.io/tag/git.html">
+                            git
+                                <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/html.html">
-                            html
-                                <span class="badge">2</span>
+                        <a href="https://mothsart.github.io/tag/sql.html">
+                            sql
+                                <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/dev.html">
-                            dev
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/sh.html">
-                            sh
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/zsh.html">
+                        <a href="https://mothsart.github.io/tag/zsh.html">
                             zsh
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/cli.html">
+                        <a href="https://mothsart.github.io/tag/cli.html">
                             cli
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/nodejs.html">
+                        <a href="https://mothsart.github.io/tag/sh.html">
+                            sh
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/picture.html">
+                            picture
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/apple.html">
+                            apple
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/dev.html">
+                            dev
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/gettext.html">
+                            gettext
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/html.html">
+                            html
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/nodejs.html">
                             nodejs
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/babel.html">
-                            babel
+                        <a href="https://mothsart.github.io/tag/utf.html">
+                            utf
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/wayland.html">
-                            wayland
+                        <a href="https://mothsart.github.io/tag/hg.html">
+                            hg
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/npm.html">
-                            npm
+                        <a href="https://mothsart.github.io/tag/eduatif.html">
+                            éduatif
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/db.html">
-                            db
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/sublimetext.html">
-                            sublimetext
-                                <span class="badge">1</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/bench.html">
+                        <a href="https://mothsart.github.io/tag/bench.html">
                             bench
                                 <span class="badge">1</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/phonex.html">
-                            phonex
+                        <a href="https://mothsart.github.io/tag/offline.html">
+                            offline
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/grammaire.html">
+                            grammaire
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/encodage.html">
+                            encodage
                                 <span class="badge">1</span>
                         </a>
                     </li>
@@ -390,18 +398,18 @@ Le Labo Du Nerd            </a>
       </div>
    </div>
 </footer>
-<script src="/theme/js/jquery.min.js"></script>
+<script src="https://mothsart.github.io/theme/js/jquery.min.js"></script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="/theme/js/bootstrap.min.js"></script>
+<script src="https://mothsart.github.io/theme/js/bootstrap.min.js"></script>
 
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-<script src="/theme/js/respond.min.js"></script>
+<script src="https://mothsart.github.io/theme/js/respond.min.js"></script>
 
 
-<script src="/theme/js/theme_css.js"></script>
+<script src="https://mothsart.github.io/theme/js/theme_css.js"></script>
 
-<script src="/ace-build/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script><style>td.linenos {
+<script src="https://mothsart.github.io/ace-build/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script><style>td.linenos {
     display: none;
 }
 

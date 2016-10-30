@@ -1,5 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Sat, 15 Oct 2016 15:17:18 +0200</lastBuildDate><item><title>Debuggage Javascript</title><link>https://mothsart.github.io/debug-js.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Sun, 30 Oct 2016 12:57:52 +0100</lastBuildDate><item><title>XSS</title><link>https://mothsart.github.io/xss.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Le XSS pour les nuls.&lt;/p&gt;
+&lt;h2&gt;Comment éviter le XSS&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;supprimer les balises &lt;script&gt;&lt;/li&gt;
+&lt;li&gt;supprimer les attributs xml qui commencent par &lt;strong&gt;on&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet#XSS_Locator&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-30:xss.html</guid><category>js</category><category>xss</category></item><item><title>config-canto</title><link>https://mothsart.github.io/config-canto.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;INTERNAL USAGE
+       Within the program you can use the following (default) keys.  These can
+       be  changed in your configuration file by using the "key" configuration
+       option.&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;   UP / DOWN or k / j
+          Select previous or next item. (next_item) (prev_item)
+
+   PGUP / PGDOWN or o / l
+          Goto previous or next tag. (next_tag) (prev_tag)
+
+   RIGHT / LEFT
+          Set item unread or read (just_unread) (just_read)
+
+   [ / ]  Cycle through defined filters (prev_filter) (next_filter)
+
+   { / }  Cycle   through   defined   tag    filters    (prev_feed_filter)
+          (next_feed_filter)
+
+   - / =  Cycle through defined tag sorts (prev_tag_sort) (next_tag_sort)
+
+   &amp;lt; / &amp;gt;  Cycle through defined tag sets (prev_tagset) (next_tagset)
+
+   :      Goto a specific tag (order of the config) (goto_tag)
+
+   ;      Goto a specific visible tag (goto_reltag)
+
+   TAB    Switch focus between list and reader (only useful with dedicated
+          reader space)
+              (switch)
+
+   h      Display this man page. (help)
+
+   Space  Read a story (reader)
+
+   g      Use the defined browser to goto the item's URL (goto)
+
+   C / V  Collapse/Uncollapse      all       tags       (set_collapse_all)
+          (unset_collapse_all)
+
+   c      Collapse/Uncollapse current tag (toggle_collapse_tag)
+
+   f      Inline search (inline_search)
+
+   m      Toggle item marked/unmark (toggle_mark)
+
+   M      Unmark all items (all_unmarked)
+
+   n / p  Goto next/previous marked item (next_mark) (prev_mark)
+
+   , / .  Goto next/previous unread item (next_unread) (prev_unread)
+
+   r / u  Mark tag read/unread (tag_read) (tag_unread)
+
+   R / U  Mark all read/unread (all_read) (all_unread)
+
+   Ctrl+R Refresh feeds (force_update)
+
+   Ctrl+L Redraw screen (refresh)
+
+   \      Restart Canto (restart)
+
+   q      Quit Canto (quit)&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-26:config-canto.html</guid><category>python</category><category>rss</category><category>canto</category></item><item><title>Debuggage Javascript</title><link>https://mothsart.github.io/debug-js.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Debugger du JS ainsi que du html mal formé n'est pas toujours aisé : surtout quand c'est le code de quelqu'un autre ou un très vieux dev.&lt;/p&gt;
 &lt;p&gt;Voici une base d'outils qui permettent de simplifier les choses.&lt;/p&gt;
 &lt;h2&gt;diff DOM contre le HTML mal formé&lt;/h2&gt;
@@ -87,10 +156,12 @@ Inkscape&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/element
 &lt;p&gt;le fichier en question : &lt;a href="https://commons.wikimedia.org/wiki/File:Campement.svg"&gt;Campement&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;L'article Vikidia : &lt;a href="https://fr.vikidia.org/wiki/Pal%C3%A9olithique"&gt;Paléolithique&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Le fichier sur OpenClipArt : &lt;a href="https://openclipart.org/detail/262113/prehistoric-camp"&gt;Prehistoric-camp&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Illustration interactive&lt;/h3&gt;
 &lt;p&gt;Une version interactive (encore experimental) : &lt;a href="./labo/frontend/interactive_svg/" target="_blank"&gt;Campement du Paléolithique interactif&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Les étapes de réalisations :&lt;/p&gt;
+&lt;p&gt;Afin d'améliorer encore l'expérience des utilisateurs sur Ubuntu, j'ai également mis à dispostion un &lt;a href="https://launchpad.net/~jerem-ferry/+archive/ubuntu/app-illustration/"&gt;PPA&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Les étapes de réalisations&lt;/h3&gt;
 &lt;p&gt;&lt;span class="videobox"&gt;
-            &lt;video width="100%" height="100%" preload="none" controls poster="/./static/images/camp_paleolithic.jpg"&gt;&lt;source src='/static/movies/camp_paleolithic.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'&gt;&lt;/video&gt;&lt;/span&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 03 Oct 2016 00:56:09 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:abuledu-camp-paleolithique.html</guid><category>linux</category><category>libre</category></item><item><title>Oh Merde Git</title><link>https://mothsart.github.io/oh-merde-git.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+            &lt;video width="100%" height="100%" preload="none" controls poster="/./static/images/camp_paleolithic.jpg"&gt;&lt;source src='/static/movies/camp_paleolithic.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'&gt;&lt;/video&gt;&lt;/span&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 30 Oct 2016 12:57:52 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:abuledu-camp-paleolithique.html</guid><category>linux</category><category>libre</category></item><item><title>Oh Merde Git</title><link>https://mothsart.github.io/oh-merde-git.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;http://ohshitgit.com/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:oh-merde-git.html</guid><category>linux</category><category>libre</category></item><item><title>Librairies et frameworks</title><link>https://mothsart.github.io/rust-libs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Depuis que Rust est en version 1.0, les choses se sont accélérés et beaucoup de librairies et frameworks ont pointé le bout de leur nez.
 Voici les plus connus trié par thème.&lt;/p&gt;
@@ -1918,6 +1989,9 @@ Pelican ne déroge pas à cette règle.&lt;/p&gt;
 &lt;li&gt;[] &lt;strong&gt;en cours&lt;/strong&gt; : Des URLs avec une ancre peuvent avoir des soucis avec un menu fixe :
   l'option &lt;strong&gt; SCROLL_TOP_MARGIN&lt;/strong&gt; permet de rajouter des pixels suplémentaires pour éviter cette contrainte.&lt;/li&gt;
 &lt;li&gt;[] &lt;strong&gt;en cours&lt;/strong&gt; : Utilisation d'une page de référence pour mon template avec le maximum de règles : &lt;a href="/pelicans-template.html"&gt;pelicans-template.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[] détections des liens externes cassés https://github.com/silentlamb/pelican-deadlinks&lt;/li&gt;
+&lt;li&gt;[] créer des alias https://github.com/Nitron/pelican-alias&lt;/li&gt;
+&lt;li&gt;[] créer un plugin qui détecte un changement d'url (avec git) et crée un alias à la volée. (une url ne devrait jamais renvoyer vers un 404 quand il est déplacé)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -1929,4 +2003,4 @@ Pelican ne déroge pas à cette règle.&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;transformation des [] et [X] en checkbox =&amp;gt; utile pour des todolistes&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 03 Oct 2016 00:56:09 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-02-14:pelican.html</guid><category>zsh</category></item></channel></rss>
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 26 Oct 2016 20:19:31 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-02-14:pelican.html</guid><category>zsh</category></item></channel></rss>
