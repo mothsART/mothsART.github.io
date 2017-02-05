@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="fr" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Vanilla-a-a-a-a - Le Labo Du Nerd</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="https://mothsart.github.io/vanilla-a-a-a-a.html">
+
+        <meta name="author" content="Jérémie Ferry" />
+        <meta name="keywords" content="javascript,jquery,xpath,benchmark" />
+
+        <meta property="og:site_name" content="Le Labo Du Nerd" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Vanilla-a-a-a-a"/>
+        <meta property="og:url" content="https://mothsart.github.io/vanilla-a-a-a-a.html"/>
+        <meta property="og:description" content=""/>
+        <meta property="article:published_time" content="2017-02-05" />
+            <meta property="article:section" content="frontend" />
+            <meta property="article:tag" content="javascript" />
+            <meta property="article:tag" content="jquery" />
+            <meta property="article:tag" content="xpath" />
+            <meta property="article:tag" content="benchmark" />
+            <meta property="article:author" content="Jérémie Ferry" />
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://mothsart.github.io/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="https://mothsart.github.io/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="https://mothsart.github.io/theme/css/pygments/native.css" rel="stylesheet">
+        <link href="https://mothsart.github.io/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
+
+
+        <link href="https://mothsart.github.io/feeds/all.rss.xml" type="application/rss+xml" rel="alternate"
+              title="Le Labo Du Nerd RSS Feed"/>
+
+
+
+                <link href="https://mothsart.github.io/theme/css/orange.css" id="selected-css" rel="stylesheet" />
+</head>
+<body class="lang-fr">
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="https://mothsart.github.io/" class="navbar-brand">
+Le Labo Du Nerd            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li >
+                            <a href="https://mothsart.github.io/category/aide-memoire.html">Aide-memoire</a>
+                        </li>
+                        <li class="active">
+                            <a href="https://mothsart.github.io/category/frontend.html">Frontend</a>
+                        </li>
+                        <li >
+                            <a href="https://mothsart.github.io/category/misc.html">Misc</a>
+                        </li>
+                        <li >
+                            <a href="https://mothsart.github.io/category/reflexion.html">Reflexion</a>
+                        </li>
+                        <li >
+                            <a href="https://mothsart.github.io/category/rust.html">Rust</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class='tipue-search'>
+                <span>
+                    <form class="navbar-search" action="/search.html">
+                        <input type="text" class="search-query" placeholder="Rechercher" name="q" id="tipue_search_input" required>
+                        <input type="submit" value="&#xe003;" />
+                    </form>
+                </span>
+              </li>
+            <li >
+                <a href="https://mothsart.github.io/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a>
+            </li>
+              <li id="choose-css-theme">
+                  <div class="drodown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Changer de thème CSS
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                <!-- <li><a href="#">Thème classique (orange)</a></li> -->
+                                    <li class="selected">
+                                        <a href="https://mothsart.github.io/theme/css/orange.css">
+                                            <span>Thème classique (orange)</span>
+                                        </a>
+                                    </li>
+                                <!-- <li><a href="#">Thème océan (bleu)</a></li> -->
+                                    <li>
+                                        <a href="https://mothsart.github.io/theme/css/ocean.css">
+                                            <span>Thème océan (bleu)</span>
+                                        </a>
+                                    </li>
+                        </ul>
+                    </div>
+              </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+            <div class="col-sm-10">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    Vanilla-a-a-a-a
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span>
+        <span class="label label-default">Date</span>
+        <span class="published">
+            <i class="fa fa-calendar"></i><time datetime="2017-02-05T23:05:07.370133+01:00"> dim. 05 février 2017</time>
+        </span>
+    </span>
+
+
+
+
+
+<span class="label label-default">Tags</span>
+
+
+	<a href="https://mothsart.github.io/tag/javascript.html">javascript
+                <span class="badge">13</span>
+    </a>
+        /
+	<a href="https://mothsart.github.io/tag/jquery.html">jquery
+    </a>
+        /
+	<a href="https://mothsart.github.io/tag/xpath.html">xpath
+    </a>
+        /
+	<a href="https://mothsart.github.io/tag/benchmark.html">benchmark
+                <span class="badge">2</span>
+    </a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <h2>Intro</h2>
+<p>Dans mon existence de développeur, j'ai appris à ne pas me fier à des <em>on-dit</em>, les tendances (oui, les modes chez les web-dev, ça court le net) et toute forme d'approximation.
+Si on veut être sur de quelques choses, il faut le vérifier.</p>
+<p>Depuis plusieurs années, les modes se sont succédés dans le dev web frontend :
+On est passé de Jquery à Angular puis à React. (sans couvrir toutes les autres technos)</p>
+<p>Depuis toutes ces années, le seul qui n'a pas vraiment bougé reste Jquery quoi qu'on en pense ou qu'on en dise, il reste une des lib les plus utilisés.</p>
+<p>Une mouvance encore jeune est de <strong>remplacer Jquery par Vanilla</strong> : en somme, javascript est désormais assez mure pour qu'il n'ai plus besoin d'utiliser une couche supplémentaire!</p>
+<h2>Quels avantages</h2>
+<ol>
+<li>La rapidité d'exécution : un code natif est forcément plus rapide</li>
+<li>la gestion d'une dépendance : les migrations d'une version de jquery à une autre a forcément un coût donc se passer de jquery c'est forcément éviter ce désagrément. (ceux qui ont fait ça sur un gros projet, doive se souvenir de la souffrance)</li>
+</ol>
+<h2>Objectivité et Pragmatisme</h2>
+<p>Même si les défenseur de Vanilla n'ont pas forcément tord, son adoption n'est pas la même sur un nouveau projet que sur la maintenance d'un ancien.
+De plus, cette migration se fera surtout pour de l'<strong>IE &gt;= 11</strong>.
+Enfin, beaucoup de librairies dépendent de Jquery et il n'est pas forcément simple de s'en passer.</p>
+<h2>Bench</h2>
+<p>J'ai décidé, à mon niveau, de passer progressivement les parties les plus sensibles de mes applicatifs.</p>
+<p>J'ai essayé d'identifier quels étaient les morceaux de code jquery que j'utilisais le plus et de comparer ces derniers avec du code natif sous 2 formes : vanilla et xpath (quand ça s'y prête).</p>
+<p>Du coup, le résultat du bench me permet de décider ou non si le basculement est nécessaire ou supperflue.</p>
+<p>Je vous laisse en juger : <a href="/labo/frontend/vanilla">Bench de comparaison de Jquery/VanillaJS/Xpath (en natif)</a></p>
+<p>N'ayant pas inventé la poudre, il existe souvent un équivalent à mon code sous <a href="http://jsperf.com">jsperf</a></p>
+<p>Néanmoins, mon bench me permet de faire <strong>mes tests</strong> rapidement... 
+Quand j'ai des sources d'inspirations dans un test : je le signale en référence.</p>
+<h2>Mes conclusions</h2>
+<ul>
+<li>
+<p>Tous les <strong>sélecteurs jquery de premier niveau</strong> : recherche d'id , de tag name ou de classes devrait automatiquement être converti en code natif : on divise le temps par 5 minimum pour un code à peine plus long.</p>
+</li>
+<li>
+<p>Les <strong>boucles sur sélecteur Jquery ($.each) sont une hérésie!</strong> Elles devraient disparaitres de cette librairie a tout jamais!
+Les remplacer par des boucles natives est un moindre mal.(grosso modo : 1 rapport de 10)
+En revanche, si vous êtes dans le cas d'un refactoring ou de la création de code, formater votre esprit pour ne pas utiliser de boucle sur sélecteur : il y a <strong>toujours</strong> un moyen de les contourner et ça vous évitera des bugs complexes à analyser, reproduire et corriger quand votre bout de code scalera de telle façon que le ralentissement bloquera votre site ou votre applicatif.
+(et ça c'est dans le meilleurs des cas : quand ça freeze uniquement sur certains mobiles)</p>
+</li>
+<li>
+<p>les <strong>sélecteurs jquery complexes</strong> peuvent être remplacés par des <strong>sélecteurs xpath</strong>. Néanmoins, qui dit sélecteur complexes dit à 99% soucis d'architure.
+Avant de se casser la tête avec un sélecteur compliqué, pensez d'abord à simplifier l'accès à un élément en lui rajoutant une classe ou un id !</p>
+</li>
+</ul>
+<h2>A venir</h2>
+<p>J'aimerais pouvoir identifier facilement les morceaux de code Jquery à modifier.
+Pour cela, rien de mieux qu'une <strong>expression régulière (regex)</strong> disponible dans chacune des lignes : il vous suffit de l'appliquer à la source de votre projet via un utilitaire tel que <strong><a href="https://github.com/BurntSushi/ripgrep">ripgrep</a></strong> et identifier facilement les fichiers et lignes nécessitant un update ! </p>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-2" id="sidebar">
+            <aside>
+
+<section class="well well-sm">
+    <ul class="list-group list-group-flush">
+            <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+              <ul class="list-group" id="social">
+                <li class="list-group-item"><a href="https://github.com/mothsART"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+                <li class="list-group-item"><a href="https://www.linkedin.com/in/jérémie-ferry-0268a789"><i class="fa fa-linkedin-square fa-lg"></i> linkedin</a></li>
+              </ul>
+            </li>
+
+
+
+            <li class="list-group-item"><a href="https://mothsart.github.io/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+                <ul class="list-group " id="tags">
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/linux.html">
+                            linux
+                                <span class="badge">19</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/javascript.html">
+                            javascript
+                                <span class="badge">13</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/rust.html">
+                            rust
+                                <span class="badge">9</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/python.html">
+                            python
+                                <span class="badge">5</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/css.html">
+                            css
+                                <span class="badge">4</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/js.html">
+                            js
+                                <span class="badge">4</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/frontend.html">
+                            frontend
+                                <span class="badge">4</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/libre.html">
+                            libre
+                                <span class="badge">4</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/3d.html">
+                            3D
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/git.html">
+                            git
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/c.html">
+                            C
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/ubuntu.html">
+                            ubuntu
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/postgresql.html">
+                            postgresql
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/sql.html">
+                            sql
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/html.html">
+                            html
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/zsh.html">
+                            zsh
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/gettext.html">
+                            gettext
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/sh.html">
+                            sh
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/dev.html">
+                            dev
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/swift.html">
+                            swift
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/apple.html">
+                            apple
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/picture.html">
+                            picture
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/benchmark.html">
+                            benchmark
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/nodejs.html">
+                            nodejs
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/cli.html">
+                            cli
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/bench.html">
+                            bench
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/wayland.html">
+                            wayland
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/phonetic.html">
+                            phonetic
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/pip.html">
+                            pip
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/imprimante.html">
+                            imprimante
+                                <span class="badge">1</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+
+    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+      <ul class="list-group" id="links">
+        <li class="list-group-item">
+            <a href="http://getpelican.com/" target="_blank">
+                Pelican
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://python.org/" target="_blank">
+                Python.org
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://jinja.pocoo.org/" target="_blank">
+                Jinja2
+            </a>
+        </li>
+      </ul>
+    </li>
+    </ul>
+</section>
+            </aside>
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <div class="row">
+         <div class="col-xs-10">
+            <div>
+                &copy; 2017 Jérémie Ferry
+                &middot; Réalisé à l'aide de  <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+                <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+                <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>            </div>
+         </div>
+         <div class="col-xs-2">
+            <p class="pull-right">
+                <a href="#"><span>
+                  Remonter
+                </span></a>
+            </p>
+        </div>
+      </div>
+   </div>
+</footer>
+<script src="https://mothsart.github.io/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://mothsart.github.io/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="https://mothsart.github.io/theme/js/respond.min.js"></script>
+
+
+<script src="https://mothsart.github.io/theme/js/theme_css.js"></script>
+
+<script src="https://mothsart.github.io/ace-build/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script><style>td.linenos {
+    display: none;
+}
+
+pre {
+    box-sizing: content-box;
+    padding: 0;
+    border-radius: 0;
+}
+
+.ace_gutter-cell {
+    cursor: pointer;
+}
+
+.ace_layer {
+    height: 100% !important;
+}
+
+.ace-chrome .ace_marker-layer .ace_selection {
+    border-radius: 0;
+}
+
+span.o {
+    display: block;
+}</style><script>var ACE_EDITOR_SCROLL_TOP_MARGIN = 150;var ACE_EDITOR_THEME = 'chrome';var ACE_EDITOR_MAXLINES = 200;var ACE_EDITOR_READONLY = true;var ACE_EDITOR_AUTOSCROLL = true;var ACE_EDITOR_SHOW_INVISIBLE = true;var Range = ace.require("ace/range").Range;
+
+var editor_array = {};
+
+var correlationDic = {
+    'bash': 'sh'
+}
+
+// inspiration : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt#A_stricter_parse_function
+filterInt = function (value) {
+  if(/^(\-|\+)?([0-9]+|Infinity)$/.test(value))
+    return Number(value);
+  return NaN;
+}
+
+function linesInAnchor(anchor) {
+  anchorObject = {};
+  anchorObject.first = 0;
+  anchorObject.last = 0;
+  anchorObject.anchor = "";
+  var firstLineIndex = anchor.indexOf("-L");
+  var firstResult = anchor.substring(
+    firstLineIndex + 2
+  );
+  if(filterInt(firstResult)) {
+    anchorObject.first = filterInt(firstResult) - 1;
+    anchorObject.last = anchorObject.first;
+    anchorObject.anchor = anchor.substring(0, firstLineIndex + 2) + firstResult;
+    return anchorObject;
+  }
+  var secondLineIndex = firstResult.indexOf("-L");
+
+  if (!filterInt(firstResult.substring(0, secondLineIndex))) {
+    return anchorObject;
+  }
+  anchorObject.anchor = anchor.substring(0, firstLineIndex + 2) + firstResult.substring(0, secondLineIndex);
+
+  anchorObject.first = filterInt(firstResult.substring(0, secondLineIndex)) - 1;
+  var secondResult = firstResult.substring(
+    secondLineIndex + 2
+  );
+  if (!filterInt(secondResult)) {
+    anchorObject.last = anchorObject.first;
+    return anchorObject;
+  }
+  anchorObject.last = filterInt(secondResult) - 1;
+  return anchorObject;
+}
+
+var selectionCallback = function (event, editor) {
+    var editor_id = $(editor.container).attr('id');
+    var range = editor.selection.getRange();
+    location.hash = editor_id + '-L' + parseInt(range.start.row + 1);
+    if ($(editor.container).data().hasOwnProperty("id")) {
+        event.preventDefault();
+    }
+    else if (range.start.row != range.end.row) {
+        location.hash += '-L' + parseInt(range.end.row + 1);
+    }
+    $(editor.container).removeData();
+};
+
+$(function() {
+    var $pre_filter = $('pre.highlight');
+    var pre_len = $pre_filter.length;
+    $pre_filter.each(function(item) {
+        var lang = $(this).find("code").attr('class').substring(9);
+        if (lang in correlationDic) {
+            lang = correlationDic[lang];
+        }
+        var one_render = true;
+        var nb_of_lines = $(this).text().search('\n');
+        // avoid the last carriage return
+        $(this).text($(this).text().substring(0, $(this).text().length));
+
+        // Give a unique id on all editor
+        var editor_id = 'editor' + parseInt(item + 1);
+        $(this).attr('id', editor_id);
+        var editor = ace.edit(editor_id);
+        editor_array[editor_id] = editor;
+        editor.setTheme("ace/theme/" + ACE_EDITOR_THEME);
+        editor.setShowInvisibles(ACE_EDITOR_SHOW_INVISIBLE);
+        editor.setOptions({
+            mode: "ace/mode/" + lang,
+            maxLines: ACE_EDITOR_MAXLINES,
+            readOnly: ACE_EDITOR_READONLY,
+            autoScrollEditorIntoView: ACE_EDITOR_AUTOSCROLL
+        });
+        editor.$blockScrolling = Infinity;
+        if (nb_of_lines === -1) {
+            editor.renderer.setShowGutter(false);
+        }
+
+        editor.renderer.on("afterRender", function(event) {
+            var anchor = linesInAnchor(location.hash);
+            var hash_editor = location.hash.substring(1, location.hash.indexOf("-"));
+            var line = $($(editor.container).find(".ace_gutter-cell")[parseInt(editor_id.substring(6))]);
+            if (hash_editor == editor_id && one_render) {
+                var offset = line.offset();
+                if (offset) {
+                    $(document).scrollTop(offset.top - ACE_EDITOR_SCROLL_TOP_MARGIN);
+                    editor.selection.setRange(new Range(
+                        anchor.first, 0, anchor.last,  Number.MAX_VALUE)
+                    );
+                    one_render = false;
+                }
+            }
+        });
+
+        editor.resize(true);
+        editor.selection.on("changeSelection", function(event) {
+            selectionCallback(event, editor);
+        });
+    });
+
+    $(".ace_gutter-cell").on("click", function(event) {
+        var editor_id = $(this).closest('pre.ace_editor').attr('id');
+        var editor = editor_array[editor_id];
+        var line = parseInt($(this).text()) - 1;
+        editor.selection.setRange(new Range(line, 0, line, Number.MAX_VALUE));
+        $(this).closest('.ace_editor').data({'id': parseInt($(this).text())});
+        selectionCallback(event, editor);
+    });
+});</script>
+
+
+</body>
+</html>

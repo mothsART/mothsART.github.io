@@ -1,5 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 21 Sep 2016 19:39:51 +0200</lastBuildDate><item><title>Debuggage Javascript</title><link>https://mothsart.github.io/debug-js.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 21 Sep 2016 19:39:51 +0200</lastBuildDate><item><title>Vanilla-a-a-a-a</title><link>https://mothsart.github.io/vanilla-a-a-a-a.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Dans mon existence de développeur, j'ai appris à ne pas me fier à des &lt;em&gt;on-dit&lt;/em&gt;, les tendances (oui, les modes chez les web-dev, ça court le net) et toute forme d'approximation.
+Si on veut être sur de quelques choses, il faut le vérifier.&lt;/p&gt;
+&lt;p&gt;Depuis plusieurs années, les modes se sont succédés dans le dev web frontend :
+On est passé de Jquery à Angular puis à React. (sans couvrir toutes les autres technos)&lt;/p&gt;
+&lt;p&gt;Depuis toutes ces années, le seul qui n'a pas vraiment bougé reste Jquery quoi qu'on en pense ou qu'on en dise, il reste une des lib les plus utilisés.&lt;/p&gt;
+&lt;p&gt;Une mouvance encore jeune est de &lt;strong&gt;remplacer Jquery par Vanilla&lt;/strong&gt; : en somme, javascript est désormais assez mure pour qu'il n'ai plus besoin d'utiliser une couche supplémentaire!&lt;/p&gt;
+&lt;h2&gt;Quels avantages&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;La rapidité d'exécution : un code natif est forcément plus rapide&lt;/li&gt;
+&lt;li&gt;la gestion d'une dépendance : les migrations d'une version de jquery à une autre a forcément un coût donc se passer de jquery c'est forcément éviter ce désagrément. (ceux qui ont fait ça sur un gros projet, doive se souvenir de la souffrance)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Objectivité et Pragmatisme&lt;/h2&gt;
+&lt;p&gt;Même si les défenseur de Vanilla n'ont pas forcément tord, son adoption n'est pas la même sur un nouveau projet que sur la maintenance d'un ancien.
+De plus, cette migration se fera surtout pour de l'&lt;strong&gt;IE &amp;gt;= 11&lt;/strong&gt;.
+Enfin, beaucoup de librairies dépendent de Jquery et il n'est pas forcément simple de s'en passer.&lt;/p&gt;
+&lt;h2&gt;Bench&lt;/h2&gt;
+&lt;p&gt;J'ai décidé, à mon niveau, de passer progressivement les parties les plus sensibles de mes applicatifs.&lt;/p&gt;
+&lt;p&gt;J'ai essayé d'identifier quels étaient les morceaux de code jquery que j'utilisais le plus et de comparer ces derniers avec du code natif sous 2 formes : vanilla et xpath (quand ça s'y prête).&lt;/p&gt;
+&lt;p&gt;Du coup, le résultat du bench me permet de décider ou non si le basculement est nécessaire ou supperflue.&lt;/p&gt;
+&lt;p&gt;Je vous laisse en juger : &lt;a href="/labo/frontend/vanilla"&gt;Bench de comparaison de Jquery/VanillaJS/Xpath (en natif)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;N'ayant pas inventé la poudre, il existe souvent un équivalent à mon code sous &lt;a href="http://jsperf.com"&gt;jsperf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Néanmoins, mon bench me permet de faire &lt;strong&gt;mes tests&lt;/strong&gt; rapidement... 
+Quand j'ai des sources d'inspirations dans un test : je le signale en référence.&lt;/p&gt;
+&lt;h2&gt;Mes conclusions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Tous les &lt;strong&gt;sélecteurs jquery de premier niveau&lt;/strong&gt; : recherche d'id , de tag name ou de classes devrait automatiquement être converti en code natif : on divise le temps par 5 minimum pour un code à peine plus long.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Les &lt;strong&gt;boucles sur sélecteur Jquery ($.each) sont une hérésie!&lt;/strong&gt; Elles devraient disparaitres de cette librairie a tout jamais!
+Les remplacer par des boucles natives est un moindre mal.(grosso modo : 1 rapport de 10)
+En revanche, si vous êtes dans le cas d'un refactoring ou de la création de code, formater votre esprit pour ne pas utiliser de boucle sur sélecteur : il y a &lt;strong&gt;toujours&lt;/strong&gt; un moyen de les contourner et ça vous évitera des bugs complexes à analyser, reproduire et corriger quand votre bout de code scalera de telle façon que le ralentissement bloquera votre site ou votre applicatif.
+(et ça c'est dans le meilleurs des cas : quand ça freeze uniquement sur certains mobiles)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;les &lt;strong&gt;sélecteurs jquery complexes&lt;/strong&gt; peuvent être remplacés par des &lt;strong&gt;sélecteurs xpath&lt;/strong&gt;. Néanmoins, qui dit sélecteur complexes dit à 99% soucis d'architure.
+Avant de se casser la tête avec un sélecteur compliqué, pensez d'abord à simplifier l'accès à un élément en lui rajoutant une classe ou un id !&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;A venir&lt;/h2&gt;
+&lt;p&gt;J'aimerais pouvoir identifier facilement les morceaux de code Jquery à modifier.
+Pour cela, rien de mieux qu'une &lt;strong&gt;expression régulière (regex)&lt;/strong&gt; disponible dans chacune des lignes : il vous suffit de l'appliquer à la source de votre projet via un utilitaire tel que &lt;strong&gt;&lt;a href="https://github.com/BurntSushi/ripgrep"&gt;ripgrep&lt;/a&gt;&lt;/strong&gt; et identifier facilement les fichiers et lignes nécessitant un update ! &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-05:vanilla-a-a-a-a.html</guid><category>javascript</category><category>jquery</category><category>xpath</category><category>benchmark</category></item><item><title>To be strict or not to be</title><link>https://mothsart.github.io/strict-or-not.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Il est recommandé d'utiliser Javascript avec le mode strict.
+Le mode strict c'est un passage à Ecmascript 5 et tous les navigateurs l'implémentent désormais.&lt;/p&gt;
+&lt;h2&gt;Oui, mais... pourquoi ?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;rendre toutes erreurs comme &lt;strong&gt;explicites&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Corriger les erreurs (surtout de typage) qui pose soucis au moteur Javascript pour de l'&lt;strong&gt;optimisation&lt;/strong&gt;. (comprendre : conversion en bytecode)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;interdire les mots clés de versions futures de Ecmascript&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;rendre &lt;strong&gt;eval&lt;/strong&gt; et &lt;strong&gt;arguments&lt;/strong&gt; plus compréhensible&lt;/li&gt;
+&lt;li&gt;améliorer la &lt;strong&gt;sécurité&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Voilà, j'ai fait un résumé de &lt;a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Strict_mode"&gt;ceci&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Comme souvent, la réalité est plus nuancé&lt;/h2&gt;
+&lt;p&gt;Me basant sur ce constat, je me suis pris au jeu et effectivement, un code &lt;strong&gt;strict&lt;/strong&gt; est bien meilleur pour la détection des erreurs.&lt;/p&gt;
+&lt;p&gt;Reste un point qui me titillait (les 3 autres restent à mon sens du détail) :
+est-ce que le mode strict améliore-t-il les performances ?&lt;/p&gt;
+&lt;h2&gt;Constat amer : Le mode strict n'améliore pas les performances&lt;/h2&gt;
+&lt;p&gt;On nous aurait menti ?
+Non : comme d'habitude, on nous a pas dit &lt;strong&gt;toute&lt;/strong&gt; la vérité.&lt;/p&gt;
+&lt;p&gt;Après avoir fait des benchs un peu &lt;strong&gt;naif&lt;/strong&gt;, je tombais sur un constat amer : mais les perfs en mode strict sont dégradés ?!&lt;/p&gt;
+&lt;p&gt;Après réflexion : j'ai enfin compris le poteau rose :&lt;/p&gt;
+&lt;p&gt;Si je test exactement le même code en mode strict et en mode non strict (et que celui-ci s'exécute en mode strict) : le code en mode non strict ira plus vite car celui-ci sera dépourvu de certaines vérifications.&lt;/p&gt;
+&lt;p&gt;En revanche, si l'on oubli de déclarer des variables (dans le cadre du bench, ce sera &lt;strong&gt;volontairement&lt;/strong&gt; mais l'optique du mode strict c'est bien de détecter ce genre d'oublis &lt;strong&gt;involontaires&lt;/strong&gt;), le code non strict sera plus lent que celui étant strict!!
+En effet, le moteur javascript (qui fonctionne en réalité le même façon en mode strict que non strict : la seul différence résidera dans la présence ou non de ces fameux tests de pré-éxecution) va mettre plus de temps pour déterminer le type de la variable si elle n'est pas déclaré.&lt;/p&gt;
+&lt;h2&gt;Conclusion ?&lt;/h2&gt;
+&lt;p&gt;Si l'on veut le code le plus rapide, le mieux est d'avoir un &lt;strong&gt;&lt;em&gt;code strict&lt;/em&gt;* et surtout &lt;/strong&gt;ne pas le déclarer comme strict** !!!
+On comprend mieux pourquoi aucune doc (de Mozilla ou autre) ne fait état de cette subtilité : ça serait se tirer une balle dans le pied. (genre : comment savoir si de gros sites sont réellement passés à Ecmascript 5 sans regarder si il y a une déclaration en mode strict ?)&lt;/p&gt;
+&lt;p&gt;Je conseillerais, si vous avez de vrais besoins d'optimisation (et que vous en avez la possibilité), de déclarer votre code en &lt;strong&gt;mode strict&lt;/strong&gt; quand vous êtes en débuggage et ... en mode &lt;strong&gt;non strict&lt;/strong&gt; quand vous êtes en prod.
+Du coup, vous serez gagnant sur les 2 tableaux.&lt;/p&gt;
+&lt;h2&gt;C'est bien beau ton barratin mais qu'est-ce qui nous le prouve ?&lt;/h2&gt;
+&lt;p&gt;Pour vérifier mes dires : voici quelques benchs qui témoignent de la véracité de mes propos : &lt;a href=""&gt;bench&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A bon entendeur ;)&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-05:strict-or-not.html</guid><category>javascript</category><category>bench</category></item><item><title>Debuggage Javascript</title><link>https://mothsart.github.io/debug-js.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Debugger du JS ainsi que du html mal formé n'est pas toujours aisé : surtout quand c'est le code de quelqu'un autre ou un très vieux dev.&lt;/p&gt;
 &lt;p&gt;Voici une base d'outils qui permettent de simplifier les choses.&lt;/p&gt;
 &lt;h2&gt;diff DOM contre le HTML mal formé&lt;/h2&gt;
