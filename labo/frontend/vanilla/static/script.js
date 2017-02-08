@@ -234,50 +234,60 @@ function display(destination, title, jquery_method, vanilla_method, xpath_method
     'use strict';
     var jquery_bench = bench(jquery_method, nb_pass, [], this);
     var vanilla_bench = bench(vanilla_method, nb_pass, [], this);
-    var xpath_bench = bench(xpath_method, nb_pass, [], this);
+    if (document.evaluate) {
+        $("#thXpath").removeClass("hidden");
+        var xpath_bench = bench(xpath_method, nb_pass, [], this);
+    }
+    else {
+        var xpath_bench = { result: nb_pass };
+    }
+    var tr = '<tr id="' + destination + '">'
+        + '<td><input type="checkbox" '
+        + "onclick=\"show_code(this, '"
+            + destination + "', '"
+            + jquery_method.name  + "', '"
+            + vanilla_method.name  + "', '"
+            + xpath_method.name  + "', '"
+            + vanilla_bench.result  + "', '"
+            + xpath_bench.result  + "', '"
+            + "');\" /></td>"
+        + '<td>' + title + '</td>'
+        + '<td class="tdJQuery">'
+            + '<div>'
+                + jquery_bench.timeformat
+            + '</div>'
+            + '<pre class="highlight hidden" id="codeJQuery-' + destination +'">'
+                + '<code></code>'
+            + '</pre>'
+        + '</td>'
+        + '<td class="tdVanilla">'
+            + '<div>'
+                + format_bench_result(jquery_bench, vanilla_bench)
+            +'</div>'
+            + '<pre class="highlight hidden" id="codeVanilla-' + destination +'">'
+                + '<code></code>'
+            + '</pre>'
+        + '</td>';
 
-    $("#benchmark-table tbody").append(
-        '<tr id="' + destination + '">'
-            + '<td><input type="checkbox" '
-            + "onclick=\"show_code(this, '"
-                + destination + "', '"
-                + jquery_method.name  + "', '"
-                + vanilla_method.name  + "', '"
-                + xpath_method.name  + "', '"
-                + vanilla_bench.result  + "', '"
-                + xpath_bench.result  + "', '"
-                + "');\" /></td>"
-            + '<td>' + title + '</td>'
-            + '<td class="tdJQuery">'
-                + '<div>'
-                    + jquery_bench.timeformat
-                + '</div>'
-                + '<pre class="highlight hidden" id="codeJQuery-' + destination +'">'
-                    + '<code></code>'
-                + '</pre>'
-            + '</td>'
-            + '<td class="tdVanilla">'
-                + '<div>'
-                    + format_bench_result(jquery_bench, vanilla_bench)
-                +'</div>'
-                + '<pre class="highlight hidden" id="codeVanilla-' + destination +'">'
-                    + '<code></code>'
-                + '</pre>'
-            + '</td>'
-            + '<td class="tdXPath">'
-                + '<div>'
-                    + format_bench_result(jquery_bench, xpath_bench)
-                +'</div>'
-                + '<pre class="highlight hidden" id="codeXPath-' + destination +'">'
-                    + '<code></code>'
-                + '</pre>'
-            + '</td>'
-            + '<td class="result"></td>'
-        + '</tr>'
-    );
+    if (document.evaluate) {
+        tr += '<td class="tdXPath">'
+            + '<div>'
+                + format_bench_result(jquery_bench, xpath_bench)
+            +'</div>'
+            + '<pre class="highlight hidden" id="codeXPath-' + destination +'">'
+                + '<code></code>'
+            + '</pre>'
+        + '</td>'
+    }
+    tr += '<td class="result"></td>'
+    + '</tr>'
+    $("#benchmark-table tbody").append(tr);
     if (
-        (jquery_bench.result == vanilla_bench.result || vanilla_bench.result === null)
-        && (vanilla_bench.result == xpath_bench.result || xpath_bench.result === null)
+        (jquery_bench.result === vanilla_bench.result || vanilla_bench.result === null)
+        || (
+            vanilla_bench.result === xpath_bench.result && document.evaluate
+            || xpath_bench.result === null
+        )
     ) {
         $("#" + destination).find(".result").text(jquery_bench.result);
     }
