@@ -1,5 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Sat, 04 Feb 2017 13:08:14 +0100</lastBuildDate><item><title>Vanilla-a-a-a-a</title><link>https://mothsart.github.io/vanilla-a-a-a-a.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Thu, 09 Feb 2017 00:10:29 +0100</lastBuildDate><item><title>Lego</title><link>https://mothsart.github.io/lego.html</link><description>&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;ldraw.org
+http://www.framboise314.fr/leocad-des-modeles-lego-en-3d-sur-raspberry-pi/
+http://jc-tchang.philohome.com/index.htm
+http://www.philohome.com/
+http://www.holly-wood.it/ldraw/authoring-en.html&lt;/p&gt;
+&lt;h2&gt;Logiciels&lt;/h2&gt;
+&lt;p&gt;LeoCAD : 
+MLCAD : http://mlcad.lm-software.com/&lt;/p&gt;
+&lt;h2&gt;online&lt;/h2&gt;
+&lt;p&gt;https://www.buildwithchrome.com/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 09 Feb 2017 00:10:29 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-09:lego.html</guid><category>lego 3D</category></item><item><title>Open-source in real World ?</title><link>https://mothsart.github.io/open-source-real.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;h2&gt;Le lave-linge Open-source&lt;/h2&gt;
+&lt;p&gt;http://lincrevable.com/&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Un lave-linge d'une durée de vie de 50 ans&lt;/li&gt;
+&lt;li&gt;réparable et évolutive (+ application aidant au démontage/répparation)&lt;/li&gt;
+&lt;li&gt;logiciel open-source&lt;/li&gt;
+&lt;li&gt;personnalisable&lt;/li&gt;
+&lt;li&gt;le lest en béton faisant office de stabilisateur est remplacé par un réservoire d'eau&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;voiture open-source&lt;/h2&gt;
+&lt;p&gt;https://www.osvehicle.com&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-09:open-source-real.html</guid><category>open-source</category></item><item><title>PovRay</title><link>https://mothsart.github.io/povray.html</link><description>&lt;h2&gt;&lt;/h2&gt;
+&lt;p&gt;povray essai.pov +H2048 +W1536 -D +A +Q11&lt;/p&gt;
+&lt;p&gt;-D : sans fenêtre de prévisualisation
++A : Antialiasing
++Q : qualité&lt;/p&gt;
+&lt;p&gt;http://connect.ed-diamond.com/Linux-Pratique/LP-088/Creez-vos-images-de-synthese-avec-POV-Ray&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-09:povray.html</guid><category>povray rendu 3D</category></item><item><title>To be strict or not to be</title><link>https://mothsart.github.io/strict-or-not.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Il est recommandé d'utiliser Javascript avec le mode strict.
+Le mode strict c'est un passage à Ecmascript 5 et tous les navigateurs l'implémentent désormais.&lt;/p&gt;
+&lt;h2&gt;Oui, mais... pourquoi ?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;rendre toutes erreurs comme &lt;strong&gt;explicites&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Corriger les erreurs (surtout de typage) qui pose soucis au moteur Javascript pour de l'&lt;strong&gt;optimisation&lt;/strong&gt;. (comprendre : conversion en bytecode)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;interdire les mots clés de versions futures de Ecmascript&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;rendre &lt;strong&gt;eval&lt;/strong&gt; et &lt;strong&gt;arguments&lt;/strong&gt; plus compréhensible&lt;/li&gt;
+&lt;li&gt;améliorer la &lt;strong&gt;sécurité&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Voilà, j'ai fait un résumé de &lt;a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Strict_mode"&gt;ceci&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Comme souvent, la réalité est plus nuancé&lt;/h2&gt;
+&lt;p&gt;Me basant sur ce constat, je me suis pris au jeu et effectivement, un code &lt;strong&gt;strict&lt;/strong&gt; est bien meilleur pour la détection des erreurs.&lt;/p&gt;
+&lt;p&gt;Reste un point qui me titillait (les 3 autres restent à mon sens du détail) :
+est-ce que le mode strict améliore-t-il les performances ?&lt;/p&gt;
+&lt;h2&gt;Constat amer : Le mode strict n'améliore pas les performances&lt;/h2&gt;
+&lt;p&gt;On nous aurait menti ?
+Non : comme d'habitude, on nous a pas dit &lt;strong&gt;toute&lt;/strong&gt; la vérité.&lt;/p&gt;
+&lt;p&gt;Après avoir fait des benchs un peu &lt;strong&gt;naif&lt;/strong&gt;, je tombais sur un constat amer : mais les perfs en mode strict sont dégradés ?!&lt;/p&gt;
+&lt;p&gt;Après réflexion : j'ai enfin compris le poteau rose :&lt;/p&gt;
+&lt;p&gt;Si je test exactement le même code en mode strict et en mode non strict (et que celui-ci s'exécute en mode strict) : le code en mode non strict ira plus vite car celui-ci sera dépourvu de certaines vérifications.&lt;/p&gt;
+&lt;p&gt;En revanche, si l'on oubli de déclarer des variables (dans le cadre du bench, ce sera &lt;strong&gt;volontairement&lt;/strong&gt; mais l'optique du mode strict c'est bien de détecter ce genre d'oublis &lt;strong&gt;involontaires&lt;/strong&gt;), le code non strict sera plus lent que celui étant strict!!
+En effet, le moteur javascript (qui fonctionne en réalité le même façon en mode strict que non strict : la seul différence résidera dans la présence ou non de ces fameux tests de pré-éxecution) va mettre plus de temps pour déterminer le type de la variable si elle n'est pas déclaré.&lt;/p&gt;
+&lt;h2&gt;Conclusion ?&lt;/h2&gt;
+&lt;p&gt;Si l'on veut le code le plus rapide, le mieux est d'avoir un &lt;strong&gt;&lt;em&gt;code strict&lt;/em&gt;* et surtout &lt;/strong&gt;ne pas le déclarer comme strict** !!!
+On comprend mieux pourquoi aucune doc (de Mozilla ou autre) ne fait état de cette subtilité : ça serait se tirer une balle dans le pied. (genre : comment savoir si de gros sites sont réellement passés à Ecmascript 5 sans regarder si il y a une déclaration en mode strict ?)&lt;/p&gt;
+&lt;p&gt;Je conseillerais, si vous avez de vrais besoins d'optimisation (et que vous en avez la possibilité), de déclarer votre code en &lt;strong&gt;mode strict&lt;/strong&gt; quand vous êtes en débuggage et ... en mode &lt;strong&gt;non strict&lt;/strong&gt; quand vous êtes en prod.
+Du coup, vous serez gagnant sur les 2 tableaux.&lt;/p&gt;
+&lt;h2&gt;C'est bien beau ton barratin mais qu'est-ce qui nous le prouve ?&lt;/h2&gt;
+&lt;p&gt;Pour vérifier mes dires : voici quelques benchs qui témoignent de la véracité de mes propos : &lt;a href=""&gt;bench&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A bon entendeur ;)&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-09:strict-or-not.html</guid><category>javascript</category><category>bench</category></item><item><title>Que pensez de Swift ?</title><link>https://mothsart.github.io/swift-langage.html</link><description>&lt;h2&gt;&lt;/h2&gt;
+&lt;h3&gt;Philosophy&lt;/h3&gt;
+&lt;p&gt;Rust is meant to be a safer C++. Rust is meant to be safe above all else.
+Swift is meant to be a performant Python/Ruby. Swift is meant to be a programmer-centric and familiar coding experience.&lt;/p&gt;
+&lt;h3&gt;Concurrency&lt;/h3&gt;
+&lt;p&gt;Rust uses a pretty conventional thread API
+Swift uses "Grand Central Dispatch" code execution queues, code blocks, and thread pools to optimize performance and perform synchronization.&lt;/p&gt;
+&lt;h3&gt;Memory Management&lt;/h3&gt;
+&lt;p&gt;Ownership and borrowing is the cornerstone concept for shared memory and concurrency in Rust.
+Swift uses compile time ARC, which is like static compiler placed manual memory management. (pas vraiment un Garbage Collector mais un Automatic Reference Counting)
+Both languages have means of unmanaged memory, and direct-use (but unsafe) pointers&lt;/p&gt;
+&lt;h3&gt;C code Compatibility&lt;/h3&gt;
+&lt;p&gt;Swift is ABI compatible with C. So code can be intermixed with existing C or objC code base. This is unique to Swift.
+REPL, Live coding &amp;amp; JIT&lt;/p&gt;
+&lt;p&gt;Swift has a live coding playground, REPL and can JIT in development before being compiled native.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-09:swift-langage.html</guid><category>swift</category><category>rust</category></item><item><title>Vanilla-a-a-a-a</title><link>https://mothsart.github.io/vanilla-a-a-a-a.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Dans mon existence de développeur, j'ai appris à ne pas me fier à des &lt;em&gt;on-dit&lt;/em&gt;, les tendances (oui, les modes chez les web-dev, ça court le net) et toute forme d'approximation.
 Si on veut être sur de quelques choses, il faut le vérifier.&lt;/p&gt;
 &lt;p&gt;Depuis plusieurs années, les modes se sont succédés dans le dev web frontend :
@@ -41,78 +112,7 @@ Avant de se casser la tête avec un sélecteur compliqué, pensez d'abord à sim
 &lt;/ul&gt;
 &lt;h2&gt;A venir&lt;/h2&gt;
 &lt;p&gt;J'aimerais pouvoir identifier facilement les morceaux de code Jquery à modifier.
-Pour cela, rien de mieux qu'une &lt;strong&gt;expression régulière (regex)&lt;/strong&gt; disponible dans chacune des lignes : il vous suffit de l'appliquer à la source de votre projet via un utilitaire tel que &lt;strong&gt;&lt;a href="https://github.com/BurntSushi/ripgrep"&gt;ripgrep&lt;/a&gt;&lt;/strong&gt; et identifier facilement les fichiers et lignes nécessitant un update ! &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-05:vanilla-a-a-a-a.html</guid><category>javascript</category><category>jquery</category><category>xpath</category><category>benchmark</category></item><item><title>To be strict or not to be</title><link>https://mothsart.github.io/strict-or-not.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
-&lt;p&gt;Il est recommandé d'utiliser Javascript avec le mode strict.
-Le mode strict c'est un passage à Ecmascript 5 et tous les navigateurs l'implémentent désormais.&lt;/p&gt;
-&lt;h2&gt;Oui, mais... pourquoi ?&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;rendre toutes erreurs comme &lt;strong&gt;explicites&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Corriger les erreurs (surtout de typage) qui pose soucis au moteur Javascript pour de l'&lt;strong&gt;optimisation&lt;/strong&gt;. (comprendre : conversion en bytecode)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;interdire les mots clés de versions futures de Ecmascript&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;rendre &lt;strong&gt;eval&lt;/strong&gt; et &lt;strong&gt;arguments&lt;/strong&gt; plus compréhensible&lt;/li&gt;
-&lt;li&gt;améliorer la &lt;strong&gt;sécurité&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Voilà, j'ai fait un résumé de &lt;a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Strict_mode"&gt;ceci&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;Comme souvent, la réalité est plus nuancé&lt;/h2&gt;
-&lt;p&gt;Me basant sur ce constat, je me suis pris au jeu et effectivement, un code &lt;strong&gt;strict&lt;/strong&gt; est bien meilleur pour la détection des erreurs.&lt;/p&gt;
-&lt;p&gt;Reste un point qui me titillait (les 3 autres restent à mon sens du détail) :
-est-ce que le mode strict améliore-t-il les performances ?&lt;/p&gt;
-&lt;h2&gt;Constat amer : Le mode strict n'améliore pas les performances&lt;/h2&gt;
-&lt;p&gt;On nous aurait menti ?
-Non : comme d'habitude, on nous a pas dit &lt;strong&gt;toute&lt;/strong&gt; la vérité.&lt;/p&gt;
-&lt;p&gt;Après avoir fait des benchs un peu &lt;strong&gt;naif&lt;/strong&gt;, je tombais sur un constat amer : mais les perfs en mode strict sont dégradés ?!&lt;/p&gt;
-&lt;p&gt;Après réflexion : j'ai enfin compris le poteau rose :&lt;/p&gt;
-&lt;p&gt;Si je test exactement le même code en mode strict et en mode non strict (et que celui-ci s'exécute en mode strict) : le code en mode non strict ira plus vite car celui-ci sera dépourvu de certaines vérifications.&lt;/p&gt;
-&lt;p&gt;En revanche, si l'on oubli de déclarer des variables (dans le cadre du bench, ce sera &lt;strong&gt;volontairement&lt;/strong&gt; mais l'optique du mode strict c'est bien de détecter ce genre d'oublis &lt;strong&gt;involontaires&lt;/strong&gt;), le code non strict sera plus lent que celui étant strict!!
-En effet, le moteur javascript (qui fonctionne en réalité le même façon en mode strict que non strict : la seul différence résidera dans la présence ou non de ces fameux tests de pré-éxecution) va mettre plus de temps pour déterminer le type de la variable si elle n'est pas déclaré.&lt;/p&gt;
-&lt;h2&gt;Conclusion ?&lt;/h2&gt;
-&lt;p&gt;Si l'on veut le code le plus rapide, le mieux est d'avoir un &lt;strong&gt;&lt;em&gt;code strict&lt;/em&gt;* et surtout &lt;/strong&gt;ne pas le déclarer comme strict** !!!
-On comprend mieux pourquoi aucune doc (de Mozilla ou autre) ne fait état de cette subtilité : ça serait se tirer une balle dans le pied. (genre : comment savoir si de gros sites sont réellement passés à Ecmascript 5 sans regarder si il y a une déclaration en mode strict ?)&lt;/p&gt;
-&lt;p&gt;Je conseillerais, si vous avez de vrais besoins d'optimisation (et que vous en avez la possibilité), de déclarer votre code en &lt;strong&gt;mode strict&lt;/strong&gt; quand vous êtes en débuggage et ... en mode &lt;strong&gt;non strict&lt;/strong&gt; quand vous êtes en prod.
-Du coup, vous serez gagnant sur les 2 tableaux.&lt;/p&gt;
-&lt;h2&gt;C'est bien beau ton barratin mais qu'est-ce qui nous le prouve ?&lt;/h2&gt;
-&lt;p&gt;Pour vérifier mes dires : voici quelques benchs qui témoignent de la véracité de mes propos : &lt;a href=""&gt;bench&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;A bon entendeur ;)&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-05:strict-or-not.html</guid><category>javascript</category><category>bench</category></item><item><title>Open-source in real World ?</title><link>https://mothsart.github.io/open-source-real.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
-&lt;h2&gt;Le lave-linge Open-source&lt;/h2&gt;
-&lt;p&gt;http://lincrevable.com/&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Un lave-linge d'une durée de vie de 50 ans&lt;/li&gt;
-&lt;li&gt;réparable et évolutive (+ application aidant au démontage/répparation)&lt;/li&gt;
-&lt;li&gt;logiciel open-source&lt;/li&gt;
-&lt;li&gt;personnalisable&lt;/li&gt;
-&lt;li&gt;le lest en béton faisant office de stabilisateur est remplacé par un réservoire d'eau&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;voiture open-source&lt;/h2&gt;
-&lt;p&gt;https://www.osvehicle.com&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-05:open-source-real.html</guid><category>open-source</category></item><item><title>Que pensez de Swift ?</title><link>https://mothsart.github.io/swift-langage.html</link><description>&lt;h2&gt;&lt;/h2&gt;
-&lt;h3&gt;Philosophy&lt;/h3&gt;
-&lt;p&gt;Rust is meant to be a safer C++. Rust is meant to be safe above all else.
-Swift is meant to be a performant Python/Ruby. Swift is meant to be a programmer-centric and familiar coding experience.&lt;/p&gt;
-&lt;h3&gt;Concurrency&lt;/h3&gt;
-&lt;p&gt;Rust uses a pretty conventional thread API
-Swift uses "Grand Central Dispatch" code execution queues, code blocks, and thread pools to optimize performance and perform synchronization.&lt;/p&gt;
-&lt;h3&gt;Memory Management&lt;/h3&gt;
-&lt;p&gt;Ownership and borrowing is the cornerstone concept for shared memory and concurrency in Rust.
-Swift uses compile time ARC, which is like static compiler placed manual memory management. (pas vraiment un Garbage Collector mais un Automatic Reference Counting)
-Both languages have means of unmanaged memory, and direct-use (but unsafe) pointers&lt;/p&gt;
-&lt;h3&gt;C code Compatibility&lt;/h3&gt;
-&lt;p&gt;Swift is ABI compatible with C. So code can be intermixed with existing C or objC code base. This is unique to Swift.
-REPL, Live coding &amp;amp; JIT&lt;/p&gt;
-&lt;p&gt;Swift has a live coding playground, REPL and can JIT in development before being compiled native.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-05:swift-langage.html</guid><category>swift</category><category>rust</category></item><item><title>PovRay</title><link>https://mothsart.github.io/povray.html</link><description>&lt;h2&gt;&lt;/h2&gt;
-&lt;p&gt;povray essai.pov +H2048 +W1536 -D +A +Q11&lt;/p&gt;
-&lt;p&gt;-D : sans fenêtre de prévisualisation
-+A : Antialiasing
-+Q : qualité&lt;/p&gt;
-&lt;p&gt;http://connect.ed-diamond.com/Linux-Pratique/LP-088/Creez-vos-images-de-synthese-avec-POV-Ray&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-01-05:povray.html</guid><category>povray rendu 3D</category></item><item><title>Lego</title><link>https://mothsart.github.io/lego.html</link><description>&lt;h2&gt;Liens&lt;/h2&gt;
-&lt;p&gt;ldraw.org
-http://www.framboise314.fr/leocad-des-modeles-lego-en-3d-sur-raspberry-pi/
-http://jc-tchang.philohome.com/index.htm
-http://www.philohome.com/
-http://www.holly-wood.it/ldraw/authoring-en.html&lt;/p&gt;
-&lt;h2&gt;Logiciels&lt;/h2&gt;
-&lt;p&gt;LeoCAD : 
-MLCAD : http://mlcad.lm-software.com/&lt;/p&gt;
-&lt;h2&gt;online&lt;/h2&gt;
-&lt;p&gt;https://www.buildwithchrome.com/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 04 Jan 2017 23:52:20 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-01-04:lego.html</guid><category>lego 3D</category></item><item><title>config-canto</title><link>https://mothsart.github.io/config-canto.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+Pour cela, rien de mieux qu'une &lt;strong&gt;expression régulière (regex)&lt;/strong&gt; disponible dans chacune des lignes : il vous suffit de l'appliquer à la source de votre projet via un utilitaire tel que &lt;strong&gt;&lt;a href="https://github.com/BurntSushi/ripgrep"&gt;ripgrep&lt;/a&gt;&lt;/strong&gt; et identifier facilement les fichiers et lignes nécessitant un update ! &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-09:vanilla-a-a-a-a.html</guid><category>javascript</category><category>jquery</category><category>xpath</category><category>benchmark</category></item><item><title>config-canto</title><link>https://mothsart.github.io/config-canto.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;INTERNAL USAGE
        Within the program you can use the following (default) keys.  These can
        be  changed in your configuration file by using the "key" configuration
@@ -214,7 +214,7 @@ https://developer.ubuntu.com/api/devel/ubuntu-13.10/javascript/web-docs/unity-we
 &lt;p&gt;les liens tel que href="app://gnome-terminal"
 href="apt://gnome-terminal"&amp;gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 04 Nov 2016 19:47:46 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-15:ubuntu-dev.html</guid><category>ubuntu</category><category>linux</category><category>dev</category></item><item><title>OpenClipart</title><link>https://mothsart.github.io/openclipart.html</link><description>&lt;h2&gt;Meilleur contributeurs&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 09 Feb 2017 00:10:29 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-15:ubuntu-dev.html</guid><category>ubuntu</category><category>linux</category><category>dev</category></item><item><title>OpenClipart</title><link>https://mothsart.github.io/openclipart.html</link><description>&lt;h2&gt;Meilleur contributeurs&lt;/h2&gt;
 &lt;p&gt;https://openclipart.org/user-detail/cirenovy&lt;/p&gt;
 &lt;p&gt;https://openclipart.org/user-detail/vectorsme&lt;/p&gt;
 &lt;p&gt;https://openclipart.org/user-detail/GDJ&lt;/p&gt;
@@ -288,7 +288,7 @@ rust-redis&lt;/p&gt;
 &lt;p&gt;serde
 rust_serialize&lt;/p&gt;
 &lt;h2&gt;parser&lt;/h2&gt;
-&lt;p&gt;nom&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 24 Dec 2016 16:59:57 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:rust-libs.html</guid><category>rust</category></item><item><title>TTS</title><link>https://mothsart.github.io/tts.html</link><description>&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;nom&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 09 Feb 2017 00:10:29 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:rust-libs.html</guid><category>rust</category></item><item><title>TTS</title><link>https://mothsart.github.io/tts.html</link><description>&lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;https://fr.wikipedia.org/wiki/Formant&lt;/p&gt;
 &lt;p&gt;http://milk.com/&lt;/p&gt;
 &lt;h2&gt;utilisation de Alsa&lt;/h2&gt;
@@ -518,7 +518,7 @@ TuxPaint
 Tux Typing&lt;/p&gt;
 &lt;h2&gt;Logiciels On-line&lt;/h2&gt;
 &lt;p&gt;http://ecole.edulibre.org/
-http://cyrille.largillier.org/cours_numerique/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 04 Feb 2017 13:08:14 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:projets-libre-educatif.html</guid><category>libre</category><category>linux</category><category>éduatif</category></item><item><title>Windows vs Linux</title><link>https://mothsart.github.io/windows-vs-linux.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+http://cyrille.largillier.org/cours_numerique/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 09 Feb 2017 00:10:29 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:projets-libre-educatif.html</guid><category>libre</category><category>linux</category><category>éduatif</category></item><item><title>Windows vs Linux</title><link>https://mothsart.github.io/windows-vs-linux.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Comparer Windows à Linux c'est comme comparer &lt;/p&gt;
 &lt;h2&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:windows-vs-linux.html</guid><category>windows</category><category>linux</category></item><item><title>Correcteur</title><link>https://mothsart.github.io/correcteur.html</link><description>&lt;h2&gt;&lt;/h2&gt;
 &lt;p&gt;http://www.norvig.com/spell-correct.html&lt;/p&gt;
@@ -1807,7 +1807,7 @@ Il subsite donc des erreurs à l'exécution : pour les débusquer, &lt;strong&gt
 
 &lt;p&gt;https://github.com/mmstick/cargo-deb&lt;/p&gt;
 &lt;h2&gt;En vrac&lt;/h2&gt;
-&lt;p&gt;http://rust.developpez.com/faq&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 06 Jan 2017 20:19:54 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-rust.html</guid><category>rust</category></item><item><title>Pourquoi je boude Node.Js</title><link>https://mothsart.github.io/pourquoi-je-boude-nodejs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;http://rust.developpez.com/faq&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 09 Feb 2017 00:10:29 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-rust.html</guid><category>rust</category></item><item><title>Pourquoi je boude Node.Js</title><link>https://mothsart.github.io/pourquoi-je-boude-nodejs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;NodeJS est à la mode.
 Quand je parle de NodeJS, je parle bien entendu de toute la mouvance autours de Javascript.&lt;/p&gt;
 &lt;p&gt;Le principe :

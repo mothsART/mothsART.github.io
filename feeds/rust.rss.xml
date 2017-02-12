@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Fri, 06 Jan 2017 20:19:54 +0100</lastBuildDate><item><title>Librairies et frameworks</title><link>https://mothsart.github.io/rust-libs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Thu, 09 Feb 2017 00:10:29 +0100</lastBuildDate><item><title>Librairies et frameworks</title><link>https://mothsart.github.io/rust-libs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Depuis que Rust est en version 1.0, les choses se sont accélérés et beaucoup de librairies et frameworks ont pointé le bout de leur nez.
 Voici les plus connus trié par thème.&lt;/p&gt;
 &lt;h2&gt;Base de données&lt;/h2&gt;
@@ -9,7 +9,7 @@ rust-redis&lt;/p&gt;
 &lt;p&gt;serde
 rust_serialize&lt;/p&gt;
 &lt;h2&gt;parser&lt;/h2&gt;
-&lt;p&gt;nom&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 24 Dec 2016 16:59:57 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:rust-libs.html</guid><category>rust</category></item><item><title>Des exemples Rust</title><link>https://mothsart.github.io/exemples-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;nom&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 09 Feb 2017 00:10:29 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:rust-libs.html</guid><category>rust</category></item><item><title>Des exemples Rust</title><link>https://mothsart.github.io/exemples-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Des exemples de code Rust que je réutilise (mais que je n'arrive pas à mémoriser)&lt;/p&gt;
 &lt;h2&gt;Enum récursif&lt;/h2&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-rust"&gt;#[derive(Debug)]
@@ -363,4 +363,4 @@ Il subsite donc des erreurs à l'exécution : pour les débusquer, &lt;strong&gt
 
 &lt;p&gt;https://github.com/mmstick/cargo-deb&lt;/p&gt;
 &lt;h2&gt;En vrac&lt;/h2&gt;
-&lt;p&gt;http://rust.developpez.com/faq&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 06 Jan 2017 20:19:54 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-rust.html</guid><category>rust</category></item></channel></rss>
+&lt;p&gt;http://rust.developpez.com/faq&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 09 Feb 2017 00:10:29 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-rust.html</guid><category>rust</category></item></channel></rss>

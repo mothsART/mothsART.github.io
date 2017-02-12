@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Sat, 04 Feb 2017 13:08:14 +0100</lastBuildDate><item><title>Open-source in real World ?</title><link>https://mothsart.github.io/open-source-real.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Thu, 09 Feb 2017 00:10:29 +0100</lastBuildDate><item><title>Lego</title><link>https://mothsart.github.io/lego.html</link><description>&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;ldraw.org
+http://www.framboise314.fr/leocad-des-modeles-lego-en-3d-sur-raspberry-pi/
+http://jc-tchang.philohome.com/index.htm
+http://www.philohome.com/
+http://www.holly-wood.it/ldraw/authoring-en.html&lt;/p&gt;
+&lt;h2&gt;Logiciels&lt;/h2&gt;
+&lt;p&gt;LeoCAD : 
+MLCAD : http://mlcad.lm-software.com/&lt;/p&gt;
+&lt;h2&gt;online&lt;/h2&gt;
+&lt;p&gt;https://www.buildwithchrome.com/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 09 Feb 2017 00:10:29 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-09:lego.html</guid><category>lego 3D</category></item><item><title>Open-source in real World ?</title><link>https://mothsart.github.io/open-source-real.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;h2&gt;Le lave-linge Open-source&lt;/h2&gt;
 &lt;p&gt;http://lincrevable.com/&lt;/p&gt;
 &lt;ul&gt;
@@ -10,7 +20,12 @@
 &lt;li&gt;le lest en béton faisant office de stabilisateur est remplacé par un réservoire d'eau&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;voiture open-source&lt;/h2&gt;
-&lt;p&gt;https://www.osvehicle.com&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-05:open-source-real.html</guid><category>open-source</category></item><item><title>Que pensez de Swift ?</title><link>https://mothsart.github.io/swift-langage.html</link><description>&lt;h2&gt;&lt;/h2&gt;
+&lt;p&gt;https://www.osvehicle.com&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-09:open-source-real.html</guid><category>open-source</category></item><item><title>PovRay</title><link>https://mothsart.github.io/povray.html</link><description>&lt;h2&gt;&lt;/h2&gt;
+&lt;p&gt;povray essai.pov +H2048 +W1536 -D +A +Q11&lt;/p&gt;
+&lt;p&gt;-D : sans fenêtre de prévisualisation
++A : Antialiasing
++Q : qualité&lt;/p&gt;
+&lt;p&gt;http://connect.ed-diamond.com/Linux-Pratique/LP-088/Creez-vos-images-de-synthese-avec-POV-Ray&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-09:povray.html</guid><category>povray rendu 3D</category></item><item><title>Que pensez de Swift ?</title><link>https://mothsart.github.io/swift-langage.html</link><description>&lt;h2&gt;&lt;/h2&gt;
 &lt;h3&gt;Philosophy&lt;/h3&gt;
 &lt;p&gt;Rust is meant to be a safer C++. Rust is meant to be safe above all else.
 Swift is meant to be a performant Python/Ruby. Swift is meant to be a programmer-centric and familiar coding experience.&lt;/p&gt;
@@ -24,22 +39,7 @@ Both languages have means of unmanaged memory, and direct-use (but unsafe) point
 &lt;h3&gt;C code Compatibility&lt;/h3&gt;
 &lt;p&gt;Swift is ABI compatible with C. So code can be intermixed with existing C or objC code base. This is unique to Swift.
 REPL, Live coding &amp;amp; JIT&lt;/p&gt;
-&lt;p&gt;Swift has a live coding playground, REPL and can JIT in development before being compiled native.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-05:swift-langage.html</guid><category>swift</category><category>rust</category></item><item><title>PovRay</title><link>https://mothsart.github.io/povray.html</link><description>&lt;h2&gt;&lt;/h2&gt;
-&lt;p&gt;povray essai.pov +H2048 +W1536 -D +A +Q11&lt;/p&gt;
-&lt;p&gt;-D : sans fenêtre de prévisualisation
-+A : Antialiasing
-+Q : qualité&lt;/p&gt;
-&lt;p&gt;http://connect.ed-diamond.com/Linux-Pratique/LP-088/Creez-vos-images-de-synthese-avec-POV-Ray&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-01-05:povray.html</guid><category>povray rendu 3D</category></item><item><title>Lego</title><link>https://mothsart.github.io/lego.html</link><description>&lt;h2&gt;Liens&lt;/h2&gt;
-&lt;p&gt;ldraw.org
-http://www.framboise314.fr/leocad-des-modeles-lego-en-3d-sur-raspberry-pi/
-http://jc-tchang.philohome.com/index.htm
-http://www.philohome.com/
-http://www.holly-wood.it/ldraw/authoring-en.html&lt;/p&gt;
-&lt;h2&gt;Logiciels&lt;/h2&gt;
-&lt;p&gt;LeoCAD : 
-MLCAD : http://mlcad.lm-software.com/&lt;/p&gt;
-&lt;h2&gt;online&lt;/h2&gt;
-&lt;p&gt;https://www.buildwithchrome.com/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 04 Jan 2017 23:52:20 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-01-04:lego.html</guid><category>lego 3D</category></item><item><title>config-canto</title><link>https://mothsart.github.io/config-canto.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Swift has a live coding playground, REPL and can JIT in development before being compiled native.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-09:swift-langage.html</guid><category>swift</category><category>rust</category></item><item><title>config-canto</title><link>https://mothsart.github.io/config-canto.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;INTERNAL USAGE
        Within the program you can use the following (default) keys.  These can
        be  changed in your configuration file by using the "key" configuration
@@ -134,7 +134,7 @@ https://developer.ubuntu.com/api/devel/ubuntu-13.10/javascript/web-docs/unity-we
 &lt;p&gt;les liens tel que href="app://gnome-terminal"
 href="apt://gnome-terminal"&amp;gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 04 Nov 2016 19:47:46 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-15:ubuntu-dev.html</guid><category>ubuntu</category><category>linux</category><category>dev</category></item><item><title>OpenClipart</title><link>https://mothsart.github.io/openclipart.html</link><description>&lt;h2&gt;Meilleur contributeurs&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 09 Feb 2017 00:10:29 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-15:ubuntu-dev.html</guid><category>ubuntu</category><category>linux</category><category>dev</category></item><item><title>OpenClipart</title><link>https://mothsart.github.io/openclipart.html</link><description>&lt;h2&gt;Meilleur contributeurs&lt;/h2&gt;
 &lt;p&gt;https://openclipart.org/user-detail/cirenovy&lt;/p&gt;
 &lt;p&gt;https://openclipart.org/user-detail/vectorsme&lt;/p&gt;
 &lt;p&gt;https://openclipart.org/user-detail/GDJ&lt;/p&gt;
@@ -324,7 +324,7 @@ TuxPaint
 Tux Typing&lt;/p&gt;
 &lt;h2&gt;Logiciels On-line&lt;/h2&gt;
 &lt;p&gt;http://ecole.edulibre.org/
-http://cyrille.largillier.org/cours_numerique/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 04 Feb 2017 13:08:14 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:projets-libre-educatif.html</guid><category>libre</category><category>linux</category><category>éduatif</category></item><item><title>J'aime pas Apple</title><link>https://mothsart.github.io/dislike-apple.html</link><description>&lt;h2&gt;Mon usage de IOS&lt;/h2&gt;
+http://cyrille.largillier.org/cours_numerique/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 09 Feb 2017 00:10:29 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:projets-libre-educatif.html</guid><category>libre</category><category>linux</category><category>éduatif</category></item><item><title>J'aime pas Apple</title><link>https://mothsart.github.io/dislike-apple.html</link><description>&lt;h2&gt;Mon usage de IOS&lt;/h2&gt;
 &lt;p&gt;Autant le dire de façon clair : je n'aime pas (et n'ai jamais aimé) Apple.
 J'ai du travaillé sur support IOs au boulot et j'ai vraiment essayé de me contre-dire.&lt;/p&gt;
 &lt;p&gt;J'ai une tablette archos Android (- de 100€) @home sans doute mal configuré (y'a des jeux, des applis à gogos) qui tourne en définitive mieux que des tablettes Apple fraichement acheté au prix fort!&lt;/p&gt;
