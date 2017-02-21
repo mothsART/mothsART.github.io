@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Thu, 09 Feb 2017 00:10:29 +0100</lastBuildDate><item><title>Lego</title><link>https://mothsart.github.io/lego.html</link><description>&lt;h2&gt;Liens&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Thu, 09 Feb 2017 00:10:29 +0100</lastBuildDate><item><title>Fuzzer</title><link>https://mothsart.github.io/fuzzer.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Ca fait un moment que je me passionne pour le fuzzing sans vraiment écrire à ce sujet.&lt;/p&gt;
+&lt;h2&gt;Fuzzer connus et spécificité&lt;/h2&gt;
+&lt;h3&gt;(ZZUF)[http://caca.zoy.org/wiki/zzuf]&lt;/h3&gt;
+&lt;p&gt;Complètement &lt;strong&gt;stochastique&lt;/strong&gt;.
+Le fuzzer de licaca et Vlc : très bon pour les codecs et formats vidéos&lt;/p&gt;
+&lt;h3&gt;AFL&lt;/h3&gt;
+&lt;p&gt;Provient de C++.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;afl est un fuzzer intelligent dans le sens ou il va changer l'input pour explorer de nouvelles branches du code.
+(il change des octets au hasard, regarde si c'est passé par un nouveau chemin dans le code, et si ça change pas, ente une nouvelle approche)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;il peut partir d'un existant (passage d'un fichier valide) et créer de l'entropie autours.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Variante pour python : http://jwilk.net/software/python-afl
+Variante pour Rust : https://github.com/frewsxcv/afl.rs&lt;/p&gt;
+&lt;h3&gt;QuickChef&lt;/h3&gt;
+&lt;p&gt;Provient de Haskell.&lt;/p&gt;
+&lt;p&gt;Variante pour Rust : https://github.com/BurntSushi/quickcheck&lt;/p&gt;
+&lt;h3&gt;(Fusil)[http://fusil.readthedocs.io/]&lt;/h3&gt;
+&lt;p&gt;Provient de la communauté &lt;strong&gt;Python&lt;/strong&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-16:fuzzer.html</guid><category>fuzzer</category><category>python</category><category>rust</category></item><item><title>Lego</title><link>https://mothsart.github.io/lego.html</link><description>&lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;ldraw.org
 http://www.framboise314.fr/leocad-des-modeles-lego-en-3d-sur-raspberry-pi/
 http://jc-tchang.philohome.com/index.htm

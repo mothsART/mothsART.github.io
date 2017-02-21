@@ -1,5 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Thu, 09 Feb 2017 00:10:29 +0100</lastBuildDate><item><title>Lego</title><link>https://mothsart.github.io/lego.html</link><description>&lt;h2&gt;Liens&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Sun, 12 Feb 2017 17:16:22 +0100</lastBuildDate><item><title>Applis en Rust</title><link>https://mothsart.github.io/applis-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Le langage Rust : c'est encore un truc qui sert à rien ?!&lt;/p&gt;
+&lt;p&gt;Ben non, y'a plein de libs qui l'utilisent !&lt;/p&gt;
+&lt;p&gt;Des libs peut-être mais des vrais soft derrières ?&lt;/p&gt;
+&lt;h2&gt;Des softs en Rust&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/servo/servo"&gt;Servo&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;RedOS : un OS en Rust : https://www.redox-os.org/&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;RipGrep : un remplacement de Grep : https://github.com/BurntSushi/ripgrep&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-22:applis-rust.html</guid></item><item><title>Financement participatif</title><link>https://mothsart.github.io/financement-participatif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;https://liberapay.com/&lt;/p&gt;
+&lt;p&gt;Flattr&lt;/p&gt;
+&lt;p&gt;https://www.wattpad.com&lt;/p&gt;
+&lt;p&gt;https://www.tipeee.com&lt;/p&gt;
+&lt;p&gt;https://www.patreon.com&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-22:financement-participatif.html</guid></item><item><title>Fuzzer</title><link>https://mothsart.github.io/fuzzer.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Ca fait un moment que je me passionne pour le fuzzing sans vraiment écrire à ce sujet.&lt;/p&gt;
+&lt;h2&gt;Fuzzer connus et spécificité&lt;/h2&gt;
+&lt;h3&gt;(ZZUF)[http://caca.zoy.org/wiki/zzuf]&lt;/h3&gt;
+&lt;p&gt;Complètement &lt;strong&gt;stochastique&lt;/strong&gt;.
+Le fuzzer de licaca et Vlc : très bon pour les codecs et formats vidéos&lt;/p&gt;
+&lt;h3&gt;AFL&lt;/h3&gt;
+&lt;p&gt;Provient de C++.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;afl est un fuzzer intelligent dans le sens ou il va changer l'input pour explorer de nouvelles branches du code.
+(il change des octets au hasard, regarde si c'est passé par un nouveau chemin dans le code, et si ça change pas, ente une nouvelle approche)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;il peut partir d'un existant (passage d'un fichier valide) et créer de l'entropie autours.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Variante pour python : http://jwilk.net/software/python-afl
+Variante pour Rust : https://github.com/frewsxcv/afl.rs&lt;/p&gt;
+&lt;h3&gt;QuickChef&lt;/h3&gt;
+&lt;p&gt;Provient de Haskell.&lt;/p&gt;
+&lt;p&gt;Variante pour Rust : https://github.com/BurntSushi/quickcheck&lt;/p&gt;
+&lt;h3&gt;(Fusil)[http://fusil.readthedocs.io/]&lt;/h3&gt;
+&lt;p&gt;Provient de la communauté &lt;strong&gt;Python&lt;/strong&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-16:fuzzer.html</guid><category>fuzzer</category><category>python</category><category>rust</category></item><item><title>Lego</title><link>https://mothsart.github.io/lego.html</link><description>&lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;ldraw.org
 http://www.framboise314.fr/leocad-des-modeles-lego-en-3d-sur-raspberry-pi/
 http://jc-tchang.philohome.com/index.htm
@@ -1718,11 +1762,15 @@ cd frontend_workflow&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Opération inverse (reafficher les exemples)&lt;/p&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;git checkout -- app/&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-frontend.html</guid><category>frontend</category><category>css</category><category>javascript</category></item><item><title>Ma stack Rust</title><link>https://mothsart.github.io/stack-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;En vrac, les outils que j'utilise et perfectionne dans mon apprentissage et mon utilisation du language &lt;strong&gt;Rust&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;MAJ de Rust&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;curl -sf -L https://static.rust-lang.org/rustup.sh | sh&lt;/code&gt;&lt;/pre&gt;
+
+
 &lt;h2&gt;Sublime-Text&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Support de la coloration synthaxique de Rust &lt;a href="https://packagecontrol.io/"&gt;https://packagecontrol.io/installation&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;BeautifyRust : formate le code Rust pour qu'il suive les bonnes conventions de codage. (et évite d'y penser)
-Nécessite et utilise : &lt;a href="https://github.com/rust-lang-nursery/rustfmt"&gt;rustfmt&lt;/a&gt;&lt;/li&gt;
+Nécessite et utilise : &lt;strong&gt;&lt;a href="https://github.com/rust-lang-nursery/rustfmt"&gt;rustfmt&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;RustAutocomplete&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Vous n'utilisez pas &lt;strong&gt;Sublime&lt;/strong&gt; ou vous désirez en savoir d'avantage : https://areweideyet.com/&lt;/p&gt;
@@ -1807,7 +1855,7 @@ Il subsite donc des erreurs à l'exécution : pour les débusquer, &lt;strong&gt
 
 &lt;p&gt;https://github.com/mmstick/cargo-deb&lt;/p&gt;
 &lt;h2&gt;En vrac&lt;/h2&gt;
-&lt;p&gt;http://rust.developpez.com/faq&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 09 Feb 2017 00:10:29 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-rust.html</guid><category>rust</category></item><item><title>Pourquoi je boude Node.Js</title><link>https://mothsart.github.io/pourquoi-je-boude-nodejs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;http://rust.developpez.com/faq&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 12 Feb 2017 17:16:22 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-rust.html</guid><category>rust</category></item><item><title>Pourquoi je boude Node.Js</title><link>https://mothsart.github.io/pourquoi-je-boude-nodejs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;NodeJS est à la mode.
 Quand je parle de NodeJS, je parle bien entendu de toute la mouvance autours de Javascript.&lt;/p&gt;
 &lt;p&gt;Le principe :

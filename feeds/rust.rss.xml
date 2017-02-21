@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Thu, 09 Feb 2017 00:10:29 +0100</lastBuildDate><item><title>Librairies et frameworks</title><link>https://mothsart.github.io/rust-libs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Sun, 12 Feb 2017 17:16:22 +0100</lastBuildDate><item><title>Applis en Rust</title><link>https://mothsart.github.io/applis-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Le langage Rust : c'est encore un truc qui sert à rien ?!&lt;/p&gt;
+&lt;p&gt;Ben non, y'a plein de libs qui l'utilisent !&lt;/p&gt;
+&lt;p&gt;Des libs peut-être mais des vrais soft derrières ?&lt;/p&gt;
+&lt;h2&gt;Des softs en Rust&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/servo/servo"&gt;Servo&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;RedOS : un OS en Rust : https://www.redox-os.org/&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;RipGrep : un remplacement de Grep : https://github.com/BurntSushi/ripgrep&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-22:applis-rust.html</guid></item><item><title>Librairies et frameworks</title><link>https://mothsart.github.io/rust-libs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Depuis que Rust est en version 1.0, les choses se sont accélérés et beaucoup de librairies et frameworks ont pointé le bout de leur nez.
 Voici les plus connus trié par thème.&lt;/p&gt;
 &lt;h2&gt;Base de données&lt;/h2&gt;
@@ -274,11 +289,15 @@ insert into questions (entitled, response) values ('Cargo est-il le gestionnaire
 &lt;li&gt;pfuu, j'avais dit que c'était pas un projet sérieux.&lt;/li&gt;
 &lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 07 Aug 2016 15:15:35 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-11:the-quizz-part-1.html</guid><category>rust</category><category>gettext</category><category>cli</category><category>postgresql</category></item><item><title>Ma stack Rust</title><link>https://mothsart.github.io/stack-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;En vrac, les outils que j'utilise et perfectionne dans mon apprentissage et mon utilisation du language &lt;strong&gt;Rust&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;MAJ de Rust&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;curl -sf -L https://static.rust-lang.org/rustup.sh | sh&lt;/code&gt;&lt;/pre&gt;
+
+
 &lt;h2&gt;Sublime-Text&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Support de la coloration synthaxique de Rust &lt;a href="https://packagecontrol.io/"&gt;https://packagecontrol.io/installation&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;BeautifyRust : formate le code Rust pour qu'il suive les bonnes conventions de codage. (et évite d'y penser)
-Nécessite et utilise : &lt;a href="https://github.com/rust-lang-nursery/rustfmt"&gt;rustfmt&lt;/a&gt;&lt;/li&gt;
+Nécessite et utilise : &lt;strong&gt;&lt;a href="https://github.com/rust-lang-nursery/rustfmt"&gt;rustfmt&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;RustAutocomplete&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Vous n'utilisez pas &lt;strong&gt;Sublime&lt;/strong&gt; ou vous désirez en savoir d'avantage : https://areweideyet.com/&lt;/p&gt;
@@ -363,4 +382,4 @@ Il subsite donc des erreurs à l'exécution : pour les débusquer, &lt;strong&gt
 
 &lt;p&gt;https://github.com/mmstick/cargo-deb&lt;/p&gt;
 &lt;h2&gt;En vrac&lt;/h2&gt;
-&lt;p&gt;http://rust.developpez.com/faq&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 09 Feb 2017 00:10:29 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-rust.html</guid><category>rust</category></item></channel></rss>
+&lt;p&gt;http://rust.developpez.com/faq&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 12 Feb 2017 17:16:22 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-rust.html</guid><category>rust</category></item></channel></rss>
