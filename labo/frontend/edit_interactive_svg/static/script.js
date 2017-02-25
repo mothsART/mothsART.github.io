@@ -87,7 +87,7 @@ function add_legend(element) {
     var index = parseInt(document.getElementById("nb-indices").getAttribute("value")) + 1;
     document.getElementById("nb-indices").setAttribute("value", index);
     reorder_legend();
-    if (index > 99) {
+    if (index > 98) {
         $(element).attr("disabled", "disabled").attr("title", "Too lot indices.");
     }
     $("#svg.edit-mode #indices article .indice").mousedown(function() {
@@ -139,10 +139,11 @@ function add_legend(element) {
             );
         }
         this.onmouseup = function() {
+            "use strict";
             document.onmousemove = null;
             $("#mask-on-drag").addClass("hidden");
             $(self).removeClass("is-draggable");
-        }
+        };
     });
 }
 
@@ -204,12 +205,8 @@ function indice_out(element) {
 
 function delete_legend() {
     "use strict";
-    $("#list-of-legend tbody tr .checkbox:checked").closest("tr").remove();
+    $("#list-of-legend tbody tr .select:checked").closest("tr").remove();
     $("#delete-legend-modal").modal('hide');
-    /*document.getElementById("count-nb-display").setAttribute(
-        "value",
-        document.getElementById("nb-indices").getAttribute("value") -
-    );*/
     if ($("#list-of-legend tbody tr").length == 1) {
         $("#list-of-legend").addClass('hidden');
         $("#show-all-legend").addClass('hidden').prop('checked', false);
@@ -274,28 +271,40 @@ function delete_pic() {
 function show_legend(element) {
     "use strict";
     var index = $(element).parent().parent().find(".indice").text();
+    var nbDisplay = $("#count-nb-display");
     if($(element).hasClass('show')) {
         $("#indice-" + index).addClass("hidden");
         $(element).removeClass('show');
+        nbDisplay.val(parseInt(nbDisplay.val()) - 1);
     }
     else {
         $("#indice-" + index).removeClass("hidden");
         $(element).addClass('show');
+        nbDisplay.val(parseInt(nbDisplay.val()) + 1);
     }
-    if ($("#list-of-legend tbody tr .checkbox:not(:checked)").length == 1) {
-        $("#show-all-legend").prop('checked', true);
-    }
-    else {
-        $("#show-all-legend").prop('checked', false);
+    $("#show-all-legend").removeClass('show');
+    if ($("#nb-indices").val() === nbDisplay.val()) {
+        $("#show-all-legend").addClass('show');
     }
 }
 
 function select_legend(element) {
     "use strict";
-    $("#delete-legend-button").removeClass('disabled');
-    if ($("#list-of-legend tbody tr .checkbox:checked").length == 0) {
-        $("#delete-legend-button").addClass('disabled');
+    var nbSelected = $("#count-nb-selected");
+    if($(element).is(':checked')) {
+        nbSelected.val(parseInt(nbSelected.val()) + 1);
     }
+    else {
+        nbSelected.val(parseInt(nbSelected.val()) - 1);
+    }
+    $("#delete-legend-button").addClass('disabled');
+    if (nbSelected.val() > 0) {
+        $("#delete-legend-button").removeClass('disabled');
+    }
+    $("#select-all-legend").prop(
+        "checked",
+        $("#nb-indices").val() == nbSelected.val()
+    );
 }
 
 function show_all_legend() {
@@ -305,16 +314,16 @@ function show_all_legend() {
         $("#show-all-legend").removeClass("show");
         $("#list-of-legend .display-indice").removeClass("show");
         $("#indices .indice").addClass("hidden");
-        document.getElementById("count-nb-display").setAttribute(
-            "value",
-            document.getElementById("nb-indices").getAttribute("value")
-        );
+        document.getElementById("count-nb-display").setAttribute("value", 0);
     }
     else {
         $("#show-all-legend").addClass("show");
         $("#list-of-legend .display-indice").addClass("show");
         $("#indices .indice").removeClass("hidden");
-        document.getElementById("count-nb-display").setAttribute("value", 0);
+        document.getElementById("count-nb-display").setAttribute(
+            "value",
+            document.getElementById("nb-indices").getAttribute("value")
+        );
     }
     $("#template-indice .indice").addClass("hidden");
 }
@@ -360,7 +369,13 @@ function active_zoom(element) {
 function real_zoom(element) {
     "use strict";
     $("#svg.show").addClass("duration");
-    var index = $(element).text().trim();
+    var id = $(element).attr("id");
+    if (id.startsWith("indice")) {
+        var index = id.substring(7);
+    }
+    else {
+        var index = id.substring(12);
+    }
     var indice = $("#indice-" + index);
     var description = $("#description-" + index);
     if (indice.data("zoom-active") == true)

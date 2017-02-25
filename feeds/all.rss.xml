@@ -1,5 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 22 Feb 2017 00:51:30 +0100</lastBuildDate><item><title>Applis en Rust</title><link>https://mothsart.github.io/applis-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Sat, 25 Feb 2017 17:33:53 +0100</lastBuildDate><item><title>Editeur WYSIWYG de SVG interactifs</title><link>https://mothsart.github.io/editeur-svg-interactif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;L'objectif est simple : éditer un fichier SVG statique afin de le présenter comme un contenu interactif. 
+Permettre l'ajout des zones cliquables pouvant être zoomés et enrichies d'une explication&lt;/p&gt;
+&lt;p&gt;Les fichiers générés (page Html contenant le svg) pouvant servir à divers usages :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;contenus éducatifs&lt;/li&gt;
+&lt;li&gt;support de présentation&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="tmuxp load" src="static/images/editeur_svg/editeur_svg_exemple1.png" /&gt;&lt;/p&gt;
+&lt;h2&gt;Objectifs techniques&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;créer des illustrations interactives avec toujours le même gabarit : une légende contenant des indices titrés et un descriptif pour une zone de l'illustration.
+Un exemple est disponible : &lt;a href="https://mothsart.github.io/labo/frontend/edit_interactive_svg/examples/campement.min.svg"&gt;https://mothsart.github.io/labo/frontend/edit_interactive_svg/examples/campement.min.svg&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;permettre des zooms sur les zones décrites&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;avoir un contenu responsive (vu que le contenu est pleinement vectoriel, pourquoi s'en priver)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;être et rester simple d'utilisation (&lt;strong&gt;&lt;a href="https://fr.wikipedia.org/wiki/Principe_KISS"&gt;KISS&lt;/a&gt;&lt;/strong&gt; et &lt;strong&gt;&lt;a href="https://fr.wikipedia.org/wiki/Philosophie_d%27Unix"&gt;philosophie Unix&lt;/a&gt;&lt;/strong&gt;) et productif pour enrichir une illustration à vocation pédagogique.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;rester simple à développer et maintenir&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;utilisation hors ligne et intégré dans une distribution Linux via un paquet .deb&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Version de démo en ligne&lt;/h2&gt;
+&lt;p&gt;Il est possible d'utiliser directement la dernière version sur :
+&lt;a href="https://mothsart.github.io/labo/frontend/edit_interactive_svg/"&gt;https://mothsart.github.io/labo/frontend/edit_interactive_svg/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Des illustrations effectués intégralement à partir de cet éditeur seront rapidement mise en ligne.&lt;/p&gt;
+&lt;h2&gt;Explication d'utilisation&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;On glisse et on dépose (ou on choisi via son explorateur de fichiers) son fichier svg statique. (si possible sans animation et javascript)
+On arrive sur une  interface nous permettant d'éditer ce fichier.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;On ajoute des indices dans la légende. Ces derniers s'affichent également sur notre illustration si l'on clique sur les icones d'affichages (des yeux).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;On les positionnes au gré de nos envies (en restant appuyé sur le clic gauche) sur l'indice à déplacer.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Un menu déroulant sur l'indice est disponible afin de l'éditer :
+Il est possible de changer la couleur, de zoomer mais également d'ajouter/editer le titre et la description de notre indice.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;L'accès au &lt;strong&gt;mode show&lt;/strong&gt; nous permet de visualiser le rendu final. (avec les animations sur les indices si le zoom a été paramètré).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Il est possible de changer l'odre de nos indices (en les sélectionnant et les glissants) et d'en supprimer ainsi que de les afficher ou non. (pratique si l'on ne veut se concentrer que sur un éventail précis)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Le bouton save permet de convertir notre travail en un fichier html. (équivalent au &lt;strong&gt;mode rendu&lt;/strong&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Si l'on veut repartir d'une feuille blanche, il suffit de cliquer sur &lt;strong&gt;Delete&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Utilisation dans une distribution&lt;/h2&gt;
+&lt;p&gt;Il est possible d'installer un ppa afin de profiter de l'éditeur dans Ubuntu :&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://launchpad.net/~jerem-ferry/+archive/ubuntu/app-illustration"&gt;https://launchpad.net/~jerem-ferry/+archive/ubuntu/app-illustration&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Participer au logiciel&lt;/h2&gt;
+&lt;p&gt;Les sources du projet sont disponibles sur Github : &lt;a href="https://github.com/mothsART/editInteractiveSVG"&gt;https://github.com/mothsART/editInteractiveSVG&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Il est possible de me rapporter des bugs directement via les issues du dépôt mais également sur le forum de PrimTux :
+&lt;a href="http://forum.primtux.fr/viewtopic.php?pid=8870"&gt;http://forum.primtux.fr/viewtopic.php?pid=8870&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 25 Feb 2017 17:33:53 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-25:editeur-svg-interactif.html</guid><category>javascript</category><category>svg</category><category>linux</category><category>primtux</category><category>deb</category></item><item><title>Applis en Rust</title><link>https://mothsart.github.io/applis-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Le langage Rust : c'est encore un truc qui sert à rien ?!&lt;/p&gt;
 &lt;p&gt;Ben non, y'a plein de libs qui l'utilisent !&lt;/p&gt;
 &lt;p&gt;Des libs peut-être mais des vrais soft derrières ?&lt;/p&gt;
@@ -14,13 +85,16 @@
 &lt;li&gt;
 &lt;p&gt;RipGrep : un remplacement de Grep : https://github.com/BurntSushi/ripgrep&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-22:applis-rust.html</guid></item><item><title>Financement participatif</title><link>https://mothsart.github.io/financement-participatif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;li&gt;
+&lt;p&gt;[Snatch]https://github.com/derniercri/snatch&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 25 Feb 2017 17:06:50 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-22:applis-rust.html</guid></item><item><title>Financement participatif</title><link>https://mothsart.github.io/financement-participatif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
-&lt;p&gt;https://liberapay.com/&lt;/p&gt;
+&lt;p&gt;https://liberapay.com/mothsART&lt;/p&gt;
 &lt;p&gt;Flattr&lt;/p&gt;
 &lt;p&gt;https://www.wattpad.com&lt;/p&gt;
 &lt;p&gt;https://www.tipeee.com&lt;/p&gt;
-&lt;p&gt;https://www.patreon.com&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-22:financement-participatif.html</guid></item><item><title>Fuzzer</title><link>https://mothsart.github.io/fuzzer.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;https://www.patreon.com&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 25 Feb 2017 17:06:50 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-22:financement-participatif.html</guid></item><item><title>Fuzzer</title><link>https://mothsart.github.io/fuzzer.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Ca fait un moment que je me passionne pour le fuzzing sans vraiment écrire à ce sujet.&lt;/p&gt;
 &lt;h2&gt;Fuzzer connus et spécificité&lt;/h2&gt;
 &lt;h3&gt;(ZZUF)[http://caca.zoy.org/wiki/zzuf]&lt;/h3&gt;
@@ -356,12 +430,17 @@ https://sketchfab.com/&lt;/p&gt;
 &lt;p&gt;Pour visualiser les fichiers .fbx dans Blender, il faut utiliser l'import.&lt;/p&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;http://sebsauvage.net/temp/blender/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:3D.html</guid><category>3D</category></item><item><title>algo images</title><link>https://mothsart.github.io/algo-images.html</link><description>&lt;h2&gt;&lt;/h2&gt;
-&lt;p&gt;https://29a.ch/
-https://github.com/jwagner/smartcrop.js&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:algo-images.html</guid><category>picture</category><category>algo</category></item><item><title>Blender</title><link>https://mothsart.github.io/blender.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;https://29a.ch/&lt;/p&gt;
+&lt;p&gt;https://github.com/jwagner/smartcrop.js&lt;/p&gt;
+&lt;p&gt;https://github.com/jaysalvat/jquery.facedetection&lt;/p&gt;
+&lt;p&gt;https://github.com/eduardolundgren/tracking.js/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 25 Feb 2017 17:06:50 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:algo-images.html</guid><category>picture</category><category>algo</category></item><item><title>Blender</title><link>https://mothsart.github.io/blender.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;h2&gt;liens&lt;/h2&gt;
 &lt;p&gt;https://www.blender.org/manual/render/freestyle/export_svg.html
 http://goinkscape.com/use-blender-freestyle-to-export-svg-artwork&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:blender.html</guid><category>3D</category><category>blender</category></item><item><title>Cette photo est-elle retouché ?</title><link>https://mothsart.github.io/photo-retouche.html</link><description>&lt;h2&gt;&lt;/h2&gt;
-&lt;p&gt;https://en.wikipedia.org/wiki/Error_level_analysis&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:photo-retouche.html</guid><category>picture</category></item><item><title>Snap</title><link>https://mothsart.github.io/snap.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;https://en.wikipedia.org/wiki/Error_level_analysis&lt;/p&gt;
+&lt;h2&gt;Utilitaires On-line&lt;/h2&gt;
+&lt;p&gt;https://29a.ch/photo-forensics/
+http://fotoforensics.com/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 25 Feb 2017 17:06:50 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:photo-retouche.html</guid><category>picture</category></item><item><title>Snap</title><link>https://mothsart.github.io/snap.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;http://korben.info/installer-paquets-snap-ubuntu-ligne-de-commande.html&lt;/p&gt;
 &lt;h2&gt;Explorer les snap via un moteur de recherche&lt;/h2&gt;
 &lt;p&gt;https://uappexplorer.com/&lt;/p&gt;
@@ -920,10 +999,13 @@ git push -f&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Tmux est un &lt;strong&gt;multiplexeur&lt;/strong&gt; de terminal &lt;strong&gt;configurable&lt;/strong&gt; qui gère aussi bien les raccourcis clavier que les interactions de la souris.&lt;/p&gt;
 &lt;h2&gt;Raccourci dans Tmux&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;killer la fenêtre courante et tous les panes qu'elle contient
-&lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;a&lt;/kbd&gt; puis &lt;kbd&gt;&amp;amp;&lt;/kbd&gt;&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;killer la fenêtre courante et tous les panes qu'elle contient :&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;a&lt;/kbd&gt; puis &lt;kbd&gt;&amp;amp;&lt;/kbd&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sélectionner du texte :&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;kbd&gt;Shift&lt;/kbd&gt; + sélection&lt;/p&gt;
 &lt;h2&gt;Tmuxp&lt;/h2&gt;
 &lt;p&gt;Cette lib python permet de configurer facilement des espaces de travail pour &lt;strong&gt;Tmux&lt;/strong&gt;.&lt;/p&gt;
 &lt;h3&gt;Configurer son .zshrc ou .bashrc&lt;/h3&gt;
@@ -1008,7 +1090,7 @@ Cet outil en cli permet de les convertir en un format lisible pour Tmuxp.&lt;/p&
     # préfixé par grep (dût à GREP_OPTIONS='-n')
     tmux kill-session -t &amp;quot;$tmux_session&amp;quot;;
 }
-alias tmuxkillallsessions='tmux_kill_all_sessions'&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 03 Oct 2016 00:56:09 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-tmux.html</guid><category>tmux</category><category>tmuxp</category><category>python</category><category>linux</category></item><item><title>Aide mémoire Vi</title><link>https://mothsart.github.io/aide-memoire-vi.html</link><description>&lt;h2&gt;Fonctionnalités&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 15 Jan 2016 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-vi.html</guid><category>vi</category></item><item><title>Aide mémoire Zsh</title><link>https://mothsart.github.io/aide-memoire-zsh.html</link><description>&lt;p&gt;Et oui, pauvre mortel, je ne retiens pas toujours les fonctions utiles de ZSH et son pendant naturel "Oh my Zsh"&lt;/p&gt;
+alias tmuxkillallsessions='tmux_kill_all_sessions'&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 25 Feb 2017 17:06:50 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-tmux.html</guid><category>tmux</category><category>tmuxp</category><category>python</category><category>linux</category></item><item><title>Aide mémoire Vi</title><link>https://mothsart.github.io/aide-memoire-vi.html</link><description>&lt;h2&gt;Fonctionnalités&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 15 Jan 2016 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-vi.html</guid><category>vi</category></item><item><title>Aide mémoire Zsh</title><link>https://mothsart.github.io/aide-memoire-zsh.html</link><description>&lt;p&gt;Et oui, pauvre mortel, je ne retiens pas toujours les fonctions utiles de ZSH et son pendant naturel "Oh my Zsh"&lt;/p&gt;
 &lt;h2&gt;Utilitaires&lt;/h2&gt;
 &lt;h3&gt;Git&lt;/h3&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git list # donne la liste des gitignores pouvant être créé à la volé
