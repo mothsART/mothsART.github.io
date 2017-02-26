@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Sat, 25 Feb 2017 17:33:53 +0100</lastBuildDate><item><title>Editeur WYSIWYG de SVG interactifs</title><link>https://mothsart.github.io/editeur-svg-interactif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 21 Sep 2016 19:39:51 +0200</lastBuildDate><item><title>Editeur WYSIWYG de SVG interactifs</title><link>https://mothsart.github.io/editeur-svg-interactif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;L'objectif est simple : éditer un fichier SVG statique afin de le présenter comme un contenu interactif. 
 Permettre l'ajout des zones cliquables pouvant être zoomés et enrichies d'une explication&lt;/p&gt;
 &lt;p&gt;Les fichiers générés (page Html contenant le svg) pouvant servir à divers usages :&lt;/p&gt;
@@ -70,7 +70,7 @@ Il est possible de changer la couleur, de zoomer mais également d'ajouter/edite
 &lt;h2&gt;Participer au logiciel&lt;/h2&gt;
 &lt;p&gt;Les sources du projet sont disponibles sur Github : &lt;a href="https://github.com/mothsART/editInteractiveSVG"&gt;https://github.com/mothsART/editInteractiveSVG&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Il est possible de me rapporter des bugs directement via les issues du dépôt mais également sur le forum de PrimTux :
-&lt;a href="http://forum.primtux.fr/viewtopic.php?pid=8870"&gt;http://forum.primtux.fr/viewtopic.php?pid=8870&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 25 Feb 2017 17:33:53 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-25:editeur-svg-interactif.html</guid><category>javascript</category><category>svg</category><category>linux</category><category>primtux</category><category>deb</category></item><item><title>To be strict or not to be</title><link>https://mothsart.github.io/strict-or-not.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;a href="http://forum.primtux.fr/viewtopic.php?pid=8870"&gt;http://forum.primtux.fr/viewtopic.php?pid=8870&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-25:editeur-svg-interactif.html</guid><category>javascript</category><category>svg</category><category>linux</category><category>primtux</category><category>deb</category></item><item><title>To be strict or not to be</title><link>https://mothsart.github.io/strict-or-not.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Il est recommandé d'utiliser Javascript avec le mode strict.
 Le mode strict c'est un passage à Ecmascript 5 et tous les navigateurs l'implémentent désormais.&lt;/p&gt;
 &lt;h2&gt;Oui, mais... pourquoi ?&lt;/h2&gt;

@@ -76,8 +76,15 @@
       <form method="post" action="." enctype="multipart/form-data" novalidate="" class="box has-advanced-upload">
         <div class="box__input">
           <div id="download-pic" class="glyphicon glyphicon-download-alt" aria-hidden="true"></div>
-          <input type="file" name="files[]" id="file" class="box__file" data-multiple-caption="{count} files selected" multiple="">
-          <label id="choose-file" for="file"><strong>Choose a file</strong><span class="box__dragndrop"> or drag it here</span>.</label>
+          <input type="file" name="files[]" id="file" class="box__file">
+          <label id="choose-file" for="file">
+            <div id="choose-file-zone">
+              <div>
+                <strong>Choose a file</strong>
+                <span class="box__dragndrop"> or drag it here.</span>
+              </div>
+          </div>
+          </label>
           <label id="upload-text" class="hidden" for="file"></label>
           <button type="submit" class="box__button">Upload</button>
         </div>
@@ -86,7 +93,7 @@
     </div>
     <section id="real-legend" class="hidden">
       <label id="real-template-indice" class="indice hidden" onclick="real_zoom(this);">
-          <span>1</span>
+          <span>0</span>
           <em></em>
       </label>
     </section>
@@ -95,14 +102,14 @@
         <section id="indices">
           <article id="template-indice">
             <div onmouseout="indice_out(this);" class="indice hidden" id="indice-1" data-zoom="100">
-              1
+              0
             </div>
           </article>
         </section>
         <section id="descriptions">
           <article id="template-description" class="description hidden">
             <h2>
-              <span class="indice">1</span>
+              <span class="indice">0</span>
               <span class="title"></span>
             </h2>
             <div class="description-content">
@@ -149,10 +156,10 @@
                     </td>
                     <td>
                       <span class="open-detail" onclick="open_detail(this);"></span>
-                      <span class="indice">1</span><em>-- no title --</em>
+                      <span class="indice">0</span><em>-- no title --</em>
                       <div class="detail hidden">
                         <div class="form-group first">
-                          Zoom <input id="zoom-input"
+                          Zoom <input class="zoom-input"
                           disabled="disabled" type="number"
                           step="10" value="100"
                           min="10" max="1000" onchange="zoom(this);"> %
@@ -173,6 +180,9 @@
                 </tbody>
               </table>
             </div>
+          </div>
+          <div id="source-file-zone">
+            <span>Source file :</span><strong id="source-file"></strong>
           </div>
       </div>
     </div>
