@@ -66,6 +66,9 @@ Le Labo Du Nerd            </a>
                             <a href="https://mothsart.github.io/category/misc.html">Misc</a>
                         </li>
                         <li >
+                            <a href="https://mothsart.github.io/category/raspberry.html">Raspberry</a>
+                        </li>
+                        <li >
                             <a href="https://mothsart.github.io/category/reflexion.html">Reflexion</a>
                         </li>
                         <li class="active">
@@ -142,7 +145,7 @@ Le Labo Du Nerd            </a>
 
 
 	<a href="https://mothsart.github.io/tag/rust.html">rust
-                <span class="badge">10</span>
+                <span class="badge">12</span>
     </a>
     
 </footer><!-- /.post-info -->                    </div>
@@ -150,7 +153,50 @@ Le Labo Du Nerd            </a>
                 <h2>Intro</h2>
 <p>En vrac, les outils que j'utilise et perfectionne dans mon apprentissage et mon utilisation du language <strong>Rust</strong>.</p>
 <h2>MAJ de Rust</h2>
-<pre class="highlight"><code class="language-bash">curl -sf -L https://static.rust-lang.org/rustup.sh | sh</code></pre>
+<ul>
+<li>
+<p>On installe Rustup si il n'est pas présent</p>
+<h1>!bash</h1>
+<p>curl https://sh.rustup.rs -sSf | sh</p>
+</li>
+<li>
+<p>Installer une version Nightly</p>
+</li>
+</ul>
+<p>Plusieursfonctionnalités non stabilisés sont disponibles sur la version nightly (notamment l'api de linter utilisé par <strong>Clippy</strong> dans le paragraphe suivant)</p>
+<pre class="highlight"><code class="language-bash">rustup install nightly</code></pre>
+
+
+<ul>
+<li>On met à jour sa version de Rust</li>
+</ul>
+<p>Ceci va mettre à jour notre version stable de Rust (par exemple passer de la 1.14 à la 1.16) mais aussi mettre à jour notre version <strong>nightly</strong> sur le dernier instantanné. (commit github)</p>
+<pre class="highlight"><code> #!bash
+ rustup update</code></pre>
+
+
+<h2>Assurance qualité avec le Linter Clippy</h2>
+<p>Dans Rust, il y a des bonnes pratiques ainsi que des faiblesses dans le compilateur de Rust (eh oui).
+Pour pallier à ça, il existe l'utilitaire <strong>Clippy</strong>, un outil d'analyse statique qui va appliquer environ 200 règles sur le code parcourus.</p>
+<p>Pour utiliser <strong>Clippy</strong>, il faut actuellement utiliser Rust en nightly :</p>
+<pre class="highlight"><code class="language-bash">rustup default nightly</code></pre>
+
+
+<p>puis dans le fichier toml</p>
+<pre class="highlight"><code class="language-toml">[dependencies]
+clippy = {version = &quot;*&quot;, optional = true}
+
+[features]
+default = []</code></pre>
+
+
+<p>Et dans le fichier main.rs or lib.rs:</p>
+<pre class="highlight"><code class="language-rust">#![cfg_attr(feature=&quot;clippy&quot;, feature(plugin))]
+#![cfg_attr(feature=&quot;clippy&quot;, plugin(clippy))]</code></pre>
+
+
+<p>Enfin, lancer l'analyse via :</p>
+<pre class="highlight"><code class="language-bash">cargo build --features &quot;clippy&quot;</code></pre>
 
 
 <h2>Sublime-Text</h2>
@@ -268,7 +314,7 @@ Il subsite donc des erreurs à l'exécution : pour les débusquer, <strong>gdb</
                     <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/linux.html">
                             linux
-                                <span class="badge">20</span>
+                                <span class="badge">21</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -280,7 +326,7 @@ Il subsite donc des erreurs à l'exécution : pour les débusquer, <strong>gdb</
                     <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/rust.html">
                             rust
-                                <span class="badge">10</span>
+                                <span class="badge">12</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -292,18 +338,24 @@ Il subsite donc des erreurs à l'exécution : pour les débusquer, <strong>gdb</
                     <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/css.html">
                             css
-                                <span class="badge">4</span>
+                                <span class="badge">5</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/js.html">
                             js
-                                <span class="badge">4</span>
+                                <span class="badge">5</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/libre.html">
                             libre
+                                <span class="badge">4</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/git.html">
+                            git
                                 <span class="badge">4</span>
                         </a>
                     </li>
@@ -320,20 +372,14 @@ Il subsite donc des erreurs à l'exécution : pour les débusquer, <strong>gdb</
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/git.html">
-                            git
+                        <a href="https://mothsart.github.io/tag/postgresql.html">
+                            postgresql
                                 <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/c.html">
-                            C
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/ubuntu.html">
-                            ubuntu
+                        <a href="https://mothsart.github.io/tag/html.html">
+                            html
                                 <span class="badge">3</span>
                         </a>
                     </li>
@@ -344,50 +390,20 @@ Il subsite donc des erreurs à l'exécution : pour les débusquer, <strong>gdb</
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/postgresql.html">
-                            postgresql
+                        <a href="https://mothsart.github.io/tag/ubuntu.html">
+                            ubuntu
                                 <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/bench.html">
-                            bench
-                                <span class="badge">2</span>
+                        <a href="https://mothsart.github.io/tag/c.html">
+                            C
+                                <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/nodejs.html">
-                            nodejs
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/cli.html">
-                            cli
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/picture.html">
-                            picture
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/sh.html">
-                            sh
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/swift.html">
-                            swift
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/dev.html">
-                            dev
+                        <a href="https://mothsart.github.io/tag/primtux.html">
+                            primtux
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -398,20 +414,20 @@ Il subsite donc des erreurs à l'exécution : pour les débusquer, <strong>gdb</
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/gettext.html">
-                            gettext
+                        <a href="https://mothsart.github.io/tag/dev.html">
+                            dev
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/html.html">
-                            html
+                        <a href="https://mothsart.github.io/tag/nodejs.html">
+                            nodejs
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/benchmark.html">
-                            benchmark
+                        <a href="https://mothsart.github.io/tag/sh.html">
+                            sh
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -422,27 +438,57 @@ Il subsite donc des erreurs à l'exécution : pour les débusquer, <strong>gdb</
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/xpath.html">
-                            xpath
-                                <span class="badge">1</span>
+                        <a href="https://mothsart.github.io/tag/raspberry.html">
+                            raspberry
+                                <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/blender.html">
-                            blender
-                                <span class="badge">1</span>
+                        <a href="https://mothsart.github.io/tag/swift.html">
+                            swift
+                                <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/offline.html">
-                            offline
-                                <span class="badge">1</span>
+                        <a href="https://mothsart.github.io/tag/recalbox.html">
+                            recalbox
+                                <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/tmuxp.html">
-                            tmuxp
-                                <span class="badge">1</span>
+                        <a href="https://mothsart.github.io/tag/cli.html">
+                            cli
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/metaphone.html">
+                            metaphone
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/benchmark.html">
+                            benchmark
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/picture.html">
+                            picture
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/gettext.html">
+                            gettext
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/bench.html">
+                            bench
+                                <span class="badge">2</span>
                         </a>
                     </li>
                 </ul>

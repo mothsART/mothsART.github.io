@@ -12,17 +12,20 @@
 <link rel="canonical" href="https://mothsart.github.io/oh-merde-git.html">
 
         <meta name="author" content="Jérémie Ferry" />
-        <meta name="keywords" content="linux,libre" />
+        <meta name="keywords" content="linux,libre,git,tuto,traduction" />
 
         <meta property="og:site_name" content="Le Labo Du Nerd" />
         <meta property="og:type" content="article"/>
         <meta property="og:title" content="Oh Merde Git"/>
         <meta property="og:url" content="https://mothsart.github.io/oh-merde-git.html"/>
         <meta property="og:description" content=""/>
-        <meta property="article:published_time" content="2016-09-21" />
+        <meta property="article:published_time" content="2017-04-12" />
             <meta property="article:section" content="misc" />
             <meta property="article:tag" content="linux" />
             <meta property="article:tag" content="libre" />
+            <meta property="article:tag" content="git" />
+            <meta property="article:tag" content="tuto" />
+            <meta property="article:tag" content="traduction" />
             <meta property="article:author" content="Jérémie Ferry" />
 
 
@@ -65,6 +68,9 @@ Le Labo Du Nerd            </a>
                         </li>
                         <li class="active">
                             <a href="https://mothsart.github.io/category/misc.html">Misc</a>
+                        </li>
+                        <li >
+                            <a href="https://mothsart.github.io/category/raspberry.html">Raspberry</a>
                         </li>
                         <li >
                             <a href="https://mothsart.github.io/category/reflexion.html">Reflexion</a>
@@ -131,7 +137,7 @@ Le Labo Du Nerd            </a>
     <span>
         <span class="label label-default">Date</span>
         <span class="published">
-            <i class="fa fa-calendar"></i><time datetime="2016-09-21T19:39:51+02:00"> mer. 21 septembre 2016</time>
+            <i class="fa fa-calendar"></i><time datetime="2017-04-12T12:32:07.800246+02:00"> mer. 12 avril 2017</time>
         </span>
     </span>
 
@@ -143,17 +149,123 @@ Le Labo Du Nerd            </a>
 
 
 	<a href="https://mothsart.github.io/tag/linux.html">linux
-                <span class="badge">20</span>
+                <span class="badge">21</span>
     </a>
         /
 	<a href="https://mothsart.github.io/tag/libre.html">libre
                 <span class="badge">4</span>
     </a>
+        /
+	<a href="https://mothsart.github.io/tag/git.html">git
+                <span class="badge">4</span>
+    </a>
+        /
+	<a href="https://mothsart.github.io/tag/tuto.html">tuto
+    </a>
+        /
+	<a href="https://mothsart.github.io/tag/traduction.html">traduction
+    </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
                 <h2>Intro</h2>
-<p>http://ohshitgit.com/</p>
+<p>Voici la traduction de <a href="http://ohshitgit.com">http://ohshitgit.com</a></p>
+<p>Pour éviter d'inonder cette traduction par des mots fleuries, j'ai décidé de remplacer <strong>Shit</strong> (litéralement <strong>Merde</strong>) par <strong>Flûte</strong>. (juron au combien moderne dans la francophonie)</p>
+<h2>Oh Flûte GIT</h2>
+<p>Git est un outil complexe : il est facile de se tromper et trouver comment réparer vos erreurs est délicat...</p>
+<p>La documentation de GIT tiens du paradoxe de l'oeuf et de la poule pour un débutant :</p>
+<p>Il est quasi impossible de trouver une solution à un disfonctionnement si vous ne connaissez pas le nom exact de l'outil qui permet de le résoudre.</p>
+<p>Donc voici quelques situations auquel j'ai été confronté et comment j'ai fini par m'en sortir : le tout expliqué dans un français intelligible.</p>
+<h2>Oh flûte, j'ai dût utiliser Git n'importe comment ! Rassurez-moi : Git est pourvu d'une machine à remonter le temps magique ?!</h2>
+<pre class="highlight"><code class="language-bash">git reflog
+# Vous voyez l'historique de toutes vos actions sur GIT et ceci dans l'ensemble des branches !
+# chacune a un index HEAD@{index}
+# à vous de chercher la ligne juste avant que vous cassiez tout
+git reset HEAD@{index}
+# le résultat de la machine à remonter le temps</code></pre>
+
+
+<p>Cette commande vous permettra de soit :</p>
+<ul>
+<li>revenir juste avant des suppressions accidentelles</li>
+<li>supprimer des tâches qui ont cassés votre dépôt</li>
+<li>revenir juste avant une fusion <strong>flûtique</strong></li>
+<li>tout simplement revenir à un état ou tout fonctionnait bien</li>
+</ul>
+<p>J'utilise <strong>reflog</strong> ÉNORMÉMENT!!</p>
+<p>Je tire mon chapeau aux très nombreuses personnes qui ont suggérées d'ajouter cette fonctionnalité à GIT!</p>
+<h2><strong>Oh flûte GIT</strong>, je viens de commiter et me suis apperçu juste après qu'il manque des choses</h2>
+<pre class="highlight"><code class="language-bash"># effectuez vos changements
+git add . # ou ajoutez manuellement des fichiers
+git commit --amend
+# suivez les instructions afin d'éditer ou de conserver l'intitulé du commit
+# C'est bon : désormais, votre dernier commit contient vos derniers changements</code></pre>
+
+
+<p>Ceci m'arrive habituellement quand je commit et que je lance des tests/analyseurs syntaxique... et VDM (Vie de flûte), j'ai oublié un espace après un signe d'égalité.</p>
+<p>Vous pouvez bien évidement effectuer le changement dans un nouveau commit et utiliser <strong>rebase -i</strong> afin de fusionner les 2 commits mais l'astuce précédente est un million de fois plus rapide.</p>
+<h2><strong>Oh flûte GIT</strong>, j'ai besoin de changer l'intitulé du commit</h2>
+<pre class="highlight"><code class="language-bash">git commit --amend
+# suivez les instructions afin d'éditer l'intitulé du commit</code></pre>
+
+
+<p>Souvent provoqué par l'exigence stupide de la mise en forme des intitulés d'un commit. </p>
+<h2><strong>Oh flûte GIT</strong>, j'ai accidentellement commité quelque chose sur la branche master qui aurait du se trouver dans une toute nouvelle branche</h2>
+<pre class="highlight"><code class="language-bash"># Créer votre nouvelle branche à l'état actuelle de la branche master
+git branch votre-toute-nouvelle-branche
+# Supprimer froidement votre commit de la branche master
+git reset HEAD~ --hard
+git checkout votre-toute-nouvelle-branche
+# Votre commit n'existe désormais que dans votre nouvelle branche :)</code></pre>
+
+
+<p>Remarque: ceci ne fonctionnera pas si vous avez déjà envoyé (pushé) vos changements sur <strong>origin</strong>.</p>
+<p>Si vous avez fait d'autres choses avant, vous devrez effectuer <strong>git reset HEAD@{number}</strong> à la place de <strong>git reset HEAD~</strong>.
+Tristesse infinie.</p>
+<h2><strong>Oh flûte GIT</strong>, j'ai accidentellement commité sur la mauvaise branche !</h2>
+<pre class="highlight"><code class="language-bash"># supprimez le dernier commit tout en gardant les changements effectués 
+git reset HEAD~ --soft
+git stash
+# déplacez-vous sur la bonne branche
+git checkout le-nom-de-la-bonne-branche
+git stash pop
+git add . # ou ajoutez manuellement des fichiers
+git commit -m &quot;votre entête&quot;
+# C'est bon: vos changements sont désormais sur la bonne branche</code></pre>
+
+
+<p>Beaucoup de personnes m'ont suggérés d'utiliser le <strong>cherry-pick</strong> dans ce cas de figure.</p>
+<p>Peux-importe : utilisez ce qui a le plus de sens pour vous !</p>
+<pre class="highlight"><code class="language-bash">git checkout le-nom-de-la-bonne-branche
+# Sélectionnez le dernier commit de la branche master afin de le copier sur votre branche
+git cherry-pick master
+# supprimez-le désormais de la branche master
+git checkout master
+git reset HEAD~ --hard</code></pre>
+
+
+<h2><strong>Oh flûte GIT</strong>, j'ai effectué un diff mais rien ne se passe ?!</h2>
+<pre class="highlight"><code class="language-bash">git diff --staged</code></pre>
+
+
+<p>Git ne vous montrera pas les fichiers qui ont déjà été ajoutés dans la zone de transit (staging area) sans l'ajout de cet argument.</p>
+<p>Fichier sous ¯ \ _ (ツ) _ / ¯ (oui, c'est une fonctionnalité, pas un bug, mais c'est déconcertant et non évident la première fois qu'il vous arrive!)</p>
+<h2>Tous ce bruit assourdissent ne m'aide pas plus =&gt; j'abandonne.</h2>
+<pre class="highlight"><code class="language-bash">cd ..
+sudo rm -r fucking-git-repo-dir
+git clone https://some.github.url/fucking-git-repo-dir.git
+cd fucking-git-repo-dir</code></pre>
+
+
+<h2>Avertissement</h2>
+<p>L'auteur de ce court tutoriel ne se prétend pas être un expert GIT. (et son traducteur encore moins)</p>
+<p>Ce n'est pas non plus une documentation exhaustive mais un bon point d'entrée pour les débutants.</p>
+<p>Et oui, il existe mille et une autre façon de faire les mêmes choses avec d'avantage de théorie, de purisme mais j'en suis arrivé à écrire ses étapes simplifiées après plusieurs essais-erreurs successifs, ponctués de jurons et de colères incontrollables.</p>
+<p>J'ai eu l'idée, assez folle, de partager le condensé de mes solutions avec une dose non dissimulable de légèreté et de blasphème.</p>
+<h2>Conclusion</h2>
+<p>A ceux qui trouve que j'ai pris un peu trop de liberté sur la traduction de cet article, je leur dit litéralement : <strong>flûte</strong>!</p>
+<p>Néanmoins, ils sont autorisés à me soumettre leurs améliorations !
+C'est d'ailleurs aussi à ça que sert <strong>GIT</strong> !</p>
             </div>
             <!-- /.entry-content -->
         </article>
@@ -179,7 +291,7 @@ Le Labo Du Nerd            </a>
                     <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/linux.html">
                             linux
-                                <span class="badge">20</span>
+                                <span class="badge">21</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -191,7 +303,7 @@ Le Labo Du Nerd            </a>
                     <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/rust.html">
                             rust
-                                <span class="badge">10</span>
+                                <span class="badge">12</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -203,18 +315,24 @@ Le Labo Du Nerd            </a>
                     <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/css.html">
                             css
-                                <span class="badge">4</span>
+                                <span class="badge">5</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/js.html">
                             js
-                                <span class="badge">4</span>
+                                <span class="badge">5</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/libre.html">
                             libre
+                                <span class="badge">4</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/git.html">
+                            git
                                 <span class="badge">4</span>
                         </a>
                     </li>
@@ -231,20 +349,14 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/git.html">
-                            git
+                        <a href="https://mothsart.github.io/tag/postgresql.html">
+                            postgresql
                                 <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/c.html">
-                            C
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/ubuntu.html">
-                            ubuntu
+                        <a href="https://mothsart.github.io/tag/html.html">
+                            html
                                 <span class="badge">3</span>
                         </a>
                     </li>
@@ -255,50 +367,20 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/postgresql.html">
-                            postgresql
+                        <a href="https://mothsart.github.io/tag/ubuntu.html">
+                            ubuntu
                                 <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/bench.html">
-                            bench
-                                <span class="badge">2</span>
+                        <a href="https://mothsart.github.io/tag/c.html">
+                            C
+                                <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/nodejs.html">
-                            nodejs
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/cli.html">
-                            cli
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/picture.html">
-                            picture
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/sh.html">
-                            sh
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/swift.html">
-                            swift
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/dev.html">
-                            dev
+                        <a href="https://mothsart.github.io/tag/primtux.html">
+                            primtux
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -309,20 +391,20 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/gettext.html">
-                            gettext
+                        <a href="https://mothsart.github.io/tag/dev.html">
+                            dev
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/html.html">
-                            html
+                        <a href="https://mothsart.github.io/tag/nodejs.html">
+                            nodejs
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/benchmark.html">
-                            benchmark
+                        <a href="https://mothsart.github.io/tag/sh.html">
+                            sh
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -333,27 +415,57 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/xpath.html">
-                            xpath
-                                <span class="badge">1</span>
+                        <a href="https://mothsart.github.io/tag/raspberry.html">
+                            raspberry
+                                <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/blender.html">
-                            blender
-                                <span class="badge">1</span>
+                        <a href="https://mothsart.github.io/tag/swift.html">
+                            swift
+                                <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/offline.html">
-                            offline
-                                <span class="badge">1</span>
+                        <a href="https://mothsart.github.io/tag/recalbox.html">
+                            recalbox
+                                <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/tmuxp.html">
-                            tmuxp
-                                <span class="badge">1</span>
+                        <a href="https://mothsart.github.io/tag/cli.html">
+                            cli
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/metaphone.html">
+                            metaphone
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/benchmark.html">
+                            benchmark
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/picture.html">
+                            picture
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/gettext.html">
+                            gettext
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/bench.html">
+                            bench
+                                <span class="badge">2</span>
                         </a>
                     </li>
                 </ul>

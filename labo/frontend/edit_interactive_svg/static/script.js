@@ -1,3 +1,13 @@
+var palette = [
+    ["#000","#444","#666","#999","#ccc","#eee","#f3f3f3","#fff"],
+    ["#f00","#f90","#ff0","#0f0","#0ff","#00f","#90f","#f0f"],
+    ["#f4cccc","#fce5cd","#fff2cc","#d9ead3","#d0e0e3","#cfe2f3","#d9d2e9","#ead1dc"],
+    ["#ea9999","#f9cb9c","#ffe599","#b6d7a8","#a2c4c9","#9fc5e8","#b4a7d6","#d5a6bd"],
+    ["#e06666","#f6b26b","#ffd966","#93c47d","#76a5af","#6fa8dc","#8e7cc3","#c27ba0"],
+    ["#c00","#e69138","#f1c232","#6aa84f","#45818e","#3d85c6","#674ea7","#a64d79"],
+    ["#900","#b45f06","#bf9000","#38761d","#134f5c","#0b5394","#351c75","#741b47"],
+    ["#600","#783f04","#7f6000","#274e13","#0c343d","#073763","#20124d","#4c1130"]
+];
 var SVG = {
     width:         0,
     height:        0,
@@ -8,8 +18,9 @@ var SVG = {
     indice_height: 0,
     indice_width:  0,
     init: function() {
-        this.width = parseInt($("#svg svg").attr("width").replace(/[^0-9]+/, ''));
-        this.height = parseInt($("#svg svg").attr("height").replace(/[^0-9]+/, ''));
+        var svg_box = $("#svg svg")[0].getBBox();
+        this.width = svg_box.width + svg_box.x;
+        this.height = svg_box.height + svg_box.y;
         this.ratio = this.width / this.height;
         this.content_ratio = $("#svg").width() / $("#svg").height();
         if (this.ratio > this.content_ratio) {
@@ -43,6 +54,35 @@ var dragAndDrop = {
     }
 };
 
+
+function hexToRgb(hex) {
+    if (hex.length == 4) hex = "#" + hex.substr(1) + hex.substr(1);
+    var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    return result ? {
+        r: parseInt(result[1], 16),
+        g: parseInt(result[2], 16),
+        b: parseInt(result[3], 16)
+    } : null;
+}
+
+/**
+ * Converts an RGB color value to Luminance. Conversion formula
+ * adapted from http://en.wikipedia.org/wiki/HSL_color_space.
+ * Assumes r, g, and b are contained in the set [0, 255] and
+ * returns l in the set [0, 1].
+ *
+ * @param   {number}  r       The red color value
+ * @param   {number}  g       The green color value
+ * @param   {number}  b       The blue color value
+ * @return  {number}  l       luminance
+ */
+function rgbToHsl(r, g, b) {
+    r /= 255, g /= 255, b /= 255;
+    var max = Math.max(r, g, b), min = Math.min(r, g, b);
+    var l = (max + min) / 2;
+    return l;
+}
+
 dragAndDrop.init();
 
 function reorder_legend() {
@@ -57,7 +97,7 @@ function reorder_legend() {
             );
         }
     };
-    $("#indices .indice").each(function(index, el) {
+    $("#indices .indice > div").each(function(index, el) {
         $(el).text(index);
         $(el).attr("id", "indice-" + index);
     });
@@ -75,21 +115,160 @@ function reorder_legend() {
     });
 }
 
+function indice_drag(element) {
+    "use strict";
+    if (!$("#svg").hasClass("edit-mode"))
+    {
+        return;
+    }
+    var self = element;
+    $(self).addClass("is-draggable");
+
+    element.onmouseup = function() {
+        "use strict";
+
+    };
+}
+
+function indice_drop(element) {
+    "use strict";
+    //document.onmousemove = null;
+    $("#mask-on-drag").addClass("hidden");
+    $(element).removeClass("is-draggable");
+}
+
+function createForeignObject() {
+    "use strict";
+    /*var section = document.createElement("g");
+    section.id = "indices";
+    var article = document.createElement("g");
+    article.id = "template-indice";
+    var indice = document.createElement("text");
+    indice.id = "indice-1";
+    indice.setAttribute("class", "indice"); // hidden
+    indice.setAttribute("onmouse", "indice_out(this);");
+    indice.setAttribute("data-zoom", 100);
+    article.append(indice);
+    section.append(article);
+    $("#svg svg")[0].appendChild(section);
+    */
+    var switchE = document.createElementNS("http://www.w3.org/2000/svg", "switch");
+    var foreignObject = document.createElementNS("http://www.w3.org/2000/svg", "foreignObject");
+    var xhtmlNS = "http://www.w3.org/1999/xhtml";
+    foreignObject.setAttributeNS(null, "x", "0");
+    foreignObject.setAttributeNS(null, "y", "0");
+    foreignObject.setAttributeNS(null, "width", "100%");
+    foreignObject.setAttributeNS(null, "height", "100%");
+    var section = document.createElementNS("http://www.w3.org/1999/xhtml", "section");
+    var subsituteText = document.createElement("text");
+    var substituteContent = document.createTextNode("[Not supported by viewer]");
+    subsituteText.appendChild(substituteContent);
+    section.id = "indices";
+    foreignObject.appendChild(section);
+    switchE.appendChild(foreignObject);
+    switchE.appendChild(subsituteText);
+    $("#svg svg")[0].appendChild(switchE);
+
+    document.onmousemove = function(e) {
+        var self = $(".indice.is-draggable");
+        if (!$("#svg").hasClass("edit-mode") || self.length == 0)
+        {
+            return;
+        }
+        SVG.init();
+        $("#mask-on-drag").removeClass("hidden");
+        var left = e.pageX - $("#sidebar #legend-container").width()
+            - ((5 + $("#svg").width() - SVG.indice_width) / 2)
+            - $(self).width()
+        ;
+        var top = e.pageY - $("#edit-menu").height()
+            - ((5 + $("#svg").height() - SVG.indice_height) / 2)
+            - $(self).height()
+        ;
+        var margin_left = 100 * left / SVG.indice_width;
+        var margin_top = 100 * top / SVG.indice_height;
+        if (margin_left < (50 * $(self).outerWidth() / SVG.indice_width))
+        {
+            margin_left = (50 * $(self).outerWidth() / SVG.indice_width);
+        }
+        if (margin_left > 100 - (25 * ($(self).outerWidth() * 2 - $(self).width()) / SVG.indice_width))
+        {
+            margin_left = 100 - (25 * ($(self).outerWidth() * 2 - $(self).width()) / SVG.indice_width);
+        }
+        if (margin_top < (50 * $(self).height() / SVG.indice_height))
+        {
+            margin_top = 50 * $(self).height() / SVG.indice_height;
+        }
+        if (margin_top > 100 - (50 * $(self).outerHeight() / SVG.indice_height))
+        {
+            margin_top = 100 - (50 * $(self).outerHeight() / SVG.indice_height);
+        }
+        $(self).closest('article').css(
+            "left", margin_left + "%"
+        );
+        $(self).closest('article').css(
+            "top", margin_top + "%"
+        );
+    }
+}
+
+function createEditIndice() {
+    "use strict";
+    /*
+    var article = document.createElement("article");
+    article.setAttribute("class", "indice"); // hidden
+    article.setAttribute("onmouse", "indice_out(this);");
+    article.setAttribute("onmousedown", "indice_drag(this);");
+    article.setAttribute("onmouseup", "indice_drop(this);");
+    var indice = document.createElement("div");
+    indice.setAttribute("data-zoom", 100);
+    var cross = document.createElement("div");
+    cross.setAttribute("class", "cross");
+    article.appendChild(indice);
+    article.appendChild(cross);
+    $("#indices")[0].appendChild(article);*/
+
+    var article = document.createElement("g");
+    article.id = "template-indice";
+    article.setAttribute("onmouse", "indice_out(this);");
+    article.setAttribute("onmousedown", "indice_drag(this);");
+    article.setAttribute("onmouseup", "indice_drop(this);");
+    var rec = document.createElement("rect");
+    rec.setAttribute("x", 0);
+    rec.setAttribute("y", 0);
+    rec.setAttribute("height", 10);
+    rec.setAttribute("width", 10);
+    rec.setAttribute("style", "fill:rgb(0,0,255);stroke-width:1;stroke:rgb(0,0,0)");
+    var indice = document.createElement("text");
+    indice.id = "indice-1";
+    indice.setAttribute("x", 2);
+    indice.setAttribute("y", 6);
+    indice.setAttribute("class", "indice"); // hidden
+    indice.setAttribute("onmouse", "indice_out(this);");
+    indice.setAttribute("data-zoom", 100);
+    indice.append(document.createTextNode("1"));
+    article.append(rec);
+    article.append(indice);
+    $("#svg svg")[0].appendChild(article);
+}
+
 function add_legend(element) {
     "use strict";
+    var index = parseInt(document.getElementById("nb-indices").getAttribute("value")) + 1;
     $("#show-all-legend").prop('checked', false);
-    $("#template-legend").clone().removeAttr("id").removeClass("hidden").appendTo("#list-of-legend tbody");
+    $("#template-legend").clone().removeAttr("id").removeClass("hidden")
+        .appendTo("#list-of-legend tbody").attr("id", "legend-" + index);
     $("#show-all-legend").removeClass('hidden');
     $("#list-of-legend").removeClass('hidden');
-    $("#template-indice").clone().removeAttr("id").removeClass("hidden").appendTo('#indices');
+    createEditIndice();
     $("#real-template-indice").clone().removeAttr("id").removeClass("hidden").appendTo('#real-legend');
     $("#template-description").clone().removeAttr("id").prependTo('#descriptions');
-    var index = parseInt(document.getElementById("nb-indices").getAttribute("value")) + 1;
     document.getElementById("nb-indices").setAttribute("value", index);
     reorder_legend();
     if (index > 98) {
         $(element).attr("disabled", "disabled").attr("title", "Too lot indices.");
     }
+    /*
     $("#svg.edit-mode #indices article .indice").mousedown(function() {
         if (!$("#svg").hasClass("edit-mode"))
         {
@@ -104,7 +283,7 @@ function add_legend(element) {
             }
             SVG.init();
             $("#mask-on-drag").removeClass("hidden");
-            $(self).addClass("is-draggable");
+            $(self).parent().addClass("is-draggable");
             var left = e.pageX - $("#sidebar #legend-container").width()
                 - ((5 + $("#svg").width() - SVG.indice_width) / 2)
                 - $(self).width()
@@ -145,6 +324,36 @@ function add_legend(element) {
             $(self).removeClass("is-draggable");
         };
     });
+    */
+    return $("#legend-" + index + " .open-detail");
+}
+
+function change_indice_color(indice_id, hex_color) {
+    "use strict";
+    var indice = $("#" + indice_id);
+    indice.css("background-color", hex_color);
+    $("#" + indice.attr("id").substring(7)).css(
+        "background-color", hex_color
+    );
+    $("#description-" + indice.attr("id").substring(14)).find(".indice").css(
+        "background-color", hex_color
+    );
+    $("#real-" + indice.attr("id").substring(7)).find("span").css(
+        "background-color", hex_color
+    );
+    //
+    var rgb = hexToRgb(hex_color);
+    var luminance = rgbToHsl(rgb.r, rgb.g, rgb.b);
+    var color = "white";
+    if (luminance > 0.4) {
+        color = "black";
+    }
+    indice.css("color", color).css("border-color", color);
+    $("#" + indice.attr("id").substring(7)).css("color", color).css("border-color", color);
+    $("#description-" + indice.attr("id").substring(14)).find(".indice")
+    .css("color", color).css("border-color", color);
+    $("#real-" + indice.attr("id").substring(7)).find("span")
+    .css("color", color).css("border-color", color);
 }
 
 function open_detail(element) {
@@ -172,27 +381,9 @@ function open_detail(element) {
             togglePaletteMoreText: 'more',
             togglePaletteLessText: 'less',
             color: indice.css("background-color"),
-            palette: [
-                ["#000","#444","#666","#999","#ccc","#eee","#f3f3f3","#fff"],
-                ["#f00","#f90","#ff0","#0f0","#0ff","#00f","#90f","#f0f"],
-                ["#f4cccc","#fce5cd","#fff2cc","#d9ead3","#d0e0e3","#cfe2f3","#d9d2e9","#ead1dc"],
-                ["#ea9999","#f9cb9c","#ffe599","#b6d7a8","#a2c4c9","#9fc5e8","#b4a7d6","#d5a6bd"],
-                ["#e06666","#f6b26b","#ffd966","#93c47d","#76a5af","#6fa8dc","#8e7cc3","#c27ba0"],
-                ["#c00","#e69138","#f1c232","#6aa84f","#45818e","#3d85c6","#674ea7","#a64d79"],
-                ["#900","#b45f06","#bf9000","#38761d","#134f5c","#0b5394","#351c75","#741b47"],
-                ["#600","#783f04","#7f6000","#274e13","#0c343d","#073763","#20124d","#4c1130"]
-            ],
+            palette: palette,
             change: function(color) {
-                indice.css("background-color", color.toHexString());
-                $("#" + indice.attr("id").substring(7)).css(
-                    "background-color", color.toHexString()
-                );
-                $("#description-" + indice.attr("id").substring(14)).find(".indice").css(
-                    "background-color", color.toHexString()
-                );
-                $("#real-" + indice.attr("id").substring(7)).find("span").css(
-                    "background-color", color.toHexString()
-                );
+                change_indice_color(indice.attr("id"), color.toHexString());
             }
         });
     }
@@ -271,12 +462,17 @@ function return_to_edit() {
     }
 }
 
-function delete_pic() {
+function delete_pic(replace) {
     "use strict";
+    checked_all();
+    delete_legend();
     $("#svg svg").remove();
-    $("#edit-menu, #edit-zone, #upload-text").addClass("hidden");
-    $("#upload-zone, #choose-file").removeClass("hidden");
-    $("#delete-picture-modal").modal('hide');
+    $("#content").data('full', false);
+    if (!replace) {
+        $("#edit-zone, #upload-text").addClass("hidden");
+        $("#upload-zone, #choose-file").removeClass("hidden");
+        $("#delete-picture-modal").modal('hide');
+    }
 }
 
 function show_legend(element) {
@@ -339,19 +535,25 @@ function show_all_legend() {
     $("#template-indice .indice").addClass("hidden");
 }
 
+function checked_all() {
+    "use strict";
+    $("#delete-legend-button").removeClass('disabled');
+    $("#list-of-legend tbody tr .selection > input").prop('checked', true);
+    document.getElementById("count-nb-selected").setAttribute(
+        "value",
+        document.getElementById("nb-indices").getAttribute("value")
+    );
+    $("#template-legend input").prop('checked', false);
+}
+
 function select_all_legend() {
     "use strict";
     var value = $("#select-all-legend").prop('checked');
     if (value) {
-        $("#delete-legend-button").removeClass('disabled');
-        $("#list-of-legend tbody tr .selection > input").prop('checked', value);
-        document.getElementById("count-nb-selected").setAttribute(
-            "value",
-            document.getElementById("nb-indices").getAttribute("value")
-        );
+        checked_all();
     }
     else {
-        $("#list-of-legend tbody tr .selection > input").prop('checked', value);
+        $("#list-of-legend tbody tr .selection > input").prop('checked', false);
         $("#delete-legend-button").addClass('disabled');
         document.getElementById("count-nb-selected").setAttribute("value", 0);
     }
@@ -405,6 +607,132 @@ function real_zoom(element) {
     }
 }
 
+/*
+function create_indice_zone() {
+    "use strict";
+    SVG.init();
+    var showStyleNode = document.createElement("style");
+    showStyleNode.id = "show-style";
+    var showCSS = "@media (min-width: 0) and (orientation: landscape) {\n";
+    showCSS    += "    #indices-test {\n";
+    showCSS    += "        padding-top: 50vh;\n";
+    showCSS    += "        padding-left: 0;\n";
+    showCSS    += "        position: absolute;\n";
+    showCSS    += "    }";
+    showCSS    += "    #indices-test > div {\n";
+    showCSS    += "        background: blue;\n";
+    showCSS    += "        margin-top: calc(0px - " + 50 / SVG.ratio + "vw);\n";
+    showCSS    += "        margin-left: 0;\n";
+    showCSS    += "        width: calc(100vw - 0px);\n";
+    showCSS    += "        height: calc(" + 100 / SVG.ratio + "vw - 0px);\n";
+    showCSS    += "    }\n";
+    showCSS    += "}\n";
+    showCSS    += "@media (min-width: " + SVG.ratio * 100 + "vh) and (orientation: landscape) {\n";
+    showCSS    += "    #indices-test {\n";
+    showCSS    += "        padding-top: 0;\n";
+    showCSS    += "        padding-left: 50vw;\n";
+    showCSS    += "        position: absolute;\n";
+    showCSS    += "    }\n";
+    showCSS    += "    #indices-test > div {\n";
+    showCSS    += "        background: red;\n";
+    showCSS    += "        margin-top: 0;\n";
+    showCSS    += "        margin-left: calc(0px - " + SVG.ratio * 50 + "vh);\n";
+    showCSS    += "        width: calc(" + SVG.ratio * 100 + "vh - 0px);\n";
+    showCSS    += "        height: calc(100vh - 0px);\n";
+    showCSS    += "    }\n";
+    showCSS    += "}\n";
+    showCSS    += "@media (min-width: 0) and (orientation: portrait) {\n";
+    showCSS    += "    #indices-test {\n";
+    showCSS    += "        padding-top: 50vh;\n";
+    showCSS    += "        position: absolute;\n";
+    showCSS    += "    }\n";
+    showCSS    += "    #indices-test > div {\n";
+    showCSS    += "         background: green;\n";
+    showCSS    += "         margin-top: calc(0px - " + 50 / SVG.ratio + "vw);\n";
+    showCSS    += "         width: calc(100vw - 0px);\n";
+    showCSS    += "         height: calc(" + 100 / SVG.ratio + "vw - 0px);\n";
+    showCSS    += "    }\n";
+    showCSS    += "}\n";
+    showCSS    += "@media (min-width: " + SVG.ratio * 100 + "vh) and (orientation: portrait) {\n";
+    showCSS    += "    #indices-test {\n";
+    showCSS    += "        padding-top: 0;\n";
+    showCSS    += "        padding-left: 50vw;\n";
+    showCSS    += "        position: absolute;\n";
+    showCSS    += "    }\n";
+    showCSS    += "    #indices-test > div {\n";
+    showCSS    += "         background: orange;\n";
+    showCSS    += "         margin-top: 0;\n";
+    showCSS    += "         margin-left: calc(0px - " + SVG.ratio * 50 + "vh);\n";
+    showCSS    += "         width: calc(" + 100 * SVG.ratio + "vh - 0px);\n";
+    showCSS    += "         height: calc(100vh - 0px);\n";
+    showCSS    += "    }\n";
+    showCSS    += "}\n";
+    var contentToShow = document.createTextNode(showCSS);
+    showStyleNode.appendChild(contentToShow);
+    document.getElementsByTagName("body")[0].appendChild(showStyleNode);
+    var editStyleNode = document.createElement("style");
+    editStyleNode.id = "edit-style";
+    var editCSS = "@media (min-width: 0) and (orientation: landscape) {\n";
+    editCSS    += "    .edit-mode #indices-test {\n";
+    editCSS    += "        padding-top: 50vh;\n";
+    editCSS    += "        padding-left: 0;\n";
+    editCSS    += "        position: absolute;\n";
+    editCSS    += "    }\n";
+    editCSS    += "    .edit-mode #indices-test > div {\n";
+    editCSS    += "        background: blue;\n";
+    editCSS    += "        margin-top: calc(0px - " + 50 / SVG.ratio + "vw);\n";
+    editCSS    += "        margin-left: 0;\n";
+    editCSS    += "        width: calc(100vw - 0px);\n";
+    editCSS    += "        height: calc(" + 100 / SVG.ratio + "vw - 0px);\n";
+    editCSS    += "    }\n";
+    editCSS    += "}\n";
+    editCSS    += "@media (min-width: " + SVG.ratio * 100 + "vh) and (orientation: landscape) {\n";
+    editCSS    += "    .edit-mode #indices-test {\n";
+    editCSS    += "        padding-top: 0;\n";
+    editCSS    += "        padding-left: calc(50vw - 12.5vw);\n";
+    editCSS    += "        position: absolute;\n";
+    editCSS    += "    }\n";
+    editCSS    += "    .edit-mode #indices-test > div {\n";
+    editCSS    += "        background: red;\n";
+    editCSS    += "        margin-top: 0;\n";
+    //editCSS    += "        margin-left: calc(0px - " + SVG.ratio * 50 + "vh - );\n";
+    editCSS    += "        width: calc(" + SVG.ratio * 100 + "vh);\n";
+    editCSS    += "        height: calc(99vh - 34px);\n";
+    editCSS    += "    }\n";
+    editCSS    += "}\n";
+    editCSS    += "@media (min-width: 0) and (orientation: portrait) {\n";
+    editCSS    += "    .edit-mode #indices-test {\n";
+    editCSS    += "        padding-top: 50vh;\n";
+    editCSS    += "        position: absolute;\n";
+    editCSS    += "    }\n";
+    editCSS    += "    .edit-mode #indices-test > div {\n";
+    editCSS    += "         background: green;\n";
+    editCSS    += "         margin-top: calc(0px - " + 50 / SVG.ratio + "vw);\n";
+    editCSS    += "         width: calc(100vw - 0px);\n";
+    editCSS    += "         height: calc(" + 100 / SVG.ratio + "vw - 0px);\n";
+    editCSS    += "    }\n";
+    editCSS    += "}\n";
+    editCSS    += "@media (min-width: " + (SVG.ratio * 100 - 1) + "vh) and (orientation: portrait) {\n";
+    editCSS    += "    .edit-mode #indices-test {\n";
+    editCSS    += "        padding-top: 0;\n";
+    editCSS    += "        padding-left: 50vw;\n";
+    editCSS    += "        position: absolute;\n";
+    editCSS    += "    }\n";
+    editCSS    += "    .edit-mode #indices-test > div {\n";
+    editCSS    += "         background: orange;\n";
+    editCSS    += "         margin-top: 0;\n";
+    editCSS    += "         margin-left: calc(0px - " + SVG.ratio * 50 + "vh - 15rem - 10px);\n";
+    editCSS    += "         width: calc(" + 100 * SVG.ratio + "vh - 30px);\n";
+    editCSS    += "         height: calc(100vh - 0px - 34px - 10px);\n";
+    editCSS    += "    }\n";
+    editCSS    += "}\n";
+    var contentToEdit = document.createTextNode(editCSS);
+    editStyleNode.appendChild(contentToEdit);
+    document.getElementsByTagName("body")[0].appendChild(editStyleNode);
+}
+*/
+
+/*
 $(window).resize(function() {
     resize_indices();
 });
@@ -417,8 +745,10 @@ function resize_indices() {
     $("#indices").css("height", SVG.indice_height);
     $("#indices").css("width", SVG.indice_width);
 }
+*/
 
-$('#edit-legend-modal').on('show.bs.modal', function (e) {
+function open_dialog() {
+    "use strict";
     var index = parseInt($("#last-folded-indice").val().substring(14));
     var text = $("#" + $("#last-folded-indice").val()).next().text();
     var description =  $("#description-" + index + " .description-content").html();
@@ -434,10 +764,10 @@ $('#edit-legend-modal').on('show.bs.modal', function (e) {
     else {
          $("#legend-title").val(text);
     }
-});
+}
 
-// Save title and description
-$('#edit-legend-modal').on('hidden.bs.modal', function (e) {
+function hide_dialog() {
+    "use strict";
     var text = $("#legend-title").val();
     var index = $("#modal-legend-id").val();
     var indice = $("#legend-indice-" + index);
@@ -448,11 +778,22 @@ $('#edit-legend-modal').on('hidden.bs.modal', function (e) {
         real_indice.find("em").text("");
     }
     else {
-        indice.after("<span>" + text + "</span>");
+        indice.after("<span class='indice-title' title='"+ text + "'>" + text + "</span>");
         real_indice.find("em").text(text);
         $("#description-" + index + " .title").text(text);
     }
     $("#description-" + index + " .description-content").html(
         $("#indice-description").trumbowyg('html')
     );
+}
+
+$('#edit-legend-modal').on('show.bs.modal', function (e) {
+    "use strict";
+    open_dialog();
+});
+
+// Save title and description
+$('#edit-legend-modal').on('hidden.bs.modal', function (e) {
+    "use strict";
+    hide_dialog();
 });

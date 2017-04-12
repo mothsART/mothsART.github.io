@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Sat, 25 Feb 2017 17:34:53 +0100</lastBuildDate><item><title>Python-pip</title><link>https://mothsart.github.io/python-pip.html</link><description>&lt;h2&gt;pip -e&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 12 Apr 2017 12:55:05 +0200</lastBuildDate><item><title>Aide mémoire sur le réseau et l'admin sys</title><link>https://mothsart.github.io/memo-admin-sys.html</link><description>&lt;h2&gt;Reseau &amp;amp; Admin sys&lt;/h2&gt;
+&lt;h2&gt;w&lt;/h2&gt;
+&lt;p&gt;Donne la liste des utilisateurs sur une machine&lt;/p&gt;
+&lt;h2&gt;arp -a&lt;/h2&gt;
+&lt;p&gt;Renvoie que la liste des adresses déjà inscrites dans la table ARP.&lt;/p&gt;
+&lt;h2&gt;nmap&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;nmap -sP 192.168.0.*
+sudo nmap -sP x.y.z.*&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;&lt;a href="http://blog.nicolargo.com/2007/08/nmap-le-scanneur-de-reseau.html"&gt;http://blog.nicolargo.com/2007/08/nmap-le-scanneur-de-reseau.html&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 12:55:05 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:memo-admin-sys.html</guid><category>linux</category><category>arp</category><category>nmap</category><category>admin sys</category></item><item><title>Python-pip</title><link>https://mothsart.github.io/python-pip.html</link><description>&lt;h2&gt;pip -e&lt;/h2&gt;
 &lt;p&gt;utiliser une dépendance perso : pip -e ~/ma_lib&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 03 Oct 2016 01:38:01 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-03:python-pip.html</guid><category>python</category><category>pip</category></item><item><title>Bench Linux</title><link>https://mothsart.github.io/bench-linux.html</link><description>&lt;h2&gt;Vérifier si l'accélération graphique est actif&lt;/h2&gt;
 &lt;p&gt;glxinfo | grep "direct rendering"&lt;/p&gt;
 &lt;h2&gt;lancement du benchmark de Mesa (implémentation libre d'opengl)&lt;/h2&gt;
@@ -194,6 +204,8 @@ git push&lt;/code&gt;&lt;/pre&gt;
 git commit --amend&lt;/code&gt;&lt;/pre&gt;
 
 
+&lt;h2&gt;Rebase interactif&lt;/h2&gt;
+&lt;p&gt;https://blog.guillaume-gomez.fr/Git-tips&lt;/p&gt;
 &lt;h2&gt;Equivalences&lt;/h2&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git checkout -b ticket-12 === git branch ticket-12 + git checkout ticket-12&lt;/code&gt;&lt;/pre&gt;
 
@@ -255,7 +267,7 @@ git push -f&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www.git-attitude.fr/2014/09/15/30-options-git-qui-gagnent-a-etre-connues"&gt;http://www.git-attitude.fr/2014/09/15/30-options-git-qui-gagnent-a-etre-connues&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/2221658/whats-the-difference-between-head-and-head-in-git"&gt;http://stackoverflow.com/questions/2221658whats-the-difference-between-head-and-head-in-git&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 03 Oct 2016 00:56:09 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-git.html</guid><category>git</category><category>linux</category></item><item><title>Aide mémoire sh</title><link>https://mothsart.github.io/aide-memoire-sh.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/2221658/whats-the-difference-between-head-and-head-in-git"&gt;http://stackoverflow.com/questions/2221658whats-the-difference-between-head-and-head-in-git&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 11:54:35 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-git.html</guid><category>git</category><category>linux</category></item><item><title>Aide mémoire sh</title><link>https://mothsart.github.io/aide-memoire-sh.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;find . | grep actual&lt;/code&gt;&lt;/pre&gt;
 
 
@@ -414,7 +426,7 @@ n-alias&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2&gt;pk-config&lt;/h2&gt;
 &lt;h2&gt;stat&lt;/h2&gt;
-&lt;p&gt;permet de tester si un fichier existe et donner le &lt;/p&gt;
+&lt;p&gt;permet de tester si un fichier existe. &lt;/p&gt;
 &lt;h2&gt;sync&lt;/h2&gt;
 &lt;p&gt;Découvert avec une installation de &lt;strong&gt;raspberry pi&lt;/strong&gt; : permet de synchroniser les mémoires avec le disque.
 Ecrit sur le disque toutes les données dans les tampons en mémoire. Ceci peut inclure les superblocs modifiés, les inœuds modifiés, et les écritures différées.&lt;/p&gt;
@@ -441,7 +453,7 @@ dd if=/dev/zero of=/dev/hda conv=notrunc&lt;/p&gt;
 &lt;h2&gt;truncate&lt;/h2&gt;
 &lt;p&gt;réduire la taille d'un fichier à 0
 truncate -s 0 /home/skyminds/error.log&lt;/p&gt;
-&lt;h2&gt;eval&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 07 Aug 2016 15:15:35 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-09:coreutils.html</guid><category>sh</category><category>linux</category></item><item><title>PostGreSQL</title><link>https://mothsart.github.io/postgresql.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;h2&gt;eval&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 11:54:35 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-09:coreutils.html</guid><category>sh</category><category>linux</category></item><item><title>PostGreSQL</title><link>https://mothsart.github.io/postgresql.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Mon aide-mémoire pour l'indéboulonable &lt;strong&gt;PostGreSQL&lt;/strong&gt; : la meilleur base SQL libre !&lt;/p&gt;
 &lt;h2&gt;Commandes&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;\q&lt;/strong&gt; : quitter&lt;/p&gt;

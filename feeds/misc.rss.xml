@@ -1,5 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Sat, 25 Feb 2017 17:34:53 +0100</lastBuildDate><item><title>Fuzzer</title><link>https://mothsart.github.io/fuzzer.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 12 Apr 2017 12:32:07 +0200</lastBuildDate><item><title>Oh Merde Git</title><link>https://mothsart.github.io/oh-merde-git.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Voici la traduction de &lt;a href="http://ohshitgit.com"&gt;http://ohshitgit.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Pour éviter d'inonder cette traduction par des mots fleuries, j'ai décidé de remplacer &lt;strong&gt;Shit&lt;/strong&gt; (litéralement &lt;strong&gt;Merde&lt;/strong&gt;) par &lt;strong&gt;Flûte&lt;/strong&gt;. (juron au combien moderne dans la francophonie)&lt;/p&gt;
+&lt;h2&gt;Oh Flûte GIT&lt;/h2&gt;
+&lt;p&gt;Git est un outil complexe : il est facile de se tromper et trouver comment réparer vos erreurs est délicat...&lt;/p&gt;
+&lt;p&gt;La documentation de GIT tiens du paradoxe de l'oeuf et de la poule pour un débutant :&lt;/p&gt;
+&lt;p&gt;Il est quasi impossible de trouver une solution à un disfonctionnement si vous ne connaissez pas le nom exact de l'outil qui permet de le résoudre.&lt;/p&gt;
+&lt;p&gt;Donc voici quelques situations auquel j'ai été confronté et comment j'ai fini par m'en sortir : le tout expliqué dans un français intelligible.&lt;/p&gt;
+&lt;h2&gt;Oh flûte, j'ai dût utiliser Git n'importe comment ! Rassurez-moi : Git est pourvu d'une machine à remonter le temps magique ?!&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git reflog
+# Vous voyez l'historique de toutes vos actions sur GIT et ceci dans l'ensemble des branches !
+# chacune a un index HEAD@{index}
+# à vous de chercher la ligne juste avant que vous cassiez tout
+git reset HEAD@{index}
+# le résultat de la machine à remonter le temps&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Cette commande vous permettra de soit :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;revenir juste avant des suppressions accidentelles&lt;/li&gt;
+&lt;li&gt;supprimer des tâches qui ont cassés votre dépôt&lt;/li&gt;
+&lt;li&gt;revenir juste avant une fusion &lt;strong&gt;flûtique&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;tout simplement revenir à un état ou tout fonctionnait bien&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;J'utilise &lt;strong&gt;reflog&lt;/strong&gt; ÉNORMÉMENT!!&lt;/p&gt;
+&lt;p&gt;Je tire mon chapeau aux très nombreuses personnes qui ont suggérées d'ajouter cette fonctionnalité à GIT!&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Oh flûte GIT&lt;/strong&gt;, je viens de commiter et me suis apperçu juste après qu'il manque des choses&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;# effectuez vos changements
+git add . # ou ajoutez manuellement des fichiers
+git commit --amend
+# suivez les instructions afin d'éditer ou de conserver l'intitulé du commit
+# C'est bon : désormais, votre dernier commit contient vos derniers changements&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Ceci m'arrive habituellement quand je commit et que je lance des tests/analyseurs syntaxique... et VDM (Vie de flûte), j'ai oublié un espace après un signe d'égalité.&lt;/p&gt;
+&lt;p&gt;Vous pouvez bien évidement effectuer le changement dans un nouveau commit et utiliser &lt;strong&gt;rebase -i&lt;/strong&gt; afin de fusionner les 2 commits mais l'astuce précédente est un million de fois plus rapide.&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Oh flûte GIT&lt;/strong&gt;, j'ai besoin de changer l'intitulé du commit&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git commit --amend
+# suivez les instructions afin d'éditer l'intitulé du commit&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Souvent provoqué par l'exigence stupide de la mise en forme des intitulés d'un commit. &lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Oh flûte GIT&lt;/strong&gt;, j'ai accidentellement commité quelque chose sur la branche master qui aurait du se trouver dans une toute nouvelle branche&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;# Créer votre nouvelle branche à l'état actuelle de la branche master
+git branch votre-toute-nouvelle-branche
+# Supprimer froidement votre commit de la branche master
+git reset HEAD~ --hard
+git checkout votre-toute-nouvelle-branche
+# Votre commit n'existe désormais que dans votre nouvelle branche :)&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Remarque: ceci ne fonctionnera pas si vous avez déjà envoyé (pushé) vos changements sur &lt;strong&gt;origin&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Si vous avez fait d'autres choses avant, vous devrez effectuer &lt;strong&gt;git reset HEAD@{number}&lt;/strong&gt; à la place de &lt;strong&gt;git reset HEAD~&lt;/strong&gt;.
+Tristesse infinie.&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Oh flûte GIT&lt;/strong&gt;, j'ai accidentellement commité sur la mauvaise branche !&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;# supprimez le dernier commit tout en gardant les changements effectués 
+git reset HEAD~ --soft
+git stash
+# déplacez-vous sur la bonne branche
+git checkout le-nom-de-la-bonne-branche
+git stash pop
+git add . # ou ajoutez manuellement des fichiers
+git commit -m &amp;quot;votre entête&amp;quot;
+# C'est bon: vos changements sont désormais sur la bonne branche&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Beaucoup de personnes m'ont suggérés d'utiliser le &lt;strong&gt;cherry-pick&lt;/strong&gt; dans ce cas de figure.&lt;/p&gt;
+&lt;p&gt;Peux-importe : utilisez ce qui a le plus de sens pour vous !&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git checkout le-nom-de-la-bonne-branche
+# Sélectionnez le dernier commit de la branche master afin de le copier sur votre branche
+git cherry-pick master
+# supprimez-le désormais de la branche master
+git checkout master
+git reset HEAD~ --hard&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;&lt;strong&gt;Oh flûte GIT&lt;/strong&gt;, j'ai effectué un diff mais rien ne se passe ?!&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git diff --staged&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Git ne vous montrera pas les fichiers qui ont déjà été ajoutés dans la zone de transit (staging area) sans l'ajout de cet argument.&lt;/p&gt;
+&lt;p&gt;Fichier sous ¯ \ _ (ツ) _ / ¯ (oui, c'est une fonctionnalité, pas un bug, mais c'est déconcertant et non évident la première fois qu'il vous arrive!)&lt;/p&gt;
+&lt;h2&gt;Tous ce bruit assourdissent ne m'aide pas plus =&amp;gt; j'abandonne.&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;cd ..
+sudo rm -r fucking-git-repo-dir
+git clone https://some.github.url/fucking-git-repo-dir.git
+cd fucking-git-repo-dir&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Avertissement&lt;/h2&gt;
+&lt;p&gt;L'auteur de ce court tutoriel ne se prétend pas être un expert GIT. (et son traducteur encore moins)&lt;/p&gt;
+&lt;p&gt;Ce n'est pas non plus une documentation exhaustive mais un bon point d'entrée pour les débutants.&lt;/p&gt;
+&lt;p&gt;Et oui, il existe mille et une autre façon de faire les mêmes choses avec d'avantage de théorie, de purisme mais j'en suis arrivé à écrire ses étapes simplifiées après plusieurs essais-erreurs successifs, ponctués de jurons et de colères incontrollables.&lt;/p&gt;
+&lt;p&gt;J'ai eu l'idée, assez folle, de partager le condensé de mes solutions avec une dose non dissimulable de légèreté et de blasphème.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;A ceux qui trouve que j'ai pris un peu trop de liberté sur la traduction de cet article, je leur dit litéralement : &lt;strong&gt;flûte&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;Néanmoins, ils sont autorisés à me soumettre leurs améliorations !
+C'est d'ailleurs aussi à ça que sert &lt;strong&gt;GIT&lt;/strong&gt; !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 12:32:07 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:oh-merde-git.html</guid><category>linux</category><category>libre</category><category>git</category><category>tuto</category><category>traduction</category></item><item><title>Fuzzer</title><link>https://mothsart.github.io/fuzzer.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Ca fait un moment que je me passionne pour le fuzzing sans vraiment écrire à ce sujet.&lt;/p&gt;
 &lt;h2&gt;Fuzzer connus et spécificité&lt;/h2&gt;
 &lt;h3&gt;(ZZUF)[http://caca.zoy.org/wiki/zzuf]&lt;/h3&gt;
@@ -219,8 +316,7 @@ Inkscape&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/element
 &lt;p&gt;Afin d'améliorer encore l'expérience des utilisateurs sur Ubuntu, j'ai également mis à dispostion un &lt;a href="https://launchpad.net/~jerem-ferry/+archive/ubuntu/app-illustration/"&gt;PPA&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Les étapes de réalisations&lt;/h3&gt;
 &lt;p&gt;&lt;span class="videobox"&gt;
-            &lt;video width="100%" height="100%" preload="none" controls poster="/./static/images/camp_paleolithic.jpg"&gt;&lt;source src='/static/movies/camp_paleolithic.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'&gt;&lt;/video&gt;&lt;/span&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 30 Oct 2016 21:07:42 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:abuledu-camp-paleolithique.html</guid><category>linux</category><category>libre</category></item><item><title>Oh Merde Git</title><link>https://mothsart.github.io/oh-merde-git.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
-&lt;p&gt;http://ohshitgit.com/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:oh-merde-git.html</guid><category>linux</category><category>libre</category></item><item><title>TTS</title><link>https://mothsart.github.io/tts.html</link><description>&lt;h2&gt;Liens&lt;/h2&gt;
+            &lt;video width="100%" height="100%" preload="none" controls poster="/./static/images/camp_paleolithic.jpg"&gt;&lt;source src='/static/movies/camp_paleolithic.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'&gt;&lt;/video&gt;&lt;/span&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 30 Oct 2016 21:07:42 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:abuledu-camp-paleolithique.html</guid><category>linux</category><category>libre</category></item><item><title>TTS</title><link>https://mothsart.github.io/tts.html</link><description>&lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;https://fr.wikipedia.org/wiki/Formant&lt;/p&gt;
 &lt;p&gt;http://milk.com/&lt;/p&gt;
 &lt;h2&gt;utilisation de Alsa&lt;/h2&gt;

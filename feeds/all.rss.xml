@@ -1,5 +1,387 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Sat, 25 Feb 2017 17:34:53 +0100</lastBuildDate><item><title>Editeur WYSIWYG de SVG interactifs</title><link>https://mothsart.github.io/editeur-svg-interactif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 12 Apr 2017 12:59:02 +0200</lastBuildDate><item><title>Oh Merde Git</title><link>https://mothsart.github.io/oh-merde-git.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Voici la traduction de &lt;a href="http://ohshitgit.com"&gt;http://ohshitgit.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Pour éviter d'inonder cette traduction par des mots fleuries, j'ai décidé de remplacer &lt;strong&gt;Shit&lt;/strong&gt; (litéralement &lt;strong&gt;Merde&lt;/strong&gt;) par &lt;strong&gt;Flûte&lt;/strong&gt;. (juron au combien moderne dans la francophonie)&lt;/p&gt;
+&lt;h2&gt;Oh Flûte GIT&lt;/h2&gt;
+&lt;p&gt;Git est un outil complexe : il est facile de se tromper et trouver comment réparer vos erreurs est délicat...&lt;/p&gt;
+&lt;p&gt;La documentation de GIT tiens du paradoxe de l'oeuf et de la poule pour un débutant :&lt;/p&gt;
+&lt;p&gt;Il est quasi impossible de trouver une solution à un disfonctionnement si vous ne connaissez pas le nom exact de l'outil qui permet de le résoudre.&lt;/p&gt;
+&lt;p&gt;Donc voici quelques situations auquel j'ai été confronté et comment j'ai fini par m'en sortir : le tout expliqué dans un français intelligible.&lt;/p&gt;
+&lt;h2&gt;Oh flûte, j'ai dût utiliser Git n'importe comment ! Rassurez-moi : Git est pourvu d'une machine à remonter le temps magique ?!&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git reflog
+# Vous voyez l'historique de toutes vos actions sur GIT et ceci dans l'ensemble des branches !
+# chacune a un index HEAD@{index}
+# à vous de chercher la ligne juste avant que vous cassiez tout
+git reset HEAD@{index}
+# le résultat de la machine à remonter le temps&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Cette commande vous permettra de soit :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;revenir juste avant des suppressions accidentelles&lt;/li&gt;
+&lt;li&gt;supprimer des tâches qui ont cassés votre dépôt&lt;/li&gt;
+&lt;li&gt;revenir juste avant une fusion &lt;strong&gt;flûtique&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;tout simplement revenir à un état ou tout fonctionnait bien&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;J'utilise &lt;strong&gt;reflog&lt;/strong&gt; ÉNORMÉMENT!!&lt;/p&gt;
+&lt;p&gt;Je tire mon chapeau aux très nombreuses personnes qui ont suggérées d'ajouter cette fonctionnalité à GIT!&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Oh flûte GIT&lt;/strong&gt;, je viens de commiter et me suis apperçu juste après qu'il manque des choses&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;# effectuez vos changements
+git add . # ou ajoutez manuellement des fichiers
+git commit --amend
+# suivez les instructions afin d'éditer ou de conserver l'intitulé du commit
+# C'est bon : désormais, votre dernier commit contient vos derniers changements&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Ceci m'arrive habituellement quand je commit et que je lance des tests/analyseurs syntaxique... et VDM (Vie de flûte), j'ai oublié un espace après un signe d'égalité.&lt;/p&gt;
+&lt;p&gt;Vous pouvez bien évidement effectuer le changement dans un nouveau commit et utiliser &lt;strong&gt;rebase -i&lt;/strong&gt; afin de fusionner les 2 commits mais l'astuce précédente est un million de fois plus rapide.&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Oh flûte GIT&lt;/strong&gt;, j'ai besoin de changer l'intitulé du commit&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git commit --amend
+# suivez les instructions afin d'éditer l'intitulé du commit&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Souvent provoqué par l'exigence stupide de la mise en forme des intitulés d'un commit. &lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Oh flûte GIT&lt;/strong&gt;, j'ai accidentellement commité quelque chose sur la branche master qui aurait du se trouver dans une toute nouvelle branche&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;# Créer votre nouvelle branche à l'état actuelle de la branche master
+git branch votre-toute-nouvelle-branche
+# Supprimer froidement votre commit de la branche master
+git reset HEAD~ --hard
+git checkout votre-toute-nouvelle-branche
+# Votre commit n'existe désormais que dans votre nouvelle branche :)&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Remarque: ceci ne fonctionnera pas si vous avez déjà envoyé (pushé) vos changements sur &lt;strong&gt;origin&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Si vous avez fait d'autres choses avant, vous devrez effectuer &lt;strong&gt;git reset HEAD@{number}&lt;/strong&gt; à la place de &lt;strong&gt;git reset HEAD~&lt;/strong&gt;.
+Tristesse infinie.&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Oh flûte GIT&lt;/strong&gt;, j'ai accidentellement commité sur la mauvaise branche !&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;# supprimez le dernier commit tout en gardant les changements effectués 
+git reset HEAD~ --soft
+git stash
+# déplacez-vous sur la bonne branche
+git checkout le-nom-de-la-bonne-branche
+git stash pop
+git add . # ou ajoutez manuellement des fichiers
+git commit -m &amp;quot;votre entête&amp;quot;
+# C'est bon: vos changements sont désormais sur la bonne branche&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Beaucoup de personnes m'ont suggérés d'utiliser le &lt;strong&gt;cherry-pick&lt;/strong&gt; dans ce cas de figure.&lt;/p&gt;
+&lt;p&gt;Peux-importe : utilisez ce qui a le plus de sens pour vous !&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git checkout le-nom-de-la-bonne-branche
+# Sélectionnez le dernier commit de la branche master afin de le copier sur votre branche
+git cherry-pick master
+# supprimez-le désormais de la branche master
+git checkout master
+git reset HEAD~ --hard&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;&lt;strong&gt;Oh flûte GIT&lt;/strong&gt;, j'ai effectué un diff mais rien ne se passe ?!&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git diff --staged&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Git ne vous montrera pas les fichiers qui ont déjà été ajoutés dans la zone de transit (staging area) sans l'ajout de cet argument.&lt;/p&gt;
+&lt;p&gt;Fichier sous ¯ \ _ (ツ) _ / ¯ (oui, c'est une fonctionnalité, pas un bug, mais c'est déconcertant et non évident la première fois qu'il vous arrive!)&lt;/p&gt;
+&lt;h2&gt;Tous ce bruit assourdissent ne m'aide pas plus =&amp;gt; j'abandonne.&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;cd ..
+sudo rm -r fucking-git-repo-dir
+git clone https://some.github.url/fucking-git-repo-dir.git
+cd fucking-git-repo-dir&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Avertissement&lt;/h2&gt;
+&lt;p&gt;L'auteur de ce court tutoriel ne se prétend pas être un expert GIT. (et son traducteur encore moins)&lt;/p&gt;
+&lt;p&gt;Ce n'est pas non plus une documentation exhaustive mais un bon point d'entrée pour les débutants.&lt;/p&gt;
+&lt;p&gt;Et oui, il existe mille et une autre façon de faire les mêmes choses avec d'avantage de théorie, de purisme mais j'en suis arrivé à écrire ses étapes simplifiées après plusieurs essais-erreurs successifs, ponctués de jurons et de colères incontrollables.&lt;/p&gt;
+&lt;p&gt;J'ai eu l'idée, assez folle, de partager le condensé de mes solutions avec une dose non dissimulable de légèreté et de blasphème.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;A ceux qui trouve que j'ai pris un peu trop de liberté sur la traduction de cet article, je leur dit litéralement : &lt;strong&gt;flûte&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;Néanmoins, ils sont autorisés à me soumettre leurs améliorations !
+C'est d'ailleurs aussi à ça que sert &lt;strong&gt;GIT&lt;/strong&gt; !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 12:32:07 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:oh-merde-git.html</guid><category>linux</category><category>libre</category><category>git</category><category>tuto</category><category>traduction</category></item><item><title>Algos de distances et de phonetique</title><link>https://mothsart.github.io/algos-distance-phonetique.html</link><description>&lt;h2&gt;Distance et algos de phonetic&lt;/h2&gt;
+&lt;h2&gt;Définition de la Distance&lt;/h2&gt;
+&lt;p&gt;Les algorithmes de distance vont comparer 2 chaines afin de déterminer leur &lt;strong&gt;pourcentage de ressemblance&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;Algos de distances&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Jaro&lt;/li&gt;
+&lt;li&gt;Hamming&lt;/li&gt;
+&lt;li&gt;Levenstein&lt;/li&gt;
+&lt;li&gt;Damerau Levenstein&lt;/li&gt;
+&lt;li&gt;Sift 1 à 4 : un alogo de distance plus rapide que Levenstein :
+https://siderite.blogspot.com/2014/11/super-fast-and-accurate-string-distance.html&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Intérêt d'un algo de distance (quand on l'utilise) ?&lt;/h3&gt;
+&lt;h2&gt;Définition de la Phonetique&lt;/h2&gt;
+&lt;h3&gt;Algos de phonetic&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Soundex (https://en.wikipedia.org/wiki/Soundex)&lt;/li&gt;
+&lt;li&gt;Metaphone (https://en.wikipedia.org/wiki/Metaphone)&lt;/li&gt;
+&lt;li&gt;Double-metaphone (https://en.wikipedia.org/wiki/Metaphone#Double_Metaphone)&lt;/li&gt;
+&lt;li&gt;Caverphone (https://en.wikipedia.org/wiki/Caverphone)&lt;/li&gt;
+&lt;li&gt;Beider–Morse Phonetic (https://en.wikipedia.org/wiki/Daitch%E2%80%93Mokotoff_Soundex#Beider.E2.80.93Morse_Phonetic_Name_Matching_Algorithm)&lt;/li&gt;
+&lt;li&gt;Kölner Phonetik (https://de.wikipedia.org/wiki/K%C3%B6lner_Phonetik)&lt;/li&gt;
+&lt;li&gt;NYSIIS (https://en.wikipedia.org/wiki/New_York_State_Identification_and_Intelligence_System)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Intérêt d'un algo de phonetic (quand on l'utilise) ?&lt;/h3&gt;
+&lt;h2&gt;Tokenization&lt;/h2&gt;
+&lt;p&gt;Derrière ce mot barbare, ce terme désigne un algorithme capable de convertir un texte brut en une liste de mots.&lt;/p&gt;
+&lt;p&gt;Il permet de &lt;/p&gt;
+&lt;h2&gt;NGrams&lt;/h2&gt;
+&lt;p&gt;https://fr.wikipedia.org/wiki/N-gramme&lt;/p&gt;
+&lt;h2&gt;Stemming&lt;/h2&gt;
+&lt;h2&gt;Naive-Bayes classification&lt;/h2&gt;
+&lt;h2&gt;Term Frequency-Inverse Document Frequency(tf-idf)&lt;/h2&gt;
+&lt;h2&gt;Logistic regression classification&lt;/h2&gt;
+&lt;h2&gt;Optimize naive-bayes (currently pretty slow)&lt;/h2&gt;
+&lt;h2&gt;Plural/Singular inflector&lt;/h2&gt;
+&lt;p&gt;Algos permettant de transformer un mot de sa forme singulier au pluriel et inversement + détecter sa forme actuel. (est-ce que le mot est au singulier ou au pluriel ?)&lt;/p&gt;
+&lt;h2&gt;Détection de langue&lt;/h2&gt;
+&lt;p&gt;https://github.com/greyblake/whatlang-rs&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 12:02:45 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:algos-distance-phonetique.html</guid><category>levenstein</category><category>hamming</category><category>soundex</category><category>metaphone</category><category>token</category><category>ngram</category></item><item><title>CanIuse</title><link>https://mothsart.github.io/caniuse.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;S'il on veut utiliser une propriété css/js/html ou une api Html5 et être certain que ça fonctionne sur notre nagivateur, le réflexe c'est caniuse.com&lt;/p&gt;
+&lt;p&gt;Mais s'il on veut étayer son argumentaire, le mieux est de passer par les sites des 3 gros navigateurs :&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/shapes"&gt;IE et Edge&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://platform-status.mozilla.org/#css-shapes"&gt;Firefox&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.chromestatus.com/features"&gt;Chrome&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Amélioration progressive&lt;/h2&gt;
+&lt;p&gt;Pour détecter si un navigateur utilise une fonctionnalité, on avait jusqu'à présent &lt;strong&gt;Modernizr&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Cette lib va progressivement disparaitre au profit de &lt;strong&gt;CSS supports&lt;/strong&gt; : 
+&lt;a href="https://la-cascade.io/css-supports-va-vous-changer-la-vie"&gt;Explications sur Css supports&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 12:52:37 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:caniuse.html</guid><category>js</category><category>css</category><category>html</category><category>caniuse</category><category>modernizr</category></item><item><title>Utiliser des logs avec Rust</title><link>https://mothsart.github.io/logs-rust.html</link><description>&lt;h2&gt;Utiliser les logs en Rust (encore en brouillon)&lt;/h2&gt;
+&lt;p&gt;Sur n'importe quel soft sérieux, les logs sont innévitables.
+Voici mes experimentations dans le logging en Rust.&lt;/p&gt;
+&lt;h2&gt;La variable RUST_LOG&lt;/h2&gt;
+&lt;p&gt;Selon le renseignement de cette variable, on obtient un filtrage sur les logs de notre application.&lt;/p&gt;
+&lt;p&gt;Cette variable utilise les expressions réglières&lt;/p&gt;
+&lt;p&gt;Utilisation (Ne pas afficher que les logs de type &lt;strong&gt;info&lt;/strong&gt;) :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;RUST_LOG=info cargo run&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;On filtre les logs de type &lt;strong&gt;error&lt;/strong&gt; et commançant par la chaine &lt;strong&gt;Read&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;RUST_LOG=error/Read cargo run --bin cli&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;On filtre sur le module &lt;strong&gt;cli&lt;/strong&gt; et sur le type &lt;strong&gt;debug&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;RUST_LOG=cli=debug cargo run --bin cli&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;slog&lt;/h2&gt;
+&lt;p&gt;La crate &lt;strong&gt;log&lt;/strong&gt; a quelques limitations que &lt;strong&gt;slog&lt;/strong&gt; va étendre.&lt;/p&gt;
+&lt;p&gt;Entre autre :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;apporter de la couleur sur le terminal pour les différents type de log. (erreur en rouge, warn et orange etc.)&lt;/li&gt;
+&lt;li&gt;changer les formats d'affichage facilement&lt;/li&gt;
+&lt;li&gt;utiliser d'autre sortie que &lt;strong&gt;stdout&lt;/strong&gt; : en html, en json, journald &lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 12:42:04 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:logs-rust.html</guid><category>rust</category><category>log</category></item><item><title>Aide mémoire sur le réseau et l'admin sys</title><link>https://mothsart.github.io/memo-admin-sys.html</link><description>&lt;h2&gt;Reseau &amp;amp; Admin sys&lt;/h2&gt;
+&lt;h2&gt;w&lt;/h2&gt;
+&lt;p&gt;Donne la liste des utilisateurs sur une machine&lt;/p&gt;
+&lt;h2&gt;arp -a&lt;/h2&gt;
+&lt;p&gt;Renvoie que la liste des adresses déjà inscrites dans la table ARP.&lt;/p&gt;
+&lt;h2&gt;nmap&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;nmap -sP 192.168.0.*
+sudo nmap -sP x.y.z.*&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;&lt;a href="http://blog.nicolargo.com/2007/08/nmap-le-scanneur-de-reseau.html"&gt;http://blog.nicolargo.com/2007/08/nmap-le-scanneur-de-reseau.html&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 12:55:05 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:memo-admin-sys.html</guid><category>linux</category><category>arp</category><category>nmap</category><category>admin sys</category></item><item><title>Mémo sur Cargo</title><link>https://mothsart.github.io/memo-cargo.html</link><description>&lt;h2&gt;Un mémo sur les instructions d'un fichier de conf d'un paquet Cargo&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-toml"&gt;[package]
+name = &amp;quot;cargo&amp;quot;
+version = &amp;quot;0.18.0&amp;quot;
+authors = [&amp;quot;Yehuda Katz &amp;lt;wycats@gmail.com&amp;gt;&amp;quot;,
+           &amp;quot;Carl Lerche &amp;lt;me@carllerche.com&amp;gt;&amp;quot;,
+           &amp;quot;Alex Crichton &amp;lt;alex@alexcrichton.com&amp;gt;&amp;quot;]
+license = &amp;quot;MIT/Apache-2.0&amp;quot;
+homepage = &amp;quot;https://crates.io&amp;quot;
+repository = &amp;quot;https://github.com/rust-lang/cargo&amp;quot;
+documentation = &amp;quot;https://docs.rs/cargo&amp;quot;
+description = &amp;quot;&amp;quot;&amp;quot;
+Cargo, a package manager for Rust.
+&amp;quot;&amp;quot;&amp;quot;
+
+[lib]
+name = &amp;quot;cargo&amp;quot;
+path = &amp;quot;src/cargo/lib.rs&amp;quot;
+
+[dependencies]
+crates-io = { path = &amp;quot;src/crates-io&amp;quot;, version = &amp;quot;0.7&amp;quot; }
+crossbeam = &amp;quot;0.2&amp;quot;
+curl = &amp;quot;0.4.6&amp;quot;
+docopt = &amp;quot;0.7&amp;quot;
+env_logger = &amp;quot;0.4&amp;quot;
+filetime = &amp;quot;0.1&amp;quot;
+flate2 = &amp;quot;0.2&amp;quot;
+fs2 = &amp;quot;0.4&amp;quot;
+git2 = &amp;quot;0.6&amp;quot;
+git2-curl = &amp;quot;0.7&amp;quot;
+glob = &amp;quot;0.2&amp;quot;
+handlebars = { version = &amp;quot;0.25&amp;quot;, features = [&amp;quot;serde_type&amp;quot;, &amp;quot;partial4&amp;quot;], default-features = false }
+libc = &amp;quot;0.2&amp;quot;
+libgit2-sys = &amp;quot;0.6&amp;quot;
+log = &amp;quot;0.3&amp;quot;
+num_cpus = &amp;quot;1.0&amp;quot;
+rustc-serialize = &amp;quot;0.3&amp;quot;
+semver = &amp;quot;0.6.0&amp;quot;
+serde = &amp;quot;0.9&amp;quot;
+serde_derive = &amp;quot;0.9&amp;quot;
+serde_json = &amp;quot;0.9&amp;quot;
+serde_ignored = &amp;quot;0.0.2&amp;quot;
+shell-escape = &amp;quot;0.1&amp;quot;
+tar = { version = &amp;quot;0.4&amp;quot;, default-features = false }
+tempdir = &amp;quot;0.3&amp;quot;
+term = &amp;quot;0.4.4&amp;quot;
+time = &amp;quot;0.1.36&amp;quot;
+toml = &amp;quot;0.3&amp;quot;
+url = &amp;quot;1.1&amp;quot;
+# dépendances spécifiques à une architecture
+[target.'cfg(unix)'.dependencies]
+openssl = &amp;quot;0.9&amp;quot;
+
+[target.'cfg(windows)'.dependencies]
+advapi32-sys = &amp;quot;0.2&amp;quot;
+kernel32-sys = &amp;quot;0.2&amp;quot;
+miow = &amp;quot;0.2&amp;quot;
+psapi-sys = &amp;quot;0.1&amp;quot;
+winapi = &amp;quot;0.2&amp;quot;
+# dépendance spécifique au développement
+[dev-dependencies]
+hamcrest = &amp;quot;=0.1.1&amp;quot;
+bufstream = &amp;quot;0.1&amp;quot;
+filetime = &amp;quot;0.1&amp;quot;
+cargotest = { path = &amp;quot;tests/cargotest&amp;quot; }
+
+[[bin]]
+name = &amp;quot;cargo&amp;quot;
+test = false
+doc = false&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 12:43:40 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:memo-cargo.html</guid><category>cargo</category><category>toml</category><category>rust</category></item><item><title>Phonetic</title><link>https://mothsart.github.io/phonetic.html</link><description>&lt;h2&gt;Phonetic&lt;/h2&gt;
+&lt;p&gt;Sur PostgreSQL : https://www.postgresql.org/docs/9.1/static/fuzzystrmatch.html&lt;/p&gt;
+&lt;p&gt;https://fr.wikipedia.org/wiki/Homonymie
+http://www.easter-eggs.com/Recherche-approximative-avec
+http://sebsauvage.net/wiki/doku.php?id=php:recherche_floue&lt;/p&gt;
+&lt;p&gt;CREATE EXTENSION fuzzystrmatch;&lt;/p&gt;
+&lt;h3&gt;Soundex&lt;/h3&gt;
+&lt;h3&gt;Phonex&lt;/h3&gt;
+&lt;p&gt;Soundex pour le français : http://www.trickytools.com/downloads/phonex2.c&lt;/p&gt;
+&lt;h3&gt;Double metaphone&lt;/h3&gt;
+&lt;p&gt;Il est dit double car il peut retourner un code primaire et secondaire. (0 à 4 caractères)
+Il est par conséquent bien plus précis que le &lt;strong&gt;Soundex&lt;/strong&gt; et également plus adapté aux langues non anglophone.&lt;/p&gt;
+&lt;p&gt;Il a &lt;strong&gt;16 consonnes&lt;/strong&gt; (le 0 représente le th anglais) :
+      B  X  S  K  J  T  F  H  L  M  N  P  R  0  W  Y&lt;/p&gt;
+&lt;p&gt;Transformations:&lt;/p&gt;
+&lt;p&gt;B ----&amp;gt; B      unless at the end of word after "m", as in "dumb", "McComb"&lt;/p&gt;
+&lt;p&gt;C ----&amp;gt; X      (sh) if "-cia-" or "-ch-"
+           S      if "-ci-", "-ce-", or "-cy-"
+                  SILENT if "-sci-", "-sce-", or "-scy-"
+           K      otherwise, including in "-sch-"&lt;/p&gt;
+&lt;p&gt;D ----&amp;gt; J      if in "-dge-", "-dgy-", or "-dgi-"
+           T      otherwise&lt;/p&gt;
+&lt;p&gt;F ----&amp;gt; F&lt;/p&gt;
+&lt;p&gt;G ----&amp;gt;        SILENT if in "-gh-" and not at end or before a vowel
+                            in "-gn" or "-gned"
+                            in "-dge-" etc., as in above rule
+           J      if before "i", or "e", or "y" if not double "gg"
+           K      otherwise&lt;/p&gt;
+&lt;p&gt;H ----&amp;gt;        SILENT if after vowel and no vowel follows
+                         or after "-ch-", "-sh-", "-ph-", "-th-", "-gh-"
+           H      otherwise&lt;/p&gt;
+&lt;p&gt;J ----&amp;gt; J&lt;/p&gt;
+&lt;p&gt;K ----&amp;gt;        SILENT if after "c"
+           K      otherwise&lt;/p&gt;
+&lt;p&gt;L ----&amp;gt; L&lt;/p&gt;
+&lt;p&gt;M ----&amp;gt; M&lt;/p&gt;
+&lt;p&gt;N ----&amp;gt; N&lt;/p&gt;
+&lt;p&gt;P ----&amp;gt; F      if before "h"
+           P      otherwise&lt;/p&gt;
+&lt;p&gt;Q ----&amp;gt; K&lt;/p&gt;
+&lt;p&gt;R ----&amp;gt; R&lt;/p&gt;
+&lt;p&gt;S ----&amp;gt; X      (sh) if before "h" or in "-sio-" or "-sia-"
+           S      otherwise&lt;/p&gt;
+&lt;p&gt;T ----&amp;gt; X      (sh) if "-tia-" or "-tio-"
+           0      (th) if before "h"
+                  silent if in "-tch-"
+           T      otherwise&lt;/p&gt;
+&lt;p&gt;V ----&amp;gt; F&lt;/p&gt;
+&lt;p&gt;W ----&amp;gt;        SILENT if not followed by a vowel
+           W      if followed by a vowel&lt;/p&gt;
+&lt;p&gt;X ----&amp;gt; KS&lt;/p&gt;
+&lt;p&gt;Y ----&amp;gt;        SILENT if not followed by a vowel
+           Y      if followed by a vowel&lt;/p&gt;
+&lt;p&gt;Z ----&amp;gt; S&lt;/p&gt;
+&lt;p&gt;https://github.com/Freyskeyd/nlp
+http://aspell.net/metaphone/metaphone-kuhn.txt
+http://aspell.net/metaphone/dmetaph.cpp&lt;/p&gt;
+&lt;p&gt;Sous PostGreSQL : select dmetaphone('gumbo');
+=&amp;gt; ça ne marche pas bien dès qu'il y a des caractères accentués.&lt;/p&gt;
+&lt;h3&gt;Distance de Levenstein&lt;/h3&gt;
+&lt;h3&gt;Références&lt;/h3&gt;
+&lt;p&gt;http://www.norvig.com/spell-correct.html&lt;/p&gt;
+&lt;p&gt;http://stackoverflow.com/questions/487003/how-to-detect-a-typo-in-a-product-search-and-suggest-possible-corrections&lt;/p&gt;
+&lt;p&gt;PostGreSQL implémente la distance de levenstein, le double metaphone :&lt;/p&gt;
+&lt;p&gt;https://github.com/Freyskeyd/nlp&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:phonetic.html</guid><category>phonetic</category><category>phonex</category><category>metaphone</category></item><item><title>RecalBox</title><link>https://mothsart.github.io/recalbox.html</link><description>&lt;h2&gt;Memo RecalBox&lt;/h2&gt;
+&lt;p&gt;Utilisez le nom d'utilisateur &lt;strong&gt;root&lt;/strong&gt; et le mot de passe &lt;strong&gt;recalboxroot&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;\RECALBOX&lt;/strong&gt; ou &lt;strong&gt;\192.168.1.30&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;SSH&lt;/h3&gt;
+&lt;p&gt;Tapez : &lt;strong&gt;ssh root@recalbox.local&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;ou &lt;strong&gt;arp -a&lt;/strong&gt; (donne la liste des ordis sur le réseau locale)
+puis 
+ou  &lt;strong&gt;ssh root@monIp&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Activer le Wifi&lt;/h2&gt;
+&lt;p&gt;aller au fichier &lt;strong&gt;/recalbox/share/system/recalbox.conf&lt;/strong&gt; :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;## Activate wifi (0,1)
+wifi.enabled=1
+## Wifi SSID (string)
+wifi.ssid=maFreeBox
+## Wifi KEY (string)
+## Escape your special chars (# ; $ -) with a backslash : $ =&amp;gt; \$
+wifi.key=motMonDePasseFreebox&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Et surtout ne pas utiliser le canal 13 pour le wifi&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:recalbox.html</guid><category>raspberry</category><category>recalbox</category><category>retro-gamming</category></item><item><title>Mes tests autours de la Framboise</title><link>https://mothsart.github.io/tests-autours-de-la-framboise.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Ceci est un historique personnel de mes tests sous Raspberry.
+J'ai acheté progressivement les Rpi + le matériel correspondant.&lt;/p&gt;
+&lt;p&gt;Pour me simplifier la vie, je me suis acheté une carte SD de 16Go par OS utilisé.&lt;/p&gt;
+&lt;h2&gt;OS testés&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Recalbox&lt;/strong&gt; : le kiff du rétro-gaming, essayé et adopté par mes enfants et moi ! Développé et maintenu par des français :
+Ma config : &lt;a href="./recalbox.html"&gt;recalbox&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;ArchLinux&lt;/strong&gt; : une de mes meilleurs distrib pour les geeks&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;PrimxTux&lt;/strong&gt; : 
+&lt;a href="http://forum.primtux.fr/viewtopic.php?id=829"&gt;Primtux pour Raspberry&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;OS a tester&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Raspbian : Oui, je sais, j'aurais du commencer par là.&lt;/li&gt;
+&lt;li&gt;NixOS : &lt;a href="https://nixos.org/wiki/Raspberry_Pi"&gt;https://nixos.org/wiki/Raspberry_Pi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RetroPie : [https://retropie.org.uk](https://retropie.org.uk] : beaucoup plus de consoles supportés que RecalBox =&amp;gt; Amiga, Playstation 2, WII, DreamCast, Saturn !&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Les objectifs réalisés&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;console de jeux rétro-gaming&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Les objectifs prévisionnels&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;ajouter un Disque dur externe pour les Roms&lt;/li&gt;
+&lt;li&gt;Serveur multimédia : Accès aux photos, musique, vidéos&lt;/li&gt;
+&lt;li&gt;Serveur d'application&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Matériel&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Raspberry PI 2 B+, clé WIFI, Boîtier Officiel&lt;/li&gt;
+&lt;li&gt;Raspberry PI 3, Coffret Modulable&lt;/li&gt;
+&lt;li&gt;2 cables HDMI&lt;/li&gt;
+&lt;li&gt;nappes + Breadboard&lt;/li&gt;
+&lt;li&gt;Adaptateur HDMI =&amp;gt; VGA (RIP)&lt;/li&gt;
+&lt;li&gt;clavier sans fil&lt;/li&gt;
+&lt;li&gt;écran HDMI&lt;/li&gt;
+&lt;li&gt;4 cartes SD de 16Go&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Achats prévisionnels&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Raspberry Pi Zero W + boitier officiel&lt;/li&gt;
+&lt;li&gt;Ecran HDMI&lt;/li&gt;
+&lt;li&gt;Disque dur externe pour les Roms&lt;/li&gt;
+&lt;li&gt;Disque dur pour le serveur multimédia&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 12:59:02 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:tests-autours-de-la-framboise.html</guid><category>raspberry</category><category>recalbox</category><category>primtux</category><category>archlinux</category><category>raspbian</category></item><item><title>Editeur WYSIWYG de SVG interactifs</title><link>https://mothsart.github.io/editeur-svg-interactif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;L'objectif est simple : éditer un fichier SVG statique afin de le présenter comme un contenu interactif. 
 Permettre l'ajout des zones cliquables pouvant être zoomés et enrichies d'une explication&lt;/p&gt;
 &lt;p&gt;Les fichiers générés (page Html contenant le svg) pouvant servir à divers usages :&lt;/p&gt;
@@ -77,18 +459,21 @@ Il est possible de changer la couleur, de zoomer mais également d'ajouter/edite
 &lt;h2&gt;Des softs en Rust&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href="https://github.com/servo/servo"&gt;Servo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/servo/servo"&gt;Servo&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;RedOS : un OS en Rust : https://www.redox-os.org/&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;RedOS&lt;/strong&gt; : un OS en Rust : https://www.redox-os.org/&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;RipGrep : un remplacement de Grep : https://github.com/BurntSushi/ripgrep&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;RipGrep&lt;/strong&gt; : un remplacement de Grep (avec des perfs halucinantes) : &lt;a href="https://github.com/BurntSushi/ripgrep"&gt;https://github.com/BurntSushi/ripgrep&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;[Snatch]https://github.com/derniercri/snatch&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Basic-http-server&lt;/strong&gt; : remplace &lt;strong&gt;python -m http.server&lt;/strong&gt; (cargo install basic-http-server)&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 25 Feb 2017 17:34:53 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-22:applis-rust.html</guid></item><item><title>Financement participatif</title><link>https://mothsart.github.io/financement-participatif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/derniercri/snatch"&gt;Snatch&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 12:47:12 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-22:applis-rust.html</guid></item><item><title>Financement participatif</title><link>https://mothsart.github.io/financement-participatif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;https://liberapay.com/mothsART&lt;/p&gt;
 &lt;p&gt;Flattr&lt;/p&gt;
@@ -395,8 +780,7 @@ Inkscape&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/element
 &lt;p&gt;Afin d'améliorer encore l'expérience des utilisateurs sur Ubuntu, j'ai également mis à dispostion un &lt;a href="https://launchpad.net/~jerem-ferry/+archive/ubuntu/app-illustration/"&gt;PPA&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Les étapes de réalisations&lt;/h3&gt;
 &lt;p&gt;&lt;span class="videobox"&gt;
-            &lt;video width="100%" height="100%" preload="none" controls poster="/./static/images/camp_paleolithic.jpg"&gt;&lt;source src='/static/movies/camp_paleolithic.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'&gt;&lt;/video&gt;&lt;/span&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 30 Oct 2016 21:07:42 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:abuledu-camp-paleolithique.html</guid><category>linux</category><category>libre</category></item><item><title>Oh Merde Git</title><link>https://mothsart.github.io/oh-merde-git.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
-&lt;p&gt;http://ohshitgit.com/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:oh-merde-git.html</guid><category>linux</category><category>libre</category></item><item><title>Librairies et frameworks</title><link>https://mothsart.github.io/rust-libs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+            &lt;video width="100%" height="100%" preload="none" controls poster="/./static/images/camp_paleolithic.jpg"&gt;&lt;source src='/static/movies/camp_paleolithic.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'&gt;&lt;/video&gt;&lt;/span&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 30 Oct 2016 21:07:42 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:abuledu-camp-paleolithique.html</guid><category>linux</category><category>libre</category></item><item><title>Librairies et frameworks</title><link>https://mothsart.github.io/rust-libs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Depuis que Rust est en version 1.0, les choses se sont accélérés et beaucoup de librairies et frameworks ont pointé le bout de leur nez.
 Voici les plus connus trié par thème.&lt;/p&gt;
 &lt;h2&gt;Base de données&lt;/h2&gt;
@@ -643,10 +1027,7 @@ Tux Typing&lt;/p&gt;
 &lt;p&gt;http://ecole.edulibre.org/
 http://cyrille.largillier.org/cours_numerique/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 09 Feb 2017 00:10:29 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:projets-libre-educatif.html</guid><category>libre</category><category>linux</category><category>éduatif</category></item><item><title>Windows vs Linux</title><link>https://mothsart.github.io/windows-vs-linux.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Comparer Windows à Linux c'est comme comparer &lt;/p&gt;
-&lt;h2&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:windows-vs-linux.html</guid><category>windows</category><category>linux</category></item><item><title>Correcteur</title><link>https://mothsart.github.io/correcteur.html</link><description>&lt;h2&gt;&lt;/h2&gt;
-&lt;p&gt;http://www.norvig.com/spell-correct.html&lt;/p&gt;
-&lt;p&gt;http://www.reverso.net/spell-checker/french-spelling-grammar/
-http://bescherelle.com/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 03 Oct 2016 00:56:09 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:correcteur.html</guid><category>correcteur</category><category>grammaire</category></item><item><title>Macros rust</title><link>https://mothsart.github.io/macros-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;h2&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:windows-vs-linux.html</guid><category>windows</category><category>linux</category></item><item><title>Macros rust</title><link>https://mothsart.github.io/macros-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;h3&gt;println!&lt;/h3&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-rust"&gt;use std::fs::File;
 
@@ -672,71 +1053,7 @@ fn main() {
 &lt;p&gt;file!&lt;/p&gt;
 &lt;p&gt;vec!&lt;/p&gt;
 &lt;p&gt;log_syntax!&lt;/p&gt;
-&lt;p&gt;trace_macros!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Oct 2016 15:17:18 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:macros-rust.html</guid><category>rust</category></item><item><title>Phonetic</title><link>https://mothsart.github.io/phonetic.html</link><description>&lt;h2&gt;Phonetic&lt;/h2&gt;
-&lt;p&gt;Sur PostgreSQL : https://www.postgresql.org/docs/9.1/static/fuzzystrmatch.html&lt;/p&gt;
-&lt;p&gt;https://fr.wikipedia.org/wiki/Homonymie
-http://www.easter-eggs.com/Recherche-approximative-avec
-http://sebsauvage.net/wiki/doku.php?id=php:recherche_floue&lt;/p&gt;
-&lt;p&gt;CREATE EXTENSION fuzzystrmatch;&lt;/p&gt;
-&lt;h3&gt;Soundex&lt;/h3&gt;
-&lt;h3&gt;Phonex&lt;/h3&gt;
-&lt;p&gt;Soundex pour le français : http://www.trickytools.com/downloads/phonex2.c&lt;/p&gt;
-&lt;h3&gt;Double metaphone&lt;/h3&gt;
-&lt;p&gt;Il est dit double car il peut retourner un code primaire et secondaire. (0 à 4 caractères)
-Il est par conséquent bien plus précis que le &lt;strong&gt;Soundex&lt;/strong&gt; et également plus adapté aux langues non anglophone.&lt;/p&gt;
-&lt;p&gt;Il a &lt;strong&gt;16 consonnes&lt;/strong&gt; (le 0 représente le th anglais) :
-      B  X  S  K  J  T  F  H  L  M  N  P  R  0  W  Y&lt;/p&gt;
-&lt;p&gt;Transformations:&lt;/p&gt;
-&lt;p&gt;B ----&amp;gt; B      unless at the end of word after "m", as in "dumb", "McComb"&lt;/p&gt;
-&lt;p&gt;C ----&amp;gt; X      (sh) if "-cia-" or "-ch-"
-           S      if "-ci-", "-ce-", or "-cy-"
-                  SILENT if "-sci-", "-sce-", or "-scy-"
-           K      otherwise, including in "-sch-"&lt;/p&gt;
-&lt;p&gt;D ----&amp;gt; J      if in "-dge-", "-dgy-", or "-dgi-"
-           T      otherwise&lt;/p&gt;
-&lt;p&gt;F ----&amp;gt; F&lt;/p&gt;
-&lt;p&gt;G ----&amp;gt;        SILENT if in "-gh-" and not at end or before a vowel
-                            in "-gn" or "-gned"
-                            in "-dge-" etc., as in above rule
-           J      if before "i", or "e", or "y" if not double "gg"
-           K      otherwise&lt;/p&gt;
-&lt;p&gt;H ----&amp;gt;        SILENT if after vowel and no vowel follows
-                         or after "-ch-", "-sh-", "-ph-", "-th-", "-gh-"
-           H      otherwise&lt;/p&gt;
-&lt;p&gt;J ----&amp;gt; J&lt;/p&gt;
-&lt;p&gt;K ----&amp;gt;        SILENT if after "c"
-           K      otherwise&lt;/p&gt;
-&lt;p&gt;L ----&amp;gt; L&lt;/p&gt;
-&lt;p&gt;M ----&amp;gt; M&lt;/p&gt;
-&lt;p&gt;N ----&amp;gt; N&lt;/p&gt;
-&lt;p&gt;P ----&amp;gt; F      if before "h"
-           P      otherwise&lt;/p&gt;
-&lt;p&gt;Q ----&amp;gt; K&lt;/p&gt;
-&lt;p&gt;R ----&amp;gt; R&lt;/p&gt;
-&lt;p&gt;S ----&amp;gt; X      (sh) if before "h" or in "-sio-" or "-sia-"
-           S      otherwise&lt;/p&gt;
-&lt;p&gt;T ----&amp;gt; X      (sh) if "-tia-" or "-tio-"
-           0      (th) if before "h"
-                  silent if in "-tch-"
-           T      otherwise&lt;/p&gt;
-&lt;p&gt;V ----&amp;gt; F&lt;/p&gt;
-&lt;p&gt;W ----&amp;gt;        SILENT if not followed by a vowel
-           W      if followed by a vowel&lt;/p&gt;
-&lt;p&gt;X ----&amp;gt; KS&lt;/p&gt;
-&lt;p&gt;Y ----&amp;gt;        SILENT if not followed by a vowel
-           Y      if followed by a vowel&lt;/p&gt;
-&lt;p&gt;Z ----&amp;gt; S&lt;/p&gt;
-&lt;p&gt;https://github.com/Freyskeyd/nlp
-http://aspell.net/metaphone/metaphone-kuhn.txt
-http://aspell.net/metaphone/dmetaph.cpp&lt;/p&gt;
-&lt;p&gt;Sous PostGreSQL : select dmetaphone('gumbo');
-=&amp;gt; ça ne marche pas bien dès qu'il y a des caractères accentués.&lt;/p&gt;
-&lt;h3&gt;Distance de Levenstein&lt;/h3&gt;
-&lt;h3&gt;Références&lt;/h3&gt;
-&lt;p&gt;http://www.norvig.com/spell-correct.html&lt;/p&gt;
-&lt;p&gt;http://stackoverflow.com/questions/487003/how-to-detect-a-typo-in-a-product-search-and-suggest-possible-corrections&lt;/p&gt;
-&lt;p&gt;PostGreSQL implémente la distance de levenstein, le double metaphone :&lt;/p&gt;
-&lt;p&gt;https://github.com/Freyskeyd/nlp&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:phonetic.html</guid><category>phonetic</category><category>phonex</category><category>metaphone</category></item><item><title>Web Offline</title><link>https://mothsart.github.io/web-offline.html</link><description>&lt;h2&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:web-offline.html</guid><category>offline</category></item><item><title>Aide mémoire GIT</title><link>https://mothsart.github.io/aide-memoire-git.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;trace_macros!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Oct 2016 15:17:18 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:macros-rust.html</guid><category>rust</category></item><item><title>Web Offline</title><link>https://mothsart.github.io/web-offline.html</link><description>&lt;h2&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:web-offline.html</guid><category>offline</category></item><item><title>Aide mémoire GIT</title><link>https://mothsart.github.io/aide-memoire-git.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;GIT est un super utilitaire mais son nombre de commandes est juste exponentiel.&lt;/p&gt;
 &lt;h2&gt;Clone&lt;/h2&gt;
 &lt;p&gt;Avec des sous-modules&lt;/p&gt;
@@ -924,6 +1241,8 @@ git push&lt;/code&gt;&lt;/pre&gt;
 git commit --amend&lt;/code&gt;&lt;/pre&gt;
 
 
+&lt;h2&gt;Rebase interactif&lt;/h2&gt;
+&lt;p&gt;https://blog.guillaume-gomez.fr/Git-tips&lt;/p&gt;
 &lt;h2&gt;Equivalences&lt;/h2&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git checkout -b ticket-12 === git branch ticket-12 + git checkout ticket-12&lt;/code&gt;&lt;/pre&gt;
 
@@ -985,7 +1304,7 @@ git push -f&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www.git-attitude.fr/2014/09/15/30-options-git-qui-gagnent-a-etre-connues"&gt;http://www.git-attitude.fr/2014/09/15/30-options-git-qui-gagnent-a-etre-connues&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/2221658/whats-the-difference-between-head-and-head-in-git"&gt;http://stackoverflow.com/questions/2221658whats-the-difference-between-head-and-head-in-git&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 03 Oct 2016 00:56:09 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-git.html</guid><category>git</category><category>linux</category></item><item><title>Aide mémoire sh</title><link>https://mothsart.github.io/aide-memoire-sh.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/2221658/whats-the-difference-between-head-and-head-in-git"&gt;http://stackoverflow.com/questions/2221658whats-the-difference-between-head-and-head-in-git&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 11:54:35 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-git.html</guid><category>git</category><category>linux</category></item><item><title>Aide mémoire sh</title><link>https://mothsart.github.io/aide-memoire-sh.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;find . | grep actual&lt;/code&gt;&lt;/pre&gt;
 
 
@@ -1173,7 +1492,7 @@ Ca fragmente encore plus le marché du travail... c'est juste désespérant.&lt;
 
 &lt;h2&gt;pk-config&lt;/h2&gt;
 &lt;h2&gt;stat&lt;/h2&gt;
-&lt;p&gt;permet de tester si un fichier existe et donner le &lt;/p&gt;
+&lt;p&gt;permet de tester si un fichier existe. &lt;/p&gt;
 &lt;h2&gt;sync&lt;/h2&gt;
 &lt;p&gt;Découvert avec une installation de &lt;strong&gt;raspberry pi&lt;/strong&gt; : permet de synchroniser les mémoires avec le disque.
 Ecrit sur le disque toutes les données dans les tampons en mémoire. Ceci peut inclure les superblocs modifiés, les inœuds modifiés, et les écritures différées.&lt;/p&gt;
@@ -1200,7 +1519,7 @@ dd if=/dev/zero of=/dev/hda conv=notrunc&lt;/p&gt;
 &lt;h2&gt;truncate&lt;/h2&gt;
 &lt;p&gt;réduire la taille d'un fichier à 0
 truncate -s 0 /home/skyminds/error.log&lt;/p&gt;
-&lt;h2&gt;eval&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 07 Aug 2016 15:15:35 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-09:coreutils.html</guid><category>sh</category><category>linux</category></item><item><title>Cahier de bonnes pratiques Javascript</title><link>https://mothsart.github.io/bonnes-pratiques-js.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;h2&gt;eval&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 11:54:35 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-09:coreutils.html</guid><category>sh</category><category>linux</category></item><item><title>Cahier de bonnes pratiques Javascript</title><link>https://mothsart.github.io/bonnes-pratiques-js.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Ce cahier est dédié à de l'usage de javascript dit &lt;strong&gt;classique&lt;/strong&gt;  ce qui sous-entend, pas de frameworks révolutionnaires style &lt;strong&gt;Angular&lt;/strong&gt;, &lt;strong&gt;React&lt;/strong&gt; et autre.
 Pas d'utilisation de transpiler tel que Typescript, CofeeScript ou même BabelJS.&lt;/p&gt;
 &lt;p&gt;Du javascript en mode vanilla avec potentiellement un peu de Jquery.&lt;/p&gt;
@@ -1591,7 +1910,23 @@ Un point commun pour plusieurs parties du logiciel.
 Celà part souvent d'une bonne intension -&amp;gt; moins de code à produire donc une meilleur maintenance.
 Néanmoins, l'effet pervers est de créer des parties qui font trop de choses, qui sont difficiles à retoucher et qui engendre par conséquent trop de conditions différentes. 
 De plus : si le code générique comporte un bug, il risque fortement d'impacter tout l'applicatif là ou un autre bug n'aurait toucher qu'un effet marginal. &lt;/p&gt;
+&lt;h2&gt;Cahier des charges au minima&lt;/h2&gt;
+&lt;p&gt;L'erreur première est de définir un cahier des charges qui couvre trop de fonctionnalités.
+Plus il sera étoffé et plus il sera délicat d'estimer son temps de réalisation et de palier au soucis évoqué précédement : l'explosition combinatoire.
+Le risque est de prendre trop de temps pour livrer et que la demande cliente évolue entre temps =&amp;gt; travail inutil.&lt;/p&gt;
+&lt;p&gt;Il vaut mieux partir sur des bases minimales et rajouter des tâches courtes et incrémentiels&lt;/p&gt;
 &lt;h2&gt;Solutions à envisager&lt;/h2&gt;
+&lt;h3&gt;Le typage fort&lt;/h3&gt;
+&lt;p&gt;Utiliser un langage avec un typage fort va réduire grandement le champ des possibles en forçant des types bien précis.
+La connaissance des types de bases et de leurs cas d'usage est le bagage mimimum d'un développeur!
+On évite les casts merdiques, les allocations mémoires exponentielles etc.&lt;/p&gt;
+&lt;p&gt;Attention : à mon sens, l'inférence de type et les types génériques ne devraient être utilisés que dans des cadres restraints.
+Quand on est sur du spécifique, on se doit de typer explicitement!&lt;/p&gt;
+&lt;h3&gt;Connaitre les subtilités d'un langage et forcer les tests à la compilation&lt;/h3&gt;
+&lt;p&gt;Un langage informatique est vivant. Il évolue, a ses subtilités, ses règles et ses exceptions.
+Limiter l'utilisation de la palette d'un langage est forcément handicapant.&lt;/p&gt;
+&lt;p&gt;Quand on a une vision globale, on peut se permettre d'évaluer quand des tests à la compilation sont possibles à l'opposé de tests à l'execution.&lt;/p&gt;
+&lt;p&gt;Par exemple, l'implémentation d'une classe à une interface va contraindre cette classe de manière statique.&lt;/p&gt;
 &lt;h3&gt;l'approche fonctionnel ou comment réduire les effets de bord&lt;/h3&gt;
 &lt;p&gt;l'effet de bord fait parti de la hantise du programmeur.
 Un correctif va entrainer une régression à un ou plusieurs endroits de l'applicatif sans lien direct avec la partie en question.
@@ -1605,29 +1940,65 @@ Résultat : on peut raisonner en réel boite noir ou une boite n'a strictement a
 Les meilleurs API sont les plus concices à mon sens.
 Elles doivent également cacher les coulisses. (le fonctionnement interne)
 L'utilisation doit de se fait être intuitive.&lt;/p&gt;
+&lt;h3&gt;Monolythique vs Modulaire&lt;/h3&gt;
+&lt;p&gt;Un gros projet modulaire est forcément moins maintenable et évolutif qu'un projet découplé.
+Voir https://fr.wikipedia.org/wiki/Microservices&lt;/p&gt;
+&lt;p&gt;La dérive évidente de ce fonctionnement est de fractionner quelque chose qui doit rester unitaire.
+Elle nécessite donc une réflexion en amont.&lt;/p&gt;
 &lt;h3&gt;Soigner les points d'entrée&lt;/h3&gt;
 &lt;p&gt;Il vaut mieux contraindre un utilisateur plutôt que lui donner trop de libertés.
 Moins de libertés sous-entend moins de possibles et par extension, moins de bugs.
 Il vaut mieux avoir une politique de droits minimum et les étendre si besoin plutôt que l'inverse.&lt;/p&gt;
 &lt;p&gt;Dans une appli web, les points d'entrée peuvent être la grande variété de navigateurs (ayant chacun des comportements spécifiques).
-Effectuer certains traitement côté serveur plutôt que côté client vont éviter ce type de bugs.&lt;/p&gt;
-&lt;h3&gt;tests unitaires et couverture&lt;/h3&gt;
+Effectuer certains traitements côté serveur plutôt que côté client vont éviter ce type de bugs.&lt;/p&gt;
+&lt;h3&gt;Tests unitaires et couverture&lt;/h3&gt;
 &lt;p&gt;Si l'on veut donner un cadre à notre logiciel, les tests automatisés sont primordiaux.
 Ces derniers obligent à mieux fractionner notre code en des zones minimales et donc réduire le champ des possible.
-De même, ça oblige à chainer les process : chaque étapes sont indépendantes et leur concaténation réalise un scénario.
-Si toutes nos fonctions sont testés et que par conséquent tout le code de notre applicatif est utilisé pendant l'automatisation des tests, on parle d'une couverture total.&lt;/p&gt;
+De même, ça oblige à chainer les process : chaque étapes sont indépendantes et leur concaténation réalise un &lt;strong&gt;scénario&lt;/strong&gt;.
+Si toutes nos fonctions sont testées et que par conséquent tout le code de notre applicatif est utilisé pendant l'automatisation des tests, on parle d'une couverture total.&lt;/p&gt;
 &lt;p&gt;Une couverture partiel donnera un indicatif : les zones non couvertes sont potentiellement moins sécurisé que celles couvertes.&lt;/p&gt;
-&lt;p&gt;Autre avantage des tests : la lecture des tests unitaires par un développeur donne directement le cahier des charges en réel de l'applicatif.&lt;/p&gt;
+&lt;p&gt;Autre avantage des tests : la lecture des tests unitaires par un développeur donne directement le cahier des charges en réel de l'applicatif (sur les tests qui passent bien évidement).&lt;/p&gt;
 &lt;p&gt;Si l'on met au point des tests unitaires dans un applicatif qui n'en avait pas auparavant, il faut impérativement s'attaquer aux parties génériques en priorité et au stockage de données (la suppression étant le point critique par excellence).&lt;/p&gt;
+&lt;h3&gt;Tests à l'éxecution en mode debug&lt;/h3&gt;
+&lt;p&gt;Si l'on désire étendre la gamme des tests, on peut, bien évidement rajouter des contrôles à l'execution uniquement dans le cadre du débuggage.
+Le développeur va tomber inévitablement dessus et s'il est, un minimum consciencieux, le résoudre dans la foulée.&lt;/p&gt;
+&lt;h3&gt;Outil d'analyse statique&lt;/h3&gt;
+&lt;p&gt;Aucun compilateur n'est parfait et certains tests ne devraient pas être effectués à chaque passe (trop gourmand) mais uniquement avant la génération d'un pack.
+Pour celà, des outils d'analyse statique ou (plus rare) dynamique permettrons de débusquer un nombre probant de bugs avant la production.&lt;/p&gt;
 &lt;h3&gt;Fuzzing ou comment le hasard peut être notre allié&lt;/h3&gt;
 &lt;p&gt;Le fuzzing est un sujet à part. C'est un bon moyen de débusquer des bugs que l'on aurait sans doute difficilement trouvé par des méthodes classiques.
 C'est une technique qui nécessite néanmoins de l'investissement et de l'expertise.
-A privilégier sur des logiciels finis, ou l'on veut débusquer des soucis de sécurité.&lt;/p&gt;
+A privilégier sur des logiciels finis, (lancer du fuzzing sur des api non stabilisé n'a aucun sens) ou l'on veut débusquer des soucis de sécurité.&lt;/p&gt;
+&lt;p&gt;Il est souvent bien plus pertinent que la preuve formel (assistant de preuve) qui elle va tenter de couvrir tous les cas de figure!&lt;/p&gt;
+&lt;h3&gt;Base de connaissance et règles métiers&lt;/h3&gt;
+&lt;p&gt;L'ensemble des points précédents vont permettre principalement d'héradiquer les bugs non métier.&lt;/p&gt;
+&lt;p&gt;Pour celà, il est utile de cloisonner l'aspect métier (le ou les microservices étant l'idéal) afin de déterminer l'ensemble des règles une fois et à un endroit précis (factorisation).&lt;/p&gt;
+&lt;p&gt;Cette base pourra de ce fait être testé : tests d'intégration et de validation.&lt;/p&gt;
+&lt;p&gt;Exemples :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Un délai de livraison prend au mimimun 2 jours et au maximum 1 semaine :&lt;/li&gt;
+&lt;li&gt;1 donnée typé : le délai de livraison (entier)&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2 règles : Si DelaiDeLivraison &amp;gt;= 2 et &amp;lt;= 7&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cas de déblocage anticipé d'une épargne : naissance ou arrivé au foyer d'un enfant en vue de son adoption dès lors que le foyer compte déjà au moins 2 enfants :&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;4 données : est-ce un foyer? (booleen), nombre d'enfants au foyer (entier), naissance (booleen) et demande d'adoption (booleen)
+-3 règles (l'odre a son importance) : Si estUnFoyer == vrai et nomDEnfants &amp;gt;= 2 et (naissance = vrai ou adoption = vrai)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Il est souvent judicieux d'ajouter un explicatif à chacune des régles sous la forme d'une constante.
+Cet explicatif va donner d'1 une documentation sur la ou les régles et de 2 être réutilisé directement dans l'applicatif.&lt;/p&gt;
+&lt;p&gt;Ex: champ promo grisé avec une infobulle : "cet article ne peut disposer de code promo car il est déjà soldé."&lt;/p&gt;
+&lt;h3&gt;Revue de code&lt;/h3&gt;
+&lt;p&gt;Dans l'idéal : une personne est dédié à la revue de code et accepte ou non les patches proposés.
+Il peut proposer les correctifs (ou la procédure de correction) mais il ne les corrige pas directement.&lt;/p&gt;
+&lt;p&gt;Dans le cadre d'un fonctionnement sous GIT : chaque développeur pousse des branches de fonctionnalitées ou correctives et la personne dédié à la revue de code s'occupe de les intégrer (merger) dans les branches master, dev etc.&lt;/p&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;On peut dire qu'un logiciel à atteind ses objectifs si il fonctionne dans l'ensemble des cas d'un cahier fonctionnel. (donc une liste fini)
-Il n'est dans ce cas aucunement exent de bugs, bien au contraire : il en reste sans doute une infinité.
+&lt;p&gt;On peut dire qu'un logiciel a atteind ses objectifs si il fonctionne dans l'ensemble des cas d'un cahier fonctionnel. (donc une liste fini)
+Il n'est dans ce cas aucunement excent de bugs, bien au contraire : il en reste sans doute une infinité.
 La nuance est qu'ils ne sont pas pénalisant pour l'utilisateur.&lt;/p&gt;
-&lt;p&gt;Cette réflexion ne parle pas des autres aspects quant à la satisfaction cliente : à savoir la qualité du suivi, de l'assistance, de la réactivité, de l'ergonomie, de la pédagogie etc.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 11 May 2016 00:01:18 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:bug.html</guid><category>bug</category></item><item><title>GIT config</title><link>https://mothsart.github.io/mon-gitconfig.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Cette réflexion ne parle pas des autres aspects quant à la satisfaction cliente : à savoir la qualité du suivi, de l'assistance, de la réactivité, de l'ergonomie, de la pédagogie etc.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 11:54:35 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:bug.html</guid><category>bug</category></item><item><title>GIT config</title><link>https://mothsart.github.io/mon-gitconfig.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;L'utilisateur avancé de &lt;strong&gt;GIT&lt;/strong&gt; à forcément un gitconfig "couteau suisse" sous la main.
 Voici une partie du mien avec les commentaires adéquats.&lt;/p&gt;
 &lt;h2&gt;config&lt;/h2&gt;
@@ -1845,7 +2216,50 @@ cd frontend_workflow&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;git checkout -- app/&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-frontend.html</guid><category>frontend</category><category>css</category><category>javascript</category></item><item><title>Ma stack Rust</title><link>https://mothsart.github.io/stack-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;En vrac, les outils que j'utilise et perfectionne dans mon apprentissage et mon utilisation du language &lt;strong&gt;Rust&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2&gt;MAJ de Rust&lt;/h2&gt;
-&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;curl -sf -L https://static.rust-lang.org/rustup.sh | sh&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;On installe Rustup si il n'est pas présent&lt;/p&gt;
+&lt;h1&gt;!bash&lt;/h1&gt;
+&lt;p&gt;curl https://sh.rustup.rs -sSf | sh&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Installer une version Nightly&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Plusieursfonctionnalités non stabilisés sont disponibles sur la version nightly (notamment l'api de linter utilisé par &lt;strong&gt;Clippy&lt;/strong&gt; dans le paragraphe suivant)&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;rustup install nightly&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;On met à jour sa version de Rust&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ceci va mettre à jour notre version stable de Rust (par exemple passer de la 1.14 à la 1.16) mais aussi mettre à jour notre version &lt;strong&gt;nightly&lt;/strong&gt; sur le dernier instantanné. (commit github)&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt; #!bash
+ rustup update&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Assurance qualité avec le Linter Clippy&lt;/h2&gt;
+&lt;p&gt;Dans Rust, il y a des bonnes pratiques ainsi que des faiblesses dans le compilateur de Rust (eh oui).
+Pour pallier à ça, il existe l'utilitaire &lt;strong&gt;Clippy&lt;/strong&gt;, un outil d'analyse statique qui va appliquer environ 200 règles sur le code parcourus.&lt;/p&gt;
+&lt;p&gt;Pour utiliser &lt;strong&gt;Clippy&lt;/strong&gt;, il faut actuellement utiliser Rust en nightly :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;rustup default nightly&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;puis dans le fichier toml&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-toml"&gt;[dependencies]
+clippy = {version = &amp;quot;*&amp;quot;, optional = true}
+
+[features]
+default = []&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Et dans le fichier main.rs or lib.rs:&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-rust"&gt;#![cfg_attr(feature=&amp;quot;clippy&amp;quot;, feature(plugin))]
+#![cfg_attr(feature=&amp;quot;clippy&amp;quot;, plugin(clippy))]&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Enfin, lancer l'analyse via :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;cargo build --features &amp;quot;clippy&amp;quot;&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;h2&gt;Sublime-Text&lt;/h2&gt;
@@ -1937,7 +2351,7 @@ Il subsite donc des erreurs à l'exécution : pour les débusquer, &lt;strong&gt
 
 &lt;p&gt;https://github.com/mmstick/cargo-deb&lt;/p&gt;
 &lt;h2&gt;En vrac&lt;/h2&gt;
-&lt;p&gt;http://rust.developpez.com/faq&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 22 Feb 2017 00:51:30 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-rust.html</guid><category>rust</category></item><item><title>Pourquoi je boude Node.Js</title><link>https://mothsart.github.io/pourquoi-je-boude-nodejs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;http://rust.developpez.com/faq&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 11:54:35 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-rust.html</guid><category>rust</category></item><item><title>Pourquoi je boude Node.Js</title><link>https://mothsart.github.io/pourquoi-je-boude-nodejs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;NodeJS est à la mode.
 Quand je parle de NodeJS, je parle bien entendu de toute la mouvance autours de Javascript.&lt;/p&gt;
 &lt;p&gt;Le principe :

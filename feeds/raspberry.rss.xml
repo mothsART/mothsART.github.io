@@ -1,7 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Fri, 11 Dec 2015 00:00:00 +0100</lastBuildDate><item><title></title><link>https://mothsart.github.io/.html</link><description>&lt;h2&gt;Composants électroniques&lt;/h2&gt;
-&lt;p&gt;Testeur de composants: http://www.framboise314.fr/un-testeur-de-composants-lcr-t3-oui-mais-encore/&lt;/p&gt;
-&lt;p&gt;manette retro gaming http://www.kubii.fr/consoles-retro-gaming/1803-manette-snes-usb-3272496006621.html&lt;/p&gt;
-&lt;h2&gt;Retro gaming&lt;/h2&gt;
-&lt;p&gt;https://www.recalbox.com
-https://retropie.org.uk&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-01-07:.html</guid></item></channel></rss>
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 12 Apr 2017 12:59:02 +0200</lastBuildDate><item><title>RecalBox</title><link>https://mothsart.github.io/recalbox.html</link><description>&lt;h2&gt;Memo RecalBox&lt;/h2&gt;
+&lt;p&gt;Utilisez le nom d'utilisateur &lt;strong&gt;root&lt;/strong&gt; et le mot de passe &lt;strong&gt;recalboxroot&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;\RECALBOX&lt;/strong&gt; ou &lt;strong&gt;\192.168.1.30&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;SSH&lt;/h3&gt;
+&lt;p&gt;Tapez : &lt;strong&gt;ssh root@recalbox.local&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;ou &lt;strong&gt;arp -a&lt;/strong&gt; (donne la liste des ordis sur le réseau locale)
+puis 
+ou  &lt;strong&gt;ssh root@monIp&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Activer le Wifi&lt;/h2&gt;
+&lt;p&gt;aller au fichier &lt;strong&gt;/recalbox/share/system/recalbox.conf&lt;/strong&gt; :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;## Activate wifi (0,1)
+wifi.enabled=1
+## Wifi SSID (string)
+wifi.ssid=maFreeBox
+## Wifi KEY (string)
+## Escape your special chars (# ; $ -) with a backslash : $ =&amp;gt; \$
+wifi.key=motMonDePasseFreebox&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Et surtout ne pas utiliser le canal 13 pour le wifi&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:recalbox.html</guid><category>raspberry</category><category>recalbox</category><category>retro-gamming</category></item><item><title>Mes tests autours de la Framboise</title><link>https://mothsart.github.io/tests-autours-de-la-framboise.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Ceci est un historique personnel de mes tests sous Raspberry.
+J'ai acheté progressivement les Rpi + le matériel correspondant.&lt;/p&gt;
+&lt;p&gt;Pour me simplifier la vie, je me suis acheté une carte SD de 16Go par OS utilisé.&lt;/p&gt;
+&lt;h2&gt;OS testés&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Recalbox&lt;/strong&gt; : le kiff du rétro-gaming, essayé et adopté par mes enfants et moi ! Développé et maintenu par des français :
+Ma config : &lt;a href="./recalbox.html"&gt;recalbox&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;ArchLinux&lt;/strong&gt; : une de mes meilleurs distrib pour les geeks&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;PrimxTux&lt;/strong&gt; : 
+&lt;a href="http://forum.primtux.fr/viewtopic.php?id=829"&gt;Primtux pour Raspberry&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;OS a tester&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Raspbian : Oui, je sais, j'aurais du commencer par là.&lt;/li&gt;
+&lt;li&gt;NixOS : &lt;a href="https://nixos.org/wiki/Raspberry_Pi"&gt;https://nixos.org/wiki/Raspberry_Pi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RetroPie : [https://retropie.org.uk](https://retropie.org.uk] : beaucoup plus de consoles supportés que RecalBox =&amp;gt; Amiga, Playstation 2, WII, DreamCast, Saturn !&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Les objectifs réalisés&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;console de jeux rétro-gaming&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Les objectifs prévisionnels&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;ajouter un Disque dur externe pour les Roms&lt;/li&gt;
+&lt;li&gt;Serveur multimédia : Accès aux photos, musique, vidéos&lt;/li&gt;
+&lt;li&gt;Serveur d'application&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Matériel&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Raspberry PI 2 B+, clé WIFI, Boîtier Officiel&lt;/li&gt;
+&lt;li&gt;Raspberry PI 3, Coffret Modulable&lt;/li&gt;
+&lt;li&gt;2 cables HDMI&lt;/li&gt;
+&lt;li&gt;nappes + Breadboard&lt;/li&gt;
+&lt;li&gt;Adaptateur HDMI =&amp;gt; VGA (RIP)&lt;/li&gt;
+&lt;li&gt;clavier sans fil&lt;/li&gt;
+&lt;li&gt;écran HDMI&lt;/li&gt;
+&lt;li&gt;4 cartes SD de 16Go&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Achats prévisionnels&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Raspberry Pi Zero W + boitier officiel&lt;/li&gt;
+&lt;li&gt;Ecran HDMI&lt;/li&gt;
+&lt;li&gt;Disque dur externe pour les Roms&lt;/li&gt;
+&lt;li&gt;Disque dur pour le serveur multimédia&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 12:59:02 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:tests-autours-de-la-framboise.html</guid><category>raspberry</category><category>recalbox</category><category>primtux</category><category>archlinux</category><category>raspbian</category></item></channel></rss>
