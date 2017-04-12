@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 12 Apr 2017 12:02:45 +0200</lastBuildDate><item><title>Algos de distances et de phonetique</title><link>https://mothsart.github.io/algos-distance-phonetique.html</link><description>&lt;h2&gt;Distance et algos de phonetic&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 12 Apr 2017 13:01:23 +0200</lastBuildDate><item><title>Algos de distances et de phonetique</title><link>https://mothsart.github.io/algos-distance-phonetique.html</link><description>&lt;h2&gt;Distance et algos de phonetic&lt;/h2&gt;
 &lt;h2&gt;Définition de la Distance&lt;/h2&gt;
 &lt;p&gt;Les algorithmes de distance vont comparer 2 chaines afin de déterminer leur &lt;strong&gt;pourcentage de ressemblance&lt;/strong&gt;.&lt;/p&gt;
 &lt;h3&gt;Algos de distances&lt;/h3&gt;
@@ -37,7 +37,7 @@ https://siderite.blogspot.com/2014/11/super-fast-and-accurate-string-distance.ht
 &lt;h2&gt;Plural/Singular inflector&lt;/h2&gt;
 &lt;p&gt;Algos permettant de transformer un mot de sa forme singulier au pluriel et inversement + détecter sa forme actuel. (est-ce que le mot est au singulier ou au pluriel ?)&lt;/p&gt;
 &lt;h2&gt;Détection de langue&lt;/h2&gt;
-&lt;p&gt;https://github.com/greyblake/whatlang-rs&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 12:02:45 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:algos-distance-phonetique.html</guid><category>levenstein</category><category>hamming</category><category>soundex</category><category>metaphone</category><category>token</category><category>ngram</category></item><item><title>Phonetic</title><link>https://mothsart.github.io/phonetic.html</link><description>&lt;h2&gt;Phonetic&lt;/h2&gt;
+&lt;p&gt;https://github.com/greyblake/whatlang-rs&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:algos-distance-phonetique.html</guid><category>levenstein</category><category>hamming</category><category>soundex</category><category>metaphone</category><category>token</category><category>ngram</category></item><item><title>Phonetic</title><link>https://mothsart.github.io/phonetic.html</link><description>&lt;h2&gt;Phonetic&lt;/h2&gt;
 &lt;p&gt;Sur PostgreSQL : https://www.postgresql.org/docs/9.1/static/fuzzystrmatch.html&lt;/p&gt;
 &lt;p&gt;https://fr.wikipedia.org/wiki/Homonymie
 http://www.easter-eggs.com/Recherche-approximative-avec

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 12 Apr 2017 12:47:12 +0200</lastBuildDate><item><title>Utiliser des logs avec Rust</title><link>https://mothsart.github.io/logs-rust.html</link><description>&lt;h2&gt;Utiliser les logs en Rust (encore en brouillon)&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 12 Apr 2017 13:18:47 +0200</lastBuildDate><item><title>Utiliser des logs avec Rust</title><link>https://mothsart.github.io/logs-rust.html</link><description>&lt;h2&gt;Utiliser les logs en Rust (encore en brouillon)&lt;/h2&gt;
 &lt;p&gt;Sur n'importe quel soft sérieux, les logs sont innévitables.
 Voici mes experimentations dans le logging en Rust.&lt;/p&gt;
 &lt;h2&gt;La variable RUST_LOG&lt;/h2&gt;
@@ -24,7 +24,7 @@ Voici mes experimentations dans le logging en Rust.&lt;/p&gt;
 &lt;li&gt;apporter de la couleur sur le terminal pour les différents type de log. (erreur en rouge, warn et orange etc.)&lt;/li&gt;
 &lt;li&gt;changer les formats d'affichage facilement&lt;/li&gt;
 &lt;li&gt;utiliser d'autre sortie que &lt;strong&gt;stdout&lt;/strong&gt; : en html, en json, journald &lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 12:42:04 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:logs-rust.html</guid><category>rust</category><category>log</category></item><item><title>Mémo sur Cargo</title><link>https://mothsart.github.io/memo-cargo.html</link><description>&lt;h2&gt;Un mémo sur les instructions d'un fichier de conf d'un paquet Cargo&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:logs-rust.html</guid><category>rust</category><category>log</category></item><item><title>Mémo sur Cargo</title><link>https://mothsart.github.io/memo-cargo.html</link><description>&lt;h2&gt;Un mémo sur les instructions d'un fichier de conf d'un paquet Cargo&lt;/h2&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-toml"&gt;[package]
 name = &amp;quot;cargo&amp;quot;
 version = &amp;quot;0.18.0&amp;quot;
@@ -93,7 +93,7 @@ cargotest = { path = &amp;quot;tests/cargotest&amp;quot; }
 [[bin]]
 name = &amp;quot;cargo&amp;quot;
 test = false
-doc = false&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 12:43:40 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:memo-cargo.html</guid><category>cargo</category><category>toml</category><category>rust</category></item><item><title>Applis en Rust</title><link>https://mothsart.github.io/applis-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+doc = false&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:memo-cargo.html</guid><category>cargo</category><category>toml</category><category>rust</category></item><item><title>Applis en Rust</title><link>https://mothsart.github.io/applis-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Le langage Rust : c'est encore un truc qui sert à rien ?!&lt;/p&gt;
 &lt;p&gt;Ben non, y'a plein de libs qui l'utilisent !&lt;/p&gt;
 &lt;p&gt;Des libs peut-être mais des vrais soft derrières ?&lt;/p&gt;
@@ -114,7 +114,7 @@ doc = false&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://p
 &lt;li&gt;
 &lt;p&gt;&lt;a href="https://github.com/derniercri/snatch"&gt;Snatch&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 12:47:12 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-22:applis-rust.html</guid></item><item><title>Librairies et frameworks</title><link>https://mothsart.github.io/rust-libs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-22:applis-rust.html</guid></item><item><title>Librairies et frameworks</title><link>https://mothsart.github.io/rust-libs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Depuis que Rust est en version 1.0, les choses se sont accélérés et beaucoup de librairies et frameworks ont pointé le bout de leur nez.
 Voici les plus connus trié par thème.&lt;/p&gt;
 &lt;h2&gt;Base de données&lt;/h2&gt;
@@ -390,16 +390,11 @@ insert into questions (entitled, response) values ('Cargo est-il le gestionnaire
 &lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 07 Aug 2016 15:15:35 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-11:the-quizz-part-1.html</guid><category>rust</category><category>gettext</category><category>cli</category><category>postgresql</category></item><item><title>Ma stack Rust</title><link>https://mothsart.github.io/stack-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;En vrac, les outils que j'utilise et perfectionne dans mon apprentissage et mon utilisation du language &lt;strong&gt;Rust&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2&gt;MAJ de Rust&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;On installe Rustup si il n'est pas présent&lt;/p&gt;
-&lt;h1&gt;!bash&lt;/h1&gt;
-&lt;p&gt;curl https://sh.rustup.rs -sSf | sh&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Installer une version Nightly&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;On installe Rustup si il n'est pas présent :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;curl https://sh.rustup.rs -sSf | sh&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Puis on installe une version Nightly&lt;/p&gt;
 &lt;p&gt;Plusieursfonctionnalités non stabilisés sont disponibles sur la version nightly (notamment l'api de linter utilisé par &lt;strong&gt;Clippy&lt;/strong&gt; dans le paragraphe suivant)&lt;/p&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;rustup install nightly&lt;/code&gt;&lt;/pre&gt;
 
@@ -408,8 +403,7 @@ insert into questions (entitled, response) values ('Cargo est-il le gestionnaire
 &lt;li&gt;On met à jour sa version de Rust&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Ceci va mettre à jour notre version stable de Rust (par exemple passer de la 1.14 à la 1.16) mais aussi mettre à jour notre version &lt;strong&gt;nightly&lt;/strong&gt; sur le dernier instantanné. (commit github)&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt; #!bash
- rustup update&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;rustup update&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;h2&gt;Assurance qualité avec le Linter Clippy&lt;/h2&gt;
@@ -525,4 +519,4 @@ Il subsite donc des erreurs à l'exécution : pour les débusquer, &lt;strong&gt
 
 &lt;p&gt;https://github.com/mmstick/cargo-deb&lt;/p&gt;
 &lt;h2&gt;En vrac&lt;/h2&gt;
-&lt;p&gt;http://rust.developpez.com/faq&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 11:54:35 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-rust.html</guid><category>rust</category></item></channel></rss>
+&lt;p&gt;http://rust.developpez.com/faq&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:18:47 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-rust.html</guid><category>rust</category></item></channel></rss>

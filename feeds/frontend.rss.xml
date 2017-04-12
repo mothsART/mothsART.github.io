@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 12 Apr 2017 12:52:37 +0200</lastBuildDate><item><title>CanIuse</title><link>https://mothsart.github.io/caniuse.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 12 Apr 2017 13:01:23 +0200</lastBuildDate><item><title>CanIuse</title><link>https://mothsart.github.io/caniuse.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;S'il on veut utiliser une propriété css/js/html ou une api Html5 et être certain que ça fonctionne sur notre nagivateur, le réflexe c'est caniuse.com&lt;/p&gt;
 &lt;p&gt;Mais s'il on veut étayer son argumentaire, le mieux est de passer par les sites des 3 gros navigateurs :&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/shapes"&gt;IE et Edge&lt;/a&gt;&lt;/p&gt;
@@ -8,7 +8,7 @@
 &lt;h2&gt;Amélioration progressive&lt;/h2&gt;
 &lt;p&gt;Pour détecter si un navigateur utilise une fonctionnalité, on avait jusqu'à présent &lt;strong&gt;Modernizr&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Cette lib va progressivement disparaitre au profit de &lt;strong&gt;CSS supports&lt;/strong&gt; : 
-&lt;a href="https://la-cascade.io/css-supports-va-vous-changer-la-vie"&gt;Explications sur Css supports&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 12:52:37 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:caniuse.html</guid><category>js</category><category>css</category><category>html</category><category>caniuse</category><category>modernizr</category></item><item><title>Editeur WYSIWYG de SVG interactifs</title><link>https://mothsart.github.io/editeur-svg-interactif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;a href="https://la-cascade.io/css-supports-va-vous-changer-la-vie"&gt;Explications sur Css supports&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:caniuse.html</guid><category>js</category><category>css</category><category>html</category><category>caniuse</category><category>modernizr</category></item><item><title>Editeur WYSIWYG de SVG interactifs</title><link>https://mothsart.github.io/editeur-svg-interactif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;L'objectif est simple : éditer un fichier SVG statique afin de le présenter comme un contenu interactif. 
 Permettre l'ajout des zones cliquables pouvant être zoomés et enrichies d'une explication&lt;/p&gt;
 &lt;p&gt;Les fichiers générés (page Html contenant le svg) pouvant servir à divers usages :&lt;/p&gt;
