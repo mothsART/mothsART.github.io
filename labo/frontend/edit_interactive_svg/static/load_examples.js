@@ -28,7 +28,7 @@ function load_example(url, name) {
                 $("#save-form, #undo-button, #redo-button, #nav-right").removeClass('disabled');
                 createForeignObject();
                 //resize_indices();
-                populate_without_action(12);
+                populate_without_action(2);
             }
         }
         xmlhttp.send();

@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 12 Apr 2017 12:33:20 +0200</lastBuildDate><item><title>Mémo sur le réseau et l'admin sys</title><link>https://mothsart.github.io/memo-admin-sys.html</link><description>&lt;h2&gt;Reseau &amp;amp; Admin sys&lt;/h2&gt;
-&lt;h2&gt;w&lt;/h2&gt;
-&lt;p&gt;Donne la liste des utilisateurs sur une machine&lt;/p&gt;
-&lt;h2&gt;arp -a&lt;/h2&gt;
-&lt;p&gt;Renvoie que la liste des adresses déjà inscrites dans la table ARP.&lt;/p&gt;
-&lt;h2&gt;nmap&lt;/h2&gt;
-&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;nmap -sP 192.168.0.*
-sudo nmap -sP x.y.z.*&lt;/code&gt;&lt;/pre&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Fri, 11 Dec 2015 00:00:00 +0100</lastBuildDate><item><title>I18n</title><link>https://mothsart.github.io/i18n.html</link><description>&lt;h2&gt;Créer un fichier pot à partir de sources Python&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;!bash
+pygettext -o monsterz.pot ./monsterz.py&lt;/code&gt;&lt;/pre&gt;
 
 
-&lt;p&gt;&lt;a href="http://blog.nicolargo.com/2007/08/nmap-le-scanneur-de-reseau.html"&gt;http://blog.nicolargo.com/2007/08/nmap-le-scanneur-de-reseau.html&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 12:33:20 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:memo-admin-sys.html</guid><category>linux</category><category>arp</category><category>nmap</category><category>admin sys</category></item></channel></rss>
+&lt;h2&gt;Compiler simplement des fichiers po en mo&lt;/h2&gt;
+&lt;p&gt;msgfmt -o lang.mo lang.po&lt;/p&gt;
+&lt;p&gt;et en ligne :&lt;/p&gt;
+&lt;p&gt;http://po2mo.net/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-28:i18n.html</guid><category>i18n</category><category>linux</category><category>python</category><category>gettext</category></item></channel></rss>

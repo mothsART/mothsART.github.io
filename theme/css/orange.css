@@ -957,8 +957,18 @@ article .entry-content {
     width: 80%;
 }
 
+article hr {
+    margin-left: 30px;
+}
+
 #content article .entry-content {
     width: auto;
+}
+
+article .comments {
+    background: white;
+    padding: 5px;
+    margin-left: 30px;
 }
 
 article .summary {

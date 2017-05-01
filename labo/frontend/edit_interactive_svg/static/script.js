@@ -97,9 +97,9 @@ function reorder_legend() {
             );
         }
     };
-    $("#indices .indice > div").each(function(index, el) {
-        $(el).text(index);
-        $(el).attr("id", "indice-" + index);
+    $("#svg g.indice").each(function(index, el) {
+        $(el).find("text").text(index + 1);
+        $(el).attr("id", "indice-" + (index + 1));
     });
     $("#descriptions .description").each(function(index, el) {
         if ($(el).attr("id") != "template-description") {
@@ -212,38 +212,26 @@ function createForeignObject() {
     }
 }
 
-function createEditIndice() {
+function createEditIndice(index) {
     "use strict";
-    /*
-    var article = document.createElement("article");
-    article.setAttribute("class", "indice"); // hidden
+    var NS="http://www.w3.org/2000/svg";
+    var article = document.createElementNS(NS, "g");
+    article.id = "indice-" + index;
     article.setAttribute("onmouse", "indice_out(this);");
     article.setAttribute("onmousedown", "indice_drag(this);");
     article.setAttribute("onmouseup", "indice_drop(this);");
-    var indice = document.createElement("div");
-    indice.setAttribute("data-zoom", 100);
-    var cross = document.createElement("div");
-    cross.setAttribute("class", "cross");
-    article.appendChild(indice);
-    article.appendChild(cross);
-    $("#indices")[0].appendChild(article);*/
-
-    var article = document.createElement("g");
-    article.id = "template-indice";
-    article.setAttribute("onmouse", "indice_out(this);");
-    article.setAttribute("onmousedown", "indice_drag(this);");
-    article.setAttribute("onmouseup", "indice_drop(this);");
-    var rec = document.createElement("rect");
+    article.setAttribute("class", "indice");
+    var rec = document.createElementNS(NS, "rect");
     rec.setAttribute("x", 0);
     rec.setAttribute("y", 0);
     rec.setAttribute("height", 10);
     rec.setAttribute("width", 10);
-    rec.setAttribute("style", "fill:rgb(0,0,255);stroke-width:1;stroke:rgb(0,0,0)");
-    var indice = document.createElement("text");
+    //rec.setAttribute("style", "stroke-width:1;stroke:rgb(0,0,0)");
+    var indice = document.createElementNS(NS, "text");
     indice.id = "indice-1";
     indice.setAttribute("x", 2);
     indice.setAttribute("y", 6);
-    indice.setAttribute("class", "indice"); // hidden
+    //indice.setAttribute("class", "indice"); // hidden
     indice.setAttribute("onmouse", "indice_out(this);");
     indice.setAttribute("data-zoom", 100);
     indice.append(document.createTextNode("1"));
@@ -260,7 +248,7 @@ function add_legend(element) {
         .appendTo("#list-of-legend tbody").attr("id", "legend-" + index);
     $("#show-all-legend").removeClass('hidden');
     $("#list-of-legend").removeClass('hidden');
-    createEditIndice();
+    createEditIndice(index);
     $("#real-template-indice").clone().removeAttr("id").removeClass("hidden").appendTo('#real-legend');
     $("#template-description").clone().removeAttr("id").prependTo('#descriptions');
     document.getElementById("nb-indices").setAttribute("value", index);
@@ -332,8 +320,8 @@ function change_indice_color(indice_id, hex_color) {
     "use strict";
     var indice = $("#" + indice_id);
     indice.css("background-color", hex_color);
-    $("#" + indice.attr("id").substring(7)).css(
-        "background-color", hex_color
+    $("#" + indice.attr("id").substring(7)).find("rect").css(
+        "fill", hex_color
     );
     $("#description-" + indice.attr("id").substring(14)).find(".indice").css(
         "background-color", hex_color
@@ -426,7 +414,7 @@ function display_result() {
     $("#svg").removeClass("edit-mode").addClass("show");
     $("#show-menu, #real-legend").removeClass("hidden");
     $("#svg svg").css("transform", "scale(1)");
-    resize_indices();
+    //resize_indices();
     $("#indices .indice").each(function(index, el) {
         if ($(el).hasClass('hidden')) {
             $(el).data("hidden", true);
@@ -448,7 +436,7 @@ function return_to_edit() {
     $("#show-menu, #real-legend").addClass("hidden");
     $(".description").addClass("hidden");
     $("#svg svg").css("transform", "scale(1)").removeClass("duration");
-    resize_indices();
+    //resize_indices();
     $("#indices .indice").each(function(index, el) {
         if ($(el).data('hidden') == true) {
             $(el).addClass('hidden');

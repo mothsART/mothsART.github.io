@@ -72,7 +72,7 @@ function populate_without_action(nb) {
         hide_dialog();
         // give color to an indice
         change_indice_color(
-            "legend-indice-" + i,
+            "legend-indice-" + (i + 1),
             colors[parseInt(Math.random() * colors.length)]
         );
         // position indice : 5% >= x <= 95%

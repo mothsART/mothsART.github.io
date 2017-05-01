@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 12 Apr 2017 13:18:47 +0200</lastBuildDate><item><title>Oh Merde Git</title><link>https://mothsart.github.io/oh-merde-git.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Fri, 28 Apr 2017 19:07:21 +0200</lastBuildDate><item><title>I18n</title><link>https://mothsart.github.io/i18n.html</link><description>&lt;h2&gt;Créer un fichier pot à partir de sources Python&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;!bash
+pygettext -o monsterz.pot ./monsterz.py&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Compiler simplement des fichiers po en mo&lt;/h2&gt;
+&lt;p&gt;msgfmt -o lang.mo lang.po&lt;/p&gt;
+&lt;p&gt;et en ligne :&lt;/p&gt;
+&lt;p&gt;http://po2mo.net/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-28:i18n.html</guid><category>i18n</category><category>linux</category><category>python</category><category>gettext</category></item><item><title>Mes scripts pour Raspberry</title><link>https://mothsart.github.io/scripts-raspberry.html</link><description>&lt;h2&gt;Mes Scripts pour Raspberry&lt;/h2&gt;
+&lt;p&gt;Un script qui simplifie l'usage de &lt;strong&gt;dd&lt;/strong&gt; avec une belle barre de progression !!&lt;/p&gt;
+&lt;p&gt;Nécessite &lt;strong&gt;pv&lt;/strong&gt; et &lt;strong&gt;dialog&lt;/strong&gt; pour fonctionner :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;apt-get install pv, dialog&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;A mettre dans votre .bashrc ou .zshrc (de votre utilisateur root)&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;!bash
+function copy() {
+    # dd with a progress bar
+    #pv -n &amp;quot;$0&amp;quot; | dd of=&amp;quot;$1&amp;quot; bs=1M conv=notrunc,noerror
+    # with a dialog
+    (pv -n &amp;quot;$0&amp;quot; | dd of=&amp;quot;$1&amp;quot; bs=128M conv=notrunc,noerror) 2&amp;gt;&amp;amp;1 | dialog --gauge &amp;quot;Running dd command (cloning), please wait...&amp;quot; 10 70 0
+}&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Et on l'appelle ainsi : &lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;copy mon-image-raspian.img /dev/emplacement&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Je me suis inspiré de https://www.raspberrypi.org/documentation/installation/installing-images/linux.md&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:scripts-raspberry.html</guid><category>raspberry</category><category>script</category><category>zsh</category></item><item><title>Oh Merde Git</title><link>https://mothsart.github.io/oh-merde-git.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Voici la traduction de &lt;a href="http://ohshitgit.com"&gt;http://ohshitgit.com&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Pour éviter d'inonder cette traduction par des mots fleuries, j'ai décidé de remplacer &lt;strong&gt;Shit&lt;/strong&gt; (litéralement &lt;strong&gt;Merde&lt;/strong&gt;) par &lt;strong&gt;Flûte&lt;/strong&gt;. (juron au combien moderne dans la francophonie)&lt;/p&gt;
 &lt;h2&gt;Oh Flûte GIT&lt;/h2&gt;
@@ -341,7 +369,15 @@ J'ai acheté progressivement les Rpi + le matériel correspondant.&lt;/p&gt;
 Ma config : &lt;a href="./recalbox.html"&gt;recalbox&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;ArchLinux&lt;/strong&gt; : une de mes meilleurs distrib pour les geeks&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Raspbian Pixel 1.2&lt;/strong&gt; : Produit simple clé en main !
+On installe et ça juste marche... menu de config de la raspberry juste parfait.
+Que de changements depuis ma première raspbian !!!&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Seul bémol : Un peu mou sur ma raspberry pi 2 surtout si on lance chromium.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;ArchLinux&lt;/strong&gt; : une de mes meilleurs distrib pour les geeks : un peu pénible à configurer (me manque toujours la connexion auto) mais quel bonheur après...&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;PrimxTux&lt;/strong&gt; : 
@@ -350,7 +386,6 @@ Ma config : &lt;a href="./recalbox.html"&gt;recalbox&lt;/a&gt;&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h2&gt;OS a tester&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Raspbian : Oui, je sais, j'aurais du commencer par là.&lt;/li&gt;
 &lt;li&gt;NixOS : &lt;a href="https://nixos.org/wiki/Raspberry_Pi"&gt;https://nixos.org/wiki/Raspberry_Pi&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;RetroPie : [https://retropie.org.uk](https://retropie.org.uk] : beaucoup plus de consoles supportés que RecalBox =&amp;gt; Amiga, Playstation 2, WII, DreamCast, Saturn !&lt;/li&gt;
 &lt;/ul&gt;
@@ -381,7 +416,7 @@ Ma config : &lt;a href="./recalbox.html"&gt;recalbox&lt;/a&gt;&lt;/p&gt;
 &lt;li&gt;Ecran HDMI&lt;/li&gt;
 &lt;li&gt;Disque dur externe pour les Roms&lt;/li&gt;
 &lt;li&gt;Disque dur pour le serveur multimédia&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:tests-autours-de-la-framboise.html</guid><category>raspberry</category><category>recalbox</category><category>primtux</category><category>archlinux</category><category>raspbian</category></item><item><title>Editeur WYSIWYG de SVG interactifs</title><link>https://mothsart.github.io/editeur-svg-interactif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 23:57:00 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:tests-autours-de-la-framboise.html</guid><category>raspberry</category><category>recalbox</category><category>primtux</category><category>archlinux</category><category>raspbian</category></item><item><title>Editeur WYSIWYG de SVG interactifs</title><link>https://mothsart.github.io/editeur-svg-interactif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;L'objectif est simple : éditer un fichier SVG statique afin de le présenter comme un contenu interactif. 
 Permettre l'ajout des zones cliquables pouvant être zoomés et enrichies d'une explication&lt;/p&gt;
 &lt;p&gt;Les fichiers générés (page Html contenant le svg) pouvant servir à divers usages :&lt;/p&gt;
@@ -1142,6 +1177,11 @@ git rebase serveur&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;garder un fichier local -&amp;gt; git checkout --ours /path/to/file (si l'on veut tous les fichiers :  git checkout --ours *)
 garder un fichier distant -&amp;gt; git checkout --theirs /path/to/file&lt;/p&gt;
 &lt;p&gt;puis git add /path/to/file&lt;/p&gt;
+&lt;h2&gt;merge&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git checkout master
+git merge topic&lt;/code&gt;&lt;/pre&gt;
+
+
 &lt;h2&gt;Ignore&lt;/h2&gt;
 &lt;p&gt;exclusion globale (dans ~/.gitconfig):
 [core]
@@ -1304,13 +1344,22 @@ git push -f&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www.git-attitude.fr/2014/09/15/30-options-git-qui-gagnent-a-etre-connues"&gt;http://www.git-attitude.fr/2014/09/15/30-options-git-qui-gagnent-a-etre-connues&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/2221658/whats-the-difference-between-head-and-head-in-git"&gt;http://stackoverflow.com/questions/2221658whats-the-difference-between-head-and-head-in-git&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 11:54:35 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-git.html</guid><category>git</category><category>linux</category></item><item><title>Aide mémoire sh</title><link>https://mothsart.github.io/aide-memoire-sh.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/2221658/whats-the-difference-between-head-and-head-in-git"&gt;http://stackoverflow.com/questions/2221658whats-the-difference-between-head-and-head-in-git&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 28 Apr 2017 19:07:21 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-git.html</guid><category>git</category><category>linux</category></item><item><title>Aide mémoire sh</title><link>https://mothsart.github.io/aide-memoire-sh.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;find . | grep actual&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;h2&gt;Sed&lt;/h2&gt;
 &lt;p&gt;Remplacer une occurence par une autre sur un ensemble de fichiers&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;sed -i s/leMauvaisTexte/leBonTexte/g *&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-sh.html</guid><category>sh</category><category>linux</category></item><item><title>Aide mémoire Sublime Text 3</title><link>https://mothsart.github.io/aide-memoire-sublime-text.html</link><description>&lt;h2&gt;Fonctionnalités&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;sed -i s/leMauvaisTexte/leBonTexte/g *&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Dtrx : compresser/décompresser presque tout&lt;/h2&gt;
+&lt;p&gt;dtrx *.tar.gz,tar,zip, cpio, deb, rpm, gem, 7z, cab, lzh, rar, gz, bz2, lzma, xz&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;s'occupe de conserver les droits&lt;/li&gt;
+&lt;li&gt;création d'un dossier lorsuq'il y a plusieurs fichiers à la racine&lt;/li&gt;
+&lt;li&gt;extraction récursive&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Apr 2017 10:25:20 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-sh.html</guid><category>sh</category><category>linux</category></item><item><title>Aide mémoire Sublime Text 3</title><link>https://mothsart.github.io/aide-memoire-sublime-text.html</link><description>&lt;h2&gt;Fonctionnalités&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://sametmax.com/10-astuces-pour-sublime-text-2"&gt;http://sametmax.com/10-astuces-pour-sublime-text-2&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Edit/StringEncode : permet d'encoder des chaines de caractères&lt;/p&gt;
 &lt;p&gt;&lt;kbd&gt;Alt&lt;/kbd&gt;&lt;kbd&gt;Q&lt;/kbd&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 15 Jan 2016 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-sublime-text.html</guid><category>sublimetext</category></item><item><title>Aide mémoire Tmux</title><link>https://mothsart.github.io/aide-memoire-tmux.html</link><description>&lt;h2&gt;Introduction&lt;/h2&gt;
@@ -2345,7 +2394,7 @@ Il subsite donc des erreurs à l'exécution : pour les débusquer, &lt;strong&gt
 
 &lt;p&gt;https://github.com/mmstick/cargo-deb&lt;/p&gt;
 &lt;h2&gt;En vrac&lt;/h2&gt;
-&lt;p&gt;http://rust.developpez.com/faq&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:18:47 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-rust.html</guid><category>rust</category></item><item><title>Pourquoi je boude Node.Js</title><link>https://mothsart.github.io/pourquoi-je-boude-nodejs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;http://rust.developpez.com/faq&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:19:26 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-rust.html</guid><category>rust</category></item><item><title>Pourquoi je boude Node.Js</title><link>https://mothsart.github.io/pourquoi-je-boude-nodejs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;NodeJS est à la mode.
 Quand je parle de NodeJS, je parle bien entendu de toute la mouvance autours de Javascript.&lt;/p&gt;
 &lt;p&gt;Le principe :

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>jquery - Le Labo Du Nerd</title>
+    <title>Mes scripts pour Raspberry - Le Labo Du Nerd</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -9,16 +9,22 @@
 
 
 
+<link rel="canonical" href="https://mothsart.github.io/scripts-raspberry.html">
 
-    <meta name="author" content="Jérémie Ferry" />
-    <meta name="keywords" content="jquery" />
+        <meta name="author" content="Jérémie Ferry" />
+        <meta name="keywords" content="raspberry,script,zsh" />
 
-    <!-- Open Graph tags -->
         <meta property="og:site_name" content="Le Labo Du Nerd" />
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="Le Labo Du Nerd"/>
-        <meta property="og:url" content="https://mothsart.github.io"/>
-        <meta property="og:description" content="Le Labo Du Nerd"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Mes scripts pour Raspberry"/>
+        <meta property="og:url" content="https://mothsart.github.io/scripts-raspberry.html"/>
+        <meta property="og:description" content=""/>
+        <meta property="article:published_time" content="2017-04-12" />
+            <meta property="article:section" content="raspberry" />
+            <meta property="article:tag" content="raspberry" />
+            <meta property="article:tag" content="script" />
+            <meta property="article:tag" content="zsh" />
+            <meta property="article:author" content="Jérémie Ferry" />
 
 
     <!-- Bootstrap -->
@@ -64,7 +70,7 @@ Le Labo Du Nerd            </a>
                         <li >
                             <a href="https://mothsart.github.io/category/misc.html">Misc</a>
                         </li>
-                        <li >
+                        <li class="active">
                             <a href="https://mothsart.github.io/category/raspberry.html">Raspberry</a>
                         </li>
                         <li >
@@ -118,17 +124,21 @@ Le Labo Du Nerd            </a>
 <div class="container">
     <div class="row">
             <div class="col-sm-10">
-            <article>
-                <h2><a href="https://mothsart.github.io/vanilla-a-a-a-a.html">Vanilla-a-a-a-a</a></h2>
-
-                <div class="entry-content">
-                    <div class="panel">
-                        <div class="panel-body">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    Mes scripts pour Raspberry
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
 <footer class="post-info">
     <span>
         <span class="label label-default">Date</span>
         <span class="published">
-            <i class="fa fa-calendar"></i><time datetime="2017-02-09T00:10:29+01:00"> jeu. 09 février 2017</time>
+            <i class="fa fa-calendar"></i><time datetime="2017-04-12T22:33:48.690501+02:00"> mer. 12 avril 2017</time>
         </span>
     </span>
 
@@ -139,30 +149,72 @@ Le Labo Du Nerd            </a>
 <span class="label label-default">Tags</span>
 
 
-	<a href="https://mothsart.github.io/tag/javascript.html">javascript
-                <span class="badge">14</span>
+	<a href="https://mothsart.github.io/tag/raspberry.html">raspberry
+                <span class="badge">3</span>
     </a>
         /
-	<a href="https://mothsart.github.io/tag/jquery.html">jquery
+	<a href="https://mothsart.github.io/tag/script.html">script
     </a>
         /
-	<a href="https://mothsart.github.io/tag/xpath.html">xpath
-    </a>
-        /
-	<a href="https://mothsart.github.io/tag/benchmark.html">benchmark
-                <span class="badge">2</span>
+	<a href="https://mothsart.github.io/tag/zsh.html">zsh
+                <span class="badge">3</span>
     </a>
     
-</footer><!-- /.post-info -->                        </div>
-                    </div>
+</footer><!-- /.post-info -->                    </div>
                 </div>
+                <h2>Mes Scripts pour Raspberry</h2>
+<p>Un script qui simplifie l'usage de <strong>dd</strong> avec une belle barre de progression !!</p>
+<p>Nécessite <strong>pv</strong> et <strong>dialog</strong> pour fonctionner :</p>
+<pre class="highlight"><code class="language-bash">apt-get install pv, dialog</code></pre>
 
-                <div class="summary">
-                    <a class="btn btn-default btn-xs" href="https://mothsart.github.io/vanilla-a-a-a-a.html">
-                        <span class="fa fa-chevron-circle-right">lire la suite ...</span>
-                    </a>
-                </div>
-            </article>
+
+<p>A mettre dans votre .bashrc ou .zshrc (de votre utilisateur root)</p>
+<pre class="highlight"><code>!bash
+function copy() {
+    # dd with a progress bar
+    #pv -n &quot;$0&quot; | dd of=&quot;$1&quot; bs=1M conv=notrunc,noerror
+    # with a dialog
+    (pv -n &quot;$0&quot; | dd of=&quot;$1&quot; bs=128M conv=notrunc,noerror) 2&gt;&amp;1 | dialog --gauge &quot;Running dd command (cloning), please wait...&quot; 10 70 0
+}</code></pre>
+
+
+<p>Et on l'appelle ainsi : </p>
+<pre class="highlight"><code class="language-bash">copy mon-image-raspian.img /dev/emplacement</code></pre>
+
+
+<p>Je me suis inspiré de https://www.raspberrypi.org/documentation/installation/installing-images/linux.md</p>
+            </div>
+            <!-- /.entry-content -->
+    <hr/>
+    <section class="comments" id="comments">
+        <h2>Comments</h2>
+
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'http-mothsart-github-io'; // required: replace example with your forum shortname
+
+            var disqus_config = function () {
+                    this.page.url = 'https://mothsart.github.io/scripts-raspberry.html';
+                this.language = "fr";
+            };
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function () {
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </section>
+        </article>
+    </section>
 
         </div>
         <div class="col-sm-2" id="sidebar">
