@@ -1,5 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 12 Apr 2017 13:01:23 +0200</lastBuildDate><item><title>Oh Merde Git</title><link>https://mothsart.github.io/oh-merde-git.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Thu, 25 May 2017 00:16:44 +0200</lastBuildDate><item><title>Can I Diff</title><link>https://mothsart.github.io/can-i-diff.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Un développeur passe son temps à utiliser des différentiels pour déterminer rapidement ce qui a changé dans un ou plusieurs fichiers.&lt;/p&gt;
+&lt;p&gt;Le plus commun est bien entendu la commande diff, particulièrement décocratisé à partir de &lt;strong&gt;git diff&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;diff et cmd&lt;/h2&gt;
+&lt;p&gt;leur pendant graphique : kdiff, meld&lt;/p&gt;
+&lt;p&gt;=&amp;gt; pratique pour comparer des dossiers complets&lt;/p&gt;
+&lt;h2&gt;Certains fichiers textes ne sont pas adaptés&lt;/h2&gt;
+&lt;p&gt;Quand on découvre diff, on peut croire à tord qu'il va couvrir tous les besoins.
+Cependant, il est mal approprié aux fichiers xml et html :
+Les ajouts de noeuds parents peuvent être particulièrement pénalisant.&lt;/p&gt;
+&lt;p&gt;il existe des outils dédiés :&lt;/p&gt;
+&lt;p&gt;https://github.com/GuillaumeGomez/html-diff-rs&lt;/p&gt;
+&lt;h2&gt;Les fichiers binaires&lt;/h2&gt;
+&lt;p&gt;Quand il n'y a pas de solutions dédiés :&lt;/p&gt;
+&lt;p&gt;https://superuser.com/questions/125376/how-do-i-compare-binary-files-in-linux&lt;/p&gt;
+&lt;h2&gt;Images&lt;/h2&gt;
+&lt;p&gt;Avec Image Magick :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;sudo apt-get install imagemagick imagemagick-doc
+compare -compose src img_origine.png img_modifie.png img_difference.png&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:can-i-diff.html</guid></item><item><title>Ce n'est qu'un au revoir JSON</title><link>https://mothsart.github.io/ce-nest-quun-au-revoir-json.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Là ou je peux me passer de JSON, je le fais sans regret.
+C'est un langage à mon goût &lt;strong&gt;batard&lt;/strong&gt;, illisible, faiblement typé...
+très dépendant du langage Javascript... tout aussi mauvais.&lt;/p&gt;
+&lt;h2&gt;JSON n'est pas fait pour de la configuration&lt;/h2&gt;
+&lt;p&gt;Quand je vois des fichiers de conf de plusieurs centaines de lignes, je pleure du sang...
+T'oublis une virgule et paf !&lt;/p&gt;
+&lt;p&gt;Si l'on veut un truc propre pensé pour de la config et rien que pour de la config, il faut choisir &lt;strong&gt;TOML&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Et surtout : &lt;strong&gt;IL NE PERMET PAS DE COMMENTAIRES !!!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;VDM&lt;/strong&gt; : Quand je vois les fichiers package.json de npm et que j'aimerais juste commenté des lignes pour mes tests.&lt;/p&gt;
+&lt;h2&gt;JSON ne peut pas remplacer du XML&lt;/h2&gt;
+&lt;p&gt;JSON n'a pas de format DTD et encore moins de XSL Shema officiel.
+Pour valider un document, c'est du coup compromis.&lt;/p&gt;
+&lt;h2&gt;JSON n'est pas un bon format pour de l'échange de donnée&lt;/h2&gt;
+&lt;p&gt;Si l'on souhaites échanger des données, je considère qu'il faut forcément réfléchir à un format le plus concit possible. La bande passante à forcément un coût.&lt;/p&gt;
+&lt;p&gt;Dans ce cas, je conseil vivement un format binaire et mon choix se porte naturellement vers &lt;strong&gt;MessagePack&lt;/strong&gt; : un format binaire pour représenter des structures de données.&lt;/p&gt;
+&lt;p&gt;Si l'on veut valider des données avant l'envoi ou après réception de données, rien n'empêche de passer par un format XML intermédiaire.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Il y a des formats qui doivent appartenir au passé...
+(Les formats binarisés de Json n'étant que des jambes de bois)&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:ce-nest-quun-au-revoir-json.html</guid></item><item><title>Micro-services</title><link>https://mothsart.github.io/micro-services.html</link><description>&lt;h2&gt;Les Micro-services pour les nuls&lt;/h2&gt;
+&lt;h2&gt;Source&lt;/h2&gt;
+&lt;p&gt;https://ziade.org/2016/10/03/web-services-best-practices/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:micro-services.html</guid><category>micro-services</category></item><item><title>Tester c'est douter</title><link>https://mothsart.github.io/tester-c-douter.html</link><description>&lt;h2&gt;Tester c'est douter&lt;/h2&gt;
+&lt;p&gt;Dans le paysage du développeur, les tests &lt;strong&gt;automatisés&lt;/strong&gt; devraient être obligatoire et non plus une exception.&lt;/p&gt;
+&lt;p&gt;La réalité est souvent tout autre...&lt;/p&gt;
+&lt;h2&gt;Isolation&lt;/h2&gt;
+&lt;p&gt;Le meilleur moyen de tester est d'isoler son application dans une image virtuel, un container etc.
+On évite principalement les soucis liés aux dépendances.&lt;/p&gt;
+&lt;h2&gt;Couverture&lt;/h2&gt;
+&lt;p&gt;Sauf contraintes techniques, il est nécessaire de couvrir avec des tests l'ensemble de l'applicatif : les zones les plus sensibles en premier, bien évidement.&lt;/p&gt;
+&lt;h2&gt;Logging et traces&lt;/h2&gt;
+&lt;p&gt;Usage intensif de &lt;strong&gt;Sentry&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Tests pour le Web&lt;/h2&gt;
+&lt;h3&gt;tests de monté en charge (Smoke testing) et performance (Load testing)&lt;/h3&gt;
+&lt;p&gt;https://fr.wikipedia.org/wiki/Test_de_performance&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Apache bench&lt;/li&gt;
+&lt;li&gt;Boom : https://github.com/tarekziade/boom&lt;/li&gt;
+&lt;li&gt;Locust : https://github.com/locustio/locust&lt;/li&gt;
+&lt;li&gt;Molotov : http://molotov.readthedocs.io/en/latest/&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:tester-c-douter.html</guid><category>test</category></item><item><title>Oh Merde Git</title><link>https://mothsart.github.io/oh-merde-git.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Voici la traduction de &lt;a href="http://ohshitgit.com"&gt;http://ohshitgit.com&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Pour éviter d'inonder cette traduction par des mots fleuries, j'ai décidé de remplacer &lt;strong&gt;Shit&lt;/strong&gt; (litéralement &lt;strong&gt;Merde&lt;/strong&gt;) par &lt;strong&gt;Flûte&lt;/strong&gt;. (juron au combien moderne dans la francophonie)&lt;/p&gt;
 &lt;h2&gt;Oh Flûte GIT&lt;/h2&gt;
@@ -97,7 +154,7 @@ cd fucking-git-repo-dir&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;A ceux qui trouve que j'ai pris un peu trop de liberté sur la traduction de cet article, je leur dit litéralement : &lt;strong&gt;flûte&lt;/strong&gt;!&lt;/p&gt;
 &lt;p&gt;Néanmoins, ils sont autorisés à me soumettre leurs améliorations !
 C'est d'ailleurs aussi à ça que sert &lt;strong&gt;GIT&lt;/strong&gt; !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:oh-merde-git.html</guid><category>linux</category><category>libre</category><category>git</category><category>tuto</category><category>traduction</category></item><item><title>Fuzzer</title><link>https://mothsart.github.io/fuzzer.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
-&lt;p&gt;Ca fait un moment que je me passionne pour le fuzzing sans vraiment écrire à ce sujet.&lt;/p&gt;
+&lt;p&gt;Ca fait un moment que je me passionne pour le fuzzing (aussi appelé à tord Monkey testing) sans vraiment écrire à ce sujet.&lt;/p&gt;
 &lt;h2&gt;Fuzzer connus et spécificité&lt;/h2&gt;
 &lt;h3&gt;(ZZUF)[http://caca.zoy.org/wiki/zzuf]&lt;/h3&gt;
 &lt;p&gt;Complètement &lt;strong&gt;stochastique&lt;/strong&gt;.
@@ -119,7 +176,9 @@ Variante pour Rust : https://github.com/frewsxcv/afl.rs&lt;/p&gt;
 &lt;p&gt;Provient de Haskell.&lt;/p&gt;
 &lt;p&gt;Variante pour Rust : https://github.com/BurntSushi/quickcheck&lt;/p&gt;
 &lt;h3&gt;(Fusil)[http://fusil.readthedocs.io/]&lt;/h3&gt;
-&lt;p&gt;Provient de la communauté &lt;strong&gt;Python&lt;/strong&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-22:fuzzer.html</guid><category>fuzzer</category><category>python</category><category>rust</category></item><item><title>Lego</title><link>https://mothsart.github.io/lego.html</link><description>&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;Provient de la communauté &lt;strong&gt;Python&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Et pour javascript ?&lt;/h2&gt;
+&lt;p&gt;Il existe quelques libs sympas : https://github.com/marmelab/gremlins.js&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 25 May 2017 00:16:44 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-22:fuzzer.html</guid><category>fuzzer</category><category>python</category><category>rust</category></item><item><title>Lego</title><link>https://mothsart.github.io/lego.html</link><description>&lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;ldraw.org
 http://www.framboise314.fr/leocad-des-modeles-lego-en-3d-sur-raspberry-pi/
 http://jc-tchang.philohome.com/index.htm
@@ -336,21 +395,19 @@ https://fr.wikipedia.org/wiki/Sketchfab
 https://sketchfab.com/&lt;/p&gt;
 &lt;p&gt;Pour visualiser les fichiers .fbx dans Blender, il faut utiliser l'import.&lt;/p&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
-&lt;p&gt;http://sebsauvage.net/temp/blender/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:3D.html</guid><category>3D</category></item><item><title>algo images</title><link>https://mothsart.github.io/algo-images.html</link><description>&lt;h2&gt;&lt;/h2&gt;
+&lt;p&gt;http://sebsauvage.net/temp/blender/&lt;/p&gt;
+&lt;p&gt;3D On-line : https://aframe.io&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 25 May 2017 00:16:44 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:3D.html</guid><category>3D</category></item><item><title>algo images</title><link>https://mothsart.github.io/algo-images.html</link><description>&lt;h2&gt;&lt;/h2&gt;
 &lt;p&gt;https://29a.ch/&lt;/p&gt;
 &lt;p&gt;https://github.com/jwagner/smartcrop.js&lt;/p&gt;
 &lt;p&gt;https://github.com/jaysalvat/jquery.facedetection&lt;/p&gt;
-&lt;p&gt;https://github.com/eduardolundgren/tracking.js/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 25 Feb 2017 17:34:53 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:algo-images.html</guid><category>picture</category><category>algo</category></item><item><title>Blender</title><link>https://mothsart.github.io/blender.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
-&lt;h2&gt;liens&lt;/h2&gt;
-&lt;p&gt;https://www.blender.org/manual/render/freestyle/export_svg.html
-http://goinkscape.com/use-blender-freestyle-to-export-svg-artwork&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:blender.html</guid><category>3D</category><category>blender</category></item><item><title>Cette photo est-elle retouché ?</title><link>https://mothsart.github.io/photo-retouche.html</link><description>&lt;h2&gt;&lt;/h2&gt;
+&lt;p&gt;https://github.com/eduardolundgren/tracking.js/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 25 Feb 2017 17:34:53 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:algo-images.html</guid><category>picture</category><category>algo</category></item><item><title>Cette photo est-elle retouché ?</title><link>https://mothsart.github.io/photo-retouche.html</link><description>&lt;h2&gt;&lt;/h2&gt;
 &lt;p&gt;https://en.wikipedia.org/wiki/Error_level_analysis&lt;/p&gt;
 &lt;h2&gt;Utilitaires On-line&lt;/h2&gt;
 &lt;p&gt;https://29a.ch/photo-forensics/
 http://fotoforensics.com/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 25 Feb 2017 17:34:53 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:photo-retouche.html</guid><category>picture</category></item><item><title>AbulEdu</title><link>https://mothsart.github.io/abuledu.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Etant un jeune papa et défenseur d'un numérique ouvert, citoyen (liberté, égalité, fraternité) et responsable, j'ai décidé de participer au projet &lt;strong&gt;&lt;a href="https://fr.ulule.com/developpement-dabuledu"&gt;AbulEdu&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Pour l'instant, ça ne concerne que la création d'illustrations.&lt;/p&gt;
-&lt;p&gt;L'objectif est à multiple tranchants : elle va concerner &lt;strong&gt;&lt;a href="https://fr.wikipedia.org/wiki/Utilisateur:MothsART"&gt;Wikipédia Commons&lt;/a&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;a href="https://fr.vikidia.org/wiki/Utilisateur:MothsART"&gt;VikiDia&lt;/a&gt;&lt;/strong&gt; et &lt;strong&gt;&lt;a href="https://openclipart.org/user-detail/mothsart"&gt;OpenClipArt&lt;/a&gt;&lt;/strong&gt; dans la foulée.&lt;/p&gt;
+&lt;p&gt;L'objectif est à multiple tranchants : elle va concerner &lt;strong&gt;&lt;a href="https://fr.wikipedia.org/wiki/Utilisateur:MothsART"&gt;Wikipédia Commons&lt;/a&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;a href="https://fr.vikidia.org/wiki/Utilisateur:MothsART"&gt;VikiDia&lt;/a&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;a href="https://openclipart.org/user-detail/mothsart"&gt;OpenClipArt&lt;/a&gt;&lt;/strong&gt; et &lt;strong&gt;&lt;a href="https://primtux.fr/"&gt;PrimTux&lt;/a&gt;&lt;/strong&gt; dans la foulée.&lt;/p&gt;
 &lt;h2&gt;Les pré-requis&lt;/h2&gt;
 &lt;p&gt;Avant de participer bêtement, je me suis mis en relation avec des membres de l'association.&lt;/p&gt;
 &lt;p&gt;Leurs directives étaient claires et fondées sur 3 axes&lt;/p&gt;
@@ -422,7 +479,10 @@ Après, je serais quitte de dépasser...&lt;/p&gt;
 &lt;p&gt;Après la réflexion, l'action !&lt;/p&gt;
 &lt;h2&gt;Mes réalisation&lt;/h2&gt;
 &lt;p&gt;&lt;a href="./abuledu-camp-paleolithique.html"&gt;Campement du Paléolithique&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://commons.wikimedia.org/wiki/File:Mastodonte.svg"&gt;Mastondonte&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:abuledu.html</guid><category>linux</category><category>libre</category></item><item><title>Logiciels Linux</title><link>https://mothsart.github.io/logiciels-linux.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://commons.wikimedia.org/wiki/File:Mastodonte.svg"&gt;Mastondonte&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://commons.wikimedia.org/wiki/File:Organes_du_corps_humain.svg"&gt;Organes du corps humain&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Dépôt GIT&lt;/h2&gt;
+&lt;p&gt;Afin de tout centraliser, j'ai décidé de tout mettre dans un &lt;strong&gt;&lt;a href="https://github.com/mothsART/abuledu"&gt;dépôt GIT d'illustration&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 25 May 2017 00:16:44 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:abuledu.html</guid><category>linux</category><category>libre</category></item><item><title>Logiciels Linux</title><link>https://mothsart.github.io/logiciels-linux.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;J'ai découvert des applis sympas au fil de ma pérégrination&lt;/p&gt;
 &lt;h2&gt;Liste&lt;/h2&gt;
 &lt;p&gt;Midori
@@ -502,12 +562,13 @@ Mais ne dit-on pas qu'&lt;strong&gt;un idiot qui marche va plus loin qu'un intel
 &lt;p&gt;Si on parcours le net, le résumé serait de dire qu'il existe 2 types de SGBD : les full SQL et les autres.
 En réalité, les bases SQL ont tellement monopolisé le marché qu'on aurait tendance à mettre toutes les autres architectures dans le grand panier &lt;strong&gt;ésotérique&lt;/strong&gt; du NoSQL.&lt;/p&gt;
 &lt;p&gt;Sauf qu'en étrapolent, un simple fichier .csv pourrait être du NoSQL.&lt;/p&gt;
-&lt;p&gt;il existe en réalité 4 grandes familles de NoSQL :&lt;/p&gt;
+&lt;p&gt;il existe en réalité 5 grandes familles de NoSQL :&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;base orientée &lt;strong&gt;document&lt;/strong&gt; : mongoDb, couchDb, Riack&lt;/li&gt;
+&lt;li&gt;base orientée &lt;strong&gt;document&lt;/strong&gt; : mongoDB, couchDB, Riack&lt;/li&gt;
 &lt;li&gt;base orientée &lt;strong&gt;clé/valeur&lt;/strong&gt; : Redis&lt;/li&gt;
-&lt;li&gt;base orientée &lt;strong&gt;graph&lt;/strong&gt; : Neo4JS, OrientDb&lt;/li&gt;
-&lt;li&gt;orienté &lt;strong&gt;object&lt;/strong&gt; :ZoDb&lt;/li&gt;
+&lt;li&gt;base orientée &lt;strong&gt;colonnes&lt;/strong&gt; : HBase, Cassandra&lt;/li&gt;
+&lt;li&gt;base orientée &lt;strong&gt;graph&lt;/strong&gt; : Neo4JS, OrientDB, HyperGrahDB, FlockDB&lt;/li&gt;
+&lt;li&gt;orienté &lt;strong&gt;object&lt;/strong&gt; :ZoDB&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Raison du Bench =&amp;gt; le caching&lt;/h2&gt;
 &lt;p&gt;Soyons clair, cet article ne cherche pas à promouvoir quoi que ce soit.
@@ -562,7 +623,7 @@ La participation peut être de différents ordre.
 Néanmoins, relancer d'un autre poste le banc de test et me témoigner des éventuels différences serait sans doute le point le plus
 entousiasmant!&lt;/p&gt;
 &lt;p&gt;Mes intentions sont d'apprendre, perfectionner, consolider ou confronter mes acquis et je tolererais sans sourciller les critiques "constructives".&lt;/p&gt;
-&lt;p&gt;L'intérêt étant justement la remise en question, l'apprentissage et l'ouverture d'esprit.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-02-14:db-bench.html</guid><category>sql</category><category>db</category><category>bench</category><category>benchmark</category></item><item><title>Pelican</title><link>https://mothsart.github.io/pelican.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;L'intérêt étant justement la remise en question, l'apprentissage et l'ouverture d'esprit.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 25 May 2017 00:16:44 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-02-14:db-bench.html</guid><category>sql</category><category>db</category><category>bench</category><category>benchmark</category></item><item><title>Pelican</title><link>https://mothsart.github.io/pelican.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Ce site est mon 2ème essai d'utilisation d'un générateur de site statique.
 J'utilise pour la 2ème fois Pelican : j'ai hésité à passer par autre chose : Jekyl ou Hexo principalement.&lt;/p&gt;
 &lt;p&gt;Néanmoins, j'ai préféré continuer avec Pelican... je sais que le diable ce cache dans les détails, et qu'après un usage intensif, je ne vais trouver que les défauts mais néanmoins avoir des difficultés à les résoudres via des patchs.&lt;/p&gt;

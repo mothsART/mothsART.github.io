@@ -65,9 +65,6 @@ Le Labo Du Nerd            </a>
                             <a href="https://mothsart.github.io/category/frontend.html">Frontend</a>
                         </li>
                         <li >
-                            <a href="https://mothsart.github.io/category/memo.html">Memo</a>
-                        </li>
-                        <li >
                             <a href="https://mothsart.github.io/category/misc.html">Misc</a>
                         </li>
                         <li >
@@ -173,16 +170,23 @@ De plus, j'aime avoir une certaine assurance sur le code produit. (surtout sur l
 <p>Mon usage est de le cloner dans un projet mère et de supprimer le .git dès qu'il est suffisament mature.</p>
 <h2>Assurance qualité (QA)</h2>
 <ul>
-<li>Utilisation des linter : <strong>csslint</strong> et <strong>eslint</strong></li>
+<li>Utilisation des linter : <strong>csslint</strong>, <strong>stylelint</strong> et <strong>eslint</strong></li>
 </ul>
 <p>eslint est utilisé avec l'option <strong>fix</strong> qui permet de corriger automatiquement les soucis rencontrés.</p>
 <p>Csslint n'a malheureusement pas cette fonctionnalité.</p>
+<p>StyleLint se distingue de Csslint en utilisant browserList.</p>
 <ul>
 <li><strong>csscomb</strong> : organise les instructions css</li>
-<li><strong>cssbeautify</strong> : arange le css pour qu'il soit lisible : espacements et les indentations parfaitement respectées.</li>
+<li><strong>cssbeautify</strong> : arange le css pour qu'il soit lisible : espacements et les 
+indentations parfaitement respectées.</li>
+<li><strong>autoprefixer</strong> : plugin PostCSS qui ajoute les préfixes propres aux navigateurs.</li>
 </ul>
+<h2>BrowserList</h2>
+<p>Permet de définir quels navigateurs sont supportés.</p>
+<p>Le package.json contient sa configuration.</p>
+<p>Ca concerne les modules <strong>autoprefixer</strong> et <strong>stylelint</strong>.</p>
 <h2>Examples</h2>
-<p>Pour donner un réel périmètre fonctionnel de cette stack, je créé au fur à mesure des fichiers d'exemples css, javascript et tags riot.
+<p>Pour donner un réel périmètre fonctionnel de cette stack, je créé au fur à mesure des fichiers d'exemples css, javascript et des composants Vue.js.
 Le but est bien évidement de démmarrer un nouveau projet avec de la matière.</p>
 <p>Néanmoins, il est possible de partir, via une commande avec un projet vierge :</p>
 <pre class="highlight"><code class="language-sh">gulp clean</code></pre>
@@ -203,7 +207,7 @@ Il faut:</p>
 <li><a href="./nodejs.html">NodeJS</a></li>
 <li><a href="./gulp.html">Gulp</a></li>
 <li><a href="./babeljs.html">BabelJS</a></li>
-<li><a href="./riotjs.html">RiotJS</a></li>
+<li><a href="./vue.html">Vue</a></li>
 <li><a href="./postcss.html">PostCSS + CssNext</a></li>
 </ul>
 <h2>Sublime text</h2>
@@ -231,6 +235,13 @@ cd frontend_workflow</code></pre>
 </ol>
 <p>On se met en mode debug :</p>
 <pre class="highlight"><code class="language-sh">npm start</code></pre>
+
+
+<ol>
+<li>On Crée les fichiers destiné à la prod :</li>
+</ol>
+<p>Transpilation, concatènation et minifification des fichiers via :</p>
+<pre class="highlight"><code class="language-sh">gulp</code></pre>
 
 
 <ol>
@@ -307,7 +318,7 @@ cd frontend_workflow</code></pre>
                     <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/rust.html">
                             rust
-                                <span class="badge">12</span>
+                                <span class="badge">13</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -329,8 +340,8 @@ cd frontend_workflow</code></pre>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/libre.html">
-                            libre
+                        <a href="https://mothsart.github.io/tag/git.html">
+                            git
                                 <span class="badge">4</span>
                         </a>
                     </li>
@@ -341,50 +352,14 @@ cd frontend_workflow</code></pre>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/git.html">
-                            git
+                        <a href="https://mothsart.github.io/tag/libre.html">
+                            libre
                                 <span class="badge">4</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/sql.html">
-                            sql
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/raspberry.html">
-                            raspberry
-                                <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/zsh.html">
                             zsh
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/html.html">
-                            html
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/c.html">
-                            C
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/3d.html">
-                            3D
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/gettext.html">
-                            gettext
                                 <span class="badge">3</span>
                         </a>
                     </li>
@@ -395,44 +370,50 @@ cd frontend_workflow</code></pre>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/raspberry.html">
+                            raspberry
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/3d.html">
+                            3D
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/c.html">
+                            C
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/gettext.html">
+                            gettext
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/html.html">
+                            html
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/postgresql.html">
                             postgresql
                                 <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/metaphone.html">
-                            metaphone
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/recalbox.html">
-                            recalbox
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/cli.html">
-                            cli
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/bench.html">
-                            bench
-                                <span class="badge">2</span>
+                        <a href="https://mothsart.github.io/tag/sql.html">
+                            sql
+                                <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/nodejs.html">
                             nodejs
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/primtux.html">
-                            primtux
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -443,20 +424,20 @@ cd frontend_workflow</code></pre>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/recalbox.html">
+                            recalbox
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/bench.html">
+                            bench
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/dev.html">
                             dev
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/benchmark.html">
-                            benchmark
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/sh.html">
-                            sh
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -467,8 +448,38 @@ cd frontend_workflow</code></pre>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/sh.html">
+                            sh
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/benchmark.html">
+                            benchmark
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/metaphone.html">
+                            metaphone
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/picture.html">
                             picture
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/vuejs.html">
+                            vue.js
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/cli.html">
+                            cli
                                 <span class="badge">2</span>
                         </a>
                     </li>

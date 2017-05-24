@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 12 Apr 2017 13:01:23 +0200</lastBuildDate><item><title>CanIuse</title><link>https://mothsart.github.io/caniuse.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Thu, 25 May 2017 00:16:44 +0200</lastBuildDate><item><title>Vue.js</title><link>https://mothsart.github.io/vue.js.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Pour diverses raisons, j'ai choisi Vue.js comme nouveau framework web.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Chrome et Firefox ont une extension pour travailler avec Vue!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;applis smartphones natives : https://weex.apache.org/&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Bench avec&lt;/h2&gt;
+&lt;p&gt;https://rawgit.com/krausest/js-framework-benchmark/master/webdriver-ts/table.html&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:vue.js.html</guid><category>javascript</category><category>framework</category><category>vue</category><category>vue.js</category></item><item><title>CanIuse</title><link>https://mothsart.github.io/caniuse.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;S'il on veut utiliser une propriété css/js/html ou une api Html5 et être certain que ça fonctionne sur notre nagivateur, le réflexe c'est caniuse.com&lt;/p&gt;
 &lt;p&gt;Mais s'il on veut étayer son argumentaire, le mieux est de passer par les sites des 3 gros navigateurs :&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/shapes"&gt;IE et Edge&lt;/a&gt;&lt;/p&gt;
@@ -275,14 +286,7 @@ Il permet de passer par Ecmascript 6, appelé également Ecmascript 2015 (super 
 &lt;li&gt;utilisation de constantes &lt;strong&gt;const&lt;/strong&gt; et de vrai variable à porté limité &lt;strong&gt;let&lt;/strong&gt;!&lt;/li&gt;
 &lt;li&gt;de la vrai POO avec des &lt;strong&gt;classes&lt;/strong&gt; !&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;yield&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:babeljs.html</guid><category>babel</category><category>babeljs</category><category>javascript</category></item><item><title>RiotJS</title><link>https://mothsart.github.io/riotjs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
-&lt;p&gt;Dans la mode des framework orienté &lt;strong&gt;composants&lt;/strong&gt;, on est passé par &lt;strong&gt;Angular.js&lt;/strong&gt;, remplacé désormais par &lt;strong&gt;React.js&lt;/strong&gt; en attendant que &lt;strong&gt;Angular 2&lt;/strong&gt; se stabilise.&lt;/p&gt;
-&lt;p&gt;Pourquoi ne pas suivre la mouvance ?
-Parce que j'estime que ces frameworks sont trop volumineux pour répondre au besoin!&lt;/p&gt;
-&lt;p&gt;Une API trop complète, ça nécessite beaucoup de développement, une documentation en conséquence et de la formation, de l'intégration pour d'autres outils (bower, gulp, des IDE etc.)&lt;/p&gt;
-&lt;p&gt;Le web est en constante évolution et une fois que c'est suffisament mature, ça ne correspond plus vraiment au besoin.&lt;/p&gt;
-&lt;p&gt;Un des besoins fort actuel est le mobile et pour ça, il faut réfléchir au poid de son appli : chaque Ko à son importance!&lt;/p&gt;
-&lt;p&gt;Pour tous ces points, RiotJS est à mon sens le grand gagnant !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:riotjs.html</guid><category>riotjs</category><category>javascript</category></item><item><title>Ma stack Frontend</title><link>https://mothsart.github.io/stack-frontend.html</link><description>&lt;h2&gt;Intro (Gros WIP Unstable!!!)&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:babeljs.html</guid><category>babel</category><category>babeljs</category><category>javascript</category></item><item><title>Ma stack Frontend</title><link>https://mothsart.github.io/stack-frontend.html</link><description>&lt;h2&gt;Intro (Gros WIP Unstable!!!)&lt;/h2&gt;
 &lt;p&gt;Ma stack côté frontend (en constante évolution).&lt;/p&gt;
 &lt;p&gt;Comme tout &lt;strong&gt;bon&lt;/strong&gt; développeur, je suis fainéant :
 faire et refaire des tâches ingrates (cqfd: automatisable) me répugne.
@@ -292,16 +296,23 @@ De plus, j'aime avoir une certaine assurance sur le code produit. (surtout sur l
 &lt;p&gt;Mon usage est de le cloner dans un projet mère et de supprimer le .git dès qu'il est suffisament mature.&lt;/p&gt;
 &lt;h2&gt;Assurance qualité (QA)&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Utilisation des linter : &lt;strong&gt;csslint&lt;/strong&gt; et &lt;strong&gt;eslint&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Utilisation des linter : &lt;strong&gt;csslint&lt;/strong&gt;, &lt;strong&gt;stylelint&lt;/strong&gt; et &lt;strong&gt;eslint&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;eslint est utilisé avec l'option &lt;strong&gt;fix&lt;/strong&gt; qui permet de corriger automatiquement les soucis rencontrés.&lt;/p&gt;
 &lt;p&gt;Csslint n'a malheureusement pas cette fonctionnalité.&lt;/p&gt;
+&lt;p&gt;StyleLint se distingue de Csslint en utilisant browserList.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;csscomb&lt;/strong&gt; : organise les instructions css&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;cssbeautify&lt;/strong&gt; : arange le css pour qu'il soit lisible : espacements et les indentations parfaitement respectées.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;cssbeautify&lt;/strong&gt; : arange le css pour qu'il soit lisible : espacements et les 
+indentations parfaitement respectées.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;autoprefixer&lt;/strong&gt; : plugin PostCSS qui ajoute les préfixes propres aux navigateurs.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2&gt;BrowserList&lt;/h2&gt;
+&lt;p&gt;Permet de définir quels navigateurs sont supportés.&lt;/p&gt;
+&lt;p&gt;Le package.json contient sa configuration.&lt;/p&gt;
+&lt;p&gt;Ca concerne les modules &lt;strong&gt;autoprefixer&lt;/strong&gt; et &lt;strong&gt;stylelint&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2&gt;Examples&lt;/h2&gt;
-&lt;p&gt;Pour donner un réel périmètre fonctionnel de cette stack, je créé au fur à mesure des fichiers d'exemples css, javascript et tags riot.
+&lt;p&gt;Pour donner un réel périmètre fonctionnel de cette stack, je créé au fur à mesure des fichiers d'exemples css, javascript et des composants Vue.js.
 Le but est bien évidement de démmarrer un nouveau projet avec de la matière.&lt;/p&gt;
 &lt;p&gt;Néanmoins, il est possible de partir, via une commande avec un projet vierge :&lt;/p&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;gulp clean&lt;/code&gt;&lt;/pre&gt;
@@ -322,7 +333,7 @@ Il faut:&lt;/p&gt;
 &lt;li&gt;&lt;a href="./nodejs.html"&gt;NodeJS&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="./gulp.html"&gt;Gulp&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="./babeljs.html"&gt;BabelJS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="./riotjs.html"&gt;RiotJS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="./vue.html"&gt;Vue&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="./postcss.html"&gt;PostCSS + CssNext&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Sublime text&lt;/h2&gt;
@@ -353,6 +364,13 @@ cd frontend_workflow&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;ol&gt;
+&lt;li&gt;On Crée les fichiers destiné à la prod :&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Transpilation, concatènation et minifification des fichiers via :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;gulp&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;ol&gt;
 &lt;li&gt;Avant de commiter, on déclenche un process d'&lt;strong&gt;assurance qualité&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Si l'on désire supprimer les fichiers d'exemples&lt;/p&gt;
@@ -360,7 +378,7 @@ cd frontend_workflow&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;Opération inverse (reafficher les exemples)&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;git checkout -- app/&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-frontend.html</guid><category>frontend</category><category>css</category><category>javascript</category></item><item><title>Le stockage côté Javascript</title><link>https://mothsart.github.io/stockage-frontend.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;git checkout -- app/&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 25 May 2017 00:16:44 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-frontend.html</guid><category>frontend</category><category>css</category><category>javascript</category></item><item><title>Le stockage côté Javascript</title><link>https://mothsart.github.io/stockage-frontend.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;L'émergence de l'utilisation du web pour de l'appli nécessite d'améliorer le caching de données et la synchronisation.&lt;/p&gt;
 &lt;h2&gt;L'existant&lt;/h2&gt;
 &lt;p&gt;http://caniuse.com/#feat=sql-storage =&amp;gt; en mode disparition&lt;/p&gt;

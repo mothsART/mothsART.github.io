@@ -7,4 +7,4 @@ pygettext -o monsterz.pot ./monsterz.py&lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;Compiler simplement des fichiers po en mo&lt;/h2&gt;
 &lt;p&gt;msgfmt -o lang.mo lang.po&lt;/p&gt;
 &lt;p&gt;et en ligne :&lt;/p&gt;
-&lt;p&gt;http://po2mo.net/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-28:i18n.html</guid><category>i18n</category><category>linux</category><category>python</category><category>gettext</category></item></channel></rss>
+&lt;p&gt;http://po2mo.net/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-01:i18n.html</guid><category>i18n</category><category>linux</category><category>python</category><category>gettext</category></item></channel></rss>

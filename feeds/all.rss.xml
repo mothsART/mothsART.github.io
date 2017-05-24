@@ -1,5 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Fri, 28 Apr 2017 19:07:21 +0200</lastBuildDate><item><title>I18n</title><link>https://mothsart.github.io/i18n.html</link><description>&lt;h2&gt;Créer un fichier pot à partir de sources Python&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Thu, 25 May 2017 00:16:44 +0200</lastBuildDate><item><title>Can I Diff</title><link>https://mothsart.github.io/can-i-diff.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Un développeur passe son temps à utiliser des différentiels pour déterminer rapidement ce qui a changé dans un ou plusieurs fichiers.&lt;/p&gt;
+&lt;p&gt;Le plus commun est bien entendu la commande diff, particulièrement décocratisé à partir de &lt;strong&gt;git diff&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;diff et cmd&lt;/h2&gt;
+&lt;p&gt;leur pendant graphique : kdiff, meld&lt;/p&gt;
+&lt;p&gt;=&amp;gt; pratique pour comparer des dossiers complets&lt;/p&gt;
+&lt;h2&gt;Certains fichiers textes ne sont pas adaptés&lt;/h2&gt;
+&lt;p&gt;Quand on découvre diff, on peut croire à tord qu'il va couvrir tous les besoins.
+Cependant, il est mal approprié aux fichiers xml et html :
+Les ajouts de noeuds parents peuvent être particulièrement pénalisant.&lt;/p&gt;
+&lt;p&gt;il existe des outils dédiés :&lt;/p&gt;
+&lt;p&gt;https://github.com/GuillaumeGomez/html-diff-rs&lt;/p&gt;
+&lt;h2&gt;Les fichiers binaires&lt;/h2&gt;
+&lt;p&gt;Quand il n'y a pas de solutions dédiés :&lt;/p&gt;
+&lt;p&gt;https://superuser.com/questions/125376/how-do-i-compare-binary-files-in-linux&lt;/p&gt;
+&lt;h2&gt;Images&lt;/h2&gt;
+&lt;p&gt;Avec Image Magick :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;sudo apt-get install imagemagick imagemagick-doc
+compare -compose src img_origine.png img_modifie.png img_difference.png&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:can-i-diff.html</guid></item><item><title>Ce n'est qu'un au revoir JSON</title><link>https://mothsart.github.io/ce-nest-quun-au-revoir-json.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Là ou je peux me passer de JSON, je le fais sans regret.
+C'est un langage à mon goût &lt;strong&gt;batard&lt;/strong&gt;, illisible, faiblement typé...
+très dépendant du langage Javascript... tout aussi mauvais.&lt;/p&gt;
+&lt;h2&gt;JSON n'est pas fait pour de la configuration&lt;/h2&gt;
+&lt;p&gt;Quand je vois des fichiers de conf de plusieurs centaines de lignes, je pleure du sang...
+T'oublis une virgule et paf !&lt;/p&gt;
+&lt;p&gt;Si l'on veut un truc propre pensé pour de la config et rien que pour de la config, il faut choisir &lt;strong&gt;TOML&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Et surtout : &lt;strong&gt;IL NE PERMET PAS DE COMMENTAIRES !!!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;VDM&lt;/strong&gt; : Quand je vois les fichiers package.json de npm et que j'aimerais juste commenté des lignes pour mes tests.&lt;/p&gt;
+&lt;h2&gt;JSON ne peut pas remplacer du XML&lt;/h2&gt;
+&lt;p&gt;JSON n'a pas de format DTD et encore moins de XSL Shema officiel.
+Pour valider un document, c'est du coup compromis.&lt;/p&gt;
+&lt;h2&gt;JSON n'est pas un bon format pour de l'échange de donnée&lt;/h2&gt;
+&lt;p&gt;Si l'on souhaites échanger des données, je considère qu'il faut forcément réfléchir à un format le plus concit possible. La bande passante à forcément un coût.&lt;/p&gt;
+&lt;p&gt;Dans ce cas, je conseil vivement un format binaire et mon choix se porte naturellement vers &lt;strong&gt;MessagePack&lt;/strong&gt; : un format binaire pour représenter des structures de données.&lt;/p&gt;
+&lt;p&gt;Si l'on veut valider des données avant l'envoi ou après réception de données, rien n'empêche de passer par un format XML intermédiaire.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Il y a des formats qui doivent appartenir au passé...
+(Les formats binarisés de Json n'étant que des jambes de bois)&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:ce-nest-quun-au-revoir-json.html</guid></item><item><title>Dégooglelison et Education numérique</title><link>https://mothsart.github.io/deggoglelison-eductation-numerique.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;J'ai pas l'habitude de faire de la politique mais la nécessité me semble évidente.&lt;/p&gt;
+&lt;p&gt;Notre pays (aussi bien que l'europe, notre région, notre ville) a besoin de réformer son système éducatif et d'innover dans l'accès au numérique.&lt;/p&gt;
+&lt;p&gt;Pour cela, il doit se démarquer des GAFAM (Google, Amazon, Facebook, Apple, Microsoft) !&lt;/p&gt;
+&lt;p&gt;Je ne peux pas et n'admettrais pas que l'éducation de nos enfants soit régis par des grands groupes américains dont la rentabilité est le seul objectif !&lt;/p&gt;
+&lt;h2&gt;Le programme de Macron&lt;/h2&gt;
+&lt;p&gt;Le peuple français a choisi Emmanuel Macron.
+Maintenant, c'est à nous d'assumer (l'opposition pour l'opposition c'est de l'immobilisme à mon sens) et de nous préoccuper que son programme soit respecté !&lt;/p&gt;
+&lt;p&gt;Il est de notre devoir, en tant que citoyen, de vérifier que notre chef d'état tiens ses objectifs : http://laparoledemacron.com/&lt;/p&gt;
+&lt;h2&gt;Les points de son programme à suivre de prêt&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Les grands groupes Internet seront imposés sur leur chiffre d’affaires réalisé sur notre sol.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Priorité à l’école primaire pour que tous les élèves sachent lire, écrire et compter en arrivant en 6ème.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Le parcours bi-langues au collège sera rétabli.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Le parcours européen au collège sera rétabli.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;La baccalauréat sera modernisé. Il y aura désormais 4 matières obligatoires à l’examen final. Les autres seront validés par un contrôle continu.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Un accompagnement après la classe sera proposé à tous. Au collège, les études dirigés seront rétablies grâce à des bénévoles (étudiants et retraités).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Les enseignants de CP et de CE1 en zone prioritaire seront plus expérimentés. D’ici 2022, ceux affectés en zones prioritaires auront au moins 3 ans d’ancienneté.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Des projets existent&lt;/h2&gt;
+&lt;p&gt;Les logiciels libres dans leur ensemble mais aussi des projets tel que :&lt;/p&gt;
+&lt;p&gt;https://chatons.org/
+https://framasoft.org/&lt;/p&gt;
+&lt;p&gt;https://primtux.fr/
+http://abuledu-fr.org/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:deggoglelison-eductation-numerique.html</guid><category>google</category><category>gafam</category><category>education</category><category>numérique</category></item><item><title>Domotique</title><link>https://mothsart.github.io/domotique.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Utiliser l'API de free pour envoyer des SMS : http://www.domotique-info.fr/2014/06/nouvelle-api-sms-chez-free/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:domotique.html</guid></item><item><title>Micro-services</title><link>https://mothsart.github.io/micro-services.html</link><description>&lt;h2&gt;Les Micro-services pour les nuls&lt;/h2&gt;
+&lt;h2&gt;Source&lt;/h2&gt;
+&lt;p&gt;https://ziade.org/2016/10/03/web-services-best-practices/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:micro-services.html</guid><category>micro-services</category></item><item><title>Utiliser Rust sur la PI</title><link>https://mothsart.github.io/rust-sur-pi.html</link><description>&lt;h2&gt;Utiliser Rust sur la PI&lt;/h2&gt;
+&lt;p&gt;http://f4b1.com/raspberry-pi/comment-installer-rust-sur-un-raspberry-pi-3&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:rust-sur-pi.html</guid><category>raspberry rust</category></item><item><title>Stratego</title><link>https://mothsart.github.io/stratego.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;J'aime beaucoup le jeu de plateau &lt;strong&gt;Stratego&lt;/strong&gt;.
+N'ayant rien trouvé dans le périmètre des logiciels libres permettant de jouer à ce jeu, j'ai décidé de le créer.&lt;/p&gt;
+&lt;h2&gt;Ma stack&lt;/h2&gt;
+&lt;p&gt;Rust avec Rocket.rs, Vue.js, mgsPack, axios.&lt;/p&gt;
+&lt;h2&gt;Les objectifs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;séparation client/serveur&lt;/li&gt;
+&lt;li&gt;utilisation sous diverses formes : cli, web, gtk etc.&lt;/li&gt;
+&lt;li&gt;multi-joueur&lt;/li&gt;
+&lt;li&gt;une vrai IA&lt;/li&gt;
+&lt;li&gt;supporte la monté en charge&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Algos utilisés&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;probabilité conditionnel&lt;/li&gt;
+&lt;li&gt;Base de connaissances et de règles&lt;/li&gt;
+&lt;li&gt;réseaux de neuronnes et deep learning&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:stratego.html</guid><category>rust</category><category>vue.js</category><category>stratego</category></item><item><title>Tester c'est douter</title><link>https://mothsart.github.io/tester-c-douter.html</link><description>&lt;h2&gt;Tester c'est douter&lt;/h2&gt;
+&lt;p&gt;Dans le paysage du développeur, les tests &lt;strong&gt;automatisés&lt;/strong&gt; devraient être obligatoire et non plus une exception.&lt;/p&gt;
+&lt;p&gt;La réalité est souvent tout autre...&lt;/p&gt;
+&lt;h2&gt;Isolation&lt;/h2&gt;
+&lt;p&gt;Le meilleur moyen de tester est d'isoler son application dans une image virtuel, un container etc.
+On évite principalement les soucis liés aux dépendances.&lt;/p&gt;
+&lt;h2&gt;Couverture&lt;/h2&gt;
+&lt;p&gt;Sauf contraintes techniques, il est nécessaire de couvrir avec des tests l'ensemble de l'applicatif : les zones les plus sensibles en premier, bien évidement.&lt;/p&gt;
+&lt;h2&gt;Logging et traces&lt;/h2&gt;
+&lt;p&gt;Usage intensif de &lt;strong&gt;Sentry&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Tests pour le Web&lt;/h2&gt;
+&lt;h3&gt;tests de monté en charge (Smoke testing) et performance (Load testing)&lt;/h3&gt;
+&lt;p&gt;https://fr.wikipedia.org/wiki/Test_de_performance&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Apache bench&lt;/li&gt;
+&lt;li&gt;Boom : https://github.com/tarekziade/boom&lt;/li&gt;
+&lt;li&gt;Locust : https://github.com/locustio/locust&lt;/li&gt;
+&lt;li&gt;Molotov : http://molotov.readthedocs.io/en/latest/&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:tester-c-douter.html</guid><category>test</category></item><item><title>Vue.js</title><link>https://mothsart.github.io/vue.js.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Pour diverses raisons, j'ai choisi Vue.js comme nouveau framework web.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Chrome et Firefox ont une extension pour travailler avec Vue!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;applis smartphones natives : https://weex.apache.org/&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Bench avec&lt;/h2&gt;
+&lt;p&gt;https://rawgit.com/krausest/js-framework-benchmark/master/webdriver-ts/table.html&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:vue.js.html</guid><category>javascript</category><category>framework</category><category>vue</category><category>vue.js</category></item><item><title>I18n</title><link>https://mothsart.github.io/i18n.html</link><description>&lt;h2&gt;Créer un fichier pot à partir de sources Python&lt;/h2&gt;
 &lt;pre class="highlight"&gt;&lt;code&gt;!bash
 pygettext -o monsterz.pot ./monsterz.py&lt;/code&gt;&lt;/pre&gt;
 
@@ -7,15 +133,14 @@ pygettext -o monsterz.pot ./monsterz.py&lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;Compiler simplement des fichiers po en mo&lt;/h2&gt;
 &lt;p&gt;msgfmt -o lang.mo lang.po&lt;/p&gt;
 &lt;p&gt;et en ligne :&lt;/p&gt;
-&lt;p&gt;http://po2mo.net/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-28:i18n.html</guid><category>i18n</category><category>linux</category><category>python</category><category>gettext</category></item><item><title>Mes scripts pour Raspberry</title><link>https://mothsart.github.io/scripts-raspberry.html</link><description>&lt;h2&gt;Mes Scripts pour Raspberry&lt;/h2&gt;
+&lt;p&gt;http://po2mo.net/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 25 May 2017 00:16:44 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-01:i18n.html</guid><category>i18n</category><category>linux</category><category>python</category><category>gettext</category></item><item><title>Mes scripts pour Raspberry</title><link>https://mothsart.github.io/scripts-raspberry.html</link><description>&lt;h2&gt;Mes Scripts pour Raspberry&lt;/h2&gt;
 &lt;p&gt;Un script qui simplifie l'usage de &lt;strong&gt;dd&lt;/strong&gt; avec une belle barre de progression !!&lt;/p&gt;
 &lt;p&gt;Nécessite &lt;strong&gt;pv&lt;/strong&gt; et &lt;strong&gt;dialog&lt;/strong&gt; pour fonctionner :&lt;/p&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;apt-get install pv, dialog&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;A mettre dans votre .bashrc ou .zshrc (de votre utilisateur root)&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;!bash
-function copy() {
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;function copy() {
     # dd with a progress bar
     #pv -n &amp;quot;$0&amp;quot; | dd of=&amp;quot;$1&amp;quot; bs=1M conv=notrunc,noerror
     # with a dialog
@@ -27,7 +152,7 @@ function copy() {
 &lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;copy mon-image-raspian.img /dev/emplacement&lt;/code&gt;&lt;/pre&gt;
 
 
-&lt;p&gt;Je me suis inspiré de https://www.raspberrypi.org/documentation/installation/installing-images/linux.md&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:scripts-raspberry.html</guid><category>raspberry</category><category>script</category><category>zsh</category></item><item><title>Oh Merde Git</title><link>https://mothsart.github.io/oh-merde-git.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Je me suis inspiré de https://www.raspberrypi.org/documentation/installation/installing-images/linux.md&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 25 May 2017 00:16:44 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-01:scripts-raspberry.html</guid><category>raspberry</category><category>script</category><category>zsh</category></item><item><title>Oh Merde Git</title><link>https://mothsart.github.io/oh-merde-git.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Voici la traduction de &lt;a href="http://ohshitgit.com"&gt;http://ohshitgit.com&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Pour éviter d'inonder cette traduction par des mots fleuries, j'ai décidé de remplacer &lt;strong&gt;Shit&lt;/strong&gt; (litéralement &lt;strong&gt;Merde&lt;/strong&gt;) par &lt;strong&gt;Flûte&lt;/strong&gt;. (juron au combien moderne dans la francophonie)&lt;/p&gt;
 &lt;h2&gt;Oh Flûte GIT&lt;/h2&gt;
@@ -416,7 +541,7 @@ Que de changements depuis ma première raspbian !!!&lt;/p&gt;
 &lt;li&gt;Ecran HDMI&lt;/li&gt;
 &lt;li&gt;Disque dur externe pour les Roms&lt;/li&gt;
 &lt;li&gt;Disque dur pour le serveur multimédia&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 23:57:00 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:tests-autours-de-la-framboise.html</guid><category>raspberry</category><category>recalbox</category><category>primtux</category><category>archlinux</category><category>raspbian</category></item><item><title>Editeur WYSIWYG de SVG interactifs</title><link>https://mothsart.github.io/editeur-svg-interactif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 01 May 2017 01:59:46 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:tests-autours-de-la-framboise.html</guid><category>raspberry</category><category>recalbox</category><category>primtux</category><category>archlinux</category><category>raspbian</category></item><item><title>Editeur WYSIWYG de SVG interactifs</title><link>https://mothsart.github.io/editeur-svg-interactif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;L'objectif est simple : éditer un fichier SVG statique afin de le présenter comme un contenu interactif. 
 Permettre l'ajout des zones cliquables pouvant être zoomés et enrichies d'une explication&lt;/p&gt;
 &lt;p&gt;Les fichiers générés (page Html contenant le svg) pouvant servir à divers usages :&lt;/p&gt;
@@ -515,7 +640,7 @@ Il est possible de changer la couleur, de zoomer mais également d'ajouter/edite
 &lt;p&gt;https://www.wattpad.com&lt;/p&gt;
 &lt;p&gt;https://www.tipeee.com&lt;/p&gt;
 &lt;p&gt;https://www.patreon.com&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 25 Feb 2017 17:34:53 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-22:financement-participatif.html</guid></item><item><title>Fuzzer</title><link>https://mothsart.github.io/fuzzer.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
-&lt;p&gt;Ca fait un moment que je me passionne pour le fuzzing sans vraiment écrire à ce sujet.&lt;/p&gt;
+&lt;p&gt;Ca fait un moment que je me passionne pour le fuzzing (aussi appelé à tord Monkey testing) sans vraiment écrire à ce sujet.&lt;/p&gt;
 &lt;h2&gt;Fuzzer connus et spécificité&lt;/h2&gt;
 &lt;h3&gt;(ZZUF)[http://caca.zoy.org/wiki/zzuf]&lt;/h3&gt;
 &lt;p&gt;Complètement &lt;strong&gt;stochastique&lt;/strong&gt;.
@@ -537,7 +662,9 @@ Variante pour Rust : https://github.com/frewsxcv/afl.rs&lt;/p&gt;
 &lt;p&gt;Provient de Haskell.&lt;/p&gt;
 &lt;p&gt;Variante pour Rust : https://github.com/BurntSushi/quickcheck&lt;/p&gt;
 &lt;h3&gt;(Fusil)[http://fusil.readthedocs.io/]&lt;/h3&gt;
-&lt;p&gt;Provient de la communauté &lt;strong&gt;Python&lt;/strong&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-22:fuzzer.html</guid><category>fuzzer</category><category>python</category><category>rust</category></item><item><title>Lego</title><link>https://mothsart.github.io/lego.html</link><description>&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;Provient de la communauté &lt;strong&gt;Python&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Et pour javascript ?&lt;/h2&gt;
+&lt;p&gt;Il existe quelques libs sympas : https://github.com/marmelab/gremlins.js&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 25 May 2017 00:16:44 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-22:fuzzer.html</guid><category>fuzzer</category><category>python</category><category>rust</category></item><item><title>Lego</title><link>https://mothsart.github.io/lego.html</link><description>&lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;ldraw.org
 http://www.framboise314.fr/leocad-des-modeles-lego-en-3d-sur-raspberry-pi/
 http://jc-tchang.philohome.com/index.htm
@@ -848,14 +975,15 @@ https://fr.wikipedia.org/wiki/Sketchfab
 https://sketchfab.com/&lt;/p&gt;
 &lt;p&gt;Pour visualiser les fichiers .fbx dans Blender, il faut utiliser l'import.&lt;/p&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
-&lt;p&gt;http://sebsauvage.net/temp/blender/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:3D.html</guid><category>3D</category></item><item><title>algo images</title><link>https://mothsart.github.io/algo-images.html</link><description>&lt;h2&gt;&lt;/h2&gt;
+&lt;p&gt;http://sebsauvage.net/temp/blender/&lt;/p&gt;
+&lt;p&gt;3D On-line : https://aframe.io&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 25 May 2017 00:16:44 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:3D.html</guid><category>3D</category></item><item><title>algo images</title><link>https://mothsart.github.io/algo-images.html</link><description>&lt;h2&gt;&lt;/h2&gt;
 &lt;p&gt;https://29a.ch/&lt;/p&gt;
 &lt;p&gt;https://github.com/jwagner/smartcrop.js&lt;/p&gt;
 &lt;p&gt;https://github.com/jaysalvat/jquery.facedetection&lt;/p&gt;
 &lt;p&gt;https://github.com/eduardolundgren/tracking.js/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 25 Feb 2017 17:34:53 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:algo-images.html</guid><category>picture</category><category>algo</category></item><item><title>Blender</title><link>https://mothsart.github.io/blender.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;h2&gt;liens&lt;/h2&gt;
 &lt;p&gt;https://www.blender.org/manual/render/freestyle/export_svg.html
-http://goinkscape.com/use-blender-freestyle-to-export-svg-artwork&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:blender.html</guid><category>3D</category><category>blender</category></item><item><title>Cette photo est-elle retouché ?</title><link>https://mothsart.github.io/photo-retouche.html</link><description>&lt;h2&gt;&lt;/h2&gt;
+http://goinkscape.com/use-blender-freestyle-to-export-svg-artwork&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 25 May 2017 00:16:44 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:blender.html</guid><category>3D</category><category>blender</category></item><item><title>Cette photo est-elle retouché ?</title><link>https://mothsart.github.io/photo-retouche.html</link><description>&lt;h2&gt;&lt;/h2&gt;
 &lt;p&gt;https://en.wikipedia.org/wiki/Error_level_analysis&lt;/p&gt;
 &lt;h2&gt;Utilitaires On-line&lt;/h2&gt;
 &lt;p&gt;https://29a.ch/photo-forensics/
@@ -925,7 +1053,7 @@ https://github.com/apasel422/eclectic&lt;/p&gt;
 &lt;p&gt;https://github.com/housleyjk/ws-rs&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-30:exemples-rust.html</guid><category>rust</category></item><item><title>AbulEdu</title><link>https://mothsart.github.io/abuledu.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Etant un jeune papa et défenseur d'un numérique ouvert, citoyen (liberté, égalité, fraternité) et responsable, j'ai décidé de participer au projet &lt;strong&gt;&lt;a href="https://fr.ulule.com/developpement-dabuledu"&gt;AbulEdu&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Pour l'instant, ça ne concerne que la création d'illustrations.&lt;/p&gt;
-&lt;p&gt;L'objectif est à multiple tranchants : elle va concerner &lt;strong&gt;&lt;a href="https://fr.wikipedia.org/wiki/Utilisateur:MothsART"&gt;Wikipédia Commons&lt;/a&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;a href="https://fr.vikidia.org/wiki/Utilisateur:MothsART"&gt;VikiDia&lt;/a&gt;&lt;/strong&gt; et &lt;strong&gt;&lt;a href="https://openclipart.org/user-detail/mothsart"&gt;OpenClipArt&lt;/a&gt;&lt;/strong&gt; dans la foulée.&lt;/p&gt;
+&lt;p&gt;L'objectif est à multiple tranchants : elle va concerner &lt;strong&gt;&lt;a href="https://fr.wikipedia.org/wiki/Utilisateur:MothsART"&gt;Wikipédia Commons&lt;/a&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;a href="https://fr.vikidia.org/wiki/Utilisateur:MothsART"&gt;VikiDia&lt;/a&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;a href="https://openclipart.org/user-detail/mothsart"&gt;OpenClipArt&lt;/a&gt;&lt;/strong&gt; et &lt;strong&gt;&lt;a href="https://primtux.fr/"&gt;PrimTux&lt;/a&gt;&lt;/strong&gt; dans la foulée.&lt;/p&gt;
 &lt;h2&gt;Les pré-requis&lt;/h2&gt;
 &lt;p&gt;Avant de participer bêtement, je me suis mis en relation avec des membres de l'association.&lt;/p&gt;
 &lt;p&gt;Leurs directives étaient claires et fondées sur 3 axes&lt;/p&gt;
@@ -997,7 +1125,10 @@ Après, je serais quitte de dépasser...&lt;/p&gt;
 &lt;p&gt;Après la réflexion, l'action !&lt;/p&gt;
 &lt;h2&gt;Mes réalisation&lt;/h2&gt;
 &lt;p&gt;&lt;a href="./abuledu-camp-paleolithique.html"&gt;Campement du Paléolithique&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://commons.wikimedia.org/wiki/File:Mastodonte.svg"&gt;Mastondonte&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:abuledu.html</guid><category>linux</category><category>libre</category></item><item><title>Bench Linux</title><link>https://mothsart.github.io/bench-linux.html</link><description>&lt;h2&gt;Vérifier si l'accélération graphique est actif&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://commons.wikimedia.org/wiki/File:Mastodonte.svg"&gt;Mastondonte&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://commons.wikimedia.org/wiki/File:Organes_du_corps_humain.svg"&gt;Organes du corps humain&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Dépôt GIT&lt;/h2&gt;
+&lt;p&gt;Afin de tout centraliser, j'ai décidé de tout mettre dans un &lt;strong&gt;&lt;a href="https://github.com/mothsART/abuledu"&gt;dépôt GIT d'illustration&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 25 May 2017 00:16:44 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:abuledu.html</guid><category>linux</category><category>libre</category></item><item><title>Bench Linux</title><link>https://mothsart.github.io/bench-linux.html</link><description>&lt;h2&gt;Vérifier si l'accélération graphique est actif&lt;/h2&gt;
 &lt;p&gt;glxinfo | grep "direct rendering"&lt;/p&gt;
 &lt;h2&gt;lancement du benchmark de Mesa (implémentation libre d'opengl)&lt;/h2&gt;
 &lt;p&gt;Afin de ne pas être limité par la fréquence de rafraichissement (en général 60) Il peut être préférable d'entrer la commande suivante. N'oubliez pas d'exécuter dans la fenêtre du terminal ctrl+c pour shunter glxgears.&lt;/p&gt;
@@ -1344,7 +1475,7 @@ git push -f&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www.git-attitude.fr/2014/09/15/30-options-git-qui-gagnent-a-etre-connues"&gt;http://www.git-attitude.fr/2014/09/15/30-options-git-qui-gagnent-a-etre-connues&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/2221658/whats-the-difference-between-head-and-head-in-git"&gt;http://stackoverflow.com/questions/2221658whats-the-difference-between-head-and-head-in-git&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 28 Apr 2017 19:07:21 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-git.html</guid><category>git</category><category>linux</category></item><item><title>Aide mémoire sh</title><link>https://mothsart.github.io/aide-memoire-sh.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/2221658/whats-the-difference-between-head-and-head-in-git"&gt;http://stackoverflow.com/questions/2221658whats-the-difference-between-head-and-head-in-git&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 01 May 2017 01:59:46 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-git.html</guid><category>git</category><category>linux</category></item><item><title>Aide mémoire sh</title><link>https://mothsart.github.io/aide-memoire-sh.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;find . | grep actual&lt;/code&gt;&lt;/pre&gt;
 
 
@@ -1359,7 +1490,7 @@ git push -f&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;s'occupe de conserver les droits&lt;/li&gt;
 &lt;li&gt;création d'un dossier lorsuq'il y a plusieurs fichiers à la racine&lt;/li&gt;
 &lt;li&gt;extraction récursive&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Apr 2017 10:25:20 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-sh.html</guid><category>sh</category><category>linux</category></item><item><title>Aide mémoire Sublime Text 3</title><link>https://mothsart.github.io/aide-memoire-sublime-text.html</link><description>&lt;h2&gt;Fonctionnalités&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 01 May 2017 01:59:46 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-sh.html</guid><category>sh</category><category>linux</category></item><item><title>Aide mémoire Sublime Text 3</title><link>https://mothsart.github.io/aide-memoire-sublime-text.html</link><description>&lt;h2&gt;Fonctionnalités&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://sametmax.com/10-astuces-pour-sublime-text-2"&gt;http://sametmax.com/10-astuces-pour-sublime-text-2&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Edit/StringEncode : permet d'encoder des chaines de caractères&lt;/p&gt;
 &lt;p&gt;&lt;kbd&gt;Alt&lt;/kbd&gt;&lt;kbd&gt;Q&lt;/kbd&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 15 Jan 2016 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-sublime-text.html</guid><category>sublimetext</category></item><item><title>Aide mémoire Tmux</title><link>https://mothsart.github.io/aide-memoire-tmux.html</link><description>&lt;h2&gt;Introduction&lt;/h2&gt;
@@ -2177,14 +2308,7 @@ trait-based generics
 pattern matching
 type inference
 minimal runtime
-efficient C bindings&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:pourquoi-rust.html</guid><category>rust</category><category>python</category><category>Java</category><category>Javascript</category><category>C</category><category>C++</category><category>C#</category></item><item><title>RiotJS</title><link>https://mothsart.github.io/riotjs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
-&lt;p&gt;Dans la mode des framework orienté &lt;strong&gt;composants&lt;/strong&gt;, on est passé par &lt;strong&gt;Angular.js&lt;/strong&gt;, remplacé désormais par &lt;strong&gt;React.js&lt;/strong&gt; en attendant que &lt;strong&gt;Angular 2&lt;/strong&gt; se stabilise.&lt;/p&gt;
-&lt;p&gt;Pourquoi ne pas suivre la mouvance ?
-Parce que j'estime que ces frameworks sont trop volumineux pour répondre au besoin!&lt;/p&gt;
-&lt;p&gt;Une API trop complète, ça nécessite beaucoup de développement, une documentation en conséquence et de la formation, de l'intégration pour d'autres outils (bower, gulp, des IDE etc.)&lt;/p&gt;
-&lt;p&gt;Le web est en constante évolution et une fois que c'est suffisament mature, ça ne correspond plus vraiment au besoin.&lt;/p&gt;
-&lt;p&gt;Un des besoins fort actuel est le mobile et pour ça, il faut réfléchir au poid de son appli : chaque Ko à son importance!&lt;/p&gt;
-&lt;p&gt;Pour tous ces points, RiotJS est à mon sens le grand gagnant !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:riotjs.html</guid><category>riotjs</category><category>javascript</category></item><item><title>Ma stack Frontend</title><link>https://mothsart.github.io/stack-frontend.html</link><description>&lt;h2&gt;Intro (Gros WIP Unstable!!!)&lt;/h2&gt;
+efficient C bindings&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:pourquoi-rust.html</guid><category>rust</category><category>python</category><category>Java</category><category>Javascript</category><category>C</category><category>C++</category><category>C#</category></item><item><title>Ma stack Frontend</title><link>https://mothsart.github.io/stack-frontend.html</link><description>&lt;h2&gt;Intro (Gros WIP Unstable!!!)&lt;/h2&gt;
 &lt;p&gt;Ma stack côté frontend (en constante évolution).&lt;/p&gt;
 &lt;p&gt;Comme tout &lt;strong&gt;bon&lt;/strong&gt; développeur, je suis fainéant :
 faire et refaire des tâches ingrates (cqfd: automatisable) me répugne.
@@ -2194,16 +2318,23 @@ De plus, j'aime avoir une certaine assurance sur le code produit. (surtout sur l
 &lt;p&gt;Mon usage est de le cloner dans un projet mère et de supprimer le .git dès qu'il est suffisament mature.&lt;/p&gt;
 &lt;h2&gt;Assurance qualité (QA)&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Utilisation des linter : &lt;strong&gt;csslint&lt;/strong&gt; et &lt;strong&gt;eslint&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Utilisation des linter : &lt;strong&gt;csslint&lt;/strong&gt;, &lt;strong&gt;stylelint&lt;/strong&gt; et &lt;strong&gt;eslint&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;eslint est utilisé avec l'option &lt;strong&gt;fix&lt;/strong&gt; qui permet de corriger automatiquement les soucis rencontrés.&lt;/p&gt;
 &lt;p&gt;Csslint n'a malheureusement pas cette fonctionnalité.&lt;/p&gt;
+&lt;p&gt;StyleLint se distingue de Csslint en utilisant browserList.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;csscomb&lt;/strong&gt; : organise les instructions css&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;cssbeautify&lt;/strong&gt; : arange le css pour qu'il soit lisible : espacements et les indentations parfaitement respectées.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;cssbeautify&lt;/strong&gt; : arange le css pour qu'il soit lisible : espacements et les 
+indentations parfaitement respectées.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;autoprefixer&lt;/strong&gt; : plugin PostCSS qui ajoute les préfixes propres aux navigateurs.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2&gt;BrowserList&lt;/h2&gt;
+&lt;p&gt;Permet de définir quels navigateurs sont supportés.&lt;/p&gt;
+&lt;p&gt;Le package.json contient sa configuration.&lt;/p&gt;
+&lt;p&gt;Ca concerne les modules &lt;strong&gt;autoprefixer&lt;/strong&gt; et &lt;strong&gt;stylelint&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2&gt;Examples&lt;/h2&gt;
-&lt;p&gt;Pour donner un réel périmètre fonctionnel de cette stack, je créé au fur à mesure des fichiers d'exemples css, javascript et tags riot.
+&lt;p&gt;Pour donner un réel périmètre fonctionnel de cette stack, je créé au fur à mesure des fichiers d'exemples css, javascript et des composants Vue.js.
 Le but est bien évidement de démmarrer un nouveau projet avec de la matière.&lt;/p&gt;
 &lt;p&gt;Néanmoins, il est possible de partir, via une commande avec un projet vierge :&lt;/p&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;gulp clean&lt;/code&gt;&lt;/pre&gt;
@@ -2224,7 +2355,7 @@ Il faut:&lt;/p&gt;
 &lt;li&gt;&lt;a href="./nodejs.html"&gt;NodeJS&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="./gulp.html"&gt;Gulp&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="./babeljs.html"&gt;BabelJS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="./riotjs.html"&gt;RiotJS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="./vue.html"&gt;Vue&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="./postcss.html"&gt;PostCSS + CssNext&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Sublime text&lt;/h2&gt;
@@ -2255,6 +2386,13 @@ cd frontend_workflow&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;ol&gt;
+&lt;li&gt;On Crée les fichiers destiné à la prod :&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Transpilation, concatènation et minifification des fichiers via :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;gulp&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;ol&gt;
 &lt;li&gt;Avant de commiter, on déclenche un process d'&lt;strong&gt;assurance qualité&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Si l'on désire supprimer les fichiers d'exemples&lt;/p&gt;
@@ -2262,7 +2400,7 @@ cd frontend_workflow&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;Opération inverse (reafficher les exemples)&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;git checkout -- app/&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-frontend.html</guid><category>frontend</category><category>css</category><category>javascript</category></item><item><title>Ma stack Rust</title><link>https://mothsart.github.io/stack-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;git checkout -- app/&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 25 May 2017 00:16:44 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-frontend.html</guid><category>frontend</category><category>css</category><category>javascript</category></item><item><title>Ma stack Rust</title><link>https://mothsart.github.io/stack-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;En vrac, les outils que j'utilise et perfectionne dans mon apprentissage et mon utilisation du language &lt;strong&gt;Rust&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2&gt;MAJ de Rust&lt;/h2&gt;
 &lt;p&gt;On installe Rustup si il n'est pas présent :&lt;/p&gt;
@@ -2545,12 +2683,13 @@ Mais ne dit-on pas qu'&lt;strong&gt;un idiot qui marche va plus loin qu'un intel
 &lt;p&gt;Si on parcours le net, le résumé serait de dire qu'il existe 2 types de SGBD : les full SQL et les autres.
 En réalité, les bases SQL ont tellement monopolisé le marché qu'on aurait tendance à mettre toutes les autres architectures dans le grand panier &lt;strong&gt;ésotérique&lt;/strong&gt; du NoSQL.&lt;/p&gt;
 &lt;p&gt;Sauf qu'en étrapolent, un simple fichier .csv pourrait être du NoSQL.&lt;/p&gt;
-&lt;p&gt;il existe en réalité 4 grandes familles de NoSQL :&lt;/p&gt;
+&lt;p&gt;il existe en réalité 5 grandes familles de NoSQL :&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;base orientée &lt;strong&gt;document&lt;/strong&gt; : mongoDb, couchDb, Riack&lt;/li&gt;
+&lt;li&gt;base orientée &lt;strong&gt;document&lt;/strong&gt; : mongoDB, couchDB, Riack&lt;/li&gt;
 &lt;li&gt;base orientée &lt;strong&gt;clé/valeur&lt;/strong&gt; : Redis&lt;/li&gt;
-&lt;li&gt;base orientée &lt;strong&gt;graph&lt;/strong&gt; : Neo4JS, OrientDb&lt;/li&gt;
-&lt;li&gt;orienté &lt;strong&gt;object&lt;/strong&gt; :ZoDb&lt;/li&gt;
+&lt;li&gt;base orientée &lt;strong&gt;colonnes&lt;/strong&gt; : HBase, Cassandra&lt;/li&gt;
+&lt;li&gt;base orientée &lt;strong&gt;graph&lt;/strong&gt; : Neo4JS, OrientDB, HyperGrahDB, FlockDB&lt;/li&gt;
+&lt;li&gt;orienté &lt;strong&gt;object&lt;/strong&gt; :ZoDB&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Raison du Bench =&amp;gt; le caching&lt;/h2&gt;
 &lt;p&gt;Soyons clair, cet article ne cherche pas à promouvoir quoi que ce soit.
@@ -2605,7 +2744,7 @@ La participation peut être de différents ordre.
 Néanmoins, relancer d'un autre poste le banc de test et me témoigner des éventuels différences serait sans doute le point le plus
 entousiasmant!&lt;/p&gt;
 &lt;p&gt;Mes intentions sont d'apprendre, perfectionner, consolider ou confronter mes acquis et je tolererais sans sourciller les critiques "constructives".&lt;/p&gt;
-&lt;p&gt;L'intérêt étant justement la remise en question, l'apprentissage et l'ouverture d'esprit.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-02-14:db-bench.html</guid><category>sql</category><category>db</category><category>bench</category><category>benchmark</category></item><item><title>Labo du dev frontend</title><link>https://mothsart.github.io/labo-du-dev-frontend.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;L'intérêt étant justement la remise en question, l'apprentissage et l'ouverture d'esprit.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 25 May 2017 00:16:44 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-02-14:db-bench.html</guid><category>sql</category><category>db</category><category>bench</category><category>benchmark</category></item><item><title>Labo du dev frontend</title><link>https://mothsart.github.io/labo-du-dev-frontend.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Afin de perfectionner mes connaissances et mes acquis dans le dev frontend, j'entreprend ici de tester des libs tel que:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;postcss&lt;/li&gt;

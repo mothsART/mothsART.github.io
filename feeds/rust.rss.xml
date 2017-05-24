@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 12 Apr 2017 13:19:26 +0200</lastBuildDate><item><title>Utiliser des logs avec Rust</title><link>https://mothsart.github.io/logs-rust.html</link><description>&lt;h2&gt;Utiliser les logs en Rust (encore en brouillon)&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 12 Apr 2017 13:19:26 +0200</lastBuildDate><item><title>Stratego</title><link>https://mothsart.github.io/stratego.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;J'aime beaucoup le jeu de plateau &lt;strong&gt;Stratego&lt;/strong&gt;.
+N'ayant rien trouvé dans le périmètre des logiciels libres permettant de jouer à ce jeu, j'ai décidé de le créer.&lt;/p&gt;
+&lt;h2&gt;Ma stack&lt;/h2&gt;
+&lt;p&gt;Rust avec Rocket.rs, Vue.js, mgsPack, axios.&lt;/p&gt;
+&lt;h2&gt;Les objectifs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;séparation client/serveur&lt;/li&gt;
+&lt;li&gt;utilisation sous diverses formes : cli, web, gtk etc.&lt;/li&gt;
+&lt;li&gt;multi-joueur&lt;/li&gt;
+&lt;li&gt;une vrai IA&lt;/li&gt;
+&lt;li&gt;supporte la monté en charge&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Algos utilisés&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;probabilité conditionnel&lt;/li&gt;
+&lt;li&gt;Base de connaissances et de règles&lt;/li&gt;
+&lt;li&gt;réseaux de neuronnes et deep learning&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:stratego.html</guid><category>rust</category><category>vue.js</category><category>stratego</category></item><item><title>Utiliser des logs avec Rust</title><link>https://mothsart.github.io/logs-rust.html</link><description>&lt;h2&gt;Utiliser les logs en Rust (encore en brouillon)&lt;/h2&gt;
 &lt;p&gt;Sur n'importe quel soft sérieux, les logs sont innévitables.
 Voici mes experimentations dans le logging en Rust.&lt;/p&gt;
 &lt;h2&gt;La variable RUST_LOG&lt;/h2&gt;
