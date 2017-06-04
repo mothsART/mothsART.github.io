@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Sat, 27 May 2017 16:39:14 +0200</lastBuildDate><item><title>Can I Diff</title><link>https://mothsart.github.io/can-i-diff.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Sun, 04 Jun 2017 12:59:29 +0200</lastBuildDate><item><title>Can I Diff</title><link>https://mothsart.github.io/can-i-diff.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Un développeur passe son temps à utiliser des différentiels pour déterminer rapidement ce qui a changé dans un ou plusieurs fichiers.&lt;/p&gt;
 &lt;p&gt;Le plus commun est bien entendu la commande diff, particulièrement décocratisé à partir de &lt;strong&gt;git diff&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2&gt;diff et cmd&lt;/h2&gt;
@@ -76,7 +76,7 @@ https://framasoft.org/&lt;/p&gt;
 &lt;p&gt;https://primtux.fr/
 http://abuledu-fr.org/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:deggoglelison-eductation-numerique.html</guid><category>google</category><category>gafam</category><category>education</category><category>numérique</category></item><item><title>Domotique</title><link>https://mothsart.github.io/domotique.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Utiliser l'API de free pour envoyer des SMS : http://www.domotique-info.fr/2014/06/nouvelle-api-sms-chez-free/&lt;/p&gt;
-&lt;p&gt;idées =&amp;gt; https://www.free-sms-tools.fr/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 27 May 2017 16:39:14 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:domotique.html</guid></item><item><title>Micro-services</title><link>https://mothsart.github.io/micro-services.html</link><description>&lt;h2&gt;Les Micro-services pour les nuls&lt;/h2&gt;
+&lt;p&gt;idées =&amp;gt; https://www.free-sms-tools.fr/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 04 Jun 2017 12:43:05 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:domotique.html</guid></item><item><title>Micro-services</title><link>https://mothsart.github.io/micro-services.html</link><description>&lt;h2&gt;Les Micro-services pour les nuls&lt;/h2&gt;
 &lt;h2&gt;Source&lt;/h2&gt;
 &lt;p&gt;https://ziade.org/2016/10/03/web-services-best-practices/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:micro-services.html</guid><category>micro-services</category></item><item><title>Utiliser Rust sur la PI</title><link>https://mothsart.github.io/rust-sur-pi.html</link><description>&lt;h2&gt;Utiliser Rust sur la PI&lt;/h2&gt;
 &lt;p&gt;http://f4b1.com/raspberry-pi/comment-installer-rust-sur-un-raspberry-pi-3&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:rust-sur-pi.html</guid><category>raspberry rust</category></item><item><title>Stratego</title><link>https://mothsart.github.io/stratego.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
@@ -865,7 +865,107 @@ Constat actuel : l'utilisateur est dépendant de G.A.F.A.M (Google, Apple, FaceB
 &lt;h2&gt;Les grandes lignes&lt;/h2&gt;
 &lt;p&gt;https://developer.ubuntu.com/en/phone/web/tutorials/web-app-tutorial/
 https://developer.ubuntu.com/api/devel/ubuntu-13.10/javascript/web-docs/
-https://developer.ubuntu.com/api/devel/ubuntu-13.10/javascript/web-docs/unity-web-api-reference.html&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-15:dev-webapp-ubuntu.html</guid><category>ubuntu</category><category>linux</category><category>dev</category></item><item><title>Independance logiciel</title><link>https://mothsart.github.io/independance-logiciel.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-15:independance-logiciel.html</guid></item><item><title>Développement Ubuntu</title><link>https://mothsart.github.io/ubuntu-dev.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+https://developer.ubuntu.com/api/devel/ubuntu-13.10/javascript/web-docs/unity-web-api-reference.html&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-15:dev-webapp-ubuntu.html</guid><category>ubuntu</category><category>linux</category><category>dev</category></item><item><title>Independance logiciel</title><link>https://mothsart.github.io/independance-logiciel.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-15:independance-logiciel.html</guid></item><item><title>The QuiZz : Partie 3</title><link>https://mothsart.github.io/the-quizz-part-3.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;L'aventure de &lt;strong&gt;The Quizzz&lt;/strong&gt; ce poursuis.
+Le temps a passé et les objectifs se sont affinés.&lt;/p&gt;
+&lt;p&gt;Ca m'a permis de tester et promouvoir de nouvelles technos que je vous communiques.&lt;/p&gt;
+&lt;h2&gt;Utilisation d'un ORM&lt;/h2&gt;
+&lt;p&gt;Comme convenu, on passe à l'étape supérieur avec un ORM digne d'intérêt : &lt;a href="http://diesel.rs/"&gt;Diesel&lt;/a&gt; !&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;echo DATABASE_URL=postgresql://postgres@localhost &amp;gt; .env&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Plus de code passe partout, excepté quand on utilise des routines spécifique à une base de donnée !&lt;/p&gt;
+&lt;p&gt;Voici les requètes Diesel&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-rust"&gt;/// Chercher une question aléatoire
+fn get_question(&amp;amp;mut self) -&amp;gt; Question {
+    no_arg_sql_function!(random, types::VarChar);
+    let query_fragment = questions.limit(1).order(random);
+    info!(&amp;quot;{:?}&amp;quot;, &amp;amp;debug_sql!(query_fragment));
+    let b = query_fragment.first(&amp;amp;self.connection).unwrap();
+    b
+}
+/// Donner le résultat d'une question filtré par son id
+fn get_response(&amp;amp;mut self, question: Question) -&amp;gt; bool {
+    let r = questions.filter(id.eq(question.id)).limit(1).load::&amp;lt;Question&amp;gt;(&amp;amp;self.connection).unwrap();
+    info!(&amp;quot;{:?}&amp;quot;, r[0].response);
+    r[0].response
+}&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Frontend 1 : passage de Riot.js à Vue.js&lt;/h2&gt;
+&lt;p&gt;Vue.js est le must du framework web en frontend et mon intérêt va croissant.
+(Angular et React ne m'ayant jamais enthousiasmé).&lt;/p&gt;
+&lt;p&gt;Riot est uniquement orienté composant alors que Vue non.
+J'ai été convaincu par : http://sametmax.com/vue-jlavais-pas-vu/&lt;/p&gt;
+&lt;h2&gt;Frontend 2 : passage de Jquery à Axios et Vanilla&lt;/h2&gt;
+&lt;p&gt;Pour Jquery, c'est une dépendance qui est, à mon sens, de plus en plus inutile.
+Pour l'aspect Ajax, j'utiliserais &lt;strong&gt;Axios&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Axios ne sert qu'à de l'ajax et le fait bien. De plus, il permet des échanges binaires là ou Jquery a bien du mal... (jamais réussi à désérialiser un flux MessagePack)&lt;/p&gt;
+&lt;h2&gt;Frontend 3 : passage de Twitter Boostrap à Materialize&lt;/h2&gt;
+&lt;p&gt;J'aime beaucoup l'approche de google avec Materialize : donner un cadre précis à l'ergonomie et peaufiner autours.&lt;/p&gt;
+&lt;p&gt;Le projet est jeune, je n'utilise volontairement que la partie css (le js utilise jquery comme dépendance et ça me semble surfait) mais j'aime vraiment l'idée.&lt;/p&gt;
+&lt;h2&gt;Backend : passage de Iron à Rocket.rs&lt;/h2&gt;
+&lt;p&gt;Iron est un des tout premier Framework web en Rust.&lt;/p&gt;
+&lt;p&gt;Son implémentation à débuté bien avant que le langage Rust se stabilise.&lt;/p&gt;
+&lt;p&gt;Il a par conséquent des soucis d'architecture difficilement réparable et son développement est plus ou moins au point mort.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://rocket.rs/"&gt;Rocket.rs&lt;/a&gt;&lt;/strong&gt; est un nouveau projet prometteur avec une API simple et fonctionnel.&lt;/p&gt;
+&lt;p&gt;Une approche proche de Flask (référence à la communauté Python), des exemples à foison etc.&lt;/p&gt;
+&lt;h2&gt;Utilisation de MessagePack plutôt que Json&lt;/h2&gt;
+&lt;p&gt;MessagePack est à mon goût trop peu connu.
+C'est un format de sérialisation binaire compact, avec des outils de sérialisation/désérialisation rapide (bien plus que Json =&amp;gt; &lt;a href="./ce-nest-quun-au-revoir-json.html"&gt;mon analyse sur le format&lt;/a&gt;) &lt;/p&gt;
+&lt;p&gt;Voici un example probant :&lt;/p&gt;
+&lt;p&gt;code Javascript :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-javascript"&gt;function r() {
+  axios.post(
+    '/r', null,
+    {
+      responseType: 'blob',
+      headers: {'Content-Type': 'application/msgpack; charset=utf-8'}
+    }
+  ).then(function(response) {
+    var reader = new FileReader();
+    reader.onload = function (e) {
+        var pack = msgpack.decode(new Uint8Array(reader.result));
+        console.log(pack);
+    }
+    reader.readAsArrayBuffer(response.data);
+  });
+}&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;code Rust :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-rust"&gt;#[derive(Serialize)]
+pub struct MsgPackResponse {
+    pub compact: bool,
+    pub schema: i32,
+    pub text  : String
+}
+
+#[post(&amp;quot;/&amp;quot;, format = &amp;quot;application/msgpack&amp;quot;)]
+fn r() -&amp;gt; MsgPack&amp;lt;MsgPackResponse&amp;gt; {
+    let response = MsgPackResponse {
+        compact: true,
+        schema :  0,
+        text   : &amp;quot;hello msgPack !&amp;quot;.to_string()
+    };
+    MsgPack(response)
+}&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Peaufinement de ma stack&lt;/h2&gt;
+&lt;p&gt;J'ai changé pas mal de détails sur ma &lt;a href="stack-frontend.html"&gt;stack&lt;/a&gt; dont nottament le passage à Vue.js...&lt;/p&gt;
+&lt;p&gt;Néanmoins, je projettes de l'améliorer sensiblement encore dans les mois qui viennent en rajoutant du code Rust et autre.
+Le But étant d'avoir un vrai template clé en main pour démarrer un nouveau projet !&lt;/p&gt;
+&lt;h2&gt;Prochain article&lt;/h2&gt;
+&lt;p&gt;J'ai pas vraiment décidé qu'elle serait la future piste à explorer mais j'ai plusieurs points qui me sont cher :&lt;/p&gt;
+&lt;h3&gt;interface en GTK&lt;/h3&gt;
+&lt;p&gt;Et oui, travailler des UI différentes pour le même projet (avec un coeur commn) me parait une bonne idée.&lt;/p&gt;
+&lt;p&gt;Et puis &lt;a href="http://gtk-rs.org/"&gt;GTK.rs&lt;/a&gt; commence à murrir.&lt;/p&gt;
+&lt;h3&gt;Répétition espacée&lt;/h3&gt;
+&lt;p&gt;Dans le prochain article, je vais me concentrer sur la mise en place d'un algorithme de répétion espacée.
+(https://fr.wikipedia.org/wiki/R%C3%A9p%C3%A9tition_espac%C3%A9e)&lt;/p&gt;
+&lt;p&gt;L'idée derrière cet algo est d'améliorer les connaissances de l'utilisateur en travaillant sur ses faiblesses et non sur ces acquis.&lt;/p&gt;
+&lt;h3&gt;i18n sur la partie Web&lt;/h3&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 04 Jun 2017 12:59:29 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-15:the-quizz-part-3.html</guid><category>rust diesel</category></item><item><title>Développement Ubuntu</title><link>https://mothsart.github.io/ubuntu-dev.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Ubuntu est une distro vraiment agréable. Même si ces detracteurs lui reproche pas mal de choses : Unity au lieu de gnome shell, Mir au lieu de Wayland etc.&lt;/p&gt;
 &lt;p&gt;Même si je n'approuve pas tous leurs choix, je trouve néanmoins qu'il y a plein de bonnes idées.&lt;/p&gt;
 &lt;h2&gt;Les idées intéressantes&lt;/h2&gt;
@@ -1195,7 +1295,7 @@ Tux Typing&lt;/p&gt;
 &lt;h2&gt;Logiciels On-line&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www.logicieleducatif.fr"&gt;http://www.logicieleducatif.fr&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://ecole.edulibre.org"&gt;http://ecole.edulibre.org&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://cyrille.largillier.org/cours_numerique"&gt;http://cyrille.largillier.org/cours_numerique&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 27 May 2017 14:50:18 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:projets-libre-educatif.html</guid><category>libre</category><category>linux</category><category>éduatif</category></item><item><title>Windows vs Linux</title><link>https://mothsart.github.io/windows-vs-linux.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://cyrille.largillier.org/cours_numerique"&gt;http://cyrille.largillier.org/cours_numerique&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 04 Jun 2017 12:43:05 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:projets-libre-educatif.html</guid><category>libre</category><category>linux</category><category>éduatif</category></item><item><title>Windows vs Linux</title><link>https://mothsart.github.io/windows-vs-linux.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Comparer Windows à Linux c'est comme comparer &lt;/p&gt;
 &lt;h2&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:windows-vs-linux.html</guid><category>windows</category><category>linux</category></item><item><title>Macros rust</title><link>https://mothsart.github.io/macros-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;h3&gt;println!&lt;/h3&gt;

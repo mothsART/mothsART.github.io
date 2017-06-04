@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Sat, 27 May 2017 14:50:18 +0200</lastBuildDate><item><title>Can I Diff</title><link>https://mothsart.github.io/can-i-diff.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Sun, 04 Jun 2017 12:43:05 +0200</lastBuildDate><item><title>Can I Diff</title><link>https://mothsart.github.io/can-i-diff.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Un développeur passe son temps à utiliser des différentiels pour déterminer rapidement ce qui a changé dans un ou plusieurs fichiers.&lt;/p&gt;
 &lt;p&gt;Le plus commun est bien entendu la commande diff, particulièrement décocratisé à partir de &lt;strong&gt;git diff&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2&gt;diff et cmd&lt;/h2&gt;
@@ -511,7 +511,7 @@ Tux Typing&lt;/p&gt;
 &lt;h2&gt;Logiciels On-line&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www.logicieleducatif.fr"&gt;http://www.logicieleducatif.fr&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://ecole.edulibre.org"&gt;http://ecole.edulibre.org&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://cyrille.largillier.org/cours_numerique"&gt;http://cyrille.largillier.org/cours_numerique&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 27 May 2017 14:50:18 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:projets-libre-educatif.html</guid><category>libre</category><category>linux</category><category>éduatif</category></item><item><title>J'aime pas Apple</title><link>https://mothsart.github.io/dislike-apple.html</link><description>&lt;h2&gt;Mon usage de IOS&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://cyrille.largillier.org/cours_numerique"&gt;http://cyrille.largillier.org/cours_numerique&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 04 Jun 2017 12:43:05 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:projets-libre-educatif.html</guid><category>libre</category><category>linux</category><category>éduatif</category></item><item><title>J'aime pas Apple</title><link>https://mothsart.github.io/dislike-apple.html</link><description>&lt;h2&gt;Mon usage de IOS&lt;/h2&gt;
 &lt;p&gt;Autant le dire de façon clair : je n'aime pas (et n'ai jamais aimé) Apple.
 J'ai du travaillé sur support IOs au boulot et j'ai vraiment essayé de me contre-dire.&lt;/p&gt;
 &lt;p&gt;J'ai une tablette archos Android (- de 100€) @home sans doute mal configuré (y'a des jeux, des applis à gogos) qui tourne en définitive mieux que des tablettes Apple fraichement acheté au prix fort!&lt;/p&gt;
