@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -37,33 +37,34 @@
                 Load examples : <span class="caret"></span>
               </button>
               <ul class="dropdown-menu">
-                <li onclick="load_example('../examples/campement.min.svg', 'campement.min.svg (example)');">
+                <li onclick="load_example('./examples/campement.min.svg', 'campement.min.svg (example)');">
                   campement.min.svg
                 </li>
-                <li onclick="load_example('../examples/campement_with_cross.min.svg', 'campement_with_cross.min.svg (example)');">
+                <li onclick="load_example('./examples/campement_with_cross.min.svg', 'campement_with_cross.min.svg (example)');">
                   campement_with_cross.min.svg
                 </li>
-                <li onclick="load_example('../examples/landscape1.svg', 'landscape1.svg (example)');">
+                <li onclick="load_example('./examples/organes.min.svg', 'organes.min.svg (example)');">
+                  organes.min.svg
+                </li>
+                <li onclick="load_example('./examples/landscape1.svg', 'landscape1.svg (example)');">
                   landscape1.svg&nbsp;(300x200)
                 </li>
-                <li onclick="load_example('../examples/landscape2.svg', 'landscape2.svg (example)');">
+                <li onclick="load_example('./examples/landscape2.svg', 'landscape2.svg (example)');">
                   landscape2.svg&nbsp;(600x200)
                 </li>
-                <li onclick="load_example('../examples/portrait1.svg', 'portrait1.svg (example)');">
+                <li onclick="load_example('./examples/portrait1.svg', 'portrait1.svg (example)');">
                   portrait1.svg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(200x300)
                 </li>
-                <li onclick="load_example('../examples/portrait2.svg', 'portrait2.svg (example)');">
+                <li onclick="load_example('./examples/portrait2.svg', 'portrait2.svg (example)');">
                   portrait2.svg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(200x600)
                 </li>
               </ul>
             </div>
           </li>
           <li>
-            <form class="save">
-              <button type="submit" id="save-form" class="btn btn-default btn-xs disabled">
-                <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> Save
-              </button>
-            </form>
+            <button onclick="export_html();" id="save-form" class="btn btn-default btn-xs disabled">
+              <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> Save
+            </button>
           </li>
           <li>
             <button class="btn btn-default btn-xs" data-toggle="modal" data-target=".bs-about-modal-sm">
@@ -118,22 +119,8 @@
         <div class="box__error">Error! Try again!</div>
       </form>
     </div>
-    <section id="real-legend" class="hidden">
-      <label id="real-template-indice" class="indice hidden" onclick="real_zoom(this);">
-          <span>0</span>
-          <em></em>
-      </label>
-    </section>
     <div id="edit-zone" class="hidden">
       <div id="svg" class="edit-mode">
-        <!--<section id="indices">
-          <article id="template-indice">
-            <div onmouseout="indice_out(this);" class="indice hidden" id="indice-1" data-zoom="100">
-              0
-            </div>
-          </article>
-        </section>
-        -->
         <section id="descriptions">
           <article id="template-description" class="description hidden">
             <h2>
@@ -145,14 +132,18 @@
           </article>
       </section>
         <div id="frame">
-          <div id="content" data-full="false">
-          </div>
-        </div>
-      </div>
-      <div id="delete-content" class="container-fluid">
-          <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target=".bs-delete-picture-modal-sm">
+          <button id="delete-svg" type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target=".bs-delete-picture-modal-sm">
             <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> Delete
           </button>
+          <div id="content" data-full="false">
+            <section id="real-legend" class="hidden">
+              <label id="real-template-indice" class="indice hidden" onclick="real_zoom(this);">
+                  <span>0</span>
+                  <em></em>
+              </label>
+            </section>
+          </div>
+        </div>
       </div>
       <div id="sidebar">
           <div id="legend-container" class="container-fluid">
@@ -245,12 +236,12 @@
           </div>
           <div id="about">
             <details>
-              <summary><strong>Edit interactive SVG</strong> (0.2)</summary>
+              <summary><strong>Edit interactive SVG</strong> (0.3)</summary>
               <p>Edit a static SVG with legend and description to be an interactive content.</p>
               <p>In order to be the most relevant, it is possible to add zooms to focus on a particular element.</p>
             </details>
             <details>
-              <summary>Exemples</summary>
+              <summary>Examples</summary>
               <ul>
                 <li><a href="https://mothsart.github.io/labo/frontend/interactive_svg" target="_blank">Paléolithique</a></li>
               </ul>

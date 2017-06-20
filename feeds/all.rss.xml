@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Sun, 04 Jun 2017 12:59:29 +0200</lastBuildDate><item><title>Can I Diff</title><link>https://mothsart.github.io/can-i-diff.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Fri, 09 Jun 2017 19:52:30 +0200</lastBuildDate><item><title>Binaire</title><link>https://mothsart.github.io/binaire.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;h1&gt;Utilitaire&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;file de libmagic&lt;/li&gt;
+&lt;li&gt;hachoir&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;strings&lt;/p&gt;
+&lt;h1&gt;!bash&lt;/h1&gt;
+&lt;p&gt;strings ghostbusters-1_13.spk | head -n 10&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;okteta&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;hexdump&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;http://linuxfr.org/users/pied/journaux/an-unexpected-linux-reverse-engineering&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-06-07:binaire.html</guid><category>binaire</category></item><item><title>Can I Diff</title><link>https://mothsart.github.io/can-i-diff.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Un développeur passe son temps à utiliser des différentiels pour déterminer rapidement ce qui a changé dans un ou plusieurs fichiers.&lt;/p&gt;
 &lt;p&gt;Le plus commun est bien entendu la commande diff, particulièrement décocratisé à partir de &lt;strong&gt;git diff&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2&gt;diff et cmd&lt;/h2&gt;
@@ -76,7 +92,7 @@ https://framasoft.org/&lt;/p&gt;
 &lt;p&gt;https://primtux.fr/
 http://abuledu-fr.org/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:deggoglelison-eductation-numerique.html</guid><category>google</category><category>gafam</category><category>education</category><category>numérique</category></item><item><title>Domotique</title><link>https://mothsart.github.io/domotique.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Utiliser l'API de free pour envoyer des SMS : http://www.domotique-info.fr/2014/06/nouvelle-api-sms-chez-free/&lt;/p&gt;
-&lt;p&gt;idées =&amp;gt; https://www.free-sms-tools.fr/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 04 Jun 2017 12:43:05 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:domotique.html</guid></item><item><title>Micro-services</title><link>https://mothsart.github.io/micro-services.html</link><description>&lt;h2&gt;Les Micro-services pour les nuls&lt;/h2&gt;
+&lt;p&gt;idées =&amp;gt; https://www.free-sms-tools.fr/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 04 Jun 2017 13:07:33 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:domotique.html</guid></item><item><title>Micro-services</title><link>https://mothsart.github.io/micro-services.html</link><description>&lt;h2&gt;Les Micro-services pour les nuls&lt;/h2&gt;
 &lt;h2&gt;Source&lt;/h2&gt;
 &lt;p&gt;https://ziade.org/2016/10/03/web-services-best-practices/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:micro-services.html</guid><category>micro-services</category></item><item><title>Utiliser Rust sur la PI</title><link>https://mothsart.github.io/rust-sur-pi.html</link><description>&lt;h2&gt;Utiliser Rust sur la PI&lt;/h2&gt;
 &lt;p&gt;http://f4b1.com/raspberry-pi/comment-installer-rust-sur-un-raspberry-pi-3&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:rust-sur-pi.html</guid><category>raspberry rust</category></item><item><title>Stratego</title><link>https://mothsart.github.io/stratego.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
@@ -122,11 +138,19 @@ On évite principalement les soucis liés aux dépendances.&lt;/p&gt;
 &lt;p&gt;Chrome et Firefox ont une extension pour travailler avec Vue!&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
+&lt;p&gt;la plupart des éditeurs ont des extensions adaptés.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
 &lt;p&gt;applis smartphones natives : https://weex.apache.org/&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Bench avec&lt;/h2&gt;
-&lt;p&gt;https://rawgit.com/krausest/js-framework-benchmark/master/webdriver-ts/table.html&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:vue.js.html</guid><category>javascript</category><category>framework</category><category>vue</category><category>vue.js</category></item><item><title>I18n</title><link>https://mothsart.github.io/i18n.html</link><description>&lt;h2&gt;Créer un fichier pot à partir de sources Python&lt;/h2&gt;
+&lt;p&gt;https://rawgit.com/krausest/js-framework-benchmark/master/webdriver-ts/table.html&lt;/p&gt;
+&lt;h2&gt;Doc&lt;/h2&gt;
+&lt;p&gt;http://maurice-chavelli.developpez.com/javascript/vue-js-1-bases/&lt;/p&gt;
+&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;Un condensé de tout ce qui se fait de mieux autours de Vue.js (composants, examples, tutos, ) :&lt;/p&gt;
+&lt;p&gt;https://github.com/vuejs/awesome-vue&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 05 Jun 2017 11:50:49 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:vue.js.html</guid><category>javascript</category><category>framework</category><category>vue</category><category>vue.js</category></item><item><title>I18n</title><link>https://mothsart.github.io/i18n.html</link><description>&lt;h2&gt;Créer un fichier pot à partir de sources Python&lt;/h2&gt;
 &lt;pre class="highlight"&gt;&lt;code&gt;!bash
 pygettext -o monsterz.pot ./monsterz.py&lt;/code&gt;&lt;/pre&gt;
 
@@ -959,13 +983,13 @@ Le But étant d'avoir un vrai template clé en main pour démarrer un nouveau pr
 &lt;h2&gt;Prochain article&lt;/h2&gt;
 &lt;p&gt;J'ai pas vraiment décidé qu'elle serait la future piste à explorer mais j'ai plusieurs points qui me sont cher :&lt;/p&gt;
 &lt;h3&gt;interface en GTK&lt;/h3&gt;
-&lt;p&gt;Et oui, travailler des UI différentes pour le même projet (avec un coeur commn) me parait une bonne idée.&lt;/p&gt;
+&lt;p&gt;Et oui, travailler des UI différentes pour le même projet (avec un coeur commun) me parait une bonne idée.&lt;/p&gt;
 &lt;p&gt;Et puis &lt;a href="http://gtk-rs.org/"&gt;GTK.rs&lt;/a&gt; commence à murrir.&lt;/p&gt;
 &lt;h3&gt;Répétition espacée&lt;/h3&gt;
 &lt;p&gt;Dans le prochain article, je vais me concentrer sur la mise en place d'un algorithme de répétion espacée.
 (https://fr.wikipedia.org/wiki/R%C3%A9p%C3%A9tition_espac%C3%A9e)&lt;/p&gt;
 &lt;p&gt;L'idée derrière cet algo est d'améliorer les connaissances de l'utilisateur en travaillant sur ses faiblesses et non sur ces acquis.&lt;/p&gt;
-&lt;h3&gt;i18n sur la partie Web&lt;/h3&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 04 Jun 2017 12:59:29 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-15:the-quizz-part-3.html</guid><category>rust diesel</category></item><item><title>Développement Ubuntu</title><link>https://mothsart.github.io/ubuntu-dev.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;h3&gt;i18n sur la partie Web&lt;/h3&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 04 Jun 2017 13:58:11 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-15:the-quizz-part-3.html</guid><category>rust diesel</category></item><item><title>Développement Ubuntu</title><link>https://mothsart.github.io/ubuntu-dev.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Ubuntu est une distro vraiment agréable. Même si ces detracteurs lui reproche pas mal de choses : Unity au lieu de gnome shell, Mir au lieu de Wayland etc.&lt;/p&gt;
 &lt;p&gt;Même si je n'approuve pas tous leurs choix, je trouve néanmoins qu'il y a plein de bonnes idées.&lt;/p&gt;
 &lt;h2&gt;Les idées intéressantes&lt;/h2&gt;
@@ -1295,7 +1319,7 @@ Tux Typing&lt;/p&gt;
 &lt;h2&gt;Logiciels On-line&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www.logicieleducatif.fr"&gt;http://www.logicieleducatif.fr&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://ecole.edulibre.org"&gt;http://ecole.edulibre.org&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://cyrille.largillier.org/cours_numerique"&gt;http://cyrille.largillier.org/cours_numerique&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 04 Jun 2017 12:43:05 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:projets-libre-educatif.html</guid><category>libre</category><category>linux</category><category>éduatif</category></item><item><title>Windows vs Linux</title><link>https://mothsart.github.io/windows-vs-linux.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://cyrille.largillier.org/cours_numerique"&gt;http://cyrille.largillier.org/cours_numerique&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 04 Jun 2017 13:07:33 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:projets-libre-educatif.html</guid><category>libre</category><category>linux</category><category>éduatif</category></item><item><title>Windows vs Linux</title><link>https://mothsart.github.io/windows-vs-linux.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Comparer Windows à Linux c'est comme comparer &lt;/p&gt;
 &lt;h2&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:windows-vs-linux.html</guid><category>windows</category><category>linux</category></item><item><title>Macros rust</title><link>https://mothsart.github.io/macros-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;h3&gt;println!&lt;/h3&gt;
@@ -2559,6 +2583,7 @@ Nécessite et utilise : &lt;strong&gt;&lt;a href="https://github.com/rust-lang-n
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://play.rust-lang.org"&gt;editeur&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.tutorialspoint.com/compile_rust_online.php"&gt;editeur multi-fichiers&lt;/a&gt; : permet d'éditer, compiler et exécuter des projets complets (répartis sur plusieurs fichiers) tout en proposant des outils d'import et d'export&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://rust.godbolt.org"&gt;Un autre éditeur&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://rust.godbolt.org"&gt;compilateur GCC&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;&lt;a href="#cargo-graph"&gt;Cargo graph&lt;/a&gt;&lt;/h2&gt;
@@ -2636,7 +2661,7 @@ Il subsite donc des erreurs à l'exécution : pour les débusquer, &lt;strong&gt
 
 &lt;p&gt;https://github.com/mmstick/cargo-deb&lt;/p&gt;
 &lt;h2&gt;En vrac&lt;/h2&gt;
-&lt;p&gt;http://rust.developpez.com/faq&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:19:26 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-rust.html</guid><category>rust</category></item><item><title>Pourquoi je boude Node.Js</title><link>https://mothsart.github.io/pourquoi-je-boude-nodejs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;http://rust.developpez.com/faq&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 09 Jun 2017 19:52:30 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-rust.html</guid><category>rust</category></item><item><title>Pourquoi je boude Node.Js</title><link>https://mothsart.github.io/pourquoi-je-boude-nodejs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;NodeJS est à la mode.
 Quand je parle de NodeJS, je parle bien entendu de toute la mouvance autours de Javascript.&lt;/p&gt;
 &lt;p&gt;Le principe :

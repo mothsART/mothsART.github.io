@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Thu, 25 May 2017 00:16:44 +0200</lastBuildDate><item><title>Vue.js</title><link>https://mothsart.github.io/vue.js.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Mon, 05 Jun 2017 11:50:49 +0200</lastBuildDate><item><title>Vue.js</title><link>https://mothsart.github.io/vue.js.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Pour diverses raisons, j'ai choisi Vue.js comme nouveau framework web.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Chrome et Firefox ont une extension pour travailler avec Vue!&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
+&lt;p&gt;la plupart des éditeurs ont des extensions adaptés.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
 &lt;p&gt;applis smartphones natives : https://weex.apache.org/&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Bench avec&lt;/h2&gt;
-&lt;p&gt;https://rawgit.com/krausest/js-framework-benchmark/master/webdriver-ts/table.html&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:vue.js.html</guid><category>javascript</category><category>framework</category><category>vue</category><category>vue.js</category></item><item><title>CanIuse</title><link>https://mothsart.github.io/caniuse.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;https://rawgit.com/krausest/js-framework-benchmark/master/webdriver-ts/table.html&lt;/p&gt;
+&lt;h2&gt;Doc&lt;/h2&gt;
+&lt;p&gt;http://maurice-chavelli.developpez.com/javascript/vue-js-1-bases/&lt;/p&gt;
+&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;Un condensé de tout ce qui se fait de mieux autours de Vue.js (composants, examples, tutos, ) :&lt;/p&gt;
+&lt;p&gt;https://github.com/vuejs/awesome-vue&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 05 Jun 2017 11:50:49 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:vue.js.html</guid><category>javascript</category><category>framework</category><category>vue</category><category>vue.js</category></item><item><title>CanIuse</title><link>https://mothsart.github.io/caniuse.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;S'il on veut utiliser une propriété css/js/html ou une api Html5 et être certain que ça fonctionne sur notre nagivateur, le réflexe c'est caniuse.com&lt;/p&gt;
 &lt;p&gt;Mais s'il on veut étayer son argumentaire, le mieux est de passer par les sites des 3 gros navigateurs :&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/shapes"&gt;IE et Edge&lt;/a&gt;&lt;/p&gt;
