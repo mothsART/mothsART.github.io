@@ -1,5 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Fri, 09 Jun 2017 19:52:30 +0200</lastBuildDate><item><title>Binaire</title><link>https://mothsart.github.io/binaire.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Fri, 09 Jun 2017 19:52:30 +0200</lastBuildDate><item><title>Phonectic Lab</title><link>https://mothsart.github.io/phonetic-lab.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Ce projet est un banc de test autours des principes de la phonétic et des moteurs de recherche se basant sur ces algorithmes.&lt;/p&gt;
+&lt;p&gt;L'idée est de comparer les différents algorithmes de distance (Jaro, Levenstein) et d'en déterminer des éventuels heuristiques :
+selon certaines conditions, on utilisera un algorithme plutôt qu'un autre afin de proposer dans un ensemble de recherche, des performances optimales.&lt;/p&gt;
+&lt;p&gt;Ce banc de test permettra également de comparer les performances brutes de plusieurs moteurs de base de données : SQL et NoSQL.&lt;/p&gt;
+&lt;p&gt;Des benchmarks en situations "réels" me permettrons d'en tirer des conclusions. (peut-être inédites)&lt;/p&gt;
+&lt;p&gt;Enfin, il me permettra de tester mon propre moteur de phonétic dédié à la langue française !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-07-09:phonetic-lab.html</guid><category>phonetic</category><category>distance</category><category>rust</category></item><item><title>Algos de distances et de phonetique</title><link>https://mothsart.github.io/algos-distance-phonetique.html</link><description>&lt;h2&gt;Distance et algos de phonetic&lt;/h2&gt;
+&lt;h2&gt;Définition de la Distance&lt;/h2&gt;
+&lt;p&gt;Les algorithmes de distance vont comparer 2 chaines afin de déterminer leur &lt;strong&gt;pourcentage de ressemblance&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;Algos de distances&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Jaro (à priori : plus rapide que levenstein sur des petites chaines de caractères)&lt;/li&gt;
+&lt;li&gt;Hamming&lt;/li&gt;
+&lt;li&gt;Levenstein&lt;/li&gt;
+&lt;li&gt;Damerau Levenstein&lt;/li&gt;
+&lt;li&gt;Sift 1 à 4 : un algo de distance plus rapide que Levenstein :
+https://siderite.blogspot.com/2014/11/super-fast-and-accurate-string-distance.html&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Intérêt d'un algo de distance (quand on l'utilise) ?&lt;/h3&gt;
+&lt;p&gt;Dans une requète SQL (en général sous forme de procédure stockée) : permet de filtrer les recherches selon un certain pourcentage de ressemblance.&lt;/p&gt;
+&lt;h2&gt;Définition de la Phonetique&lt;/h2&gt;
+&lt;h3&gt;Algos de phonetic&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Soundex (https://en.wikipedia.org/wiki/Soundex)&lt;/li&gt;
+&lt;li&gt;Metaphone (https://en.wikipedia.org/wiki/Metaphone)&lt;/li&gt;
+&lt;li&gt;Double-metaphone (https://en.wikipedia.org/wiki/Metaphone#Double_Metaphone)&lt;/li&gt;
+&lt;li&gt;Caverphone (https://en.wikipedia.org/wiki/Caverphone)&lt;/li&gt;
+&lt;li&gt;Beider–Morse Phonetic (https://en.wikipedia.org/wiki/Daitch%E2%80%93Mokotoff_Soundex#Beider.E2.80.93Morse_Phonetic_Name_Matching_Algorithm)&lt;/li&gt;
+&lt;li&gt;Kölner Phonetik (https://de.wikipedia.org/wiki/K%C3%B6lner_Phonetik)&lt;/li&gt;
+&lt;li&gt;NYSIIS (https://en.wikipedia.org/wiki/New_York_State_Identification_and_Intelligence_System)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Intérêt d'un algo de phonetic (quand on l'utilise) ?&lt;/h3&gt;
+&lt;h2&gt;Tokenization&lt;/h2&gt;
+&lt;p&gt;Derrière ce mot barbare, ce terme désigne un algorithme capable de convertir un texte brut en une liste de mots.&lt;/p&gt;
+&lt;h2&gt;NGrams&lt;/h2&gt;
+&lt;p&gt;https://fr.wikipedia.org/wiki/N-gramme&lt;/p&gt;
+&lt;h2&gt;Stemming&lt;/h2&gt;
+&lt;h2&gt;Naive-Bayes classification&lt;/h2&gt;
+&lt;h2&gt;Term Frequency-Inverse Document Frequency(tf-idf)&lt;/h2&gt;
+&lt;h2&gt;Logistic regression classification&lt;/h2&gt;
+&lt;h2&gt;Optimize naive-bayes (currently pretty slow)&lt;/h2&gt;
+&lt;h2&gt;Plural/Singular inflector&lt;/h2&gt;
+&lt;p&gt;Algos permettant de transformer un mot de sa forme singulier au pluriel et inversement + détecter sa forme actuel. (est-ce que le mot est au singulier ou au pluriel ?)&lt;/p&gt;
+&lt;h2&gt;Détection de langue&lt;/h2&gt;
+&lt;p&gt;https://github.com/greyblake/whatlang-rs&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-07-09:algos-distance-phonetique.html</guid><category>levenstein</category><category>hamming</category><category>soundex</category><category>metaphone</category><category>token</category><category>ngram</category></item><item><title>Phonetic</title><link>https://mothsart.github.io/phonetic.html</link><description>&lt;h2&gt;Phonetic&lt;/h2&gt;
+&lt;p&gt;Sur PostgreSQL : https://www.postgresql.org/docs/9.1/static/fuzzystrmatch.html&lt;/p&gt;
+&lt;p&gt;https://fr.wikipedia.org/wiki/Homonymie
+http://www.easter-eggs.com/Recherche-approximative-avec
+http://sebsauvage.net/wiki/doku.php?id=php:recherche_floue&lt;/p&gt;
+&lt;p&gt;CREATE EXTENSION fuzzystrmatch;&lt;/p&gt;
+&lt;h3&gt;Soundex&lt;/h3&gt;
+&lt;h3&gt;Phonex&lt;/h3&gt;
+&lt;p&gt;Soundex pour le français : http://www.trickytools.com/downloads/phonex2.c&lt;/p&gt;
+&lt;h3&gt;Double metaphone&lt;/h3&gt;
+&lt;p&gt;Il est dit double car il peut retourner un code primaire et secondaire. (0 à 4 caractères)
+Il est par conséquent bien plus précis que le &lt;strong&gt;Soundex&lt;/strong&gt; et également plus adapté aux langues non anglophone.&lt;/p&gt;
+&lt;p&gt;Il a &lt;strong&gt;16 consonnes&lt;/strong&gt; (le 0 représente le th anglais) :
+      B  X  S  K  J  T  F  H  L  M  N  P  R  0  W  Y&lt;/p&gt;
+&lt;p&gt;Transformations:&lt;/p&gt;
+&lt;p&gt;B ----&amp;gt; B      unless at the end of word after "m", as in "dumb", "McComb"&lt;/p&gt;
+&lt;p&gt;C ----&amp;gt; X      (sh) if "-cia-" or "-ch-"
+           S      if "-ci-", "-ce-", or "-cy-"
+                  SILENT if "-sci-", "-sce-", or "-scy-"
+           K      otherwise, including in "-sch-"&lt;/p&gt;
+&lt;p&gt;D ----&amp;gt; J      if in "-dge-", "-dgy-", or "-dgi-"
+           T      otherwise&lt;/p&gt;
+&lt;p&gt;F ----&amp;gt; F&lt;/p&gt;
+&lt;p&gt;G ----&amp;gt;        SILENT if in "-gh-" and not at end or before a vowel
+                            in "-gn" or "-gned"
+                            in "-dge-" etc., as in above rule
+           J      if before "i", or "e", or "y" if not double "gg"
+           K      otherwise&lt;/p&gt;
+&lt;p&gt;H ----&amp;gt;        SILENT if after vowel and no vowel follows
+                         or after "-ch-", "-sh-", "-ph-", "-th-", "-gh-"
+           H      otherwise&lt;/p&gt;
+&lt;p&gt;J ----&amp;gt; J&lt;/p&gt;
+&lt;p&gt;K ----&amp;gt;        SILENT if after "c"
+           K      otherwise&lt;/p&gt;
+&lt;p&gt;L ----&amp;gt; L&lt;/p&gt;
+&lt;p&gt;M ----&amp;gt; M&lt;/p&gt;
+&lt;p&gt;N ----&amp;gt; N&lt;/p&gt;
+&lt;p&gt;P ----&amp;gt; F      if before "h"
+           P      otherwise&lt;/p&gt;
+&lt;p&gt;Q ----&amp;gt; K&lt;/p&gt;
+&lt;p&gt;R ----&amp;gt; R&lt;/p&gt;
+&lt;p&gt;S ----&amp;gt; X      (sh) if before "h" or in "-sio-" or "-sia-"
+           S      otherwise&lt;/p&gt;
+&lt;p&gt;T ----&amp;gt; X      (sh) if "-tia-" or "-tio-"
+           0      (th) if before "h"
+                  silent if in "-tch-"
+           T      otherwise&lt;/p&gt;
+&lt;p&gt;V ----&amp;gt; F&lt;/p&gt;
+&lt;p&gt;W ----&amp;gt;        SILENT if not followed by a vowel
+           W      if followed by a vowel&lt;/p&gt;
+&lt;p&gt;X ----&amp;gt; KS&lt;/p&gt;
+&lt;p&gt;Y ----&amp;gt;        SILENT if not followed by a vowel
+           Y      if followed by a vowel&lt;/p&gt;
+&lt;p&gt;Z ----&amp;gt; S&lt;/p&gt;
+&lt;p&gt;https://github.com/Freyskeyd/nlp
+http://aspell.net/metaphone/metaphone-kuhn.txt
+http://aspell.net/metaphone/dmetaph.cpp&lt;/p&gt;
+&lt;p&gt;Sous PostGreSQL : select dmetaphone('gumbo');
+=&amp;gt; ça ne marche pas bien dès qu'il y a des caractères accentués.&lt;/p&gt;
+&lt;h3&gt;Distance de Levenstein&lt;/h3&gt;
+&lt;h3&gt;Références&lt;/h3&gt;
+&lt;p&gt;http://www.norvig.com/spell-correct.html&lt;/p&gt;
+&lt;p&gt;http://stackoverflow.com/questions/487003/how-to-detect-a-typo-in-a-product-search-and-suggest-possible-corrections&lt;/p&gt;
+&lt;p&gt;PostGreSQL implémente la distance de levenstein, le double metaphone :&lt;/p&gt;
+&lt;p&gt;https://github.com/Freyskeyd/nlp&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-07-08:phonetic.html</guid><category>phonetic</category><category>phonex</category><category>metaphone</category></item><item><title>Binaire</title><link>https://mothsart.github.io/binaire.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;h1&gt;Utilitaire&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;file de libmagic&lt;/li&gt;
@@ -274,45 +382,7 @@ cd fucking-git-repo-dir&lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;A ceux qui trouve que j'ai pris un peu trop de liberté sur la traduction de cet article, je leur dit litéralement : &lt;strong&gt;flûte&lt;/strong&gt;!&lt;/p&gt;
 &lt;p&gt;Néanmoins, ils sont autorisés à me soumettre leurs améliorations !
-C'est d'ailleurs aussi à ça que sert &lt;strong&gt;GIT&lt;/strong&gt; !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:oh-merde-git.html</guid><category>linux</category><category>libre</category><category>git</category><category>tuto</category><category>traduction</category></item><item><title>Algos de distances et de phonetique</title><link>https://mothsart.github.io/algos-distance-phonetique.html</link><description>&lt;h2&gt;Distance et algos de phonetic&lt;/h2&gt;
-&lt;h2&gt;Définition de la Distance&lt;/h2&gt;
-&lt;p&gt;Les algorithmes de distance vont comparer 2 chaines afin de déterminer leur &lt;strong&gt;pourcentage de ressemblance&lt;/strong&gt;.&lt;/p&gt;
-&lt;h3&gt;Algos de distances&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Jaro&lt;/li&gt;
-&lt;li&gt;Hamming&lt;/li&gt;
-&lt;li&gt;Levenstein&lt;/li&gt;
-&lt;li&gt;Damerau Levenstein&lt;/li&gt;
-&lt;li&gt;Sift 1 à 4 : un alogo de distance plus rapide que Levenstein :
-https://siderite.blogspot.com/2014/11/super-fast-and-accurate-string-distance.html&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Intérêt d'un algo de distance (quand on l'utilise) ?&lt;/h3&gt;
-&lt;h2&gt;Définition de la Phonetique&lt;/h2&gt;
-&lt;h3&gt;Algos de phonetic&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Soundex (https://en.wikipedia.org/wiki/Soundex)&lt;/li&gt;
-&lt;li&gt;Metaphone (https://en.wikipedia.org/wiki/Metaphone)&lt;/li&gt;
-&lt;li&gt;Double-metaphone (https://en.wikipedia.org/wiki/Metaphone#Double_Metaphone)&lt;/li&gt;
-&lt;li&gt;Caverphone (https://en.wikipedia.org/wiki/Caverphone)&lt;/li&gt;
-&lt;li&gt;Beider–Morse Phonetic (https://en.wikipedia.org/wiki/Daitch%E2%80%93Mokotoff_Soundex#Beider.E2.80.93Morse_Phonetic_Name_Matching_Algorithm)&lt;/li&gt;
-&lt;li&gt;Kölner Phonetik (https://de.wikipedia.org/wiki/K%C3%B6lner_Phonetik)&lt;/li&gt;
-&lt;li&gt;NYSIIS (https://en.wikipedia.org/wiki/New_York_State_Identification_and_Intelligence_System)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Intérêt d'un algo de phonetic (quand on l'utilise) ?&lt;/h3&gt;
-&lt;h2&gt;Tokenization&lt;/h2&gt;
-&lt;p&gt;Derrière ce mot barbare, ce terme désigne un algorithme capable de convertir un texte brut en une liste de mots.&lt;/p&gt;
-&lt;p&gt;Il permet de &lt;/p&gt;
-&lt;h2&gt;NGrams&lt;/h2&gt;
-&lt;p&gt;https://fr.wikipedia.org/wiki/N-gramme&lt;/p&gt;
-&lt;h2&gt;Stemming&lt;/h2&gt;
-&lt;h2&gt;Naive-Bayes classification&lt;/h2&gt;
-&lt;h2&gt;Term Frequency-Inverse Document Frequency(tf-idf)&lt;/h2&gt;
-&lt;h2&gt;Logistic regression classification&lt;/h2&gt;
-&lt;h2&gt;Optimize naive-bayes (currently pretty slow)&lt;/h2&gt;
-&lt;h2&gt;Plural/Singular inflector&lt;/h2&gt;
-&lt;p&gt;Algos permettant de transformer un mot de sa forme singulier au pluriel et inversement + détecter sa forme actuel. (est-ce que le mot est au singulier ou au pluriel ?)&lt;/p&gt;
-&lt;h2&gt;Détection de langue&lt;/h2&gt;
-&lt;p&gt;https://github.com/greyblake/whatlang-rs&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:algos-distance-phonetique.html</guid><category>levenstein</category><category>hamming</category><category>soundex</category><category>metaphone</category><category>token</category><category>ngram</category></item><item><title>CanIuse</title><link>https://mothsart.github.io/caniuse.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+C'est d'ailleurs aussi à ça que sert &lt;strong&gt;GIT&lt;/strong&gt; !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:oh-merde-git.html</guid><category>linux</category><category>libre</category><category>git</category><category>tuto</category><category>traduction</category></item><item><title>CanIuse</title><link>https://mothsart.github.io/caniuse.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;S'il on veut utiliser une propriété css/js/html ou une api Html5 et être certain que ça fonctionne sur notre nagivateur, le réflexe c'est caniuse.com&lt;/p&gt;
 &lt;p&gt;Mais s'il on veut étayer son argumentaire, le mieux est de passer par les sites des 3 gros navigateurs :&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/shapes"&gt;IE et Edge&lt;/a&gt;&lt;/p&gt;
@@ -425,71 +495,7 @@ cargotest = { path = &amp;quot;tests/cargotest&amp;quot; }
 [[bin]]
 name = &amp;quot;cargo&amp;quot;
 test = false
-doc = false&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:memo-cargo.html</guid><category>cargo</category><category>toml</category><category>rust</category></item><item><title>Phonetic</title><link>https://mothsart.github.io/phonetic.html</link><description>&lt;h2&gt;Phonetic&lt;/h2&gt;
-&lt;p&gt;Sur PostgreSQL : https://www.postgresql.org/docs/9.1/static/fuzzystrmatch.html&lt;/p&gt;
-&lt;p&gt;https://fr.wikipedia.org/wiki/Homonymie
-http://www.easter-eggs.com/Recherche-approximative-avec
-http://sebsauvage.net/wiki/doku.php?id=php:recherche_floue&lt;/p&gt;
-&lt;p&gt;CREATE EXTENSION fuzzystrmatch;&lt;/p&gt;
-&lt;h3&gt;Soundex&lt;/h3&gt;
-&lt;h3&gt;Phonex&lt;/h3&gt;
-&lt;p&gt;Soundex pour le français : http://www.trickytools.com/downloads/phonex2.c&lt;/p&gt;
-&lt;h3&gt;Double metaphone&lt;/h3&gt;
-&lt;p&gt;Il est dit double car il peut retourner un code primaire et secondaire. (0 à 4 caractères)
-Il est par conséquent bien plus précis que le &lt;strong&gt;Soundex&lt;/strong&gt; et également plus adapté aux langues non anglophone.&lt;/p&gt;
-&lt;p&gt;Il a &lt;strong&gt;16 consonnes&lt;/strong&gt; (le 0 représente le th anglais) :
-      B  X  S  K  J  T  F  H  L  M  N  P  R  0  W  Y&lt;/p&gt;
-&lt;p&gt;Transformations:&lt;/p&gt;
-&lt;p&gt;B ----&amp;gt; B      unless at the end of word after "m", as in "dumb", "McComb"&lt;/p&gt;
-&lt;p&gt;C ----&amp;gt; X      (sh) if "-cia-" or "-ch-"
-           S      if "-ci-", "-ce-", or "-cy-"
-                  SILENT if "-sci-", "-sce-", or "-scy-"
-           K      otherwise, including in "-sch-"&lt;/p&gt;
-&lt;p&gt;D ----&amp;gt; J      if in "-dge-", "-dgy-", or "-dgi-"
-           T      otherwise&lt;/p&gt;
-&lt;p&gt;F ----&amp;gt; F&lt;/p&gt;
-&lt;p&gt;G ----&amp;gt;        SILENT if in "-gh-" and not at end or before a vowel
-                            in "-gn" or "-gned"
-                            in "-dge-" etc., as in above rule
-           J      if before "i", or "e", or "y" if not double "gg"
-           K      otherwise&lt;/p&gt;
-&lt;p&gt;H ----&amp;gt;        SILENT if after vowel and no vowel follows
-                         or after "-ch-", "-sh-", "-ph-", "-th-", "-gh-"
-           H      otherwise&lt;/p&gt;
-&lt;p&gt;J ----&amp;gt; J&lt;/p&gt;
-&lt;p&gt;K ----&amp;gt;        SILENT if after "c"
-           K      otherwise&lt;/p&gt;
-&lt;p&gt;L ----&amp;gt; L&lt;/p&gt;
-&lt;p&gt;M ----&amp;gt; M&lt;/p&gt;
-&lt;p&gt;N ----&amp;gt; N&lt;/p&gt;
-&lt;p&gt;P ----&amp;gt; F      if before "h"
-           P      otherwise&lt;/p&gt;
-&lt;p&gt;Q ----&amp;gt; K&lt;/p&gt;
-&lt;p&gt;R ----&amp;gt; R&lt;/p&gt;
-&lt;p&gt;S ----&amp;gt; X      (sh) if before "h" or in "-sio-" or "-sia-"
-           S      otherwise&lt;/p&gt;
-&lt;p&gt;T ----&amp;gt; X      (sh) if "-tia-" or "-tio-"
-           0      (th) if before "h"
-                  silent if in "-tch-"
-           T      otherwise&lt;/p&gt;
-&lt;p&gt;V ----&amp;gt; F&lt;/p&gt;
-&lt;p&gt;W ----&amp;gt;        SILENT if not followed by a vowel
-           W      if followed by a vowel&lt;/p&gt;
-&lt;p&gt;X ----&amp;gt; KS&lt;/p&gt;
-&lt;p&gt;Y ----&amp;gt;        SILENT if not followed by a vowel
-           Y      if followed by a vowel&lt;/p&gt;
-&lt;p&gt;Z ----&amp;gt; S&lt;/p&gt;
-&lt;p&gt;https://github.com/Freyskeyd/nlp
-http://aspell.net/metaphone/metaphone-kuhn.txt
-http://aspell.net/metaphone/dmetaph.cpp&lt;/p&gt;
-&lt;p&gt;Sous PostGreSQL : select dmetaphone('gumbo');
-=&amp;gt; ça ne marche pas bien dès qu'il y a des caractères accentués.&lt;/p&gt;
-&lt;h3&gt;Distance de Levenstein&lt;/h3&gt;
-&lt;h3&gt;Références&lt;/h3&gt;
-&lt;p&gt;http://www.norvig.com/spell-correct.html&lt;/p&gt;
-&lt;p&gt;http://stackoverflow.com/questions/487003/how-to-detect-a-typo-in-a-product-search-and-suggest-possible-corrections&lt;/p&gt;
-&lt;p&gt;PostGreSQL implémente la distance de levenstein, le double metaphone :&lt;/p&gt;
-&lt;p&gt;https://github.com/Freyskeyd/nlp&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:phonetic.html</guid><category>phonetic</category><category>phonex</category><category>metaphone</category></item><item><title>RecalBox</title><link>https://mothsart.github.io/recalbox.html</link><description>&lt;h2&gt;Memo RecalBox&lt;/h2&gt;
+doc = false&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:memo-cargo.html</guid><category>cargo</category><category>toml</category><category>rust</category></item><item><title>RecalBox</title><link>https://mothsart.github.io/recalbox.html</link><description>&lt;h2&gt;Memo RecalBox&lt;/h2&gt;
 &lt;p&gt;Utilisez le nom d'utilisateur &lt;strong&gt;root&lt;/strong&gt; et le mot de passe &lt;strong&gt;recalboxroot&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;\RECALBOX&lt;/strong&gt; ou &lt;strong&gt;\192.168.1.30&lt;/strong&gt;&lt;/p&gt;
 &lt;h3&gt;SSH&lt;/h3&gt;

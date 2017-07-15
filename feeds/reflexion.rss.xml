@@ -1,55 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 12 Apr 2017 13:01:23 +0200</lastBuildDate><item><title>Dégooglelison et Education numérique</title><link>https://mothsart.github.io/deggoglelison-eductation-numerique.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
-&lt;p&gt;J'ai pas l'habitude de faire de la politique mais la nécessité me semble évidente.&lt;/p&gt;
-&lt;p&gt;Notre pays (aussi bien que l'europe, notre région, notre ville) a besoin de réformer son système éducatif et d'innover dans l'accès au numérique.&lt;/p&gt;
-&lt;p&gt;Pour cela, il doit se démarquer des GAFAM (Google, Amazon, Facebook, Apple, Microsoft) !&lt;/p&gt;
-&lt;p&gt;Je ne peux pas et n'admettrais pas que l'éducation de nos enfants soit régis par des grands groupes américains dont la rentabilité est le seul objectif !&lt;/p&gt;
-&lt;h2&gt;Le programme de Macron&lt;/h2&gt;
-&lt;p&gt;Le peuple français a choisi Emmanuel Macron.
-Maintenant, c'est à nous d'assumer (l'opposition pour l'opposition c'est de l'immobilisme à mon sens) et de nous préoccuper que son programme soit respecté !&lt;/p&gt;
-&lt;p&gt;Il est de notre devoir, en tant que citoyen, de vérifier que notre chef d'état tiens ses objectifs : http://laparoledemacron.com/&lt;/p&gt;
-&lt;h2&gt;Les points de son programme à suivre de prêt&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Les grands groupes Internet seront imposés sur leur chiffre d’affaires réalisé sur notre sol.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Priorité à l’école primaire pour que tous les élèves sachent lire, écrire et compter en arrivant en 6ème.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Le parcours bi-langues au collège sera rétabli.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Le parcours européen au collège sera rétabli.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;La baccalauréat sera modernisé. Il y aura désormais 4 matières obligatoires à l’examen final. Les autres seront validés par un contrôle continu.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Un accompagnement après la classe sera proposé à tous. Au collège, les études dirigés seront rétablies grâce à des bénévoles (étudiants et retraités).&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Les enseignants de CP et de CE1 en zone prioritaire seront plus expérimentés. D’ici 2022, ceux affectés en zones prioritaires auront au moins 3 ans d’ancienneté.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Des projets existent&lt;/h2&gt;
-&lt;p&gt;Les logiciels libres dans leur ensemble mais aussi des projets tel que :&lt;/p&gt;
-&lt;p&gt;https://chatons.org/
-https://framasoft.org/&lt;/p&gt;
-&lt;p&gt;https://primtux.fr/
-http://abuledu-fr.org/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:deggoglelison-eductation-numerique.html</guid><category>google</category><category>gafam</category><category>education</category><category>numérique</category></item><item><title>Algos de distances et de phonetique</title><link>https://mothsart.github.io/algos-distance-phonetique.html</link><description>&lt;h2&gt;Distance et algos de phonetic&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 12 Apr 2017 11:54:35 +0200</lastBuildDate><item><title>Algos de distances et de phonetique</title><link>https://mothsart.github.io/algos-distance-phonetique.html</link><description>&lt;h2&gt;Distance et algos de phonetic&lt;/h2&gt;
 &lt;h2&gt;Définition de la Distance&lt;/h2&gt;
 &lt;p&gt;Les algorithmes de distance vont comparer 2 chaines afin de déterminer leur &lt;strong&gt;pourcentage de ressemblance&lt;/strong&gt;.&lt;/p&gt;
 &lt;h3&gt;Algos de distances&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Jaro&lt;/li&gt;
+&lt;li&gt;Jaro (à priori : plus rapide que levenstein sur des petites chaines de caractères)&lt;/li&gt;
 &lt;li&gt;Hamming&lt;/li&gt;
 &lt;li&gt;Levenstein&lt;/li&gt;
 &lt;li&gt;Damerau Levenstein&lt;/li&gt;
-&lt;li&gt;Sift 1 à 4 : un alogo de distance plus rapide que Levenstein :
+&lt;li&gt;Sift 1 à 4 : un algo de distance plus rapide que Levenstein :
 https://siderite.blogspot.com/2014/11/super-fast-and-accurate-string-distance.html&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Intérêt d'un algo de distance (quand on l'utilise) ?&lt;/h3&gt;
+&lt;p&gt;Dans une requète SQL (en général sous forme de procédure stockée) : permet de filtrer les recherches selon un certain pourcentage de ressemblance.&lt;/p&gt;
 &lt;h2&gt;Définition de la Phonetique&lt;/h2&gt;
 &lt;h3&gt;Algos de phonetic&lt;/h3&gt;
 &lt;ul&gt;
@@ -64,7 +27,6 @@ https://siderite.blogspot.com/2014/11/super-fast-and-accurate-string-distance.ht
 &lt;h3&gt;Intérêt d'un algo de phonetic (quand on l'utilise) ?&lt;/h3&gt;
 &lt;h2&gt;Tokenization&lt;/h2&gt;
 &lt;p&gt;Derrière ce mot barbare, ce terme désigne un algorithme capable de convertir un texte brut en une liste de mots.&lt;/p&gt;
-&lt;p&gt;Il permet de &lt;/p&gt;
 &lt;h2&gt;NGrams&lt;/h2&gt;
 &lt;p&gt;https://fr.wikipedia.org/wiki/N-gramme&lt;/p&gt;
 &lt;h2&gt;Stemming&lt;/h2&gt;
@@ -75,7 +37,7 @@ https://siderite.blogspot.com/2014/11/super-fast-and-accurate-string-distance.ht
 &lt;h2&gt;Plural/Singular inflector&lt;/h2&gt;
 &lt;p&gt;Algos permettant de transformer un mot de sa forme singulier au pluriel et inversement + détecter sa forme actuel. (est-ce que le mot est au singulier ou au pluriel ?)&lt;/p&gt;
 &lt;h2&gt;Détection de langue&lt;/h2&gt;
-&lt;p&gt;https://github.com/greyblake/whatlang-rs&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:algos-distance-phonetique.html</guid><category>levenstein</category><category>hamming</category><category>soundex</category><category>metaphone</category><category>token</category><category>ngram</category></item><item><title>Phonetic</title><link>https://mothsart.github.io/phonetic.html</link><description>&lt;h2&gt;Phonetic&lt;/h2&gt;
+&lt;p&gt;https://github.com/greyblake/whatlang-rs&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-07-09:algos-distance-phonetique.html</guid><category>levenstein</category><category>hamming</category><category>soundex</category><category>metaphone</category><category>token</category><category>ngram</category></item><item><title>Phonetic</title><link>https://mothsart.github.io/phonetic.html</link><description>&lt;h2&gt;Phonetic&lt;/h2&gt;
 &lt;p&gt;Sur PostgreSQL : https://www.postgresql.org/docs/9.1/static/fuzzystrmatch.html&lt;/p&gt;
 &lt;p&gt;https://fr.wikipedia.org/wiki/Homonymie
 http://www.easter-eggs.com/Recherche-approximative-avec
@@ -139,7 +101,45 @@ http://aspell.net/metaphone/dmetaph.cpp&lt;/p&gt;
 &lt;p&gt;http://www.norvig.com/spell-correct.html&lt;/p&gt;
 &lt;p&gt;http://stackoverflow.com/questions/487003/how-to-detect-a-typo-in-a-product-search-and-suggest-possible-corrections&lt;/p&gt;
 &lt;p&gt;PostGreSQL implémente la distance de levenstein, le double metaphone :&lt;/p&gt;
-&lt;p&gt;https://github.com/Freyskeyd/nlp&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:phonetic.html</guid><category>phonetic</category><category>phonex</category><category>metaphone</category></item><item><title>Financement participatif</title><link>https://mothsart.github.io/financement-participatif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;https://github.com/Freyskeyd/nlp&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-07-08:phonetic.html</guid><category>phonetic</category><category>phonex</category><category>metaphone</category></item><item><title>Dégooglelison et Education numérique</title><link>https://mothsart.github.io/deggoglelison-eductation-numerique.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;J'ai pas l'habitude de faire de la politique mais la nécessité me semble évidente.&lt;/p&gt;
+&lt;p&gt;Notre pays (aussi bien que l'europe, notre région, notre ville) a besoin de réformer son système éducatif et d'innover dans l'accès au numérique.&lt;/p&gt;
+&lt;p&gt;Pour cela, il doit se démarquer des GAFAM (Google, Amazon, Facebook, Apple, Microsoft) !&lt;/p&gt;
+&lt;p&gt;Je ne peux pas et n'admettrais pas que l'éducation de nos enfants soit régis par des grands groupes américains dont la rentabilité est le seul objectif !&lt;/p&gt;
+&lt;h2&gt;Le programme de Macron&lt;/h2&gt;
+&lt;p&gt;Le peuple français a choisi Emmanuel Macron.
+Maintenant, c'est à nous d'assumer (l'opposition pour l'opposition c'est de l'immobilisme à mon sens) et de nous préoccuper que son programme soit respecté !&lt;/p&gt;
+&lt;p&gt;Il est de notre devoir, en tant que citoyen, de vérifier que notre chef d'état tiens ses objectifs : http://laparoledemacron.com/&lt;/p&gt;
+&lt;h2&gt;Les points de son programme à suivre de prêt&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Les grands groupes Internet seront imposés sur leur chiffre d’affaires réalisé sur notre sol.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Priorité à l’école primaire pour que tous les élèves sachent lire, écrire et compter en arrivant en 6ème.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Le parcours bi-langues au collège sera rétabli.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Le parcours européen au collège sera rétabli.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;La baccalauréat sera modernisé. Il y aura désormais 4 matières obligatoires à l’examen final. Les autres seront validés par un contrôle continu.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Un accompagnement après la classe sera proposé à tous. Au collège, les études dirigés seront rétablies grâce à des bénévoles (étudiants et retraités).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Les enseignants de CP et de CE1 en zone prioritaire seront plus expérimentés. D’ici 2022, ceux affectés en zones prioritaires auront au moins 3 ans d’ancienneté.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Des projets existent&lt;/h2&gt;
+&lt;p&gt;Les logiciels libres dans leur ensemble mais aussi des projets tel que :&lt;/p&gt;
+&lt;p&gt;https://chatons.org/
+https://framasoft.org/&lt;/p&gt;
+&lt;p&gt;https://primtux.fr/
+http://abuledu-fr.org/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:deggoglelison-eductation-numerique.html</guid><category>google</category><category>gafam</category><category>education</category><category>numérique</category></item><item><title>Financement participatif</title><link>https://mothsart.github.io/financement-participatif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;https://liberapay.com/mothsART&lt;/p&gt;
 &lt;p&gt;Flattr&lt;/p&gt;

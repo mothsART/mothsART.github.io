@@ -350,6 +350,7 @@ table > tbody > tr > td:first-child {
 }
 
 #real-legend label {
+    vertical-align: top;
     position: relative;
     z-index: 1;
 }
@@ -372,6 +373,12 @@ table > tbody > tr > td:first-child {
 
 #real-legend label span {
     display: inline-block;
+    border-color: black;
+    border-radius: 1.1vh;
+}
+
+#real-legend label em {
+    padding-right: 1rem;
 }
 
 #indices article.is-draggable {
@@ -435,6 +442,7 @@ table > tbody > tr > td:first-child {
 }
 
 #svg .indice .mask {
+     fill: transparent;
     cursor: pointer;
 }
 
@@ -460,10 +468,6 @@ table > tbody > tr > td:first-child {
 
 #svg .indice text {
     font-size: 7px;
-}
-
-#svg .indice .mask {
-    fill: transparent;
 }
 
 .container .save {
@@ -601,10 +605,11 @@ table > tbody > tr > td:first-child {
     text-align: center;
     vertical-align: middle;
     background-color: #d9534f;
-    border: solid .2rem white;
+    border: solid .4vh black;
     border-radius: .5rem;
     margin: .2rem;
     padding: .8rem;
+    padding-top: .5rem;
 }
 
 #about, #help  {
