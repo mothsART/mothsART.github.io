@@ -29,28 +29,10 @@
 
 # Bugs
 
-[Résolu] * possibilité de déplier 2 indices à la fois
-[Résolu] * le clic sur l'indice dans l'illustration devrait déclencher le zoom.
-[Résolu] * bug au premier drag : centrage autours de l'indice ?!
-[Résolu] * la création d'un indice le déplace automatiquement au centre de l'illustration : résoud un soucis de zoom par la même occasion.
-[Résolu] * quand on effectue un zoom en mode edit et que l'on clique sur un indice, ça déclenche un évènement de zoom arrière.
-[Résolu] * le passage du mode vue à celui de l'édition provoquait un bug subtil : le zoom sur un indice nécessitait 2 clics au lieu d'un.
-[Résolu] * bug lorsque l'on est en mode de visualisation (show), que l'on clique sur un indice (zoom) et que l'on repasse en mode edit. (le zoom reste actif)
-[Résolu] * Soucis de perte de la description d'un indice lorsque l'on passe d'un indice à l'autre
-[Résolu] * Soucis de couleur sur les indices de description
-[Résolu] * l'ajout d'un indice le coche automatiquement comme visible
-[Résolu] * l'ajout d'un indice ne lui donne pas réellement une couleur aléatoire
-[Résolu] * soucis de retour sur la zone d'édition lorsque l'on a pas accédé préalablement au détail d'un indice.
-[Résolu] * en mode visu et en export, les passage d'un indice à un autre ne fermait jamais les descriptifs.
-[Résolu] * l'export doit impérativement supprimer le zoom sur un indice.
-[Résolu] * les indices sans textes ne doivent pas être décalés (vertical-align) par rapport aux indices ayant un titre
-[Résolu] * mode visu : le clic sur un indice n'ayant pas de description devrait faire disparaitre le descriptif de l'indice précédent.
-[Résolu] * drag and drop de l'ordre des indices
-[Résolu] * export : l'affichage des indices dans l'encart de la description n'est pas conforme au mode de visualisation
-[Résolu] * le changement de fichier est de nouveau opérationnel
-[Résolu] * bug de drag and drop sous firefox
-[Résolu] * l'import d'indice devrait avoir un titre en noir si existant
+[Résolu] l'import de plusieurs documents se passe sans soucis
 
+* l'indice devrait disparaitre après le zoom.
+* Les exemples dans le "about" devrait être relatif
 * dézommer quand on ferme le détail d'un indice
 
 * la suppression de tous les indices à pour effet de bord de cacher les indices créés par la suite.
