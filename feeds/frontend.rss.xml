@@ -1,5 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Sat, 15 Jul 2017 03:21:58 +0200</lastBuildDate><item><title>Vue.js</title><link>https://mothsart.github.io/vue.js.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Sat, 15 Jul 2017 03:21:58 +0200</lastBuildDate><item><title>Editeur WYSIWYG de SVG interactifs</title><link>https://mothsart.github.io/editeur-svg-interactif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;L'objectif est simple : éditer un fichier SVG statique afin de le présenter comme un contenu interactif. 
+Permettre l'ajout de zones cliquables pouvant être zoomés et enrichies d'une explication.&lt;/p&gt;
+&lt;p&gt;Les fichiers générés (page Html contenant le svg) peuvent servir à divers usages :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;contenus éducatifs&lt;/li&gt;
+&lt;li&gt;support de présentation&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="Une capture d'écran du logiciel d'édition de SVG interactifs" src="static/images/editeur_svg/editeur_svg_exemple.png" /&gt;&lt;/p&gt;
+&lt;h2&gt;Objectifs techniques&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Créer des illustrations interactives avec toujours le même gabarit : une légende contenant des indices titrés et un descriptif pour une zone de l'illustration.
+Des exemple sont disponibles : &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://mothsart.github.io/labo/frontend/edit_interactive_svg/examples/campement.html"&gt;Campement Paléolitique&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://mothsart.github.io/labo/frontend/edit_interactive_svg/examples/organes.html"&gt;Organes du corps humain&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Permettre des zooms sur les zones décrites&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Avoir un contenu responsive (vu que le contenu est pleinement vectoriel, pourquoi s'en priver)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;être et rester simple d'utilisation (&lt;strong&gt;&lt;a href="https://fr.wikipedia.org/wiki/Principe_KISS"&gt;KISS&lt;/a&gt;&lt;/strong&gt; et &lt;strong&gt;&lt;a href="https://fr.wikipedia.org/wiki/Philosophie_d%27Unix"&gt;philosophie Unix&lt;/a&gt;&lt;/strong&gt;) et productif pour enrichir une illustration à vocation pédagogique.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rester simple à développer et maintenir : un mode Debug permet justement d'étendre le logiciel afin de mieux le tester.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Utilisation hors ligne et intégré dans une distribution Linux via un paquet .deb&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Version de démo en ligne&lt;/h2&gt;
+&lt;p&gt;Il est possible d'utiliser directement la dernière version sur :
+&lt;a href="https://mothsart.github.io/labo/frontend/edit_interactive_svg/"&gt;https://mothsart.github.io/labo/frontend/edit_interactive_svg/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Des illustrations effectués intégralement à partir de cet éditeur sont disponbiles via une liste d'exemples.&lt;/p&gt;
+&lt;h2&gt;Explication d'utilisation&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;On glisse et on dépose (ou on choisi via son explorateur de fichiers) son fichier svg statique. (si possible sans animation et javascript)
+On arrive sur une interface nous permettant d'éditer ce fichier.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;On ajoute des indices dans la légende. Ces derniers s'affichent également sur notre illustration si l'on clique sur les icones d'affichages (des yeux).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;On les positionnes au gré de nos envies (en restant appuyé sur le clic gauche) sur l'indice à déplacer.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Un menu déroulant sur l'indice est disponible afin de l'éditer :
+Il est possible de changer la couleur, de zoomer mais également d'ajouter/editer le titre et la description de notre indice.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;L'accès au &lt;strong&gt;mode show&lt;/strong&gt; nous permet de visualiser le rendu final. (avec les animations sur les indices si le zoom a été paramètré).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Il est possible de changer l'odre de nos indices (en les sélectionnant et les glissants) et d'en supprimer ainsi que de les afficher ou non. (pratique si l'on ne veut se concentrer que sur un éventail précis)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Le bouton &lt;strong&gt;save&lt;/strong&gt; permet de convertir notre travail en un fichier html. (équivalent au &lt;strong&gt;mode rendu&lt;/strong&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Si l'on veut repartir d'une feuille blanche, il suffit de cliquer sur &lt;strong&gt;Delete&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Utilisation dans une distribution (Attention : plus à jour)&lt;/h2&gt;
+&lt;p&gt;Il est possible d'installer un ppa afin de profiter de l'éditeur dans Ubuntu :&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://launchpad.net/~jerem-ferry/+archive/ubuntu/app-illustration"&gt;https://launchpad.net/~jerem-ferry/+archive/ubuntu/app-illustration&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Participer au logiciel&lt;/h2&gt;
+&lt;p&gt;Les sources du projet sont disponibles sur Github : &lt;a href="https://github.com/mothsART/editInteractiveSVG"&gt;https://github.com/mothsART/editInteractiveSVG&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Il est possible de me rapporter des bugs directement via les issues du dépôt mais également sur le forum de PrimTux :
+&lt;a href="http://forum.primtux.fr/viewtopic.php?pid=8870"&gt;http://forum.primtux.fr/viewtopic.php?pid=8870&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:editeur-svg-interactif.html</guid><category>javascript</category><category>svg</category><category>linux</category><category>primtux</category><category>deb</category></item><item><title>Vue.js</title><link>https://mothsart.github.io/vue.js.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Pour diverses raisons, j'ai choisi Vue.js comme nouveau framework web.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -27,78 +106,7 @@
 &lt;h2&gt;Amélioration progressive&lt;/h2&gt;
 &lt;p&gt;Pour détecter si un navigateur utilise une fonctionnalité, on avait jusqu'à présent &lt;strong&gt;Modernizr&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Cette lib va progressivement disparaitre au profit de &lt;strong&gt;CSS supports&lt;/strong&gt; : 
-&lt;a href="https://la-cascade.io/css-supports-va-vous-changer-la-vie"&gt;Explications sur Css supports&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:caniuse.html</guid><category>js</category><category>css</category><category>html</category><category>caniuse</category><category>modernizr</category></item><item><title>Editeur WYSIWYG de SVG interactifs</title><link>https://mothsart.github.io/editeur-svg-interactif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
-&lt;p&gt;L'objectif est simple : éditer un fichier SVG statique afin de le présenter comme un contenu interactif. 
-Permettre l'ajout des zones cliquables pouvant être zoomés et enrichies d'une explication&lt;/p&gt;
-&lt;p&gt;Les fichiers générés (page Html contenant le svg) pouvant servir à divers usages :&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;contenus éducatifs&lt;/li&gt;
-&lt;li&gt;support de présentation&lt;/li&gt;
-&lt;li&gt;etc.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img alt="tmuxp load" src="static/images/editeur_svg/editeur_svg_exemple1.png" /&gt;&lt;/p&gt;
-&lt;h2&gt;Objectifs techniques&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;créer des illustrations interactives avec toujours le même gabarit : une légende contenant des indices titrés et un descriptif pour une zone de l'illustration.
-Un exemple est disponible : &lt;a href="https://mothsart.github.io/labo/frontend/edit_interactive_svg/examples/campement.min.svg"&gt;https://mothsart.github.io/labo/frontend/edit_interactive_svg/examples/campement.min.svg&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;permettre des zooms sur les zones décrites&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;avoir un contenu responsive (vu que le contenu est pleinement vectoriel, pourquoi s'en priver)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;être et rester simple d'utilisation (&lt;strong&gt;&lt;a href="https://fr.wikipedia.org/wiki/Principe_KISS"&gt;KISS&lt;/a&gt;&lt;/strong&gt; et &lt;strong&gt;&lt;a href="https://fr.wikipedia.org/wiki/Philosophie_d%27Unix"&gt;philosophie Unix&lt;/a&gt;&lt;/strong&gt;) et productif pour enrichir une illustration à vocation pédagogique.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;rester simple à développer et maintenir&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;utilisation hors ligne et intégré dans une distribution Linux via un paquet .deb&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;Version de démo en ligne&lt;/h2&gt;
-&lt;p&gt;Il est possible d'utiliser directement la dernière version sur :
-&lt;a href="https://mothsart.github.io/labo/frontend/edit_interactive_svg/"&gt;https://mothsart.github.io/labo/frontend/edit_interactive_svg/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Des illustrations effectués intégralement à partir de cet éditeur seront rapidement mise en ligne.&lt;/p&gt;
-&lt;h2&gt;Explication d'utilisation&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;On glisse et on dépose (ou on choisi via son explorateur de fichiers) son fichier svg statique. (si possible sans animation et javascript)
-On arrive sur une  interface nous permettant d'éditer ce fichier.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;On ajoute des indices dans la légende. Ces derniers s'affichent également sur notre illustration si l'on clique sur les icones d'affichages (des yeux).&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;On les positionnes au gré de nos envies (en restant appuyé sur le clic gauche) sur l'indice à déplacer.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Un menu déroulant sur l'indice est disponible afin de l'éditer :
-Il est possible de changer la couleur, de zoomer mais également d'ajouter/editer le titre et la description de notre indice.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;L'accès au &lt;strong&gt;mode show&lt;/strong&gt; nous permet de visualiser le rendu final. (avec les animations sur les indices si le zoom a été paramètré).&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Il est possible de changer l'odre de nos indices (en les sélectionnant et les glissants) et d'en supprimer ainsi que de les afficher ou non. (pratique si l'on ne veut se concentrer que sur un éventail précis)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Le bouton save permet de convertir notre travail en un fichier html. (équivalent au &lt;strong&gt;mode rendu&lt;/strong&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Si l'on veut repartir d'une feuille blanche, il suffit de cliquer sur &lt;strong&gt;Delete&lt;/strong&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;Utilisation dans une distribution&lt;/h2&gt;
-&lt;p&gt;Il est possible d'installer un ppa afin de profiter de l'éditeur dans Ubuntu :&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://launchpad.net/~jerem-ferry/+archive/ubuntu/app-illustration"&gt;https://launchpad.net/~jerem-ferry/+archive/ubuntu/app-illustration&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;Participer au logiciel&lt;/h2&gt;
-&lt;p&gt;Les sources du projet sont disponibles sur Github : &lt;a href="https://github.com/mothsART/editInteractiveSVG"&gt;https://github.com/mothsART/editInteractiveSVG&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Il est possible de me rapporter des bugs directement via les issues du dépôt mais également sur le forum de PrimTux :
-&lt;a href="http://forum.primtux.fr/viewtopic.php?pid=8870"&gt;http://forum.primtux.fr/viewtopic.php?pid=8870&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-25:editeur-svg-interactif.html</guid><category>javascript</category><category>svg</category><category>linux</category><category>primtux</category><category>deb</category></item><item><title>To be strict or not to be</title><link>https://mothsart.github.io/strict-or-not.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;a href="https://la-cascade.io/css-supports-va-vous-changer-la-vie"&gt;Explications sur Css supports&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:caniuse.html</guid><category>js</category><category>css</category><category>html</category><category>caniuse</category><category>modernizr</category></item><item><title>To be strict or not to be</title><link>https://mothsart.github.io/strict-or-not.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Il est recommandé d'utiliser Javascript avec le mode strict.
 Le mode strict c'est un passage à Ecmascript 5 et tous les navigateurs l'implémentent désormais.&lt;/p&gt;
 &lt;h2&gt;Oui, mais... pourquoi ?&lt;/h2&gt;

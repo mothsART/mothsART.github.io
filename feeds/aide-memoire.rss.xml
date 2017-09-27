@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Thu, 25 May 2017 00:16:44 +0200</lastBuildDate><item><title>Mon mémo C Sharp</title><link>https://mothsart.github.io/memo-c-sharp.html</link><description>&lt;h2&gt;Les types sérialisés en C Sharp&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Thu, 25 May 2017 00:16:44 +0200</lastBuildDate><item><title>Gmic</title><link>https://mothsart.github.io/gmic.html</link><description>&lt;h2&gt;Diminuer le bruit&lt;/h2&gt;
+&lt;p&gt;Repair &amp;gt; Smooth [anisotropic]&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:gmic.html</guid><category>gimp</category><category>retouche</category><category>gmic</category></item><item><title>Idées autours du bois</title><link>https://mothsart.github.io/idees-autours-bois.html</link><description>&lt;h2&gt;Table basse&lt;/h2&gt;
+&lt;h2&gt;Coffret à glaçons en pierre&lt;/h2&gt;
+&lt;h2&gt;Set de couvert en bois&lt;/h2&gt;
+&lt;h2&gt;Desous de verres&lt;/h2&gt;
+&lt;h2&gt;Boite de rangement de dessous de verres&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:idees-autours-bois.html</guid><category>bois</category></item><item><title>Mon mémo C Sharp</title><link>https://mothsart.github.io/memo-c-sharp.html</link><description>&lt;h2&gt;Les types sérialisés en C Sharp&lt;/h2&gt;
 &lt;p&gt;exemple : Program+Enfant`1[[Program+Autre, o5bi1vku, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]&lt;/p&gt;
 &lt;p&gt;Le + =&amp;gt; NestedClass
 Le . =&amp;gt; espace de nom
@@ -10,19 +15,14 @@ La virgule : passer un projet (Dicsit.Service par exemple)
 http://geekswithblogs.net/abhijeetp/archive/2010/01/10/covariance-and-contravariance-in-c-4.0.aspx&lt;/p&gt;
 &lt;h2&gt;Event&lt;/h2&gt;
 &lt;p&gt;https://gist.github.com/mothsART/b7e2d0e6dbe9fc1ec5b1f9e428a088b2#file-c-sharp-event&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:memo-c-sharp.html</guid><category>c sharp</category></item><item><title>The Gimp</title><link>https://mothsart.github.io/the-gimp.html</link><description>&lt;h2&gt;Supprimer un élément&lt;/h2&gt;
-&lt;p&gt;https://debian-facile.org/doc:media:gimp:tp-plugin-resynthesizer-suppimer-un-detail&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:the-gimp.html</guid><category>gimp</category><category>image</category><category>retouche</category></item><item><title>Gmic</title><link>https://mothsart.github.io/gmic.html</link><description>&lt;h2&gt;Diminuer le bruit&lt;/h2&gt;
-&lt;p&gt;Repair &amp;gt; Smooth [anisotropic]&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:gmic.html</guid><category>gimp</category><category>retouche</category><category>gmic</category></item><item><title>Type de bois</title><link>https://mothsart.github.io/type-de-bois.html</link><description>&lt;h2&gt;Contre-plaqué, aggloméré, MDF, médium, OSB&lt;/h2&gt;
+&lt;p&gt;https://debian-facile.org/doc:media:gimp:tp-plugin-resynthesizer-suppimer-un-detail&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:the-gimp.html</guid><category>gimp</category><category>image</category><category>retouche</category></item><item><title>Type de bois</title><link>https://mothsart.github.io/type-de-bois.html</link><description>&lt;h2&gt;Contre-plaqué, aggloméré, MDF, médium, OSB&lt;/h2&gt;
 &lt;h1&gt;Bois de chêne&lt;/h1&gt;
 &lt;h1&gt;Bois de tilleul&lt;/h1&gt;
 &lt;p&gt;Excellent pour la sculpture&lt;/p&gt;
 &lt;h2&gt;Bois d'olivier&lt;/h2&gt;
 &lt;p&gt;Bon pour la sculpture&lt;/p&gt;
 &lt;h2&gt;Bois de frêne&lt;/h2&gt;
-&lt;p&gt;Pas en exterieur&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:type-de-bois.html</guid><category>bois</category></item><item><title>Idées autours du bois</title><link>https://mothsart.github.io/idees-autours-bois.html</link><description>&lt;h2&gt;Table basse&lt;/h2&gt;
-&lt;h2&gt;Coffret à glaçons en pierre&lt;/h2&gt;
-&lt;h2&gt;Set de couvert en bois&lt;/h2&gt;
-&lt;h2&gt;Desous de verres&lt;/h2&gt;
-&lt;h2&gt;Boite de rangement de dessous de verres&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:idees-autours-bois.html</guid><category>bois</category></item><item><title>I18n</title><link>https://mothsart.github.io/i18n.html</link><description>&lt;h2&gt;Créer un fichier pot à partir de sources Python&lt;/h2&gt;
+&lt;p&gt;Pas en exterieur&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:type-de-bois.html</guid><category>bois</category></item><item><title>I18n</title><link>https://mothsart.github.io/i18n.html</link><description>&lt;h2&gt;Créer un fichier pot à partir de sources Python&lt;/h2&gt;
 &lt;pre class="highlight"&gt;&lt;code&gt;!bash
 pygettext -o monsterz.pot ./monsterz.py&lt;/code&gt;&lt;/pre&gt;
 

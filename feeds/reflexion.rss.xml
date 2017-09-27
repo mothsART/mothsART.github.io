@@ -1,5 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Thu, 27 Jul 2017 00:00:00 +0200</lastBuildDate><item><title>Diff-image</title><link>https://mothsart.github.io/diff-image.html</link><description>&lt;h2&gt;Comparer 2 images&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Thu, 27 Jul 2017 00:00:00 +0200</lastBuildDate><item><title>Algos de distances et de phonetique</title><link>https://mothsart.github.io/algos-distance-phonetique.html</link><description>&lt;h2&gt;Distance et algos de phonetic&lt;/h2&gt;
+&lt;h2&gt;Définition de la Distance&lt;/h2&gt;
+&lt;p&gt;Les algorithmes de distance vont comparer 2 chaines afin de déterminer leur &lt;strong&gt;pourcentage de ressemblance&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;Algos de distances&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Jaro (à priori : plus rapide que levenstein sur des petites chaines de caractères)&lt;/li&gt;
+&lt;li&gt;Hamming&lt;/li&gt;
+&lt;li&gt;Levenstein&lt;/li&gt;
+&lt;li&gt;Damerau Levenstein&lt;/li&gt;
+&lt;li&gt;Sift 1 à 4 : un algo de distance plus rapide que Levenstein :
+https://siderite.blogspot.com/2014/11/super-fast-and-accurate-string-distance.html&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Intérêt d'un algo de distance (quand on l'utilise) ?&lt;/h3&gt;
+&lt;p&gt;Dans une requète SQL (en général sous forme de procédure stockée) : permet de filtrer les recherches selon un certain pourcentage de ressemblance.&lt;/p&gt;
+&lt;h2&gt;Définition de la Phonetique&lt;/h2&gt;
+&lt;h3&gt;Algos de phonetic&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Soundex (https://en.wikipedia.org/wiki/Soundex)&lt;/li&gt;
+&lt;li&gt;Metaphone (https://en.wikipedia.org/wiki/Metaphone)&lt;/li&gt;
+&lt;li&gt;Double-metaphone (https://en.wikipedia.org/wiki/Metaphone#Double_Metaphone)&lt;/li&gt;
+&lt;li&gt;Caverphone (https://en.wikipedia.org/wiki/Caverphone)&lt;/li&gt;
+&lt;li&gt;Beider–Morse Phonetic (https://en.wikipedia.org/wiki/Daitch%E2%80%93Mokotoff_Soundex#Beider.E2.80.93Morse_Phonetic_Name_Matching_Algorithm)&lt;/li&gt;
+&lt;li&gt;Kölner Phonetik (https://de.wikipedia.org/wiki/K%C3%B6lner_Phonetik)&lt;/li&gt;
+&lt;li&gt;NYSIIS (https://en.wikipedia.org/wiki/New_York_State_Identification_and_Intelligence_System)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Intérêt d'un algo de phonetic (quand on l'utilise) ?&lt;/h3&gt;
+&lt;h2&gt;Tokenization&lt;/h2&gt;
+&lt;p&gt;Derrière ce mot barbare, ce terme désigne un algorithme capable de convertir un texte brut en une liste de mots.&lt;/p&gt;
+&lt;h2&gt;NGrams&lt;/h2&gt;
+&lt;p&gt;https://fr.wikipedia.org/wiki/N-gramme&lt;/p&gt;
+&lt;h2&gt;Stemming&lt;/h2&gt;
+&lt;h2&gt;Naive-Bayes classification&lt;/h2&gt;
+&lt;h2&gt;Term Frequency-Inverse Document Frequency(tf-idf)&lt;/h2&gt;
+&lt;h2&gt;Logistic regression classification&lt;/h2&gt;
+&lt;h2&gt;Optimize naive-bayes (currently pretty slow)&lt;/h2&gt;
+&lt;h2&gt;Plural/Singular inflector&lt;/h2&gt;
+&lt;p&gt;Algos permettant de transformer un mot de sa forme singulier au pluriel et inversement + détecter sa forme actuel. (est-ce que le mot est au singulier ou au pluriel ?)&lt;/p&gt;
+&lt;h2&gt;Détection de langue&lt;/h2&gt;
+&lt;p&gt;https://github.com/greyblake/whatlang-rs&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:algos-distance-phonetique.html</guid><category>levenstein</category><category>hamming</category><category>soundex</category><category>metaphone</category><category>token</category><category>ngram</category></item><item><title>Alimentation responsable</title><link>https://mothsart.github.io/alimentation-responsable.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;h2&gt;Local&lt;/h2&gt;
+&lt;p&gt;https://courcircui54.blogspot.fr&lt;/p&gt;
+&lt;h2&gt;Sa production&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;entretenir un poulailler&lt;/li&gt;
+&lt;li&gt;permaculture&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Piste à développer : subsituts à la nourriture&lt;/h2&gt;
+&lt;p&gt;https://ploum.net/le-meal-engineering-le-futur-de-la-nutrition/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:alimentation-responsable.html</guid><category>ecologie</category><category>responsable</category><category>alimentaire</category></item><item><title>Diff-image</title><link>https://mothsart.github.io/diff-image.html</link><description>&lt;h2&gt;Comparer 2 images&lt;/h2&gt;
 &lt;p&gt;Je démarre un soft de comparaison d'images.
 En effet, je trouve qu'un outil "simple" de ce genre n'existe tout bonnement pas.
 Qui plus est, ça me permet de faire du &lt;strong&gt;Rust&lt;/strong&gt;, de faire de l'algo sur de l'image matricielle, d'apprendre l'API de GTK... 
@@ -57,54 +104,7 @@ La complémentarité SVG/HTML n'a jamais été pensé au départ et les bugs irr
 &lt;li&gt;&lt;strong&gt;Opérations booléennes natives&lt;/strong&gt; :&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Ca nécessite des libs externes pour faire le boulôt.
-&lt;strong&gt;C'est du foutage de gueule, ça devrait être natif !&lt;/strong&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-26:le-format-svg.html</guid><category>svg</category><category>js</category><category>frontend</category></item><item><title>Alimentation responsable</title><link>https://mothsart.github.io/alimentation-responsable.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
-&lt;h2&gt;Local&lt;/h2&gt;
-&lt;p&gt;https://courcircui54.blogspot.fr&lt;/p&gt;
-&lt;h2&gt;Sa production&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;entretenir un poulailler&lt;/li&gt;
-&lt;li&gt;permaculture&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Piste à développer : subsituts à la nourriture&lt;/h2&gt;
-&lt;p&gt;https://ploum.net/le-meal-engineering-le-futur-de-la-nutrition/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-08-31:alimentation-responsable.html</guid><category>ecologie</category><category>responsable</category><category>alimentaire</category></item><item><title>Algos de distances et de phonetique</title><link>https://mothsart.github.io/algos-distance-phonetique.html</link><description>&lt;h2&gt;Distance et algos de phonetic&lt;/h2&gt;
-&lt;h2&gt;Définition de la Distance&lt;/h2&gt;
-&lt;p&gt;Les algorithmes de distance vont comparer 2 chaines afin de déterminer leur &lt;strong&gt;pourcentage de ressemblance&lt;/strong&gt;.&lt;/p&gt;
-&lt;h3&gt;Algos de distances&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Jaro (à priori : plus rapide que levenstein sur des petites chaines de caractères)&lt;/li&gt;
-&lt;li&gt;Hamming&lt;/li&gt;
-&lt;li&gt;Levenstein&lt;/li&gt;
-&lt;li&gt;Damerau Levenstein&lt;/li&gt;
-&lt;li&gt;Sift 1 à 4 : un algo de distance plus rapide que Levenstein :
-https://siderite.blogspot.com/2014/11/super-fast-and-accurate-string-distance.html&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Intérêt d'un algo de distance (quand on l'utilise) ?&lt;/h3&gt;
-&lt;p&gt;Dans une requète SQL (en général sous forme de procédure stockée) : permet de filtrer les recherches selon un certain pourcentage de ressemblance.&lt;/p&gt;
-&lt;h2&gt;Définition de la Phonetique&lt;/h2&gt;
-&lt;h3&gt;Algos de phonetic&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Soundex (https://en.wikipedia.org/wiki/Soundex)&lt;/li&gt;
-&lt;li&gt;Metaphone (https://en.wikipedia.org/wiki/Metaphone)&lt;/li&gt;
-&lt;li&gt;Double-metaphone (https://en.wikipedia.org/wiki/Metaphone#Double_Metaphone)&lt;/li&gt;
-&lt;li&gt;Caverphone (https://en.wikipedia.org/wiki/Caverphone)&lt;/li&gt;
-&lt;li&gt;Beider–Morse Phonetic (https://en.wikipedia.org/wiki/Daitch%E2%80%93Mokotoff_Soundex#Beider.E2.80.93Morse_Phonetic_Name_Matching_Algorithm)&lt;/li&gt;
-&lt;li&gt;Kölner Phonetik (https://de.wikipedia.org/wiki/K%C3%B6lner_Phonetik)&lt;/li&gt;
-&lt;li&gt;NYSIIS (https://en.wikipedia.org/wiki/New_York_State_Identification_and_Intelligence_System)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Intérêt d'un algo de phonetic (quand on l'utilise) ?&lt;/h3&gt;
-&lt;h2&gt;Tokenization&lt;/h2&gt;
-&lt;p&gt;Derrière ce mot barbare, ce terme désigne un algorithme capable de convertir un texte brut en une liste de mots.&lt;/p&gt;
-&lt;h2&gt;NGrams&lt;/h2&gt;
-&lt;p&gt;https://fr.wikipedia.org/wiki/N-gramme&lt;/p&gt;
-&lt;h2&gt;Stemming&lt;/h2&gt;
-&lt;h2&gt;Naive-Bayes classification&lt;/h2&gt;
-&lt;h2&gt;Term Frequency-Inverse Document Frequency(tf-idf)&lt;/h2&gt;
-&lt;h2&gt;Logistic regression classification&lt;/h2&gt;
-&lt;h2&gt;Optimize naive-bayes (currently pretty slow)&lt;/h2&gt;
-&lt;h2&gt;Plural/Singular inflector&lt;/h2&gt;
-&lt;p&gt;Algos permettant de transformer un mot de sa forme singulier au pluriel et inversement + détecter sa forme actuel. (est-ce que le mot est au singulier ou au pluriel ?)&lt;/p&gt;
-&lt;h2&gt;Détection de langue&lt;/h2&gt;
-&lt;p&gt;https://github.com/greyblake/whatlang-rs&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-07-09:algos-distance-phonetique.html</guid><category>levenstein</category><category>hamming</category><category>soundex</category><category>metaphone</category><category>token</category><category>ngram</category></item><item><title>Phonetic</title><link>https://mothsart.github.io/phonetic.html</link><description>&lt;h2&gt;Phonetic&lt;/h2&gt;
+&lt;strong&gt;C'est du foutage de gueule, ça devrait être natif !&lt;/strong&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:le-format-svg.html</guid><category>svg</category><category>js</category><category>frontend</category></item><item><title>Phonetic</title><link>https://mothsart.github.io/phonetic.html</link><description>&lt;h2&gt;Phonetic&lt;/h2&gt;
 &lt;p&gt;Sur PostgreSQL : https://www.postgresql.org/docs/9.1/static/fuzzystrmatch.html&lt;/p&gt;
 &lt;p&gt;https://fr.wikipedia.org/wiki/Homonymie
 http://www.easter-eggs.com/Recherche-approximative-avec
@@ -168,7 +168,7 @@ http://aspell.net/metaphone/dmetaph.cpp&lt;/p&gt;
 &lt;p&gt;http://www.norvig.com/spell-correct.html&lt;/p&gt;
 &lt;p&gt;http://stackoverflow.com/questions/487003/how-to-detect-a-typo-in-a-product-search-and-suggest-possible-corrections&lt;/p&gt;
 &lt;p&gt;PostGreSQL implémente la distance de levenstein, le double metaphone :&lt;/p&gt;
-&lt;p&gt;https://github.com/Freyskeyd/nlp&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-07-08:phonetic.html</guid><category>phonetic</category><category>phonex</category><category>metaphone</category></item><item><title>Dégooglelison et Education numérique</title><link>https://mothsart.github.io/deggoglelison-eductation-numerique.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;https://github.com/Freyskeyd/nlp&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:phonetic.html</guid><category>phonetic</category><category>phonex</category><category>metaphone</category></item><item><title>Dégooglelison et Education numérique</title><link>https://mothsart.github.io/deggoglelison-eductation-numerique.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;J'ai pas l'habitude de faire de la politique mais la nécessité me semble évidente.&lt;/p&gt;
 &lt;p&gt;Notre pays (aussi bien que l'europe, notre région, notre ville) a besoin de réformer son système éducatif et d'innover dans l'accès au numérique.&lt;/p&gt;
 &lt;p&gt;Pour cela, il doit se démarquer des GAFAM (Google, Amazon, Facebook, Apple, Microsoft) !&lt;/p&gt;

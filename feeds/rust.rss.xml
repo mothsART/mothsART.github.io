@@ -5,7 +5,7 @@
 selon certaines conditions, on utilisera un algorithme plutôt qu'un autre afin de proposer dans un ensemble de recherche, des performances optimales.&lt;/p&gt;
 &lt;p&gt;Ce banc de test permettra également de comparer les performances brutes de plusieurs moteurs de base de données : SQL et NoSQL.&lt;/p&gt;
 &lt;p&gt;Des benchmarks en situations "réels" me permettrons d'en tirer des conclusions. (peut-être inédites)&lt;/p&gt;
-&lt;p&gt;Enfin, il me permettra de tester mon propre moteur de phonétic dédié à la langue française !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-07-09:phonetic-lab.html</guid><category>phonetic</category><category>distance</category><category>rust</category></item><item><title>Stratego</title><link>https://mothsart.github.io/stratego.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Enfin, il me permettra de tester mon propre moteur de phonétic dédié à la langue française !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:phonetic-lab.html</guid><category>phonetic</category><category>distance</category><category>rust</category></item><item><title>Stratego</title><link>https://mothsart.github.io/stratego.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;J'aime beaucoup le jeu de plateau &lt;strong&gt;Stratego&lt;/strong&gt;.
 N'ayant rien trouvé dans le périmètre des logiciels libres permettant de jouer à ce jeu, j'ai décidé de le créer.&lt;/p&gt;
 &lt;h2&gt;Ma stack&lt;/h2&gt;

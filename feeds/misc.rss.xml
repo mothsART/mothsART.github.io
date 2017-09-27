@@ -15,7 +15,7 @@
 &lt;li&gt;hexdump&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
-&lt;p&gt;http://linuxfr.org/users/pied/journaux/an-unexpected-linux-reverse-engineering&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-06-07:binaire.html</guid><category>binaire</category></item><item><title>Can I Diff</title><link>https://mothsart.github.io/can-i-diff.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;http://linuxfr.org/users/pied/journaux/an-unexpected-linux-reverse-engineering&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:binaire.html</guid><category>binaire</category></item><item><title>Can I Diff</title><link>https://mothsart.github.io/can-i-diff.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Un développeur passe son temps à utiliser des différentiels pour déterminer rapidement ce qui a changé dans un ou plusieurs fichiers.&lt;/p&gt;
 &lt;p&gt;Le plus commun est bien entendu la commande diff, particulièrement décocratisé à partir de &lt;strong&gt;git diff&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2&gt;diff et cmd&lt;/h2&gt;
