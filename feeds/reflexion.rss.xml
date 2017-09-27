@@ -1,5 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 12 Apr 2017 11:54:35 +0200</lastBuildDate><item><title>Algos de distances et de phonetique</title><link>https://mothsart.github.io/algos-distance-phonetique.html</link><description>&lt;h2&gt;Distance et algos de phonetic&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Thu, 27 Jul 2017 00:00:00 +0200</lastBuildDate><item><title>Diff-image</title><link>https://mothsart.github.io/diff-image.html</link><description>&lt;h2&gt;Comparer 2 images&lt;/h2&gt;
+&lt;p&gt;Je démarre un soft de comparaison d'images.
+En effet, je trouve qu'un outil "simple" de ce genre n'existe tout bonnement pas.
+Qui plus est, ça me permet de faire du &lt;strong&gt;Rust&lt;/strong&gt;, de faire de l'algo sur de l'image matricielle, d'apprendre l'API de GTK... 
+Et potentiellement de faire profiter d'autres personnes et, pourquoi pas, de succiter des vocations.&lt;/p&gt;
+&lt;h2&gt;N'importe quoi, y'a ImageMagick ou Gimp&lt;/h2&gt;
+&lt;p&gt;Ben, justement... c'est tout sauf simple.
+L'un nécessite de faire de la ligne de commande et le 2ème est une usine à gaz longue à démarrer, gourmande en ressources et réservé à la retouche photo.&lt;/p&gt;
+&lt;p&gt;Bref, je veux respecter la philosophie Unixienne : faire une chose et une seul.
+Rester KISS.&lt;/p&gt;
+&lt;h2&gt;Fonctionnalités&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Comparer des images via des métriques&lt;/li&gt;
+&lt;li&gt;Comparer les méta-données&lt;/li&gt;
+&lt;li&gt;utilisation via GIT : un peu comme https://gist.github.com/StanAngeloff/1716699&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Equivalents&lt;/h2&gt;
+&lt;p&gt;ImageMagick
+Beyond
+geeqie&lt;/p&gt;
+&lt;h2&gt;Références&lt;/h2&gt;
+&lt;p&gt;https://askubuntu.com/questions/209517/does-diff-exist-for-images&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 27 Jul 2017 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:diff-image.html</guid><category>rust</category></item><item><title>Les APIS web oubliés</title><link>https://mothsart.github.io/le-format-svg.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Je suis un dev web et je passe trop de temps sur des choses merdiques.
+Du frontend franchement basique.&lt;/p&gt;
+&lt;h2&gt;Une api pour transform()&lt;/h2&gt;
+&lt;p&gt;On peut, en toute logique utiliser depuis un petit moment déjà les propriétés css &lt;strong&gt;transform: scale(5px 8px) translate(2px 200px)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;C'est franchement excellent. Maintenant quand on veut éditer une valeur avec javascript, ça se corse tout d'un coup car il existe strictement rien : faut parser, et éditer avec une merdique concaténation de chaines !!! What !&lt;/p&gt;
+&lt;p&gt;Bref, quand on connait la nature de javascript (dangereux tant qu'on a pas blindé de 1000 tests unitaires) et qu'on est obligé de faire plein de code boilerplate ...&lt;/p&gt;
+&lt;p&gt;On se pose vraiment la question : était-il difficile de faire une API pour ça plutôt qu'importer une nième librairie ou faire le job moi-même ?!&lt;/p&gt;
+&lt;h2&gt;Même constat pour la propriété viewbox en SVG&lt;/h2&gt;
+&lt;h2&gt;passer des couleurs d'un format d'image à l'autre&lt;/h2&gt;
+&lt;p&gt;C'est super, en css, on peut utiliser toute forme de couleur : hexadécimal, rgb, rgba et même hsl et hsla.
+C'est cool sauf que quand on fait du dev web, on utilise souvent des librairies différentes non compatibles. Du coup, ben, on a besoin de convertir des couleurs dans des espaces colorimétriques différents.
+Et bien sur, faut se faire tout à la main car y'a rien de natif.&lt;/p&gt;
+&lt;p&gt;Fillez-nous des apis, merde.&lt;/p&gt;
+&lt;h2&gt;Faire du calc() dans les média queries&lt;/h2&gt;
+&lt;p&gt;On peut désormais utiliser des tailles en pourcentage, en rem, en vw, vh etc.
+On peut additionner ces valeurs mais quand on veut faire du responsive... ben on ai baisé car les média queries ne supporte pas &lt;strong&gt;calc()&lt;/strong&gt;
+Du coup, on est obligé de tricher, d'utiliser du javascript etc.&lt;/p&gt;
+&lt;h2&gt;SVG&lt;/h2&gt;
+&lt;p&gt;Le SVG, j'aime ça, j'en fais de plus en plus mais plus j'avance et plus je comprend que c'est encore à des années lumières de remplacer flash !
+Quand je vois qu'il y a 15 ans, j'étais capable de faire des trucs en flash sur lesquel je galère en SVG à l'heure actuelle alors que j'ai franchement plus de bouteil.
+Je me dis qu'il y a comme un soucis.
+Et puis, quand CanIUse me dit que le SVG 1.1 est supporté à 100% par tous les navigateurs, j'ai l'impression que c'est valable que sur des cas d'école.
+La réalité du terrain est tout autre et faut beaucoup de patience et de malice pour pouvoir avoir un fonctionnement équivalent partout.
+Alors ne me parlez pas de SVG dans du HTML ou l'inverse : là on s'aventure dans le nonamesland : on voit très clairement que les moteurs de rendu ont intégré le SVG après coup en cachant la misère.
+La complémentarité SVG/HTML n'a jamais été pensé au départ et les bugs irrésolubles sont légion.
+(Je porte de gros espoir sur Servo qui ne pourra que s'en sortir mieux en partant d'une feuille blanche)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Opération de recadrage&lt;/strong&gt; : &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Quand on veut recadrer un document complet : plus de viewbox avec des valeurs négatives par exemples... ben, ça existe pas : faut utiliser &lt;strong&gt;transform&lt;/strong&gt; (ou tout recadrer à la main)!&lt;/p&gt;
+&lt;p&gt;Pour moi, les fonctions &lt;strong&gt;scale&lt;/strong&gt; &lt;strong&gt;translate&lt;/strong&gt;, c'est pas fait pour ça!&lt;/p&gt;
+&lt;p&gt;ça entraine de la complexité alors que l'on veut tout simplement remettre à niveau un document au complet.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Opérations booléennes natives&lt;/strong&gt; :&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ca nécessite des libs externes pour faire le boulôt.
+&lt;strong&gt;C'est du foutage de gueule, ça devrait être natif !&lt;/strong&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-26:le-format-svg.html</guid><category>svg</category><category>js</category><category>frontend</category></item><item><title>Alimentation responsable</title><link>https://mothsart.github.io/alimentation-responsable.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;h2&gt;Local&lt;/h2&gt;
+&lt;p&gt;https://courcircui54.blogspot.fr&lt;/p&gt;
+&lt;h2&gt;Sa production&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;entretenir un poulailler&lt;/li&gt;
+&lt;li&gt;permaculture&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Piste à développer : subsituts à la nourriture&lt;/h2&gt;
+&lt;p&gt;https://ploum.net/le-meal-engineering-le-futur-de-la-nutrition/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-08-31:alimentation-responsable.html</guid><category>ecologie</category><category>responsable</category><category>alimentaire</category></item><item><title>Algos de distances et de phonetique</title><link>https://mothsart.github.io/algos-distance-phonetique.html</link><description>&lt;h2&gt;Distance et algos de phonetic&lt;/h2&gt;
 &lt;h2&gt;Définition de la Distance&lt;/h2&gt;
 &lt;p&gt;Les algorithmes de distance vont comparer 2 chaines afin de déterminer leur &lt;strong&gt;pourcentage de ressemblance&lt;/strong&gt;.&lt;/p&gt;
 &lt;h3&gt;Algos de distances&lt;/h3&gt;

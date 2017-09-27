@@ -13,6 +13,17 @@ body {
     padding: 0;
 }
 
+@font-face{
+    font-family:'Glyphicons Halflings';
+    src:url(./fonts/glyphicons-halflings-regular.eot);
+    src:url(./fonts/glyphicons-halflings-regular.eot?#iefix)
+    format('embedded-opentype'),url(./fonts/glyphicons-halflings-regular.woff2)
+    format('woff2'),url(./fonts/glyphicons-halflings-regular.woff)
+    format('woff'),url(./fonts/glyphicons-halflings-regular.ttf)
+    format('truetype'),url(./fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular)
+    format('svg')
+}
+
 .table > thead > tr > th,
 .table > tbody > tr > td {
     padding: 5px;
@@ -278,6 +289,21 @@ table > tbody > tr > td:first-child {
     border-top: solid 1px #ddd;
     color: #333;
 }
+
+#source-file-label {
+    display: inline-block;
+    width: 8rem;
+    text-align: center;
+    vertical-align: top;
+}
+
+#source-file {
+    display: inline-block;
+    max-width: 20rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 /* </SIDEBAR> */
 
 /* <CONTENT> */
@@ -339,7 +365,7 @@ table > tbody > tr > td:first-child {
     display: block;
     position: relative;
     margin-top: -21px;
-    padding: 0 0 0 2.6rem;
+    padding: 0 0 0 3rem;
     margin-left: 22px;
 }
 
@@ -467,7 +493,7 @@ table > tbody > tr > td:first-child {
 }
 
 #svg .indice text {
-    font-size: 7px;
+    font-size: 14px;
 }
 
 .container .save {
@@ -533,7 +559,8 @@ table > tbody > tr > td:first-child {
 }
 
 .box__file + label:hover strong,
-.box__file:focus + label strong, .box__file.has-focus + label strong {
+.box__file:focus + label strong,
+.box__file.has-focus + label strong {
     color: #39bfd3;
 }
 
@@ -562,7 +589,7 @@ table > tbody > tr > td:first-child {
 
 #indice-title {
     padding: 7px 0;
-    width: 2rem;
+    width: 3rem;
 }
 
 .form-control {

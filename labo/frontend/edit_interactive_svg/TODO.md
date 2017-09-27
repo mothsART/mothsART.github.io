@@ -2,6 +2,7 @@
 
 ## Version 1.0
 
+* mode offline
 * i18n (with vue.js)
 * help example
 
@@ -30,13 +31,22 @@
 # Bugs
 
 [Résolu] l'import de plusieurs documents se passe sans soucis
+* les tailles des indices sont calculés proportionnellement aux tailles du fichier SVG
+* Sur Firefox : les indices débordent : lié à un bug du moteur Gecko : taille conditionné par une taille minimum. (valeur en préférence)
+[Résolu : obligé d'inclure les icones svg dans le html] * mode offline : import des polices de l'éditeur
+* l'éditeur Trumbowyg n'est pas traduit
+* police de l'éditeur change de couleur : soucis lié à une balise <style> dans le fichier svg :
+que décider dans ce cas ? Pour l'instant, suppression pur et dur du noeud !
+Dans un second temps, ajout d'un préfix sur toutes les règles ?
+* le réimport d'un fichier masque l'oeil global
+* en mode offline : les exemples ne peuvent être affichés via de l'ajax (lié à chrome)
+* en mode offline, trumbowyg ne devrait pas faire d'appels ajax
 
 * l'indice devrait disparaitre après le zoom.
 * Les exemples dans le "about" devrait être relatif
 * dézommer quand on ferme le détail d'un indice
 
 * la suppression de tous les indices à pour effet de bord de cacher les indices créés par la suite.
-
 
 * le drag d'un indice sans drop avec l'activation du zoom ne devrait pas être possible
 
@@ -48,7 +58,6 @@
 
 # Bugs non résolus
 
-* Sur Firefox : les indices débordent : lié à un bug du moteur Gecko : taille conditionné par une taille minimum. (valeur en préférence)
 *  Sur Firefox, le drag des indices nécessite un relachement de la souris puis un nouveau clic pour le drop.
 
 # Ce qu'il reste à faire pour une version 1.0 :

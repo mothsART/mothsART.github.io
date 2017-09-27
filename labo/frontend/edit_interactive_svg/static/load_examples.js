@@ -10,6 +10,8 @@ function load_file(stream) {
   "use strict";
   var el = document.createElement('div');
   el.innerHTML = stream;
+  $(el).find('svg script').remove();
+  $(el).find('svg style').remove();
   $("#content").append($(el).find('svg'));
   document.getElementById('content').setAttribute('data-full', true);
   $("#upload-zone").addClass('hidden');
@@ -63,6 +65,7 @@ function load_example(url, name) {
   }
   else {
     $("#source-file").text(name);
+    $("#source-file").attr('title', name);
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET", url, true);
     xmlhttp.onreadystatechange = function() {
