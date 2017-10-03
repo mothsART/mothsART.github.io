@@ -11,6 +11,7 @@ var palette = [
   ["#900"   , "#b45f06", "#bf9000", "#38761d", "#134f5c", "#0b5394", "#351c75", "#741b47"],
   ["#600"   , "#783f04", "#7f6000", "#274e13", "#0c343d", "#073763", "#20124d", "#4c1130"]
 ];
+
 var colors = []
 for (var i = 0; i < palette.length; i++) {
   for (var j = 0; j < palette[i].length; j++) {
@@ -18,6 +19,7 @@ for (var i = 0; i < palette.length; i++) {
   }
 }
 var remaining_colors = [];
+
 var SVG = {
   x:             0,
   y:             0,
@@ -56,6 +58,7 @@ var SVG = {
     }
   }
 };
+
 var dragAndDrop = {
   init: function () {
     this.dragula();
@@ -129,12 +132,10 @@ dragAndDrop.init();
 
 $(document).ready(function() {
   "use strict";
-  if (document.getElementsByTagName('body')[0].classList.contains('debug')) {
+  if (document.getElementsByTagName('body')[0].classList.contains('debug'))
     document.getElementById('release-menu').classList.add('hidden');
-  }
-  else {
+  else
     document.getElementById('debug-menu').classList.add('hidden');
-  }
 });
 
 function reorder_legend() {
@@ -147,7 +148,7 @@ function reorder_legend() {
     tr_list[i].getElementsByClassName("indice")[0].setAttribute("id", "legend-indice-" + i);
     tr_list[i].getElementsByClassName("indice")[0].childNodes[0].nodeValue = i;
     if($("#legend-indice-" + (i + 1)).parent().find(".open-detail").hasClass('unfolded')) {
-       document.getElementById("last-folded-indice").setAttribute(
+      document.getElementById("last-folded-indice").setAttribute(
         "value", "legend-indice-" + (i + 1)
       );
     }
@@ -178,18 +179,15 @@ function Grab(evt)
   if (!scale)
     scale = 1;
   if (scale != 1)
-  {
     return;
-  }
   // find out which element we moused down on
   var targetElement = evt.target;
   if (
     targetElement == null
     || !targetElement.classList.contains('mask')
     || document.getElementById("svg").classList.contains("show")
-  ) {
+  )
     return;
-  }
   DragTarget = targetElement;
   $(DragTarget.parentNode).find(".indice-cross")[0].classList.remove("hidden");
 };
@@ -241,6 +239,23 @@ function Drag(evt) {
   translate_indice(DragTarget.parentNode, x, y);
 };
 
+function percentage_change(value1, value2, size) {
+  "use strict";
+  if (value1 == 0 && value2 == 0)
+    return 0;
+  value1  = Math.abs(value1);
+  value2  = Math.abs(value2);
+  var max = Math.max(value1, value2);
+  var min = Math.min(value1, value2);
+  if (!size || size == 0)
+  {
+    if (min == 0)
+      return 100 * max
+    return 100 * ((max - min) / min);
+  }
+  return 100 * ((max - min) / size);
+}
+
 function createForeignObject() {
   "use strict";
   /*var switchE = document.createElementNS("http://www.w3.org/2000/svg", "switch");
@@ -267,6 +282,17 @@ function createForeignObject() {
   svg.append(rootElement);
   //svg.appendChild(switchE);
   SVG.init();
+  var SVG_Rect = svg.viewBox.baseVal;
+  if (
+    !(SVG_Rect.x == 0 && SVG_Rect.y == 0 && SVG_Rect.width == 0 && SVG_Rect.height == 0)
+    && (
+      percentage_change(SVG.x, SVG_Rect.x, SVG.width) > 20
+      || percentage_change(SVG.y, SVG_Rect.y, SVG.height) > 20
+      || percentage_change(SVG.width, SVG_Rect.width) > 20
+      || percentage_change(SVG.height, SVG_Rect.height) > 20
+    )
+  )
+    Warnings.new('warning-viewbox-detected');
   svg.setAttribute("width", 0);
   svg.setAttribute("height", 0);
   svg.setAttribute("viewBox", SVG.x + " " + SVG.y + " " + SVG.width + " " + SVG.height);
@@ -328,9 +354,8 @@ function createEditIndice(index) {
 
 function random_colors() {
   "use strict";
-  if (remaining_colors.length == 0) {
+  if (remaining_colors.length == 0)
     remaining_colors = colors;
-  }
   var new_value = colors[parseInt(Math.random() * remaining_colors.length)];
   var index = remaining_colors.indexOf(new_value);
   remaining_colors.splice(index, 1);
@@ -343,7 +368,6 @@ function add_legend(element, hex_color) {
   $("#show-all-legend").prop('checked', false);
   $("#template-legend").clone().removeAttr("id").removeClass("hidden")
     .appendTo("#list-of-legend tbody").attr("id", "legend-" + index);
-  $("#show-all-legend").removeClass('hidden');
   $("#list-of-legend").removeClass('hidden');
   if (!hex_color) {
     createEditIndice(index);
@@ -351,12 +375,13 @@ function add_legend(element, hex_color) {
     $("#template-description").clone().removeAttr("id").appendTo('#descriptions');
     hex_color = random_colors();
   }
-  document.getElementById("nb-indices").setAttribute("value", index);
-  reorder_legend();
   if (index > 98) {
     $(element).attr("disabled", "disabled").attr("title", "Too lot indices.");
     return;
   }
+  document.getElementById("nb-indices").setAttribute("value", index);
+  reorder_legend();
+  $('#select-all-legend').prop('checked', false);
   change_indice_color(
     "legend-indice-" + index,
     hex_color
@@ -430,6 +455,13 @@ function open_detail(element) {
   }
 }
 
+function modal_delete_legend(element) {
+  "use strict";
+   if (element.classList.contains('disabled'))
+    return;
+  $('#delete-legend-modal').modal();
+}
+
 function delete_legend() {
   "use strict";
   var tr_list = $("#list-of-legend tbody tr .select:checked").closest("tr");
@@ -442,21 +474,28 @@ function delete_legend() {
     $("#indice-" + index).remove();
     $("#description-" + index).remove();
     $("#real-indice-" + index).remove();
+    if ($('#legend-' + index + " .display-indice").hasClass('show'))
+      $("#count-nb-display").val(parseInt($("#count-nb-display").val()) - 1);
   });
   tr_list.remove();
+  $('#delete-legend-button').addClass('disabled');
+  th_show_legend();
   $("#delete-legend-modal").modal('hide');
-  if ($("#list-of-legend tbody tr").length == 1) {
+  if ($("#list-of-legend tbody tr").length == 1)
     $("#list-of-legend").addClass('hidden');
-    $("#show-all-legend").addClass('hidden').prop('checked', false);
-  }
-  else {
+  else if ($("#list-of-legend tbody tr").length == 2) {
     reorder_legend();
+    $("#show-all-legend").removeClass('show').prop('checked', false);
   }
+  else
+    reorder_legend();
   $("#add-legend-button").removeAttr('disabled').removeAttr("title");
 }
 
-function display_result() {
+function display_result(element) {
   "use strict";
+  if (element.classList.contains('disabled'))
+    return;
   $("#indices .indice").attr("onclick", "real_zoom(this);");
   $("#edit-menu, #sidebar, #delete-svg").addClass("hidden");
   $("#svg").removeClass("edit-mode").addClass("show");
@@ -464,15 +503,12 @@ function display_result() {
   $("#svg svg").css("transform", "scale(1)");
   //resize_indices();
   $("#indices .indice").each(function(index, el) {
-    if ($(el).hasClass('hidden')) {
+    if ($(el).hasClass('hidden'))
       $(el).data("hidden", true);
-    }
-    else {
+    else
       $(el).data("hidden", false);
-    }
-    if ($(el).parent().attr("id") != "template-indice") {
+    if ($(el).parent().attr("id") != "template-indice")
       $(el).removeClass('hidden');
-    }
   });
 }
 
@@ -491,23 +527,21 @@ function return_to_edit() {
   $(".description").addClass("hidden");
   $("#root-svg").css("transform", "scale(1)").removeClass("duration");
   $("#indices .indice").each(function(index, el) {
-    if ($(el).data('hidden') == true) {
+    if ($(el).data('hidden') == true)
       $(el).addClass('hidden');
-    }
-    else {
+    else
       $(el).removeClass('hidden');
-    }
   });
   $("#svg svg").css("transform", "scale(1)");
-  if (zoom_input && zoom_input.checked) {
+  if (zoom_input && zoom_input.checked)
     active_zoom(zoom_input);
-  }
 }
 
 function delete_pic(replace) {
   "use strict";
   checked_all();
   delete_legend();
+  $("#nb-indices, #count-nb-display").val(0);
   $("#svg svg").remove();
   document.getElementById('content').setAttribute('data-full', false);
   if (!replace) {
@@ -515,6 +549,7 @@ function delete_pic(replace) {
     $("#upload-zone, #choose-file").removeClass("hidden");
     $("#delete-picture-modal").modal('hide');
   }
+  Warnings.clear();
 }
 
 function show_legend(element) {
@@ -531,25 +566,30 @@ function show_legend(element) {
     $(element).addClass('show');
     nbDisplay.val(parseInt(nbDisplay.val()) + 1);
   }
+  th_show_legend();
+}
+
+function th_show_legend() {
+  "use strict";
+  var nbDisplay = $("#count-nb-display");
+  $("#tr-show-all-legend").addClass('hidden');
+  if ($("#nb-indices").val() > 1)
+    $("#tr-show-all-legend").removeClass('hidden');
   $("#show-all-legend").removeClass('show');
-  if ($("#nb-indices").val() === nbDisplay.val()) {
+  if ($("#nb-indices").val() === nbDisplay.val())
     $("#show-all-legend").addClass('show');
-  }
 }
 
 function select_legend(element) {
   "use strict";
   var nbSelected = $("#count-nb-selected");
-  if($(element).is(':checked')) {
+  if($(element).is(':checked'))
     nbSelected.val(parseInt(nbSelected.val()) + 1);
-  }
-  else {
+  else
     nbSelected.val(parseInt(nbSelected.val()) - 1);
-  }
   $("#delete-legend-button").addClass('disabled');
-  if (nbSelected.val() > 0) {
+  if (nbSelected.val() > 0)
     $("#delete-legend-button").removeClass('disabled');
-  }
   $("#select-all-legend").prop(
     "checked",
     $("#nb-indices").val() == nbSelected.val()
@@ -591,9 +631,8 @@ function checked_all() {
 function select_all_legend() {
   "use strict";
   var value = $("#select-all-legend").prop('checked');
-  if (value) {
+  if (value)
     checked_all();
-  }
   else {
     $("#list-of-legend tbody tr .selection > input").prop('checked', false);
     $("#delete-legend-button").addClass('disabled');
@@ -634,9 +673,8 @@ function zoom_on(index, value, zoom_svg) {
   var trans_y = parseFloat(svg_indice.getAttribute("data-translate-y"));
   svg_indice.setAttribute("data-zoom", value);
   $("#legend-" + index + " .zoom-input").val(value);
-  if (zoom_svg) {
+  if (zoom_svg)
     zoom_edit_mode(value, trans_x, trans_y);
-  }
 }
 
 function zoom(element) {
@@ -725,9 +763,8 @@ function open_dialog() {
     $("#legend-title").attr("placeholder", "-- no title --");
     $("#legend-title").val('');
   }
-  else {
+  else
     $("#legend-title").val(text);
-  }
 }
 
 function hide_dialog() {
@@ -747,9 +784,8 @@ function hide_dialog() {
     $("#description-" + index + " .title").text(text);
   }
   var html = $("#indice-description").trumbowyg('html');
-  if (html != "") {
-  $("#description-" + index + " .description-content").html(html);
-  }
+  if (html != "")
+    $("#description-" + index + " .description-content").html(html);
 }
 
 $('#edit-legend-modal').on('show.bs.modal', function (e) {
