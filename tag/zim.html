@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Installation de ma Raspberry-PI avec Raspbian - Le Labo Du Nerd</title>
+    <title>zim - Le Labo Du Nerd</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -9,23 +9,16 @@
 
 
 
-<link rel="canonical" href="https://mothsart.github.io/drafts/installation-raspberry-raspbian.html">
 
-        <meta name="author" content="Jérémie Ferry" />
-        <meta name="keywords" content="raspberry,linux,shell,raspbian" />
+    <meta name="author" content="Jérémie Ferry" />
+    <meta name="keywords" content="zim" />
 
+    <!-- Open Graph tags -->
         <meta property="og:site_name" content="Le Labo Du Nerd" />
-        <meta property="og:type" content="article"/>
-        <meta property="og:title" content="Installation de ma Raspberry-PI avec Raspbian"/>
-        <meta property="og:url" content="https://mothsart.github.io/drafts/installation-raspberry-raspbian.html"/>
-        <meta property="og:description" content=""/>
-        <meta property="article:published_time" content="2016-07-12" />
-            <meta property="article:section" content="raspberry" />
-            <meta property="article:tag" content="raspberry" />
-            <meta property="article:tag" content="linux" />
-            <meta property="article:tag" content="shell" />
-            <meta property="article:tag" content="raspbian" />
-            <meta property="article:author" content="Jérémie Ferry" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Le Labo Du Nerd"/>
+        <meta property="og:url" content="https://mothsart.github.io"/>
+        <meta property="og:description" content="Le Labo Du Nerd"/>
 
 
     <!-- Bootstrap -->
@@ -66,9 +59,12 @@ Le Labo Du Nerd            </a>
                             <a href="https://mothsart.github.io/category/frontend.html">Frontend</a>
                         </li>
                         <li >
+                            <a href="https://mothsart.github.io/category/memo.html">Memo</a>
+                        </li>
+                        <li >
                             <a href="https://mothsart.github.io/category/misc.html">Misc</a>
                         </li>
-                        <li class="active">
+                        <li >
                             <a href="https://mothsart.github.io/category/raspberry.html">Raspberry</a>
                         </li>
                         <li >
@@ -122,21 +118,17 @@ Le Labo Du Nerd            </a>
 <div class="container">
     <div class="row">
             <div class="col-sm-10">
-    <section id="content">
-        <article>
-            <header class="page-header">
-                <h1>
-                    Installation de ma Raspberry-PI avec Raspbian
-                </h1>
-            </header>
-            <div class="entry-content">
-                <div class="panel">
-                    <div class="panel-body">
+            <article>
+                <h2><a href="https://mothsart.github.io/format-zim.html">Le format ZIM</a></h2>
+
+                <div class="entry-content">
+                    <div class="panel">
+                        <div class="panel-body">
 <footer class="post-info">
     <span>
         <span class="label label-default">Date</span>
         <span class="published">
-            <i class="fa fa-calendar"></i><time datetime="2016-07-12T23:29:54+02:00"> mar. 12 juillet 2016</time>
+            <i class="fa fa-calendar"></i><time datetime="2017-10-15T11:39:53.701557+02:00"> dim. 15 octobre 2017</time>
         </span>
     </span>
 
@@ -147,36 +139,26 @@ Le Labo Du Nerd            </a>
 <span class="label label-default">Tags</span>
 
 
-	<a href="https://mothsart.github.io/tag/raspberry.html">raspberry
-                <span class="badge">2</span>
+	<a href="https://mothsart.github.io/tag/zim.html">zim
     </a>
         /
-	<a href="https://mothsart.github.io/tag/linux.html">linux
-                <span class="badge">21</span>
+	<a href="https://mothsart.github.io/tag/html.html">html
+                <span class="badge">4</span>
     </a>
         /
-	<a href="https://mothsart.github.io/tag/shell.html">shell
-    </a>
-        /
-	<a href="https://mothsart.github.io/tag/raspbian.html">raspbian
+	<a href="https://mothsart.github.io/tag/zip.html">zip
     </a>
     
-</footer><!-- /.post-info -->                    </div>
+</footer><!-- /.post-info -->                        </div>
+                    </div>
                 </div>
-                <h2>Intro</h2>
-<p>Voici ma procédure pour installer <strong>Raspbian</strong> sur une <strong>Raspberry PI v2</strong>
-(ARM v7)</p>
-<p>Je me suis inspiré de https://www.raspberrypi.org/documentation/installation/installing-images/linux.md</p>
-<h3>download</h3>
-<p>On va sur https://downloads.raspberrypi.org/raspbian/images/
-et on choisit la dernière :</p>
-<p>curl -O https://downloads.raspberrypi.org/raspbian/images/raspbian-2016-05-31/2016-05-27-raspbian-jessie.zip
-curl -O https://downloads.raspberrypi.org/raspbian/images/raspbian-2016-05-31/2016-05-27-raspbian-jessie.zip.sha1</p>
-<p>sha1sum -c 2016-05-27-raspbian-jessie.zip.sha1</p>
-            </div>
-            <!-- /.entry-content -->
-        </article>
-    </section>
+
+                <div class="summary">
+                    <a class="btn btn-default btn-xs" href="https://mothsart.github.io/format-zim.html">
+                        <span class="fa fa-chevron-circle-right">lire la suite ...</span>
+                    </a>
+                </div>
+            </article>
 
         </div>
         <div class="col-sm-2" id="sidebar">
@@ -198,7 +180,13 @@ curl -O https://downloads.raspberrypi.org/raspbian/images/raspbian-2016-05-31/20
                     <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/linux.html">
                             linux
-                                <span class="badge">21</span>
+                                <span class="badge">22</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/rust.html">
+                            rust
+                                <span class="badge">15</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -208,15 +196,27 @@ curl -O https://downloads.raspberrypi.org/raspbian/images/raspbian-2016-05-31/20
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/rust.html">
-                            rust
-                                <span class="badge">12</span>
+                        <a href="https://mothsart.github.io/tag/python.html">
+                            python
+                                <span class="badge">7</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/python.html">
-                            python
+                        <a href="https://mothsart.github.io/tag/js.html">
+                            js
                                 <span class="badge">6</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/libre.html">
+                            libre
+                                <span class="badge">5</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/frontend.html">
+                            frontend
+                                <span class="badge">5</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -226,20 +226,14 @@ curl -O https://downloads.raspberrypi.org/raspbian/images/raspbian-2016-05-31/20
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/js.html">
-                            js
-                                <span class="badge">5</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/libre.html">
-                            libre
+                        <a href="https://mothsart.github.io/tag/c.html">
+                            c#
                                 <span class="badge">4</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/frontend.html">
-                            frontend
+                        <a href="https://mothsart.github.io/tag/html.html">
+                            html
                                 <span class="badge">4</span>
                         </a>
                     </li>
@@ -250,32 +244,8 @@ curl -O https://downloads.raspberrypi.org/raspbian/images/raspbian-2016-05-31/20
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/3d.html">
-                            3D
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/c.html">
-                            C
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/html.html">
-                            html
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/sql.html">
-                            sql
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/postgresql.html">
-                            postgresql
+                        <a href="https://mothsart.github.io/tag/gettext.html">
+                            gettext
                                 <span class="badge">3</span>
                         </a>
                     </li>
@@ -286,8 +256,38 @@ curl -O https://downloads.raspberrypi.org/raspbian/images/raspbian-2016-05-31/20
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/dev.html">
-                            dev
+                        <a href="https://mothsart.github.io/tag/3d.html">
+                            3D
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/raspberry.html">
+                            raspberry
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/sql.html">
+                            sql
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/zsh.html">
+                            zsh
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/postgresql.html">
+                            postgresql
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/gimp.html">
+                            gimp
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -298,20 +298,8 @@ curl -O https://downloads.raspberrypi.org/raspbian/images/raspbian-2016-05-31/20
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/gettext.html">
-                            gettext
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/swift.html">
-                            swift
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/primtux.html">
-                            primtux
+                        <a href="https://mothsart.github.io/tag/c-sharp.html">
+                            c sharp
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -322,32 +310,14 @@ curl -O https://downloads.raspberrypi.org/raspbian/images/raspbian-2016-05-31/20
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/cli.html">
-                            cli
+                        <a href="https://mothsart.github.io/tag/sh.html">
+                            sh
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/metaphone.html">
-                            metaphone
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/zsh.html">
-                            zsh
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/raspberry.html">
-                            raspberry
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/nodejs.html">
-                            nodejs
+                        <a href="https://mothsart.github.io/tag/bois.html">
+                            bois
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -358,20 +328,32 @@ curl -O https://downloads.raspberrypi.org/raspbian/images/raspbian-2016-05-31/20
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/recalbox.html">
-                            recalbox
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/sh.html">
-                            sh
+                        <a href="https://mothsart.github.io/tag/metaphone.html">
+                            metaphone
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/apple.html">
                             apple
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/vuejs.html">
+                            vue.js
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/retouche.html">
+                            retouche
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/svg.html">
+                            svg
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -432,6 +414,21 @@ curl -O https://downloads.raspberrypi.org/raspbian/images/raspbian-2016-05-31/20
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
 <script src="https://mothsart.github.io/theme/js/respond.min.js"></script>
 
+<!--     <div id="disqus_thread"></div>
+    <script>
+        var disqus_name = 'http-mothsart-github-io';
+        var disqus_config = function () {
+            this.page.url = '/yo.html';  // Replace PAGE_URL with your page's canonical URL variable
+        };
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://' + disqus_name + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+ -->
 
 <script src="https://mothsart.github.io/theme/js/theme_css.js"></script>
 

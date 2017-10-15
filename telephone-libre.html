@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>The QuiZz : Partie 3 - Le Labo Du Nerd</title>
+    <title>Un téléphone libre - Le Labo Du Nerd</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -9,19 +9,20 @@
 
 
 
-<link rel="canonical" href="https://mothsart.github.io/he-quizz-part-3.html">
+<link rel="canonical" href="https://mothsart.github.io/telephone-libre.html">
 
         <meta name="author" content="Jérémie Ferry" />
-        <meta name="keywords" content="rust diesel" />
+        <meta name="keywords" content="mobile,libre" />
 
         <meta property="og:site_name" content="Le Labo Du Nerd" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="The QuiZz : Partie 3"/>
-        <meta property="og:url" content="https://mothsart.github.io/he-quizz-part-3.html"/>
+        <meta property="og:title" content="Un téléphone libre"/>
+        <meta property="og:url" content="https://mothsart.github.io/telephone-libre.html"/>
         <meta property="og:description" content=""/>
-        <meta property="article:published_time" content="2016-10-15" />
-            <meta property="article:section" content="rust" />
-            <meta property="article:tag" content="rust diesel" />
+        <meta property="article:published_time" content="2017-10-15" />
+            <meta property="article:section" content="reflexion" />
+            <meta property="article:tag" content="mobile" />
+            <meta property="article:tag" content="libre" />
             <meta property="article:author" content="Jérémie Ferry" />
 
 
@@ -63,15 +64,18 @@ Le Labo Du Nerd            </a>
                             <a href="https://mothsart.github.io/category/frontend.html">Frontend</a>
                         </li>
                         <li >
+                            <a href="https://mothsart.github.io/category/memo.html">Memo</a>
+                        </li>
+                        <li >
                             <a href="https://mothsart.github.io/category/misc.html">Misc</a>
                         </li>
                         <li >
                             <a href="https://mothsart.github.io/category/raspberry.html">Raspberry</a>
                         </li>
-                        <li >
+                        <li class="active">
                             <a href="https://mothsart.github.io/category/reflexion.html">Reflexion</a>
                         </li>
-                        <li class="active">
+                        <li >
                             <a href="https://mothsart.github.io/category/rust.html">Rust</a>
                         </li>
             </ul>
@@ -123,7 +127,7 @@ Le Labo Du Nerd            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    The QuiZz : Partie 3
+                    Un téléphone libre
                 </h1>
             </header>
             <div class="entry-content">
@@ -133,7 +137,7 @@ Le Labo Du Nerd            </a>
     <span>
         <span class="label label-default">Date</span>
         <span class="published">
-            <i class="fa fa-calendar"></i><time datetime="2016-10-15T15:17:18+02:00"> sam. 15 octobre 2016</time>
+            <i class="fa fa-calendar"></i><time datetime="2017-10-15T11:37:04.337079+02:00"> dim. 15 octobre 2017</time>
         </span>
     </span>
 
@@ -144,113 +148,17 @@ Le Labo Du Nerd            </a>
 <span class="label label-default">Tags</span>
 
 
-	<a href="https://mothsart.github.io/tag/rust-diesel.html">rust diesel
+	<a href="https://mothsart.github.io/tag/mobile.html">mobile
+    </a>
+        /
+	<a href="https://mothsart.github.io/tag/libre.html">libre
+                <span class="badge">5</span>
     </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <h2>Intro</h2>
-<p>L'aventure de <strong>The Quizzz</strong> ce poursuis.
-Le temps a passé et les objectifs se sont affinés.</p>
-<p>Ca m'a permis de tester et promouvoir de nouvelles technos que je vous communiques.</p>
-<h2>Utilisation d'un ORM</h2>
-<p>Comme convenu, on passe à l'étape supérieur avec un ORM digne d'intérêt : <a href="http://diesel.rs/">Diesel</a> !</p>
-<pre class="highlight"><code class="language-sh">echo DATABASE_URL=postgresql://postgres@localhost &gt; .env</code></pre>
-
-
-<p>Plus de code passe partout, excepté quand on utilise des routines spécifique à une base de donnée !</p>
-<p>Voici les requètes Diesel</p>
-<pre class="highlight"><code class="language-rust">/// Chercher une question aléatoire
-fn get_question(&amp;mut self) -&gt; Question {
-    no_arg_sql_function!(random, types::VarChar);
-    let query_fragment = questions.limit(1).order(random);
-    info!(&quot;{:?}&quot;, &amp;debug_sql!(query_fragment));
-    let b = query_fragment.first(&amp;self.connection).unwrap();
-    b
-}
-/// Donner le résultat d'une question filtré par son id
-fn get_response(&amp;mut self, question: Question) -&gt; bool {
-    let r = questions.filter(id.eq(question.id)).limit(1).load::&lt;Question&gt;(&amp;self.connection).unwrap();
-    info!(&quot;{:?}&quot;, r[0].response);
-    r[0].response
-}</code></pre>
-
-
-<h2>Frontend 1 : passage de Riot.js à Vue.js</h2>
-<p>Vue.js est le must du framework web en frontend et mon intérêt va croissant.
-(Angular et React ne m'ayant jamais enthousiasmé).
-Riot est uniquement orienté composant alors que Vue non.
-J'ai été convaincu par : http://sametmax.com/vue-jlavais-pas-vu/</p>
-<h2>Frontend 2 : passage de Jquery à Axios et Vanilla</h2>
-<p>Pour Jquery, c'est une dépendance qui est, à mon sens, de plus en plus inutile.
-Pour l'aspect Ajax, j'utiliserais <strong>Axios</strong>.
-Axios ne sert qu'à de l'ajax et le fait bien. De plus, il permet des échanges binaires là ou Jquery a bien du mal... (jamais réussi à désérialiser un flux MessagePack)</p>
-<h1>Frontend 3 : passage de Twitter Boostrap à Materialize</h1>
-<p>J'aime beaucoup l'approche de google avec Materialize : donner un cadre précis à l'ergonomie et peaufiner autours.
-Le projet est jeune, je n'utilise volontairement que la partie css (le js utilise jquery comme dépendance et ça me semble surfait) mais j'aime vraiment l'idée.</p>
-<h2>Backend : passage de Iron à Rocket.rs</h2>
-<p>Iron est un des tout premier Framework web en Rust.
-Son implémentation à débuté bien avant que le langage Rust se stabilise.
-Il a par conséquent des soucis d'architecture difficilement réparable et son développement est plus ou moins au point mort.</p>
-<p><strong><a href="https://rocket.rs/">Rocket.rs</a></strong> est un nouveau projet prometteur avec une API simple et fonctionnel.
-Une approche proche de Flask (référence à la communauté Python), des exemples à foison etc.</p>
-<h2>Utilisation de MessagePack plutôt que Json</h2>
-<p>MessagePack est à mon goût trop peu connu.
-C'est un format de sérialisation binaire compact, avec des outils de sérialisation/désérialisation rapide (bien plus que Json =&gt; <a href="./ce-nest-quun-au-revoir-json.html">mon analyse sur le format</a>) </p>
-<p>Voici un example probant :</p>
-<p>code Javascript :</p>
-<pre class="highlight"><code class="language-javascript">function r() {
-  axios.post(
-    '/r', null,
-    {
-      responseType: 'blob',
-      headers: {'Content-Type': 'application/msgpack; charset=utf-8'}
-    }
-  ).then(function(response) {
-    var reader = new FileReader();
-    reader.onload = function (e) {
-        var pack = msgpack.decode(new Uint8Array(reader.result));
-        console.log(pack);
-    }
-    reader.readAsArrayBuffer(response.data);
-  });
-}</code></pre>
-
-
-<p>code Rust :</p>
-<pre class="highlight"><code class="language-rust">#[derive(Serialize)]
-pub struct MsgPackResponse {
-    pub compact: bool,
-    pub schema: i32,
-    pub text  : String
-}
-
-#[post(&quot;/&quot;, format = &quot;application/msgpack&quot;)]
-fn r() -&gt; MsgPack&lt;MsgPackResponse&gt; {
-    let response = MsgPackResponse {
-        compact: true,
-        schema :  0,
-        text   : &quot;hello msgPack !&quot;.to_string()
-    };
-    MsgPack(response)
-}</code></pre>
-
-
-<h2>Peaufinement de ma stack</h2>
-<p>J'ai changé pas mal de détails sur ma <a href="stack-frontend.html">stack</a> dont nottament le passage à Vue.js...
-Le coup d'oeil vaut le détour.
-Néanmoins, je projettes de l'améliorer sensiblement encore dans les mois qui viennent en rajoutant du code Rust et autre.
-Le But étant d'avoir un vrai template clé en main pour démarrer un nouveau projet !</p>
-<h2>Prochain article</h2>
-<p>J'ai pas vraiment décidé qu'elle serait la future piste à explorer mais j'ai plusieurs points qui me sont cher :</p>
-<h3>interface en GTK</h3>
-<p>Et oui, travailler des UI différentes pour le même projet (avec un coeur commn) me parait une bonne idée.</p>
-<p>Et puis <a href="http://gtk-rs.org/">GTK.rs</a> commence à murrir.</p>
-<h3>Répétition espacée</h3>
-<p>Dans le prochain article, je vais me concentrer sur la mise en place d'un algorithme de répétion espacée.
-(https://fr.wikipedia.org/wiki/R%C3%A9p%C3%A9tition_espac%C3%A9e)</p>
-<p>L'idée derrière cet algo est d'améliorer les connaissances de l'utilisateur en travaillant sur ses faiblesses et non sur ces acquis.</p>
-<h3>i18n sur la partie Web</h3>
+                <h2>Intro : Purism</h2>
+<p>https://puri.sm/shop/librem-5/</p>
             </div>
             <!-- /.entry-content -->
     <hr/>
@@ -263,7 +171,7 @@ Le But étant d'avoir un vrai template clé en main pour démarrer un nouveau pr
             var disqus_shortname = 'http-mothsart-github-io'; // required: replace example with your forum shortname
 
             var disqus_config = function () {
-                    this.page.url = 'https://mothsart.github.io/he-quizz-part-3.html';
+                    this.page.url = 'https://mothsart.github.io/telephone-libre.html';
                 this.language = "fr";
             };
 
@@ -308,15 +216,15 @@ Le But étant d'avoir un vrai template clé en main pour démarrer un nouveau pr
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/javascript.html">
-                            javascript
-                                <span class="badge">14</span>
+                        <a href="https://mothsart.github.io/tag/rust.html">
+                            rust
+                                <span class="badge">15</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/rust.html">
-                            rust
-                                <span class="badge">13</span>
+                        <a href="https://mothsart.github.io/tag/javascript.html">
+                            javascript
+                                <span class="badge">14</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -326,15 +234,39 @@ Le But étant d'avoir un vrai template clé en main pour démarrer un nouveau pr
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/js.html">
+                            js
+                                <span class="badge">6</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/libre.html">
+                            libre
+                                <span class="badge">5</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/frontend.html">
+                            frontend
+                                <span class="badge">5</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/css.html">
                             css
                                 <span class="badge">5</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/js.html">
-                            js
-                                <span class="badge">5</span>
+                        <a href="https://mothsart.github.io/tag/c.html">
+                            c#
+                                <span class="badge">4</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/html.html">
+                            html
+                                <span class="badge">4</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -344,20 +276,8 @@ Le But étant d'avoir un vrai template clé en main pour démarrer un nouveau pr
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/frontend.html">
-                            frontend
-                                <span class="badge">4</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/libre.html">
-                            libre
-                                <span class="badge">4</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/zsh.html">
-                            zsh
+                        <a href="https://mothsart.github.io/tag/gettext.html">
+                            gettext
                                 <span class="badge">3</span>
                         </a>
                     </li>
@@ -380,68 +300,26 @@ Le But étant d'avoir un vrai template clé en main pour démarrer un nouveau pr
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/postgresql.html">
-                            postgresql
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/gettext.html">
-                            gettext
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/c.html">
-                            C
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/sql.html">
                             sql
                                 <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/html.html">
-                            html
+                        <a href="https://mothsart.github.io/tag/zsh.html">
+                            zsh
                                 <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/cli.html">
-                            cli
-                                <span class="badge">2</span>
+                        <a href="https://mothsart.github.io/tag/postgresql.html">
+                            postgresql
+                                <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/dev.html">
-                            dev
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/recalbox.html">
-                            recalbox
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/swift.html">
-                            swift
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/primtux.html">
-                            primtux
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/vuejs.html">
-                            vue.js
+                        <a href="https://mothsart.github.io/tag/gimp.html">
+                            gimp
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -452,14 +330,26 @@ Le But étant d'avoir un vrai template clé en main pour démarrer un nouveau pr
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/c-sharp.html">
+                            c sharp
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/benchmark.html">
+                            benchmark
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/sh.html">
                             sh
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/apple.html">
-                            apple
+                        <a href="https://mothsart.github.io/tag/bois.html">
+                            bois
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -470,14 +360,32 @@ Le But étant d'avoir un vrai template clé en main pour démarrer un nouveau pr
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/nodejs.html">
-                            nodejs
+                        <a href="https://mothsart.github.io/tag/metaphone.html">
+                            metaphone
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/benchmark.html">
-                            benchmark
+                        <a href="https://mothsart.github.io/tag/apple.html">
+                            apple
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/vuejs.html">
+                            vue.js
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/retouche.html">
+                            retouche
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/svg.html">
+                            svg
                                 <span class="badge">2</span>
                         </a>
                     </li>

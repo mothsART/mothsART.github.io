@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Thu, 27 Jul 2017 00:00:00 +0200</lastBuildDate><item><title>Editeur WYSIWYG de SVG interactifs</title><link>https://mothsart.github.io/editeur-svg-interactif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Sun, 15 Oct 2017 11:39:53 +0200</lastBuildDate><item><title>Le format ZIM</title><link>https://mothsart.github.io/format-zim.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Objectif simple : rassembler du contenu HTML dans un fichier : contenu, images, vidéos, sons, scripts etc.&lt;/p&gt;
+&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;http://alterlibriste.free.fr/index.php?post/2016/04/03/Zim%2C-un-vrai-couteau-suisse&lt;/p&gt;
+&lt;h2&gt;Equivalent&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Org mode&lt;/li&gt;
+&lt;li&gt;Microsoft OneNote&lt;/li&gt;
+&lt;li&gt;ikiwiki&lt;/li&gt;
+&lt;li&gt;CherryTree : http://www.giuspen.com/cherrytree/&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 15 Oct 2017 11:39:53 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-10-15:format-zim.html</guid><category>zim</category><category>html</category><category>zip</category></item><item><title>upgrade de C Sharp</title><link>https://mothsart.github.io/upgrade-c_sharp.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Il n'est jamais bon de rester sur une ancienne version d'un langage.
+Un langage évolu et le développeur se doit d'évoluer avec lui.&lt;/p&gt;
+&lt;h2&gt;utiliser nameof nativement (C sharp 6)&lt;/h2&gt;
+&lt;h2&gt;propagation de null&lt;/h2&gt;
+&lt;p&gt;string city = order?.Customer?.Address?.City;&lt;/p&gt;
+&lt;h2&gt;utiliser "using static" (C sharp 6)&lt;/h2&gt;
+&lt;p&gt;https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/using-static&lt;/p&gt;
+&lt;h2&gt;objets non nullables&lt;/h2&gt;
+&lt;p&gt;https://www.kenneth-truyers.net/2016/01/25/new-features-in-c-sharp-7-part-2/&lt;/p&gt;
+&lt;p&gt;http://tlevesque.developpez.com/tutoriels/csharp/les-nouveautes-de-csharp-6/
+http://tlevesque.developpez.com/tutoriels/csharp/les-nouveautes-de-csharp-7/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-10-15:upgrade-c_sharp.html</guid><category>c#</category><category>c sharp</category></item><item><title>Un téléphone libre</title><link>https://mothsart.github.io/telephone-libre.html</link><description>&lt;h2&gt;Intro : Purism&lt;/h2&gt;
+&lt;p&gt;https://puri.sm/shop/librem-5/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 15 Oct 2017 11:37:04 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-10-15:telephone-libre.html</guid><category>mobile</category><category>libre</category></item><item><title>Editeur WYSIWYG de SVG interactifs</title><link>https://mothsart.github.io/editeur-svg-interactif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;L'objectif est simple : éditer un fichier SVG statique afin de le présenter comme un contenu interactif. 
 Permettre l'ajout de zones cliquables pouvant être zoomés et enrichies d'une explication.&lt;/p&gt;
 &lt;p&gt;Les fichiers générés (page Html contenant le svg) peuvent servir à divers usages :&lt;/p&gt;
