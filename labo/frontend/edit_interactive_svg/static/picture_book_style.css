@@ -1,0 +1,76 @@
+article {
+    position: absolute;
+    text-align: center;
+    width: 50%;
+    top: 50%;
+    transition-duration: 1s;
+}
+
+article h2 {
+    cursor: pointer;
+}
+
+#theme2 {
+    margin-left: 50%;
+}
+
+#theme1 h2 {
+    color: #1565C0;
+}
+
+#theme1 h2 span {
+    border: solid 1px #1565C0;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+#theme2 h2 {
+        color: #E53935;
+}
+
+#theme2 h2 span {
+    border: solid 1px #E53935;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.picture1 {
+    background-image: url(./thumb/organes.jpg);
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    margin-left: 32%;
+    border: solid 1px #1565C0;
+    border-radius: 80px;
+}
+
+#pic2 {
+    margin-left: 46%;
+    margin-top: 10%;
+}
+
+#pic3 {
+    margin-left: 60%;
+}
+
+#pic4 {
+    margin-top: -19%;
+    margin-left: 39%;
+}
+
+#pic5 {
+    margin-top: -19%;
+    margin-left: 55%;
+}
+
+.picture2 {
+    background-image: url(./thumb/camp.jpg);
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    margin-left: 32%;
+    border: solid 1px #E53935;
+    border-radius: 80px;
+}
