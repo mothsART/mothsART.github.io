@@ -1,9 +1,12 @@
 article {
     position: absolute;
     text-align: center;
-    width: 50%;
+    left: 33%;
     top: 50%;
+    width: 33%;
+    transform: translate(-50%, -50%);
     transition-duration: 1s;
+    background: red;
 }
 
 article h2 {
@@ -11,7 +14,7 @@ article h2 {
 }
 
 #theme2 {
-    margin-left: 50%;
+    left: 66%;
 }
 
 #theme1 h2 {

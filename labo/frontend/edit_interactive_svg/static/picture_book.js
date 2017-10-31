@@ -4,5 +4,5 @@ function select_theme(element) {
     for (var i = 0, len = themes.length; i < len; i++) {
         themes[i].style.transform = "";
     }
-    element.parentNode.style.transform = "scale(2)";
+    element.parentNode.parentNode.style.transform = "scale(2) translate(-25%, -50%)";
 }
