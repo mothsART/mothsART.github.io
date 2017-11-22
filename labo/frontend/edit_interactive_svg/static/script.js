@@ -20,6 +20,10 @@ for (var i = 0; i < palette.length; i++) {
 }
 var remaining_colors = [];
 
+var Editor = {
+  local: 'en'
+}
+
 var SVG = {
   x:             0,
   y:             0,
@@ -130,9 +134,38 @@ function rgbToHex(r, g, b) {
 }
 dragAndDrop.init();
 
+function translate_app(local) {
+  "use strict";
+  Editor.local = translateElementsByClassName("i18n", local);
+  $("#indice-description").trumbowyg('destroy');
+  $("#indice-description").trumbowyg({
+    lang: Editor.local,
+    btns: [
+        ['viewHTML'],
+        ['formatting'],
+        ['strong', 'em', 'del'],
+        ['superscript', 'subscript'],
+        ['link'],
+        ['base64'],
+        ['justifyLeft', 'justifyCenter', 'justifyRight', 'justifyFull'],
+        ['unorderedList', 'orderedList'],
+        ['horizontalRule'],
+        ['removeformat']
+    ]
+  });
+  var localization = $.spectrum.localization[local] = {
+      cancelText:            translate(Editor.local, 'cancel'),
+      chooseText:            translate(Editor.local, 'choose'),
+      togglePaletteMoreText: translate(Editor.local, 'more'),
+      togglePaletteLessText: translate(Editor.local, 'less'),
+  };
+  $.extend($.fn.spectrum.defaults, localization);
+
+}
+
 function load() {
   "use strict";
-  translate();
+  translate_app();
   if (document.getElementsByTagName('body')[0].classList.contains('debug'))
     document.getElementById('release-menu').classList.add('hidden');
   else
@@ -408,7 +441,11 @@ function change_indice_color(indice_id, hex_color) {
   if (luminance > 0.4) {
     color = "black";
   }
-  indice.css("color", color).css("border-color", color);
+  if (parseInt(indice.attr("id").substring(14)) < 10)
+    indice[0].classList.remove('number');
+  else
+    indice[0].classList.add('number');
+  indice.css("color", color).css("border", color + " solid 3px");
   $("#" + indice.attr("id").substring(7)).find("rect.backgroundColor").css(
     "fill", hex_color
   ).css("stroke", color);
@@ -435,16 +472,18 @@ function open_detail(element) {
     if (id) {
       $("#" + id).parent().find(".open-detail").removeClass('unfolded');
       $("#" + id).parent().find(".detail").addClass("hidden");
+      var checkbox = $("#" + id).parent().find(".zoom-enabled");
+      if (checkbox[0] && checkbox[0].checked)
+        checkbox.trigger("click");
     }
     document.getElementById("last-folded-indice").setAttribute(
       "value", $(element).parent().find(".indice").attr("id")
     );
     var indice = $(element).parent().find(".indice");
     $(element).parent().find(".color-indice-picker").spectrum({
+      localization: Editor.local,
       showPaletteOnly: true,
       togglePaletteOnly: true,
-      togglePaletteMoreText: 'more',
-      togglePaletteLessText: 'less',
       color: indice.css("background-color"),
       palette: palette,
       change: function(color) {
@@ -475,6 +514,8 @@ function delete_legend() {
     $("#real-indice-" + index).remove();
     if ($('#legend-' + index + " .display-indice").hasClass('show'))
       $("#count-nb-display").val(parseInt($("#count-nb-display").val()) - 1);
+    if (parseInt(document.getElementById("last-folded-indice").getAttribute("value").substring(14)) === parseInt(index))
+      document.getElementById("last-folded-indice").setAttribute("value", "");
   });
   tr_list.remove();
   $('#delete-legend-button').addClass('disabled');
@@ -500,7 +541,6 @@ function display_result(element) {
   $("#svg").removeClass("edit-mode").addClass("show");
   $("#show-menu, #real-legend").removeClass("hidden");
   $("#svg svg").css("transform", "scale(1)");
-  //resize_indices();
   $("#indices .indice").each(function(index, el) {
     if ($(el).hasClass('hidden'))
       $(el).data("hidden", true);
@@ -509,6 +549,7 @@ function display_result(element) {
     if ($(el).parent().attr("id") != "template-indice")
       $(el).removeClass('hidden');
   });
+  $("#root-svg")[0].style.transform = "";
 }
 
 function return_to_edit() {
@@ -516,7 +557,7 @@ function return_to_edit() {
   var index      = parseInt($("#last-folded-indice").val().substring(14));
   var indice     = document.getElementById('legend-indice-' + index);
   var zoom_input = null;
-  if (index)
+  if (indice)
     zoom_input = indice.parentElement.getElementsByClassName('zoom-enabled')[0];
   document.getElementById('content').removeAttribute('data-real-zoom-indice');
   $("#indices .indice").removeAttr("onclick");
@@ -524,14 +565,15 @@ function return_to_edit() {
   $("#svg").removeClass("show").addClass("edit-mode");
   $("#show-menu, #real-legend").addClass("hidden");
   $(".description").addClass("hidden");
-  $("#root-svg").css("transform", "scale(1)").removeClass("duration");
+  var svg_element = $("#svg svg")[0];
+  svg_element.style.transform =  "scale(1)";
+  svg_element.classList.remove("duration");
   $("#indices .indice").each(function(index, el) {
     if ($(el).data('hidden') == true)
       $(el).addClass('hidden');
     else
       $(el).removeClass('hidden');
   });
-  $("#svg svg").css("transform", "scale(1)");
   if (zoom_input && zoom_input.checked)
     active_zoom(zoom_input);
 }
@@ -640,7 +682,7 @@ function select_all_legend() {
   $("#template-legend input").prop('checked', false);
 }
 
-function translate(trans_x, trans_y) {
+function css_translate(trans_x, trans_y) {
   "use strict";
   var indice_len_x = 14 * SVG.width / 500;
   var indice_len_y = 14 * SVG.height / 500;
@@ -657,22 +699,43 @@ function translate(trans_x, trans_y) {
   return "translate(" + x_signe + x + "%," + y_signe + y + "%)";
 }
 
+
+function UpdateCssTransform() {
+  "use strict";
+  var index      = parseInt($("#last-folded-indice").val().substring(14));
+  var indice     = document.getElementById('legend-indice-' + index);
+  var zoom_input = null;
+  if (indice)
+    zoom_input = indice.parentElement.getElementsByClassName('zoom-enabled')[0];
+  var svg_indice = document.getElementById('indice-' + index);
+  var trans_x = parseFloat(svg_indice.getAttribute("data-translate-x") - SVG.x);
+  var trans_y = parseFloat(svg_indice.getAttribute("data-translate-y") - SVG.y);
+  document.getElementById("root-svg").style.transform = "";
+  document.getElementById("root-svg").style.transform = css_translate(trans_x, trans_y);
+}
+
 function zoom_edit_mode(value, trans_x, trans_y, scale_enabled) {
   "use strict";
   var scale = value / 100;
-  if (scale_enabled)
+  if (scale_enabled) {
     document.getElementById("svg").setAttribute("data-scale", scale);
-  else
+    document.getElementById("svg").classList.add('scale');
+  }
+  else {
     document.getElementById("svg").removeAttribute("data-scale");
+    document.getElementById("svg").classList.remove('scale');
+  }
   $("#svg svg").css("transform", "scale(" + scale + ")");
-  $("#root-svg").css("transform", translate(trans_x, trans_y));
+  document.getElementById("root-svg").style.transform = "";
+  document.getElementById("root-svg").style.transform = css_translate(trans_x, trans_y);
+  setTimeout(UpdateCssTransform, 1);
 }
 
 function zoom_on(index, value, zoom_svg, scale_enabled) {
   "use strict";
   var svg_indice = document.getElementById('indice-' + index);
-  var trans_x = parseFloat(svg_indice.getAttribute("data-translate-x"));
-  var trans_y = parseFloat(svg_indice.getAttribute("data-translate-y"));
+  var trans_x = parseFloat(svg_indice.getAttribute("data-translate-x") - SVG.x);
+  var trans_y = parseFloat(svg_indice.getAttribute("data-translate-y") - SVG.y);
   svg_indice.setAttribute("data-zoom", value);
   $("#legend-" + index + " .zoom-input").val(value);
   if (zoom_svg)
@@ -686,7 +749,7 @@ function zoom(element) {
   );
   var value = parseInt($(element.parentNode.parentNode.parentNode).find(".zoom-input").val());
   var scale_enabled = false;
-  if (element.checked)
+  if (element.parentNode.getElementsByClassName('zoom-enabled')[0].checked)
     scale_enabled = true;
   zoom_on(index, value, true, scale_enabled);
 }
@@ -706,7 +769,8 @@ function active_zoom(element) {
     zoom_input.attr("disabled", true);
     var indice = $("#" + zoom_input.data("indice-id"));
     indice.data("zoom", zoom_input.val());
-    document.getElementById("svg").setAttribute("data-scale", 1);
+    document.getElementById("svg").removeAttribute("data-scale");
+    document.getElementById("svg").classList.remove('scale');
     $("#svg svg").css("transform", "scale(1)");
     $("#root-svg").css("transform", "initial");
   }
@@ -741,10 +805,10 @@ function real_zoom(element) {
   }
   else {
     var scale   = indice.getAttribute("data-zoom") / 100;
-    var trans_x = parseFloat(indice.getAttribute("data-translate-x"));
-    var trans_y = parseFloat(indice.getAttribute("data-translate-y"));
+    var trans_x = parseFloat(indice.getAttribute("data-translate-x") - SVG.x);
+    var trans_y = parseFloat(indice.getAttribute("data-translate-y") - SVG.y);
     $("#svg svg").css("transform", "scale(" + scale + ")");
-    $("#root-svg").css("transform", translate(trans_x, trans_y));
+    $("#root-svg").css("transform", css_translate(trans_x, trans_y));
     indice.setAttribute("data-zoom-active", true);
     document.getElementById('content').setAttribute('data-real-zoom-indice', index);
     $('.description').addClass('hidden');
@@ -764,7 +828,7 @@ function open_dialog() {
   }
   $("#indice-description").html(description);
   $("#modal-legend-id").val(index);
-  if (text == '-- no title --') {
+  if (text == translate(Editor.local, 'no_title')) {
     $("#legend-title").attr("placeholder", "-- no title --");
     $("#legend-title").val('');
   }
