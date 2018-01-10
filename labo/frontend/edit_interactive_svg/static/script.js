@@ -137,6 +137,8 @@ dragAndDrop.init();
 function translate_app(local) {
   "use strict";
   Editor.local = translateElementsByClassName("i18n", local);
+  if (local)
+    translateExportInterface(local);
   $("#indice-description").trumbowyg('destroy');
   $("#indice-description").trumbowyg({
     lang: Editor.local,
@@ -205,25 +207,6 @@ function reorder_legend() {
   });
 }
 
-function Grab(evt)
-{
-  "use strict";
-  // exclude drag when zoom is in
-  var scale = parseFloat(document.getElementById("svg").getAttribute("data-scale"));
-  if (scale)
-    return;
-  // find out which element we moused down on
-  var targetElement = evt.target;
-  if (
-    targetElement == null
-    || !targetElement.classList.contains('mask')
-    || document.getElementById("svg").classList.contains("show")
-  )
-    return;
-  DragTarget = targetElement;
-  $(DragTarget.parentNode).find(".indice-cross")[0].classList.remove("hidden");
-};
-
 function translate_indice(element, x, y) {
   "use strict";
   var indice_width = element.getBBox().width / 2;
@@ -240,12 +223,32 @@ function translate_indice(element, x, y) {
   element.style.transform = "translate(" + x.toFixed(12) + "px, " + y.toFixed(12) + "px)";
 }
 
-function Drag(evt) {
+function Grab(e)
+{
   "use strict";
-  if (DragTarget == null) {
+  e.preventDefault();
+  // exclude drag when zoom is in
+  var scale = parseFloat(document.getElementById("svg").getAttribute("data-scale"));
+  if (scale)
+    return;
+  // find out which element we moused down on
+  var targetElement = e.target;
+  if (
+    targetElement == null
+    || !targetElement.classList.contains('mask')
+    || document.getElementById("svg").classList.contains("show")
+  )
+    return;
+  DragTarget = targetElement;
+  $(DragTarget.parentNode).find(".indice-cross")[0].classList.remove("hidden");
+};
+
+
+function Drag(e) {
+  "use strict";
+  if (!DragTarget) {
     return;
   }
-  var e = evt;
   if (!$("#svg").hasClass("edit-mode") || (e.clientX == 0 && e.clientY == 0))
   {
     return;
@@ -328,8 +331,8 @@ function createForeignObject() {
   svg.setAttribute("width", 0);
   svg.setAttribute("height", 0);
   svg.setAttribute("viewBox", SVG.x + " " + SVG.y + " " + SVG.width + " " + SVG.height);
-  svg.setAttribute("onmousedown", "Grab(evt)");
-  svg.setAttribute("onmousemove", "Drag(evt)");
+  svg.setAttribute("onmousedown", "Grab(evt);");
+  svg.setAttribute("onmousemove", "Drag(evt);");
 }
 
 function createEditIndice(index) {
@@ -562,12 +565,13 @@ function return_to_edit() {
   document.getElementById('content').removeAttribute('data-real-zoom-indice');
   $("#indices .indice").removeAttr("onclick");
   $("#edit-menu, #sidebar, #delete-svg").removeClass("hidden");
+  $("#svg #root-svg")[0].style.transform = "";
+  var svg_element = $("#svg svg")[0];
+  svg_element.classList.remove("duration");
+  svg_element.style.transform =  "scale(1)";
   $("#svg").removeClass("show").addClass("edit-mode");
   $("#show-menu, #real-legend").addClass("hidden");
   $(".description").addClass("hidden");
-  var svg_element = $("#svg svg")[0];
-  svg_element.style.transform =  "scale(1)";
-  svg_element.classList.remove("duration");
   $("#indices .indice").each(function(index, el) {
     if ($(el).data('hidden') == true)
       $(el).addClass('hidden');
@@ -776,6 +780,13 @@ function active_zoom(element) {
   }
 }
 
+function fit_page_to_drawing() {
+  "use strict";
+  $('.description').addClass('hidden');
+  $("#svg svg").css("transform", "scale(1)");
+  $("#root-svg").css("transform", "initial");
+}
+
 function real_zoom(element) {
   "use strict";
   if (DragTarget) {
@@ -799,7 +810,6 @@ function real_zoom(element) {
   )
   {
     $("#svg svg").css("transform", "scale(1)");
-    $("#root-svg").css("transform", "initial");
     indice.setAttribute("data-zoom-active", false);
     description.addClass("hidden");
   }

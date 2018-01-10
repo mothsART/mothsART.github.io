@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Thu, 25 May 2017 00:16:44 +0200</lastBuildDate><item><title>Gmic</title><link>https://mothsart.github.io/gmic.html</link><description>&lt;h2&gt;Diminuer le bruit&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Sun, 07 Jan 2018 14:42:39 +0100</lastBuildDate><item><title>Gmic</title><link>https://mothsart.github.io/gmic.html</link><description>&lt;h2&gt;Diminuer le bruit&lt;/h2&gt;
 &lt;p&gt;Repair &amp;gt; Smooth [anisotropic]&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:gmic.html</guid><category>gimp</category><category>retouche</category><category>gmic</category></item><item><title>Idées autours du bois</title><link>https://mothsart.github.io/idees-autours-bois.html</link><description>&lt;h2&gt;Table basse&lt;/h2&gt;
 &lt;h2&gt;Coffret à glaçons en pierre&lt;/h2&gt;
 &lt;h2&gt;Set de couvert en bois&lt;/h2&gt;
@@ -30,7 +30,8 @@ pygettext -o monsterz.pot ./monsterz.py&lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;Compiler simplement des fichiers po en mo&lt;/h2&gt;
 &lt;p&gt;msgfmt -o lang.mo lang.po&lt;/p&gt;
 &lt;p&gt;et en ligne :&lt;/p&gt;
-&lt;p&gt;http://po2mo.net/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 25 May 2017 00:16:44 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-01:i18n.html</guid><category>i18n</category><category>linux</category><category>python</category><category>gettext</category></item><item><title>Aide mémoire sur le réseau et l'admin sys</title><link>https://mothsart.github.io/memo-admin-sys.html</link><description>&lt;h2&gt;Reseau &amp;amp; Admin sys&lt;/h2&gt;
+&lt;p&gt;http://po2mo.net/&lt;/p&gt;
+&lt;h2&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 07 Jan 2018 14:42:39 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-01:i18n.html</guid><category>i18n</category><category>linux</category><category>python</category><category>gettext</category></item><item><title>Aide mémoire sur le réseau et l'admin sys</title><link>https://mothsart.github.io/memo-admin-sys.html</link><description>&lt;h2&gt;Reseau &amp;amp; Admin sys&lt;/h2&gt;
 &lt;h2&gt;w&lt;/h2&gt;
 &lt;p&gt;Donne la liste des utilisateurs sur une machine&lt;/p&gt;
 &lt;h2&gt;arp -a&lt;/h2&gt;
@@ -40,7 +41,8 @@ pygettext -o monsterz.pot ./monsterz.py&lt;/code&gt;&lt;/pre&gt;
 sudo nmap -sP x.y.z.*&lt;/code&gt;&lt;/pre&gt;
 
 
-&lt;p&gt;&lt;a href="http://blog.nicolargo.com/2007/08/nmap-le-scanneur-de-reseau.html"&gt;http://blog.nicolargo.com/2007/08/nmap-le-scanneur-de-reseau.html&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:memo-admin-sys.html</guid><category>linux</category><category>arp</category><category>nmap</category><category>admin sys</category></item><item><title>Python-pip</title><link>https://mothsart.github.io/python-pip.html</link><description>&lt;h2&gt;pip -e&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://blog.nicolargo.com/2007/08/nmap-le-scanneur-de-reseau.html"&gt;http://blog.nicolargo.com/2007/08/nmap-le-scanneur-de-reseau.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;lsof -i&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 26 Dec 2017 12:01:07 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:memo-admin-sys.html</guid><category>linux</category><category>arp</category><category>nmap</category><category>admin sys</category></item><item><title>Python-pip</title><link>https://mothsart.github.io/python-pip.html</link><description>&lt;h2&gt;pip -e&lt;/h2&gt;
 &lt;p&gt;utiliser une dépendance perso : pip -e ~/ma_lib&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 03 Oct 2016 01:38:01 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-03:python-pip.html</guid><category>python</category><category>pip</category></item><item><title>Blender</title><link>https://mothsart.github.io/blender.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;h2&gt;liens&lt;/h2&gt;
 &lt;p&gt;https://www.blender.org/manual/render/freestyle/export_svg.html
