@@ -1,11 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Tue, 31 Oct 2017 22:46:18 +0100</lastBuildDate><item><title>Phonectic Lab</title><link>https://mothsart.github.io/phonetic-lab.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
-&lt;p&gt;Ce projet est un banc de test autours des principes de la phonétic et des moteurs de recherche se basant sur ces algorithmes.&lt;/p&gt;
-&lt;p&gt;L'idée est de comparer les différents algorithmes de distance (Jaro, Levenstein) et d'en déterminer des éventuels heuristiques :
-selon certaines conditions, on utilisera un algorithme plutôt qu'un autre afin de proposer dans un ensemble de recherche, des performances optimales.&lt;/p&gt;
-&lt;p&gt;Ce banc de test permettra également de comparer les performances brutes de plusieurs moteurs de base de données : SQL et NoSQL.&lt;/p&gt;
-&lt;p&gt;Des benchmarks en situations "réels" me permettrons d'en tirer des conclusions. (peut-être inédites)&lt;/p&gt;
-&lt;p&gt;Enfin, il me permettra de tester mon propre moteur de phonétic dédié à la langue française !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:phonetic-lab.html</guid><category>phonetic</category><category>distance</category><category>rust</category></item><item><title>Stratego</title><link>https://mothsart.github.io/stratego.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Tue, 31 Oct 2017 22:46:18 +0100</lastBuildDate><item><title>Connect Four</title><link>https://mothsart.github.io/puissance4.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Vous aimez jouer au Puissance 4 et vous ne trouvez pas votre bonheur.
+Voici peut-être un alternative pour vous !&lt;/p&gt;
+&lt;p&gt;Un jeu de puissance 4 en réseau !&lt;/p&gt;
+&lt;h2&gt;y'a quoi de neuf&lt;/h2&gt;
+&lt;p&gt;Ce jeu n'a aucune prétention. C'est un puissance 4 classique avec aucune surprise dans le gameplay.&lt;/p&gt;
+&lt;p&gt;Néanmoins, ses atouts actuels :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;full web&lt;/strong&gt; : vous n'avez besoin que d'un navigateur sans extension flash ou autre MST...&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;full responsive&lt;/strong&gt; : si vous êtes adeptes du pixel art, passez votre chemin : 
+ça reste désespérément lisse et adapté à la taille de votre écran. (tablette, smartphone, ordi etc.)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;jeu en réseau&lt;/strong&gt; : parce que jouer à tour de rôle sur son ordi, c'est un peu démodé, non ?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;open source (license BSD)&lt;/strong&gt; : parce que je souhaites que mon projet profites à tous sans restriction&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;prix libre&lt;/strong&gt; : si vous estimez que ce que je fais à de la valeur, vous pouvez participer financièrement selon votre ressenti, vos moyens etc.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ergonomie&lt;/strong&gt; : rien de plus énervent dans un jeu ou logiciel qu'un parcours non intuitif
+Tout doit rester simple, sans de vaines explications.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Et ses atouts futurs :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;mode tournoi&lt;/strong&gt; avec gestion admin et stats : pour ceux qui aime les classements&lt;/li&gt;
+&lt;li&gt;multi-langues : Le puissance 4 est un jeu universel mais une interface adapté à votre langue natale c'est quand même mieux, non ?&lt;/li&gt;
+&lt;li&gt;appli native : pourquoi s'embetter avec un navigateur ?&lt;/li&gt;
+&lt;li&gt;mode cli : pour les gros Geek qui ne sorte jamais de leur terminal&lt;/li&gt;
+&lt;li&gt;un ou plusieurs bots : parce qu'il faut bien penser aux Connor en herbes qui rêve d'aligner 4 pions de la même couleur face à Skynet&lt;/li&gt;
+&lt;li&gt;une API pour créer son propre Bot : parce qu'il existe des gars assez taré pour créer Skynet&lt;/li&gt;
+&lt;li&gt;une ou plusieurs librairies qui permettrons de créer d'autres jeux avec un miminum d'efforts (gestion des utilisateurs espace admin, tournoi etc.)&lt;/li&gt;
+&lt;li&gt;plusieurs jeux en simultannées pour le même joueur ou chaque partie est cloisonné dans un onglet&lt;/li&gt;
+&lt;li&gt;réactivité&lt;/li&gt;
+&lt;li&gt;paquet Debian&lt;/li&gt;
+&lt;li&gt;image docker&lt;/li&gt;
+&lt;li&gt;site de démo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;C'est bien beau tout ça mais si je veux essayer, je fais comment ?&lt;/h2&gt;
+&lt;p&gt;Pour l'instant, tu compiles comme un grand.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;On installe les dépendances manquantes&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;apt-get update
+apt-get install curl git sqlite file clang make&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;On installe Rust et Cargo (si ce n'est pas déjà fait)&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;curl -f -L https://static.rust-lang.org/rustup.sh -O
+sh rustup.sh -y --channel=nightly&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Récupérer les sources :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git clone https://github.com/mothsART/connect_four.git &amp;amp;&amp;amp; cd connect_four&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Lancer le serveur web HTTP (dans un terminal à part)&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;cargo run --bin web&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Lancer le serveur Webscoket (dans un autre terminal)&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;cargo run --bin ws&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;On lance son petit navigateur chéri :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Si l'on est sur la même machine que le serveur : 127.0.0.1:8000 (ou localhost:8000) suffira&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Si l'on est sur une autre machine appartenant au même réseau locale : ip_du_poste_serveur:8000&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Je suis sceptique : ça ressemble à quoi ?&lt;/h2&gt;
+&lt;p&gt;La liste des utilisateurs connectés :&lt;/p&gt;
+&lt;p&gt;&lt;img alt="La liste des utilisateurs connectés" src="static/images/connect_four/user_list.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Le jeu en cours entre l'utilisateur PrimTux et Windows :&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Le jeu en cours entre l'utilisateur PrimTux et Windows" src="static/images/connect_four/game_in_progress.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Sans Surprise, c'est l'utilisateur PrimTux qui gagne : 
+&lt;img alt="Sans Surprise, c'est l'utilisateur PrimTux qui gagne" src="static/images/connect_four/win.png" /&gt;&lt;/p&gt;
+&lt;h2&gt;Sous le capot&lt;/h2&gt;
+&lt;p&gt;Le but du projet est de s'étoffer et de vivre à l'épreuve du temps... tout un programme.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pour la partie serveur, je me suis rabattu sur Rust et le WebSocket.
+Rust, car c'est un langage moderne à mon sens : sureté tout en gardant des performances plus qu'honorables
+WebSocket car c'est la meilleur techno web pour avoir de l'interactivité &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Le stockage se fait dans une base de donnée SQLite&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pour le code client, j'ai choisi une infrastructure à la pointe du web : config via &lt;strong&gt;Webpack&lt;/strong&gt;, framework &lt;strong&gt;Vue.js&lt;/strong&gt;, &lt;strong&gt;Saas&lt;/strong&gt; et &lt;strong&gt;PostCSS&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Vous pouvez être acteur du projet&lt;/h2&gt;
+&lt;p&gt;Et oui, vous pouvez mettre une pierre à l'édifice.&lt;/p&gt;
+&lt;p&gt;Comment ? &lt;/p&gt;
+&lt;p&gt;Déjà, en y jouant et en y prenant du plaisir !
+En témoignant de votre entousiasme via un commentaire, un mail, une attention, un don.
+En proposant des évolutions, des critiques, en remontant des bugs.&lt;/p&gt;
+&lt;p&gt;En proposant une traduction.&lt;/p&gt;
+&lt;p&gt;Enfin, en participant au code source, bien sur !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-27:puissance4.html</guid><category>rust</category><category>jeu</category><category>puissance 4</category><category>webpack</category><category>javascript</category><category>vuejs</category><category>sass</category><category>postcss</category></item><item><title>Stratego</title><link>https://mothsart.github.io/stratego.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;J'aime beaucoup le jeu de plateau &lt;strong&gt;Stratego&lt;/strong&gt;.
 N'ayant rien trouvé dans le périmètre des logiciels libres permettant de jouer à ce jeu, j'ai décidé de le créer.&lt;/p&gt;
 &lt;h2&gt;Ma stack&lt;/h2&gt;
@@ -23,7 +121,28 @@ N'ayant rien trouvé dans le périmètre des logiciels libres permettant de joue
 &lt;li&gt;probabilité conditionnel&lt;/li&gt;
 &lt;li&gt;Base de connaissances et de règles&lt;/li&gt;
 &lt;li&gt;réseaux de neuronnes et deep learning&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:stratego.html</guid><category>rust</category><category>vue.js</category><category>stratego</category></item><item><title>Utiliser des logs avec Rust</title><link>https://mothsart.github.io/logs-rust.html</link><description>&lt;h2&gt;Utiliser les logs en Rust (encore en brouillon)&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-26:stratego.html</guid><category>rust</category><category>vue.js</category><category>stratego</category></item><item><title>Memo Diesel.rs</title><link>https://mothsart.github.io/memo-dieselrs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Je suis depuis quelques temps le projet Diesel.rs : le seul ORM en Rust digne de ce nom.&lt;/p&gt;
+&lt;p&gt;J'ai pas mal galéré à suivre ce projet tant qu'il nétait pas en version 1.0 avec tous les changements d'API.&lt;/p&gt;
+&lt;p&gt;Depuis quelques mois, il existe une version 1.0.&lt;/p&gt;
+&lt;p&gt;Il faut néanmoins encore pas mal fouiller pour trouver certains oublis dans la doc ou les exemples.&lt;/p&gt;
+&lt;h2&gt;Créer des requètes conditionnels&lt;/h2&gt;
+&lt;p&gt;Et oui : souvent on veut créer des requètes selon des paramètres (notamment pour mieux factoriser le code).&lt;/p&gt;
+&lt;p&gt;Avec Diesel, il faut utiliser ".into_boxed()"&lt;/p&gt;
+&lt;p&gt;let mut sql = connect_four::schema::users::dsl::users
+.filter(connected.eq(true).and(playing.eq(false)))
+.into_boxed();&lt;/p&gt;
+&lt;p&gt;if (condition) {
+    sql = connect_four::schema::users::dsl::users
+    .filter(connected.eq(true).and(playing.eq(false)))
+    .into_boxed();
+}&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-08:memo-dieselrs.html</guid><category>rust</category><category>sql</category><category>diesel</category></item><item><title>Phonectic Lab</title><link>https://mothsart.github.io/phonetic-lab.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Ce projet est un banc de test autours des principes de la phonétic et des moteurs de recherche se basant sur ces algorithmes.&lt;/p&gt;
+&lt;p&gt;L'idée est de comparer les différents algorithmes de distance (Jaro, Levenstein) et d'en déterminer des éventuels heuristiques :
+selon certaines conditions, on utilisera un algorithme plutôt qu'un autre afin de proposer dans un ensemble de recherche, des performances optimales.&lt;/p&gt;
+&lt;p&gt;Ce banc de test permettra également de comparer les performances brutes de plusieurs moteurs de base de données : SQL et NoSQL.&lt;/p&gt;
+&lt;p&gt;Des benchmarks en situations "réels" me permettrons d'en tirer des conclusions. (peut-être inédites)&lt;/p&gt;
+&lt;p&gt;Enfin, il me permettra de tester mon propre moteur de phonétic dédié à la langue française !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:phonetic-lab.html</guid><category>phonetic</category><category>distance</category><category>rust</category></item><item><title>Utiliser des logs avec Rust</title><link>https://mothsart.github.io/logs-rust.html</link><description>&lt;h2&gt;Utiliser les logs en Rust (encore en brouillon)&lt;/h2&gt;
 &lt;p&gt;Sur n'importe quel soft sérieux, les logs sont innévitables.
 Voici mes experimentations dans le logging en Rust.&lt;/p&gt;
 &lt;h2&gt;La variable RUST_LOG&lt;/h2&gt;

@@ -1,5 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 10 Jan 2018 12:08:59 +0100</lastBuildDate><item><title>Le format ZIM</title><link>https://mothsart.github.io/format-zim.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Mon, 26 Feb 2018 09:10:37 +0100</lastBuildDate><item><title>Connect Four</title><link>https://mothsart.github.io/puissance4.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Vous aimez jouer au Puissance 4 et vous ne trouvez pas votre bonheur.
+Voici peut-être un alternative pour vous !&lt;/p&gt;
+&lt;p&gt;Un jeu de puissance 4 en réseau !&lt;/p&gt;
+&lt;h2&gt;y'a quoi de neuf&lt;/h2&gt;
+&lt;p&gt;Ce jeu n'a aucune prétention. C'est un puissance 4 classique avec aucune surprise dans le gameplay.&lt;/p&gt;
+&lt;p&gt;Néanmoins, ses atouts actuels :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;full web&lt;/strong&gt; : vous n'avez besoin que d'un navigateur sans extension flash ou autre MST...&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;full responsive&lt;/strong&gt; : si vous êtes adeptes du pixel art, passez votre chemin : 
+ça reste désespérément lisse et adapté à la taille de votre écran. (tablette, smartphone, ordi etc.)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;jeu en réseau&lt;/strong&gt; : parce que jouer à tour de rôle sur son ordi, c'est un peu démodé, non ?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;open source (license BSD)&lt;/strong&gt; : parce que je souhaites que mon projet profites à tous sans restriction&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;prix libre&lt;/strong&gt; : si vous estimez que ce que je fais à de la valeur, vous pouvez participer financièrement selon votre ressenti, vos moyens etc.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ergonomie&lt;/strong&gt; : rien de plus énervent dans un jeu ou logiciel qu'un parcours non intuitif
+Tout doit rester simple, sans de vaines explications.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Et ses atouts futurs :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;mode tournoi&lt;/strong&gt; avec gestion admin et stats : pour ceux qui aime les classements&lt;/li&gt;
+&lt;li&gt;multi-langues : Le puissance 4 est un jeu universel mais une interface adapté à votre langue natale c'est quand même mieux, non ?&lt;/li&gt;
+&lt;li&gt;appli native : pourquoi s'embetter avec un navigateur ?&lt;/li&gt;
+&lt;li&gt;mode cli : pour les gros Geek qui ne sorte jamais de leur terminal&lt;/li&gt;
+&lt;li&gt;un ou plusieurs bots : parce qu'il faut bien penser aux Connor en herbes qui rêve d'aligner 4 pions de la même couleur face à Skynet&lt;/li&gt;
+&lt;li&gt;une API pour créer son propre Bot : parce qu'il existe des gars assez taré pour créer Skynet&lt;/li&gt;
+&lt;li&gt;une ou plusieurs librairies qui permettrons de créer d'autres jeux avec un miminum d'efforts (gestion des utilisateurs espace admin, tournoi etc.)&lt;/li&gt;
+&lt;li&gt;plusieurs jeux en simultannées pour le même joueur ou chaque partie est cloisonné dans un onglet&lt;/li&gt;
+&lt;li&gt;réactivité&lt;/li&gt;
+&lt;li&gt;paquet Debian&lt;/li&gt;
+&lt;li&gt;image docker&lt;/li&gt;
+&lt;li&gt;site de démo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;C'est bien beau tout ça mais si je veux essayer, je fais comment ?&lt;/h2&gt;
+&lt;p&gt;Pour l'instant, tu compiles comme un grand.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;On installe les dépendances manquantes&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;apt-get update
+apt-get install curl git sqlite file clang make&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;On installe Rust et Cargo (si ce n'est pas déjà fait)&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;curl -f -L https://static.rust-lang.org/rustup.sh -O
+sh rustup.sh -y --channel=nightly&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Récupérer les sources :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git clone https://github.com/mothsART/connect_four.git &amp;amp;&amp;amp; cd connect_four&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Lancer le serveur web HTTP (dans un terminal à part)&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;cargo run --bin web&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Lancer le serveur Webscoket (dans un autre terminal)&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;cargo run --bin ws&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;On lance son petit navigateur chéri :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Si l'on est sur la même machine que le serveur : 127.0.0.1:8000 (ou localhost:8000) suffira&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Si l'on est sur une autre machine appartenant au même réseau locale : ip_du_poste_serveur:8000&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Je suis sceptique : ça ressemble à quoi ?&lt;/h2&gt;
+&lt;p&gt;La liste des utilisateurs connectés :&lt;/p&gt;
+&lt;p&gt;&lt;img alt="La liste des utilisateurs connectés" src="static/images/connect_four/user_list.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Le jeu en cours entre l'utilisateur PrimTux et Windows :&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Le jeu en cours entre l'utilisateur PrimTux et Windows" src="static/images/connect_four/game_in_progress.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Sans Surprise, c'est l'utilisateur PrimTux qui gagne : 
+&lt;img alt="Sans Surprise, c'est l'utilisateur PrimTux qui gagne" src="static/images/connect_four/win.png" /&gt;&lt;/p&gt;
+&lt;h2&gt;Sous le capot&lt;/h2&gt;
+&lt;p&gt;Le but du projet est de s'étoffer et de vivre à l'épreuve du temps... tout un programme.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pour la partie serveur, je me suis rabattu sur Rust et le WebSocket.
+Rust, car c'est un langage moderne à mon sens : sureté tout en gardant des performances plus qu'honorables
+WebSocket car c'est la meilleur techno web pour avoir de l'interactivité &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Le stockage se fait dans une base de donnée SQLite&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pour le code client, j'ai choisi une infrastructure à la pointe du web : config via &lt;strong&gt;Webpack&lt;/strong&gt;, framework &lt;strong&gt;Vue.js&lt;/strong&gt;, &lt;strong&gt;Saas&lt;/strong&gt; et &lt;strong&gt;PostCSS&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Vous pouvez être acteur du projet&lt;/h2&gt;
+&lt;p&gt;Et oui, vous pouvez mettre une pierre à l'édifice.&lt;/p&gt;
+&lt;p&gt;Comment ? &lt;/p&gt;
+&lt;p&gt;Déjà, en y jouant et en y prenant du plaisir !
+En témoignant de votre entousiasme via un commentaire, un mail, une attention, un don.
+En proposant des évolutions, des critiques, en remontant des bugs.&lt;/p&gt;
+&lt;p&gt;En proposant une traduction.&lt;/p&gt;
+&lt;p&gt;Enfin, en participant au code source, bien sur !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-27:puissance4.html</guid><category>rust</category><category>jeu</category><category>puissance 4</category><category>webpack</category><category>javascript</category><category>vuejs</category><category>sass</category><category>postcss</category></item><item><title>Stratego</title><link>https://mothsart.github.io/stratego.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;J'aime beaucoup le jeu de plateau &lt;strong&gt;Stratego&lt;/strong&gt;.
+N'ayant rien trouvé dans le périmètre des logiciels libres permettant de jouer à ce jeu, j'ai décidé de le créer.&lt;/p&gt;
+&lt;h2&gt;Ma stack&lt;/h2&gt;
+&lt;p&gt;Rust avec Rocket.rs, Vue.js, mgsPack, axios.&lt;/p&gt;
+&lt;h2&gt;Les objectifs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;séparation client/serveur&lt;/li&gt;
+&lt;li&gt;utilisation sous diverses formes : cli, web, gtk etc.&lt;/li&gt;
+&lt;li&gt;multi-joueur&lt;/li&gt;
+&lt;li&gt;une vrai IA&lt;/li&gt;
+&lt;li&gt;supporte la monté en charge&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Algos utilisés&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;probabilité conditionnel&lt;/li&gt;
+&lt;li&gt;Base de connaissances et de règles&lt;/li&gt;
+&lt;li&gt;réseaux de neuronnes et deep learning&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-26:stratego.html</guid><category>rust</category><category>vue.js</category><category>stratego</category></item><item><title>Memo Diesel.rs</title><link>https://mothsart.github.io/memo-dieselrs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Je suis depuis quelques temps le projet Diesel.rs : le seul ORM en Rust digne de ce nom.&lt;/p&gt;
+&lt;p&gt;J'ai pas mal galéré à suivre ce projet tant qu'il nétait pas en version 1.0 avec tous les changements d'API.&lt;/p&gt;
+&lt;p&gt;Depuis quelques mois, il existe une version 1.0.&lt;/p&gt;
+&lt;p&gt;Il faut néanmoins encore pas mal fouiller pour trouver certains oublis dans la doc ou les exemples.&lt;/p&gt;
+&lt;h2&gt;Créer des requètes conditionnels&lt;/h2&gt;
+&lt;p&gt;Et oui : souvent on veut créer des requètes selon des paramètres (notamment pour mieux factoriser le code).&lt;/p&gt;
+&lt;p&gt;Avec Diesel, il faut utiliser ".into_boxed()"&lt;/p&gt;
+&lt;p&gt;let mut sql = connect_four::schema::users::dsl::users
+.filter(connected.eq(true).and(playing.eq(false)))
+.into_boxed();&lt;/p&gt;
+&lt;p&gt;if (condition) {
+    sql = connect_four::schema::users::dsl::users
+    .filter(connected.eq(true).and(playing.eq(false)))
+    .into_boxed();
+}&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-08:memo-dieselrs.html</guid><category>rust</category><category>sql</category><category>diesel</category></item><item><title>Le format ZIM</title><link>https://mothsart.github.io/format-zim.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Objectif simple : rassembler du contenu HTML dans un fichier : contenu, images, vidéos, sons, scripts etc.&lt;/p&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;http://alterlibriste.free.fr/index.php?post/2016/04/03/Zim%2C-un-vrai-couteau-suisse&lt;/p&gt;
@@ -187,7 +324,8 @@ Qui plus est, ça me permet de faire du &lt;strong&gt;Rust&lt;/strong&gt;, de fa
 Et potentiellement de faire profiter d'autres personnes et, pourquoi pas, de succiter des vocations.&lt;/p&gt;
 &lt;h2&gt;N'importe quoi, y'a ImageMagick ou Gimp&lt;/h2&gt;
 &lt;p&gt;Ben, justement... c'est tout sauf simple.
-L'un nécessite de faire de la ligne de commande et le 2ème est une usine à gaz longue à démarrer, gourmande en ressources et réservé à la retouche photo.&lt;/p&gt;
+L'un nécessite de faire de la ligne de commande et le 2ème est une usine à gaz longue à démarrer, 
+gourmande en ressources et réservé à la retouche photo.&lt;/p&gt;
 &lt;p&gt;Bref, je veux respecter la philosophie Unixienne : faire une chose et une seul.
 Rester KISS.&lt;/p&gt;
 &lt;h2&gt;Fonctionnalités&lt;/h2&gt;
@@ -201,7 +339,7 @@ Rester KISS.&lt;/p&gt;
 Beyond
 geeqie&lt;/p&gt;
 &lt;h2&gt;Références&lt;/h2&gt;
-&lt;p&gt;https://askubuntu.com/questions/209517/does-diff-exist-for-images&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 27 Jul 2017 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:diff-image.html</guid><category>rust</category></item><item><title>Gmic</title><link>https://mothsart.github.io/gmic.html</link><description>&lt;h2&gt;Diminuer le bruit&lt;/h2&gt;
+&lt;p&gt;https://askubuntu.com/questions/209517/does-diff-exist-for-images&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 26 Feb 2018 09:09:01 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:diff-image.html</guid><category>rust</category></item><item><title>Gmic</title><link>https://mothsart.github.io/gmic.html</link><description>&lt;h2&gt;Diminuer le bruit&lt;/h2&gt;
 &lt;p&gt;Repair &amp;gt; Smooth [anisotropic]&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:gmic.html</guid><category>gimp</category><category>retouche</category><category>gmic</category></item><item><title>Idées autours du bois</title><link>https://mothsart.github.io/idees-autours-bois.html</link><description>&lt;h2&gt;Table basse&lt;/h2&gt;
 &lt;h2&gt;Coffret à glaçons en pierre&lt;/h2&gt;
 &lt;h2&gt;Set de couvert en bois&lt;/h2&gt;
@@ -411,25 +549,7 @@ http://abuledu-fr.org/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.
 &lt;p&gt;idées =&amp;gt; https://www.free-sms-tools.fr/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 04 Jun 2017 13:07:33 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:domotique.html</guid></item><item><title>Micro-services</title><link>https://mothsart.github.io/micro-services.html</link><description>&lt;h2&gt;Les Micro-services pour les nuls&lt;/h2&gt;
 &lt;h2&gt;Source&lt;/h2&gt;
 &lt;p&gt;https://ziade.org/2016/10/03/web-services-best-practices/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:micro-services.html</guid><category>micro-services</category></item><item><title>Utiliser Rust sur la PI</title><link>https://mothsart.github.io/rust-sur-pi.html</link><description>&lt;h2&gt;Utiliser Rust sur la PI&lt;/h2&gt;
-&lt;p&gt;http://f4b1.com/raspberry-pi/comment-installer-rust-sur-un-raspberry-pi-3&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:rust-sur-pi.html</guid><category>raspberry rust</category></item><item><title>Stratego</title><link>https://mothsart.github.io/stratego.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
-&lt;p&gt;J'aime beaucoup le jeu de plateau &lt;strong&gt;Stratego&lt;/strong&gt;.
-N'ayant rien trouvé dans le périmètre des logiciels libres permettant de jouer à ce jeu, j'ai décidé de le créer.&lt;/p&gt;
-&lt;h2&gt;Ma stack&lt;/h2&gt;
-&lt;p&gt;Rust avec Rocket.rs, Vue.js, mgsPack, axios.&lt;/p&gt;
-&lt;h2&gt;Les objectifs&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;séparation client/serveur&lt;/li&gt;
-&lt;li&gt;utilisation sous diverses formes : cli, web, gtk etc.&lt;/li&gt;
-&lt;li&gt;multi-joueur&lt;/li&gt;
-&lt;li&gt;une vrai IA&lt;/li&gt;
-&lt;li&gt;supporte la monté en charge&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Algos utilisés&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;probabilité conditionnel&lt;/li&gt;
-&lt;li&gt;Base de connaissances et de règles&lt;/li&gt;
-&lt;li&gt;réseaux de neuronnes et deep learning&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:stratego.html</guid><category>rust</category><category>vue.js</category><category>stratego</category></item><item><title>Tester c'est douter</title><link>https://mothsart.github.io/tester-c-douter.html</link><description>&lt;h2&gt;Tester c'est douter&lt;/h2&gt;
+&lt;p&gt;http://f4b1.com/raspberry-pi/comment-installer-rust-sur-un-raspberry-pi-3&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:rust-sur-pi.html</guid><category>raspberry rust</category></item><item><title>Tester c'est douter</title><link>https://mothsart.github.io/tester-c-douter.html</link><description>&lt;h2&gt;Tester c'est douter&lt;/h2&gt;
 &lt;p&gt;Dans le paysage du développeur, les tests &lt;strong&gt;automatisés&lt;/strong&gt; devraient être obligatoire et non plus une exception.&lt;/p&gt;
 &lt;p&gt;La réalité est souvent tout autre...&lt;/p&gt;
 &lt;h2&gt;Isolation&lt;/h2&gt;
@@ -1241,9 +1361,18 @@ rust_serialize&lt;/p&gt;
 &lt;p&gt;mencoder -oac mp3lame -ovc x264 -vf flip,mirror premier_toboggan.MOV -lavdopts threads=4 -o premier_toboggan.avi&lt;/p&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;http://sebsauvage.net/wiki/doku.php?id=ffmpeg&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:videos.html</guid><category>linux</category><category>ffmpeg</category><category>mencoder</category></item><item><title>Webassembly</title><link>https://mothsart.github.io/webassembly.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;https://github.com/DenisKolodin/yew.git : 
+convertir du Rust en wasm, asm.js ou emscripten.&lt;/p&gt;
+&lt;h2&gt;Avantage par rapport à du javascript&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Pas besoin de minification&lt;/li&gt;
+&lt;li&gt;virtualDOM sans la nécessité de passer par un framework web.&lt;/li&gt;
+&lt;li&gt;On utilise un seul schéma de donnée pour le client et le serveur&lt;/li&gt;
+&lt;li&gt;On dispose de la robuste du langage utilisé&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2&gt;l'existant&lt;/h2&gt;
 &lt;p&gt;http://caniuse.com/#feat=asmjs&lt;/p&gt;
-&lt;p&gt;emscripten&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:webassembly.html</guid><category>js</category></item><item><title>3D</title><link>https://mothsart.github.io/3D.html</link><description>&lt;h2&gt;&lt;/h2&gt;
+&lt;p&gt;emscripten&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 19 Jan 2018 22:01:50 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:webassembly.html</guid><category>js</category></item><item><title>3D</title><link>https://mothsart.github.io/3D.html</link><description>&lt;h2&gt;&lt;/h2&gt;
 &lt;p&gt;http://polycount.com/
 https://fr.wikipedia.org/wiki/Sketchfab
 https://sketchfab.com/&lt;/p&gt;
@@ -1937,11 +2066,12 @@ Il va partager un bon moment un environnement hétérogène avec Objective C...&
 &lt;/ul&gt;
 &lt;h2&gt;Je déteste toujours Apple&lt;/h2&gt;
 &lt;p&gt;cf : &lt;a href="dislike-apple.html"&gt;J'aime pas Apple&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Swift est bien meilleur que Java pour du mobile, c'est indéniable... j'espère que Google envisage sérieusement un remplaçant rapidement : Rust please, n'inventez pas un nième langage!!&lt;/p&gt;
+&lt;p&gt;Swift est bien meilleur que Java pour du mobile, c'est indéniable... 
+j'espère que Google envisage sérieusement un remplaçant rapidement : Rust please, n'inventez pas un nième langage!!&lt;/p&gt;
 &lt;h2&gt;Pourquoi créer un nouveau langage ?!&lt;/h2&gt;
 &lt;p&gt;Rien dans Swift n'est réellement neuf.
 Pourquoi ne pas s'être greffé sur des langages déjà existants ?!
-Ca fragmente encore plus le marché du travail... c'est juste désespérant.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 09 Jun 2016 20:19:28 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-09:que-penser-de-swift.html</guid><category>rust</category><category>swift</category><category>apple</category></item><item><title>Coreutils</title><link>https://mothsart.github.io/coreutils.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+Ca fragmente encore plus le marché du travail... c'est juste désespérant.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 26 Feb 2018 09:10:37 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-09:que-penser-de-swift.html</guid><category>rust</category><category>swift</category><category>apple</category></item><item><title>Coreutils</title><link>https://mothsart.github.io/coreutils.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;h2&gt;$PATH&lt;/h2&gt;
 &lt;p&gt;variable linux incontournable donnant la liste des répertoires contenant des programmes executables.&lt;/p&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;echo $PATH | tr : \\n&lt;/code&gt;&lt;/pre&gt;
