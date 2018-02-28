@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Tue, 31 Oct 2017 22:46:18 +0100</lastBuildDate><item><title>Connect Four</title><link>https://mothsart.github.io/puissance4.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 28 Feb 2018 12:15:38 +0100</lastBuildDate><item><title>Memo Diesel.rs</title><link>https://mothsart.github.io/memo-dieselrs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Je suis depuis quelques temps le projet Diesel.rs : le seul ORM en Rust digne de ce nom.&lt;/p&gt;
+&lt;p&gt;J'ai pas mal galéré à suivre ce projet tant qu'il nétait pas en version 1.0 avec tous les changements d'API.&lt;/p&gt;
+&lt;p&gt;Depuis quelques mois, il existe une version 1.0.&lt;/p&gt;
+&lt;p&gt;Il faut néanmoins encore pas mal fouiller pour trouver certains oublis dans la doc ou les exemples.&lt;/p&gt;
+&lt;h2&gt;Créer des requètes conditionnels&lt;/h2&gt;
+&lt;p&gt;Et oui : souvent on veut créer des requètes selon des paramètres (notamment pour mieux factoriser le code).&lt;/p&gt;
+&lt;p&gt;Avec Diesel, il faut utiliser ".into_boxed()"&lt;/p&gt;
+&lt;p&gt;let mut sql = connect_four::schema::users::dsl::users
+.filter(connected.eq(true).and(playing.eq(false)))
+.into_boxed();&lt;/p&gt;
+&lt;p&gt;if (condition) {
+    sql = connect_four::schema::users::dsl::users
+    .filter(connected.eq(true).and(playing.eq(false)))
+    .into_boxed();
+}&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-27:memo-dieselrs.html</guid><category>rust</category><category>sql</category><category>diesel</category></item><item><title>Connect Four</title><link>https://mothsart.github.io/puissance4.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Vous aimez jouer au Puissance 4 et vous ne trouvez pas votre bonheur.
 Voici peut-être un alternative pour vous !&lt;/p&gt;
 &lt;p&gt;Un jeu de puissance 4 en réseau !&lt;/p&gt;
@@ -56,13 +71,13 @@ sh rustup.sh -y --channel=nightly&lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Lancer le serveur web HTTP (dans un terminal à part)&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;cargo run --bin web&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;cargo run --release --bin web&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Lancer le serveur Webscoket (dans un autre terminal)&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;cargo run --bin ws&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;cargo run --release --bin ws&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;/li&gt;
@@ -103,7 +118,7 @@ WebSocket car c'est la meilleur techno web pour avoir de l'interactivité &lt;/l
 En témoignant de votre entousiasme via un commentaire, un mail, une attention, un don.
 En proposant des évolutions, des critiques, en remontant des bugs.&lt;/p&gt;
 &lt;p&gt;En proposant une traduction.&lt;/p&gt;
-&lt;p&gt;Enfin, en participant au code source, bien sur !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-27:puissance4.html</guid><category>rust</category><category>jeu</category><category>puissance 4</category><category>webpack</category><category>javascript</category><category>vuejs</category><category>sass</category><category>postcss</category></item><item><title>Stratego</title><link>https://mothsart.github.io/stratego.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Enfin, en participant au code source, bien sur !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 28 Feb 2018 12:15:38 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-27:puissance4.html</guid><category>rust</category><category>jeu</category><category>puissance 4</category><category>webpack</category><category>javascript</category><category>vuejs</category><category>sass</category><category>postcss</category></item><item><title>Stratego</title><link>https://mothsart.github.io/stratego.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;J'aime beaucoup le jeu de plateau &lt;strong&gt;Stratego&lt;/strong&gt;.
 N'ayant rien trouvé dans le périmètre des logiciels libres permettant de jouer à ce jeu, j'ai décidé de le créer.&lt;/p&gt;
 &lt;h2&gt;Ma stack&lt;/h2&gt;
@@ -121,22 +136,7 @@ N'ayant rien trouvé dans le périmètre des logiciels libres permettant de joue
 &lt;li&gt;probabilité conditionnel&lt;/li&gt;
 &lt;li&gt;Base de connaissances et de règles&lt;/li&gt;
 &lt;li&gt;réseaux de neuronnes et deep learning&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-26:stratego.html</guid><category>rust</category><category>vue.js</category><category>stratego</category></item><item><title>Memo Diesel.rs</title><link>https://mothsart.github.io/memo-dieselrs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
-&lt;p&gt;Je suis depuis quelques temps le projet Diesel.rs : le seul ORM en Rust digne de ce nom.&lt;/p&gt;
-&lt;p&gt;J'ai pas mal galéré à suivre ce projet tant qu'il nétait pas en version 1.0 avec tous les changements d'API.&lt;/p&gt;
-&lt;p&gt;Depuis quelques mois, il existe une version 1.0.&lt;/p&gt;
-&lt;p&gt;Il faut néanmoins encore pas mal fouiller pour trouver certains oublis dans la doc ou les exemples.&lt;/p&gt;
-&lt;h2&gt;Créer des requètes conditionnels&lt;/h2&gt;
-&lt;p&gt;Et oui : souvent on veut créer des requètes selon des paramètres (notamment pour mieux factoriser le code).&lt;/p&gt;
-&lt;p&gt;Avec Diesel, il faut utiliser ".into_boxed()"&lt;/p&gt;
-&lt;p&gt;let mut sql = connect_four::schema::users::dsl::users
-.filter(connected.eq(true).and(playing.eq(false)))
-.into_boxed();&lt;/p&gt;
-&lt;p&gt;if (condition) {
-    sql = connect_four::schema::users::dsl::users
-    .filter(connected.eq(true).and(playing.eq(false)))
-    .into_boxed();
-}&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-08:memo-dieselrs.html</guid><category>rust</category><category>sql</category><category>diesel</category></item><item><title>Phonectic Lab</title><link>https://mothsart.github.io/phonetic-lab.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-27:stratego.html</guid><category>rust</category><category>vue.js</category><category>stratego</category></item><item><title>Phonectic Lab</title><link>https://mothsart.github.io/phonetic-lab.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Ce projet est un banc de test autours des principes de la phonétic et des moteurs de recherche se basant sur ces algorithmes.&lt;/p&gt;
 &lt;p&gt;L'idée est de comparer les différents algorithmes de distance (Jaro, Levenstein) et d'en déterminer des éventuels heuristiques :
 selon certaines conditions, on utilisera un algorithme plutôt qu'un autre afin de proposer dans un ensemble de recherche, des performances optimales.&lt;/p&gt;

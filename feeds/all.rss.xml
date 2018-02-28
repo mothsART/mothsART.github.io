@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Mon, 26 Feb 2018 09:10:37 +0100</lastBuildDate><item><title>Connect Four</title><link>https://mothsart.github.io/puissance4.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 28 Feb 2018 12:15:38 +0100</lastBuildDate><item><title>Memo Diesel.rs</title><link>https://mothsart.github.io/memo-dieselrs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Je suis depuis quelques temps le projet Diesel.rs : le seul ORM en Rust digne de ce nom.&lt;/p&gt;
+&lt;p&gt;J'ai pas mal galéré à suivre ce projet tant qu'il nétait pas en version 1.0 avec tous les changements d'API.&lt;/p&gt;
+&lt;p&gt;Depuis quelques mois, il existe une version 1.0.&lt;/p&gt;
+&lt;p&gt;Il faut néanmoins encore pas mal fouiller pour trouver certains oublis dans la doc ou les exemples.&lt;/p&gt;
+&lt;h2&gt;Créer des requètes conditionnels&lt;/h2&gt;
+&lt;p&gt;Et oui : souvent on veut créer des requètes selon des paramètres (notamment pour mieux factoriser le code).&lt;/p&gt;
+&lt;p&gt;Avec Diesel, il faut utiliser ".into_boxed()"&lt;/p&gt;
+&lt;p&gt;let mut sql = connect_four::schema::users::dsl::users
+.filter(connected.eq(true).and(playing.eq(false)))
+.into_boxed();&lt;/p&gt;
+&lt;p&gt;if (condition) {
+    sql = connect_four::schema::users::dsl::users
+    .filter(connected.eq(true).and(playing.eq(false)))
+    .into_boxed();
+}&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-27:memo-dieselrs.html</guid><category>rust</category><category>sql</category><category>diesel</category></item><item><title>Connect Four</title><link>https://mothsart.github.io/puissance4.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Vous aimez jouer au Puissance 4 et vous ne trouvez pas votre bonheur.
 Voici peut-être un alternative pour vous !&lt;/p&gt;
 &lt;p&gt;Un jeu de puissance 4 en réseau !&lt;/p&gt;
@@ -56,13 +71,13 @@ sh rustup.sh -y --channel=nightly&lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Lancer le serveur web HTTP (dans un terminal à part)&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;cargo run --bin web&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;cargo run --release --bin web&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Lancer le serveur Webscoket (dans un autre terminal)&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;cargo run --bin ws&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;cargo run --release --bin ws&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;/li&gt;
@@ -103,7 +118,7 @@ WebSocket car c'est la meilleur techno web pour avoir de l'interactivité &lt;/l
 En témoignant de votre entousiasme via un commentaire, un mail, une attention, un don.
 En proposant des évolutions, des critiques, en remontant des bugs.&lt;/p&gt;
 &lt;p&gt;En proposant une traduction.&lt;/p&gt;
-&lt;p&gt;Enfin, en participant au code source, bien sur !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-27:puissance4.html</guid><category>rust</category><category>jeu</category><category>puissance 4</category><category>webpack</category><category>javascript</category><category>vuejs</category><category>sass</category><category>postcss</category></item><item><title>Stratego</title><link>https://mothsart.github.io/stratego.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Enfin, en participant au code source, bien sur !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 28 Feb 2018 12:15:38 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-27:puissance4.html</guid><category>rust</category><category>jeu</category><category>puissance 4</category><category>webpack</category><category>javascript</category><category>vuejs</category><category>sass</category><category>postcss</category></item><item><title>Stratego</title><link>https://mothsart.github.io/stratego.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;J'aime beaucoup le jeu de plateau &lt;strong&gt;Stratego&lt;/strong&gt;.
 N'ayant rien trouvé dans le périmètre des logiciels libres permettant de jouer à ce jeu, j'ai décidé de le créer.&lt;/p&gt;
 &lt;h2&gt;Ma stack&lt;/h2&gt;
@@ -121,22 +136,7 @@ N'ayant rien trouvé dans le périmètre des logiciels libres permettant de joue
 &lt;li&gt;probabilité conditionnel&lt;/li&gt;
 &lt;li&gt;Base de connaissances et de règles&lt;/li&gt;
 &lt;li&gt;réseaux de neuronnes et deep learning&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-26:stratego.html</guid><category>rust</category><category>vue.js</category><category>stratego</category></item><item><title>Memo Diesel.rs</title><link>https://mothsart.github.io/memo-dieselrs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
-&lt;p&gt;Je suis depuis quelques temps le projet Diesel.rs : le seul ORM en Rust digne de ce nom.&lt;/p&gt;
-&lt;p&gt;J'ai pas mal galéré à suivre ce projet tant qu'il nétait pas en version 1.0 avec tous les changements d'API.&lt;/p&gt;
-&lt;p&gt;Depuis quelques mois, il existe une version 1.0.&lt;/p&gt;
-&lt;p&gt;Il faut néanmoins encore pas mal fouiller pour trouver certains oublis dans la doc ou les exemples.&lt;/p&gt;
-&lt;h2&gt;Créer des requètes conditionnels&lt;/h2&gt;
-&lt;p&gt;Et oui : souvent on veut créer des requètes selon des paramètres (notamment pour mieux factoriser le code).&lt;/p&gt;
-&lt;p&gt;Avec Diesel, il faut utiliser ".into_boxed()"&lt;/p&gt;
-&lt;p&gt;let mut sql = connect_four::schema::users::dsl::users
-.filter(connected.eq(true).and(playing.eq(false)))
-.into_boxed();&lt;/p&gt;
-&lt;p&gt;if (condition) {
-    sql = connect_four::schema::users::dsl::users
-    .filter(connected.eq(true).and(playing.eq(false)))
-    .into_boxed();
-}&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-08:memo-dieselrs.html</guid><category>rust</category><category>sql</category><category>diesel</category></item><item><title>Le format ZIM</title><link>https://mothsart.github.io/format-zim.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-27:stratego.html</guid><category>rust</category><category>vue.js</category><category>stratego</category></item><item><title>Le format ZIM</title><link>https://mothsart.github.io/format-zim.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Objectif simple : rassembler du contenu HTML dans un fichier : contenu, images, vidéos, sons, scripts etc.&lt;/p&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;http://alterlibriste.free.fr/index.php?post/2016/04/03/Zim%2C-un-vrai-couteau-suisse&lt;/p&gt;
@@ -254,7 +254,7 @@ Jusqu'à présent, j'ai créé les exemples (conception, réalisation sous Inksc
 &lt;h2&gt;Logiciels équivalents ou complémentaires&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://sozi.baierouge.fr/pages/10-about-fr.html"&gt;Sozi&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 10 Jan 2018 12:08:59 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:editeur-svg-interactif.html</guid><category>javascript</category><category>svg</category><category>linux</category><category>primtux</category><category>deb</category></item><item><title>Algos de distances et de phonetique</title><link>https://mothsart.github.io/algos-distance-phonetique.html</link><description>&lt;h2&gt;Distance et algos de phonetic&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 27 Feb 2018 15:27:03 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:editeur-svg-interactif.html</guid><category>javascript</category><category>svg</category><category>linux</category><category>primtux</category><category>deb</category></item><item><title>Algos de distances et de phonetique</title><link>https://mothsart.github.io/algos-distance-phonetique.html</link><description>&lt;h2&gt;Distance et algos de phonetic&lt;/h2&gt;
 &lt;h2&gt;Définition de la Distance&lt;/h2&gt;
 &lt;p&gt;Les algorithmes de distance vont comparer 2 chaines afin de déterminer leur &lt;strong&gt;pourcentage de ressemblance&lt;/strong&gt;.&lt;/p&gt;
 &lt;h3&gt;Algos de distances&lt;/h3&gt;
@@ -339,7 +339,7 @@ Rester KISS.&lt;/p&gt;
 Beyond
 geeqie&lt;/p&gt;
 &lt;h2&gt;Références&lt;/h2&gt;
-&lt;p&gt;https://askubuntu.com/questions/209517/does-diff-exist-for-images&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 26 Feb 2018 09:09:01 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:diff-image.html</guid><category>rust</category></item><item><title>Gmic</title><link>https://mothsart.github.io/gmic.html</link><description>&lt;h2&gt;Diminuer le bruit&lt;/h2&gt;
+&lt;p&gt;https://askubuntu.com/questions/209517/does-diff-exist-for-images&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 27 Feb 2018 15:27:03 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:diff-image.html</guid><category>rust</category></item><item><title>Gmic</title><link>https://mothsart.github.io/gmic.html</link><description>&lt;h2&gt;Diminuer le bruit&lt;/h2&gt;
 &lt;p&gt;Repair &amp;gt; Smooth [anisotropic]&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:gmic.html</guid><category>gimp</category><category>retouche</category><category>gmic</category></item><item><title>Idées autours du bois</title><link>https://mothsart.github.io/idees-autours-bois.html</link><description>&lt;h2&gt;Table basse&lt;/h2&gt;
 &lt;h2&gt;Coffret à glaçons en pierre&lt;/h2&gt;
 &lt;h2&gt;Set de couvert en bois&lt;/h2&gt;
@@ -595,7 +595,7 @@ pygettext -o monsterz.pot ./monsterz.py&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;msgfmt -o lang.mo lang.po&lt;/p&gt;
 &lt;p&gt;et en ligne :&lt;/p&gt;
 &lt;p&gt;http://po2mo.net/&lt;/p&gt;
-&lt;h2&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 07 Jan 2018 14:42:39 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-01:i18n.html</guid><category>i18n</category><category>linux</category><category>python</category><category>gettext</category></item><item><title>Mes scripts pour Raspberry</title><link>https://mothsart.github.io/scripts-raspberry.html</link><description>&lt;h2&gt;Mes Scripts pour Raspberry&lt;/h2&gt;
+&lt;h2&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 27 Feb 2018 15:27:03 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-01:i18n.html</guid><category>i18n</category><category>linux</category><category>python</category><category>gettext</category></item><item><title>Mes scripts pour Raspberry</title><link>https://mothsart.github.io/scripts-raspberry.html</link><description>&lt;h2&gt;Mes Scripts pour Raspberry&lt;/h2&gt;
 &lt;p&gt;Un script qui simplifie l'usage de &lt;strong&gt;dd&lt;/strong&gt; avec une belle barre de progression !!&lt;/p&gt;
 &lt;p&gt;Nécessite &lt;strong&gt;pv&lt;/strong&gt; et &lt;strong&gt;dialog&lt;/strong&gt; pour fonctionner :&lt;/p&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;apt-get install pv, dialog&lt;/code&gt;&lt;/pre&gt;
@@ -756,7 +756,7 @@ sudo nmap -sP x.y.z.*&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;&lt;a href="http://blog.nicolargo.com/2007/08/nmap-le-scanneur-de-reseau.html"&gt;http://blog.nicolargo.com/2007/08/nmap-le-scanneur-de-reseau.html&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;lsof -i&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 26 Dec 2017 12:01:07 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:memo-admin-sys.html</guid><category>linux</category><category>arp</category><category>nmap</category><category>admin sys</category></item><item><title>Mémo sur Cargo</title><link>https://mothsart.github.io/memo-cargo.html</link><description>&lt;h2&gt;Un mémo sur les instructions d'un fichier de conf d'un paquet Cargo&lt;/h2&gt;
+&lt;h2&gt;lsof -i&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 27 Feb 2018 15:27:03 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:memo-admin-sys.html</guid><category>linux</category><category>arp</category><category>nmap</category><category>admin sys</category></item><item><title>Mémo sur Cargo</title><link>https://mothsart.github.io/memo-cargo.html</link><description>&lt;h2&gt;Un mémo sur les instructions d'un fichier de conf d'un paquet Cargo&lt;/h2&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-toml"&gt;[package]
 name = &amp;quot;cargo&amp;quot;
 version = &amp;quot;0.18.0&amp;quot;
@@ -1372,7 +1372,7 @@ convertir du Rust en wasm, asm.js ou emscripten.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h2&gt;l'existant&lt;/h2&gt;
 &lt;p&gt;http://caniuse.com/#feat=asmjs&lt;/p&gt;
-&lt;p&gt;emscripten&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 19 Jan 2018 22:01:50 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:webassembly.html</guid><category>js</category></item><item><title>3D</title><link>https://mothsart.github.io/3D.html</link><description>&lt;h2&gt;&lt;/h2&gt;
+&lt;p&gt;emscripten&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 27 Feb 2018 15:27:03 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:webassembly.html</guid><category>js</category></item><item><title>3D</title><link>https://mothsart.github.io/3D.html</link><description>&lt;h2&gt;&lt;/h2&gt;
 &lt;p&gt;http://polycount.com/
 https://fr.wikipedia.org/wiki/Sketchfab
 https://sketchfab.com/&lt;/p&gt;
@@ -1896,7 +1896,9 @@ git push -f&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;s'occupe de conserver les droits&lt;/li&gt;
 &lt;li&gt;création d'un dossier lorsuq'il y a plusieurs fichiers à la racine&lt;/li&gt;
 &lt;li&gt;extraction récursive&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 01 May 2017 01:59:46 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-sh.html</guid><category>sh</category><category>linux</category></item><item><title>Aide mémoire Sublime Text 3</title><link>https://mothsart.github.io/aide-memoire-sublime-text.html</link><description>&lt;h2&gt;Fonctionnalités&lt;/h2&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;http://www.grimoire-command.es&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 27 Feb 2018 16:16:38 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-sh.html</guid><category>sh</category><category>linux</category></item><item><title>Aide mémoire Sublime Text 3</title><link>https://mothsart.github.io/aide-memoire-sublime-text.html</link><description>&lt;h2&gt;Fonctionnalités&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://sametmax.com/10-astuces-pour-sublime-text-2"&gt;http://sametmax.com/10-astuces-pour-sublime-text-2&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Edit/StringEncode : permet d'encoder des chaines de caractères&lt;/p&gt;
 &lt;p&gt;&lt;kbd&gt;Alt&lt;/kbd&gt;&lt;kbd&gt;Q&lt;/kbd&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 15 Jan 2016 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-sublime-text.html</guid><category>sublimetext</category></item><item><title>Aide mémoire Tmux</title><link>https://mothsart.github.io/aide-memoire-tmux.html</link><description>&lt;h2&gt;Introduction&lt;/h2&gt;
@@ -2071,7 +2073,7 @@ j'espère que Google envisage sérieusement un remplaçant rapidement : Rust ple
 &lt;h2&gt;Pourquoi créer un nouveau langage ?!&lt;/h2&gt;
 &lt;p&gt;Rien dans Swift n'est réellement neuf.
 Pourquoi ne pas s'être greffé sur des langages déjà existants ?!
-Ca fragmente encore plus le marché du travail... c'est juste désespérant.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 26 Feb 2018 09:10:37 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-09:que-penser-de-swift.html</guid><category>rust</category><category>swift</category><category>apple</category></item><item><title>Coreutils</title><link>https://mothsart.github.io/coreutils.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+Ca fragmente encore plus le marché du travail... c'est juste désespérant.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 27 Feb 2018 15:27:03 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-09:que-penser-de-swift.html</guid><category>rust</category><category>swift</category><category>apple</category></item><item><title>Coreutils</title><link>https://mothsart.github.io/coreutils.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;h2&gt;$PATH&lt;/h2&gt;
 &lt;p&gt;variable linux incontournable donnant la liste des répertoires contenant des programmes executables.&lt;/p&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;echo $PATH | tr : \\n&lt;/code&gt;&lt;/pre&gt;

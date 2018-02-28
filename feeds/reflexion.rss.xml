@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Mon, 26 Feb 2018 09:10:37 +0100</lastBuildDate><item><title>Un téléphone libre</title><link>https://mothsart.github.io/telephone-libre.html</link><description>&lt;h2&gt;Intro : Purism&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Tue, 27 Feb 2018 15:27:03 +0100</lastBuildDate><item><title>Un téléphone libre</title><link>https://mothsart.github.io/telephone-libre.html</link><description>&lt;h2&gt;Intro : Purism&lt;/h2&gt;
 &lt;p&gt;https://puri.sm/shop/librem-5/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 31 Oct 2017 22:46:18 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-10-31:telephone-libre.html</guid><category>mobile</category><category>libre</category></item><item><title>Algos de distances et de phonetique</title><link>https://mothsart.github.io/algos-distance-phonetique.html</link><description>&lt;h2&gt;Distance et algos de phonetic&lt;/h2&gt;
 &lt;h2&gt;Définition de la Distance&lt;/h2&gt;
 &lt;p&gt;Les algorithmes de distance vont comparer 2 chaines afin de déterminer leur &lt;strong&gt;pourcentage de ressemblance&lt;/strong&gt;.&lt;/p&gt;
@@ -69,7 +69,7 @@ Rester KISS.&lt;/p&gt;
 Beyond
 geeqie&lt;/p&gt;
 &lt;h2&gt;Références&lt;/h2&gt;
-&lt;p&gt;https://askubuntu.com/questions/209517/does-diff-exist-for-images&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 26 Feb 2018 09:09:01 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:diff-image.html</guid><category>rust</category></item><item><title>Les APIS web oubliés</title><link>https://mothsart.github.io/le-format-svg.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;https://askubuntu.com/questions/209517/does-diff-exist-for-images&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 27 Feb 2018 15:27:03 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:diff-image.html</guid><category>rust</category></item><item><title>Les APIS web oubliés</title><link>https://mothsart.github.io/le-format-svg.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Je suis un dev web et je passe trop de temps sur des choses merdiques.
 Du frontend franchement basique.&lt;/p&gt;
 &lt;h2&gt;Une api pour transform()&lt;/h2&gt;
@@ -275,7 +275,7 @@ j'espère que Google envisage sérieusement un remplaçant rapidement : Rust ple
 &lt;h2&gt;Pourquoi créer un nouveau langage ?!&lt;/h2&gt;
 &lt;p&gt;Rien dans Swift n'est réellement neuf.
 Pourquoi ne pas s'être greffé sur des langages déjà existants ?!
-Ca fragmente encore plus le marché du travail... c'est juste désespérant.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 26 Feb 2018 09:10:37 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-09:que-penser-de-swift.html</guid><category>rust</category><category>swift</category><category>apple</category></item><item><title>Bug</title><link>https://mothsart.github.io/bug.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+Ca fragmente encore plus le marché du travail... c'est juste désespérant.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 27 Feb 2018 15:27:03 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-09:que-penser-de-swift.html</guid><category>rust</category><category>swift</category><category>apple</category></item><item><title>Bug</title><link>https://mothsart.github.io/bug.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Mais qu'est-ce qu'un bug et pourquoi le développeur à ce sentiment d'inachevé ?
 Je vais tenter via cet article de remettre les choses à plat sur ces notions, pris comme acquis et qui ne le sont généralement pas.&lt;/p&gt;
 &lt;h2&gt;Garantir un logiciel comme stable&lt;/h2&gt;
