@@ -165,7 +165,9 @@ Le Labo Du Nerd            </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <h2>Reseau &amp; Admin sys</h2>
+                <h1>Intro</h1>
+<p>Autant le dire, je suis une bille en réseau mais je fais tout pour m'améliorer.
+Voici quelques astuces que j'ai glané.</p>
 <h2>w</h2>
 <p>Donne la liste des utilisateurs sur une machine</p>
 <h2>arp -a</h2>
@@ -177,6 +179,16 @@ sudo nmap -sP x.y.z.*</code></pre>
 
 <p><a href="http://blog.nicolargo.com/2007/08/nmap-le-scanneur-de-reseau.html">http://blog.nicolargo.com/2007/08/nmap-le-scanneur-de-reseau.html</a></p>
 <h2>lsof -i</h2>
+<h2>Obtenir la liste de ses adresses IP locales</h2>
+<p>LANG=c ifconfig | grep -B1 "inet addr" |awk '{ if ( $1 == "inet" ) { print $2 } else if ( $2 == "Link" ) { printf "%s:" ,$1 } }' |awk -F: '{ print $1 ": " $3 }'</p>
+<h2>Donner son adresse IP publique</h2>
+<p>curl ipinfo.io/ip</p>
+<h2>Saisir une IPv6 dans son navigateur</h2>
+<p>La mettre entre crochet =&gt; [la::super::ip::v6]</p>
+<h2>donner le nom de domaine d'un poste sur le réseau locale</h2>
+<p>hostname</p>
+<h2>changer le hostname</h2>
+<p>sudo hostname TRUCMUCH</p>
             </div>
             <!-- /.entry-content -->
     <hr/>
@@ -236,7 +248,7 @@ sudo nmap -sP x.y.z.*</code></pre>
                     <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/rust.html">
                             rust
-                                <span class="badge">17</span>
+                                <span class="badge">19</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -258,6 +270,12 @@ sudo nmap -sP x.y.z.*</code></pre>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/css.html">
+                            css
+                                <span class="badge">5</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/libre.html">
                             libre
                                 <span class="badge">5</span>
@@ -270,14 +288,8 @@ sudo nmap -sP x.y.z.*</code></pre>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/css.html">
-                            css
-                                <span class="badge">5</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/c.html">
-                            c#
+                        <a href="https://mothsart.github.io/tag/sql.html">
+                            sql
                                 <span class="badge">4</span>
                         </a>
                     </li>
@@ -288,8 +300,8 @@ sudo nmap -sP x.y.z.*</code></pre>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/sql.html">
-                            sql
+                        <a href="https://mothsart.github.io/tag/c.html">
+                            c#
                                 <span class="badge">4</span>
                         </a>
                     </li>
@@ -297,6 +309,12 @@ sudo nmap -sP x.y.z.*</code></pre>
                         <a href="https://mothsart.github.io/tag/git.html">
                             git
                                 <span class="badge">4</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/ubuntu.html">
+                            ubuntu
+                                <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -312,26 +330,14 @@ sudo nmap -sP x.y.z.*</code></pre>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/gettext.html">
-                            gettext
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/ubuntu.html">
-                            ubuntu
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/postgresql.html">
-                            postgresql
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/raspberry.html">
                             raspberry
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/gettext.html">
+                            gettext
                                 <span class="badge">3</span>
                         </a>
                     </li>
@@ -342,20 +348,26 @@ sudo nmap -sP x.y.z.*</code></pre>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/bench.html">
-                            bench
+                        <a href="https://mothsart.github.io/tag/postgresql.html">
+                            postgresql
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/metaphone.html">
+                            metaphone
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/recalbox.html">
-                            recalbox
+                        <a href="https://mothsart.github.io/tag/postcss.html">
+                            postcss
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/phonetic.html">
-                            phonetic
+                        <a href="https://mothsart.github.io/tag/cli.html">
+                            cli
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -366,44 +378,44 @@ sudo nmap -sP x.y.z.*</code></pre>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/metaphone.html">
-                            metaphone
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/svg.html">
-                            svg
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/apple.html">
-                            apple
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/dev.html">
                             dev
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/primtux.html">
-                            primtux
+                        <a href="https://mothsart.github.io/tag/swift.html">
+                            swift
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/retouche.html">
-                            retouche
+                        <a href="https://mothsart.github.io/tag/benchmark.html">
+                            benchmark
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/gimp.html">
+                            gimp
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/sh.html">
+                            sh
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/picture.html">
                             picture
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/recalbox.html">
+                            recalbox
                                 <span class="badge">2</span>
                         </a>
                     </li>

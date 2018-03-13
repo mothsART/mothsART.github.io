@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 28 Feb 2018 12:15:38 +0100</lastBuildDate><item><title>Memo Diesel.rs</title><link>https://mothsart.github.io/memo-dieselrs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Tue, 13 Mar 2018 23:28:43 +0100</lastBuildDate><item><title>Search diff image</title><link>https://mothsart.github.io/search-diff-image.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;La photo numérique nous a donné l'avantage de pouvoir prendre énormément de photos et de les trier par la suite.
+Les avantages, pour ceux qui ont fait de l'argentique sont évidents.&lt;/p&gt;
+&lt;p&gt;Il reste que les inconvénients deviennent criants :
+- une masse énorme de photos à regarder, trier, supprimer etc.&lt;/p&gt;
+&lt;p&gt;Ne serait-il pas possible d'identifier toutes les photos trop similaires ?&lt;/p&gt;
+&lt;h2&gt;La problématique&lt;/h2&gt;
+&lt;p&gt;Un soucis en apparence simple.
+IL est simple de vérifier que 2 images sont strictement identiques.
+1 pixels de différence est c'est le drame : il faut comparer la matrice complète et le temps de traitement est par conséquent couteux.&lt;/p&gt;
+&lt;p&gt;Il faudrait donc 1 ou plusieurs hashs permettant de comparer des images sans reparcourir inlassablement leur contenu.&lt;/p&gt;
+&lt;h2&gt;Les solutions envisageables&lt;/h2&gt;
+&lt;h3&gt;Comparer les ratios&lt;/h3&gt;
+&lt;p&gt;Effectivement, il parait un peu débile de comparer une image en 16/9 avec une image en 4/3.&lt;/p&gt;
+&lt;p&gt;Petit piège néanmoins : les images qui ont subit une rotation ou un effet mirroir.&lt;/p&gt;
+&lt;p&gt;Un ratio peut être facilement stocké sous forme d'entier ou de valeur décimal.
+Il est par conséquent facile de faire des tests sur une grande quantité de données.&lt;/p&gt;
+&lt;h3&gt;Comparer les espaces colorimétriques&lt;/h3&gt;
+&lt;p&gt;Une image est divisé en plusieurs canaux : R, V, B, Opacité (PNG).&lt;/p&gt;
+&lt;p&gt;Ces valeurs sont des entiers donc on peut très facilement les trier. (médiane, moyenne, écart type)&lt;/p&gt;
+&lt;p&gt;On pourrait également étendre ce procédé sur des canaux plus proche de la perception humaine :&lt;/p&gt;
+&lt;p&gt;Pour celà, il y a TSV mais aussi L&lt;em&gt;a&lt;/em&gt;b (CieLab)&lt;/p&gt;
+&lt;h3&gt;Comparer des applats de couleurs&lt;/h3&gt;
+&lt;p&gt;La, on touche du doigt le machine learning.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-03-08:search-diff-image.html</guid><category>rust</category></item><item><title>entrainnement grammatical</title><link>https://mothsart.github.io/entrainnement-grammatical.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-28:entrainnement-grammatical.html</guid><category>rust</category><category>jeux</category><category>educatif</category></item><item><title>Memo Diesel.rs</title><link>https://mothsart.github.io/memo-dieselrs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Je suis depuis quelques temps le projet Diesel.rs : le seul ORM en Rust digne de ce nom.&lt;/p&gt;
 &lt;p&gt;J'ai pas mal galéré à suivre ce projet tant qu'il nétait pas en version 1.0 avec tous les changements d'API.&lt;/p&gt;
 &lt;p&gt;Depuis quelques mois, il existe une version 1.0.&lt;/p&gt;
@@ -318,28 +341,58 @@ https://siderite.blogspot.com/2014/11/super-fast-and-accurate-string-distance.ht
 &lt;/ul&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;http://linuxfr.org/users/pied/journaux/an-unexpected-linux-reverse-engineering&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:binaire.html</guid><category>binaire</category></item><item><title>Diff-image</title><link>https://mothsart.github.io/diff-image.html</link><description>&lt;h2&gt;Comparer 2 images&lt;/h2&gt;
-&lt;p&gt;Je démarre un soft de comparaison d'images.
-En effet, je trouve qu'un outil "simple" de ce genre n'existe tout bonnement pas.
-Qui plus est, ça me permet de faire du &lt;strong&gt;Rust&lt;/strong&gt;, de faire de l'algo sur de l'image matricielle, d'apprendre l'API de GTK... 
-Et potentiellement de faire profiter d'autres personnes et, pourquoi pas, de succiter des vocations.&lt;/p&gt;
+&lt;p&gt;Je démarre un soft de comparaison d'images.&lt;/p&gt;
+&lt;p&gt;En effet, je trouve qu'un outil "simple" de ce genre n'existe tout bonnement pas.&lt;/p&gt;
+&lt;p&gt;Qui plus est, ça me permet de faire du &lt;strong&gt;Rust&lt;/strong&gt;, de l'algo sur de l'image matricielle, d'apprendre l'API de GTK... &lt;/p&gt;
+&lt;p&gt;Et potentiellement de faire profiter d'autres personnes et, pourquoi pas, de succiter des vocations.&lt;/p&gt;
 &lt;h2&gt;N'importe quoi, y'a ImageMagick ou Gimp&lt;/h2&gt;
-&lt;p&gt;Ben, justement... c'est tout sauf simple.
-L'un nécessite de faire de la ligne de commande et le 2ème est une usine à gaz longue à démarrer, 
+&lt;p&gt;Ben, justement... c'est tout sauf simple.&lt;/p&gt;
+&lt;p&gt;L'un nécessite de faire de la ligne de commande et le 2ème est une usine à gaz longue à démarrer, 
 gourmande en ressources et réservé à la retouche photo.&lt;/p&gt;
-&lt;p&gt;Bref, je veux respecter la philosophie Unixienne : faire une chose et une seul.
-Rester KISS.&lt;/p&gt;
+&lt;p&gt;Bref, je veux respecter la philosophie Unixienne : faire une chose et une seul et rester KISS.&lt;/p&gt;
 &lt;h2&gt;Fonctionnalités&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Récupérer 2 images et visualiser les changements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Fonctionnalités à venir&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Comparer des images via des métriques&lt;/li&gt;
 &lt;li&gt;Comparer les méta-données&lt;/li&gt;
 &lt;li&gt;utilisation via GIT : un peu comme https://gist.github.com/StanAngeloff/1716699&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2&gt;A quoi ça ressemble ?&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="Comparer des images" src="static/images/whatschanging/spot_the_diff.png" /&gt;&lt;/p&gt;
+&lt;h2&gt;Comment on test&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;On installe Rust et Cargo (si ce n'est pas déjà fait)&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;curl -f -L https://static.rust-lang.org/rustup.sh -O
+sh rustup.sh -y --channel=nightly&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;On Récupère les sources :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git clone https://github.com/mothsART/whatschanging.git &amp;amp;&amp;amp; cd whatschanging&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;On Lance (la première fois, c'est lent car ça récupère les dépendances et ça compile)&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;cargo run&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;On peut désormais tester l'exemple du dessus (les 2 images sont dans les sources) ou comparer des images de son choix.&lt;/p&gt;
 &lt;h2&gt;Equivalents&lt;/h2&gt;
-&lt;p&gt;ImageMagick
-Beyond
-geeqie&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ImageMagick&lt;/li&gt;
+&lt;li&gt;Beyond&lt;/li&gt;
+&lt;li&gt;geeqie&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2&gt;Références&lt;/h2&gt;
-&lt;p&gt;https://askubuntu.com/questions/209517/does-diff-exist-for-images&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 27 Feb 2018 15:27:03 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:diff-image.html</guid><category>rust</category></item><item><title>Gmic</title><link>https://mothsart.github.io/gmic.html</link><description>&lt;h2&gt;Diminuer le bruit&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://askubuntu.com/questions/209517/does-diff-exist-for-images"&gt;https://askubuntu.com/questions/209517/does-diff-exist-for-images&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 13 Mar 2018 23:28:43 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:diff-image.html</guid><category>rust</category></item><item><title>Gmic</title><link>https://mothsart.github.io/gmic.html</link><description>&lt;h2&gt;Diminuer le bruit&lt;/h2&gt;
 &lt;p&gt;Repair &amp;gt; Smooth [anisotropic]&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:gmic.html</guid><category>gimp</category><category>retouche</category><category>gmic</category></item><item><title>Idées autours du bois</title><link>https://mothsart.github.io/idees-autours-bois.html</link><description>&lt;h2&gt;Table basse&lt;/h2&gt;
 &lt;h2&gt;Coffret à glaçons en pierre&lt;/h2&gt;
 &lt;h2&gt;Set de couvert en bois&lt;/h2&gt;
@@ -745,7 +798,9 @@ Voici mes experimentations dans le logging en Rust.&lt;/p&gt;
 &lt;li&gt;apporter de la couleur sur le terminal pour les différents type de log. (erreur en rouge, warn et orange etc.)&lt;/li&gt;
 &lt;li&gt;changer les formats d'affichage facilement&lt;/li&gt;
 &lt;li&gt;utiliser d'autre sortie que &lt;strong&gt;stdout&lt;/strong&gt; : en html, en json, journald &lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:logs-rust.html</guid><category>rust</category><category>log</category></item><item><title>Aide mémoire sur le réseau et l'admin sys</title><link>https://mothsart.github.io/memo-admin-sys.html</link><description>&lt;h2&gt;Reseau &amp;amp; Admin sys&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:logs-rust.html</guid><category>rust</category><category>log</category></item><item><title>Aide mémoire sur le réseau et l'admin sys</title><link>https://mothsart.github.io/memo-admin-sys.html</link><description>&lt;h1&gt;Intro&lt;/h1&gt;
+&lt;p&gt;Autant le dire, je suis une bille en réseau mais je fais tout pour m'améliorer.
+Voici quelques astuces que j'ai glané.&lt;/p&gt;
 &lt;h2&gt;w&lt;/h2&gt;
 &lt;p&gt;Donne la liste des utilisateurs sur une machine&lt;/p&gt;
 &lt;h2&gt;arp -a&lt;/h2&gt;
@@ -756,7 +811,17 @@ sudo nmap -sP x.y.z.*&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;&lt;a href="http://blog.nicolargo.com/2007/08/nmap-le-scanneur-de-reseau.html"&gt;http://blog.nicolargo.com/2007/08/nmap-le-scanneur-de-reseau.html&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;lsof -i&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 27 Feb 2018 15:27:03 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:memo-admin-sys.html</guid><category>linux</category><category>arp</category><category>nmap</category><category>admin sys</category></item><item><title>Mémo sur Cargo</title><link>https://mothsart.github.io/memo-cargo.html</link><description>&lt;h2&gt;Un mémo sur les instructions d'un fichier de conf d'un paquet Cargo&lt;/h2&gt;
+&lt;h2&gt;lsof -i&lt;/h2&gt;
+&lt;h2&gt;Obtenir la liste de ses adresses IP locales&lt;/h2&gt;
+&lt;p&gt;LANG=c ifconfig | grep -B1 "inet addr" |awk '{ if ( $1 == "inet" ) { print $2 } else if ( $2 == "Link" ) { printf "%s:" ,$1 } }' |awk -F: '{ print $1 ": " $3 }'&lt;/p&gt;
+&lt;h2&gt;Donner son adresse IP publique&lt;/h2&gt;
+&lt;p&gt;curl ipinfo.io/ip&lt;/p&gt;
+&lt;h2&gt;Saisir une IPv6 dans son navigateur&lt;/h2&gt;
+&lt;p&gt;La mettre entre crochet =&amp;gt; [la::super::ip::v6]&lt;/p&gt;
+&lt;h2&gt;donner le nom de domaine d'un poste sur le réseau locale&lt;/h2&gt;
+&lt;p&gt;hostname&lt;/p&gt;
+&lt;h2&gt;changer le hostname&lt;/h2&gt;
+&lt;p&gt;sudo hostname TRUCMUCH&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 06 Mar 2018 22:41:47 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:memo-admin-sys.html</guid><category>linux</category><category>arp</category><category>nmap</category><category>admin sys</category></item><item><title>Mémo sur Cargo</title><link>https://mothsart.github.io/memo-cargo.html</link><description>&lt;h2&gt;Un mémo sur les instructions d'un fichier de conf d'un paquet Cargo&lt;/h2&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-toml"&gt;[package]
 name = &amp;quot;cargo&amp;quot;
 version = &amp;quot;0.18.0&amp;quot;
@@ -912,10 +977,11 @@ Que de changements depuis ma première raspbian !!!&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/servo/servo"&gt;Servo&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;RedOS&lt;/strong&gt; : un OS en Rust : https://www.redox-os.org/&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;RedOS&lt;/strong&gt; : un OS en Rust : &lt;a href="https://www.redox-os.org/"&gt;RedOs&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;RipGrep&lt;/strong&gt; : un remplacement de Grep (avec des perfs halucinantes) : &lt;a href="https://github.com/BurntSushi/ripgrep"&gt;https://github.com/BurntSushi/ripgrep&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;RipGrep&lt;/strong&gt; : un remplacement de Grep (avec des perfs halucinantes) : 
+&lt;a href="https://github.com/BurntSushi/ripgrep"&gt;https://github.com/BurntSushi/ripgrep&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Exa&lt;/strong&gt; : un remplacement de la commande &lt;strong&gt;ls&lt;/strong&gt; mais en mieux :
@@ -927,7 +993,17 @@ Que de changements depuis ma première raspbian !!!&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href="https://github.com/derniercri/snatch"&gt;Snatch&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 31 Oct 2017 22:46:18 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-22:applis-rust.html</guid></item><item><title>Financement participatif</title><link>https://mothsart.github.io/financement-participatif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Alactritty&lt;/strong&gt; : est un terminal récent qui utilise le processeur graphique (via OpenGL). 
+C’est probablement le terminal le plus performant aujourd’hui.
+En revanche, il ne couvre encore que peu de fonctionnalités (pas encore d’historique, par exemple).
+&lt;a href="https://github.com/jwilm/alacritty"&gt;Alactritty&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Sozu&lt;/strong&gt; : Un reverse proxy qui est reconfigurable à chaud, qui est rapide est sécurisé. (sans aucun crash)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://www.sozu.io/"&gt;Sozu&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 10 Mar 2018 14:22:49 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-22:applis-rust.html</guid></item><item><title>Financement participatif</title><link>https://mothsart.github.io/financement-participatif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;https://liberapay.com/mothsART&lt;/p&gt;
 &lt;p&gt;Flattr&lt;/p&gt;

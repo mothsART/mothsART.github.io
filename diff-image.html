@@ -148,34 +148,64 @@ Le Labo Du Nerd            </a>
 
 
 	<a href="https://mothsart.github.io/tag/rust.html">rust
-                <span class="badge">17</span>
+                <span class="badge">19</span>
     </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
                 <h2>Comparer 2 images</h2>
-<p>Je démarre un soft de comparaison d'images.
-En effet, je trouve qu'un outil "simple" de ce genre n'existe tout bonnement pas.
-Qui plus est, ça me permet de faire du <strong>Rust</strong>, de faire de l'algo sur de l'image matricielle, d'apprendre l'API de GTK... 
-Et potentiellement de faire profiter d'autres personnes et, pourquoi pas, de succiter des vocations.</p>
+<p>Je démarre un soft de comparaison d'images.</p>
+<p>En effet, je trouve qu'un outil "simple" de ce genre n'existe tout bonnement pas.</p>
+<p>Qui plus est, ça me permet de faire du <strong>Rust</strong>, de l'algo sur de l'image matricielle, d'apprendre l'API de GTK... </p>
+<p>Et potentiellement de faire profiter d'autres personnes et, pourquoi pas, de succiter des vocations.</p>
 <h2>N'importe quoi, y'a ImageMagick ou Gimp</h2>
-<p>Ben, justement... c'est tout sauf simple.
-L'un nécessite de faire de la ligne de commande et le 2ème est une usine à gaz longue à démarrer, 
+<p>Ben, justement... c'est tout sauf simple.</p>
+<p>L'un nécessite de faire de la ligne de commande et le 2ème est une usine à gaz longue à démarrer, 
 gourmande en ressources et réservé à la retouche photo.</p>
-<p>Bref, je veux respecter la philosophie Unixienne : faire une chose et une seul.
-Rester KISS.</p>
+<p>Bref, je veux respecter la philosophie Unixienne : faire une chose et une seul et rester KISS.</p>
 <h2>Fonctionnalités</h2>
+<ul>
+<li>Récupérer 2 images et visualiser les changements</li>
+</ul>
+<h2>Fonctionnalités à venir</h2>
 <ul>
 <li>Comparer des images via des métriques</li>
 <li>Comparer les méta-données</li>
 <li>utilisation via GIT : un peu comme https://gist.github.com/StanAngeloff/1716699</li>
 </ul>
+<h2>A quoi ça ressemble ?</h2>
+<p><img alt="Comparer des images" src="static/images/whatschanging/spot_the_diff.png" /></p>
+<h2>Comment on test</h2>
+<ol>
+<li>
+<p>On installe Rust et Cargo (si ce n'est pas déjà fait)</p>
+<pre class="highlight"><code class="language-bash">curl -f -L https://static.rust-lang.org/rustup.sh -O
+sh rustup.sh -y --channel=nightly</code></pre>
+
+
+</li>
+<li>
+<p>On Récupère les sources :</p>
+<pre class="highlight"><code class="language-bash">git clone https://github.com/mothsART/whatschanging.git &amp;&amp; cd whatschanging</code></pre>
+
+
+</li>
+<li>
+<p>On Lance (la première fois, c'est lent car ça récupère les dépendances et ça compile)</p>
+<pre class="highlight"><code class="language-bash">cargo run</code></pre>
+
+
+</li>
+</ol>
+<p>On peut désormais tester l'exemple du dessus (les 2 images sont dans les sources) ou comparer des images de son choix.</p>
 <h2>Equivalents</h2>
-<p>ImageMagick
-Beyond
-geeqie</p>
+<ul>
+<li>ImageMagick</li>
+<li>Beyond</li>
+<li>geeqie</li>
+</ul>
 <h2>Références</h2>
-<p>https://askubuntu.com/questions/209517/does-diff-exist-for-images</p>
+<p><a href="https://askubuntu.com/questions/209517/does-diff-exist-for-images">https://askubuntu.com/questions/209517/does-diff-exist-for-images</a></p>
             </div>
             <!-- /.entry-content -->
     <hr/>
@@ -235,7 +265,7 @@ geeqie</p>
                     <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/rust.html">
                             rust
-                                <span class="badge">17</span>
+                                <span class="badge">19</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -257,6 +287,12 @@ geeqie</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/css.html">
+                            css
+                                <span class="badge">5</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/libre.html">
                             libre
                                 <span class="badge">5</span>
@@ -269,14 +305,8 @@ geeqie</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/css.html">
-                            css
-                                <span class="badge">5</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/c.html">
-                            c#
+                        <a href="https://mothsart.github.io/tag/sql.html">
+                            sql
                                 <span class="badge">4</span>
                         </a>
                     </li>
@@ -287,8 +317,8 @@ geeqie</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/sql.html">
-                            sql
+                        <a href="https://mothsart.github.io/tag/c.html">
+                            c#
                                 <span class="badge">4</span>
                         </a>
                     </li>
@@ -296,6 +326,12 @@ geeqie</p>
                         <a href="https://mothsart.github.io/tag/git.html">
                             git
                                 <span class="badge">4</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/ubuntu.html">
+                            ubuntu
+                                <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -311,26 +347,14 @@ geeqie</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/gettext.html">
-                            gettext
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/ubuntu.html">
-                            ubuntu
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/postgresql.html">
-                            postgresql
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/raspberry.html">
                             raspberry
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/gettext.html">
+                            gettext
                                 <span class="badge">3</span>
                         </a>
                     </li>
@@ -341,20 +365,26 @@ geeqie</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/bench.html">
-                            bench
+                        <a href="https://mothsart.github.io/tag/postgresql.html">
+                            postgresql
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/metaphone.html">
+                            metaphone
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/recalbox.html">
-                            recalbox
+                        <a href="https://mothsart.github.io/tag/postcss.html">
+                            postcss
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/phonetic.html">
-                            phonetic
+                        <a href="https://mothsart.github.io/tag/cli.html">
+                            cli
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -365,44 +395,44 @@ geeqie</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/metaphone.html">
-                            metaphone
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/svg.html">
-                            svg
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/apple.html">
-                            apple
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/dev.html">
                             dev
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/primtux.html">
-                            primtux
+                        <a href="https://mothsart.github.io/tag/swift.html">
+                            swift
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/retouche.html">
-                            retouche
+                        <a href="https://mothsart.github.io/tag/benchmark.html">
+                            benchmark
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/gimp.html">
+                            gimp
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/sh.html">
+                            sh
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/picture.html">
                             picture
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/recalbox.html">
+                            recalbox
                                 <span class="badge">2</span>
                         </a>
                     </li>
