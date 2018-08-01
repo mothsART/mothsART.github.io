@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Sat, 10 Mar 2018 14:22:49 +0100</lastBuildDate><item><title>entrainnement grammatical</title><link>https://mothsart.github.io/entrainnement-grammatical.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-28:entrainnement-grammatical.html</guid><category>rust</category><category>jeux</category><category>educatif</category></item><item><title>Memo Diesel.rs</title><link>https://mothsart.github.io/memo-dieselrs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 01 Aug 2018 21:36:31 +0200</lastBuildDate><item><title>entrainnement grammatical</title><link>https://mothsart.github.io/entrainnement-grammatical.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-08-01:entrainnement-grammatical.html</guid><category>rust</category><category>jeux</category><category>educatif</category></item><item><title>Memo Diesel.rs</title><link>https://mothsart.github.io/memo-dieselrs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Je suis depuis quelques temps le projet Diesel.rs : le seul ORM en Rust digne de ce nom.&lt;/p&gt;
 &lt;p&gt;J'ai pas mal galéré à suivre ce projet tant qu'il nétait pas en version 1.0 avec tous les changements d'API.&lt;/p&gt;
 &lt;p&gt;Depuis quelques mois, il existe une version 1.0.&lt;/p&gt;
@@ -118,7 +118,7 @@ WebSocket car c'est la meilleur techno web pour avoir de l'interactivité &lt;/l
 En témoignant de votre entousiasme via un commentaire, un mail, une attention, un don.
 En proposant des évolutions, des critiques, en remontant des bugs.&lt;/p&gt;
 &lt;p&gt;En proposant une traduction.&lt;/p&gt;
-&lt;p&gt;Enfin, en participant au code source, bien sur !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 28 Feb 2018 12:15:38 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-27:puissance4.html</guid><category>rust</category><category>jeu</category><category>puissance 4</category><category>webpack</category><category>javascript</category><category>vuejs</category><category>sass</category><category>postcss</category></item><item><title>Stratego</title><link>https://mothsart.github.io/stratego.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Enfin, en participant au code source, bien sur !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-27:puissance4.html</guid><category>rust</category><category>jeu</category><category>puissance 4</category><category>webpack</category><category>javascript</category><category>vuejs</category><category>sass</category><category>postcss</category></item><item><title>Stratego</title><link>https://mothsart.github.io/stratego.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;J'aime beaucoup le jeu de plateau &lt;strong&gt;Stratego&lt;/strong&gt;.
 N'ayant rien trouvé dans le périmètre des logiciels libres permettant de jouer à ce jeu, j'ai décidé de le créer.&lt;/p&gt;
 &lt;h2&gt;Ma stack&lt;/h2&gt;
@@ -249,7 +249,7 @@ doc = false&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://p
 &lt;p&gt;&lt;strong&gt;RedOS&lt;/strong&gt; : un OS en Rust : &lt;a href="https://www.redox-os.org/"&gt;RedOs&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;RipGrep&lt;/strong&gt; : un remplacement de Grep (avec des perfs halucinantes) : 
+&lt;p&gt;&lt;strong&gt;RipGrep&lt;/strong&gt; : un remplacement de Grep (avec des perfs halucinantes) :
 &lt;a href="https://github.com/BurntSushi/ripgrep"&gt;https://github.com/BurntSushi/ripgrep&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -257,13 +257,19 @@ doc = false&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://p
 &lt;a href="https://the.exa.website"&gt;https://the.exa.website&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Fd&lt;/strong&gt; : un digne remplaçant de la commande &lt;strong&gt;find&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;( &lt;strong&gt;SVGCleaner&lt;/strong&gt; : minifier du svg &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Basic-http-server&lt;/strong&gt; : remplace &lt;strong&gt;python -m http.server&lt;/strong&gt; (cargo install basic-http-server)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href="https://github.com/derniercri/snatch"&gt;Snatch&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Alactritty&lt;/strong&gt; : est un terminal récent qui utilise le processeur graphique (via OpenGL). 
+&lt;p&gt;&lt;strong&gt;Alactritty&lt;/strong&gt; : est un terminal récent qui utilise le processeur graphique (via OpenGL).
 C’est probablement le terminal le plus performant aujourd’hui.
 En revanche, il ne couvre encore que peu de fonctionnalités (pas encore d’historique, par exemple).
 &lt;a href="https://github.com/jwilm/alacritty"&gt;Alactritty&lt;/a&gt;&lt;/p&gt;
@@ -272,7 +278,7 @@ En revanche, il ne couvre encore que peu de fonctionnalités (pas encore d’his
 &lt;p&gt;&lt;strong&gt;Sozu&lt;/strong&gt; : Un reverse proxy qui est reconfigurable à chaud, qui est rapide est sécurisé. (sans aucun crash)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href="https://www.sozu.io/"&gt;Sozu&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 10 Mar 2018 14:22:49 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-22:applis-rust.html</guid></item><item><title>The QuiZz : Partie 3</title><link>https://mothsart.github.io/the-quizz-part-3.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.sozu.io/"&gt;Sozu&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-22:applis-rust.html</guid></item><item><title>The QuiZz : Partie 3</title><link>https://mothsart.github.io/the-quizz-part-3.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;L'aventure de &lt;strong&gt;The Quizzz&lt;/strong&gt; ce poursuis.
 Le temps a passé et les objectifs se sont affinés.&lt;/p&gt;
 &lt;p&gt;Ca m'a permis de tester et promouvoir de nouvelles technos que je vous communiques.&lt;/p&gt;

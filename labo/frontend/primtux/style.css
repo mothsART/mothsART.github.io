@@ -1,0 +1,14 @@
+.col-lg-10 .row.card {
+    padding-left: 4rem;
+    margin-bottom: 1rem;
+}
+
+.badge {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+    padding-top: .5rem;
+    position: absolute;
+    margin-top: 0.5rem;
+    margin-left: -3.5rem;
+}

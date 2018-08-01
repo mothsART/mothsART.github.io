@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Tue, 13 Mar 2018 23:28:43 +0100</lastBuildDate><item><title>Search diff image</title><link>https://mothsart.github.io/search-diff-image.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 01 Aug 2018 21:36:31 +0200</lastBuildDate><item><title>Les algos en IA</title><link>https://mothsart.github.io/algos-ia.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;L'IA : un vaste sujet&lt;/p&gt;
+&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;http://www-igm.univ-mlv.fr/~dr/XPOSE2014/Machin_Learning/index.html&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-08-01:algos-ia.html</guid><category>ia</category></item><item><title>Search diff image</title><link>https://mothsart.github.io/search-diff-image.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;La photo numérique nous a donné l'avantage de pouvoir prendre énormément de photos et de les trier par la suite.
 Les avantages, pour ceux qui ont fait de l'argentique sont évidents.&lt;/p&gt;
 &lt;p&gt;Il reste que les inconvénients deviennent criants :
@@ -22,7 +25,10 @@ Il est par conséquent facile de faire des tests sur une grande quantité de don
 &lt;p&gt;On pourrait également étendre ce procédé sur des canaux plus proche de la perception humaine :&lt;/p&gt;
 &lt;p&gt;Pour celà, il y a TSV mais aussi L&lt;em&gt;a&lt;/em&gt;b (CieLab)&lt;/p&gt;
 &lt;h3&gt;Comparer des applats de couleurs&lt;/h3&gt;
-&lt;p&gt;La, on touche du doigt le machine learning.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-03-08:search-diff-image.html</guid><category>rust</category></item><item><title>Un téléphone libre</title><link>https://mothsart.github.io/telephone-libre.html</link><description>&lt;h2&gt;Intro : Purism&lt;/h2&gt;
+&lt;p&gt;La, on touche du doigt le machine learning.&lt;/p&gt;
+&lt;h3&gt;Liens&lt;/h3&gt;
+&lt;p&gt;https://github.com/abonander/img_hash
+https://github.com/abonander/img-dup&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-08-01:search-diff-image.html</guid><category>rust</category></item><item><title>Un téléphone libre</title><link>https://mothsart.github.io/telephone-libre.html</link><description>&lt;h2&gt;Intro : Purism&lt;/h2&gt;
 &lt;p&gt;https://puri.sm/shop/librem-5/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 31 Oct 2017 22:46:18 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-10-31:telephone-libre.html</guid><category>mobile</category><category>libre</category></item><item><title>Algos de distances et de phonetique</title><link>https://mothsart.github.io/algos-distance-phonetique.html</link><description>&lt;h2&gt;Distance et algos de phonetic&lt;/h2&gt;
 &lt;h2&gt;Définition de la Distance&lt;/h2&gt;
 &lt;p&gt;Les algorithmes de distance vont comparer 2 chaines afin de déterminer leur &lt;strong&gt;pourcentage de ressemblance&lt;/strong&gt;.&lt;/p&gt;
@@ -92,7 +98,14 @@ gourmande en ressources et réservé à la retouche photo.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h2&gt;A quoi ça ressemble ?&lt;/h2&gt;
 &lt;p&gt;&lt;img alt="Comparer des images" src="static/images/whatschanging/spot_the_diff.png" /&gt;&lt;/p&gt;
-&lt;h2&gt;Comment on test&lt;/h2&gt;
+&lt;h2&gt;Comment on installe&lt;/h2&gt;
+&lt;p&gt;Si vous êtes sur une distrib Ubuntu, j'ai créé un PPA :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;sudo add-apt-repository ppa:jerem-ferry/rust
+sudo apt-get update
+sudo apt-get install whatschanging&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Comment on compile&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;On installe Rust et Cargo (si ce n'est pas déjà fait)&lt;/p&gt;
@@ -115,14 +128,19 @@ sh rustup.sh -y --channel=nightly&lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;On peut désormais tester l'exemple du dessus (les 2 images sont dans les sources) ou comparer des images de son choix.&lt;/p&gt;
+&lt;h2&gt;Le code source&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/mothsART/whatschanging"&gt;https://github.com/mothsART/whatschanging&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Equivalents&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;ImageMagick&lt;/li&gt;
 &lt;li&gt;Beyond&lt;/li&gt;
 &lt;li&gt;geeqie&lt;/li&gt;
+&lt;li&gt;idiff&lt;/li&gt;
+&lt;li&gt;https://www.diffchecker.com/image-diff&lt;/li&gt;
+&lt;li&gt;https://github.com/kornelski/dssim&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Références&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://askubuntu.com/questions/209517/does-diff-exist-for-images"&gt;https://askubuntu.com/questions/209517/does-diff-exist-for-images&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 13 Mar 2018 23:28:43 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:diff-image.html</guid><category>rust</category></item><item><title>Les APIS web oubliés</title><link>https://mothsart.github.io/le-format-svg.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://askubuntu.com/questions/209517/does-diff-exist-for-images"&gt;https://askubuntu.com/questions/209517/does-diff-exist-for-images&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:diff-image.html</guid><category>rust</category></item><item><title>Les APIS web oubliés</title><link>https://mothsart.github.io/le-format-svg.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Je suis un dev web et je passe trop de temps sur des choses merdiques.
 Du frontend franchement basique.&lt;/p&gt;
 &lt;h2&gt;Une api pour transform()&lt;/h2&gt;

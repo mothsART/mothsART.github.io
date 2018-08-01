@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Tue, 13 Mar 2018 23:28:43 +0100</lastBuildDate><item><title>Search diff image</title><link>https://mothsart.github.io/search-diff-image.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 01 Aug 2018 21:36:31 +0200</lastBuildDate><item><title>Les algos en IA</title><link>https://mothsart.github.io/algos-ia.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;L'IA : un vaste sujet&lt;/p&gt;
+&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;http://www-igm.univ-mlv.fr/~dr/XPOSE2014/Machin_Learning/index.html&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-08-01:algos-ia.html</guid><category>ia</category></item><item><title>entrainnement grammatical</title><link>https://mothsart.github.io/entrainnement-grammatical.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-08-01:entrainnement-grammatical.html</guid><category>rust</category><category>jeux</category><category>educatif</category></item><item><title>Search diff image</title><link>https://mothsart.github.io/search-diff-image.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;La photo numérique nous a donné l'avantage de pouvoir prendre énormément de photos et de les trier par la suite.
 Les avantages, pour ceux qui ont fait de l'argentique sont évidents.&lt;/p&gt;
 &lt;p&gt;Il reste que les inconvénients deviennent criants :
@@ -22,7 +25,10 @@ Il est par conséquent facile de faire des tests sur une grande quantité de don
 &lt;p&gt;On pourrait également étendre ce procédé sur des canaux plus proche de la perception humaine :&lt;/p&gt;
 &lt;p&gt;Pour celà, il y a TSV mais aussi L&lt;em&gt;a&lt;/em&gt;b (CieLab)&lt;/p&gt;
 &lt;h3&gt;Comparer des applats de couleurs&lt;/h3&gt;
-&lt;p&gt;La, on touche du doigt le machine learning.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-03-08:search-diff-image.html</guid><category>rust</category></item><item><title>entrainnement grammatical</title><link>https://mothsart.github.io/entrainnement-grammatical.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-28:entrainnement-grammatical.html</guid><category>rust</category><category>jeux</category><category>educatif</category></item><item><title>Memo Diesel.rs</title><link>https://mothsart.github.io/memo-dieselrs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;La, on touche du doigt le machine learning.&lt;/p&gt;
+&lt;h3&gt;Liens&lt;/h3&gt;
+&lt;p&gt;https://github.com/abonander/img_hash
+https://github.com/abonander/img-dup&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-08-01:search-diff-image.html</guid><category>rust</category></item><item><title>Memo Diesel.rs</title><link>https://mothsart.github.io/memo-dieselrs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Je suis depuis quelques temps le projet Diesel.rs : le seul ORM en Rust digne de ce nom.&lt;/p&gt;
 &lt;p&gt;J'ai pas mal galéré à suivre ce projet tant qu'il nétait pas en version 1.0 avec tous les changements d'API.&lt;/p&gt;
 &lt;p&gt;Depuis quelques mois, il existe une version 1.0.&lt;/p&gt;
@@ -141,7 +147,7 @@ WebSocket car c'est la meilleur techno web pour avoir de l'interactivité &lt;/l
 En témoignant de votre entousiasme via un commentaire, un mail, une attention, un don.
 En proposant des évolutions, des critiques, en remontant des bugs.&lt;/p&gt;
 &lt;p&gt;En proposant une traduction.&lt;/p&gt;
-&lt;p&gt;Enfin, en participant au code source, bien sur !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 28 Feb 2018 12:15:38 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-27:puissance4.html</guid><category>rust</category><category>jeu</category><category>puissance 4</category><category>webpack</category><category>javascript</category><category>vuejs</category><category>sass</category><category>postcss</category></item><item><title>Stratego</title><link>https://mothsart.github.io/stratego.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Enfin, en participant au code source, bien sur !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-27:puissance4.html</guid><category>rust</category><category>jeu</category><category>puissance 4</category><category>webpack</category><category>javascript</category><category>vuejs</category><category>sass</category><category>postcss</category></item><item><title>Stratego</title><link>https://mothsart.github.io/stratego.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;J'aime beaucoup le jeu de plateau &lt;strong&gt;Stratego&lt;/strong&gt;.
 N'ayant rien trouvé dans le périmètre des logiciels libres permettant de jouer à ce jeu, j'ai décidé de le créer.&lt;/p&gt;
 &lt;h2&gt;Ma stack&lt;/h2&gt;
@@ -184,7 +190,7 @@ Un langage évolu et le développeur se doit d'évoluer avec lui.&lt;/p&gt;
 http://tlevesque.developpez.com/tutoriels/csharp/les-nouveautes-de-csharp-7/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-10-31:upgrade-c_sharp.html</guid><category>c#</category><category>c sharp</category></item><item><title>Editeur WYSIWYG de SVG interactifs</title><link>https://mothsart.github.io/editeur-svg-interactif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;L'objectif est simple : éditer un fichier SVG statique afin de le présenter comme un contenu interactif. 
 Permettre l'ajout de zones cliquables pouvant être zoomés et enrichies d'une explication.&lt;/p&gt;
-&lt;p&gt;Les fichiers générés (page Html contenant le svg) peuvent servir à divers usages :&lt;/p&gt;
+&lt;p&gt;Les fichiers générés (page HTML contenant le SVG) peuvent servir à divers usages :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;contenus éducatifs&lt;/li&gt;
 &lt;li&gt;support de présentation&lt;/li&gt;
@@ -254,7 +260,7 @@ Il est possible de changer la couleur, de zoomer mais également d'ajouter/edite
 &lt;p&gt;Si l'on veut repartir d'une feuille blanche, il suffit de cliquer sur &lt;strong&gt;Supprimer&lt;/strong&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;Utilisation dans une distribution (Attention : plus à jour)&lt;/h2&gt;
+&lt;h2&gt;Utilisation dans une distribution&lt;/h2&gt;
 &lt;p&gt;Il est possible d'installer un ppa afin de profiter de l'éditeur dans Ubuntu :&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://launchpad.net/~jerem-ferry/+archive/ubuntu/app-illustration"&gt;https://launchpad.net/~jerem-ferry/+archive/ubuntu/app-illustration&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Pour ce faire, on ajoute le dépôt à sa liste et on met à jour :&lt;/p&gt;
@@ -277,7 +283,7 @@ Jusqu'à présent, j'ai créé les exemples (conception, réalisation sous Inksc
 &lt;h2&gt;Logiciels équivalents ou complémentaires&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://sozi.baierouge.fr/pages/10-about-fr.html"&gt;Sozi&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 27 Feb 2018 15:27:03 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:editeur-svg-interactif.html</guid><category>javascript</category><category>svg</category><category>linux</category><category>primtux</category><category>deb</category></item><item><title>Algos de distances et de phonetique</title><link>https://mothsart.github.io/algos-distance-phonetique.html</link><description>&lt;h2&gt;Distance et algos de phonetic&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:editeur-svg-interactif.html</guid><category>javascript</category><category>svg</category><category>linux</category><category>primtux</category><category>deb</category></item><item><title>Algos de distances et de phonetique</title><link>https://mothsart.github.io/algos-distance-phonetique.html</link><description>&lt;h2&gt;Distance et algos de phonetic&lt;/h2&gt;
 &lt;h2&gt;Définition de la Distance&lt;/h2&gt;
 &lt;p&gt;Les algorithmes de distance vont comparer 2 chaines afin de déterminer leur &lt;strong&gt;pourcentage de ressemblance&lt;/strong&gt;.&lt;/p&gt;
 &lt;h3&gt;Algos de distances&lt;/h3&gt;
@@ -362,7 +368,14 @@ gourmande en ressources et réservé à la retouche photo.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h2&gt;A quoi ça ressemble ?&lt;/h2&gt;
 &lt;p&gt;&lt;img alt="Comparer des images" src="static/images/whatschanging/spot_the_diff.png" /&gt;&lt;/p&gt;
-&lt;h2&gt;Comment on test&lt;/h2&gt;
+&lt;h2&gt;Comment on installe&lt;/h2&gt;
+&lt;p&gt;Si vous êtes sur une distrib Ubuntu, j'ai créé un PPA :&lt;/p&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;sudo add-apt-repository ppa:jerem-ferry/rust
+sudo apt-get update
+sudo apt-get install whatschanging&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Comment on compile&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;On installe Rust et Cargo (si ce n'est pas déjà fait)&lt;/p&gt;
@@ -385,14 +398,19 @@ sh rustup.sh -y --channel=nightly&lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;On peut désormais tester l'exemple du dessus (les 2 images sont dans les sources) ou comparer des images de son choix.&lt;/p&gt;
+&lt;h2&gt;Le code source&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/mothsART/whatschanging"&gt;https://github.com/mothsART/whatschanging&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Equivalents&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;ImageMagick&lt;/li&gt;
 &lt;li&gt;Beyond&lt;/li&gt;
 &lt;li&gt;geeqie&lt;/li&gt;
+&lt;li&gt;idiff&lt;/li&gt;
+&lt;li&gt;https://www.diffchecker.com/image-diff&lt;/li&gt;
+&lt;li&gt;https://github.com/kornelski/dssim&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Références&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://askubuntu.com/questions/209517/does-diff-exist-for-images"&gt;https://askubuntu.com/questions/209517/does-diff-exist-for-images&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 13 Mar 2018 23:28:43 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:diff-image.html</guid><category>rust</category></item><item><title>Gmic</title><link>https://mothsart.github.io/gmic.html</link><description>&lt;h2&gt;Diminuer le bruit&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://askubuntu.com/questions/209517/does-diff-exist-for-images"&gt;https://askubuntu.com/questions/209517/does-diff-exist-for-images&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:diff-image.html</guid><category>rust</category></item><item><title>Gmic</title><link>https://mothsart.github.io/gmic.html</link><description>&lt;h2&gt;Diminuer le bruit&lt;/h2&gt;
 &lt;p&gt;Repair &amp;gt; Smooth [anisotropic]&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:gmic.html</guid><category>gimp</category><category>retouche</category><category>gmic</category></item><item><title>Idées autours du bois</title><link>https://mothsart.github.io/idees-autours-bois.html</link><description>&lt;h2&gt;Table basse&lt;/h2&gt;
 &lt;h2&gt;Coffret à glaçons en pierre&lt;/h2&gt;
 &lt;h2&gt;Set de couvert en bois&lt;/h2&gt;
@@ -821,7 +839,7 @@ sudo nmap -sP x.y.z.*&lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;donner le nom de domaine d'un poste sur le réseau locale&lt;/h2&gt;
 &lt;p&gt;hostname&lt;/p&gt;
 &lt;h2&gt;changer le hostname&lt;/h2&gt;
-&lt;p&gt;sudo hostname TRUCMUCH&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 06 Mar 2018 22:41:47 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:memo-admin-sys.html</guid><category>linux</category><category>arp</category><category>nmap</category><category>admin sys</category></item><item><title>Mémo sur Cargo</title><link>https://mothsart.github.io/memo-cargo.html</link><description>&lt;h2&gt;Un mémo sur les instructions d'un fichier de conf d'un paquet Cargo&lt;/h2&gt;
+&lt;p&gt;sudo hostname TRUCMUCH&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:memo-admin-sys.html</guid><category>linux</category><category>arp</category><category>nmap</category><category>admin sys</category></item><item><title>Mémo sur Cargo</title><link>https://mothsart.github.io/memo-cargo.html</link><description>&lt;h2&gt;Un mémo sur les instructions d'un fichier de conf d'un paquet Cargo&lt;/h2&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-toml"&gt;[package]
 name = &amp;quot;cargo&amp;quot;
 version = &amp;quot;0.18.0&amp;quot;
@@ -980,7 +998,7 @@ Que de changements depuis ma première raspbian !!!&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;RedOS&lt;/strong&gt; : un OS en Rust : &lt;a href="https://www.redox-os.org/"&gt;RedOs&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;RipGrep&lt;/strong&gt; : un remplacement de Grep (avec des perfs halucinantes) : 
+&lt;p&gt;&lt;strong&gt;RipGrep&lt;/strong&gt; : un remplacement de Grep (avec des perfs halucinantes) :
 &lt;a href="https://github.com/BurntSushi/ripgrep"&gt;https://github.com/BurntSushi/ripgrep&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -988,13 +1006,19 @@ Que de changements depuis ma première raspbian !!!&lt;/p&gt;
 &lt;a href="https://the.exa.website"&gt;https://the.exa.website&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Fd&lt;/strong&gt; : un digne remplaçant de la commande &lt;strong&gt;find&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;( &lt;strong&gt;SVGCleaner&lt;/strong&gt; : minifier du svg &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Basic-http-server&lt;/strong&gt; : remplace &lt;strong&gt;python -m http.server&lt;/strong&gt; (cargo install basic-http-server)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href="https://github.com/derniercri/snatch"&gt;Snatch&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Alactritty&lt;/strong&gt; : est un terminal récent qui utilise le processeur graphique (via OpenGL). 
+&lt;p&gt;&lt;strong&gt;Alactritty&lt;/strong&gt; : est un terminal récent qui utilise le processeur graphique (via OpenGL).
 C’est probablement le terminal le plus performant aujourd’hui.
 En revanche, il ne couvre encore que peu de fonctionnalités (pas encore d’historique, par exemple).
 &lt;a href="https://github.com/jwilm/alacritty"&gt;Alactritty&lt;/a&gt;&lt;/p&gt;
@@ -1003,7 +1027,7 @@ En revanche, il ne couvre encore que peu de fonctionnalités (pas encore d’his
 &lt;p&gt;&lt;strong&gt;Sozu&lt;/strong&gt; : Un reverse proxy qui est reconfigurable à chaud, qui est rapide est sécurisé. (sans aucun crash)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href="https://www.sozu.io/"&gt;Sozu&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 10 Mar 2018 14:22:49 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-22:applis-rust.html</guid></item><item><title>Financement participatif</title><link>https://mothsart.github.io/financement-participatif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.sozu.io/"&gt;Sozu&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-22:applis-rust.html</guid></item><item><title>Financement participatif</title><link>https://mothsart.github.io/financement-participatif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;https://liberapay.com/mothsART&lt;/p&gt;
 &lt;p&gt;Flattr&lt;/p&gt;
@@ -1462,7 +1486,9 @@ https://sketchfab.com/&lt;/p&gt;
 &lt;p&gt;https://github.com/eduardolundgren/tracking.js/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 25 Feb 2017 17:34:53 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:algo-images.html</guid><category>picture</category><category>algo</category></item><item><title>Blender</title><link>https://mothsart.github.io/blender.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;h2&gt;liens&lt;/h2&gt;
 &lt;p&gt;https://www.blender.org/manual/render/freestyle/export_svg.html
-http://goinkscape.com/use-blender-freestyle-to-export-svg-artwork&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 25 May 2017 00:16:44 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:blender.html</guid><category>3D</category><category>blender</category></item><item><title>Cette photo est-elle retouché ?</title><link>https://mothsart.github.io/photo-retouche.html</link><description>&lt;h2&gt;&lt;/h2&gt;
+http://goinkscape.com/use-blender-freestyle-to-export-svg-artwork&lt;/p&gt;
+&lt;h1&gt;tutos débutant&lt;/h1&gt;
+&lt;p&gt;edit-mode : https://www.youtube.com/watch?v=5Ob763e34Hk&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:blender.html</guid><category>3D</category><category>blender</category></item><item><title>Cette photo est-elle retouché ?</title><link>https://mothsart.github.io/photo-retouche.html</link><description>&lt;h2&gt;&lt;/h2&gt;
 &lt;p&gt;https://en.wikipedia.org/wiki/Error_level_analysis&lt;/p&gt;
 &lt;h2&gt;Utilitaires On-line&lt;/h2&gt;
 &lt;p&gt;https://29a.ch/photo-forensics/
@@ -1703,13 +1729,18 @@ fn main() {
 &lt;p&gt;log_syntax!&lt;/p&gt;
 &lt;p&gt;trace_macros!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Oct 2016 15:17:18 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:macros-rust.html</guid><category>rust</category></item><item><title>Web Offline</title><link>https://mothsart.github.io/web-offline.html</link><description>&lt;h2&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:web-offline.html</guid><category>offline</category></item><item><title>Aide mémoire GIT</title><link>https://mothsart.github.io/aide-memoire-git.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;GIT est un super utilitaire mais son nombre de commandes est juste exponentiel.&lt;/p&gt;
+&lt;h2&gt;Suppression de l'index&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git checkout -- unfichier
+git checkout -f // tous les fichiers&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Changer des droits sur des fichiers&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git update-index --chmod=+x &amp;lt;file&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+
+
 &lt;h2&gt;Clone&lt;/h2&gt;
 &lt;p&gt;Avec des sous-modules&lt;/p&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git clone --recursive depot&lt;/code&gt;&lt;/pre&gt;
-
-
-&lt;h2&gt;Recherche d'un bug&lt;/h2&gt;
-&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git bisect&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;h2&gt;Ajout/Reset Partiel&lt;/h2&gt;
@@ -1894,6 +1925,10 @@ git push&lt;/code&gt;&lt;/pre&gt;
 git commit --amend&lt;/code&gt;&lt;/pre&gt;
 
 
+&lt;h2&gt;Recherche d'un bug (très rarement utile dans la réalité)&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git bisect&lt;/code&gt;&lt;/pre&gt;
+
+
 &lt;h2&gt;Rebase interactif&lt;/h2&gt;
 &lt;p&gt;https://blog.guillaume-gomez.fr/Git-tips&lt;/p&gt;
 &lt;h2&gt;Equivalences&lt;/h2&gt;
@@ -1957,7 +1992,7 @@ git push -f&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www.git-attitude.fr/2014/09/15/30-options-git-qui-gagnent-a-etre-connues"&gt;http://www.git-attitude.fr/2014/09/15/30-options-git-qui-gagnent-a-etre-connues&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/2221658/whats-the-difference-between-head-and-head-in-git"&gt;http://stackoverflow.com/questions/2221658whats-the-difference-between-head-and-head-in-git&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 01 May 2017 01:59:46 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-git.html</guid><category>git</category><category>linux</category></item><item><title>Aide mémoire sh</title><link>https://mothsart.github.io/aide-memoire-sh.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/2221658/whats-the-difference-between-head-and-head-in-git"&gt;http://stackoverflow.com/questions/2221658whats-the-difference-between-head-and-head-in-git&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-git.html</guid><category>git</category><category>linux</category></item><item><title>Aide mémoire sh</title><link>https://mothsart.github.io/aide-memoire-sh.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;find . | grep actual&lt;/code&gt;&lt;/pre&gt;
 
 
@@ -1974,7 +2009,7 @@ git push -f&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;extraction récursive&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
-&lt;p&gt;http://www.grimoire-command.es&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 27 Feb 2018 16:16:38 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-sh.html</guid><category>sh</category><category>linux</category></item><item><title>Aide mémoire Sublime Text 3</title><link>https://mothsart.github.io/aide-memoire-sublime-text.html</link><description>&lt;h2&gt;Fonctionnalités&lt;/h2&gt;
+&lt;p&gt;http://www.grimoire-command.es&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-sh.html</guid><category>sh</category><category>linux</category></item><item><title>Aide mémoire Sublime Text 3</title><link>https://mothsart.github.io/aide-memoire-sublime-text.html</link><description>&lt;h2&gt;Fonctionnalités&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://sametmax.com/10-astuces-pour-sublime-text-2"&gt;http://sametmax.com/10-astuces-pour-sublime-text-2&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Edit/StringEncode : permet d'encoder des chaines de caractères&lt;/p&gt;
 &lt;p&gt;&lt;kbd&gt;Alt&lt;/kbd&gt;&lt;kbd&gt;Q&lt;/kbd&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 15 Jan 2016 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-sublime-text.html</guid><category>sublimetext</category></item><item><title>Aide mémoire Tmux</title><link>https://mothsart.github.io/aide-memoire-tmux.html</link><description>&lt;h2&gt;Introduction&lt;/h2&gt;
