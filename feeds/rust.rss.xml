@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 01 Aug 2018 21:36:31 +0200</lastBuildDate><item><title>entrainnement grammatical</title><link>https://mothsart.github.io/entrainnement-grammatical.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-08-01:entrainnement-grammatical.html</guid><category>rust</category><category>jeux</category><category>educatif</category></item><item><title>Memo Diesel.rs</title><link>https://mothsart.github.io/memo-dieselrs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Sat, 04 Aug 2018 14:27:59 +0200</lastBuildDate><item><title>entrainnement grammatical</title><link>https://mothsart.github.io/entrainnement-grammatical.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-08-01:entrainnement-grammatical.html</guid><category>rust</category><category>jeux</category><category>educatif</category></item><item><title>Memo Diesel.rs</title><link>https://mothsart.github.io/memo-dieselrs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Je suis depuis quelques temps le projet Diesel.rs : le seul ORM en Rust digne de ce nom.&lt;/p&gt;
 &lt;p&gt;J'ai pas mal galéré à suivre ce projet tant qu'il nétait pas en version 1.0 avec tous les changements d'API.&lt;/p&gt;
 &lt;p&gt;Depuis quelques mois, il existe une version 1.0.&lt;/p&gt;
@@ -257,13 +257,24 @@ doc = false&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://p
 &lt;a href="https://the.exa.website"&gt;https://the.exa.website&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Fd&lt;/strong&gt; : un digne remplaçant de la commande &lt;strong&gt;find&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fd&lt;/strong&gt; : un digne remplaçant de la commande &lt;strong&gt;find&lt;/strong&gt; :
+&lt;a href="https://github.com/sharkdp/fd"&gt;https://github.com/sharkdp/fd&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;( &lt;strong&gt;SVGCleaner&lt;/strong&gt; : minifier du svg &lt;/p&gt;
-&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Basic-http-server&lt;/strong&gt; : remplace &lt;strong&gt;python -m http.server&lt;/strong&gt; (cargo install basic-http-server)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bat&lt;/strong&gt; : un remplaçant de &lt;strong&gt;cat&lt;/strong&gt; proposant la coloration synthaxique et l'intégration de Git :
+&lt;a href="https://github.com/sharkdp/bat"&gt;https://github.com/sharkdp/bat&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Hyperfine&lt;/strong&gt; : un remplaçant de &lt;strong&gt;time&lt;/strong&gt; :
+&lt;a href="https://github.com/mothsART/hyperfine"&gt;https://github.com/mothsART/hyperfine&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;SVGCleaner&lt;/strong&gt; : minifier du svg :
+&lt;a href="https://github.com/RazrFalcon/svgcleaner"&gt;https://github.com/RazrFalcon/svgcleaner&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Basic-http-server&lt;/strong&gt; : remplace &lt;strong&gt;python -m http.server&lt;/strong&gt; (cargo install basic-http-server) :
+&lt;a href="https://github.com/brson/basic-http-server"&gt;https://github.com/brson/basic-http-server&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href="https://github.com/derniercri/snatch"&gt;Snatch&lt;/a&gt;&lt;/p&gt;
@@ -275,10 +286,14 @@ En revanche, il ne couvre encore que peu de fonctionnalités (pas encore d’his
 &lt;a href="https://github.com/jwilm/alacritty"&gt;Alactritty&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Sozu&lt;/strong&gt; : Un reverse proxy qui est reconfigurable à chaud, qui est rapide est sécurisé. (sans aucun crash)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sozu&lt;/strong&gt; : Un reverse proxy qui est reconfigurable à chaud, qui est rapide et sécurisé. (sans aucun crash)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href="https://www.sozu.io/"&gt;Sozu&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-22:applis-rust.html</guid></item><item><title>The QuiZz : Partie 3</title><link>https://mothsart.github.io/the-quizz-part-3.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.sozu.io/"&gt;Sozu&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Installation sous Ubuntu ou Debian&lt;/h2&gt;
+&lt;p&gt;Pour simplifier l'utilisation de plusieurs de ces softs, j'ai décidé de les précompiler, les empaqueter et les mettre à dispo sur un PPA :&lt;/p&gt;
+&lt;p&gt;enjoy : &lt;a href="https://launchpad.net/~jerem-ferry/+archive/ubuntu/rust"&gt;https://launchpad.net/~jerem-ferry/+archive/ubuntu/rust&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Si vous désirez savoir comment je m'y suis pris, vous trouverez le détail ici : &lt;a href="https://forum.ubuntu-fr.org/viewtopic.php?id=2023943"&gt;https://forum.ubuntu-fr.org/viewtopic.php?id=2023943&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 04 Aug 2018 14:27:59 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-22:applis-rust.html</guid></item><item><title>The QuiZz : Partie 3</title><link>https://mothsart.github.io/the-quizz-part-3.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;L'aventure de &lt;strong&gt;The Quizzz&lt;/strong&gt; ce poursuis.
 Le temps a passé et les objectifs se sont affinés.&lt;/p&gt;
 &lt;p&gt;Ca m'a permis de tester et promouvoir de nouvelles technos que je vous communiques.&lt;/p&gt;
