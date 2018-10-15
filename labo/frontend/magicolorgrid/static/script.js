@@ -1,27 +1,6 @@
-var palette = [
-  ["#000"   , "#444"   , "#666"   , "#999"   , "#ccc"   , "#eee"   , "#f3f3f3", "#fff"],
-  ["#f00"   , "#f90"   , "#ff0"   , "#0f0"   , "#0ff"   , "#00f"   , "#90f"   , "#f0f"],
-  ["#f4cccc", "#fce5cd", "#fff2cc", "#d9ead3", "#d0e0e3", "#cfe2f3", "#d9d2e9", "#ead1dc"],
-  ["#ea9999", "#f9cb9c", "#ffe599", "#b6d7a8", "#a2c4c9", "#9fc5e8", "#b4a7d6", "#d5a6bd"],
-  ["#e06666", "#f6b26b", "#ffd966", "#93c47d", "#76a5af", "#6fa8dc", "#8e7cc3", "#c27ba0"],
-  ["#c00"   , "#e69138", "#f1c232", "#6aa84f", "#45818e", "#3d85c6", "#674ea7", "#a64d79"],
-  ["#900"   , "#b45f06", "#bf9000", "#38761d", "#134f5c", "#0b5394", "#351c75", "#741b47"],
-  ["#600"   , "#783f04", "#7f6000", "#274e13", "#0c343d", "#073763", "#20124d", "#4c1130"]
-];
-
-var colorSelection = null;
-var colors = []
-for (var i = 0; i < palette.length; i++) {
-  for (var j = 0; j < palette[i].length; j++) {
-    colors.push(palette[i][j]);
-  }
-}
-
-var remaining_colors = [];
 var operations = {};
 
 function give_svg(color) {
-    console.log(color);
     return 'cursor: url(\'data:image/svg+xml;utf8,'
     + '<svg xmlns=\"http://www.w3.org/2000/svg" width="48" viewBox="0 0 48 48" height="48" fill="%23FF0000">'
         + '<g>'
@@ -33,18 +12,10 @@ function give_svg(color) {
     + '</svg>\') 30 30, auto;';
 }
 
-function random_colors() {
-    "use strict";
-    if (remaining_colors.length == 0)
-        remaining_colors = colors;
-    var new_value = colors[parseInt(Math.random() * remaining_colors.length)];
-    var index = remaining_colors.indexOf(new_value);
-    remaining_colors.splice(index, 1);
-    return new_value;
-}
-
 function createGrid(x, y) {
     "use strict";
+    if (document.getElementById('grid'))
+        return;
     var table = document.createElement('table');
     table.id  = 'grid';
     for (var i = 0; i < y; i++) {
@@ -71,8 +42,14 @@ function createGrid(x, y) {
 function getFocusOnTd(element) {
     "use strict";
     if (colorSelection) {
-        element.setAttribute("style", "background-color:" + colorSelection.color);
-        element.childNodes[1].innerText = colorSelection.operation;
+        element.setAttribute(
+            "style",
+            "background-color:" + colorSelection.color
+        );
+        element.classList.add('td-' + colorSelection.result);
+        var operationNode = element.childNodes[1];
+        operationNode.innerText = colorSelection.operation;
+        operationNode.classList.remove('hidden');
         return;
     }
     var inputs = document.getElementsByClassName('input-operation');
@@ -95,12 +72,43 @@ function chooseColor(element) {
     "use strict";
     colorSelection = {
         color:     element.getAttribute("data-color"),
-        operation: element.getAttribute("data-operation")
+        operation: element.getAttribute("data-operation"),
+        result:    element.getAttribute("data-result")
     };
     document.getElementsByTagName('body')[0].setAttribute(
         'style',
         give_svg(colorSelection.color)
     );
+}
+
+function changeColor(element, color) {
+    "use strict";
+    color = color.rgbaString;
+    element.setAttribute(
+        "style", "background-color:" + color
+    );
+    var result    = element.previousSibling.textContent;
+    var operation = element.previousSibling.previousSibling.textContent;
+    element.setAttribute('data-color', color);
+    var new_color = document.getElementById(
+        'color-chooser-' + result
+    );
+    new_color.setAttribute("style", "background-color:" + color);
+    new_color.setAttribute("data-color", color);
+    var printedColor = document.getElementById(
+        'print-color-' + result
+    );
+    printedColor.setAttribute("style", "background-color:" + color);
+    var cases = document.getElementsByClassName('td-' + result);
+    operations[operation] = color;
+    for (var i = 0; i < cases.length; i++) {
+        cases[i].setAttribute(
+            "style",
+            "background-color:" + color
+        );
+    }
+    colorSelection = null;
+    document.getElementsByTagName('body')[0].setAttribute('style', '');
 }
 
 function confirmOperation(element) {
@@ -114,15 +122,24 @@ function confirmOperation(element) {
     str     = str.replace('x', '*');
     var result = eval(str);
     element.nextSibling.innerHTML = operation;
+    var tdNode = element.parentNode;
     if (operation in operations) {
-        element.parentNode.setAttribute("style", "background-color:" + operations[operation]);
+        tdNode.className = "";
+        tdNode.classList.add('td-' + result);
+        tdNode.setAttribute(
+            "style",
+            "background-color:" + operations[operation]
+        );
         return;
     }
     if (!result)
         return;
+    tdNode.classList.add('td-' + result);
     var color = random_colors();
     operations[operation] = color;
-    
+
+    element.parentNode.setAttribute("style", "background-color:" + color);
+
     var tableRef = document.getElementById('operation-grid').getElementsByTagName('tbody')[0];
     var newRow   = tableRef.insertRow(tableRef.rows.length);
 
@@ -135,20 +152,39 @@ function confirmOperation(element) {
     resultCell.appendChild(resultText);
 
     var colorCell = newRow.insertCell(2);
-    element.parentNode.setAttribute("style", "background-color:" + color);
+    element.parentNode.setAttribute(
+        "style",
+        "background-color:" + color
+    );
     colorCell.setAttribute("style", "background-color:" + color);
+    colorCell.setAttribute('data-color', color);
+    var popupPicker = new Picker({
+        parent: colorCell,
+        popup: 'left',
+        color: color,
+        alpha: false
+    });
+    popupPicker.onDone = function(color) {
+        changeColor(colorCell, color);
+    };
+    colorCell.onclick = function(e) {
+        popupPicker.show();
+    };
 
     var colorChooser = document.getElementById("color-chooser");
     var new_color = document.createElement("span");
+    new_color.id  = 'color-chooser-' + result;
     new_color.setAttribute("style", "background-color:" + color);
     new_color.setAttribute("data-color", color);
     new_color.setAttribute("data-operation", operation);
+    new_color.setAttribute("data-result", result);
     new_color.setAttribute("onclick", "chooseColor(this);");
     colorChooser.appendChild(new_color);
 
     var printColors = document.getElementById("color-operation");
     var colorOperation = document.createElement("div");
     colorOperation.classList.add('color-operation');
+    colorOperation.id = 'print-color-' + result;
     colorOperation.setAttribute("style", "background-color:" + color);
     var text = document.createTextNode(result);
     colorOperation.appendChild(text);

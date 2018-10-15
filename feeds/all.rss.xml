@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Sat, 04 Aug 2018 14:27:59 +0200</lastBuildDate><item><title>Les algos en IA</title><link>https://mothsart.github.io/algos-ia.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Tue, 18 Sep 2018 19:45:04 +0200</lastBuildDate><item><title>Les algos en IA</title><link>https://mothsart.github.io/algos-ia.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;L'IA : un vaste sujet&lt;/p&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;http://www-igm.univ-mlv.fr/~dr/XPOSE2014/Machin_Learning/index.html&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-08-01:algos-ia.html</guid><category>ia</category></item><item><title>entrainnement grammatical</title><link>https://mothsart.github.io/entrainnement-grammatical.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-08-01:entrainnement-grammatical.html</guid><category>rust</category><category>jeux</category><category>educatif</category></item><item><title>Search diff image</title><link>https://mothsart.github.io/search-diff-image.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
@@ -1753,6 +1753,10 @@ git checkout -f // tous les fichiers&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git update-index --chmod=+x &amp;lt;file&amp;gt;&lt;/code&gt;&lt;/pre&gt;
 
 
+&lt;h2&gt;Commit vide&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git commit --allow-empty&lt;/code&gt;&lt;/pre&gt;
+
+
 &lt;h2&gt;Clone&lt;/h2&gt;
 &lt;p&gt;Avec des sous-modules&lt;/p&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git clone --recursive depot&lt;/code&gt;&lt;/pre&gt;
@@ -2007,7 +2011,7 @@ git push -f&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www.git-attitude.fr/2014/09/15/30-options-git-qui-gagnent-a-etre-connues"&gt;http://www.git-attitude.fr/2014/09/15/30-options-git-qui-gagnent-a-etre-connues&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/2221658/whats-the-difference-between-head-and-head-in-git"&gt;http://stackoverflow.com/questions/2221658whats-the-difference-between-head-and-head-in-git&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-git.html</guid><category>git</category><category>linux</category></item><item><title>Aide mémoire sh</title><link>https://mothsart.github.io/aide-memoire-sh.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/2221658/whats-the-difference-between-head-and-head-in-git"&gt;http://stackoverflow.com/questions/2221658whats-the-difference-between-head-and-head-in-git&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 18 Sep 2018 19:45:04 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-git.html</guid><category>git</category><category>linux</category></item><item><title>Aide mémoire sh</title><link>https://mothsart.github.io/aide-memoire-sh.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;find . | grep actual&lt;/code&gt;&lt;/pre&gt;
 
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 01 Aug 2018 21:36:31 +0200</lastBuildDate><item><title>Gmic</title><link>https://mothsart.github.io/gmic.html</link><description>&lt;h2&gt;Diminuer le bruit&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Tue, 18 Sep 2018 19:45:04 +0200</lastBuildDate><item><title>Gmic</title><link>https://mothsart.github.io/gmic.html</link><description>&lt;h2&gt;Diminuer le bruit&lt;/h2&gt;
 &lt;p&gt;Repair &amp;gt; Smooth [anisotropic]&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:gmic.html</guid><category>gimp</category><category>retouche</category><category>gmic</category></item><item><title>Idées autours du bois</title><link>https://mothsart.github.io/idees-autours-bois.html</link><description>&lt;h2&gt;Table basse&lt;/h2&gt;
 &lt;h2&gt;Coffret à glaçons en pierre&lt;/h2&gt;
 &lt;h2&gt;Set de couvert en bois&lt;/h2&gt;
@@ -75,6 +75,10 @@ git checkout -f // tous les fichiers&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2&gt;Changer des droits sur des fichiers&lt;/h2&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git update-index --chmod=+x &amp;lt;file&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2&gt;Commit vide&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git commit --allow-empty&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;h2&gt;Clone&lt;/h2&gt;
@@ -331,7 +335,7 @@ git push -f&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www.git-attitude.fr/2014/09/15/30-options-git-qui-gagnent-a-etre-connues"&gt;http://www.git-attitude.fr/2014/09/15/30-options-git-qui-gagnent-a-etre-connues&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/2221658/whats-the-difference-between-head-and-head-in-git"&gt;http://stackoverflow.com/questions/2221658whats-the-difference-between-head-and-head-in-git&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-git.html</guid><category>git</category><category>linux</category></item><item><title>Aide mémoire sh</title><link>https://mothsart.github.io/aide-memoire-sh.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/2221658/whats-the-difference-between-head-and-head-in-git"&gt;http://stackoverflow.com/questions/2221658whats-the-difference-between-head-and-head-in-git&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 18 Sep 2018 19:45:04 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-git.html</guid><category>git</category><category>linux</category></item><item><title>Aide mémoire sh</title><link>https://mothsart.github.io/aide-memoire-sh.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;find . | grep actual&lt;/code&gt;&lt;/pre&gt;
 
 
