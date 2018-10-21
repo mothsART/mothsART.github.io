@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>http://127.0.0.1:4000/</link><description></description><lastBuildDate>Tue, 18 Sep 2018 19:45:04 +0200</lastBuildDate><item><title>Les algos en IA</title><link>http://127.0.0.1:4000/algos-ia.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Tue, 18 Sep 2018 19:45:04 +0200</lastBuildDate><item><title>Les algos en IA</title><link>https://mothsart.github.io/algos-ia.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;L'IA : un vaste sujet&lt;/p&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
-&lt;p&gt;http://www-igm.univ-mlv.fr/~dr/XPOSE2014/Machin_Learning/index.html&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2018-08-01:algos-ia.html</guid><category>ia</category></item><item><title>entrainnement grammatical</title><link>http://127.0.0.1:4000/entrainnement-grammatical.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2018-08-01:entrainnement-grammatical.html</guid><category>rust</category><category>jeux</category><category>educatif</category></item><item><title>Search diff image</title><link>http://127.0.0.1:4000/search-diff-image.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;http://www-igm.univ-mlv.fr/~dr/XPOSE2014/Machin_Learning/index.html&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-08-01:algos-ia.html</guid><category>ia</category></item><item><title>entrainnement grammatical</title><link>https://mothsart.github.io/entrainnement-grammatical.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-08-01:entrainnement-grammatical.html</guid><category>rust</category><category>jeux</category><category>educatif</category></item><item><title>Search diff image</title><link>https://mothsart.github.io/search-diff-image.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;La photo numérique nous a donné l'avantage de pouvoir prendre énormément de photos et de les trier par la suite.
 Les avantages, pour ceux qui ont fait de l'argentique sont évidents.&lt;/p&gt;
 &lt;p&gt;Il reste que les inconvénients deviennent criants :
@@ -28,7 +28,7 @@ Il est par conséquent facile de faire des tests sur une grande quantité de don
 &lt;p&gt;La, on touche du doigt le machine learning.&lt;/p&gt;
 &lt;h3&gt;Liens&lt;/h3&gt;
 &lt;p&gt;https://github.com/abonander/img_hash
-https://github.com/abonander/img-dup&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2018-08-01:search-diff-image.html</guid><category>rust</category></item><item><title>Memo Diesel.rs</title><link>http://127.0.0.1:4000/memo-dieselrs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+https://github.com/abonander/img-dup&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-08-01:search-diff-image.html</guid><category>rust</category></item><item><title>Memo Diesel.rs</title><link>https://mothsart.github.io/memo-dieselrs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Je suis depuis quelques temps le projet Diesel.rs : le seul ORM en Rust digne de ce nom.&lt;/p&gt;
 &lt;p&gt;J'ai pas mal galéré à suivre ce projet tant qu'il nétait pas en version 1.0 avec tous les changements d'API.&lt;/p&gt;
 &lt;p&gt;Depuis quelques mois, il existe une version 1.0.&lt;/p&gt;
@@ -43,7 +43,7 @@ https://github.com/abonander/img-dup&lt;/p&gt;</description><dc:creator xmlns:dc
     sql = connect_four::schema::users::dsl::users
     .filter(connected.eq(true).and(playing.eq(false)))
     .into_boxed();
-}&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2018-02-27:memo-dieselrs.html</guid><category>rust</category><category>sql</category><category>diesel</category></item><item><title>Connect Four</title><link>http://127.0.0.1:4000/puissance4.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+}&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-27:memo-dieselrs.html</guid><category>rust</category><category>sql</category><category>diesel</category></item><item><title>Connect Four</title><link>https://mothsart.github.io/puissance4.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Vous aimez jouer au Puissance 4 et vous ne trouvez pas votre bonheur.
 Voici peut-être un alternative pour vous !&lt;/p&gt;
 &lt;p&gt;Un jeu de puissance 4 en réseau !&lt;/p&gt;
@@ -147,7 +147,7 @@ WebSocket car c'est la meilleur techno web pour avoir de l'interactivité &lt;/l
 En témoignant de votre entousiasme via un commentaire, un mail, une attention, un don.
 En proposant des évolutions, des critiques, en remontant des bugs.&lt;/p&gt;
 &lt;p&gt;En proposant une traduction.&lt;/p&gt;
-&lt;p&gt;Enfin, en participant au code source, bien sur !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2018-02-27:puissance4.html</guid><category>rust</category><category>jeu</category><category>puissance 4</category><category>webpack</category><category>javascript</category><category>vuejs</category><category>sass</category><category>postcss</category></item><item><title>Stratego</title><link>http://127.0.0.1:4000/stratego.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Enfin, en participant au code source, bien sur !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-27:puissance4.html</guid><category>rust</category><category>jeu</category><category>puissance 4</category><category>webpack</category><category>javascript</category><category>vuejs</category><category>sass</category><category>postcss</category></item><item><title>Stratego</title><link>https://mothsart.github.io/stratego.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;J'aime beaucoup le jeu de plateau &lt;strong&gt;Stratego&lt;/strong&gt;.
 N'ayant rien trouvé dans le périmètre des logiciels libres permettant de jouer à ce jeu, j'ai décidé de le créer.&lt;/p&gt;
 &lt;h2&gt;Ma stack&lt;/h2&gt;
@@ -165,7 +165,7 @@ N'ayant rien trouvé dans le périmètre des logiciels libres permettant de joue
 &lt;li&gt;probabilité conditionnel&lt;/li&gt;
 &lt;li&gt;Base de connaissances et de règles&lt;/li&gt;
 &lt;li&gt;réseaux de neuronnes et deep learning&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2018-02-27:stratego.html</guid><category>rust</category><category>vue.js</category><category>stratego</category></item><item><title>Le format ZIM</title><link>http://127.0.0.1:4000/format-zim.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-27:stratego.html</guid><category>rust</category><category>vue.js</category><category>stratego</category></item><item><title>Le format ZIM</title><link>https://mothsart.github.io/format-zim.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Objectif simple : rassembler du contenu HTML dans un fichier : contenu, images, vidéos, sons, scripts etc.&lt;/p&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;http://alterlibriste.free.fr/index.php?post/2016/04/03/Zim%2C-un-vrai-couteau-suisse&lt;/p&gt;
@@ -175,8 +175,8 @@ N'ayant rien trouvé dans le périmètre des logiciels libres permettant de joue
 &lt;li&gt;Microsoft OneNote&lt;/li&gt;
 &lt;li&gt;ikiwiki&lt;/li&gt;
 &lt;li&gt;CherryTree : http://www.giuspen.com/cherrytree/&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 31 Oct 2017 22:46:18 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-10-31:format-zim.html</guid><category>zim</category><category>html</category><category>zip</category></item><item><title>Un téléphone libre</title><link>http://127.0.0.1:4000/telephone-libre.html</link><description>&lt;h2&gt;Intro : Purism&lt;/h2&gt;
-&lt;p&gt;https://puri.sm/shop/librem-5/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 31 Oct 2017 22:46:18 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-10-31:telephone-libre.html</guid><category>mobile</category><category>libre</category></item><item><title>upgrade de C Sharp</title><link>http://127.0.0.1:4000/upgrade-c_sharp.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 31 Oct 2017 22:46:18 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-10-31:format-zim.html</guid><category>zim</category><category>html</category><category>zip</category></item><item><title>Un téléphone libre</title><link>https://mothsart.github.io/telephone-libre.html</link><description>&lt;h2&gt;Intro : Purism&lt;/h2&gt;
+&lt;p&gt;https://puri.sm/shop/librem-5/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 31 Oct 2017 22:46:18 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-10-31:telephone-libre.html</guid><category>mobile</category><category>libre</category></item><item><title>upgrade de C Sharp</title><link>https://mothsart.github.io/upgrade-c_sharp.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Il n'est jamais bon de rester sur une ancienne version d'un langage.
 Un langage évolu et le développeur se doit d'évoluer avec lui.&lt;/p&gt;
 &lt;h2&gt;utiliser nameof nativement (C sharp 6)&lt;/h2&gt;
@@ -187,7 +187,7 @@ Un langage évolu et le développeur se doit d'évoluer avec lui.&lt;/p&gt;
 &lt;h2&gt;objets non nullables&lt;/h2&gt;
 &lt;p&gt;https://www.kenneth-truyers.net/2016/01/25/new-features-in-c-sharp-7-part-2/&lt;/p&gt;
 &lt;p&gt;http://tlevesque.developpez.com/tutoriels/csharp/les-nouveautes-de-csharp-6/
-http://tlevesque.developpez.com/tutoriels/csharp/les-nouveautes-de-csharp-7/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-10-31:upgrade-c_sharp.html</guid><category>c#</category><category>c sharp</category></item><item><title>Editeur WYSIWYG de SVG interactifs</title><link>http://127.0.0.1:4000/editeur-svg-interactif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+http://tlevesque.developpez.com/tutoriels/csharp/les-nouveautes-de-csharp-7/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-10-31:upgrade-c_sharp.html</guid><category>c#</category><category>c sharp</category></item><item><title>Editeur WYSIWYG de SVG interactifs</title><link>https://mothsart.github.io/editeur-svg-interactif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;L'objectif est simple : éditer un fichier SVG statique afin de le présenter comme un contenu interactif. 
 Permettre l'ajout de zones cliquables pouvant être zoomés et enrichies d'une explication.&lt;/p&gt;
 &lt;p&gt;Les fichiers générés (page HTML contenant le SVG) peuvent servir à divers usages :&lt;/p&gt;
@@ -283,7 +283,7 @@ Jusqu'à présent, j'ai créé les exemples (conception, réalisation sous Inksc
 &lt;h2&gt;Logiciels équivalents ou complémentaires&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://sozi.baierouge.fr/pages/10-about-fr.html"&gt;Sozi&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-09-27:editeur-svg-interactif.html</guid><category>javascript</category><category>svg</category><category>linux</category><category>primtux</category><category>deb</category></item><item><title>Algos de distances et de phonetique</title><link>http://127.0.0.1:4000/algos-distance-phonetique.html</link><description>&lt;h2&gt;Distance et algos de phonetic&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:editeur-svg-interactif.html</guid><category>javascript</category><category>svg</category><category>linux</category><category>primtux</category><category>deb</category></item><item><title>Algos de distances et de phonetique</title><link>https://mothsart.github.io/algos-distance-phonetique.html</link><description>&lt;h2&gt;Distance et algos de phonetic&lt;/h2&gt;
 &lt;h2&gt;Définition de la Distance&lt;/h2&gt;
 &lt;p&gt;Les algorithmes de distance vont comparer 2 chaines afin de déterminer leur &lt;strong&gt;pourcentage de ressemblance&lt;/strong&gt;.&lt;/p&gt;
 &lt;h3&gt;Algos de distances&lt;/h3&gt;
@@ -321,7 +321,7 @@ https://siderite.blogspot.com/2014/11/super-fast-and-accurate-string-distance.ht
 &lt;h2&gt;Plural/Singular inflector&lt;/h2&gt;
 &lt;p&gt;Algos permettant de transformer un mot de sa forme singulier au pluriel et inversement + détecter sa forme actuel. (est-ce que le mot est au singulier ou au pluriel ?)&lt;/p&gt;
 &lt;h2&gt;Détection de langue&lt;/h2&gt;
-&lt;p&gt;https://github.com/greyblake/whatlang-rs&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-09-27:algos-distance-phonetique.html</guid><category>levenstein</category><category>hamming</category><category>soundex</category><category>metaphone</category><category>token</category><category>ngram</category></item><item><title>Alimentation responsable</title><link>http://127.0.0.1:4000/alimentation-responsable.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;https://github.com/greyblake/whatlang-rs&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:algos-distance-phonetique.html</guid><category>levenstein</category><category>hamming</category><category>soundex</category><category>metaphone</category><category>token</category><category>ngram</category></item><item><title>Alimentation responsable</title><link>https://mothsart.github.io/alimentation-responsable.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;h2&gt;Local&lt;/h2&gt;
 &lt;p&gt;https://courcircui54.blogspot.fr&lt;/p&gt;
 &lt;h2&gt;Sa production&lt;/h2&gt;
@@ -330,7 +330,7 @@ https://siderite.blogspot.com/2014/11/super-fast-and-accurate-string-distance.ht
 &lt;li&gt;permaculture&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Piste à développer : subsituts à la nourriture&lt;/h2&gt;
-&lt;p&gt;https://ploum.net/le-meal-engineering-le-futur-de-la-nutrition/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-09-27:alimentation-responsable.html</guid><category>ecologie</category><category>responsable</category><category>alimentaire</category></item><item><title>Binaire</title><link>http://127.0.0.1:4000/binaire.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;https://ploum.net/le-meal-engineering-le-futur-de-la-nutrition/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:alimentation-responsable.html</guid><category>ecologie</category><category>responsable</category><category>alimentaire</category></item><item><title>Binaire</title><link>https://mothsart.github.io/binaire.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;h1&gt;Utilitaire&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;file de libmagic&lt;/li&gt;
@@ -346,7 +346,7 @@ https://siderite.blogspot.com/2014/11/super-fast-and-accurate-string-distance.ht
 &lt;li&gt;hexdump&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
-&lt;p&gt;http://linuxfr.org/users/pied/journaux/an-unexpected-linux-reverse-engineering&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-09-27:binaire.html</guid><category>binaire</category></item><item><title>Diff-image</title><link>http://127.0.0.1:4000/diff-image.html</link><description>&lt;h2&gt;Comparer 2 images&lt;/h2&gt;
+&lt;p&gt;http://linuxfr.org/users/pied/journaux/an-unexpected-linux-reverse-engineering&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:binaire.html</guid><category>binaire</category></item><item><title>Diff-image</title><link>https://mothsart.github.io/diff-image.html</link><description>&lt;h2&gt;Comparer 2 images&lt;/h2&gt;
 &lt;p&gt;Je démarre un soft de comparaison d'images.&lt;/p&gt;
 &lt;p&gt;En effet, je trouve qu'un outil "simple" de ce genre n'existe tout bonnement pas.&lt;/p&gt;
 &lt;p&gt;Qui plus est, ça me permet de faire du &lt;strong&gt;Rust&lt;/strong&gt;, de l'algo sur de l'image matricielle, d'apprendre l'API de GTK... &lt;/p&gt;
@@ -410,12 +410,12 @@ sh rustup.sh -y --channel=nightly&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;https://github.com/kornelski/dssim&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Références&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://askubuntu.com/questions/209517/does-diff-exist-for-images"&gt;https://askubuntu.com/questions/209517/does-diff-exist-for-images&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-09-27:diff-image.html</guid><category>rust</category></item><item><title>Gmic</title><link>http://127.0.0.1:4000/gmic.html</link><description>&lt;h2&gt;Diminuer le bruit&lt;/h2&gt;
-&lt;p&gt;Repair &amp;gt; Smooth [anisotropic]&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-09-27:gmic.html</guid><category>gimp</category><category>retouche</category><category>gmic</category></item><item><title>Idées autours du bois</title><link>http://127.0.0.1:4000/idees-autours-bois.html</link><description>&lt;h2&gt;Table basse&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://askubuntu.com/questions/209517/does-diff-exist-for-images"&gt;https://askubuntu.com/questions/209517/does-diff-exist-for-images&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:diff-image.html</guid><category>rust</category></item><item><title>Gmic</title><link>https://mothsart.github.io/gmic.html</link><description>&lt;h2&gt;Diminuer le bruit&lt;/h2&gt;
+&lt;p&gt;Repair &amp;gt; Smooth [anisotropic]&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:gmic.html</guid><category>gimp</category><category>retouche</category><category>gmic</category></item><item><title>Idées autours du bois</title><link>https://mothsart.github.io/idees-autours-bois.html</link><description>&lt;h2&gt;Table basse&lt;/h2&gt;
 &lt;h2&gt;Coffret à glaçons en pierre&lt;/h2&gt;
 &lt;h2&gt;Set de couvert en bois&lt;/h2&gt;
 &lt;h2&gt;Desous de verres&lt;/h2&gt;
-&lt;h2&gt;Boite de rangement de dessous de verres&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-09-27:idees-autours-bois.html</guid><category>bois</category></item><item><title>Les APIS web oubliés</title><link>http://127.0.0.1:4000/le-format-svg.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;h2&gt;Boite de rangement de dessous de verres&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:idees-autours-bois.html</guid><category>bois</category></item><item><title>Les APIS web oubliés</title><link>https://mothsart.github.io/le-format-svg.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Je suis un dev web et je passe trop de temps sur des choses merdiques.
 Du frontend franchement basique.&lt;/p&gt;
 &lt;h2&gt;Une api pour transform()&lt;/h2&gt;
@@ -452,7 +452,7 @@ La complémentarité SVG/HTML n'a jamais été pensé au départ et les bugs irr
 &lt;li&gt;&lt;strong&gt;Opérations booléennes natives&lt;/strong&gt; :&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Ca nécessite des libs externes pour faire le boulôt.
-&lt;strong&gt;C'est du foutage de gueule, ça devrait être natif !&lt;/strong&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-09-27:le-format-svg.html</guid><category>svg</category><category>js</category><category>frontend</category></item><item><title>Mon mémo C Sharp</title><link>http://127.0.0.1:4000/memo-c-sharp.html</link><description>&lt;h2&gt;Les types sérialisés en C Sharp&lt;/h2&gt;
+&lt;strong&gt;C'est du foutage de gueule, ça devrait être natif !&lt;/strong&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:le-format-svg.html</guid><category>svg</category><category>js</category><category>frontend</category></item><item><title>Mon mémo C Sharp</title><link>https://mothsart.github.io/memo-c-sharp.html</link><description>&lt;h2&gt;Les types sérialisés en C Sharp&lt;/h2&gt;
 &lt;p&gt;exemple : Program+Enfant`1[[Program+Autre, o5bi1vku, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]&lt;/p&gt;
 &lt;p&gt;Le + =&amp;gt; NestedClass
 Le . =&amp;gt; espace de nom
@@ -462,7 +462,7 @@ La virgule : passer un projet (Dicsit.Service par exemple)
 &lt;p&gt;https://msdn.microsoft.com/fr-fr/library/dd799517(v=vs.110).aspx
 http://geekswithblogs.net/abhijeetp/archive/2010/01/10/covariance-and-contravariance-in-c-4.0.aspx&lt;/p&gt;
 &lt;h2&gt;Event&lt;/h2&gt;
-&lt;p&gt;https://gist.github.com/mothsART/b7e2d0e6dbe9fc1ec5b1f9e428a088b2#file-c-sharp-event&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-09-27:memo-c-sharp.html</guid><category>c sharp</category></item><item><title>Phonetic</title><link>http://127.0.0.1:4000/phonetic.html</link><description>&lt;h2&gt;Phonetic&lt;/h2&gt;
+&lt;p&gt;https://gist.github.com/mothsART/b7e2d0e6dbe9fc1ec5b1f9e428a088b2#file-c-sharp-event&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:memo-c-sharp.html</guid><category>c sharp</category></item><item><title>Phonetic</title><link>https://mothsart.github.io/phonetic.html</link><description>&lt;h2&gt;Phonetic&lt;/h2&gt;
 &lt;p&gt;Sur PostgreSQL : https://www.postgresql.org/docs/9.1/static/fuzzystrmatch.html&lt;/p&gt;
 &lt;p&gt;https://fr.wikipedia.org/wiki/Homonymie
 http://www.easter-eggs.com/Recherche-approximative-avec
@@ -526,21 +526,21 @@ http://aspell.net/metaphone/dmetaph.cpp&lt;/p&gt;
 &lt;p&gt;http://www.norvig.com/spell-correct.html&lt;/p&gt;
 &lt;p&gt;http://stackoverflow.com/questions/487003/how-to-detect-a-typo-in-a-product-search-and-suggest-possible-corrections&lt;/p&gt;
 &lt;p&gt;PostGreSQL implémente la distance de levenstein, le double metaphone :&lt;/p&gt;
-&lt;p&gt;https://github.com/Freyskeyd/nlp&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-09-27:phonetic.html</guid><category>phonetic</category><category>phonex</category><category>metaphone</category></item><item><title>Phonectic Lab</title><link>http://127.0.0.1:4000/phonetic-lab.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;https://github.com/Freyskeyd/nlp&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:phonetic.html</guid><category>phonetic</category><category>phonex</category><category>metaphone</category></item><item><title>Phonectic Lab</title><link>https://mothsart.github.io/phonetic-lab.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Ce projet est un banc de test autours des principes de la phonétic et des moteurs de recherche se basant sur ces algorithmes.&lt;/p&gt;
 &lt;p&gt;L'idée est de comparer les différents algorithmes de distance (Jaro, Levenstein) et d'en déterminer des éventuels heuristiques :
 selon certaines conditions, on utilisera un algorithme plutôt qu'un autre afin de proposer dans un ensemble de recherche, des performances optimales.&lt;/p&gt;
 &lt;p&gt;Ce banc de test permettra également de comparer les performances brutes de plusieurs moteurs de base de données : SQL et NoSQL.&lt;/p&gt;
 &lt;p&gt;Des benchmarks en situations "réels" me permettrons d'en tirer des conclusions. (peut-être inédites)&lt;/p&gt;
-&lt;p&gt;Enfin, il me permettra de tester mon propre moteur de phonétic dédié à la langue française !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-09-27:phonetic-lab.html</guid><category>phonetic</category><category>distance</category><category>rust</category></item><item><title>The Gimp</title><link>http://127.0.0.1:4000/the-gimp.html</link><description>&lt;h2&gt;Supprimer un élément&lt;/h2&gt;
-&lt;p&gt;https://debian-facile.org/doc:media:gimp:tp-plugin-resynthesizer-suppimer-un-detail&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-09-27:the-gimp.html</guid><category>gimp</category><category>image</category><category>retouche</category></item><item><title>Type de bois</title><link>http://127.0.0.1:4000/type-de-bois.html</link><description>&lt;h2&gt;Contre-plaqué, aggloméré, MDF, médium, OSB&lt;/h2&gt;
+&lt;p&gt;Enfin, il me permettra de tester mon propre moteur de phonétic dédié à la langue française !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:phonetic-lab.html</guid><category>phonetic</category><category>distance</category><category>rust</category></item><item><title>The Gimp</title><link>https://mothsart.github.io/the-gimp.html</link><description>&lt;h2&gt;Supprimer un élément&lt;/h2&gt;
+&lt;p&gt;https://debian-facile.org/doc:media:gimp:tp-plugin-resynthesizer-suppimer-un-detail&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:the-gimp.html</guid><category>gimp</category><category>image</category><category>retouche</category></item><item><title>Type de bois</title><link>https://mothsart.github.io/type-de-bois.html</link><description>&lt;h2&gt;Contre-plaqué, aggloméré, MDF, médium, OSB&lt;/h2&gt;
 &lt;h1&gt;Bois de chêne&lt;/h1&gt;
 &lt;h1&gt;Bois de tilleul&lt;/h1&gt;
 &lt;p&gt;Excellent pour la sculpture&lt;/p&gt;
 &lt;h2&gt;Bois d'olivier&lt;/h2&gt;
 &lt;p&gt;Bon pour la sculpture&lt;/p&gt;
 &lt;h2&gt;Bois de frêne&lt;/h2&gt;
-&lt;p&gt;Pas en exterieur&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-09-27:type-de-bois.html</guid><category>bois</category></item><item><title>Can I Diff</title><link>http://127.0.0.1:4000/can-i-diff.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Pas en exterieur&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:type-de-bois.html</guid><category>bois</category></item><item><title>Can I Diff</title><link>https://mothsart.github.io/can-i-diff.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Un développeur passe son temps à utiliser des différentiels pour déterminer rapidement ce qui a changé dans un ou plusieurs fichiers.&lt;/p&gt;
 &lt;p&gt;Le plus commun est bien entendu la commande diff, particulièrement décocratisé à partir de &lt;strong&gt;git diff&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2&gt;diff et cmd&lt;/h2&gt;
@@ -558,7 +558,7 @@ Les ajouts de noeuds parents peuvent être particulièrement pénalisant.&lt;/p&
 &lt;h2&gt;Images&lt;/h2&gt;
 &lt;p&gt;Avec Image Magick :&lt;/p&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;sudo apt-get install imagemagick imagemagick-doc
-compare -compose src img_origine.png img_modifie.png img_difference.png&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-05-25:can-i-diff.html</guid></item><item><title>Ce n'est qu'un au revoir JSON</title><link>http://127.0.0.1:4000/ce-nest-quun-au-revoir-json.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+compare -compose src img_origine.png img_modifie.png img_difference.png&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:can-i-diff.html</guid></item><item><title>Ce n'est qu'un au revoir JSON</title><link>https://mothsart.github.io/ce-nest-quun-au-revoir-json.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Là ou je peux me passer de JSON, je le fais sans regret.
 C'est un langage à mon goût &lt;strong&gt;batard&lt;/strong&gt;, illisible, faiblement typé...
 très dépendant du langage Javascript... tout aussi mauvais.&lt;/p&gt;
@@ -577,7 +577,7 @@ Pour valider un document, c'est du coup compromis.&lt;/p&gt;
 &lt;p&gt;Si l'on veut valider des données avant l'envoi ou après réception de données, rien n'empêche de passer par un format XML intermédiaire.&lt;/p&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;Il y a des formats qui doivent appartenir au passé...
-(Les formats binarisés de Json n'étant que des jambes de bois)&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-05-25:ce-nest-quun-au-revoir-json.html</guid></item><item><title>Dégooglelison et Education numérique</title><link>http://127.0.0.1:4000/deggoglelison-eductation-numerique.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+(Les formats binarisés de Json n'étant que des jambes de bois)&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:ce-nest-quun-au-revoir-json.html</guid></item><item><title>Dégooglelison et Education numérique</title><link>https://mothsart.github.io/deggoglelison-eductation-numerique.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;J'ai pas l'habitude de faire de la politique mais la nécessité me semble évidente.&lt;/p&gt;
 &lt;p&gt;Notre pays (aussi bien que l'europe, notre région, notre ville) a besoin de réformer son système éducatif et d'innover dans l'accès au numérique.&lt;/p&gt;
 &lt;p&gt;Pour cela, il doit se démarquer des GAFAM (Google, Amazon, Facebook, Apple, Microsoft) !&lt;/p&gt;
@@ -615,12 +615,12 @@ Maintenant, c'est à nous d'assumer (l'opposition pour l'opposition c'est de l'i
 &lt;p&gt;https://chatons.org/
 https://framasoft.org/&lt;/p&gt;
 &lt;p&gt;https://primtux.fr/
-http://abuledu-fr.org/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-05-25:deggoglelison-eductation-numerique.html</guid><category>google</category><category>gafam</category><category>education</category><category>numérique</category></item><item><title>Domotique</title><link>http://127.0.0.1:4000/domotique.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+http://abuledu-fr.org/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:deggoglelison-eductation-numerique.html</guid><category>google</category><category>gafam</category><category>education</category><category>numérique</category></item><item><title>Domotique</title><link>https://mothsart.github.io/domotique.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Utiliser l'API de free pour envoyer des SMS : http://www.domotique-info.fr/2014/06/nouvelle-api-sms-chez-free/&lt;/p&gt;
-&lt;p&gt;idées =&amp;gt; https://www.free-sms-tools.fr/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 04 Jun 2017 13:07:33 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-05-25:domotique.html</guid></item><item><title>Micro-services</title><link>http://127.0.0.1:4000/micro-services.html</link><description>&lt;h2&gt;Les Micro-services pour les nuls&lt;/h2&gt;
+&lt;p&gt;idées =&amp;gt; https://www.free-sms-tools.fr/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 04 Jun 2017 13:07:33 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:domotique.html</guid></item><item><title>Micro-services</title><link>https://mothsart.github.io/micro-services.html</link><description>&lt;h2&gt;Les Micro-services pour les nuls&lt;/h2&gt;
 &lt;h2&gt;Source&lt;/h2&gt;
-&lt;p&gt;https://ziade.org/2016/10/03/web-services-best-practices/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-05-25:micro-services.html</guid><category>micro-services</category></item><item><title>Utiliser Rust sur la PI</title><link>http://127.0.0.1:4000/rust-sur-pi.html</link><description>&lt;h2&gt;Utiliser Rust sur la PI&lt;/h2&gt;
-&lt;p&gt;http://f4b1.com/raspberry-pi/comment-installer-rust-sur-un-raspberry-pi-3&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-05-25:rust-sur-pi.html</guid><category>raspberry rust</category></item><item><title>Tester c'est douter</title><link>http://127.0.0.1:4000/tester-c-douter.html</link><description>&lt;h2&gt;Tester c'est douter&lt;/h2&gt;
+&lt;p&gt;https://ziade.org/2016/10/03/web-services-best-practices/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:micro-services.html</guid><category>micro-services</category></item><item><title>Utiliser Rust sur la PI</title><link>https://mothsart.github.io/rust-sur-pi.html</link><description>&lt;h2&gt;Utiliser Rust sur la PI&lt;/h2&gt;
+&lt;p&gt;http://f4b1.com/raspberry-pi/comment-installer-rust-sur-un-raspberry-pi-3&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:rust-sur-pi.html</guid><category>raspberry rust</category></item><item><title>Tester c'est douter</title><link>https://mothsart.github.io/tester-c-douter.html</link><description>&lt;h2&gt;Tester c'est douter&lt;/h2&gt;
 &lt;p&gt;Dans le paysage du développeur, les tests &lt;strong&gt;automatisés&lt;/strong&gt; devraient être obligatoire et non plus une exception.&lt;/p&gt;
 &lt;p&gt;La réalité est souvent tout autre...&lt;/p&gt;
 &lt;h2&gt;Isolation&lt;/h2&gt;
@@ -638,7 +638,7 @@ On évite principalement les soucis liés aux dépendances.&lt;/p&gt;
 &lt;li&gt;Boom : https://github.com/tarekziade/boom&lt;/li&gt;
 &lt;li&gt;Locust : https://github.com/locustio/locust&lt;/li&gt;
 &lt;li&gt;Molotov : http://molotov.readthedocs.io/en/latest/&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-05-25:tester-c-douter.html</guid><category>test</category></item><item><title>Vue.js</title><link>http://127.0.0.1:4000/vue.js.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:tester-c-douter.html</guid><category>test</category></item><item><title>Vue.js</title><link>https://mothsart.github.io/vue.js.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Pour diverses raisons, j'ai choisi Vue.js comme nouveau framework web.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -657,7 +657,7 @@ On évite principalement les soucis liés aux dépendances.&lt;/p&gt;
 &lt;p&gt;http://maurice-chavelli.developpez.com/javascript/vue-js-1-bases/&lt;/p&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;Un condensé de tout ce qui se fait de mieux autours de Vue.js (composants, examples, tutos, ) :&lt;/p&gt;
-&lt;p&gt;https://github.com/vuejs/awesome-vue&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Jul 2017 03:21:58 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-05-25:vue.js.html</guid><category>javascript</category><category>framework</category><category>vue</category><category>vue.js</category></item><item><title>I18n</title><link>http://127.0.0.1:4000/i18n.html</link><description>&lt;h2&gt;Créer un fichier pot à partir de sources Python&lt;/h2&gt;
+&lt;p&gt;https://github.com/vuejs/awesome-vue&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Jul 2017 03:21:58 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:vue.js.html</guid><category>javascript</category><category>framework</category><category>vue</category><category>vue.js</category></item><item><title>I18n</title><link>https://mothsart.github.io/i18n.html</link><description>&lt;h2&gt;Créer un fichier pot à partir de sources Python&lt;/h2&gt;
 &lt;pre class="highlight"&gt;&lt;code&gt;!bash
 pygettext -o monsterz.pot ./monsterz.py&lt;/code&gt;&lt;/pre&gt;
 
@@ -666,7 +666,7 @@ pygettext -o monsterz.pot ./monsterz.py&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;msgfmt -o lang.mo lang.po&lt;/p&gt;
 &lt;p&gt;et en ligne :&lt;/p&gt;
 &lt;p&gt;http://po2mo.net/&lt;/p&gt;
-&lt;h2&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 27 Feb 2018 15:27:03 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-05-01:i18n.html</guid><category>i18n</category><category>linux</category><category>python</category><category>gettext</category></item><item><title>Mes scripts pour Raspberry</title><link>http://127.0.0.1:4000/scripts-raspberry.html</link><description>&lt;h2&gt;Mes Scripts pour Raspberry&lt;/h2&gt;
+&lt;h2&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 27 Feb 2018 15:27:03 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-01:i18n.html</guid><category>i18n</category><category>linux</category><category>python</category><category>gettext</category></item><item><title>Mes scripts pour Raspberry</title><link>https://mothsart.github.io/scripts-raspberry.html</link><description>&lt;h2&gt;Mes Scripts pour Raspberry&lt;/h2&gt;
 &lt;p&gt;Un script qui simplifie l'usage de &lt;strong&gt;dd&lt;/strong&gt; avec une belle barre de progression !!&lt;/p&gt;
 &lt;p&gt;Nécessite &lt;strong&gt;pv&lt;/strong&gt; et &lt;strong&gt;dialog&lt;/strong&gt; pour fonctionner :&lt;/p&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;apt-get install pv, dialog&lt;/code&gt;&lt;/pre&gt;
@@ -685,7 +685,7 @@ pygettext -o monsterz.pot ./monsterz.py&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;copy mon-image-raspian.img /dev/emplacement&lt;/code&gt;&lt;/pre&gt;
 
 
-&lt;p&gt;Je me suis inspiré de https://www.raspberrypi.org/documentation/installation/installing-images/linux.md&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 25 May 2017 00:16:44 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-05-01:scripts-raspberry.html</guid><category>raspberry</category><category>script</category><category>zsh</category></item><item><title>Oh Merde Git</title><link>http://127.0.0.1:4000/oh-merde-git.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Je me suis inspiré de https://www.raspberrypi.org/documentation/installation/installing-images/linux.md&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 25 May 2017 00:16:44 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-01:scripts-raspberry.html</guid><category>raspberry</category><category>script</category><category>zsh</category></item><item><title>Oh Merde Git</title><link>https://mothsart.github.io/oh-merde-git.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Voici la traduction de &lt;a href="http://ohshitgit.com"&gt;http://ohshitgit.com&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Pour éviter d'inonder cette traduction par des mots fleuries, j'ai décidé de remplacer &lt;strong&gt;Shit&lt;/strong&gt; (litéralement &lt;strong&gt;Merde&lt;/strong&gt;) par &lt;strong&gt;Flûte&lt;/strong&gt;. (juron au combien moderne dans la francophonie)&lt;/p&gt;
 &lt;h2&gt;Oh Flûte GIT&lt;/h2&gt;
@@ -782,7 +782,7 @@ cd fucking-git-repo-dir&lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;A ceux qui trouve que j'ai pris un peu trop de liberté sur la traduction de cet article, je leur dit litéralement : &lt;strong&gt;flûte&lt;/strong&gt;!&lt;/p&gt;
 &lt;p&gt;Néanmoins, ils sont autorisés à me soumettre leurs améliorations !
-C'est d'ailleurs aussi à ça que sert &lt;strong&gt;GIT&lt;/strong&gt; !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-04-12:oh-merde-git.html</guid><category>linux</category><category>libre</category><category>git</category><category>tuto</category><category>traduction</category></item><item><title>CanIuse</title><link>http://127.0.0.1:4000/caniuse.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+C'est d'ailleurs aussi à ça que sert &lt;strong&gt;GIT&lt;/strong&gt; !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:oh-merde-git.html</guid><category>linux</category><category>libre</category><category>git</category><category>tuto</category><category>traduction</category></item><item><title>CanIuse</title><link>https://mothsart.github.io/caniuse.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;S'il on veut utiliser une propriété css/js/html ou une api Html5 et être certain que ça fonctionne sur notre nagivateur, le réflexe c'est caniuse.com&lt;/p&gt;
 &lt;p&gt;Mais s'il on veut étayer son argumentaire, le mieux est de passer par les sites des 3 gros navigateurs :&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/shapes"&gt;IE et Edge&lt;/a&gt;&lt;/p&gt;
@@ -791,7 +791,7 @@ C'est d'ailleurs aussi à ça que sert &lt;strong&gt;GIT&lt;/strong&gt; !&lt;/p&
 &lt;h2&gt;Amélioration progressive&lt;/h2&gt;
 &lt;p&gt;Pour détecter si un navigateur utilise une fonctionnalité, on avait jusqu'à présent &lt;strong&gt;Modernizr&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Cette lib va progressivement disparaitre au profit de &lt;strong&gt;CSS supports&lt;/strong&gt; : 
-&lt;a href="https://la-cascade.io/css-supports-va-vous-changer-la-vie"&gt;Explications sur Css supports&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-04-12:caniuse.html</guid><category>js</category><category>css</category><category>html</category><category>caniuse</category><category>modernizr</category></item><item><title>Utiliser des logs avec Rust</title><link>http://127.0.0.1:4000/logs-rust.html</link><description>&lt;h2&gt;Utiliser les logs en Rust (encore en brouillon)&lt;/h2&gt;
+&lt;a href="https://la-cascade.io/css-supports-va-vous-changer-la-vie"&gt;Explications sur Css supports&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:caniuse.html</guid><category>js</category><category>css</category><category>html</category><category>caniuse</category><category>modernizr</category></item><item><title>Utiliser des logs avec Rust</title><link>https://mothsart.github.io/logs-rust.html</link><description>&lt;h2&gt;Utiliser les logs en Rust (encore en brouillon)&lt;/h2&gt;
 &lt;p&gt;Sur n'importe quel soft sérieux, les logs sont innévitables.
 Voici mes experimentations dans le logging en Rust.&lt;/p&gt;
 &lt;h2&gt;La variable RUST_LOG&lt;/h2&gt;
@@ -816,7 +816,7 @@ Voici mes experimentations dans le logging en Rust.&lt;/p&gt;
 &lt;li&gt;apporter de la couleur sur le terminal pour les différents type de log. (erreur en rouge, warn et orange etc.)&lt;/li&gt;
 &lt;li&gt;changer les formats d'affichage facilement&lt;/li&gt;
 &lt;li&gt;utiliser d'autre sortie que &lt;strong&gt;stdout&lt;/strong&gt; : en html, en json, journald &lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-04-12:logs-rust.html</guid><category>rust</category><category>log</category></item><item><title>Aide mémoire sur le réseau et l'admin sys</title><link>http://127.0.0.1:4000/memo-admin-sys.html</link><description>&lt;h1&gt;Intro&lt;/h1&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:logs-rust.html</guid><category>rust</category><category>log</category></item><item><title>Aide mémoire sur le réseau et l'admin sys</title><link>https://mothsart.github.io/memo-admin-sys.html</link><description>&lt;h1&gt;Intro&lt;/h1&gt;
 &lt;p&gt;Autant le dire, je suis une bille en réseau mais je fais tout pour m'améliorer.
 Voici quelques astuces que j'ai glané.&lt;/p&gt;
 &lt;h2&gt;w&lt;/h2&gt;
@@ -839,7 +839,7 @@ sudo nmap -sP x.y.z.*&lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;donner le nom de domaine d'un poste sur le réseau locale&lt;/h2&gt;
 &lt;p&gt;hostname&lt;/p&gt;
 &lt;h2&gt;changer le hostname&lt;/h2&gt;
-&lt;p&gt;sudo hostname TRUCMUCH&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-04-12:memo-admin-sys.html</guid><category>linux</category><category>arp</category><category>nmap</category><category>admin sys</category></item><item><title>Mémo sur Cargo</title><link>http://127.0.0.1:4000/memo-cargo.html</link><description>&lt;h2&gt;Un mémo sur les instructions d'un fichier de conf d'un paquet Cargo&lt;/h2&gt;
+&lt;p&gt;sudo hostname TRUCMUCH&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:memo-admin-sys.html</guid><category>linux</category><category>arp</category><category>nmap</category><category>admin sys</category></item><item><title>Mémo sur Cargo</title><link>https://mothsart.github.io/memo-cargo.html</link><description>&lt;h2&gt;Un mémo sur les instructions d'un fichier de conf d'un paquet Cargo&lt;/h2&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-toml"&gt;[package]
 name = &amp;quot;cargo&amp;quot;
 version = &amp;quot;0.18.0&amp;quot;
@@ -908,7 +908,7 @@ cargotest = { path = &amp;quot;tests/cargotest&amp;quot; }
 [[bin]]
 name = &amp;quot;cargo&amp;quot;
 test = false
-doc = false&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-04-12:memo-cargo.html</guid><category>cargo</category><category>toml</category><category>rust</category></item><item><title>RecalBox</title><link>http://127.0.0.1:4000/recalbox.html</link><description>&lt;h2&gt;Memo RecalBox&lt;/h2&gt;
+doc = false&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:memo-cargo.html</guid><category>cargo</category><category>toml</category><category>rust</category></item><item><title>RecalBox</title><link>https://mothsart.github.io/recalbox.html</link><description>&lt;h2&gt;Memo RecalBox&lt;/h2&gt;
 &lt;p&gt;Utilisez le nom d'utilisateur &lt;strong&gt;root&lt;/strong&gt; et le mot de passe &lt;strong&gt;recalboxroot&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;\RECALBOX&lt;/strong&gt; ou &lt;strong&gt;\192.168.1.30&lt;/strong&gt;&lt;/p&gt;
 &lt;h3&gt;SSH&lt;/h3&gt;
@@ -927,7 +927,7 @@ wifi.ssid=maFreeBox
 wifi.key=motMonDePasseFreebox&lt;/code&gt;&lt;/pre&gt;
 
 
-&lt;p&gt;Et surtout ne pas utiliser le canal 13 pour le wifi&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-04-12:recalbox.html</guid><category>raspberry</category><category>recalbox</category><category>retro-gamming</category></item><item><title>Mes tests autours de la Framboise</title><link>http://127.0.0.1:4000/tests-autours-de-la-framboise.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Et surtout ne pas utiliser le canal 13 pour le wifi&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:recalbox.html</guid><category>raspberry</category><category>recalbox</category><category>retro-gamming</category></item><item><title>Mes tests autours de la Framboise</title><link>https://mothsart.github.io/tests-autours-de-la-framboise.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Ceci est un historique personnel de mes tests sous Raspberry.
 J'ai acheté progressivement les Rpi + le matériel correspondant.&lt;/p&gt;
 &lt;p&gt;Pour me simplifier la vie, je me suis acheté une carte SD de 16Go par OS utilisé.&lt;/p&gt;
@@ -985,7 +985,7 @@ Que de changements depuis ma première raspbian !!!&lt;/p&gt;
 &lt;li&gt;Ecran HDMI&lt;/li&gt;
 &lt;li&gt;Disque dur externe pour les Roms&lt;/li&gt;
 &lt;li&gt;Disque dur pour le serveur multimédia&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 01 May 2017 01:59:46 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-04-12:tests-autours-de-la-framboise.html</guid><category>raspberry</category><category>recalbox</category><category>primtux</category><category>archlinux</category><category>raspbian</category></item><item><title>Applis en Rust</title><link>http://127.0.0.1:4000/applis-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 01 May 2017 01:59:46 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:tests-autours-de-la-framboise.html</guid><category>raspberry</category><category>recalbox</category><category>primtux</category><category>archlinux</category><category>raspbian</category></item><item><title>Applis en Rust</title><link>https://mothsart.github.io/applis-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Le langage Rust : c'est encore un truc qui sert à rien ?!&lt;/p&gt;
 &lt;p&gt;Ben non, y'a plein de libs qui l'utilisent !&lt;/p&gt;
 &lt;p&gt;Des libs peut-être mais des vrais soft derrières ?&lt;/p&gt;
@@ -1042,13 +1042,13 @@ En revanche, il ne couvre encore que peu de fonctionnalités (pas encore d’his
 &lt;h2&gt;Installation sous Ubuntu ou Debian&lt;/h2&gt;
 &lt;p&gt;Pour simplifier l'utilisation de plusieurs de ces softs, j'ai décidé de les précompiler, les empaqueter et les mettre à dispo sur un PPA :&lt;/p&gt;
 &lt;p&gt;enjoy : &lt;a href="https://launchpad.net/~jerem-ferry/+archive/ubuntu/rust"&gt;https://launchpad.net/~jerem-ferry/+archive/ubuntu/rust&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Si vous désirez savoir comment je m'y suis pris, vous trouverez le détail ici : &lt;a href="https://forum.ubuntu-fr.org/viewtopic.php?id=2023943"&gt;https://forum.ubuntu-fr.org/viewtopic.php?id=2023943&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 04 Aug 2018 14:27:59 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-02-22:applis-rust.html</guid></item><item><title>Financement participatif</title><link>http://127.0.0.1:4000/financement-participatif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Si vous désirez savoir comment je m'y suis pris, vous trouverez le détail ici : &lt;a href="https://forum.ubuntu-fr.org/viewtopic.php?id=2023943"&gt;https://forum.ubuntu-fr.org/viewtopic.php?id=2023943&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 04 Aug 2018 14:27:59 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-22:applis-rust.html</guid></item><item><title>Financement participatif</title><link>https://mothsart.github.io/financement-participatif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;https://liberapay.com/mothsART&lt;/p&gt;
 &lt;p&gt;Flattr&lt;/p&gt;
 &lt;p&gt;https://www.wattpad.com&lt;/p&gt;
 &lt;p&gt;https://www.tipeee.com&lt;/p&gt;
-&lt;p&gt;https://www.patreon.com&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 25 Feb 2017 17:34:53 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-02-22:financement-participatif.html</guid></item><item><title>Fuzzer</title><link>http://127.0.0.1:4000/fuzzer.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;https://www.patreon.com&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 25 Feb 2017 17:34:53 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-22:financement-participatif.html</guid></item><item><title>Fuzzer</title><link>https://mothsart.github.io/fuzzer.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Ca fait un moment que je me passionne pour le fuzzing (aussi appelé à tord Monkey testing) sans vraiment écrire à ce sujet.&lt;/p&gt;
 &lt;h2&gt;Fuzzer connus et spécificité&lt;/h2&gt;
 &lt;h3&gt;(ZZUF)[http://caca.zoy.org/wiki/zzuf]&lt;/h3&gt;
@@ -1073,7 +1073,7 @@ Variante pour Rust : https://github.com/frewsxcv/afl.rs&lt;/p&gt;
 &lt;h3&gt;(Fusil)[http://fusil.readthedocs.io/]&lt;/h3&gt;
 &lt;p&gt;Provient de la communauté &lt;strong&gt;Python&lt;/strong&gt;&lt;/p&gt;
 &lt;h2&gt;Et pour javascript ?&lt;/h2&gt;
-&lt;p&gt;Il existe quelques libs sympas : https://github.com/marmelab/gremlins.js&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 25 May 2017 00:16:44 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-02-22:fuzzer.html</guid><category>fuzzer</category><category>python</category><category>rust</category></item><item><title>Lego</title><link>http://127.0.0.1:4000/lego.html</link><description>&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;Il existe quelques libs sympas : https://github.com/marmelab/gremlins.js&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 25 May 2017 00:16:44 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-22:fuzzer.html</guid><category>fuzzer</category><category>python</category><category>rust</category></item><item><title>Lego</title><link>https://mothsart.github.io/lego.html</link><description>&lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;ldraw.org
 http://www.framboise314.fr/leocad-des-modeles-lego-en-3d-sur-raspberry-pi/
 http://jc-tchang.philohome.com/index.htm
@@ -1083,7 +1083,7 @@ http://www.holly-wood.it/ldraw/authoring-en.html&lt;/p&gt;
 &lt;p&gt;LeoCAD : 
 MLCAD : http://mlcad.lm-software.com/&lt;/p&gt;
 &lt;h2&gt;online&lt;/h2&gt;
-&lt;p&gt;https://www.buildwithchrome.com/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 09 Feb 2017 00:10:29 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-02-09:lego.html</guid><category>lego 3D</category></item><item><title>Open-source in real World ?</title><link>http://127.0.0.1:4000/open-source-real.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;https://www.buildwithchrome.com/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 09 Feb 2017 00:10:29 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-09:lego.html</guid><category>lego 3D</category></item><item><title>Open-source in real World ?</title><link>https://mothsart.github.io/open-source-real.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;h2&gt;Le lave-linge Open-source&lt;/h2&gt;
 &lt;p&gt;http://lincrevable.com/&lt;/p&gt;
 &lt;ul&gt;
@@ -1094,12 +1094,12 @@ MLCAD : http://mlcad.lm-software.com/&lt;/p&gt;
 &lt;li&gt;le lest en béton faisant office de stabilisateur est remplacé par un réservoire d'eau&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;voiture open-source&lt;/h2&gt;
-&lt;p&gt;https://www.osvehicle.com&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-02-09:open-source-real.html</guid><category>open-source</category></item><item><title>PovRay</title><link>http://127.0.0.1:4000/povray.html</link><description>&lt;h2&gt;&lt;/h2&gt;
+&lt;p&gt;https://www.osvehicle.com&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-09:open-source-real.html</guid><category>open-source</category></item><item><title>PovRay</title><link>https://mothsart.github.io/povray.html</link><description>&lt;h2&gt;&lt;/h2&gt;
 &lt;p&gt;povray essai.pov +H2048 +W1536 -D +A +Q11&lt;/p&gt;
 &lt;p&gt;-D : sans fenêtre de prévisualisation
 +A : Antialiasing
 +Q : qualité&lt;/p&gt;
-&lt;p&gt;http://connect.ed-diamond.com/Linux-Pratique/LP-088/Creez-vos-images-de-synthese-avec-POV-Ray&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-02-09:povray.html</guid><category>povray rendu 3D</category></item><item><title>To be strict or not to be</title><link>http://127.0.0.1:4000/strict-or-not.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;http://connect.ed-diamond.com/Linux-Pratique/LP-088/Creez-vos-images-de-synthese-avec-POV-Ray&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-09:povray.html</guid><category>povray rendu 3D</category></item><item><title>To be strict or not to be</title><link>https://mothsart.github.io/strict-or-not.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Il est recommandé d'utiliser Javascript avec le mode strict.
 Le mode strict c'est un passage à Ecmascript 5 et tous les navigateurs l'implémentent désormais.&lt;/p&gt;
 &lt;h2&gt;Oui, mais... pourquoi ?&lt;/h2&gt;
@@ -1130,7 +1130,7 @@ On comprend mieux pourquoi aucune doc (de Mozilla ou autre) ne fait état de cet
 Du coup, vous serez gagnant sur les 2 tableaux.&lt;/p&gt;
 &lt;h2&gt;C'est bien beau ton barratin mais qu'est-ce qui nous le prouve ?&lt;/h2&gt;
 &lt;p&gt;Pour vérifier mes dires : voici quelques benchs qui témoignent de la véracité de mes propos : &lt;a href=""&gt;bench&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;A bon entendeur ;)&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-02-09:strict-or-not.html</guid><category>javascript</category><category>bench</category></item><item><title>Que pensez de Swift ?</title><link>http://127.0.0.1:4000/swift-langage.html</link><description>&lt;h2&gt;&lt;/h2&gt;
+&lt;p&gt;A bon entendeur ;)&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-09:strict-or-not.html</guid><category>javascript</category><category>bench</category></item><item><title>Que pensez de Swift ?</title><link>https://mothsart.github.io/swift-langage.html</link><description>&lt;h2&gt;&lt;/h2&gt;
 &lt;h3&gt;Philosophy&lt;/h3&gt;
 &lt;p&gt;Rust is meant to be a safer C++. Rust is meant to be safe above all else.
 Swift is meant to be a performant Python/Ruby. Swift is meant to be a programmer-centric and familiar coding experience.&lt;/p&gt;
@@ -1144,7 +1144,7 @@ Both languages have means of unmanaged memory, and direct-use (but unsafe) point
 &lt;h3&gt;C code Compatibility&lt;/h3&gt;
 &lt;p&gt;Swift is ABI compatible with C. So code can be intermixed with existing C or objC code base. This is unique to Swift.
 REPL, Live coding &amp;amp; JIT&lt;/p&gt;
-&lt;p&gt;Swift has a live coding playground, REPL and can JIT in development before being compiled native.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-02-09:swift-langage.html</guid><category>swift</category><category>rust</category></item><item><title>Vanilla-a-a-a-a</title><link>http://127.0.0.1:4000/vanilla-a-a-a-a.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Swift has a live coding playground, REPL and can JIT in development before being compiled native.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-09:swift-langage.html</guid><category>swift</category><category>rust</category></item><item><title>Vanilla-a-a-a-a</title><link>https://mothsart.github.io/vanilla-a-a-a-a.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Dans mon existence de développeur, j'ai appris à ne pas me fier à des &lt;em&gt;on-dit&lt;/em&gt;, les tendances (oui, les modes chez les web-dev, ça court le net) et toute forme d'approximation.
 Si on veut être sur de quelques choses, il faut le vérifier.&lt;/p&gt;
 &lt;p&gt;Depuis plusieurs années, les modes se sont succédés dans le dev web frontend :
@@ -1186,7 +1186,7 @@ Avant de se casser la tête avec un sélecteur compliqué, pensez d'abord à sim
 &lt;/ul&gt;
 &lt;h2&gt;A venir&lt;/h2&gt;
 &lt;p&gt;J'aimerais pouvoir identifier facilement les morceaux de code Jquery à modifier.
-Pour cela, rien de mieux qu'une &lt;strong&gt;expression régulière (regex)&lt;/strong&gt; disponible dans chacune des lignes : il vous suffit de l'appliquer à la source de votre projet via un utilitaire tel que &lt;strong&gt;&lt;a href="https://github.com/BurntSushi/ripgrep"&gt;ripgrep&lt;/a&gt;&lt;/strong&gt; et identifier facilement les fichiers et lignes nécessitant un update ! &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-02-09:vanilla-a-a-a-a.html</guid><category>javascript</category><category>jquery</category><category>xpath</category><category>benchmark</category></item><item><title>config-canto</title><link>http://127.0.0.1:4000/config-canto.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+Pour cela, rien de mieux qu'une &lt;strong&gt;expression régulière (regex)&lt;/strong&gt; disponible dans chacune des lignes : il vous suffit de l'appliquer à la source de votre projet via un utilitaire tel que &lt;strong&gt;&lt;a href="https://github.com/BurntSushi/ripgrep"&gt;ripgrep&lt;/a&gt;&lt;/strong&gt; et identifier facilement les fichiers et lignes nécessitant un update ! &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-09:vanilla-a-a-a-a.html</guid><category>javascript</category><category>jquery</category><category>xpath</category><category>benchmark</category></item><item><title>config-canto</title><link>https://mothsart.github.io/config-canto.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;INTERNAL USAGE
        Within the program you can use the following (default) keys.  These can
        be  changed in your configuration file by using the "key" configuration
@@ -1248,23 +1248,23 @@ Pour cela, rien de mieux qu'une &lt;strong&gt;expression régulière (regex)&lt;
 
    \      Restart Canto (restart)
 
-   q      Quit Canto (quit)&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-10-30:config-canto.html</guid><category>python</category><category>rss</category><category>canto</category></item><item><title>Créer des paquets Debian</title><link>http://127.0.0.1:4000/creer-paquet-deian.html</link><description>&lt;h2&gt;&lt;/h2&gt;
+   q      Quit Canto (quit)&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-30:config-canto.html</guid><category>python</category><category>rss</category><category>canto</category></item><item><title>Créer des paquets Debian</title><link>https://mothsart.github.io/creer-paquet-deian.html</link><description>&lt;h2&gt;&lt;/h2&gt;
 &lt;p&gt;Autoriser la signature d'un paquet GPG&lt;/p&gt;
-&lt;p&gt;gpg --no-default-keyring -a --export 7929777B | gpg --no-default-keyring --keyring ~/.gnupg/trustedkeys.gpg --import -&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-10-30:creer-paquet-deian.html</guid><category>debian</category><category>linux</category></item><item><title>XSS</title><link>http://127.0.0.1:4000/xss.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;gpg --no-default-keyring -a --export 7929777B | gpg --no-default-keyring --keyring ~/.gnupg/trustedkeys.gpg --import -&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-30:creer-paquet-deian.html</guid><category>debian</category><category>linux</category></item><item><title>XSS</title><link>https://mothsart.github.io/xss.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Le XSS pour les nuls.&lt;/p&gt;
 &lt;h2&gt;Comment éviter le XSS&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;supprimer les balises &lt;script&gt;&lt;/li&gt;
 &lt;li&gt;supprimer les attributs xml qui commencent par &lt;strong&gt;on&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet#XSS_Locator&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-10-30:xss.html</guid><category>js</category><category>xss</category></item><item><title>Debuggage Javascript</title><link>http://127.0.0.1:4000/debug-js.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet#XSS_Locator&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-30:xss.html</guid><category>js</category><category>xss</category></item><item><title>Debuggage Javascript</title><link>https://mothsart.github.io/debug-js.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Debugger du JS ainsi que du html mal formé n'est pas toujours aisé : surtout quand c'est le code de quelqu'un autre ou un très vieux dev.&lt;/p&gt;
 &lt;p&gt;Voici une base d'outils qui permettent de simplifier les choses.&lt;/p&gt;
 &lt;h2&gt;diff DOM contre le HTML mal formé&lt;/h2&gt;
 &lt;p&gt;https://github.com/fiduswriter/diffDOM&lt;/p&gt;
 &lt;h2&gt;tester des objets&lt;/h2&gt;
 &lt;p&gt;http://is.js.org/&lt;/p&gt;
-&lt;h2&gt;Astuces chrome&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-10-15:debug-js.html</guid><category>javascript</category></item><item><title>dev des web app Ubuntu</title><link>http://127.0.0.1:4000/dev-webapp-ubuntu.html</link><description>&lt;h2&gt;Dev d'applications polymorphes&lt;/h2&gt;
+&lt;h2&gt;Astuces chrome&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-15:debug-js.html</guid><category>javascript</category></item><item><title>dev des web app Ubuntu</title><link>https://mothsart.github.io/dev-webapp-ubuntu.html</link><description>&lt;h2&gt;Dev d'applications polymorphes&lt;/h2&gt;
 &lt;p&gt;Quand je pense appli, je pense &lt;strong&gt;utilisateur&lt;/strong&gt;.
 Une application moderne à mon sens doit être modulable au besoin de son utilisateur.
 C'est lui et lui seul qui doit en avoir le contrôle.
@@ -1273,7 +1273,7 @@ Constat actuel : l'utilisateur est dépendant de G.A.F.A.M (Google, Apple, FaceB
 &lt;h2&gt;Les grandes lignes&lt;/h2&gt;
 &lt;p&gt;https://developer.ubuntu.com/en/phone/web/tutorials/web-app-tutorial/
 https://developer.ubuntu.com/api/devel/ubuntu-13.10/javascript/web-docs/
-https://developer.ubuntu.com/api/devel/ubuntu-13.10/javascript/web-docs/unity-web-api-reference.html&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-10-15:dev-webapp-ubuntu.html</guid><category>ubuntu</category><category>linux</category><category>dev</category></item><item><title>Independance logiciel</title><link>http://127.0.0.1:4000/independance-logiciel.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-10-15:independance-logiciel.html</guid></item><item><title>The QuiZz : Partie 3</title><link>http://127.0.0.1:4000/the-quizz-part-3.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+https://developer.ubuntu.com/api/devel/ubuntu-13.10/javascript/web-docs/unity-web-api-reference.html&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-15:dev-webapp-ubuntu.html</guid><category>ubuntu</category><category>linux</category><category>dev</category></item><item><title>Independance logiciel</title><link>https://mothsart.github.io/independance-logiciel.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-15:independance-logiciel.html</guid></item><item><title>The QuiZz : Partie 3</title><link>https://mothsart.github.io/the-quizz-part-3.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;L'aventure de &lt;strong&gt;The Quizzz&lt;/strong&gt; ce poursuis.
 Le temps a passé et les objectifs se sont affinés.&lt;/p&gt;
 &lt;p&gt;Ca m'a permis de tester et promouvoir de nouvelles technos que je vous communiques.&lt;/p&gt;
@@ -1373,7 +1373,7 @@ Le But étant d'avoir un vrai template clé en main pour démarrer un nouveau pr
 &lt;p&gt;Dans le prochain article, je vais me concentrer sur la mise en place d'un algorithme de répétion espacée.
 (https://fr.wikipedia.org/wiki/R%C3%A9p%C3%A9tition_espac%C3%A9e)&lt;/p&gt;
 &lt;p&gt;L'idée derrière cet algo est d'améliorer les connaissances de l'utilisateur en travaillant sur ses faiblesses et non sur ces acquis.&lt;/p&gt;
-&lt;h3&gt;i18n sur la partie Web&lt;/h3&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Jul 2017 03:21:58 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-10-15:the-quizz-part-3.html</guid><category>rust diesel</category></item><item><title>Développement Ubuntu</title><link>http://127.0.0.1:4000/ubuntu-dev.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;h3&gt;i18n sur la partie Web&lt;/h3&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Jul 2017 03:21:58 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-15:the-quizz-part-3.html</guid><category>rust diesel</category></item><item><title>Développement Ubuntu</title><link>https://mothsart.github.io/ubuntu-dev.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Ubuntu est une distro vraiment agréable. Même si ces detracteurs lui reproche pas mal de choses : Unity au lieu de gnome shell, Mir au lieu de Wayland etc.&lt;/p&gt;
 &lt;p&gt;Même si je n'approuve pas tous leurs choix, je trouve néanmoins qu'il y a plein de bonnes idées.&lt;/p&gt;
 &lt;h2&gt;Les idées intéressantes&lt;/h2&gt;
@@ -1388,12 +1388,12 @@ Le But étant d'avoir un vrai template clé en main pour démarrer un nouveau pr
 &lt;p&gt;les liens tel que href="app://gnome-terminal"
 href="apt://gnome-terminal"&amp;gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 09 Feb 2017 00:10:29 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-10-15:ubuntu-dev.html</guid><category>ubuntu</category><category>linux</category><category>dev</category></item><item><title>OpenClipart</title><link>http://127.0.0.1:4000/openclipart.html</link><description>&lt;h2&gt;Meilleur contributeurs&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 09 Feb 2017 00:10:29 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-15:ubuntu-dev.html</guid><category>ubuntu</category><category>linux</category><category>dev</category></item><item><title>OpenClipart</title><link>https://mothsart.github.io/openclipart.html</link><description>&lt;h2&gt;Meilleur contributeurs&lt;/h2&gt;
 &lt;p&gt;https://openclipart.org/user-detail/cirenovy&lt;/p&gt;
 &lt;p&gt;https://openclipart.org/user-detail/vectorsme&lt;/p&gt;
 &lt;p&gt;https://openclipart.org/user-detail/GDJ&lt;/p&gt;
 &lt;p&gt;https://openclipart.org/user-cliparts/gnokii&lt;/p&gt;
-&lt;p&gt;https://openclipart.org/user-detail/Lazur%20URH&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 03 Oct 2016 01:38:01 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-10-03:openclipart.html</guid><category>openclipart</category></item><item><title>Pelican's Template</title><link>http://127.0.0.1:4000/pelicans-template.html</link><description>&lt;h2&gt;Title 2&lt;/h2&gt;
+&lt;p&gt;https://openclipart.org/user-detail/Lazur%20URH&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 03 Oct 2016 01:38:01 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-03:openclipart.html</guid><category>openclipart</category></item><item><title>Pelican's Template</title><link>https://mothsart.github.io/pelicans-template.html</link><description>&lt;h2&gt;Title 2&lt;/h2&gt;
 &lt;h3&gt;Title 3&lt;/h3&gt;
 &lt;h4&gt;Title 4&lt;/h4&gt;
 &lt;h5&gt;Title 5&lt;/h5&gt;
@@ -1438,11 +1438,11 @@ fib(1000)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img alt="tmuxp load" src="static/images/tmuxp_load_labodunerd.png" /&gt;&lt;/p&gt;
 &lt;h2&gt;Movie&lt;/h2&gt;
 &lt;p&gt;&lt;span class="videobox"&gt;
-            &lt;video width="100%" height="100%" preload="none" controls poster="/./static/images/camp_paleolithic.jpg"&gt;&lt;source src='/static/movies/camp_paleolithic.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'&gt;&lt;/video&gt;&lt;/span&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 24 Sep 2016 22:45:00 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-10-03:pelicans-template.html</guid><category>template</category></item><item><title>Python-pip</title><link>http://127.0.0.1:4000/python-pip.html</link><description>&lt;h2&gt;pip -e&lt;/h2&gt;
-&lt;p&gt;utiliser une dépendance perso : pip -e ~/ma_lib&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 03 Oct 2016 01:38:01 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-10-03:python-pip.html</guid><category>python</category><category>pip</category></item><item><title>Vectoriel</title><link>http://127.0.0.1:4000/vectoriel.html</link><description>&lt;h2&gt;Logiciel de vectorisation d'image&lt;/h2&gt;
+            &lt;video width="100%" height="100%" preload="none" controls poster="/./static/images/camp_paleolithic.jpg"&gt;&lt;source src='/static/movies/camp_paleolithic.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'&gt;&lt;/video&gt;&lt;/span&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 24 Sep 2016 22:45:00 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-03:pelicans-template.html</guid><category>template</category></item><item><title>Python-pip</title><link>https://mothsart.github.io/python-pip.html</link><description>&lt;h2&gt;pip -e&lt;/h2&gt;
+&lt;p&gt;utiliser une dépendance perso : pip -e ~/ma_lib&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 03 Oct 2016 01:38:01 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-03:python-pip.html</guid><category>python</category><category>pip</category></item><item><title>Vectoriel</title><link>https://mothsart.github.io/vectoriel.html</link><description>&lt;h2&gt;Logiciel de vectorisation d'image&lt;/h2&gt;
 &lt;p&gt;Vector Magic
 https://www.vectorizer.io/
-Inkscape&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-10-03:vectoriel.html</guid><category>vectoriel</category></item><item><title>Camp paleolithique</title><link>http://127.0.0.1:4000/abuledu-camp-paleolithique.html</link><description>&lt;h2&gt;Campement du Paléolithique&lt;/h2&gt;
+Inkscape&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-03:vectoriel.html</guid><category>vectoriel</category></item><item><title>Camp paleolithique</title><link>https://mothsart.github.io/abuledu-camp-paleolithique.html</link><description>&lt;h2&gt;Campement du Paléolithique&lt;/h2&gt;
 &lt;p&gt;le fichier en question : &lt;a href="https://commons.wikimedia.org/wiki/File:Campement.svg"&gt;Campement&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;L'article Vikidia : &lt;a href="https://fr.vikidia.org/wiki/Pal%C3%A9olithique"&gt;Paléolithique&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Le fichier sur OpenClipArt : &lt;a href="https://openclipart.org/detail/262113/prehistoric-camp"&gt;Prehistoric-camp&lt;/a&gt;&lt;/p&gt;
@@ -1451,7 +1451,7 @@ Inkscape&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/element
 &lt;p&gt;Afin d'améliorer encore l'expérience des utilisateurs sur Ubuntu, j'ai également mis à dispostion un &lt;a href="https://launchpad.net/~jerem-ferry/+archive/ubuntu/app-illustration/"&gt;PPA&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Les étapes de réalisations&lt;/h3&gt;
 &lt;p&gt;&lt;span class="videobox"&gt;
-            &lt;video width="100%" height="100%" preload="none" controls poster="/./static/images/camp_paleolithic.jpg"&gt;&lt;source src='/static/movies/camp_paleolithic.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'&gt;&lt;/video&gt;&lt;/span&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 30 Oct 2016 21:07:42 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-09-21:abuledu-camp-paleolithique.html</guid><category>linux</category><category>libre</category></item><item><title>Librairies et frameworks</title><link>http://127.0.0.1:4000/rust-libs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+            &lt;video width="100%" height="100%" preload="none" controls poster="/./static/images/camp_paleolithic.jpg"&gt;&lt;source src='/static/movies/camp_paleolithic.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'&gt;&lt;/video&gt;&lt;/span&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 30 Oct 2016 21:07:42 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:abuledu-camp-paleolithique.html</guid><category>linux</category><category>libre</category></item><item><title>Librairies et frameworks</title><link>https://mothsart.github.io/rust-libs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Depuis que Rust est en version 1.0, les choses se sont accélérés et beaucoup de librairies et frameworks ont pointé le bout de leur nez.
 Voici les plus connus trié par thème.&lt;/p&gt;
 &lt;h2&gt;Base de données&lt;/h2&gt;
@@ -1461,11 +1461,11 @@ rust-redis&lt;/p&gt;
 &lt;p&gt;serde
 rust_serialize&lt;/p&gt;
 &lt;h2&gt;parser&lt;/h2&gt;
-&lt;p&gt;nom&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 09 Feb 2017 00:10:29 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-09-21:rust-libs.html</guid><category>rust</category></item><item><title>TTS</title><link>http://127.0.0.1:4000/tts.html</link><description>&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;nom&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 09 Feb 2017 00:10:29 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:rust-libs.html</guid><category>rust</category></item><item><title>TTS</title><link>https://mothsart.github.io/tts.html</link><description>&lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;https://fr.wikipedia.org/wiki/Formant&lt;/p&gt;
 &lt;p&gt;http://milk.com/&lt;/p&gt;
 &lt;h2&gt;utilisation de Alsa&lt;/h2&gt;
-&lt;p&gt;libasound-dev&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-09-21:tts.html</guid><category>tts</category></item><item><title>videos</title><link>http://127.0.0.1:4000/videos.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;libasound-dev&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:tts.html</guid><category>tts</category></item><item><title>videos</title><link>https://mothsart.github.io/videos.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;h2&gt;ffmpeg&lt;/h2&gt;
 &lt;p&gt;ffmpeg -framerate 1/1 -i camp%3d.png -c:v libx264 -vf "scale=trunc(iw/2)&lt;em&gt;2:trunc(ih/2)&lt;/em&gt;2" -pix_fmt yuv420p out.mp4 | ffmpeg -i out.mp4 etape.gif&lt;/p&gt;
 &lt;h2&gt;Mencoder&lt;/h2&gt;
@@ -1475,7 +1475,7 @@ rust_serialize&lt;/p&gt;
 &lt;h3&gt;convertir le son en mp3 + retourner la vidéo + traitement sur 4 threads&lt;/h3&gt;
 &lt;p&gt;mencoder -oac mp3lame -ovc x264 -vf flip,mirror premier_toboggan.MOV -lavdopts threads=4 -o premier_toboggan.avi&lt;/p&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
-&lt;p&gt;http://sebsauvage.net/wiki/doku.php?id=ffmpeg&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-09-21:videos.html</guid><category>linux</category><category>ffmpeg</category><category>mencoder</category></item><item><title>Webassembly</title><link>http://127.0.0.1:4000/webassembly.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;http://sebsauvage.net/wiki/doku.php?id=ffmpeg&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:videos.html</guid><category>linux</category><category>ffmpeg</category><category>mencoder</category></item><item><title>Webassembly</title><link>https://mothsart.github.io/webassembly.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;https://github.com/DenisKolodin/yew.git : 
 convertir du Rust en wasm, asm.js ou emscripten.&lt;/p&gt;
 &lt;h2&gt;Avantage par rapport à du javascript&lt;/h2&gt;
@@ -1487,32 +1487,32 @@ convertir du Rust en wasm, asm.js ou emscripten.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h2&gt;l'existant&lt;/h2&gt;
 &lt;p&gt;http://caniuse.com/#feat=asmjs&lt;/p&gt;
-&lt;p&gt;emscripten&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 27 Feb 2018 15:27:03 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-09-21:webassembly.html</guid><category>js</category></item><item><title>3D</title><link>http://127.0.0.1:4000/3D.html</link><description>&lt;h2&gt;&lt;/h2&gt;
+&lt;p&gt;emscripten&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 27 Feb 2018 15:27:03 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:webassembly.html</guid><category>js</category></item><item><title>3D</title><link>https://mothsart.github.io/3D.html</link><description>&lt;h2&gt;&lt;/h2&gt;
 &lt;p&gt;http://polycount.com/
 https://fr.wikipedia.org/wiki/Sketchfab
 https://sketchfab.com/&lt;/p&gt;
 &lt;p&gt;Pour visualiser les fichiers .fbx dans Blender, il faut utiliser l'import.&lt;/p&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;http://sebsauvage.net/temp/blender/&lt;/p&gt;
-&lt;p&gt;3D On-line : https://aframe.io&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 25 May 2017 00:16:44 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-08-07:3D.html</guid><category>3D</category></item><item><title>algo images</title><link>http://127.0.0.1:4000/algo-images.html</link><description>&lt;h2&gt;&lt;/h2&gt;
+&lt;p&gt;3D On-line : https://aframe.io&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 25 May 2017 00:16:44 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:3D.html</guid><category>3D</category></item><item><title>algo images</title><link>https://mothsart.github.io/algo-images.html</link><description>&lt;h2&gt;&lt;/h2&gt;
 &lt;p&gt;https://29a.ch/&lt;/p&gt;
 &lt;p&gt;https://github.com/jwagner/smartcrop.js&lt;/p&gt;
 &lt;p&gt;https://github.com/jaysalvat/jquery.facedetection&lt;/p&gt;
-&lt;p&gt;https://github.com/eduardolundgren/tracking.js/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 25 Feb 2017 17:34:53 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-08-07:algo-images.html</guid><category>picture</category><category>algo</category></item><item><title>Blender</title><link>http://127.0.0.1:4000/blender.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;https://github.com/eduardolundgren/tracking.js/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 25 Feb 2017 17:34:53 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:algo-images.html</guid><category>picture</category><category>algo</category></item><item><title>Blender</title><link>https://mothsart.github.io/blender.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;h2&gt;liens&lt;/h2&gt;
 &lt;p&gt;https://www.blender.org/manual/render/freestyle/export_svg.html
 http://goinkscape.com/use-blender-freestyle-to-export-svg-artwork&lt;/p&gt;
 &lt;h1&gt;tutos débutant&lt;/h1&gt;
-&lt;p&gt;edit-mode : https://www.youtube.com/watch?v=5Ob763e34Hk&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-08-07:blender.html</guid><category>3D</category><category>blender</category></item><item><title>Cette photo est-elle retouché ?</title><link>http://127.0.0.1:4000/photo-retouche.html</link><description>&lt;h2&gt;&lt;/h2&gt;
+&lt;p&gt;edit-mode : https://www.youtube.com/watch?v=5Ob763e34Hk&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:blender.html</guid><category>3D</category><category>blender</category></item><item><title>Cette photo est-elle retouché ?</title><link>https://mothsart.github.io/photo-retouche.html</link><description>&lt;h2&gt;&lt;/h2&gt;
 &lt;p&gt;https://en.wikipedia.org/wiki/Error_level_analysis&lt;/p&gt;
 &lt;h2&gt;Utilitaires On-line&lt;/h2&gt;
 &lt;p&gt;https://29a.ch/photo-forensics/
-http://fotoforensics.com/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 25 Feb 2017 17:34:53 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-08-07:photo-retouche.html</guid><category>picture</category></item><item><title>Snap</title><link>http://127.0.0.1:4000/snap.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+http://fotoforensics.com/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 25 Feb 2017 17:34:53 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:photo-retouche.html</guid><category>picture</category></item><item><title>Snap</title><link>https://mothsart.github.io/snap.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;http://korben.info/installer-paquets-snap-ubuntu-ligne-de-commande.html&lt;/p&gt;
 &lt;h2&gt;Explorer les snap via un moteur de recherche&lt;/h2&gt;
 &lt;p&gt;https://uappexplorer.com/&lt;/p&gt;
 &lt;h2&gt;API&lt;/h2&gt;
-&lt;p&gt;https://wiki.ubuntu.com/AppStore/Interfaces/ClickPackageIndex&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Oct 2016 15:17:18 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-08-07:snap.html</guid><category>snap</category><category>ubuntu</category><category>linux</category></item><item><title>Des exemples Rust</title><link>http://127.0.0.1:4000/exemples-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;https://wiki.ubuntu.com/AppStore/Interfaces/ClickPackageIndex&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Oct 2016 15:17:18 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:snap.html</guid><category>snap</category><category>ubuntu</category><category>linux</category></item><item><title>Des exemples Rust</title><link>https://mothsart.github.io/exemples-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Des exemples de code Rust que je réutilise (mais que je n'arrive pas à mémoriser)&lt;/p&gt;
 &lt;h2&gt;Enum récursif&lt;/h2&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-rust"&gt;#[derive(Debug)]
@@ -1570,7 +1570,7 @@ let machaine_string:String = machaine_str.to_string();&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Des traits pour de la programmation générique :
 https://github.com/apasel422/eclectic&lt;/p&gt;
 &lt;p&gt;des websockets :&lt;/p&gt;
-&lt;p&gt;https://github.com/housleyjk/ws-rs&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-07-30:exemples-rust.html</guid><category>rust</category></item><item><title>AbulEdu</title><link>http://127.0.0.1:4000/abuledu.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;https://github.com/housleyjk/ws-rs&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-30:exemples-rust.html</guid><category>rust</category></item><item><title>AbulEdu</title><link>https://mothsart.github.io/abuledu.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Etant un jeune papa et défenseur d'un numérique ouvert, citoyen (liberté, égalité, fraternité) et responsable, j'ai décidé de participer au projet &lt;strong&gt;&lt;a href="https://fr.ulule.com/developpement-dabuledu"&gt;AbulEdu&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Pour l'instant, ça ne concerne que la création d'illustrations.&lt;/p&gt;
 &lt;p&gt;L'objectif est à multiple tranchants : elle va concerner &lt;strong&gt;&lt;a href="https://fr.wikipedia.org/wiki/Utilisateur:MothsART"&gt;Wikipédia Commons&lt;/a&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;a href="https://fr.vikidia.org/wiki/Utilisateur:MothsART"&gt;VikiDia&lt;/a&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;a href="https://openclipart.org/user-detail/mothsart"&gt;OpenClipArt&lt;/a&gt;&lt;/strong&gt; et &lt;strong&gt;&lt;a href="https://primtux.fr/"&gt;PrimTux&lt;/a&gt;&lt;/strong&gt; dans la foulée.&lt;/p&gt;
@@ -1648,18 +1648,18 @@ Après, je serais quitte de dépasser...&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://commons.wikimedia.org/wiki/File:Mastodonte.svg"&gt;Mastondonte&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://commons.wikimedia.org/wiki/File:Organes_du_corps_humain.svg"&gt;Organes du corps humain&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Dépôt GIT&lt;/h2&gt;
-&lt;p&gt;Afin de tout centraliser, j'ai décidé de tout mettre dans un &lt;strong&gt;&lt;a href="https://github.com/mothsART/abuledu"&gt;dépôt GIT d'illustration&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 25 May 2017 00:16:44 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-07-12:abuledu.html</guid><category>linux</category><category>libre</category></item><item><title>Bench Linux</title><link>http://127.0.0.1:4000/bench-linux.html</link><description>&lt;h2&gt;Vérifier si l'accélération graphique est actif&lt;/h2&gt;
+&lt;p&gt;Afin de tout centraliser, j'ai décidé de tout mettre dans un &lt;strong&gt;&lt;a href="https://github.com/mothsART/abuledu"&gt;dépôt GIT d'illustration&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 25 May 2017 00:16:44 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:abuledu.html</guid><category>linux</category><category>libre</category></item><item><title>Bench Linux</title><link>https://mothsart.github.io/bench-linux.html</link><description>&lt;h2&gt;Vérifier si l'accélération graphique est actif&lt;/h2&gt;
 &lt;p&gt;glxinfo | grep "direct rendering"&lt;/p&gt;
 &lt;h2&gt;lancement du benchmark de Mesa (implémentation libre d'opengl)&lt;/h2&gt;
 &lt;p&gt;Afin de ne pas être limité par la fréquence de rafraichissement (en général 60) Il peut être préférable d'entrer la commande suivante. N'oubliez pas d'exécuter dans la fenêtre du terminal ctrl+c pour shunter glxgears.&lt;/p&gt;
 &lt;p&gt;vblank_mode=0 glxgears&lt;/p&gt;
 &lt;h2&gt;Bench CPU&lt;/h2&gt;
-&lt;p&gt;7z b&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-07-12:bench-linux.html</guid><category>linux</category></item><item><title>Logiciels Linux</title><link>http://127.0.0.1:4000/logiciels-linux.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;7z b&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:bench-linux.html</guid><category>linux</category></item><item><title>Logiciels Linux</title><link>https://mothsart.github.io/logiciels-linux.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;J'ai découvert des applis sympas au fil de ma pérégrination&lt;/p&gt;
 &lt;h2&gt;Liste&lt;/h2&gt;
 &lt;p&gt;Midori
 PCManFM : rempace allègrement Nautilus
-LXTerminal&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 03 Oct 2016 00:56:09 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-07-12:logiciels-linux.html</guid><category>linux</category><category>soft</category></item><item><title>Pourquoi Wayland</title><link>http://127.0.0.1:4000/pourquoi-wayland.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+LXTerminal&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 03 Oct 2016 00:56:09 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:logiciels-linux.html</guid><category>linux</category><category>soft</category></item><item><title>Pourquoi Wayland</title><link>https://mothsart.github.io/pourquoi-wayland.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Beaucoup de bruit autours de &lt;strong&gt;Wayland&lt;/strong&gt; (et de &lt;strong&gt;Mir&lt;/strong&gt;) sans savoir ce que ça va apporter par rapport au serveur X (Xorg).
 Du coup, j'essai d'éclaircir un peu par mes recherches.&lt;/p&gt;
 &lt;h2&gt;De la sécurité&lt;/h2&gt;
@@ -1690,7 +1690,7 @@ A priori, ça porte du fruit.&lt;/p&gt;
 &lt;p&gt;Néanmoins, Mir fait office de protocole et de compositeur.
 Il est donc &lt;/p&gt;
 &lt;h2&gt;liens&lt;/h2&gt;
-&lt;p&gt;http://mupuf.org/blog/2014/02/19/wayland-compositors-why-and-how-to-handle/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-07-12:pourquoi-wayland.html</guid><category>wayland</category><category>linux</category></item><item><title>Projets libres éducatifs</title><link>http://127.0.0.1:4000/projets-libre-educatif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;http://mupuf.org/blog/2014/02/19/wayland-compositors-why-and-how-to-handle/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:pourquoi-wayland.html</guid><category>wayland</category><category>linux</category></item><item><title>Projets libres éducatifs</title><link>https://mothsart.github.io/projets-libre-educatif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Voici un condensé des projets libres que je suis concernant l'éducation.&lt;/p&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://sitespe.fr"&gt;http://sitespe.fr&lt;/a&gt;&lt;/p&gt;
@@ -1714,9 +1714,9 @@ Tux Typing&lt;/p&gt;
 &lt;h2&gt;Logiciels On-line&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www.logicieleducatif.fr"&gt;http://www.logicieleducatif.fr&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://ecole.edulibre.org"&gt;http://ecole.edulibre.org&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://cyrille.largillier.org/cours_numerique"&gt;http://cyrille.largillier.org/cours_numerique&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 04 Jun 2017 13:07:33 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-07-12:projets-libre-educatif.html</guid><category>libre</category><category>linux</category><category>éduatif</category></item><item><title>Windows vs Linux</title><link>http://127.0.0.1:4000/windows-vs-linux.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://cyrille.largillier.org/cours_numerique"&gt;http://cyrille.largillier.org/cours_numerique&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 04 Jun 2017 13:07:33 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:projets-libre-educatif.html</guid><category>libre</category><category>linux</category><category>éduatif</category></item><item><title>Windows vs Linux</title><link>https://mothsart.github.io/windows-vs-linux.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Comparer Windows à Linux c'est comme comparer &lt;/p&gt;
-&lt;h2&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-07-12:windows-vs-linux.html</guid><category>windows</category><category>linux</category></item><item><title>Macros rust</title><link>http://127.0.0.1:4000/macros-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;h2&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:windows-vs-linux.html</guid><category>windows</category><category>linux</category></item><item><title>Macros rust</title><link>https://mothsart.github.io/macros-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;h3&gt;println!&lt;/h3&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-rust"&gt;use std::fs::File;
 
@@ -1742,7 +1742,7 @@ fn main() {
 &lt;p&gt;file!&lt;/p&gt;
 &lt;p&gt;vec!&lt;/p&gt;
 &lt;p&gt;log_syntax!&lt;/p&gt;
-&lt;p&gt;trace_macros!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Oct 2016 15:17:18 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-06-20:macros-rust.html</guid><category>rust</category></item><item><title>Web Offline</title><link>http://127.0.0.1:4000/web-offline.html</link><description>&lt;h2&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-06-20:web-offline.html</guid><category>offline</category></item><item><title>Aide mémoire GIT</title><link>http://127.0.0.1:4000/aide-memoire-git.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;trace_macros!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Oct 2016 15:17:18 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:macros-rust.html</guid><category>rust</category></item><item><title>Web Offline</title><link>https://mothsart.github.io/web-offline.html</link><description>&lt;h2&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:web-offline.html</guid><category>offline</category></item><item><title>Aide mémoire GIT</title><link>https://mothsart.github.io/aide-memoire-git.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;GIT est un super utilitaire mais son nombre de commandes est juste exponentiel.&lt;/p&gt;
 &lt;h2&gt;Suppression de l'index&lt;/h2&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git checkout -- unfichier
@@ -2011,7 +2011,7 @@ git push -f&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www.git-attitude.fr/2014/09/15/30-options-git-qui-gagnent-a-etre-connues"&gt;http://www.git-attitude.fr/2014/09/15/30-options-git-qui-gagnent-a-etre-connues&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/2221658/whats-the-difference-between-head-and-head-in-git"&gt;http://stackoverflow.com/questions/2221658whats-the-difference-between-head-and-head-in-git&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 18 Sep 2018 19:45:04 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-06-20:aide-memoire-git.html</guid><category>git</category><category>linux</category></item><item><title>Aide mémoire sh</title><link>http://127.0.0.1:4000/aide-memoire-sh.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/2221658/whats-the-difference-between-head-and-head-in-git"&gt;http://stackoverflow.com/questions/2221658whats-the-difference-between-head-and-head-in-git&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 18 Sep 2018 19:45:04 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-git.html</guid><category>git</category><category>linux</category></item><item><title>Aide mémoire sh</title><link>https://mothsart.github.io/aide-memoire-sh.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;find . | grep actual&lt;/code&gt;&lt;/pre&gt;
 
 
@@ -2028,10 +2028,10 @@ git push -f&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;extraction récursive&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
-&lt;p&gt;http://www.grimoire-command.es&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-06-20:aide-memoire-sh.html</guid><category>sh</category><category>linux</category></item><item><title>Aide mémoire Sublime Text 3</title><link>http://127.0.0.1:4000/aide-memoire-sublime-text.html</link><description>&lt;h2&gt;Fonctionnalités&lt;/h2&gt;
+&lt;p&gt;http://www.grimoire-command.es&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-sh.html</guid><category>sh</category><category>linux</category></item><item><title>Aide mémoire Sublime Text 3</title><link>https://mothsart.github.io/aide-memoire-sublime-text.html</link><description>&lt;h2&gt;Fonctionnalités&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://sametmax.com/10-astuces-pour-sublime-text-2"&gt;http://sametmax.com/10-astuces-pour-sublime-text-2&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Edit/StringEncode : permet d'encoder des chaines de caractères&lt;/p&gt;
-&lt;p&gt;&lt;kbd&gt;Alt&lt;/kbd&gt;&lt;kbd&gt;Q&lt;/kbd&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 15 Jan 2016 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-06-20:aide-memoire-sublime-text.html</guid><category>sublimetext</category></item><item><title>Aide mémoire Tmux</title><link>http://127.0.0.1:4000/aide-memoire-tmux.html</link><description>&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;&lt;kbd&gt;Alt&lt;/kbd&gt;&lt;kbd&gt;Q&lt;/kbd&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 15 Jan 2016 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-sublime-text.html</guid><category>sublimetext</category></item><item><title>Aide mémoire Tmux</title><link>https://mothsart.github.io/aide-memoire-tmux.html</link><description>&lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Ca fait maintenant 2 bonnes années que j'utilise &lt;strong&gt;Tmux&lt;/strong&gt; à la place du viellissant &lt;strong&gt;Screen&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Tmux est un &lt;strong&gt;multiplexeur&lt;/strong&gt; de terminal &lt;strong&gt;configurable&lt;/strong&gt; qui gère aussi bien les raccourcis clavier que les interactions de la souris.&lt;/p&gt;
 &lt;h2&gt;Raccourci dans Tmux&lt;/h2&gt;
@@ -2127,7 +2127,7 @@ Cet outil en cli permet de les convertir en un format lisible pour Tmuxp.&lt;/p&
     # préfixé par grep (dût à GREP_OPTIONS='-n')
     tmux kill-session -t &amp;quot;$tmux_session&amp;quot;;
 }
-alias tmuxkillallsessions='tmux_kill_all_sessions'&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 25 Feb 2017 17:34:53 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-06-20:aide-memoire-tmux.html</guid><category>tmux</category><category>tmuxp</category><category>python</category><category>linux</category></item><item><title>Aide mémoire Vi</title><link>http://127.0.0.1:4000/aide-memoire-vi.html</link><description>&lt;h2&gt;Fonctionnalités&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 15 Jan 2016 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-06-20:aide-memoire-vi.html</guid><category>vi</category></item><item><title>Aide mémoire Zsh</title><link>http://127.0.0.1:4000/aide-memoire-zsh.html</link><description>&lt;p&gt;Et oui, pauvre mortel, je ne retiens pas toujours les fonctions utiles de ZSH et son pendant naturel "Oh my Zsh"&lt;/p&gt;
+alias tmuxkillallsessions='tmux_kill_all_sessions'&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 25 Feb 2017 17:34:53 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-tmux.html</guid><category>tmux</category><category>tmuxp</category><category>python</category><category>linux</category></item><item><title>Aide mémoire Vi</title><link>https://mothsart.github.io/aide-memoire-vi.html</link><description>&lt;h2&gt;Fonctionnalités&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 15 Jan 2016 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-vi.html</guid><category>vi</category></item><item><title>Aide mémoire Zsh</title><link>https://mothsart.github.io/aide-memoire-zsh.html</link><description>&lt;p&gt;Et oui, pauvre mortel, je ne retiens pas toujours les fonctions utiles de ZSH et son pendant naturel "Oh my Zsh"&lt;/p&gt;
 &lt;h2&gt;Utilitaires&lt;/h2&gt;
 &lt;h3&gt;Git&lt;/h3&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-bash"&gt;git list # donne la liste des gitignores pouvant être créé à la volé
@@ -2170,17 +2170,17 @@ image pattern1 pattern2 # va lancer duckduckgo avec les mots recherchés dans la
 n-alias&lt;/code&gt;&lt;/pre&gt;
 
 
-&lt;h2&gt;Mes scripts d'à moi&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-06-20:aide-memoire-zsh.html</guid><category>zsh</category><category>linux</category></item><item><title>SSH</title><link>http://127.0.0.1:4000/ssh.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;h2&gt;Mes scripts d'à moi&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:aide-memoire-zsh.html</guid><category>zsh</category><category>linux</category></item><item><title>SSH</title><link>https://mothsart.github.io/ssh.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;SSH fait parti des outils indispensables de l'admin sys (surtout linuxien).&lt;/p&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
-&lt;p&gt;https://github.com/emre/storm&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-06-20:ssh.html</guid><category>ssh</category><category>python</category></item><item><title>J'aime pas Apple</title><link>http://127.0.0.1:4000/dislike-apple.html</link><description>&lt;h2&gt;Mon usage de IOS&lt;/h2&gt;
+&lt;p&gt;https://github.com/emre/storm&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:ssh.html</guid><category>ssh</category><category>python</category></item><item><title>J'aime pas Apple</title><link>https://mothsart.github.io/dislike-apple.html</link><description>&lt;h2&gt;Mon usage de IOS&lt;/h2&gt;
 &lt;p&gt;Autant le dire de façon clair : je n'aime pas (et n'ai jamais aimé) Apple.
 J'ai du travaillé sur support IOs au boulot et j'ai vraiment essayé de me contre-dire.&lt;/p&gt;
 &lt;p&gt;J'ai une tablette archos Android (- de 100€) @home sans doute mal configuré (y'a des jeux, des applis à gogos) qui tourne en définitive mieux que des tablettes Apple fraichement acheté au prix fort!&lt;/p&gt;
 &lt;p&gt;Je comprend toujours pas cet engoument entours de leurs produits? 
 C'est sensé être du produit de luxe, non ?
 Mon doigt est reconnu une fois sur 2 (alors que sous Android avec un film de protection, j'ai aucun soucis), l'interface est juste trop lente...&lt;/p&gt;
-&lt;p&gt;L'ergonomie c'est juste pas possible... et en plus le design, je le trouve &lt;strong&gt;old scool&lt;/strong&gt; (i really love flat design)&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-06-09:dislike-apple.html</guid><category>apple</category><category>ios</category><category>tablette</category></item><item><title>Que penser du langage Swift ?</title><link>http://127.0.0.1:4000/que-penser-de-swift.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;L'ergonomie c'est juste pas possible... et en plus le design, je le trouve &lt;strong&gt;old scool&lt;/strong&gt; (i really love flat design)&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-09:dislike-apple.html</guid><category>apple</category><category>ios</category><category>tablette</category></item><item><title>Que penser du langage Swift ?</title><link>https://mothsart.github.io/que-penser-de-swift.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Swift est le nouveau bébé d'Apple pour créer des applications.
 Il va partager un bon moment un environnement hétérogène avec Objective C...&lt;/p&gt;
 &lt;p&gt;Voici mon analyse sur ce langage.&lt;/p&gt;
@@ -2203,7 +2203,7 @@ j'espère que Google envisage sérieusement un remplaçant rapidement : Rust ple
 &lt;h2&gt;Pourquoi créer un nouveau langage ?!&lt;/h2&gt;
 &lt;p&gt;Rien dans Swift n'est réellement neuf.
 Pourquoi ne pas s'être greffé sur des langages déjà existants ?!
-Ca fragmente encore plus le marché du travail... c'est juste désespérant.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 27 Feb 2018 15:27:03 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-06-09:que-penser-de-swift.html</guid><category>rust</category><category>swift</category><category>apple</category></item><item><title>Coreutils</title><link>http://127.0.0.1:4000/coreutils.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+Ca fragmente encore plus le marché du travail... c'est juste désespérant.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 27 Feb 2018 15:27:03 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-09:que-penser-de-swift.html</guid><category>rust</category><category>swift</category><category>apple</category></item><item><title>Coreutils</title><link>https://mothsart.github.io/coreutils.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;h2&gt;$PATH&lt;/h2&gt;
 &lt;p&gt;variable linux incontournable donnant la liste des répertoires contenant des programmes executables.&lt;/p&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;echo $PATH | tr : \\n&lt;/code&gt;&lt;/pre&gt;
@@ -2238,7 +2238,7 @@ dd if=/dev/zero of=/dev/hda conv=notrunc&lt;/p&gt;
 &lt;h2&gt;truncate&lt;/h2&gt;
 &lt;p&gt;réduire la taille d'un fichier à 0
 truncate -s 0 /home/skyminds/error.log&lt;/p&gt;
-&lt;h2&gt;eval&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 11:54:35 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-06-09:coreutils.html</guid><category>sh</category><category>linux</category></item><item><title>Cahier de bonnes pratiques Javascript</title><link>http://127.0.0.1:4000/bonnes-pratiques-js.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;h2&gt;eval&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 11:54:35 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-09:coreutils.html</guid><category>sh</category><category>linux</category></item><item><title>Cahier de bonnes pratiques Javascript</title><link>https://mothsart.github.io/bonnes-pratiques-js.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Ce cahier est dédié à de l'usage de javascript dit &lt;strong&gt;classique&lt;/strong&gt;  ce qui sous-entend, pas de frameworks révolutionnaires style &lt;strong&gt;Angular&lt;/strong&gt;, &lt;strong&gt;React&lt;/strong&gt; et autre.
 Pas d'utilisation de transpiler tel que Typescript, CofeeScript ou même BabelJS.&lt;/p&gt;
 &lt;p&gt;Du javascript en mode vanilla avec potentiellement un peu de Jquery.&lt;/p&gt;
@@ -2263,7 +2263,7 @@ Un évènement devrait être dans 99% du temps sur l'élément en lui evitant le
 &lt;p&gt;function monappel() {
     ...;
     return false;
-}&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-05-23:bonnes-pratiques-js.html</guid><category>javascript</category></item><item><title>Gulp</title><link>http://127.0.0.1:4000/gulp.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-05-23:gulp.html</guid><category>frontend</category><category>js</category><category>css</category><category>html</category></item><item><title>NodeJS</title><link>http://127.0.0.1:4000/nodejs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+}&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-23:bonnes-pratiques-js.html</guid><category>javascript</category></item><item><title>Gulp</title><link>https://mothsart.github.io/gulp.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-23:gulp.html</guid><category>frontend</category><category>js</category><category>css</category><category>html</category></item><item><title>NodeJS</title><link>https://mothsart.github.io/nodejs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;C'est bien de redéfinir ce qu'est &lt;strong&gt;NodeJS&lt;/strong&gt; car il y a souvent beaucoup de confusion (et d'enthousiasme irrationnel) autours de cette techno.&lt;/p&gt;
 &lt;p&gt;Historiquement, &lt;strong&gt;Javascript&lt;/strong&gt; à pris réellement ses titres de noblesse lorsque Google à lancé son navigateur Chrome.
 Pour ce démarquer, ce navigateur disposait d'un moteur indépendant, dopé aux emphétamines (grâce à son &lt;strong&gt;JIT&lt;/strong&gt;) implémentant le &lt;strong&gt;Javascript&lt;/strong&gt; comme jamais : ce moteur, c'est &lt;strong&gt;V8&lt;/strong&gt;.&lt;/p&gt;
@@ -2299,7 +2299,7 @@ Que le traitement du second moteur soit synchrone ou asynchrone, il sera de tout
 &lt;p&gt;J'ai souvent remarqué que certaines solutions de perfs résolus par de l'asynchronisme était en réalité un déni du réel problème.
 La solution se trouvait plutôt dans un comportement &lt;strong&gt;lazy&lt;/strong&gt;, du &lt;strong&gt;caching&lt;/strong&gt;, des soucis d'architecture, d'algorithme ou pire, de requêtage (sql or no)...
 Bref, la solution était ailleurs.&lt;/p&gt;
-&lt;p&gt;C'est pas adapté pour faire du langage serveur. &lt;strong&gt;Meteor&lt;/strong&gt; est un projet très intéressant, un proof of concept assez révolutionnaire mais rien, absolument rien de ce qui est fait en &lt;strong&gt;Javascript&lt;/strong&gt; côté serveur n'est pas reproductible avec un autre langage... et surtout, pour un coût très différent (un code plus concis, une équipe plus réduite etc).&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-05-23:nodejs.html</guid><category>javascript</category><category>nodejs</category></item><item><title>NPM</title><link>http://127.0.0.1:4000/npm.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;C'est pas adapté pour faire du langage serveur. &lt;strong&gt;Meteor&lt;/strong&gt; est un projet très intéressant, un proof of concept assez révolutionnaire mais rien, absolument rien de ce qui est fait en &lt;strong&gt;Javascript&lt;/strong&gt; côté serveur n'est pas reproductible avec un autre langage... et surtout, pour un coût très différent (un code plus concis, une équipe plus réduite etc).&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-23:nodejs.html</guid><category>javascript</category><category>nodejs</category></item><item><title>NPM</title><link>https://mothsart.github.io/npm.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Si l'on veut faire du dev frontend de qualité, NodeJS et son gestionnaire de dépendance, NPM est désormais indispensable.&lt;/p&gt;
 &lt;h2&gt;NPM&lt;/h2&gt;
 &lt;p&gt;Npm va chercher ses dépendances dans un fichier packages.json (éditable via npm init)&lt;/p&gt;
@@ -2330,7 +2330,7 @@ Bref, la solution était ailleurs.&lt;/p&gt;
 &lt;h2&gt;Installer la bonne version de NodeJS&lt;/h2&gt;
 &lt;p&gt;Si vous installer une version trop récente, vous courez tout droit à la catastrophe.&lt;/p&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;sudo npm install n
-sudo n 5.11.1&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 07 Aug 2016 15:15:35 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-05-23:npm.html</guid><category>nodejs</category><category>npm</category><category>javascript</category></item><item><title>PostCSS</title><link>http://127.0.0.1:4000/postcss.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+sudo n 5.11.1&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 07 Aug 2016 15:15:35 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-23:npm.html</guid><category>nodejs</category><category>npm</category><category>javascript</category></item><item><title>PostCSS</title><link>https://mothsart.github.io/postcss.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Le css a des lacunes dont plusieurs pré-processeurs ont essayé (less, sass, stylus) de combler les lacunes.&lt;/p&gt;
 &lt;p&gt;Le soucis d'une surcouche c'est que ça nécessite d'apprendre un langage supplémentaire tout en connaissant bien le css généré.&lt;/p&gt;
 &lt;p&gt;En parallèle, les dernières spécifications du W3C comblent pas mal du déficit.
@@ -2342,7 +2342,7 @@ Elles ne seront pas implémenté sur tous les navigateurs avant un moment... alo
 &lt;li&gt;On choisi quels sont les navigateurs impactés : on génére par conséquent du css valide pour ces navigateurs !&lt;/li&gt;
 &lt;li&gt;utilisation de variables&lt;/li&gt;
 &lt;li&gt;détecter des erreurs à la compilation plutôt qu'à l'execution.&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-05-23:postcss.html</guid><category>css</category><category>postcss</category><category>javascript</category></item><item><title>The QuiZz : Partie 2</title><link>http://127.0.0.1:4000/the-quizz-part-2.html</link><description>&lt;h2&gt;The QuiZz : Partie 2&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-23:postcss.html</guid><category>css</category><category>postcss</category><category>javascript</category></item><item><title>The QuiZz : Partie 2</title><link>https://mothsart.github.io/the-quizz-part-2.html</link><description>&lt;h2&gt;The QuiZz : Partie 2&lt;/h2&gt;
 &lt;p&gt;Comme promis, la partie 2 ne va s'atteler qu'à fournir le même cahier des charges que le soft de la partie 1 mais pour une appli web.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://github.com/mothsART/the_quizz/releases/tag/part2"&gt;dépôt Git : Etape 2&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Pré-requis&lt;/h2&gt;
@@ -2454,7 +2454,7 @@ windows:
 &lt;li&gt;
 &lt;p&gt;Version Cli : détection des évènements souris&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 07 Aug 2016 15:15:35 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-05-23:the-quizz-part-2.html</guid><category>rust</category><category>gettext</category><category>cli</category><category>postgresql</category></item><item><title>PostGreSQL</title><link>http://127.0.0.1:4000/postgresql.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 07 Aug 2016 15:15:35 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-23:the-quizz-part-2.html</guid><category>rust</category><category>gettext</category><category>cli</category><category>postgresql</category></item><item><title>PostGreSQL</title><link>https://mothsart.github.io/postgresql.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Mon aide-mémoire pour l'indéboulonable &lt;strong&gt;PostGreSQL&lt;/strong&gt; : la meilleur base SQL libre !&lt;/p&gt;
 &lt;h2&gt;Commandes&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;\q&lt;/strong&gt; : quitter&lt;/p&gt;
@@ -2516,7 +2516,7 @@ VALUES ('T_601', 'Yojimbo', 106, DEFAULT, 'Drama');&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;a href="http://dgriessinger.developpez.com/postgresql/sequences"&gt;http://dgriessinger.developpez.com/postgresql/sequences&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www.gcolpart.com/howto/postgresql.php4"&gt;http://www.gcolpart.com/howto/postgresql.php4&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.system-linux.eu/index.php?post/2016/03/10/installation-et-administration-Postgresql"&gt;http://www.system-linux.eu/index.php?post/2016/03/10/installation-et-administration-Postgresql&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-05-11:postgresql.html</guid><category>postgres</category><category>postgresql</category><category>sql</category></item><item><title>The QuiZz : Partie 1</title><link>http://127.0.0.1:4000/the-quizz-part-1.html</link><description>&lt;h2&gt;The QuiZz : Partie 1&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.system-linux.eu/index.php?post/2016/03/10/installation-et-administration-Postgresql"&gt;http://www.system-linux.eu/index.php?post/2016/03/10/installation-et-administration-Postgresql&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-11:postgresql.html</guid><category>postgres</category><category>postgresql</category><category>sql</category></item><item><title>The QuiZz : Partie 1</title><link>https://mothsart.github.io/the-quizz-part-1.html</link><description>&lt;h2&gt;The QuiZz : Partie 1&lt;/h2&gt;
 &lt;p&gt;Après mon apprentissage de Rust (doc, tutos etc.), j'ai décidé de m'atteler à un projet un peu plus abouti.&lt;/p&gt;
 &lt;p&gt;Comme toujours, je pars du principe qu'il vaut mieux se lancer sur des projets minimalistes et allez au bout plutôt que de partir dans du gargantuesque et bacler.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;The QuiZz&lt;/strong&gt; c'est donc un logiciel créé dans l'optique d'apprendre &lt;strong&gt;Rust&lt;/strong&gt; et ses librairies, le tout en plusieurs étapes :
@@ -2583,7 +2583,7 @@ insert into questions (entitled, response) values ('Cargo est-il le gestionnaire
 &lt;li&gt;des réponses ouvertes&lt;/li&gt;
 &lt;li&gt;&lt;/li&gt;
 &lt;li&gt;pfuu, j'avais dit que c'était pas un projet sérieux.&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 07 Aug 2016 15:15:35 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-05-11:the-quizz-part-1.html</guid><category>rust</category><category>gettext</category><category>cli</category><category>postgresql</category></item><item><title>BabelJS</title><link>http://127.0.0.1:4000/babeljs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 07 Aug 2016 15:15:35 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-11:the-quizz-part-1.html</guid><category>rust</category><category>gettext</category><category>cli</category><category>postgresql</category></item><item><title>BabelJS</title><link>https://mothsart.github.io/babeljs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Le développement frontend passe désormais par &lt;a href="https://babeljs.io/"&gt;Babel&lt;/a&gt;
 Il permet de passer par Ecmascript 6, appelé également Ecmascript 2015 (super la confusion) et de le compiler dans une version supporté par les navigateurs actuels.&lt;/p&gt;
 &lt;p&gt;C'est à mon sens plus pérenne que tous les transpiler tel que Typescript, Cofeescript etc.&lt;/p&gt;
@@ -2592,7 +2592,7 @@ Il permet de passer par Ecmascript 6, appelé également Ecmascript 2015 (super 
 &lt;li&gt;utilisation de constantes &lt;strong&gt;const&lt;/strong&gt; et de vrai variable à porté limité &lt;strong&gt;let&lt;/strong&gt;!&lt;/li&gt;
 &lt;li&gt;de la vrai POO avec des &lt;strong&gt;classes&lt;/strong&gt; !&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;yield&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-05-02:babeljs.html</guid><category>babel</category><category>babeljs</category><category>javascript</category></item><item><title>Bug</title><link>http://127.0.0.1:4000/bug.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:babeljs.html</guid><category>babel</category><category>babeljs</category><category>javascript</category></item><item><title>Bug</title><link>https://mothsart.github.io/bug.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Mais qu'est-ce qu'un bug et pourquoi le développeur à ce sentiment d'inachevé ?
 Je vais tenter via cet article de remettre les choses à plat sur ces notions, pris comme acquis et qui ne le sont généralement pas.&lt;/p&gt;
 &lt;h2&gt;Garantir un logiciel comme stable&lt;/h2&gt;
@@ -2717,7 +2717,7 @@ Il peut proposer les correctifs (ou la procédure de correction) mais il ne les 
 &lt;p&gt;On peut dire qu'un logiciel a atteind ses objectifs si il fonctionne dans l'ensemble des cas d'un cahier fonctionnel. (donc une liste fini)
 Il n'est dans ce cas aucunement excent de bugs, bien au contraire : il en reste sans doute une infinité.
 La nuance est qu'ils ne sont pas pénalisant pour l'utilisateur.&lt;/p&gt;
-&lt;p&gt;Cette réflexion ne parle pas des autres aspects quant à la satisfaction cliente : à savoir la qualité du suivi, de l'assistance, de la réactivité, de l'ergonomie, de la pédagogie etc.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 11:54:35 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-05-02:bug.html</guid><category>bug</category></item><item><title>GIT config</title><link>http://127.0.0.1:4000/mon-gitconfig.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Cette réflexion ne parle pas des autres aspects quant à la satisfaction cliente : à savoir la qualité du suivi, de l'assistance, de la réactivité, de l'ergonomie, de la pédagogie etc.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 11:54:35 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:bug.html</guid><category>bug</category></item><item><title>GIT config</title><link>https://mothsart.github.io/mon-gitconfig.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;L'utilisateur avancé de &lt;strong&gt;GIT&lt;/strong&gt; à forcément un gitconfig "couteau suisse" sous la main.
 Voici une partie du mien avec les commentaires adéquats.&lt;/p&gt;
 &lt;h2&gt;config&lt;/h2&gt;
@@ -2763,7 +2763,7 @@ On s'en rend pas forcément compte (surtout quand il n'y a rien à mergé).&lt;/
 &lt;p&gt;Mais, ça c'est le comportement par défault du &lt;strong&gt;pull&lt;/strong&gt;.
 Il est possible de le forcer à faire un &lt;strong&gt;rebase&lt;/strong&gt; (git pull --rebase) et ceci directement dans la config de GIT.&lt;/p&gt;
 &lt;p&gt;Si ponctuellement, vous désirez faire un merge, ça reste possible :&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;git pull --no-rebase&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-05-02:mon-gitconfig.html</guid><category>git</category><category>linux</category></item><item><title>Pourquoi Rust</title><link>http://127.0.0.1:4000/pourquoi-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;git pull --no-rebase&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:mon-gitconfig.html</guid><category>git</category><category>linux</category></item><item><title>Pourquoi Rust</title><link>https://mothsart.github.io/pourquoi-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Depuis maintenant 1 an, je m'intéresse de près au langage &lt;strong&gt;Rust&lt;/strong&gt;.
 Qu'est ce qui peut motiver le choix d'un nouveau langage alors qu'il en existe déjà un nombre incalculable ?&lt;/p&gt;
 &lt;p&gt;Ayant déjà de bons acquis en C/C#/Python/Javascript, on peut naturellement se poser la question de pourquoi s'investir dans un nouveau language.&lt;/p&gt;
@@ -2847,7 +2847,7 @@ trait-based generics
 pattern matching
 type inference
 minimal runtime
-efficient C bindings&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-05-02:pourquoi-rust.html</guid><category>rust</category><category>python</category><category>Java</category><category>Javascript</category><category>C</category><category>C++</category><category>C#</category></item><item><title>Ma stack Frontend</title><link>http://127.0.0.1:4000/stack-frontend.html</link><description>&lt;h2&gt;Intro (Gros WIP Unstable!!!)&lt;/h2&gt;
+efficient C bindings&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:pourquoi-rust.html</guid><category>rust</category><category>python</category><category>Java</category><category>Javascript</category><category>C</category><category>C++</category><category>C#</category></item><item><title>Ma stack Frontend</title><link>https://mothsart.github.io/stack-frontend.html</link><description>&lt;h2&gt;Intro (Gros WIP Unstable!!!)&lt;/h2&gt;
 &lt;p&gt;Ma stack côté frontend (en constante évolution).&lt;/p&gt;
 &lt;p&gt;Comme tout &lt;strong&gt;bon&lt;/strong&gt; développeur, je suis fainéant :
 faire et refaire des tâches ingrates (cqfd: automatisable) me répugne.
@@ -2939,7 +2939,7 @@ cd frontend_workflow&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;Opération inverse (reafficher les exemples)&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;git checkout -- app/&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 25 May 2017 00:16:44 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-05-02:stack-frontend.html</guid><category>frontend</category><category>css</category><category>javascript</category></item><item><title>Ma stack Rust</title><link>http://127.0.0.1:4000/stack-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;git checkout -- app/&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 25 May 2017 00:16:44 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-frontend.html</guid><category>frontend</category><category>css</category><category>javascript</category></item><item><title>Ma stack Rust</title><link>https://mothsart.github.io/stack-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;En vrac, les outils que j'utilise et perfectionne dans mon apprentissage et mon utilisation du language &lt;strong&gt;Rust&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2&gt;MAJ de Rust&lt;/h2&gt;
 &lt;p&gt;On installe Rustup si il n'est pas présent :&lt;/p&gt;
@@ -3072,7 +3072,7 @@ Il subsite donc des erreurs à l'exécution : pour les débusquer, &lt;strong&gt
 
 &lt;p&gt;https://github.com/mmstick/cargo-deb&lt;/p&gt;
 &lt;h2&gt;En vrac&lt;/h2&gt;
-&lt;p&gt;http://rust.developpez.com/faq&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Jul 2017 03:21:58 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-05-02:stack-rust.html</guid><category>rust</category></item><item><title>Pourquoi je boude Node.Js</title><link>http://127.0.0.1:4000/pourquoi-je-boude-nodejs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;http://rust.developpez.com/faq&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Jul 2017 03:21:58 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-rust.html</guid><category>rust</category></item><item><title>Pourquoi je boude Node.Js</title><link>https://mothsart.github.io/pourquoi-je-boude-nodejs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;NodeJS est à la mode.
 Quand je parle de NodeJS, je parle bien entendu de toute la mouvance autours de Javascript.&lt;/p&gt;
 &lt;p&gt;Le principe :
@@ -3104,7 +3104,7 @@ semble LA solution commune.&lt;/p&gt;
 &lt;p&gt;Les besoins du web ne cesse de s'accroitre. Les usages se diversifies.
 Javascript est incontournable et vit son heure de gloire.
 Mais tout à une fin et il vaut mieux ammorcer la chute plutôt que de la subir.&lt;/p&gt;
-&lt;p&gt;Il sera sans doute possible dans moins de 10 ans de faire du web en se passant totalement de Javascript (Plus de CoffeeScript, TypeScript et autre BullshitScript ou VaporWareScript) et donc d'utiliser des langages plus modernes, moins permissifs et plus réactifs tel que &lt;strong&gt;Rust&lt;/strong&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-03-19:pourquoi-je-boude-nodejs.html</guid><category>javascript</category><category>web</category></item><item><title>Encodage</title><link>http://127.0.0.1:4000/encodage.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Il sera sans doute possible dans moins de 10 ans de faire du web en se passant totalement de Javascript (Plus de CoffeeScript, TypeScript et autre BullshitScript ou VaporWareScript) et donc d'utiliser des langages plus modernes, moins permissifs et plus réactifs tel que &lt;strong&gt;Rust&lt;/strong&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-03-19:pourquoi-je-boude-nodejs.html</guid><category>javascript</category><category>web</category></item><item><title>Encodage</title><link>https://mothsart.github.io/encodage.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;L'encodage fait parti de la culture du développeur.
 Comme souvent, elle s'impose à lui : c'est quand il est confronté à des soucis d'encodage qu'il doit l'affronter.&lt;/p&gt;
 &lt;p&gt;Une fois confronté à ce type de problématique, il a besoin d'avoir les outils appropriés. En voici quelques un.&lt;/p&gt;
@@ -3127,7 +3127,7 @@ Comme souvent, elle s'impose à lui : c'est quand il est confronté à des souci
 &lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;function bom_files {
     &amp;quot;List files on a tree with an UT8 BOM (byte order mark)&amp;quot;
     find . -type f -print0 | xargs -0 awk '/^\xEF\xBB\xBF/ {print FILENAME} {nextfile}';
-}&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 12 Jul 2016 23:29:54 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-03-19:encodage.html</guid><category>utf</category><category>encodage</category></item><item><title>Le stockage côté Javascript</title><link>http://127.0.0.1:4000/stockage-frontend.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+}&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 12 Jul 2016 23:29:54 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-03-19:encodage.html</guid><category>utf</category><category>encodage</category></item><item><title>Le stockage côté Javascript</title><link>https://mothsart.github.io/stockage-frontend.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;L'émergence de l'utilisation du web pour de l'appli nécessite d'améliorer le caching de données et la synchronisation.&lt;/p&gt;
 &lt;h2&gt;L'existant&lt;/h2&gt;
 &lt;p&gt;http://caniuse.com/#feat=sql-storage =&amp;gt; en mode disparition&lt;/p&gt;
@@ -3135,7 +3135,7 @@ Comme souvent, elle s'impose à lui : c'est quand il est confronté à des souci
 &lt;p&gt;http://www.alsacreations.com/article/lire/1402-web-storage-localstorage-sessionstorage.html&lt;/p&gt;
 &lt;h2&gt;Oui, mais rien ne passe partout ?!&lt;/h2&gt;
 &lt;p&gt;Et pourquoi pas : https://github.com/kripken/sql.js
-Exemple : http://kripken.github.io/sql.js/GUI/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-03-19:stockage-frontend.html</guid><category>javascript</category><category>frontend</category><category>stockage</category><category>sql</category></item><item><title>Réflexion autour des DVCS</title><link>http://127.0.0.1:4000/reflexion-dvcs.html</link><description>&lt;h2&gt;Introduction&lt;/h2&gt;
+Exemple : http://kripken.github.io/sql.js/GUI/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-03-19:stockage-frontend.html</guid><category>javascript</category><category>frontend</category><category>stockage</category><category>sql</category></item><item><title>Réflexion autour des DVCS</title><link>https://mothsart.github.io/reflexion-dvcs.html</link><description>&lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;GIT a semble-t-il gagner dans la guerre des &lt;strong&gt;Logiciel de gestion de versions&lt;/strong&gt; (&lt;strong&gt;DVCS&lt;/strong&gt;)&lt;/p&gt;
 &lt;p&gt;Pourtant, son remplaçant est peut-être à la porte.&lt;/p&gt;
 &lt;p&gt;Je vais lister ici les points positifs et négatifs de GIT.&lt;/p&gt;
@@ -3163,7 +3163,7 @@ http://sebsauvage.net/wiki/doku.php?id=fossil&lt;/p&gt;
 &lt;p&gt;ne fonctionne pas selon la &lt;strong&gt;théorie des patchs&lt;/strong&gt; tel que le fait &lt;strong&gt;Darcs&lt;/strong&gt; ou &lt;strong&gt;&lt;a href="http://pijul.org"&gt;PIJUL&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;permettre des hooks à partir de langages de haut niveau est souvent délicat et nécessite de passer un fichier shell en amont&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-03-10:reflexion-dvcs.html</guid><category>git</category><category>darcs</category><category>hg</category><category>mercurial</category></item><item><title>Réflexion autour des Imprimantes 3D à usage domestique</title><link>http://127.0.0.1:4000/reflexion-imprimante-3D.html</link><description>&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-03-10:reflexion-dvcs.html</guid><category>git</category><category>darcs</category><category>hg</category><category>mercurial</category></item><item><title>Réflexion autour des Imprimantes 3D à usage domestique</title><link>https://mothsart.github.io/reflexion-imprimante-3D.html</link><description>&lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;La révolution est à notre porte! L'imprimante 3D va révolutionner nos usages, elle va réinventer l'industrie, relocalisé après une délocalisation massive etc.
 Que ça soit dans les médias ou sur Internet, on l'annonce comme LE vecteur du changement.&lt;/p&gt;
 &lt;p&gt;Voici un condensé du pourquoi je ne crois pas que &lt;strong&gt;le changement c'est pour maintenant&lt;/strong&gt;!&lt;/p&gt;
@@ -3199,7 +3199,7 @@ La solution à ça ressemble plus à l'utilisation de &lt;strong&gt;Machine-Outi
 &lt;li&gt;s'il l'on veut reproduire des pièces (souvent le cas : 4 pièces identiques dont 1 défectueuse), il faut s'équiper d'un scanner 3D : la pièce issu du scanner demandera souvent d'être retouché avant d'être utilisable par l'imprimante.&lt;/li&gt;
 &lt;li&gt;Un ou plusieurs annuaire de pièces : si l'on ne veut pas créer sa pièce de toute part, c'est qu'on veut la récupérer sur le web...
 Chercher une aiguille dans une botte de foin prend tout son sens et même si l'on trouve, la qualité de la pièce peut être très discutable.&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-03-10:reflexion-imprimante-3D.html</guid><category>imprimante</category><category>3D</category></item><item><title>Bench de bases de données</title><link>http://127.0.0.1:4000/db-bench.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-03-10:reflexion-imprimante-3D.html</guid><category>imprimante</category><category>3D</category></item><item><title>Bench de bases de données</title><link>https://mothsart.github.io/db-bench.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Le stockage de données est omniprésent.
 Pour celà, le développeur a à sa disposition une gamme incroyable de bases de données.&lt;/p&gt;
 &lt;p&gt;La diversé est tel que le choix peut vite devenir cornélien.&lt;/p&gt;
@@ -3284,7 +3284,7 @@ La participation peut être de différents ordre.
 Néanmoins, relancer d'un autre poste le banc de test et me témoigner des éventuels différences serait sans doute le point le plus
 entousiasmant!&lt;/p&gt;
 &lt;p&gt;Mes intentions sont d'apprendre, perfectionner, consolider ou confronter mes acquis et je tolererais sans sourciller les critiques "constructives".&lt;/p&gt;
-&lt;p&gt;L'intérêt étant justement la remise en question, l'apprentissage et l'ouverture d'esprit.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 25 May 2017 00:16:44 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-02-14:db-bench.html</guid><category>sql</category><category>db</category><category>bench</category><category>benchmark</category></item><item><title>Labo du dev frontend</title><link>http://127.0.0.1:4000/labo-du-dev-frontend.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;L'intérêt étant justement la remise en question, l'apprentissage et l'ouverture d'esprit.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 25 May 2017 00:16:44 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-02-14:db-bench.html</guid><category>sql</category><category>db</category><category>bench</category><category>benchmark</category></item><item><title>Labo du dev frontend</title><link>https://mothsart.github.io/labo-du-dev-frontend.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Afin de perfectionner mes connaissances et mes acquis dans le dev frontend, j'entreprend ici de tester des libs tel que:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;postcss&lt;/li&gt;
@@ -3303,7 +3303,7 @@ entousiasmant!&lt;/p&gt;
 &lt;li&gt;&lt;a href="/labo/frontend/modernizr"&gt;Tests de navigateur (avec et sans user-agent) + tests de fonctionnalités&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="/labo/frontend/ripple_onclick"&gt;Animation au clic&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="/labo/frontend/vanilla"&gt;Bench de comparaison de Jquery/VanillaJS/Xpath (en natif)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-02-14:labo-du-dev-frontend.html</guid><category>frontend</category><category>js</category><category>css</category><category>html</category></item><item><title>Pelican</title><link>http://127.0.0.1:4000/pelican.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-02-14:labo-du-dev-frontend.html</guid><category>frontend</category><category>js</category><category>css</category><category>html</category></item><item><title>Pelican</title><link>https://mothsart.github.io/pelican.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Ce site est mon 2ème essai d'utilisation d'un générateur de site statique.
 J'utilise pour la 2ème fois Pelican : j'ai hésité à passer par autre chose : Jekyl ou Hexo principalement.&lt;/p&gt;
 &lt;p&gt;Néanmoins, j'ai préféré continuer avec Pelican... je sais que le diable ce cache dans les détails, et qu'après un usage intensif, je ne vais trouver que les défauts mais néanmoins avoir des difficultés à les résoudres via des patchs.&lt;/p&gt;
@@ -3399,4 +3399,4 @@ Pelican ne déroge pas à cette règle.&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;transformation des [] et [X] en checkbox =&amp;gt; utile pour des todolistes&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 30 Oct 2016 21:07:42 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-02-14:pelican.html</guid><category>zsh</category></item></channel></rss>
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 30 Oct 2016 21:07:42 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-02-14:pelican.html</guid><category>zsh</category></item></channel></rss>

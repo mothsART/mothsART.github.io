@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>http://127.0.0.1:4000/</link><description></description><lastBuildDate>Wed, 01 Aug 2018 21:36:31 +0200</lastBuildDate><item><title>Editeur WYSIWYG de SVG interactifs</title><link>http://127.0.0.1:4000/editeur-svg-interactif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 01 Aug 2018 21:36:31 +0200</lastBuildDate><item><title>Editeur WYSIWYG de SVG interactifs</title><link>https://mothsart.github.io/editeur-svg-interactif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;L'objectif est simple : éditer un fichier SVG statique afin de le présenter comme un contenu interactif. 
 Permettre l'ajout de zones cliquables pouvant être zoomés et enrichies d'une explication.&lt;/p&gt;
 &lt;p&gt;Les fichiers générés (page HTML contenant le SVG) peuvent servir à divers usages :&lt;/p&gt;
@@ -95,7 +95,7 @@ Jusqu'à présent, j'ai créé les exemples (conception, réalisation sous Inksc
 &lt;h2&gt;Logiciels équivalents ou complémentaires&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://sozi.baierouge.fr/pages/10-about-fr.html"&gt;Sozi&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-09-27:editeur-svg-interactif.html</guid><category>javascript</category><category>svg</category><category>linux</category><category>primtux</category><category>deb</category></item><item><title>Vue.js</title><link>http://127.0.0.1:4000/vue.js.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:editeur-svg-interactif.html</guid><category>javascript</category><category>svg</category><category>linux</category><category>primtux</category><category>deb</category></item><item><title>Vue.js</title><link>https://mothsart.github.io/vue.js.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Pour diverses raisons, j'ai choisi Vue.js comme nouveau framework web.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -114,7 +114,7 @@ Jusqu'à présent, j'ai créé les exemples (conception, réalisation sous Inksc
 &lt;p&gt;http://maurice-chavelli.developpez.com/javascript/vue-js-1-bases/&lt;/p&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;Un condensé de tout ce qui se fait de mieux autours de Vue.js (composants, examples, tutos, ) :&lt;/p&gt;
-&lt;p&gt;https://github.com/vuejs/awesome-vue&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Jul 2017 03:21:58 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-05-25:vue.js.html</guid><category>javascript</category><category>framework</category><category>vue</category><category>vue.js</category></item><item><title>CanIuse</title><link>http://127.0.0.1:4000/caniuse.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;https://github.com/vuejs/awesome-vue&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Jul 2017 03:21:58 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:vue.js.html</guid><category>javascript</category><category>framework</category><category>vue</category><category>vue.js</category></item><item><title>CanIuse</title><link>https://mothsart.github.io/caniuse.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;S'il on veut utiliser une propriété css/js/html ou une api Html5 et être certain que ça fonctionne sur notre nagivateur, le réflexe c'est caniuse.com&lt;/p&gt;
 &lt;p&gt;Mais s'il on veut étayer son argumentaire, le mieux est de passer par les sites des 3 gros navigateurs :&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/shapes"&gt;IE et Edge&lt;/a&gt;&lt;/p&gt;
@@ -123,7 +123,7 @@ Jusqu'à présent, j'ai créé les exemples (conception, réalisation sous Inksc
 &lt;h2&gt;Amélioration progressive&lt;/h2&gt;
 &lt;p&gt;Pour détecter si un navigateur utilise une fonctionnalité, on avait jusqu'à présent &lt;strong&gt;Modernizr&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Cette lib va progressivement disparaitre au profit de &lt;strong&gt;CSS supports&lt;/strong&gt; : 
-&lt;a href="https://la-cascade.io/css-supports-va-vous-changer-la-vie"&gt;Explications sur Css supports&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-04-12:caniuse.html</guid><category>js</category><category>css</category><category>html</category><category>caniuse</category><category>modernizr</category></item><item><title>To be strict or not to be</title><link>http://127.0.0.1:4000/strict-or-not.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;a href="https://la-cascade.io/css-supports-va-vous-changer-la-vie"&gt;Explications sur Css supports&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:caniuse.html</guid><category>js</category><category>css</category><category>html</category><category>caniuse</category><category>modernizr</category></item><item><title>To be strict or not to be</title><link>https://mothsart.github.io/strict-or-not.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Il est recommandé d'utiliser Javascript avec le mode strict.
 Le mode strict c'est un passage à Ecmascript 5 et tous les navigateurs l'implémentent désormais.&lt;/p&gt;
 &lt;h2&gt;Oui, mais... pourquoi ?&lt;/h2&gt;
@@ -154,7 +154,7 @@ On comprend mieux pourquoi aucune doc (de Mozilla ou autre) ne fait état de cet
 Du coup, vous serez gagnant sur les 2 tableaux.&lt;/p&gt;
 &lt;h2&gt;C'est bien beau ton barratin mais qu'est-ce qui nous le prouve ?&lt;/h2&gt;
 &lt;p&gt;Pour vérifier mes dires : voici quelques benchs qui témoignent de la véracité de mes propos : &lt;a href=""&gt;bench&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;A bon entendeur ;)&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-02-09:strict-or-not.html</guid><category>javascript</category><category>bench</category></item><item><title>Vanilla-a-a-a-a</title><link>http://127.0.0.1:4000/vanilla-a-a-a-a.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;A bon entendeur ;)&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-09:strict-or-not.html</guid><category>javascript</category><category>bench</category></item><item><title>Vanilla-a-a-a-a</title><link>https://mothsart.github.io/vanilla-a-a-a-a.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Dans mon existence de développeur, j'ai appris à ne pas me fier à des &lt;em&gt;on-dit&lt;/em&gt;, les tendances (oui, les modes chez les web-dev, ça court le net) et toute forme d'approximation.
 Si on veut être sur de quelques choses, il faut le vérifier.&lt;/p&gt;
 &lt;p&gt;Depuis plusieurs années, les modes se sont succédés dans le dev web frontend :
@@ -196,14 +196,14 @@ Avant de se casser la tête avec un sélecteur compliqué, pensez d'abord à sim
 &lt;/ul&gt;
 &lt;h2&gt;A venir&lt;/h2&gt;
 &lt;p&gt;J'aimerais pouvoir identifier facilement les morceaux de code Jquery à modifier.
-Pour cela, rien de mieux qu'une &lt;strong&gt;expression régulière (regex)&lt;/strong&gt; disponible dans chacune des lignes : il vous suffit de l'appliquer à la source de votre projet via un utilitaire tel que &lt;strong&gt;&lt;a href="https://github.com/BurntSushi/ripgrep"&gt;ripgrep&lt;/a&gt;&lt;/strong&gt; et identifier facilement les fichiers et lignes nécessitant un update ! &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-02-09:vanilla-a-a-a-a.html</guid><category>javascript</category><category>jquery</category><category>xpath</category><category>benchmark</category></item><item><title>Debuggage Javascript</title><link>http://127.0.0.1:4000/debug-js.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+Pour cela, rien de mieux qu'une &lt;strong&gt;expression régulière (regex)&lt;/strong&gt; disponible dans chacune des lignes : il vous suffit de l'appliquer à la source de votre projet via un utilitaire tel que &lt;strong&gt;&lt;a href="https://github.com/BurntSushi/ripgrep"&gt;ripgrep&lt;/a&gt;&lt;/strong&gt; et identifier facilement les fichiers et lignes nécessitant un update ! &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-09:vanilla-a-a-a-a.html</guid><category>javascript</category><category>jquery</category><category>xpath</category><category>benchmark</category></item><item><title>Debuggage Javascript</title><link>https://mothsart.github.io/debug-js.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Debugger du JS ainsi que du html mal formé n'est pas toujours aisé : surtout quand c'est le code de quelqu'un autre ou un très vieux dev.&lt;/p&gt;
 &lt;p&gt;Voici une base d'outils qui permettent de simplifier les choses.&lt;/p&gt;
 &lt;h2&gt;diff DOM contre le HTML mal formé&lt;/h2&gt;
 &lt;p&gt;https://github.com/fiduswriter/diffDOM&lt;/p&gt;
 &lt;h2&gt;tester des objets&lt;/h2&gt;
 &lt;p&gt;http://is.js.org/&lt;/p&gt;
-&lt;h2&gt;Astuces chrome&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-10-15:debug-js.html</guid><category>javascript</category></item><item><title>Webassembly</title><link>http://127.0.0.1:4000/webassembly.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;h2&gt;Astuces chrome&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-15:debug-js.html</guid><category>javascript</category></item><item><title>Webassembly</title><link>https://mothsart.github.io/webassembly.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;https://github.com/DenisKolodin/yew.git : 
 convertir du Rust en wasm, asm.js ou emscripten.&lt;/p&gt;
 &lt;h2&gt;Avantage par rapport à du javascript&lt;/h2&gt;
@@ -215,7 +215,7 @@ convertir du Rust en wasm, asm.js ou emscripten.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h2&gt;l'existant&lt;/h2&gt;
 &lt;p&gt;http://caniuse.com/#feat=asmjs&lt;/p&gt;
-&lt;p&gt;emscripten&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 27 Feb 2018 15:27:03 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-09-21:webassembly.html</guid><category>js</category></item><item><title>Web Offline</title><link>http://127.0.0.1:4000/web-offline.html</link><description>&lt;h2&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-06-20:web-offline.html</guid><category>offline</category></item><item><title>Cahier de bonnes pratiques Javascript</title><link>http://127.0.0.1:4000/bonnes-pratiques-js.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;emscripten&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 27 Feb 2018 15:27:03 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:webassembly.html</guid><category>js</category></item><item><title>Web Offline</title><link>https://mothsart.github.io/web-offline.html</link><description>&lt;h2&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:web-offline.html</guid><category>offline</category></item><item><title>Cahier de bonnes pratiques Javascript</title><link>https://mothsart.github.io/bonnes-pratiques-js.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Ce cahier est dédié à de l'usage de javascript dit &lt;strong&gt;classique&lt;/strong&gt;  ce qui sous-entend, pas de frameworks révolutionnaires style &lt;strong&gt;Angular&lt;/strong&gt;, &lt;strong&gt;React&lt;/strong&gt; et autre.
 Pas d'utilisation de transpiler tel que Typescript, CofeeScript ou même BabelJS.&lt;/p&gt;
 &lt;p&gt;Du javascript en mode vanilla avec potentiellement un peu de Jquery.&lt;/p&gt;
@@ -240,7 +240,7 @@ Un évènement devrait être dans 99% du temps sur l'élément en lui evitant le
 &lt;p&gt;function monappel() {
     ...;
     return false;
-}&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-05-23:bonnes-pratiques-js.html</guid><category>javascript</category></item><item><title>Gulp</title><link>http://127.0.0.1:4000/gulp.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-05-23:gulp.html</guid><category>frontend</category><category>js</category><category>css</category><category>html</category></item><item><title>NodeJS</title><link>http://127.0.0.1:4000/nodejs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+}&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-23:bonnes-pratiques-js.html</guid><category>javascript</category></item><item><title>Gulp</title><link>https://mothsart.github.io/gulp.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-23:gulp.html</guid><category>frontend</category><category>js</category><category>css</category><category>html</category></item><item><title>NodeJS</title><link>https://mothsart.github.io/nodejs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;C'est bien de redéfinir ce qu'est &lt;strong&gt;NodeJS&lt;/strong&gt; car il y a souvent beaucoup de confusion (et d'enthousiasme irrationnel) autours de cette techno.&lt;/p&gt;
 &lt;p&gt;Historiquement, &lt;strong&gt;Javascript&lt;/strong&gt; à pris réellement ses titres de noblesse lorsque Google à lancé son navigateur Chrome.
 Pour ce démarquer, ce navigateur disposait d'un moteur indépendant, dopé aux emphétamines (grâce à son &lt;strong&gt;JIT&lt;/strong&gt;) implémentant le &lt;strong&gt;Javascript&lt;/strong&gt; comme jamais : ce moteur, c'est &lt;strong&gt;V8&lt;/strong&gt;.&lt;/p&gt;
@@ -276,7 +276,7 @@ Que le traitement du second moteur soit synchrone ou asynchrone, il sera de tout
 &lt;p&gt;J'ai souvent remarqué que certaines solutions de perfs résolus par de l'asynchronisme était en réalité un déni du réel problème.
 La solution se trouvait plutôt dans un comportement &lt;strong&gt;lazy&lt;/strong&gt;, du &lt;strong&gt;caching&lt;/strong&gt;, des soucis d'architecture, d'algorithme ou pire, de requêtage (sql or no)...
 Bref, la solution était ailleurs.&lt;/p&gt;
-&lt;p&gt;C'est pas adapté pour faire du langage serveur. &lt;strong&gt;Meteor&lt;/strong&gt; est un projet très intéressant, un proof of concept assez révolutionnaire mais rien, absolument rien de ce qui est fait en &lt;strong&gt;Javascript&lt;/strong&gt; côté serveur n'est pas reproductible avec un autre langage... et surtout, pour un coût très différent (un code plus concis, une équipe plus réduite etc).&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-05-23:nodejs.html</guid><category>javascript</category><category>nodejs</category></item><item><title>NPM</title><link>http://127.0.0.1:4000/npm.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;C'est pas adapté pour faire du langage serveur. &lt;strong&gt;Meteor&lt;/strong&gt; est un projet très intéressant, un proof of concept assez révolutionnaire mais rien, absolument rien de ce qui est fait en &lt;strong&gt;Javascript&lt;/strong&gt; côté serveur n'est pas reproductible avec un autre langage... et surtout, pour un coût très différent (un code plus concis, une équipe plus réduite etc).&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-23:nodejs.html</guid><category>javascript</category><category>nodejs</category></item><item><title>NPM</title><link>https://mothsart.github.io/npm.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Si l'on veut faire du dev frontend de qualité, NodeJS et son gestionnaire de dépendance, NPM est désormais indispensable.&lt;/p&gt;
 &lt;h2&gt;NPM&lt;/h2&gt;
 &lt;p&gt;Npm va chercher ses dépendances dans un fichier packages.json (éditable via npm init)&lt;/p&gt;
@@ -307,7 +307,7 @@ Bref, la solution était ailleurs.&lt;/p&gt;
 &lt;h2&gt;Installer la bonne version de NodeJS&lt;/h2&gt;
 &lt;p&gt;Si vous installer une version trop récente, vous courez tout droit à la catastrophe.&lt;/p&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;sudo npm install n
-sudo n 5.11.1&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 07 Aug 2016 15:15:35 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-05-23:npm.html</guid><category>nodejs</category><category>npm</category><category>javascript</category></item><item><title>PostCSS</title><link>http://127.0.0.1:4000/postcss.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+sudo n 5.11.1&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 07 Aug 2016 15:15:35 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-23:npm.html</guid><category>nodejs</category><category>npm</category><category>javascript</category></item><item><title>PostCSS</title><link>https://mothsart.github.io/postcss.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Le css a des lacunes dont plusieurs pré-processeurs ont essayé (less, sass, stylus) de combler les lacunes.&lt;/p&gt;
 &lt;p&gt;Le soucis d'une surcouche c'est que ça nécessite d'apprendre un langage supplémentaire tout en connaissant bien le css généré.&lt;/p&gt;
 &lt;p&gt;En parallèle, les dernières spécifications du W3C comblent pas mal du déficit.
@@ -319,7 +319,7 @@ Elles ne seront pas implémenté sur tous les navigateurs avant un moment... alo
 &lt;li&gt;On choisi quels sont les navigateurs impactés : on génére par conséquent du css valide pour ces navigateurs !&lt;/li&gt;
 &lt;li&gt;utilisation de variables&lt;/li&gt;
 &lt;li&gt;détecter des erreurs à la compilation plutôt qu'à l'execution.&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-05-23:postcss.html</guid><category>css</category><category>postcss</category><category>javascript</category></item><item><title>BabelJS</title><link>http://127.0.0.1:4000/babeljs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-23:postcss.html</guid><category>css</category><category>postcss</category><category>javascript</category></item><item><title>BabelJS</title><link>https://mothsart.github.io/babeljs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Le développement frontend passe désormais par &lt;a href="https://babeljs.io/"&gt;Babel&lt;/a&gt;
 Il permet de passer par Ecmascript 6, appelé également Ecmascript 2015 (super la confusion) et de le compiler dans une version supporté par les navigateurs actuels.&lt;/p&gt;
 &lt;p&gt;C'est à mon sens plus pérenne que tous les transpiler tel que Typescript, Cofeescript etc.&lt;/p&gt;
@@ -328,7 +328,7 @@ Il permet de passer par Ecmascript 6, appelé également Ecmascript 2015 (super 
 &lt;li&gt;utilisation de constantes &lt;strong&gt;const&lt;/strong&gt; et de vrai variable à porté limité &lt;strong&gt;let&lt;/strong&gt;!&lt;/li&gt;
 &lt;li&gt;de la vrai POO avec des &lt;strong&gt;classes&lt;/strong&gt; !&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;yield&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-05-02:babeljs.html</guid><category>babel</category><category>babeljs</category><category>javascript</category></item><item><title>Ma stack Frontend</title><link>http://127.0.0.1:4000/stack-frontend.html</link><description>&lt;h2&gt;Intro (Gros WIP Unstable!!!)&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:babeljs.html</guid><category>babel</category><category>babeljs</category><category>javascript</category></item><item><title>Ma stack Frontend</title><link>https://mothsart.github.io/stack-frontend.html</link><description>&lt;h2&gt;Intro (Gros WIP Unstable!!!)&lt;/h2&gt;
 &lt;p&gt;Ma stack côté frontend (en constante évolution).&lt;/p&gt;
 &lt;p&gt;Comme tout &lt;strong&gt;bon&lt;/strong&gt; développeur, je suis fainéant :
 faire et refaire des tâches ingrates (cqfd: automatisable) me répugne.
@@ -420,7 +420,7 @@ cd frontend_workflow&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;Opération inverse (reafficher les exemples)&lt;/p&gt;
-&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;git checkout -- app/&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 25 May 2017 00:16:44 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-05-02:stack-frontend.html</guid><category>frontend</category><category>css</category><category>javascript</category></item><item><title>Le stockage côté Javascript</title><link>http://127.0.0.1:4000/stockage-frontend.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh"&gt;git checkout -- app/&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 25 May 2017 00:16:44 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-frontend.html</guid><category>frontend</category><category>css</category><category>javascript</category></item><item><title>Le stockage côté Javascript</title><link>https://mothsart.github.io/stockage-frontend.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;L'émergence de l'utilisation du web pour de l'appli nécessite d'améliorer le caching de données et la synchronisation.&lt;/p&gt;
 &lt;h2&gt;L'existant&lt;/h2&gt;
 &lt;p&gt;http://caniuse.com/#feat=sql-storage =&amp;gt; en mode disparition&lt;/p&gt;
@@ -428,7 +428,7 @@ cd frontend_workflow&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;http://www.alsacreations.com/article/lire/1402-web-storage-localstorage-sessionstorage.html&lt;/p&gt;
 &lt;h2&gt;Oui, mais rien ne passe partout ?!&lt;/h2&gt;
 &lt;p&gt;Et pourquoi pas : https://github.com/kripken/sql.js
-Exemple : http://kripken.github.io/sql.js/GUI/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-03-19:stockage-frontend.html</guid><category>javascript</category><category>frontend</category><category>stockage</category><category>sql</category></item><item><title>Labo du dev frontend</title><link>http://127.0.0.1:4000/labo-du-dev-frontend.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+Exemple : http://kripken.github.io/sql.js/GUI/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-03-19:stockage-frontend.html</guid><category>javascript</category><category>frontend</category><category>stockage</category><category>sql</category></item><item><title>Labo du dev frontend</title><link>https://mothsart.github.io/labo-du-dev-frontend.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Afin de perfectionner mes connaissances et mes acquis dans le dev frontend, j'entreprend ici de tester des libs tel que:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;postcss&lt;/li&gt;
@@ -447,4 +447,4 @@ Exemple : http://kripken.github.io/sql.js/GUI/&lt;/p&gt;</description><dc:creato
 &lt;li&gt;&lt;a href="/labo/frontend/modernizr"&gt;Tests de navigateur (avec et sans user-agent) + tests de fonctionnalités&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="/labo/frontend/ripple_onclick"&gt;Animation au clic&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="/labo/frontend/vanilla"&gt;Bench de comparaison de Jquery/VanillaJS/Xpath (en natif)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-02-14:labo-du-dev-frontend.html</guid><category>frontend</category><category>js</category><category>css</category><category>html</category></item></channel></rss>
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Mon, 23 May 2016 01:00:20 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-02-14:labo-du-dev-frontend.html</guid><category>frontend</category><category>js</category><category>css</category><category>html</category></item></channel></rss>
