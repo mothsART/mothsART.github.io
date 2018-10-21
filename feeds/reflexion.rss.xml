@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 01 Aug 2018 21:36:31 +0200</lastBuildDate><item><title>Les algos en IA</title><link>https://mothsart.github.io/algos-ia.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>http://127.0.0.1:4000/</link><description></description><lastBuildDate>Wed, 01 Aug 2018 21:36:31 +0200</lastBuildDate><item><title>Les algos en IA</title><link>http://127.0.0.1:4000/algos-ia.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;L'IA : un vaste sujet&lt;/p&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
-&lt;p&gt;http://www-igm.univ-mlv.fr/~dr/XPOSE2014/Machin_Learning/index.html&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-08-01:algos-ia.html</guid><category>ia</category></item><item><title>Search diff image</title><link>https://mothsart.github.io/search-diff-image.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;http://www-igm.univ-mlv.fr/~dr/XPOSE2014/Machin_Learning/index.html&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2018-08-01:algos-ia.html</guid><category>ia</category></item><item><title>Search diff image</title><link>http://127.0.0.1:4000/search-diff-image.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;La photo numérique nous a donné l'avantage de pouvoir prendre énormément de photos et de les trier par la suite.
 Les avantages, pour ceux qui ont fait de l'argentique sont évidents.&lt;/p&gt;
 &lt;p&gt;Il reste que les inconvénients deviennent criants :
@@ -28,8 +28,8 @@ Il est par conséquent facile de faire des tests sur une grande quantité de don
 &lt;p&gt;La, on touche du doigt le machine learning.&lt;/p&gt;
 &lt;h3&gt;Liens&lt;/h3&gt;
 &lt;p&gt;https://github.com/abonander/img_hash
-https://github.com/abonander/img-dup&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-08-01:search-diff-image.html</guid><category>rust</category></item><item><title>Un téléphone libre</title><link>https://mothsart.github.io/telephone-libre.html</link><description>&lt;h2&gt;Intro : Purism&lt;/h2&gt;
-&lt;p&gt;https://puri.sm/shop/librem-5/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 31 Oct 2017 22:46:18 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-10-31:telephone-libre.html</guid><category>mobile</category><category>libre</category></item><item><title>Algos de distances et de phonetique</title><link>https://mothsart.github.io/algos-distance-phonetique.html</link><description>&lt;h2&gt;Distance et algos de phonetic&lt;/h2&gt;
+https://github.com/abonander/img-dup&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2018-08-01:search-diff-image.html</guid><category>rust</category></item><item><title>Un téléphone libre</title><link>http://127.0.0.1:4000/telephone-libre.html</link><description>&lt;h2&gt;Intro : Purism&lt;/h2&gt;
+&lt;p&gt;https://puri.sm/shop/librem-5/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 31 Oct 2017 22:46:18 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-10-31:telephone-libre.html</guid><category>mobile</category><category>libre</category></item><item><title>Algos de distances et de phonetique</title><link>http://127.0.0.1:4000/algos-distance-phonetique.html</link><description>&lt;h2&gt;Distance et algos de phonetic&lt;/h2&gt;
 &lt;h2&gt;Définition de la Distance&lt;/h2&gt;
 &lt;p&gt;Les algorithmes de distance vont comparer 2 chaines afin de déterminer leur &lt;strong&gt;pourcentage de ressemblance&lt;/strong&gt;.&lt;/p&gt;
 &lt;h3&gt;Algos de distances&lt;/h3&gt;
@@ -67,7 +67,7 @@ https://siderite.blogspot.com/2014/11/super-fast-and-accurate-string-distance.ht
 &lt;h2&gt;Plural/Singular inflector&lt;/h2&gt;
 &lt;p&gt;Algos permettant de transformer un mot de sa forme singulier au pluriel et inversement + détecter sa forme actuel. (est-ce que le mot est au singulier ou au pluriel ?)&lt;/p&gt;
 &lt;h2&gt;Détection de langue&lt;/h2&gt;
-&lt;p&gt;https://github.com/greyblake/whatlang-rs&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:algos-distance-phonetique.html</guid><category>levenstein</category><category>hamming</category><category>soundex</category><category>metaphone</category><category>token</category><category>ngram</category></item><item><title>Alimentation responsable</title><link>https://mothsart.github.io/alimentation-responsable.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;https://github.com/greyblake/whatlang-rs&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-09-27:algos-distance-phonetique.html</guid><category>levenstein</category><category>hamming</category><category>soundex</category><category>metaphone</category><category>token</category><category>ngram</category></item><item><title>Alimentation responsable</title><link>http://127.0.0.1:4000/alimentation-responsable.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;h2&gt;Local&lt;/h2&gt;
 &lt;p&gt;https://courcircui54.blogspot.fr&lt;/p&gt;
 &lt;h2&gt;Sa production&lt;/h2&gt;
@@ -76,7 +76,7 @@ https://siderite.blogspot.com/2014/11/super-fast-and-accurate-string-distance.ht
 &lt;li&gt;permaculture&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Piste à développer : subsituts à la nourriture&lt;/h2&gt;
-&lt;p&gt;https://ploum.net/le-meal-engineering-le-futur-de-la-nutrition/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:alimentation-responsable.html</guid><category>ecologie</category><category>responsable</category><category>alimentaire</category></item><item><title>Diff-image</title><link>https://mothsart.github.io/diff-image.html</link><description>&lt;h2&gt;Comparer 2 images&lt;/h2&gt;
+&lt;p&gt;https://ploum.net/le-meal-engineering-le-futur-de-la-nutrition/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-09-27:alimentation-responsable.html</guid><category>ecologie</category><category>responsable</category><category>alimentaire</category></item><item><title>Diff-image</title><link>http://127.0.0.1:4000/diff-image.html</link><description>&lt;h2&gt;Comparer 2 images&lt;/h2&gt;
 &lt;p&gt;Je démarre un soft de comparaison d'images.&lt;/p&gt;
 &lt;p&gt;En effet, je trouve qu'un outil "simple" de ce genre n'existe tout bonnement pas.&lt;/p&gt;
 &lt;p&gt;Qui plus est, ça me permet de faire du &lt;strong&gt;Rust&lt;/strong&gt;, de l'algo sur de l'image matricielle, d'apprendre l'API de GTK... &lt;/p&gt;
@@ -140,7 +140,7 @@ sh rustup.sh -y --channel=nightly&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;https://github.com/kornelski/dssim&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Références&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://askubuntu.com/questions/209517/does-diff-exist-for-images"&gt;https://askubuntu.com/questions/209517/does-diff-exist-for-images&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:diff-image.html</guid><category>rust</category></item><item><title>Les APIS web oubliés</title><link>https://mothsart.github.io/le-format-svg.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://askubuntu.com/questions/209517/does-diff-exist-for-images"&gt;https://askubuntu.com/questions/209517/does-diff-exist-for-images&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-09-27:diff-image.html</guid><category>rust</category></item><item><title>Les APIS web oubliés</title><link>http://127.0.0.1:4000/le-format-svg.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Je suis un dev web et je passe trop de temps sur des choses merdiques.
 Du frontend franchement basique.&lt;/p&gt;
 &lt;h2&gt;Une api pour transform()&lt;/h2&gt;
@@ -177,7 +177,7 @@ La complémentarité SVG/HTML n'a jamais été pensé au départ et les bugs irr
 &lt;li&gt;&lt;strong&gt;Opérations booléennes natives&lt;/strong&gt; :&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Ca nécessite des libs externes pour faire le boulôt.
-&lt;strong&gt;C'est du foutage de gueule, ça devrait être natif !&lt;/strong&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:le-format-svg.html</guid><category>svg</category><category>js</category><category>frontend</category></item><item><title>Phonetic</title><link>https://mothsart.github.io/phonetic.html</link><description>&lt;h2&gt;Phonetic&lt;/h2&gt;
+&lt;strong&gt;C'est du foutage de gueule, ça devrait être natif !&lt;/strong&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-09-27:le-format-svg.html</guid><category>svg</category><category>js</category><category>frontend</category></item><item><title>Phonetic</title><link>http://127.0.0.1:4000/phonetic.html</link><description>&lt;h2&gt;Phonetic&lt;/h2&gt;
 &lt;p&gt;Sur PostgreSQL : https://www.postgresql.org/docs/9.1/static/fuzzystrmatch.html&lt;/p&gt;
 &lt;p&gt;https://fr.wikipedia.org/wiki/Homonymie
 http://www.easter-eggs.com/Recherche-approximative-avec
@@ -241,7 +241,7 @@ http://aspell.net/metaphone/dmetaph.cpp&lt;/p&gt;
 &lt;p&gt;http://www.norvig.com/spell-correct.html&lt;/p&gt;
 &lt;p&gt;http://stackoverflow.com/questions/487003/how-to-detect-a-typo-in-a-product-search-and-suggest-possible-corrections&lt;/p&gt;
 &lt;p&gt;PostGreSQL implémente la distance de levenstein, le double metaphone :&lt;/p&gt;
-&lt;p&gt;https://github.com/Freyskeyd/nlp&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:phonetic.html</guid><category>phonetic</category><category>phonex</category><category>metaphone</category></item><item><title>Dégooglelison et Education numérique</title><link>https://mothsart.github.io/deggoglelison-eductation-numerique.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;https://github.com/Freyskeyd/nlp&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-09-27:phonetic.html</guid><category>phonetic</category><category>phonex</category><category>metaphone</category></item><item><title>Dégooglelison et Education numérique</title><link>http://127.0.0.1:4000/deggoglelison-eductation-numerique.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;J'ai pas l'habitude de faire de la politique mais la nécessité me semble évidente.&lt;/p&gt;
 &lt;p&gt;Notre pays (aussi bien que l'europe, notre région, notre ville) a besoin de réformer son système éducatif et d'innover dans l'accès au numérique.&lt;/p&gt;
 &lt;p&gt;Pour cela, il doit se démarquer des GAFAM (Google, Amazon, Facebook, Apple, Microsoft) !&lt;/p&gt;
@@ -279,18 +279,18 @@ Maintenant, c'est à nous d'assumer (l'opposition pour l'opposition c'est de l'i
 &lt;p&gt;https://chatons.org/
 https://framasoft.org/&lt;/p&gt;
 &lt;p&gt;https://primtux.fr/
-http://abuledu-fr.org/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:deggoglelison-eductation-numerique.html</guid><category>google</category><category>gafam</category><category>education</category><category>numérique</category></item><item><title>Financement participatif</title><link>https://mothsart.github.io/financement-participatif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+http://abuledu-fr.org/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-05-25:deggoglelison-eductation-numerique.html</guid><category>google</category><category>gafam</category><category>education</category><category>numérique</category></item><item><title>Financement participatif</title><link>http://127.0.0.1:4000/financement-participatif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;https://liberapay.com/mothsART&lt;/p&gt;
 &lt;p&gt;Flattr&lt;/p&gt;
 &lt;p&gt;https://www.wattpad.com&lt;/p&gt;
 &lt;p&gt;https://www.tipeee.com&lt;/p&gt;
-&lt;p&gt;https://www.patreon.com&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 25 Feb 2017 17:34:53 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-22:financement-participatif.html</guid></item><item><title>Independance logiciel</title><link>https://mothsart.github.io/independance-logiciel.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-15:independance-logiciel.html</guid></item><item><title>Snap</title><link>https://mothsart.github.io/snap.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;https://www.patreon.com&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 25 Feb 2017 17:34:53 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-02-22:financement-participatif.html</guid></item><item><title>Independance logiciel</title><link>http://127.0.0.1:4000/independance-logiciel.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-10-15:independance-logiciel.html</guid></item><item><title>Snap</title><link>http://127.0.0.1:4000/snap.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;http://korben.info/installer-paquets-snap-ubuntu-ligne-de-commande.html&lt;/p&gt;
 &lt;h2&gt;Explorer les snap via un moteur de recherche&lt;/h2&gt;
 &lt;p&gt;https://uappexplorer.com/&lt;/p&gt;
 &lt;h2&gt;API&lt;/h2&gt;
-&lt;p&gt;https://wiki.ubuntu.com/AppStore/Interfaces/ClickPackageIndex&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Oct 2016 15:17:18 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-08-07:snap.html</guid><category>snap</category><category>ubuntu</category><category>linux</category></item><item><title>Pourquoi Wayland</title><link>https://mothsart.github.io/pourquoi-wayland.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;https://wiki.ubuntu.com/AppStore/Interfaces/ClickPackageIndex&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Oct 2016 15:17:18 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-08-07:snap.html</guid><category>snap</category><category>ubuntu</category><category>linux</category></item><item><title>Pourquoi Wayland</title><link>http://127.0.0.1:4000/pourquoi-wayland.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Beaucoup de bruit autours de &lt;strong&gt;Wayland&lt;/strong&gt; (et de &lt;strong&gt;Mir&lt;/strong&gt;) sans savoir ce que ça va apporter par rapport au serveur X (Xorg).
 Du coup, j'essai d'éclaircir un peu par mes recherches.&lt;/p&gt;
 &lt;h2&gt;De la sécurité&lt;/h2&gt;
@@ -321,9 +321,9 @@ A priori, ça porte du fruit.&lt;/p&gt;
 &lt;p&gt;Néanmoins, Mir fait office de protocole et de compositeur.
 Il est donc &lt;/p&gt;
 &lt;h2&gt;liens&lt;/h2&gt;
-&lt;p&gt;http://mupuf.org/blog/2014/02/19/wayland-compositors-why-and-how-to-handle/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:pourquoi-wayland.html</guid><category>wayland</category><category>linux</category></item><item><title>Windows vs Linux</title><link>https://mothsart.github.io/windows-vs-linux.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;http://mupuf.org/blog/2014/02/19/wayland-compositors-why-and-how-to-handle/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-07-12:pourquoi-wayland.html</guid><category>wayland</category><category>linux</category></item><item><title>Windows vs Linux</title><link>http://127.0.0.1:4000/windows-vs-linux.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Comparer Windows à Linux c'est comme comparer &lt;/p&gt;
-&lt;h2&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-12:windows-vs-linux.html</guid><category>windows</category><category>linux</category></item><item><title>Que penser du langage Swift ?</title><link>https://mothsart.github.io/que-penser-de-swift.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;h2&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-07-12:windows-vs-linux.html</guid><category>windows</category><category>linux</category></item><item><title>Que penser du langage Swift ?</title><link>http://127.0.0.1:4000/que-penser-de-swift.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Swift est le nouveau bébé d'Apple pour créer des applications.
 Il va partager un bon moment un environnement hétérogène avec Objective C...&lt;/p&gt;
 &lt;p&gt;Voici mon analyse sur ce langage.&lt;/p&gt;
@@ -346,7 +346,7 @@ j'espère que Google envisage sérieusement un remplaçant rapidement : Rust ple
 &lt;h2&gt;Pourquoi créer un nouveau langage ?!&lt;/h2&gt;
 &lt;p&gt;Rien dans Swift n'est réellement neuf.
 Pourquoi ne pas s'être greffé sur des langages déjà existants ?!
-Ca fragmente encore plus le marché du travail... c'est juste désespérant.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 27 Feb 2018 15:27:03 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-09:que-penser-de-swift.html</guid><category>rust</category><category>swift</category><category>apple</category></item><item><title>Bug</title><link>https://mothsart.github.io/bug.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+Ca fragmente encore plus le marché du travail... c'est juste désespérant.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Tue, 27 Feb 2018 15:27:03 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-06-09:que-penser-de-swift.html</guid><category>rust</category><category>swift</category><category>apple</category></item><item><title>Bug</title><link>http://127.0.0.1:4000/bug.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Mais qu'est-ce qu'un bug et pourquoi le développeur à ce sentiment d'inachevé ?
 Je vais tenter via cet article de remettre les choses à plat sur ces notions, pris comme acquis et qui ne le sont généralement pas.&lt;/p&gt;
 &lt;h2&gt;Garantir un logiciel comme stable&lt;/h2&gt;
@@ -471,7 +471,7 @@ Il peut proposer les correctifs (ou la procédure de correction) mais il ne les 
 &lt;p&gt;On peut dire qu'un logiciel a atteind ses objectifs si il fonctionne dans l'ensemble des cas d'un cahier fonctionnel. (donc une liste fini)
 Il n'est dans ce cas aucunement excent de bugs, bien au contraire : il en reste sans doute une infinité.
 La nuance est qu'ils ne sont pas pénalisant pour l'utilisateur.&lt;/p&gt;
-&lt;p&gt;Cette réflexion ne parle pas des autres aspects quant à la satisfaction cliente : à savoir la qualité du suivi, de l'assistance, de la réactivité, de l'ergonomie, de la pédagogie etc.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 11:54:35 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:bug.html</guid><category>bug</category></item><item><title>Pourquoi Rust</title><link>https://mothsart.github.io/pourquoi-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Cette réflexion ne parle pas des autres aspects quant à la satisfaction cliente : à savoir la qualité du suivi, de l'assistance, de la réactivité, de l'ergonomie, de la pédagogie etc.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 11:54:35 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-05-02:bug.html</guid><category>bug</category></item><item><title>Pourquoi Rust</title><link>http://127.0.0.1:4000/pourquoi-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Depuis maintenant 1 an, je m'intéresse de près au langage &lt;strong&gt;Rust&lt;/strong&gt;.
 Qu'est ce qui peut motiver le choix d'un nouveau langage alors qu'il en existe déjà un nombre incalculable ?&lt;/p&gt;
 &lt;p&gt;Ayant déjà de bons acquis en C/C#/Python/Javascript, on peut naturellement se poser la question de pourquoi s'investir dans un nouveau language.&lt;/p&gt;
@@ -555,7 +555,7 @@ trait-based generics
 pattern matching
 type inference
 minimal runtime
-efficient C bindings&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:pourquoi-rust.html</guid><category>rust</category><category>python</category><category>Java</category><category>Javascript</category><category>C</category><category>C++</category><category>C#</category></item><item><title>Pourquoi je boude Node.Js</title><link>https://mothsart.github.io/pourquoi-je-boude-nodejs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+efficient C bindings&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-05-02:pourquoi-rust.html</guid><category>rust</category><category>python</category><category>Java</category><category>Javascript</category><category>C</category><category>C++</category><category>C#</category></item><item><title>Pourquoi je boude Node.Js</title><link>http://127.0.0.1:4000/pourquoi-je-boude-nodejs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;NodeJS est à la mode.
 Quand je parle de NodeJS, je parle bien entendu de toute la mouvance autours de Javascript.&lt;/p&gt;
 &lt;p&gt;Le principe :
@@ -587,7 +587,7 @@ semble LA solution commune.&lt;/p&gt;
 &lt;p&gt;Les besoins du web ne cesse de s'accroitre. Les usages se diversifies.
 Javascript est incontournable et vit son heure de gloire.
 Mais tout à une fin et il vaut mieux ammorcer la chute plutôt que de la subir.&lt;/p&gt;
-&lt;p&gt;Il sera sans doute possible dans moins de 10 ans de faire du web en se passant totalement de Javascript (Plus de CoffeeScript, TypeScript et autre BullshitScript ou VaporWareScript) et donc d'utiliser des langages plus modernes, moins permissifs et plus réactifs tel que &lt;strong&gt;Rust&lt;/strong&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-03-19:pourquoi-je-boude-nodejs.html</guid><category>javascript</category><category>web</category></item><item><title>Réflexion autour des DVCS</title><link>https://mothsart.github.io/reflexion-dvcs.html</link><description>&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Il sera sans doute possible dans moins de 10 ans de faire du web en se passant totalement de Javascript (Plus de CoffeeScript, TypeScript et autre BullshitScript ou VaporWareScript) et donc d'utiliser des langages plus modernes, moins permissifs et plus réactifs tel que &lt;strong&gt;Rust&lt;/strong&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-03-19:pourquoi-je-boude-nodejs.html</guid><category>javascript</category><category>web</category></item><item><title>Réflexion autour des DVCS</title><link>http://127.0.0.1:4000/reflexion-dvcs.html</link><description>&lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;GIT a semble-t-il gagner dans la guerre des &lt;strong&gt;Logiciel de gestion de versions&lt;/strong&gt; (&lt;strong&gt;DVCS&lt;/strong&gt;)&lt;/p&gt;
 &lt;p&gt;Pourtant, son remplaçant est peut-être à la porte.&lt;/p&gt;
 &lt;p&gt;Je vais lister ici les points positifs et négatifs de GIT.&lt;/p&gt;
@@ -615,7 +615,7 @@ http://sebsauvage.net/wiki/doku.php?id=fossil&lt;/p&gt;
 &lt;p&gt;ne fonctionne pas selon la &lt;strong&gt;théorie des patchs&lt;/strong&gt; tel que le fait &lt;strong&gt;Darcs&lt;/strong&gt; ou &lt;strong&gt;&lt;a href="http://pijul.org"&gt;PIJUL&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;permettre des hooks à partir de langages de haut niveau est souvent délicat et nécessite de passer un fichier shell en amont&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-03-10:reflexion-dvcs.html</guid><category>git</category><category>darcs</category><category>hg</category><category>mercurial</category></item><item><title>Réflexion autour des Imprimantes 3D à usage domestique</title><link>https://mothsart.github.io/reflexion-imprimante-3D.html</link><description>&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-03-10:reflexion-dvcs.html</guid><category>git</category><category>darcs</category><category>hg</category><category>mercurial</category></item><item><title>Réflexion autour des Imprimantes 3D à usage domestique</title><link>http://127.0.0.1:4000/reflexion-imprimante-3D.html</link><description>&lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;La révolution est à notre porte! L'imprimante 3D va révolutionner nos usages, elle va réinventer l'industrie, relocalisé après une délocalisation massive etc.
 Que ça soit dans les médias ou sur Internet, on l'annonce comme LE vecteur du changement.&lt;/p&gt;
 &lt;p&gt;Voici un condensé du pourquoi je ne crois pas que &lt;strong&gt;le changement c'est pour maintenant&lt;/strong&gt;!&lt;/p&gt;
@@ -651,4 +651,4 @@ La solution à ça ressemble plus à l'utilisation de &lt;strong&gt;Machine-Outi
 &lt;li&gt;s'il l'on veut reproduire des pièces (souvent le cas : 4 pièces identiques dont 1 défectueuse), il faut s'équiper d'un scanner 3D : la pièce issu du scanner demandera souvent d'être retouché avant d'être utilisable par l'imprimante.&lt;/li&gt;
 &lt;li&gt;Un ou plusieurs annuaire de pièces : si l'on ne veut pas créer sa pièce de toute part, c'est qu'on veut la récupérer sur le web...
 Chercher une aiguille dans une botte de foin prend tout son sens et même si l'on trouve, la qualité de la pièce peut être très discutable.&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-03-10:reflexion-imprimante-3D.html</guid><category>imprimante</category><category>3D</category></item></channel></rss>
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 30 Jul 2016 14:01:26 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-03-10:reflexion-imprimante-3D.html</guid><category>imprimante</category><category>3D</category></item></channel></rss>

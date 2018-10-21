@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Sat, 04 Aug 2018 14:27:59 +0200</lastBuildDate><item><title>entrainnement grammatical</title><link>https://mothsart.github.io/entrainnement-grammatical.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-08-01:entrainnement-grammatical.html</guid><category>rust</category><category>jeux</category><category>educatif</category></item><item><title>Memo Diesel.rs</title><link>https://mothsart.github.io/memo-dieselrs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>http://127.0.0.1:4000/</link><description></description><lastBuildDate>Sat, 04 Aug 2018 14:27:59 +0200</lastBuildDate><item><title>entrainnement grammatical</title><link>http://127.0.0.1:4000/entrainnement-grammatical.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2018-08-01:entrainnement-grammatical.html</guid><category>rust</category><category>jeux</category><category>educatif</category></item><item><title>Memo Diesel.rs</title><link>http://127.0.0.1:4000/memo-dieselrs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Je suis depuis quelques temps le projet Diesel.rs : le seul ORM en Rust digne de ce nom.&lt;/p&gt;
 &lt;p&gt;J'ai pas mal galéré à suivre ce projet tant qu'il nétait pas en version 1.0 avec tous les changements d'API.&lt;/p&gt;
 &lt;p&gt;Depuis quelques mois, il existe une version 1.0.&lt;/p&gt;
@@ -14,7 +14,7 @@
     sql = connect_four::schema::users::dsl::users
     .filter(connected.eq(true).and(playing.eq(false)))
     .into_boxed();
-}&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-27:memo-dieselrs.html</guid><category>rust</category><category>sql</category><category>diesel</category></item><item><title>Connect Four</title><link>https://mothsart.github.io/puissance4.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+}&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2018-02-27:memo-dieselrs.html</guid><category>rust</category><category>sql</category><category>diesel</category></item><item><title>Connect Four</title><link>http://127.0.0.1:4000/puissance4.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Vous aimez jouer au Puissance 4 et vous ne trouvez pas votre bonheur.
 Voici peut-être un alternative pour vous !&lt;/p&gt;
 &lt;p&gt;Un jeu de puissance 4 en réseau !&lt;/p&gt;
@@ -118,7 +118,7 @@ WebSocket car c'est la meilleur techno web pour avoir de l'interactivité &lt;/l
 En témoignant de votre entousiasme via un commentaire, un mail, une attention, un don.
 En proposant des évolutions, des critiques, en remontant des bugs.&lt;/p&gt;
 &lt;p&gt;En proposant une traduction.&lt;/p&gt;
-&lt;p&gt;Enfin, en participant au code source, bien sur !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-27:puissance4.html</guid><category>rust</category><category>jeu</category><category>puissance 4</category><category>webpack</category><category>javascript</category><category>vuejs</category><category>sass</category><category>postcss</category></item><item><title>Stratego</title><link>https://mothsart.github.io/stratego.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Enfin, en participant au code source, bien sur !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 01 Aug 2018 21:36:31 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2018-02-27:puissance4.html</guid><category>rust</category><category>jeu</category><category>puissance 4</category><category>webpack</category><category>javascript</category><category>vuejs</category><category>sass</category><category>postcss</category></item><item><title>Stratego</title><link>http://127.0.0.1:4000/stratego.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;J'aime beaucoup le jeu de plateau &lt;strong&gt;Stratego&lt;/strong&gt;.
 N'ayant rien trouvé dans le périmètre des logiciels libres permettant de jouer à ce jeu, j'ai décidé de le créer.&lt;/p&gt;
 &lt;h2&gt;Ma stack&lt;/h2&gt;
@@ -136,13 +136,13 @@ N'ayant rien trouvé dans le périmètre des logiciels libres permettant de joue
 &lt;li&gt;probabilité conditionnel&lt;/li&gt;
 &lt;li&gt;Base de connaissances et de règles&lt;/li&gt;
 &lt;li&gt;réseaux de neuronnes et deep learning&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-02-27:stratego.html</guid><category>rust</category><category>vue.js</category><category>stratego</category></item><item><title>Phonectic Lab</title><link>https://mothsart.github.io/phonetic-lab.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2018-02-27:stratego.html</guid><category>rust</category><category>vue.js</category><category>stratego</category></item><item><title>Phonectic Lab</title><link>http://127.0.0.1:4000/phonetic-lab.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Ce projet est un banc de test autours des principes de la phonétic et des moteurs de recherche se basant sur ces algorithmes.&lt;/p&gt;
 &lt;p&gt;L'idée est de comparer les différents algorithmes de distance (Jaro, Levenstein) et d'en déterminer des éventuels heuristiques :
 selon certaines conditions, on utilisera un algorithme plutôt qu'un autre afin de proposer dans un ensemble de recherche, des performances optimales.&lt;/p&gt;
 &lt;p&gt;Ce banc de test permettra également de comparer les performances brutes de plusieurs moteurs de base de données : SQL et NoSQL.&lt;/p&gt;
 &lt;p&gt;Des benchmarks en situations "réels" me permettrons d'en tirer des conclusions. (peut-être inédites)&lt;/p&gt;
-&lt;p&gt;Enfin, il me permettra de tester mon propre moteur de phonétic dédié à la langue française !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-09-27:phonetic-lab.html</guid><category>phonetic</category><category>distance</category><category>rust</category></item><item><title>Utiliser des logs avec Rust</title><link>https://mothsart.github.io/logs-rust.html</link><description>&lt;h2&gt;Utiliser les logs en Rust (encore en brouillon)&lt;/h2&gt;
+&lt;p&gt;Enfin, il me permettra de tester mon propre moteur de phonétic dédié à la langue française !&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-09-27:phonetic-lab.html</guid><category>phonetic</category><category>distance</category><category>rust</category></item><item><title>Utiliser des logs avec Rust</title><link>http://127.0.0.1:4000/logs-rust.html</link><description>&lt;h2&gt;Utiliser les logs en Rust (encore en brouillon)&lt;/h2&gt;
 &lt;p&gt;Sur n'importe quel soft sérieux, les logs sont innévitables.
 Voici mes experimentations dans le logging en Rust.&lt;/p&gt;
 &lt;h2&gt;La variable RUST_LOG&lt;/h2&gt;
@@ -167,7 +167,7 @@ Voici mes experimentations dans le logging en Rust.&lt;/p&gt;
 &lt;li&gt;apporter de la couleur sur le terminal pour les différents type de log. (erreur en rouge, warn et orange etc.)&lt;/li&gt;
 &lt;li&gt;changer les formats d'affichage facilement&lt;/li&gt;
 &lt;li&gt;utiliser d'autre sortie que &lt;strong&gt;stdout&lt;/strong&gt; : en html, en json, journald &lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:logs-rust.html</guid><category>rust</category><category>log</category></item><item><title>Mémo sur Cargo</title><link>https://mothsart.github.io/memo-cargo.html</link><description>&lt;h2&gt;Un mémo sur les instructions d'un fichier de conf d'un paquet Cargo&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-04-12:logs-rust.html</guid><category>rust</category><category>log</category></item><item><title>Mémo sur Cargo</title><link>http://127.0.0.1:4000/memo-cargo.html</link><description>&lt;h2&gt;Un mémo sur les instructions d'un fichier de conf d'un paquet Cargo&lt;/h2&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-toml"&gt;[package]
 name = &amp;quot;cargo&amp;quot;
 version = &amp;quot;0.18.0&amp;quot;
@@ -236,7 +236,7 @@ cargotest = { path = &amp;quot;tests/cargotest&amp;quot; }
 [[bin]]
 name = &amp;quot;cargo&amp;quot;
 test = false
-doc = false&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-04-12:memo-cargo.html</guid><category>cargo</category><category>toml</category><category>rust</category></item><item><title>Applis en Rust</title><link>https://mothsart.github.io/applis-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+doc = false&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 12 Apr 2017 13:01:23 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-04-12:memo-cargo.html</guid><category>cargo</category><category>toml</category><category>rust</category></item><item><title>Applis en Rust</title><link>http://127.0.0.1:4000/applis-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Le langage Rust : c'est encore un truc qui sert à rien ?!&lt;/p&gt;
 &lt;p&gt;Ben non, y'a plein de libs qui l'utilisent !&lt;/p&gt;
 &lt;p&gt;Des libs peut-être mais des vrais soft derrières ?&lt;/p&gt;
@@ -293,7 +293,7 @@ En revanche, il ne couvre encore que peu de fonctionnalités (pas encore d’his
 &lt;h2&gt;Installation sous Ubuntu ou Debian&lt;/h2&gt;
 &lt;p&gt;Pour simplifier l'utilisation de plusieurs de ces softs, j'ai décidé de les précompiler, les empaqueter et les mettre à dispo sur un PPA :&lt;/p&gt;
 &lt;p&gt;enjoy : &lt;a href="https://launchpad.net/~jerem-ferry/+archive/ubuntu/rust"&gt;https://launchpad.net/~jerem-ferry/+archive/ubuntu/rust&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Si vous désirez savoir comment je m'y suis pris, vous trouverez le détail ici : &lt;a href="https://forum.ubuntu-fr.org/viewtopic.php?id=2023943"&gt;https://forum.ubuntu-fr.org/viewtopic.php?id=2023943&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 04 Aug 2018 14:27:59 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-22:applis-rust.html</guid></item><item><title>The QuiZz : Partie 3</title><link>https://mothsart.github.io/the-quizz-part-3.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Si vous désirez savoir comment je m'y suis pris, vous trouverez le détail ici : &lt;a href="https://forum.ubuntu-fr.org/viewtopic.php?id=2023943"&gt;https://forum.ubuntu-fr.org/viewtopic.php?id=2023943&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 04 Aug 2018 14:27:59 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2017-02-22:applis-rust.html</guid></item><item><title>The QuiZz : Partie 3</title><link>http://127.0.0.1:4000/the-quizz-part-3.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;L'aventure de &lt;strong&gt;The Quizzz&lt;/strong&gt; ce poursuis.
 Le temps a passé et les objectifs se sont affinés.&lt;/p&gt;
 &lt;p&gt;Ca m'a permis de tester et promouvoir de nouvelles technos que je vous communiques.&lt;/p&gt;
@@ -393,7 +393,7 @@ Le But étant d'avoir un vrai template clé en main pour démarrer un nouveau pr
 &lt;p&gt;Dans le prochain article, je vais me concentrer sur la mise en place d'un algorithme de répétion espacée.
 (https://fr.wikipedia.org/wiki/R%C3%A9p%C3%A9tition_espac%C3%A9e)&lt;/p&gt;
 &lt;p&gt;L'idée derrière cet algo est d'améliorer les connaissances de l'utilisateur en travaillant sur ses faiblesses et non sur ces acquis.&lt;/p&gt;
-&lt;h3&gt;i18n sur la partie Web&lt;/h3&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Jul 2017 03:21:58 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-10-15:the-quizz-part-3.html</guid><category>rust diesel</category></item><item><title>Librairies et frameworks</title><link>https://mothsart.github.io/rust-libs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;h3&gt;i18n sur la partie Web&lt;/h3&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Jul 2017 03:21:58 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-10-15:the-quizz-part-3.html</guid><category>rust diesel</category></item><item><title>Librairies et frameworks</title><link>http://127.0.0.1:4000/rust-libs.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Depuis que Rust est en version 1.0, les choses se sont accélérés et beaucoup de librairies et frameworks ont pointé le bout de leur nez.
 Voici les plus connus trié par thème.&lt;/p&gt;
 &lt;h2&gt;Base de données&lt;/h2&gt;
@@ -403,7 +403,7 @@ rust-redis&lt;/p&gt;
 &lt;p&gt;serde
 rust_serialize&lt;/p&gt;
 &lt;h2&gt;parser&lt;/h2&gt;
-&lt;p&gt;nom&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 09 Feb 2017 00:10:29 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-09-21:rust-libs.html</guid><category>rust</category></item><item><title>Des exemples Rust</title><link>https://mothsart.github.io/exemples-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;nom&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Thu, 09 Feb 2017 00:10:29 +0100</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-09-21:rust-libs.html</guid><category>rust</category></item><item><title>Des exemples Rust</title><link>http://127.0.0.1:4000/exemples-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Des exemples de code Rust que je réutilise (mais que je n'arrive pas à mémoriser)&lt;/p&gt;
 &lt;h2&gt;Enum récursif&lt;/h2&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-rust"&gt;#[derive(Debug)]
@@ -461,7 +461,7 @@ let machaine_string:String = machaine_str.to_string();&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Des traits pour de la programmation générique :
 https://github.com/apasel422/eclectic&lt;/p&gt;
 &lt;p&gt;des websockets :&lt;/p&gt;
-&lt;p&gt;https://github.com/housleyjk/ws-rs&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-07-30:exemples-rust.html</guid><category>rust</category></item><item><title>Macros rust</title><link>https://mothsart.github.io/macros-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;https://github.com/housleyjk/ws-rs&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Wed, 21 Sep 2016 19:39:51 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-07-30:exemples-rust.html</guid><category>rust</category></item><item><title>Macros rust</title><link>http://127.0.0.1:4000/macros-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;h3&gt;println!&lt;/h3&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-rust"&gt;use std::fs::File;
 
@@ -487,7 +487,7 @@ fn main() {
 &lt;p&gt;file!&lt;/p&gt;
 &lt;p&gt;vec!&lt;/p&gt;
 &lt;p&gt;log_syntax!&lt;/p&gt;
-&lt;p&gt;trace_macros!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Oct 2016 15:17:18 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-06-20:macros-rust.html</guid><category>rust</category></item><item><title>The QuiZz : Partie 2</title><link>https://mothsart.github.io/the-quizz-part-2.html</link><description>&lt;h2&gt;The QuiZz : Partie 2&lt;/h2&gt;
+&lt;p&gt;trace_macros!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Oct 2016 15:17:18 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-06-20:macros-rust.html</guid><category>rust</category></item><item><title>The QuiZz : Partie 2</title><link>http://127.0.0.1:4000/the-quizz-part-2.html</link><description>&lt;h2&gt;The QuiZz : Partie 2&lt;/h2&gt;
 &lt;p&gt;Comme promis, la partie 2 ne va s'atteler qu'à fournir le même cahier des charges que le soft de la partie 1 mais pour une appli web.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://github.com/mothsART/the_quizz/releases/tag/part2"&gt;dépôt Git : Etape 2&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Pré-requis&lt;/h2&gt;
@@ -599,7 +599,7 @@ windows:
 &lt;li&gt;
 &lt;p&gt;Version Cli : détection des évènements souris&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 07 Aug 2016 15:15:35 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-23:the-quizz-part-2.html</guid><category>rust</category><category>gettext</category><category>cli</category><category>postgresql</category></item><item><title>The QuiZz : Partie 1</title><link>https://mothsart.github.io/the-quizz-part-1.html</link><description>&lt;h2&gt;The QuiZz : Partie 1&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 07 Aug 2016 15:15:35 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-05-23:the-quizz-part-2.html</guid><category>rust</category><category>gettext</category><category>cli</category><category>postgresql</category></item><item><title>The QuiZz : Partie 1</title><link>http://127.0.0.1:4000/the-quizz-part-1.html</link><description>&lt;h2&gt;The QuiZz : Partie 1&lt;/h2&gt;
 &lt;p&gt;Après mon apprentissage de Rust (doc, tutos etc.), j'ai décidé de m'atteler à un projet un peu plus abouti.&lt;/p&gt;
 &lt;p&gt;Comme toujours, je pars du principe qu'il vaut mieux se lancer sur des projets minimalistes et allez au bout plutôt que de partir dans du gargantuesque et bacler.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;The QuiZz&lt;/strong&gt; c'est donc un logiciel créé dans l'optique d'apprendre &lt;strong&gt;Rust&lt;/strong&gt; et ses librairies, le tout en plusieurs étapes :
@@ -666,7 +666,7 @@ insert into questions (entitled, response) values ('Cargo est-il le gestionnaire
 &lt;li&gt;des réponses ouvertes&lt;/li&gt;
 &lt;li&gt;&lt;/li&gt;
 &lt;li&gt;pfuu, j'avais dit que c'était pas un projet sérieux.&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 07 Aug 2016 15:15:35 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-11:the-quizz-part-1.html</guid><category>rust</category><category>gettext</category><category>cli</category><category>postgresql</category></item><item><title>Ma stack Rust</title><link>https://mothsart.github.io/stack-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 07 Aug 2016 15:15:35 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-05-11:the-quizz-part-1.html</guid><category>rust</category><category>gettext</category><category>cli</category><category>postgresql</category></item><item><title>Ma stack Rust</title><link>http://127.0.0.1:4000/stack-rust.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;En vrac, les outils que j'utilise et perfectionne dans mon apprentissage et mon utilisation du language &lt;strong&gt;Rust&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2&gt;MAJ de Rust&lt;/h2&gt;
 &lt;p&gt;On installe Rustup si il n'est pas présent :&lt;/p&gt;
@@ -799,4 +799,4 @@ Il subsite donc des erreurs à l'exécution : pour les débusquer, &lt;strong&gt
 
 &lt;p&gt;https://github.com/mmstick/cargo-deb&lt;/p&gt;
 &lt;h2&gt;En vrac&lt;/h2&gt;
-&lt;p&gt;http://rust.developpez.com/faq&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Jul 2017 03:21:58 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2016-05-02:stack-rust.html</guid><category>rust</category></item></channel></rss>
+&lt;p&gt;http://rust.developpez.com/faq&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Jul 2017 03:21:58 +0200</pubDate><guid isPermaLink="false">tag:127.0.0.1:4000,2016-05-02:stack-rust.html</guid><category>rust</category></item></channel></rss>
