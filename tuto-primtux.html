@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>CanIuse - Le Labo Du Nerd</title>
+    <title>Tuto Primtux - Le Labo Du Nerd</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -9,23 +9,19 @@
 
 
 
-<link rel="canonical" href="https://mothsart.github.io/caniuse.html">
+<link rel="canonical" href="https://mothsart.github.io/tuto-primtux.html">
 
         <meta name="author" content="Jérémie Ferry" />
-        <meta name="keywords" content="js,css,html,caniuse,modernizr" />
+        <meta name="keywords" content="primtux html5 javascript" />
 
         <meta property="og:site_name" content="Le Labo Du Nerd" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="CanIuse"/>
-        <meta property="og:url" content="https://mothsart.github.io/caniuse.html"/>
+        <meta property="og:title" content="Tuto Primtux"/>
+        <meta property="og:url" content="https://mothsart.github.io/tuto-primtux.html"/>
         <meta property="og:description" content=""/>
-        <meta property="article:published_time" content="2017-04-12" />
-            <meta property="article:section" content="frontend" />
-            <meta property="article:tag" content="js" />
-            <meta property="article:tag" content="css" />
-            <meta property="article:tag" content="html" />
-            <meta property="article:tag" content="caniuse" />
-            <meta property="article:tag" content="modernizr" />
+        <meta property="article:published_time" content="2018-11-12" />
+            <meta property="article:section" content="misc" />
+            <meta property="article:tag" content="primtux html5 javascript" />
             <meta property="article:author" content="Jérémie Ferry" />
 
 
@@ -63,13 +59,13 @@ Le Labo Du Nerd            </a>
                         <li >
                             <a href="https://mothsart.github.io/category/aide-memoire.html">Aide-memoire</a>
                         </li>
-                        <li class="active">
+                        <li >
                             <a href="https://mothsart.github.io/category/frontend.html">Frontend</a>
                         </li>
                         <li >
                             <a href="https://mothsart.github.io/category/memo.html">Memo</a>
                         </li>
-                        <li >
+                        <li class="active">
                             <a href="https://mothsart.github.io/category/misc.html">Misc</a>
                         </li>
                         <li >
@@ -130,7 +126,7 @@ Le Labo Du Nerd            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    CanIuse
+                    Tuto Primtux
                 </h1>
             </header>
             <div class="entry-content">
@@ -140,7 +136,7 @@ Le Labo Du Nerd            </a>
     <span>
         <span class="label label-default">Date</span>
         <span class="published">
-            <i class="fa fa-calendar"></i><time datetime="2017-04-12T11:54:35+02:00"> mer. 12 avril 2017</time>
+            <i class="fa fa-calendar"></i><time datetime="2018-11-12T20:15:40.387285+01:00"> lun. 12 novembre 2018</time>
         </span>
     </span>
 
@@ -151,36 +147,33 @@ Le Labo Du Nerd            </a>
 <span class="label label-default">Tags</span>
 
 
-	<a href="https://mothsart.github.io/tag/js.html">js
-                <span class="badge">6</span>
-    </a>
-        /
-	<a href="https://mothsart.github.io/tag/css.html">css
-                <span class="badge">5</span>
-    </a>
-        /
-	<a href="https://mothsart.github.io/tag/html.html">html
-                <span class="badge">4</span>
-    </a>
-        /
-	<a href="https://mothsart.github.io/tag/caniuse.html">caniuse
-    </a>
-        /
-	<a href="https://mothsart.github.io/tag/modernizr.html">modernizr
+	<a href="https://mothsart.github.io/tag/primtux-html5-javascript.html">primtux html5 javascript
     </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
                 <h2>Intro</h2>
-<p>S'il on veut utiliser une propriété css/js/html ou une api Html5 et être certain que ça fonctionne sur notre nagivateur, le réflexe c'est caniuse.com</p>
-<p>Mais s'il on veut étayer son argumentaire, le mieux est de passer par les sites des 3 gros navigateurs :</p>
-<p><a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/shapes">IE et Edge</a></p>
-<p><a href="https://platform-status.mozilla.org/#css-shapes">Firefox</a></p>
-<p><a href="https://www.chromestatus.com/features">Chrome</a></p>
-<h2>Amélioration progressive</h2>
-<p>Pour détecter si un navigateur utilise une fonctionnalité, on avait jusqu'à présent <strong>Modernizr</strong>.</p>
-<p>Cette lib va progressivement disparaitre au profit de <strong>CSS supports</strong> : 
-<a href="https://la-cascade.io/css-supports-va-vous-changer-la-vie">Explications sur Css supports</a></p>
+<p>Le dev frontend est devenu une jungle de plus en plus toufu.
+HTML5 a introduit beaucoup de nouvelles fonctionnalités mais aussi leurs lots d’inexactitude, d'oublis etc.</p>
+<p>N'étant pas foncièrement dev front mais plutôt full, (oui, il parait que ça existe pas) j'ai souhaité faire un mini jeu en HTML5 avec quelques animations.</p>
+<h2>Premier constat : Javascript c'est le mal (et Flash le mal absolu)</h2>
+<p>Avant (ce qui à l'échelle de web représente la préhistoire alors qu'à l'échelle humaine c'était y'a quelques années) on utilisait du javascript pour faire de l'animation.
+C'était long, fastidieux et ça plombait souvent (toujours) les perfs.
+Maintenant, le support est natif donc les navigateurs savent le gérer, ça ne passe plus par le moteur javascript et ça utilise potentiellement le GPU. (sans parler de thread séparé donc non bloquant)</p>
+<h2>Mon animation</h2>
+<p>Je souhaitais tout simplement créer un stand de tir avec des cibles mouvantes comme on peut en voir dans les foires.
+Les cibles suivent donc idéalement un chemin non rectiligne et boucle.</p>
+<h3>constat 1 : on utilise SVG ou pas ?</h3>
+<h3>constat 2 : j'aimerais que ça soit responsive</h3>
+<h2>Les étapes de mise en place</h2>
+<h3>1 cible</h3>
+<h3>Plusieurs cibles</h3>
+<p>Maintenant qu'on est arrivé à faire ce que l'on voulait avec une cible, le but est d'avoir plusieurs cibles à la Queuleuleu.</p>
+<p>Ben oui, mais si on fait ça, on retarde l'animation des cibles.</p>
+<p>L'astuce est donc de mettre des valeurs négatives.</p>
+<h3>liens</h3>
+<p>http://tobiasahlin.com/blog/curved-path-animations-in-css/
+https://codepen.io/toptalblog/pen/qXRJeY</p>
             </div>
             <!-- /.entry-content -->
     <hr/>
@@ -193,7 +186,7 @@ Le Labo Du Nerd            </a>
             var disqus_shortname = 'http-mothsart-github-io'; // required: replace example with your forum shortname
 
             var disqus_config = function () {
-                    this.page.url = 'https://mothsart.github.io/caniuse.html';
+                    this.page.url = 'https://mothsart.github.io/tuto-primtux.html';
                 this.language = "fr";
             };
 

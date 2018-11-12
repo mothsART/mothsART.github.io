@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Sun, 04 Jun 2017 13:07:33 +0200</lastBuildDate><item><title>Binaire</title><link>https://mothsart.github.io/binaire.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Sun, 04 Jun 2017 13:07:33 +0200</lastBuildDate><item><title>Tuto Primtux</title><link>https://mothsart.github.io/tuto-primtux.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Le dev frontend est devenu une jungle de plus en plus toufu.
+HTML5 a introduit beaucoup de nouvelles fonctionnalités mais aussi leurs lots d’inexactitude, d'oublis etc.&lt;/p&gt;
+&lt;p&gt;N'étant pas foncièrement dev front mais plutôt full, (oui, il parait que ça existe pas) j'ai souhaité faire un mini jeu en HTML5 avec quelques animations.&lt;/p&gt;
+&lt;h2&gt;Premier constat : Javascript c'est le mal (et Flash le mal absolu)&lt;/h2&gt;
+&lt;p&gt;Avant (ce qui à l'échelle de web représente la préhistoire alors qu'à l'échelle humaine c'était y'a quelques années) on utilisait du javascript pour faire de l'animation.
+C'était long, fastidieux et ça plombait souvent (toujours) les perfs.
+Maintenant, le support est natif donc les navigateurs savent le gérer, ça ne passe plus par le moteur javascript et ça utilise potentiellement le GPU. (sans parler de thread séparé donc non bloquant)&lt;/p&gt;
+&lt;h2&gt;Mon animation&lt;/h2&gt;
+&lt;p&gt;Je souhaitais tout simplement créer un stand de tir avec des cibles mouvantes comme on peut en voir dans les foires.
+Les cibles suivent donc idéalement un chemin non rectiligne et boucle.&lt;/p&gt;
+&lt;h3&gt;constat 1 : on utilise SVG ou pas ?&lt;/h3&gt;
+&lt;h3&gt;constat 2 : j'aimerais que ça soit responsive&lt;/h3&gt;
+&lt;h2&gt;Les étapes de mise en place&lt;/h2&gt;
+&lt;h3&gt;1 cible&lt;/h3&gt;
+&lt;h3&gt;Plusieurs cibles&lt;/h3&gt;
+&lt;p&gt;Maintenant qu'on est arrivé à faire ce que l'on voulait avec une cible, le but est d'avoir plusieurs cibles à la Queuleuleu.&lt;/p&gt;
+&lt;p&gt;Ben oui, mais si on fait ça, on retarde l'animation des cibles.&lt;/p&gt;
+&lt;p&gt;L'astuce est donc de mettre des valeurs négatives.&lt;/p&gt;
+&lt;h3&gt;liens&lt;/h3&gt;
+&lt;p&gt;http://tobiasahlin.com/blog/curved-path-animations-in-css/
+https://codepen.io/toptalblog/pen/qXRJeY&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-11-12:tuto-primtux.html</guid><category>primtux html5 javascript</category></item><item><title>Binaire</title><link>https://mothsart.github.io/binaire.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;h1&gt;Utilitaire&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;file de libmagic&lt;/li&gt;
