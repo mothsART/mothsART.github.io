@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#mask {
+    transition-duration: 1s;
+}
+
+.zoom #mask {
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+}
+
+.zoom #mask .corner-top-left {
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    background-image: radial-gradient(circle at 100% 100%, rgba(204,0,0,0) 22vw, black 15px);
+}
+
+.zoom #mask .corner-top-right {
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    right: 0;
+    background-image: radial-gradient(circle at 0 100%, rgba(204,0,0,0) 22vw, black 15px);
+}
+
+.zoom #mask .corner-bottom-left {
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    bottom: 0;
+    background-image: radial-gradient(circle at 100% 0, rgba(204,0,0,0) 22vw, black 15px);
+}
+
+.zoom #mask .corner-bottom-right {
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    bottom: 0;
+    right: 0;
+    background-image: radial-gradient(circle at 0 0, rgba(204,0,0,0) 22vw, black 15px);
+}
+
+#frame {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #ffd54f;
+    transition-duration: 1s;
+}
+
+h1 {
+    text-align: center;
+    font-size: 400%;
+    background: whitesmoke;
+}
+
+.zoom #frame {
+    transform: scale(10) translate(-10%);
+    
+}
+
+#cache {
+    background: #f57f17;
+    position: absolute;
+    top: 57%;
+    width: 100%;
+    height: 43%;
+}
+
+#stand {
+    position: absolute;
+    top: 47%;
+    left: 40%;
+    width: 50%;
+    height: 10%;
+    box-sizing: border-box;
+    padding: 0%;
+}
+
+.bubble {
+    background: white;
+    margin: 3%;
+    margin-left: 23%;
+    padding: 1%;
+    border-radius: 1vw;
+}
+
+#man {
+    height: 65%;
+    width: 15%;
+    border-radius: 100%;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+}
+
+#man .head {
+    background: pink;
+    width: 62%;
+    height: 45%;
+    border-radius: 100%;
+    left: 20%;
+    top: -22%;
+    position: absolute;
+}
+
+.container {
+  position: absolute;
+  width: 8vw;
+  height: 8vw;
+  animation: letter-animation 40s linear infinite;
+}
+
+.c1 {
+    animation-delay: -2s;
+}
+
+.c2 {
+    animation-delay: -4s;
+}
+
+.c3 {
+    animation-delay: -6s;
+}
+
+.c4 {
+    animation-delay: -8s;
+}
+
+.c5 {
+    animation-delay: -10s;
+}
+
+.c6 {
+    animation-delay: -12s;
+}
+
+.c7 {
+    animation-delay: -14s;
+}
+
+.c8 {
+    animation-delay: -16s;
+}
+
+.c9 {
+    animation-delay: -18s;
+}
+
+.c10 {
+    animation-delay: -20s;
+}
+
+.c11 {
+    animation-delay: -22s;
+}
+
+.c12 {
+    animation-delay: -24s;
+}
+
+.c13 {
+    animation-delay: -26s;
+}
+
+.c14 {
+    animation-delay: -28s;
+}
+
+.c15 {
+    animation-delay: -30s;
+}
+
+.c16 {
+    animation-delay: -32s;
+}
+
+.c17 {
+    animation-delay: -34s;
+}
+
+.c18 {
+    animation-delay: -36s;
+}
+
+.c19 {
+    animation-delay: -38s;
+}
+
+.c20 {
+    animation-delay: -40s;
+}
+
+.c21 {
+    animation-delay: -42s;
+}
+
+.c22 {
+    animation-delay: -44s;
+}
+
+.c23 {
+    animation-delay: -46s;
+}
+
+.c24 {
+    animation-delay: -48s;
+}
+
+.c25 {
+    animation-delay: -50s;
+}
+
+.letter {
+    width: 20%;
+    height: 20%;
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 20%;
+    padding: 8% 7%;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    line-height: 150%;
+    font-size: 1vw;
+}
+
+@keyframes letter-animation {
+    0% { 
+    transform: translate(90%) rotate(0); 
+    }
+    30% {
+    transform: translate(450%) rotate(0); 
+    }
+    40% {
+        transform: translate(500%, 45%) rotate(90deg); 
+    }
+    50% {
+        transform: translate(500%, 90%) rotate(90deg); 
+    }
+    60% {
+        transform: translate(400%, 180%) rotate(180deg); 
+    }
+    70% {
+        transform: translate(0, 180%) rotate(180deg); 
+    }
+    80% {
+        transform: translate(0, 180%) rotate(270deg); 
+    }
+    85% {
+         transform: translate(0, 90%) rotate(270deg); 
+    }
+    90% {
+        transform: translate(0, 0) rotate(270deg); 
+    }
+    100% {
+        transform: translate(90%) rotate(360deg)
+    }
+}

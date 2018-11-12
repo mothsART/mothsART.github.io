@@ -1,0 +1,29 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./static/style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="./static/style_dev.css" media="screen"/>
+</head>
+<body>
+    <div id="frame">
+        <h1>Stand de tir</h1>
+        <article class="bubble">
+            <p>Tu es prêt ? Alors, appuie sur 
+                <button onclick="zoom(true)">commencer</button> 
+                ou tape sur la touche [Enter]
+            </p>
+        </article>
+        <div id="stand"></div>
+        <div id="cache"></div>
+        <div id="man">
+            <div class="head"></div>
+        </div>
+    </div>
+    
+    <div id="mask">
+        <div class="corner-top-left"></div>
+        <div class="corner-top-right"></div>
+        <div class="corner-bottom-left"></div>
+        <div class="corner-bottom-right"></div>
+    </div>
+    <script src="./static/script.js"></script>
+</body>

@@ -1,0 +1,55 @@
+<head>
+    <style>
+svg {
+  width: 300px;
+  display: block;
+  position: absolute;
+}
+
+.ball {
+position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  offset-path: path("M 28.142857,93.648804 H 186.54761 c 5.54,0 10,4.46 10,9.999996 v 49.54763 c 0,5.54 -4.46,10 -10,10 H 28.142857 c -5.54,0 -10,-4.46 -10,-10 V 103.6488 c 0,-5.539996 4.46,-9.999996 10,-9.999996 z");
+  offset-distance: 0%;
+  animation: red-ball 10s linear infinite;
+}
+
+.ball1 {
+  offset-distance: 10%;
+  animation: red-ball1 10s linear infinite;
+}
+
+@keyframes red-ball {
+  from {
+    offset-distance: 0%;
+  }
+  to {
+    offset-distance: 100%;
+  }
+}
+
+@keyframes red-ball1 {
+  from {
+    offset-distance: 10%;
+  }
+  to {
+    offset-distance: 110%;
+  }
+}
+    </style>
+</head>
+<body>
+
+<div class="cadre">
+    <svg width="300px" height="175px" version="1.1">
+        <path fill="transparent" 
+        stroke="#888888" stroke-width="1" 
+        d="M 28.142857,93.648804 H 186.54761 c 5.54,0 10,4.46 10,9.999996 v 49.54763 c 0,5.54 -4.46,10 -10,10 H 28.142857 c -5.54,0 -10,-4.46 -10,-10 V 103.6488 c 0,-5.539996 4.46,-9.999996 10,-9.999996 z class="path"></path>
+    </svg>
+
+    <div class="ball ball1"></div>
+    <div class="ball ball2"></div>
+</body>

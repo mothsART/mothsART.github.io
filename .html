@@ -18,8 +18,8 @@
         <meta property="og:title" content=""/>
         <meta property="og:url" content="https://mothsart.github.io/.html"/>
         <meta property="og:description" content=""/>
-        <meta property="article:published_time" content="2018-01-20" />
-            <meta property="article:section" content="frontend" />
+        <meta property="article:published_time" content="2018-11-11" />
+            <meta property="article:section" content="Tutos_Primtux" />
             <meta property="article:author" content="Jérémie Ferry" />
 
 
@@ -57,7 +57,7 @@ Le Labo Du Nerd            </a>
                         <li >
                             <a href="https://mothsart.github.io/category/aide-memoire.html">Aide-memoire</a>
                         </li>
-                        <li class="active">
+                        <li >
                             <a href="https://mothsart.github.io/category/frontend.html">Frontend</a>
                         </li>
                         <li >
@@ -74,6 +74,9 @@ Le Labo Du Nerd            </a>
                         </li>
                         <li >
                             <a href="https://mothsart.github.io/category/rust.html">Rust</a>
+                        </li>
+                        <li class="active">
+                            <a href="https://mothsart.github.io/category/tutos_primtux.html">Tutos_primtux</a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -134,7 +137,7 @@ Le Labo Du Nerd            </a>
     <span>
         <span class="label label-default">Date</span>
         <span class="published">
-            <i class="fa fa-calendar"></i><time datetime="2018-01-20T11:27:27.626177+01:00"> sam. 20 janvier 2018</time>
+            <i class="fa fa-calendar"></i><time datetime="2018-11-11T12:38:30.951724+01:00"> dim. 11 novembre 2018</time>
         </span>
     </span>
 
@@ -142,22 +145,31 @@ Le Labo Du Nerd            </a>
 
 
 
-    <span class="label label-default">Lang</span>
-	<a href="https://mothsart.github.io/.html">fr</a>
-
+    
 </footer><!-- /.post-info -->                    </div>
                 </div>
                 <h2>Intro</h2>
-<h2>Les moins</h2>
-<ul>
-<li>
-<p>Difficile à utiliser sur un projet existant : </p>
-</li>
-<li>
-<p>Nécessite de tout re-organiser en modules !</p>
-</li>
-</ul>
-<h2>Les plus</h2>
+<p>Le dev frontend est devenu une jungle de plus en plus toufu.
+HTML5 a introduit beaucoup de nouvelles fonctionnalités mais aussi leurs lots d’inexactitude, d'oublis etc.</p>
+<p>N'étant pas foncièrement dev front mais plutôt full, (oui, il parait que ça existe pas) j'ai souhaité faire un mini jeu en HTML5 avec quelques animations.</p>
+<h2>Premier constat : Javascript c'est le mal (et Flash le mal absolu)</h2>
+<p>Avant (ce qui à l'échelle de web représente la préhistoire alors qu'à l'échelle humaine c'était y'a quelques années) on utilisait du javascript pour faire de l'animation.
+C'était long, fastidieux et ça plombait souvent (toujours) les perfs.
+Maintenant, le support est natif donc les navigateurs savent le gérer, ça ne passe plus par le moteur javascript et ça utilise potentiellement le GPU. (sans parler de thread séparé donc non bloquant)</p>
+<h2>Mon animation</h2>
+<p>Je souhaitais tout simplement créer un stand de tir avec des cibles mouvantes comme on peut en voir dans les foires.
+Les cibles suivent donc idéalement un chemin non rectiligne et boucle.</p>
+<h3>constat 1 : on utilise SVG ou pas ?</h3>
+<h3>constat 2 : j'aimerais que ça soit responsive</h3>
+<h2>Les étapes de mise en place</h2>
+<h3>1 cible</h3>
+<h3>Plusieurs cibles</h3>
+<p>Maintenant qu'on est arrivé à faire ce que l'on voulait avec une cible, le but est d'avoir plusieurs cibles à la Queuleuleu.</p>
+<p>Ben oui, mais si on fait ça, on retarde l'animation des cibles.</p>
+<p>L'astuce est donc de mettre des valeurs négatives.</p>
+<h3>liens</h3>
+<p>http://tobiasahlin.com/blog/curved-path-animations-in-css/
+https://codepen.io/toptalblog/pen/qXRJeY</p>
             </div>
             <!-- /.entry-content -->
     <hr/>
@@ -217,13 +229,13 @@ Le Labo Du Nerd            </a>
                     <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/rust.html">
                             rust
-                                <span class="badge">17</span>
+                                <span class="badge">19</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/javascript.html">
                             javascript
-                                <span class="badge">14</span>
+                                <span class="badge">15</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -239,14 +251,14 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/css.html">
-                            css
+                        <a href="https://mothsart.github.io/tag/frontend.html">
+                            frontend
                                 <span class="badge">5</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/frontend.html">
-                            frontend
+                        <a href="https://mothsart.github.io/tag/css.html">
+                            css
                                 <span class="badge">5</span>
                         </a>
                     </li>
@@ -269,14 +281,14 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/c.html">
-                            c#
+                        <a href="https://mothsart.github.io/tag/sql.html">
+                            sql
                                 <span class="badge">4</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/sql.html">
-                            sql
+                        <a href="https://mothsart.github.io/tag/c.html">
+                            c#
                                 <span class="badge">4</span>
                         </a>
                     </li>
@@ -287,20 +299,8 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/raspberry.html">
-                            raspberry
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/zsh.html">
                             zsh
-                                <span class="badge">3</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/ubuntu.html">
-                            ubuntu
                                 <span class="badge">3</span>
                         </a>
                     </li>
@@ -311,56 +311,38 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/raspberry.html">
+                            raspberry
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
                         <a href="https://mothsart.github.io/tag/3d.html">
                             3D
                                 <span class="badge">3</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/picture.html">
-                            picture
+                        <a href="https://mothsart.github.io/tag/vuejs.html">
+                            vuejs
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/ubuntu.html">
+                            ubuntu
+                                <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/cli.html">
+                            cli
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/retouche.html">
-                            retouche
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/nodejs.html">
-                            nodejs
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/phonetic.html">
-                            phonetic
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/svg.html">
-                            svg
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/recalbox.html">
-                            recalbox
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/bench.html">
-                            bench
-                                <span class="badge">2</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/swift.html">
-                            swift
+                        <a href="https://mothsart.github.io/tag/bois.html">
+                            bois
                                 <span class="badge">2</span>
                         </a>
                     </li>
@@ -371,20 +353,50 @@ Le Labo Du Nerd            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/primtux.html">
-                            primtux
+                        <a href="https://mothsart.github.io/tag/nodejs.html">
+                            nodejs
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/cli.html">
-                            cli
+                        <a href="https://mothsart.github.io/tag/benchmark.html">
+                            benchmark
                                 <span class="badge">2</span>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mothsart.github.io/tag/gimp.html">
-                            gimp
+                        <a href="https://mothsart.github.io/tag/bench.html">
+                            bench
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/metaphone.html">
+                            metaphone
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/postcss.html">
+                            postcss
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/sh.html">
+                            sh
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/apple.html">
+                            apple
+                                <span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mothsart.github.io/tag/dev.html">
+                            dev
                                 <span class="badge">2</span>
                         </a>
                     </li>
