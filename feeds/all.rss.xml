@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Tue, 18 Sep 2018 19:45:04 +0200</lastBuildDate><item><title>Tuto Primtux</title><link>https://mothsart.github.io/tuto-primtux.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Sun, 09 Dec 2018 19:21:44 +0100</lastBuildDate><item><title>Outils pour le SVG</title><link>https://mothsart.github.io/outils-pour-le-svg.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;J'aime le vectoriel et ce qu'il permet.
+SVG est le seul format vraiment universel qui a persé.
+Néanmoins, malgré sa prise en chage croissante sur le web, ça reste un format délicat :
+- Manques dans la norme
+- comportements bizarre dans certains navigateurs dès qu'on sort de l'exemple classique
+- outils pour le manipuler&lt;/p&gt;
+&lt;h2&gt;Outils pour le manipuler&lt;/h2&gt;
+&lt;h3&gt;Ce qui existe :&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Inkscape&lt;/li&gt;
+&lt;li&gt;Svgo&lt;/li&gt;
+&lt;li&gt;SvgCleaner&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Ce qui manque :&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Des petits utilitaires pour se simplifier la vie :&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;=&amp;gt; supprimer les filtres, flous et autres effets en 2 clics
+=&amp;gt; supprimer les animations (css, smile, js)
+=&amp;gt; suppprimer le javascript
+=&amp;gt; avoir une image centrée
+=&amp;gt; &lt;/p&gt;
+&lt;p&gt;https://forum.ubuntu-fr.org/viewtopic.php?id=2034057&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-12-02:outils-pour-le-svg.html</guid><category>svg</category><category>outils</category></item><item><title>Tuto Primtux</title><link>https://mothsart.github.io/tuto-primtux.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Le dev frontend est devenu une jungle de plus en plus toufu.
 HTML5 a introduit beaucoup de nouvelles fonctionnalités mais aussi leurs lots d’inexactitude, d'oublis etc.&lt;/p&gt;
 &lt;p&gt;N'étant pas foncièrement dev front mais plutôt full, (oui, il parait que ça existe pas) j'ai souhaité faire un mini jeu en HTML5 avec quelques animations.&lt;/p&gt;
@@ -677,8 +700,8 @@ On évite principalement les soucis liés aux dépendances.&lt;/p&gt;
 &lt;h2&gt;Doc&lt;/h2&gt;
 &lt;p&gt;http://maurice-chavelli.developpez.com/javascript/vue-js-1-bases/&lt;/p&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
-&lt;p&gt;Un condensé de tout ce qui se fait de mieux autours de Vue.js (composants, examples, tutos, ) :&lt;/p&gt;
-&lt;p&gt;https://github.com/vuejs/awesome-vue&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Jul 2017 03:21:58 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:vue.js.html</guid><category>javascript</category><category>framework</category><category>vue</category><category>vue.js</category></item><item><title>I18n</title><link>https://mothsart.github.io/i18n.html</link><description>&lt;h2&gt;Créer un fichier pot à partir de sources Python&lt;/h2&gt;
+&lt;p&gt;Un condensé de tout ce qui se fait de mieux autours de Vue.js (composants, exemples, tutos, ) :&lt;/p&gt;
+&lt;p&gt;https://github.com/vuejs/awesome-vue&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 09 Dec 2018 19:21:44 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:vue.js.html</guid><category>javascript</category><category>framework</category><category>vue</category><category>vue.js</category></item><item><title>I18n</title><link>https://mothsart.github.io/i18n.html</link><description>&lt;h2&gt;Créer un fichier pot à partir de sources Python&lt;/h2&gt;
 &lt;pre class="highlight"&gt;&lt;code&gt;!bash
 pygettext -o monsterz.pot ./monsterz.py&lt;/code&gt;&lt;/pre&gt;
 
@@ -1207,7 +1230,10 @@ Avant de se casser la tête avec un sélecteur compliqué, pensez d'abord à sim
 &lt;/ul&gt;
 &lt;h2&gt;A venir&lt;/h2&gt;
 &lt;p&gt;J'aimerais pouvoir identifier facilement les morceaux de code Jquery à modifier.
-Pour cela, rien de mieux qu'une &lt;strong&gt;expression régulière (regex)&lt;/strong&gt; disponible dans chacune des lignes : il vous suffit de l'appliquer à la source de votre projet via un utilitaire tel que &lt;strong&gt;&lt;a href="https://github.com/BurntSushi/ripgrep"&gt;ripgrep&lt;/a&gt;&lt;/strong&gt; et identifier facilement les fichiers et lignes nécessitant un update ! &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-09:vanilla-a-a-a-a.html</guid><category>javascript</category><category>jquery</category><category>xpath</category><category>benchmark</category></item><item><title>config-canto</title><link>https://mothsart.github.io/config-canto.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+Pour cela, rien de mieux qu'une &lt;strong&gt;expression régulière (regex)&lt;/strong&gt; disponible dans chacune des lignes : il vous suffit de l'appliquer à la source de votre projet via un utilitaire tel que &lt;strong&gt;&lt;a href="https://github.com/BurntSushi/ripgrep"&gt;ripgrep&lt;/a&gt;&lt;/strong&gt; et identifier facilement les fichiers et lignes nécessitant un update ! &lt;/p&gt;
+&lt;h2&gt;Complément&lt;/h2&gt;
+&lt;p&gt;La liste des bonnes pratiques pour remplacer Jquery :&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://youmightnotneedjquery.com"&gt;youmightnotneedjquery&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 09 Dec 2018 19:20:49 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-09:vanilla-a-a-a-a.html</guid><category>javascript</category><category>jquery</category><category>xpath</category><category>benchmark</category></item><item><title>config-canto</title><link>https://mothsart.github.io/config-canto.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;INTERNAL USAGE
        Within the program you can use the following (default) keys.  These can
        be  changed in your configuration file by using the "key" configuration

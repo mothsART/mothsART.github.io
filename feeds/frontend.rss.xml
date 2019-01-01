@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 01 Aug 2018 21:36:31 +0200</lastBuildDate><item><title>Editeur WYSIWYG de SVG interactifs</title><link>https://mothsart.github.io/editeur-svg-interactif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Sun, 09 Dec 2018 19:21:44 +0100</lastBuildDate><item><title>Editeur WYSIWYG de SVG interactifs</title><link>https://mothsart.github.io/editeur-svg-interactif.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;L'objectif est simple : éditer un fichier SVG statique afin de le présenter comme un contenu interactif. 
 Permettre l'ajout de zones cliquables pouvant être zoomés et enrichies d'une explication.&lt;/p&gt;
 &lt;p&gt;Les fichiers générés (page HTML contenant le SVG) peuvent servir à divers usages :&lt;/p&gt;
@@ -113,8 +113,8 @@ Jusqu'à présent, j'ai créé les exemples (conception, réalisation sous Inksc
 &lt;h2&gt;Doc&lt;/h2&gt;
 &lt;p&gt;http://maurice-chavelli.developpez.com/javascript/vue-js-1-bases/&lt;/p&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
-&lt;p&gt;Un condensé de tout ce qui se fait de mieux autours de Vue.js (composants, examples, tutos, ) :&lt;/p&gt;
-&lt;p&gt;https://github.com/vuejs/awesome-vue&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sat, 15 Jul 2017 03:21:58 +0200</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:vue.js.html</guid><category>javascript</category><category>framework</category><category>vue</category><category>vue.js</category></item><item><title>CanIuse</title><link>https://mothsart.github.io/caniuse.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Un condensé de tout ce qui se fait de mieux autours de Vue.js (composants, exemples, tutos, ) :&lt;/p&gt;
+&lt;p&gt;https://github.com/vuejs/awesome-vue&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 09 Dec 2018 19:21:44 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-05-25:vue.js.html</guid><category>javascript</category><category>framework</category><category>vue</category><category>vue.js</category></item><item><title>CanIuse</title><link>https://mothsart.github.io/caniuse.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;S'il on veut utiliser une propriété css/js/html ou une api Html5 et être certain que ça fonctionne sur notre nagivateur, le réflexe c'est caniuse.com&lt;/p&gt;
 &lt;p&gt;Mais s'il on veut étayer son argumentaire, le mieux est de passer par les sites des 3 gros navigateurs :&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/shapes"&gt;IE et Edge&lt;/a&gt;&lt;/p&gt;
@@ -196,7 +196,10 @@ Avant de se casser la tête avec un sélecteur compliqué, pensez d'abord à sim
 &lt;/ul&gt;
 &lt;h2&gt;A venir&lt;/h2&gt;
 &lt;p&gt;J'aimerais pouvoir identifier facilement les morceaux de code Jquery à modifier.
-Pour cela, rien de mieux qu'une &lt;strong&gt;expression régulière (regex)&lt;/strong&gt; disponible dans chacune des lignes : il vous suffit de l'appliquer à la source de votre projet via un utilitaire tel que &lt;strong&gt;&lt;a href="https://github.com/BurntSushi/ripgrep"&gt;ripgrep&lt;/a&gt;&lt;/strong&gt; et identifier facilement les fichiers et lignes nécessitant un update ! &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-09:vanilla-a-a-a-a.html</guid><category>javascript</category><category>jquery</category><category>xpath</category><category>benchmark</category></item><item><title>Debuggage Javascript</title><link>https://mothsart.github.io/debug-js.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+Pour cela, rien de mieux qu'une &lt;strong&gt;expression régulière (regex)&lt;/strong&gt; disponible dans chacune des lignes : il vous suffit de l'appliquer à la source de votre projet via un utilitaire tel que &lt;strong&gt;&lt;a href="https://github.com/BurntSushi/ripgrep"&gt;ripgrep&lt;/a&gt;&lt;/strong&gt; et identifier facilement les fichiers et lignes nécessitant un update ! &lt;/p&gt;
+&lt;h2&gt;Complément&lt;/h2&gt;
+&lt;p&gt;La liste des bonnes pratiques pour remplacer Jquery :&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://youmightnotneedjquery.com"&gt;youmightnotneedjquery&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Sun, 09 Dec 2018 19:20:49 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2017-02-09:vanilla-a-a-a-a.html</guid><category>javascript</category><category>jquery</category><category>xpath</category><category>benchmark</category></item><item><title>Debuggage Javascript</title><link>https://mothsart.github.io/debug-js.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Debugger du JS ainsi que du html mal formé n'est pas toujours aisé : surtout quand c'est le code de quelqu'un autre ou un très vieux dev.&lt;/p&gt;
 &lt;p&gt;Voici une base d'outils qui permettent de simplifier les choses.&lt;/p&gt;
 &lt;h2&gt;diff DOM contre le HTML mal formé&lt;/h2&gt;

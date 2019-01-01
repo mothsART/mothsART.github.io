@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 01 Aug 2018 21:36:31 +0200</lastBuildDate><item><title>Les algos en IA</title><link>https://mothsart.github.io/algos-ia.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+<rss version="2.0"><channel><title>Le Labo Du Nerd</title><link>https://mothsart.github.io/</link><description></description><lastBuildDate>Wed, 01 Aug 2018 21:36:31 +0200</lastBuildDate><item><title>Outils pour le SVG</title><link>https://mothsart.github.io/outils-pour-le-svg.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;J'aime le vectoriel et ce qu'il permet.
+SVG est le seul format vraiment universel qui a persé.
+Néanmoins, malgré sa prise en chage croissante sur le web, ça reste un format délicat :
+- Manques dans la norme
+- comportements bizarre dans certains navigateurs dès qu'on sort de l'exemple classique
+- outils pour le manipuler&lt;/p&gt;
+&lt;h2&gt;Outils pour le manipuler&lt;/h2&gt;
+&lt;h3&gt;Ce qui existe :&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Inkscape&lt;/li&gt;
+&lt;li&gt;Svgo&lt;/li&gt;
+&lt;li&gt;SvgCleaner&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Ce qui manque :&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Des petits utilitaires pour se simplifier la vie :&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;=&amp;gt; supprimer les filtres, flous et autres effets en 2 clics
+=&amp;gt; supprimer les animations (css, smile, js)
+=&amp;gt; suppprimer le javascript
+=&amp;gt; avoir une image centrée
+=&amp;gt; &lt;/p&gt;
+&lt;p&gt;https://forum.ubuntu-fr.org/viewtopic.php?id=2034057&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-12-02:outils-pour-le-svg.html</guid><category>svg</category><category>outils</category></item><item><title>Les algos en IA</title><link>https://mothsart.github.io/algos-ia.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;L'IA : un vaste sujet&lt;/p&gt;
 &lt;h2&gt;Liens&lt;/h2&gt;
 &lt;p&gt;http://www-igm.univ-mlv.fr/~dr/XPOSE2014/Machin_Learning/index.html&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jérémie Ferry</dc:creator><pubDate>Fri, 11 Dec 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:mothsart.github.io,2018-08-01:algos-ia.html</guid><category>ia</category></item><item><title>Search diff image</title><link>https://mothsart.github.io/search-diff-image.html</link><description>&lt;h2&gt;Intro&lt;/h2&gt;
