@@ -17,6 +17,7 @@ function import_file(files, contents, str_svg) {
 }
 
 function save_file(contents, str_svg) {
+  "use strict";
   var BB = get_blob();
   saveAs(
     new BB(
