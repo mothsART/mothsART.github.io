@@ -14,7 +14,7 @@ const en_messages = {
     add_to_legend:             'Add to Legend',
     error_try_again:           'Error! Try again!',
     edit_title:                'Edit title and description',
-    enabled:                   'Enabled',
+    preview:                   'Preview',
     no_title:                  '-- no title --',
     edit_legend:               'Edit legend',
     title:                     'Title',
@@ -167,7 +167,9 @@ const en_messages = {
     choose:                    'choose',
     more:                      'more',
     less:                      'less',
-    fit_page_to_drawing:       'Fit page to drawing'
+    fit_page_to_drawing:       'Fit page to drawing',
+    update:                    'Update',
+    update_pic:            'Would you update this picture ?'
   }
 }
 
@@ -187,7 +189,7 @@ const fr_messages = {
     add_to_legend:             'Ajouter à la légende',
     error_try_again:           'Erreur ! Essayez à nouveau !',
     edit_title:                'Éditer un titre et un descriptif',
-    enabled:                   'Activer',
+    preview:                   'Prévisualisation',
     no_title:                  '-- sans titre --',
     edit_legend:               'Édition de la légende',
     title:                     'Titre',
@@ -354,7 +356,9 @@ const fr_messages = {
     choose:                    'Choisir',
     more:                      'Plus',
     less:                      'Moins',
-    fit_page_to_drawing:       'Ajuster la page à l\'illustration'
+    fit_page_to_drawing:       'Ajuster la page à l\'illustration',
+    update:                    'Mise à jour',
+    update_pic:                'Vous désirez mettre à jour le fichier svg ?'
   }
 }
 

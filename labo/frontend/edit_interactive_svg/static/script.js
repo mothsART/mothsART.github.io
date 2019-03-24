@@ -89,6 +89,14 @@ var dragAndDrop = {
       $($('#real-legend .indice')[old_index]).insertAfter($($('#real-legend .indice')[new_index]));
     }
     reorder_legend();
+    var old_x = 7;
+    if (old_index > 9)
+      old_x = 2;
+    var new_x = 7;
+    if (new_index > 9)
+      new_x = 2;
+    $($('svg .indice')[old_index - 1]).find('.indice-text')[0].setAttribute("x",  old_x);
+    $($('svg .indice')[new_index - 1]).find('.indice-text')[0].setAttribute("x",  new_x);
   }
 };
 
@@ -152,7 +160,9 @@ function translate_app(local) {
         ['justifyLeft', 'justifyCenter', 'justifyRight', 'justifyFull'],
         ['unorderedList', 'orderedList'],
         ['horizontalRule'],
-        ['removeformat']
+        ['removeformat'],
+        ['foreColor', 'backColor'],
+        ['emoji']
     ]
   });
   var localization = $.spectrum.localization[local] = {
@@ -168,8 +178,10 @@ function translate_app(local) {
 function load() {
   "use strict";
   translate_app();
-  if (document.getElementsByTagName('body')[0].classList.contains('debug'))
+  if (document.getElementsByTagName('body')[0].classList.contains('debug')) {
+    DEBUG = true;
     document.getElementById('release-menu').classList.add('hidden');
+  }
   else
     document.getElementById('debug-menu').classList.add('hidden');
 };
@@ -293,33 +305,17 @@ function percentage_change(value1, value2, size) {
 
 function createForeignObject() {
   "use strict";
-  /*var switchE = document.createElementNS("http://www.w3.org/2000/svg", "switch");
-  var foreignObject = document.createElementNS("http://www.w3.org/2000/svg", "foreignObject");
-  var xhtmlNS = "http://www.w3.org/1999/xhtml";
-  foreignObject.setAttributeNS(null, "x", "0");
-  foreignObject.setAttributeNS(null, "y", "0");
-  foreignObject.setAttributeNS(null, "width", "100%");
-  foreignObject.setAttributeNS(null, "height", "100%");
-  var section = document.createElementNS("http://www.w3.org/1999/xhtml", "section");
-  var subsituteText = document.createElement("text");
-  var substituteContent = document.createTextNode("[Not supported by viewer]");
-  subsituteText.appendChild(substituteContent);
-  section.id = "indices";
-  foreignObject.appendChild(section);
-  switchE.appendChild(foreignObject);
-  switchE.appendChild(subsituteText);
-  */
   var svg = $("#svg svg")[0];
   var rootElement = document.createElementNS(NS, "g");
   rootElement.setAttribute("id", "root-svg");
   rootElement.innerHTML = svg.innerHTML;
   svg.innerHTML   = '';
   svg.append(rootElement);
-  //svg.appendChild(switchE);
   SVG.init();
   var SVG_Rect = svg.viewBox.baseVal;
   if (
-    !(SVG_Rect.x == 0 && SVG_Rect.y == 0 && SVG_Rect.width == 0 && SVG_Rect.height == 0)
+    SVG_Rect != null
+    && !(SVG_Rect.x == 0 && SVG_Rect.y == 0 && SVG_Rect.width == 0 && SVG_Rect.height == 0)
     && (
       percentage_change(SVG.x, SVG_Rect.x, SVG.width) > 20
       || percentage_change(SVG.y, SVG_Rect.y, SVG.height) > 20
@@ -542,7 +538,7 @@ function display_result(element) {
   $("#indices .indice").attr("onclick", "real_zoom(this);");
   $("#edit-menu, #sidebar, #delete-svg").addClass("hidden");
   $("#svg").removeClass("edit-mode").addClass("show");
-  $("#show-menu, #real-legend").removeClass("hidden");
+  $("#show-menu, #real-legend, #help-button").removeClass("hidden");
   $("#svg svg").css("transform", "scale(1)");
   $("#indices .indice").each(function(index, el) {
     if ($(el).hasClass('hidden'))
@@ -570,7 +566,7 @@ function return_to_edit() {
   svg_element.classList.remove("duration");
   svg_element.style.transform =  "scale(1)";
   $("#svg").removeClass("show").addClass("edit-mode");
-  $("#show-menu, #real-legend").addClass("hidden");
+  $("#show-menu, #real-legend, #help-button, #help-dialog").addClass("hidden");
   $(".description").addClass("hidden");
   $("#indices .indice").each(function(index, el) {
     if ($(el).data('hidden') == true)
@@ -755,7 +751,7 @@ function zoom(element) {
   var scale_enabled = false;
   if (element.parentNode.getElementsByClassName('zoom-enabled')[0].checked)
     scale_enabled = true;
-  zoom_on(index, value, true, scale_enabled);
+  zoom_on(index, value, scale_enabled, scale_enabled);
 }
 
 function active_zoom(element) {
@@ -766,11 +762,9 @@ function active_zoom(element) {
   var id = $(element.parentNode.parentNode.parentNode).find(".indice").attr("id").replace("legend-", "");
   var indice_element = $("#root-svg #" + id);
   if($(element).prop('checked')) {
-    zoom_input.attr("disabled", false);
     zoom(element);
   }
   else {
-    zoom_input.attr("disabled", true);
     var indice = $("#" + zoom_input.data("indice-id"));
     indice.data("zoom", zoom_input.val());
     document.getElementById("svg").removeAttribute("data-scale");
@@ -785,6 +779,8 @@ function fit_page_to_drawing() {
   $('.description').addClass('hidden');
   $("#svg svg").css("transform", "scale(1)");
   $("#root-svg").css("transform", "initial");
+  document.getElementById('content')
+          .setAttribute('data-real-zoom-indice', null);
 }
 
 function real_zoom(element) {
@@ -846,6 +842,16 @@ function open_dialog() {
     $("#legend-title").val(text);
 }
 
+function add_blank(html) {
+    "use strict";
+    var doc = new DOMParser().parseFromString(html, "text/xml");
+    var links = doc.getElementsByTagName('a');
+    for (var i = 0; i < links.length; i++) {
+        links[i].setAttribute('target', '_blank');
+    }
+    return doc.firstChild.innerHTML;
+}
+
 function hide_dialog() {
   "use strict";
   var text = $("#legend-title").val();
@@ -864,7 +870,21 @@ function hide_dialog() {
   }
   var html = $("#indice-description").trumbowyg('html');
   if (html != "")
-    $("#description-" + index + " .description-content").html(html);
+    document.getElementById('description-' + index)
+            .getElementsByClassName('description-content')[0]
+            .innerHTML = add_blank(html);
+}
+
+function show_help() {
+    "use strict";
+    document.getElementsByTagName('body')[0].classList.add('mask');
+    document.getElementById('help-dialog').classList.remove('hidden');
+}
+
+function closeDialog(element) {
+    "use strict";
+    document.getElementsByTagName('body')[0].classList.remove('mask');
+    element.parentNode.classList.add('hidden');
 }
 
 $('#edit-legend-modal').on('show.bs.modal', function (e) {
