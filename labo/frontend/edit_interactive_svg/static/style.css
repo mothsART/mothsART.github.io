@@ -243,6 +243,11 @@ button:focus {
     position: absolute;
 }
 
+#update-svg {
+    z-index: 1;
+    position: absolute;
+}
+
 /* <SIDEBAR> */
 #sidebar {
     padding: 5px;
