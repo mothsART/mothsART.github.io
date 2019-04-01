@@ -428,12 +428,15 @@ function change_indice_color(indice_id, hex_color) {
   "use strict";
   var indice = $("#" + indice_id);
   indice.css("background-color", hex_color);
-  $("#description-" + indice.attr("id").substring(14)).find(".indice").css(
-    "background-color", hex_color
-  );
-  $("#real-" + indice.attr("id").substring(7)).find("span").css(
-    "background-color", hex_color
-  );
+  var id = indice[0].getAttribute('id');
+  if (id) {
+      $("#description-" + id.substring(14)).find(".indice").css(
+        "background-color", hex_color
+      );
+      $("#real-" + id.substring(7)).find("span").css(
+        "background-color", hex_color
+      );
+  }
   var rgb = hexToRgb(hex_color);
   var luminance = rgbToHsl(rgb.r, rgb.g, rgb.b);
   var color = "white";
