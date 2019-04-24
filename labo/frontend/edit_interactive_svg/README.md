@@ -17,6 +17,13 @@ Because SVG illustration designed to **educative programs** is really better whe
 
 ## Goals (1.1)
 
+- [x] shortcuts on preview mode and export files.
+- [x] user can add copyrights
+- [x] change svg source without delete legend.
+- [x] change zoom with and without preview
+
+## Goals (1.2)
+
 ## Goals (2.0)
 
 - [ ] Undo/Redo (using a diff DOM) + historic
@@ -42,4 +49,12 @@ Actualy, to use **edit mode**, simply change the class of the <body> to "debug" 
 <body class="debug">
 ...
 </body>
+```
+
+## Create a Debian package
+
+```sh
+git clone https://github.com/mothsART/editInteractiveSVG.git
+cd editInteractiveSVG
+dpkg-buildpackage -us -uc
 ```

@@ -147,6 +147,7 @@ function translate_app(local) {
   Editor.local = translateElementsByClassName("i18n", local);
   if (local)
     translateExportInterface(local);
+  update_name();
   $("#indice-description, #edit-copyright").trumbowyg('destroy');
   $("#indice-description, #edit-copyright").trumbowyg({
     lang: Editor.local,
@@ -585,6 +586,7 @@ function delete_pic(replace) {
   checked_all();
   delete_legend();
   $("#nb-indices, #count-nb-display").val(0);
+  document.getElementById('source-file').setAttribute('data-title', '');
   $("#svg svg").remove();
   document.getElementById('content').setAttribute('data-full', false);
   if (!replace) {

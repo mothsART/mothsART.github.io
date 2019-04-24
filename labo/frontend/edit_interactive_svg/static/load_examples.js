@@ -135,13 +135,29 @@ function load_file(stream) {
       real_legend[0].getElementsByClassName('indice')
   );
   // clone copyrights
-  var copyright = $(el).find('#copyright-content')[0].innerHTML.trim();
+  var copyright = null;
+  var copyright_content = $(el).find('#copyright-content')[0];
+  if (copyright_content) {
+      copyright= copyright_content.innerHTML.trim();
+  }
   if (copyright) {
     document.getElementById('edit-copyright').innerHTML = copyright;
     document.getElementById('copyright-content')
              .innerHTML = add_blank(copyright);
    }
   $('#upload-zone form').removeClass('is-uploading');
+}
+
+function update_name() {
+    "use strict";
+    var sourceElement = document.getElementById('source-file');
+    var title = sourceElement.getAttribute('data-title');
+    if (!title)
+        return;
+    var example = translate(Editor.local, 'example');
+    title = title + ' (' + example + ')';
+    sourceElement.innerText = title;
+    sourceElement.setAttribute('title', title);
 }
 
 function load_example(url, name) {
@@ -154,8 +170,8 @@ function load_example(url, name) {
     modal.modal('show');
     return;
   }
-  $("#source-file").text(name);
-  $("#source-file").attr('title', name);
+  document.getElementById('source-file').setAttribute('data-title', name);
+  update_name(name);
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.open("GET", url, true);
   var isSVG = false;

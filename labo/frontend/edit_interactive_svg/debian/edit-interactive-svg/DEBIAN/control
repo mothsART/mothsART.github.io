@@ -1,0 +1,10 @@
+Package: edit-interactive-svg
+Version: 1.1.1.0
+Architecture: all
+Maintainer: Jérémie Ferry <jerem.ferry@gmail.com>
+Installed-Size: 4241
+Depends: firefox | firefox-esr
+Section: education
+Priority: optional
+Homepage: https://mothsart.github.io/labo/frontend/edit_interactive_svg/
+Description: Edit SVG files to be interactive
