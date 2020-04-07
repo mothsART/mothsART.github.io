@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./static/style.css">
+    </head>
+    <body>
+        <div id="game">
+            <div class="container">
+                <canvas id="canvas-background" class="pixelated" width="800" height="600"></canvas>
+                <canvas id="canvas-ladders" class="pixelated" width="800" height="600"></canvas>
+                <canvas id="canvas-floor" class="pixelated" width="800" height="600"></canvas>
+
+                <canvas id="canvas-items" class="pixelated" width="800" height="600"></canvas>
+                <canvas id="canvas-gate" class="pixelated" width="800" height="600"></canvas>
+
+                <canvas id="canvas-slices" class="pixelated" width="800" height="600"></canvas>
+                <div id="score">
+                    <span id="nb-items">0</span>
+                    x
+                </div>
+                <canvas id="canvas-score" class="pixelated" width="800" height="600"></canvas>
+            </div>
+        </div>
+        <div id="intro">
+            <div class="container">
+                <div id="intro-text">
+                    <p>Tu es prêt ?</p>
+                    <p>
+                        Alors appui sur 
+                    </p>
+                    <button id="start-game" onclick="start_game();">
+                        commencer
+                    </button>
+                    <p>ou tape sur</p>
+                    <p>la touche <strong>[Entrée]</strong></p>
+                </div>
+                <canvas id="canvas-intro-title" class="pixelated" width="104" height="51"></canvas>
+                <canvas id="canvas-intro" class="pixelated" width="86" height="59"></canvas>
+            </div>
+        </div>
+        <div class="hidden">
+            <img id="img-ladder-horizontal" src="./static/ladder_horizontal.png">
+            <img id="img-ladder-vertical" src="./static/ladder_vertical.png">
+            <img id="img-floor" src="./static/floor.png">
+        </div>
+    </body>
+    <script src="./static/loadimages.js"></script>
+    <script src="./static/intro.js"></script>
+    <script src="./static/colision.js"></script>
+    <script src="./static/animation.js"></script>
+    <script src="./static/items.js"></script>
+    <script src="./static/score.js"></script>
+    <script src="./static/gate.js"></script>
+    <script src="./static/ladder.js"></script>
+    <script src="./static/floor.js"></script>
+    <!--<script src="./static/pic.js"></script>-->
+    <script src="./static/debug.js"></script>
+</html>
