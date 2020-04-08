@@ -3,8 +3,8 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="./static/style.css">
     </head>
-    <body>
-        <div id="game">
+    <body onload="load_game()">
+        <div id="game" class="hidden">
             <div class="container">
                 <canvas id="canvas-background" class="pixelated" width="800" height="600"></canvas>
                 <canvas id="canvas-ladders" class="pixelated" width="800" height="600"></canvas>
@@ -21,7 +21,7 @@
                 <canvas id="canvas-score" class="pixelated" width="800" height="600"></canvas>
             </div>
         </div>
-        <div id="intro">
+        <div id="intro" class="hidden">
             <div class="container">
                 <div id="intro-text">
                     <p>Tu es prêt ?</p>

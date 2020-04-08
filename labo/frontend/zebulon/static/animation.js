@@ -11,6 +11,7 @@ let images = {
 };
 
 let intro_element = document.getElementById('intro');
+let game_element = document.getElementById('game');
 
 loadImages(images, function(images) {
     zebulon.canvas.drawImage(
@@ -24,8 +25,13 @@ loadImages(images, function(images) {
 
 document.onkeydown = checkKey;
 
+function load_game() {
+    intro_element.classList.remove('hidden');
+}
+
 function start_game() {
     intro_element.classList.add('hidden');
+    game_element.classList.remove('hidden');
 }
 
 function move(zebulon, x, y) {
