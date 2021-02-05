@@ -21,6 +21,7 @@ const en_messages = {
     source_file:               'Source file:',
     undo:                      'Undo',
     redo:                      'Redo',
+    history:                   'History',
     description1:              'Edit a static SVG with legend and description to be an interactive content.',
     description2:              'In order to be the most relevant, it is possible to add zooms to focus on a particular element.',
     credits:                   'Credits',
@@ -168,10 +169,12 @@ const en_messages = {
     more:                      'more',
     less:                      'less',
     fit_page_to_drawing:       'Fit page to drawing',
-    update:                    'Update',
-    update_pic:                'Would you update this picture ?',
+    _new:                      'New',
+    update_pic:                'Would you like replacing this picture ?',
     edit_copyright:            'Edit copyright',
-    example:                   'example'
+    example:                   'example',
+    unstable_errors:           'unstable version detected.',
+    error_unstable_version:    "This version (" + __version__() + ") is unstable. It is therefore not recommended to use it."
   }
 }
 
@@ -198,6 +201,7 @@ const fr_messages = {
     source_file:               'Fichier source :',
     undo:                      'Annuler',
     redo:                      'Rétablir',
+    history:                   'Historique',
     description1:              'Permet de transformer un fichier SVG statique en un contenu interactif avec une légende et un descriptif.',
     description2:              'Pour que ce contenu soit le mieux mis en valeur, il est possible de zoomer sur les zones désignées par un indice.',
     credits:                   'Auteurs',
@@ -211,7 +215,7 @@ const fr_messages = {
     warnings:                  'Avertissements',
     errors:                    'Erreurs',
     errors_detected:           'Des anomalies majeures ont été détectées à l\'import.',
-    error_file_not_supported:  'Le type de fichier n\est pas supporté',
+    error_file_not_supported:  'Le type de fichier n\'est pas supporté',
     warnings_detected:         'Des anomalies mineures ont été détectées à l\'import.',
     warning_style:             'Le fichier importé contient une ou plusieurs balises <strong>&#60;style&#62;</strong>'
                                +' : toutes les règles css présentes ont été préfixées pour des raisons de sécurité.',
@@ -233,7 +237,7 @@ const fr_messages = {
                                + 'Cet éditeur permet d\'ajouter de l\'interactivité à un document statique en lui ajoutant des '
                                + 'zones titrées et commentées ainsi que d\'éventuels zooms.'
                                + '</p>'
-                               + 'Pour vos premiers usages, il est fortement recommandé d\'ouvrir un des exemples '
+                               + '<p>Pour vos premiers usages, il est fortement recommandé d\'ouvrir un des exemples '
                                + '(liste en haut à gauche) afin de découvrir à quoi peu ressembler une illustration interactive terminée.'
                                + '</p>',
     principle:                 'Principe du logiciel',
@@ -293,7 +297,7 @@ const fr_messages = {
                                + 'Néanmoins, il reste possible d\'affiner encore cette sélection via un second dialogue donnant accès à une pipette de 16 millions de couleurs.'
                                + '</li>'
                                + '<li>'
-                               + 'Un bouton vert dans la zone d\'édition d\'un indice vous donne la possibilité d\'attribuer un titre et un descriptif à votre indice.'
+                               + 'Un bouton vert dans la zone d\'édition d\'un indice vous donne la possibilité d\'attribuer un titre et un descriptif à votre indice. '
                                + 'L\'appui en dehors de la zone de dialogue fermera automatiquement le dialogue et enregistrera votre travail.<br />'
                                + 'Les commentaires peuvent être enrichis par des zones en italique, en gras, des tailles de texte, des images etc.<br />'
                                + 'Su vous désirez des explications avancées sur cet éditeur, le mieux est de consulter le site du plugin correspondant : <br />'
@@ -359,10 +363,12 @@ const fr_messages = {
     more:                      'Plus',
     less:                      'Moins',
     fit_page_to_drawing:       'Ajuster la page à l\'illustration',
-    update:                    'Mise à jour',
-    update_pic:                'Vous désirez mettre à jour le fichier svg ?',
+    _new:                      'Nouveau',
+    update_pic:                'Vous désirez remplacer le fichier svg ?',
     edit_copyright:            'Edition des crédits',
-    example:                   'exemple'
+    example:                   'exemple',
+    unstable_errors:           'version instable détectée',
+    error_unstable_version:    "Cette version (" + __version__() + ") est instable. Il est donc déconseillé de l'utiliser."
   }
 }
 
