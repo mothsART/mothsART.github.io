@@ -5,76 +5,42 @@ let ladders_img = {
     vertical: document.getElementById("img-ladder-vertical")
 };
 
-let ladders = [
-    {
-        x: 150,
-        y: 100,
-        width: 50,
-        height: 100
+const ladders = {
+    init: function(ladders_data) {
+        ladders_canvas.clearRect(0, 0, 800, 600);
+        for (ladder of ladders_data) {
+            this._horizontal_tiles(ladders_img.horizontal, ladder, 1, 3, 10);
+            this._vertical_tiles(ladders_img.vertical, ladder, 3, 1);
+        }
     },
-    {
-        x: 650,
-        y: 100,
-        width: 50,
-        height: 100
+    _horizontal_tiles: function (img, ladder, width, height, space) {
+        let increment = ladder.height / space;
+        for (let i = 0; i < increment; i++) {
+            ladders_canvas.drawImage(
+                img,
+                ladder.x,
+                ladder.y + i * space,
+                ladder.width,
+                height
+            );
+        }
     },
-    {
-        x: 500,
-        y: 200,
-        width: 50,
-        height: 150
-    },
-    {
-        x: 100,
-        y: 350,
-        width: 50,
-        height: 100
-    },
-    {
-        x: 650,
-        y: 350,
-        width: 50,
-        height: 100
-    },
-    {
-        x: 500,
-        y: 450,
-        width: 50,
-        height: 100
-    }
-];
-
-function horizontal_tiles(img, ladder, width, height, space) {
-    let increment = ladder.height / space;
-    for (let i = 0; i < increment; i++) {
+    _vertical_tiles: function (img, ladder, width, height) {
         ladders_canvas.drawImage(
             img,
             ladder.x,
-            ladder.y + i * space,
-            ladder.width,
-            height
+            ladder.y,
+            width,
+            ladder.height
+        );
+        ladders_canvas.drawImage(
+            img,
+            ladder.x + ladder.width - width,
+            ladder.y,
+            width,
+            ladder.height
         );
     }
 }
 
-function vertical_tiles(img, ladder, width, height) {
-    ladders_canvas.drawImage(
-        img,
-        ladder.x,
-        ladder.y,
-        width,
-        ladder.height
-    );
-    ladders_canvas.drawImage(
-        img,
-        ladder.x + ladder.width - width,
-        ladder.y,
-        width,
-        ladder.height
-    );
-}
 
-for (ladder of ladders) {
-    horizontal_tiles(ladders_img.horizontal, ladder, 1, 3, 10);
-    vertical_tiles(ladders_img.vertical, ladder, 3, 1);
-}

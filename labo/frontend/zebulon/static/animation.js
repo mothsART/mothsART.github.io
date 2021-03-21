@@ -1,121 +1,122 @@
-let zebulon = {
-    x: 10,
-    y: 305,
-    width: 36,
-    height: 40,
-    canvas: document.getElementById('canvas-slices').getContext('2d')
-}
-
-let images = {
-    zebulon: './static/zebulon.png'
-};
-
-let intro_element = document.getElementById('intro');
-let game_element = document.getElementById('game');
-
-loadImages(images, function(images) {
-    zebulon.canvas.drawImage(
-        images.zebulon,
-        zebulon.x,
-        zebulon.y,
-        zebulon.width,
-        zebulon.height
-    );
-});
+let active_level = null;
 
 document.onkeydown = checkKey;
 
+const css_class = {
+    show: function (class_name) {
+        css_class._change(class_name, true);
+    },
+    hidden: function(class_name) {
+        css_class._change(class_name, false);
+    },
+    _change: function(class_name, visible) {
+        var els = document.getElementsByClassName(class_name);
+        Array.prototype.forEach.call(els, function(el) {
+            if (visible) {
+                el.classList.remove('hidden');
+                return;
+            }
+            el.classList.add('hidden');
+        });
+    }
+};
+
+const level_title = {
+    level_title_el: document.getElementById('level-title'),
+    level_title_strong_el: document.getElementById('level-title__strong'),
+    level_title_font_el: document.getElementById('level-title__font'),
+    lock: false,
+    show: function(title) {
+        level_title.level_title_strong_el.innerText = title;
+        level_title.level_title_font_el.innerText = title;
+        level_title.level_title_el.classList.add('show');
+        level_title.lock = true;
+        setTimeout(this.hidden, 1000);
+    },
+    hidden: function() {
+        level_title.lock = false;
+        level_title.level_title_el.classList.remove('show');
+    }
+}
+
+const intro = {
+    intro_el: document.getElementById('intro'),
+    show: function() {
+        game.stop();
+        intro.intro_el.classList.remove('hidden');
+    },
+    hidden: function() {
+        intro.intro_el.classList.add('hidden');
+    }
+};
+
+const game = {
+    el: document.getElementById('game'),
+    is_playing: false,
+    start: function() {
+        css_class.hidden('level');
+        game.el.classList.remove('hidden');
+        game.is_playing = true;
+    },
+    stop: function() {
+        game.el.classList.add('hidden');
+        game.is_playing = false;
+    }
+};
+
+const end = {
+    end_el: document.getElementById('end'),
+    show: function() {
+        game.stop();
+        end.end_el.classList.remove('hidden');
+    },
+    hidden: function() {
+        end.end_el.classList.add('hidden');
+    }
+};
+
 function load_game() {
-    intro_element.classList.remove('hidden');
+    intro.show();
 }
 
 function start_game() {
-    intro_element.classList.add('hidden');
-    game_element.classList.remove('hidden');
+    if (game.is_playing)
+        return;
+    intro.hidden();
+    end.hidden();
+    game.start();
+    active_level = level_1;
+    active_level.start(false);
+    
 }
-
-function move(zebulon, x, y) {
-    zebulon.x += x;
-    zebulon.y += y;
-    if (!is_in_path(colision_path_level_1, zebulon)) {
-        zebulon.x -= x;
-        zebulon.y -= y;
-    }
-}
-
-let nb_items = document.getElementById('nb-items');
-function increment_score() {
-    nb_items.innerText = parseInt(nb_items.innerText) + 1;
-}
-let catching_items = [];
-let gate_is_visible = false;
 
 function checkKey(e) {
+    if (level_title.lock)
+        return;
     e = e || window.event;
+    console.log(e.keyCode);
     if (
-        e.keyCode == '13'
-        && !intro_element.classList.contains('hidden')
+        e.keyCode == '13' // ENTER
     ) {
         start_game();
+        return;
     }
-    if (e.keyCode == '38') {
-        //console.log('top');
-        move(zebulon, 0, -10);
+    if (
+        e.keyCode == '27' // ECHAP
+    ) {
+        intro.show();
+        return;
     }
-    else if (e.keyCode == '40') {
-        //console.log('bottom');
-        move(zebulon, 0, 10);
+    zebulon.refresh(e.keyCode);
+    items.refresh();
+
+    if (
+        !gate.is_visible
+        && colision.catching_items.length === items.items_data.length
+    ) {
+        gate.show();
     }
-    else if (e.keyCode == '37') {
-        //console.log('left');
-        move(zebulon, -10, 0);
-    }
-    else if (e.keyCode == '39') {
-        //console.log('right');
-        move(zebulon, 10, 0);
-    }
-    loadImages(images, function(images) {
-        zebulon.canvas.clearRect(0, 0, 800, 600);
-        zebulon.canvas.drawImage(
-            images.zebulon,
-            zebulon.x,
-            zebulon.y,
-            zebulon.width,
-            zebulon.height
-        );
-    });
-    loadImages(items_img, function(items_img) {
-        for (item of items) {
-            if (item_collision(zebulon, catching_items, item)) {
-                increment_score();
-                items_canvas.clearRect(
-                    20,
-                    110,
-                    20,
-                    31
-                );
-                items_canvas.clearRect(
-                    item.x,
-                    item.y,
-                    item.width,
-                    item.height
-                );
-            }
-        }
-    });
-    if (!gate_is_visible && catching_items.length === items.length) {
-        gate_is_visible = true;
-        loadImages(gate_img, function(gate_img) {
-            gate_canvas.drawImage(
-                gate_img[0],
-                gate.x,
-                gate.y,
-                gate.width,
-                gate.height
-            );
-        });
-    }
-    if (gate_is_visible && gate_colision(zebulon, gate)) {
-        console.log('win!');
+    if (gate.is_visible && colision.gate_colision(zebulon.coord, gate.coord)) {
+        active_level = active_level.next();
     }
 }
