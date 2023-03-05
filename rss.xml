@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Le Labo du Nerd</title>
+      <link>https://website-url.com/</link>
+      <description>Ce dev-blog-draft est celui d&#x27;un passionné du #numérique. Souvent dans la remise en question, rarement satisfait, en recherche de singularité. Ce site est avant-tout un réel banc d&#x27;essai : un labo ou je m&#x27;éclate et écrit au fil de l&#x27;eau mes essais... il n&#x27;a donc pas de délais de livraison.</description>
+      <generator>Zola</generator>
+      <language>fr</language>
+      <atom:link href="https://website-url.com/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Sun, 05 Mar 2023 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Editeur WYSIWYG de SVG interactifs</title>
+          <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://website-url.com/devblog/editeur-svg-interactif/</link>
+          <guid>https://website-url.com/devblog/editeur-svg-interactif/</guid>
+          <description>&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;&#x2F;h2&gt;
+&lt;p&gt;L&#x27;objectif est simple : éditer un fichier SVG statique afin de le présenter comme un contenu interactif. 
+Permettre l&#x27;ajout de zones cliquables pouvant être zoomés et enrichies d&#x27;une explication.&lt;&#x2F;p&gt;
+&lt;p&gt;Les fichiers générés (page HTML contenant le SVG) peuvent servir à divers usages :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;contenus éducatifs&lt;&#x2F;li&gt;
+&lt;li&gt;support de présentation&lt;&#x2F;li&gt;
+&lt;li&gt;etc.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;editeur_svg&#x2F;editeur_svg_exemple.png&quot; alt=&quot;Une capture d&#x27;écran du logiciel d&#x27;édition de SVG interactifs&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;objectifs-techniques&quot;&gt;Objectifs techniques&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Créer des illustrations interactives avec toujours le même gabarit : une légende contenant des indices titrés et un descriptif pour une zone de l&#x27;illustration.
+Des exemple sont disponibles : &lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mothsart.github.io&#x2F;labo&#x2F;frontend&#x2F;edit_interactive_svg&#x2F;examples&#x2F;campement.html&quot;&gt;Campement Paléolitique&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mothsart.github.io&#x2F;labo&#x2F;frontend&#x2F;edit_interactive_svg&#x2F;examples&#x2F;organes.html&quot;&gt;Organes du corps humain&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Permettre des zooms sur les zones décrites&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Avoir un contenu responsive (vu que le contenu est pleinement vectoriel, pourquoi s&#x27;en priver)&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;être et rester simple d&#x27;utilisation (&lt;strong&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;fr.wikipedia.org&#x2F;wiki&#x2F;Principe_KISS&quot;&gt;KISS&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt; et &lt;strong&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;fr.wikipedia.org&#x2F;wiki&#x2F;Philosophie_d%27Unix&quot;&gt;philosophie Unix&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;) et productif pour enrichir une illustration à vocation pédagogique.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Rester simple à développer (&lt;strong&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Don%27t_repeat_yourself&quot;&gt;DRY&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt; notamment) et maintenir : un mode &lt;strong&gt;debug&lt;&#x2F;strong&gt; permet justement d&#x27;étendre le logiciel afin de mieux le tester.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Utilisation hors ligne et intégré dans une distribution Linux via un paquet .deb&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;version-de-demo-en-ligne&quot;&gt;Version de démo en ligne&lt;&#x2F;h2&gt;
+&lt;p&gt;Il est possible d&#x27;utiliser directement la dernière version sur :
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mothsart.github.io&#x2F;labo&#x2F;frontend&#x2F;edit_interactive_svg&#x2F;&quot;&gt;https:&#x2F;&#x2F;mothsart.github.io&#x2F;labo&#x2F;frontend&#x2F;edit_interactive_svg&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Des illustrations effectués intégralement à partir de cet éditeur sont disponbiles via une liste d&#x27;exemples.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;explication-d-utilisation&quot;&gt;Explication d&#x27;utilisation&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;On glisse et on dépose (ou on choisi via son explorateur de fichiers) son fichier svg statique. (si possible sans animation et javascript)
+On arrive sur une interface nous permettant d&#x27;éditer ce fichier.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;On ajoute des indices dans la légende. Ces derniers s&#x27;affichent également sur notre illustration si l&#x27;on clique sur les icones d&#x27;affichages (des yeux).&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;On les positionnes au gré de nos envies (en restant appuyé sur le clic gauche) sur l&#x27;indice à déplacer.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Un menu déroulant sur l&#x27;indice est disponible afin de l&#x27;éditer :
+Il est possible de changer la couleur, de zoomer mais également d&#x27;ajouter&#x2F;editer le titre et la description de notre indice.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;L&#x27;accès au &lt;strong&gt;mode de visualisation&lt;&#x2F;strong&gt; nous permet d&#x27;avoir un apperçu du rendu final. (avec les animations sur les indices si le zoom a été paramètré).&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Il est possible de changer l&#x27;odre de nos indices (en les sélectionnant et les glissants) et d&#x27;en supprimer ainsi que de les afficher ou non. (pratique si l&#x27;on ne veut se concentrer que sur un éventail précis)&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Le bouton &lt;strong&gt;Enregistrer son travail&lt;&#x2F;strong&gt; permet de convertir notre illustration interactive en un fichier html. (équivalent au &lt;strong&gt;mode de visualisation&lt;&#x2F;strong&gt;)&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Si l&#x27;on veut repartir d&#x27;une feuille blanche, il suffit de cliquer sur &lt;strong&gt;Supprimer&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;utilisation-dans-une-distribution&quot;&gt;Utilisation dans une distribution&lt;&#x2F;h2&gt;
+&lt;p&gt;Il est possible d&#x27;installer un ppa afin de profiter de l&#x27;éditeur dans Ubuntu :&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;launchpad.net&#x2F;~jerem-ferry&#x2F;+archive&#x2F;ubuntu&#x2F;app-illustration&quot;&gt;https:&#x2F;&#x2F;launchpad.net&#x2F;~jerem-ferry&#x2F;+archive&#x2F;ubuntu&#x2F;app-illustration&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Pour ce faire, on ajoute le dépôt à sa liste et on met à jour :&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;sudo add-apt-repository ppa:jerem-ferry&#x2F;app-illustration
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;sudo apt-get update
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Enfin, on installe le-dit logiciel :&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;sudo apt-get install edit-interactive-svg
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;participer-au-logiciel&quot;&gt;Participer au logiciel&lt;&#x2F;h2&gt;
+&lt;p&gt;Les sources du projet sont disponibles sur Github : &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mothsART&#x2F;editInteractiveSVG&quot;&gt;https:&#x2F;&#x2F;github.com&#x2F;mothsART&#x2F;editInteractiveSVG&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Il est possible de me rapporter des bugs directement via les issues du dépôt mais également sur le forum de PrimTux :
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;forum.primtux.fr&#x2F;viewtopic.php?pid=8870&quot;&gt;http:&#x2F;&#x2F;forum.primtux.fr&#x2F;viewtopic.php?pid=8870&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Les artistes ne sont pas en reste non plus.
+Jusqu&#x27;à présent, j&#x27;ai créé les exemples (conception, réalisation sous Inkscape puis ajout de contenu interactif) mais vous pouvez bien entendu m&#x27;avertir de réalisations faites avec cet outil.&lt;&#x2F;p&gt;
+&lt;p&gt;Si le contenu est suffisament pertinent et que vous m&#x27;y authorisé, il pourra être ajouté dans les exemples.&lt;&#x2F;p&gt;
+&lt;p&gt;Sinon, j&#x27;aimerais mettre en place une gallerie de réalisations. (une liste de liens dans un premier temps)&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;logiciels-equivalents-ou-complementaires&quot;&gt;Logiciels équivalents ou complémentaires&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;sozi.baierouge.fr&#x2F;pages&#x2F;10-about-fr.html&quot;&gt;Sozi&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+      </item>
+      <item>
+          <title>A propos</title>
+          <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://website-url.com/about/</link>
+          <guid>https://website-url.com/about/</guid>
+          <description>&lt;p&gt;Ce site a été créé avec &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;getzola&#x2F;zola&quot;&gt;Zola&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;C&#x27;est ma 3ème tentative de site statique (2 avec &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;getpelican.com&quot;&gt;Pelican&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
+&lt;p&gt;Pour arriver à mes fins, je suis parti d&#x27;un thème &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;themes&#x2F;ataraxia-zola&quot;&gt;https:&#x2F;&#x2F;www.getzola.org&#x2F;themes&#x2F;ataraxia-zola&#x2F;&lt;&#x2F;a&gt; que j&#x27;ai adapté à mes besoins.&lt;&#x2F;p&gt;
+&lt;p&gt;Mes sources :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;sburris.xyz&quot;&gt;https:&#x2F;&#x2F;sburris.xyz&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;brume.ink&quot;&gt;https:&#x2F;&#x2F;brume.ink&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Certains des articles de mes précédents sites ont été ou sont en voie de  migration.
+Je n&#x27;irais sans doute jamais au bout de la démarche et m&#x27;en excuse par avance.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Jérémie Ferry @alias Mothsart</title>
+          <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://website-url.com/author/</link>
+          <guid>https://website-url.com/author/</guid>
+          <description>&lt;p&gt;Dev de métier, je suis passionné par tout ce qui touche à la &lt;strong&gt;tech&lt;&#x2F;strong&gt; et à la &lt;strong&gt;science&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Quand je parle ici de &lt;strong&gt;technologie&lt;&#x2F;strong&gt;, je parle de progrès raisonnés apportant du sens à l&#x27;Humanité.
+Je suis de plus en plus critique quand à la nature de certaines réalisations technologiques.
+&lt;strong&gt;Ce n&#x27;est pas parce qu&#x27;une technologie est possible qu&#x27;elle doit être réalisé !&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Je pense nourrir une section &lt;strong&gt;réflexion&lt;&#x2F;strong&gt; afin de donner ma vision modeste du monde tel que je le perçois.&lt;&#x2F;p&gt;
+&lt;p&gt;Mes actions associatives se font principalement autours du logiciel open-source et libre.&lt;&#x2F;p&gt;
+&lt;p&gt;Je participe activement depuis de nombreuses années au projet &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;openclipart.org&#x2F;artist&#x2F;mothsart&quot;&gt;Primtux&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Cette implication me permet également de travailler mon appétence autours de l&#x27;art et notamment de l&#x27;art numérique.
+Le résultat se retrouve le plus souvent dans le domaine publique. Ex : &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;openclipart.org&#x2F;artist&#x2F;mothsart&quot;&gt;Mes réalisations sous OpenClipart&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Enfin, je reste sensible à l&#x27;impact de l&#x27;Homme sur la nature et me questionne sur mon rôle à jouer.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Couronne de Thon</title>
+          <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://website-url.com/recieps/couronne-de-thon/</link>
+          <guid>https://website-url.com/recieps/couronne-de-thon/</guid>
+          <description>&lt;h1 id=&quot;ingredients-pour-6-personnes&quot;&gt;Ingrédients (Pour 6 personnes)&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;1 sachet de purée en flocons&lt;&#x2F;li&gt;
+&lt;li&gt;450 ml de lait&lt;&#x2F;li&gt;
+&lt;li&gt;10 g de beurre&lt;&#x2F;li&gt;
+&lt;li&gt;1 grande boite de thon naturel 312 g (154 g égoutté)&lt;&#x2F;li&gt;
+&lt;li&gt;2 oeufs durs&lt;&#x2F;li&gt;
+&lt;li&gt;100 ml de vinaigrette&lt;&#x2F;li&gt;
+&lt;li&gt;Sel et poivre&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;preparation&quot;&gt;Préparation&lt;&#x2F;h1&gt;
+&lt;p&gt;Faire bouillir du lait, ajouter le beurre et les flocons puis laissé gonfler.&lt;&#x2F;p&gt;
+&lt;p&gt;Passer le thon et les oeufs durs à la moulinettes (moulin à purée : pas de mixer car ça fait &amp;quot;corder le thon&amp;quot;).
+Laisser le jus de la boite de thon pour plus de facilitée.&lt;&#x2F;p&gt;
+&lt;p&gt;Ajouter cette préparation à la purée ainsi que la vinaigrette.&lt;&#x2F;p&gt;
+&lt;p&gt;Ajouter une cuillère à café de sel fin, du poivre et mêmer le tout à la fourchette.&lt;&#x2F;p&gt;
+&lt;p&gt;Si le mélange parait trop sec : ajouter 50ml d&#x27;eau tiède.&lt;&#x2F;p&gt;
+&lt;p&gt;Tapisser le moulle à charlotte préalablement huilé.&lt;&#x2F;p&gt;
+&lt;p&gt;Laissé au moins 2 heures au frigo.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Fleischschnaka</title>
+          <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://website-url.com/recieps/fleischschnaka/</link>
+          <guid>https://website-url.com/recieps/fleischschnaka/</guid>
+          <description>&lt;h1 id=&quot;ingredients&quot;&gt;Ingrédients&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;1.2 kg de viande hachée&lt;&#x2F;li&gt;
+&lt;li&gt;1 L de bouillon de boeuf&lt;&#x2F;li&gt;
+&lt;li&gt;600 g de farine&lt;&#x2F;li&gt;
+&lt;li&gt;7 oeufs&lt;&#x2F;li&gt;
+&lt;li&gt;3 caïeux d&#x27;ail&lt;&#x2F;li&gt;
+&lt;li&gt;2 dL d&#x27;eau&lt;&#x2F;li&gt;
+&lt;li&gt;1 oignon&lt;&#x2F;li&gt;
+&lt;li&gt;50 g de persil&lt;&#x2F;li&gt;
+&lt;li&gt;sel, poivre et muscade&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;preparation&quot;&gt;Préparation&lt;&#x2F;h1&gt;
+&lt;p&gt;Travailler la farine et 5 oeufs, ajouter l&#x27;eau et le sel.
+Pétrir ensemble.
+Laissé reposer 1 heure.&lt;&#x2F;p&gt;
+&lt;p&gt;Hacher l&#x27;oignon, le persil et l&#x27;ail.
+Mélanger le tout avec la viande, les oeufs, sel, poivre et un peu de muscade.
+Abaissez la pâte pour former un rectangle.
+Répartir la farce par dessus.
+Rouler le tout.
+Souder avec un peu d&#x27;eau et couper des tranches d&#x27;un demi-centimètre.&lt;&#x2F;p&gt;
+&lt;p&gt;Dorer à l&#x27;huile puis mouiller au bouillon en cuisant 20 min à feu doux. &lt;&#x2F;p&gt;
+&lt;h1 id=&quot;suggestion&quot;&gt;Suggestion&lt;&#x2F;h1&gt;
+&lt;p&gt;Accompagner d&#x27;une salade&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Pierogi</title>
+          <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://website-url.com/recieps/pierogi/</link>
+          <guid>https://website-url.com/recieps/pierogi/</guid>
+          <description>&lt;h1 id=&quot;ingredients&quot;&gt;Ingrédients&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;500 g de pommes de terre&lt;&#x2F;li&gt;
+&lt;li&gt;500 g de fromage dur blanc (Riccota)&lt;&#x2F;li&gt;
+&lt;li&gt;eau ou lait&lt;&#x2F;li&gt;
+&lt;li&gt;200g lardons&lt;&#x2F;li&gt;
+&lt;li&gt;2 oignons&lt;&#x2F;li&gt;
+&lt;li&gt;maggi&lt;&#x2F;li&gt;
+&lt;li&gt;pincé de sel&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;materiel&quot;&gt;Matériel&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;emporte-pièce ou simplement un bol&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;preparation&quot;&gt;Préparation&lt;&#x2F;h1&gt;
+&lt;p&gt;Préparer une purée de pomme de terre.
+Mélanger avec la Riccota.&lt;&#x2F;p&gt;
+&lt;p&gt;Faire un puit au centre de la farine.
+Rajouter de l&#x27;eau jusqu&#x27;à obtenir une pâte ferme, qui se travaille facilement.
+Etaler la pâte et emporte-piecé.&lt;&#x2F;p&gt;
+&lt;p&gt;Garnir chaque morceau de pâte avec le mélange purée&#x2F;riccota et fermer en demi-lune.
+Attention, la fermeture doit être propre pour être certain que le pierogi ne s&#x27;ouvrira pas à la cuisson.&lt;&#x2F;p&gt;
+&lt;p&gt;Cuire à l&#x27;anglaise les raviollis dans une eau frémissente.
+Les retirer dès qu&#x27;ils remontent à la surface et les faire détremper dans du sopalin.&lt;&#x2F;p&gt;
+&lt;p&gt;Une fois tous cuits dans l&#x27;eau, les faire revenir dans une poele dans un fond d&#x27;huile.&lt;&#x2F;p&gt;
+&lt;p&gt;Préparer des oignons dans de l&#x27;eau avec un peu de Maggi.&lt;&#x2F;p&gt;
+&lt;p&gt;Faire revenir des lardons.&lt;&#x2F;p&gt;
+&lt;p&gt;Servir les Pierogi avec les lardons et les oignons.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;variante&quot;&gt;Variante&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Pierogi au choux&lt;&#x2F;li&gt;
+&lt;li&gt;Pierogi aux pommes&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+      </item>
+    </channel>
+</rss>
