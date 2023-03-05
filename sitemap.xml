@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://website-url.com/</loc>
+        <loc>https://mothsart.github.io/</loc>
     </url>
     <url>
-        <loc>https://website-url.com/about/</loc>
+        <loc>https://mothsart.github.io/about/</loc>
         <lastmod>2023-02-26</lastmod>
     </url>
     <url>
-        <loc>https://website-url.com/author/</loc>
+        <loc>https://mothsart.github.io/author/</loc>
         <lastmod>2023-02-26</lastmod>
     </url>
     <url>
-        <loc>https://website-url.com/categories/</loc>
+        <loc>https://mothsart.github.io/categories/</loc>
     </url>
     <url>
-        <loc>https://website-url.com/devblog/</loc>
+        <loc>https://mothsart.github.io/devblog/</loc>
     </url>
     <url>
-        <loc>https://website-url.com/devblog/editeur-svg-interactif/</loc>
+        <loc>https://mothsart.github.io/devblog/editeur-svg-interactif/</loc>
         <lastmod>2023-03-05</lastmod>
     </url>
     <url>
-        <loc>https://website-url.com/devblog/page/1/</loc>
+        <loc>https://mothsart.github.io/devblog/page/1/</loc>
     </url>
     <url>
-        <loc>https://website-url.com/recieps/</loc>
+        <loc>https://mothsart.github.io/recieps/</loc>
     </url>
     <url>
-        <loc>https://website-url.com/recieps/couronne-de-thon/</loc>
+        <loc>https://mothsart.github.io/recieps/couronne-de-thon/</loc>
         <lastmod>2023-02-26</lastmod>
     </url>
     <url>
-        <loc>https://website-url.com/recieps/fleischschnaka/</loc>
+        <loc>https://mothsart.github.io/recieps/fleischschnaka/</loc>
         <lastmod>2023-02-26</lastmod>
     </url>
     <url>
-        <loc>https://website-url.com/recieps/page/1/</loc>
+        <loc>https://mothsart.github.io/recieps/page/1/</loc>
     </url>
     <url>
-        <loc>https://website-url.com/recieps/pierogi/</loc>
+        <loc>https://mothsart.github.io/recieps/pierogi/</loc>
         <lastmod>2023-02-26</lastmod>
     </url>
     <url>
-        <loc>https://website-url.com/secret-recieps/</loc>
+        <loc>https://mothsart.github.io/secret-recieps/</loc>
     </url>
     <url>
-        <loc>https://website-url.com/tags/</loc>
+        <loc>https://mothsart.github.io/tags/</loc>
     </url>
 </urlset>

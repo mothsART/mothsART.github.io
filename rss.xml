@@ -2,18 +2,18 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
       <title>Le Labo du Nerd</title>
-      <link>https://website-url.com/</link>
+      <link>https://mothsart.github.io/</link>
       <description>Ce dev-blog-draft est celui d&#x27;un passionné du #numérique. Souvent dans la remise en question, rarement satisfait, en recherche de singularité. Ce site est avant-tout un réel banc d&#x27;essai : un labo ou je m&#x27;éclate et écrit au fil de l&#x27;eau mes essais... il n&#x27;a donc pas de délais de livraison.</description>
       <generator>Zola</generator>
       <language>fr</language>
-      <atom:link href="https://website-url.com/rss.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://mothsart.github.io/rss.xml" rel="self" type="application/rss+xml"/>
       <lastBuildDate>Sun, 05 Mar 2023 00:00:00 +0000</lastBuildDate>
       <item>
           <title>Editeur WYSIWYG de SVG interactifs</title>
           <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
           <author>Unknown</author>
-          <link>https://website-url.com/devblog/editeur-svg-interactif/</link>
-          <guid>https://website-url.com/devblog/editeur-svg-interactif/</guid>
+          <link>https://mothsart.github.io/devblog/editeur-svg-interactif/</link>
+          <guid>https://mothsart.github.io/devblog/editeur-svg-interactif/</guid>
           <description>&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;&#x2F;h2&gt;
 &lt;p&gt;L&#x27;objectif est simple : éditer un fichier SVG statique afin de le présenter comme un contenu interactif. 
 Permettre l&#x27;ajout de zones cliquables pouvant être zoomés et enrichies d&#x27;une explication.&lt;&#x2F;p&gt;
@@ -115,8 +115,8 @@ Jusqu&#x27;à présent, j&#x27;ai créé les exemples (conception, réalisation 
           <title>A propos</title>
           <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
           <author>Unknown</author>
-          <link>https://website-url.com/about/</link>
-          <guid>https://website-url.com/about/</guid>
+          <link>https://mothsart.github.io/about/</link>
+          <guid>https://mothsart.github.io/about/</guid>
           <description>&lt;p&gt;Ce site a été créé avec &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;getzola&#x2F;zola&quot;&gt;Zola&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;C&#x27;est ma 3ème tentative de site statique (2 avec &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;getpelican.com&quot;&gt;Pelican&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
 &lt;p&gt;Pour arriver à mes fins, je suis parti d&#x27;un thème &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;themes&#x2F;ataraxia-zola&quot;&gt;https:&#x2F;&#x2F;www.getzola.org&#x2F;themes&#x2F;ataraxia-zola&#x2F;&lt;&#x2F;a&gt; que j&#x27;ai adapté à mes besoins.&lt;&#x2F;p&gt;
@@ -133,8 +133,8 @@ Je n&#x27;irais sans doute jamais au bout de la démarche et m&#x27;en excuse pa
           <title>Jérémie Ferry @alias Mothsart</title>
           <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
           <author>Unknown</author>
-          <link>https://website-url.com/author/</link>
-          <guid>https://website-url.com/author/</guid>
+          <link>https://mothsart.github.io/author/</link>
+          <guid>https://mothsart.github.io/author/</guid>
           <description>&lt;p&gt;Dev de métier, je suis passionné par tout ce qui touche à la &lt;strong&gt;tech&lt;&#x2F;strong&gt; et à la &lt;strong&gt;science&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;Quand je parle ici de &lt;strong&gt;technologie&lt;&#x2F;strong&gt;, je parle de progrès raisonnés apportant du sens à l&#x27;Humanité.
 Je suis de plus en plus critique quand à la nature de certaines réalisations technologiques.
@@ -151,8 +151,8 @@ Le résultat se retrouve le plus souvent dans le domaine publique. Ex : &lt;a re
           <title>Couronne de Thon</title>
           <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
           <author>Unknown</author>
-          <link>https://website-url.com/recieps/couronne-de-thon/</link>
-          <guid>https://website-url.com/recieps/couronne-de-thon/</guid>
+          <link>https://mothsart.github.io/recieps/couronne-de-thon/</link>
+          <guid>https://mothsart.github.io/recieps/couronne-de-thon/</guid>
           <description>&lt;h1 id=&quot;ingredients-pour-6-personnes&quot;&gt;Ingrédients (Pour 6 personnes)&lt;&#x2F;h1&gt;
 &lt;ul&gt;
 &lt;li&gt;1 sachet de purée en flocons&lt;&#x2F;li&gt;
@@ -178,8 +178,8 @@ Laisser le jus de la boite de thon pour plus de facilitée.&lt;&#x2F;p&gt;
           <title>Fleischschnaka</title>
           <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
           <author>Unknown</author>
-          <link>https://website-url.com/recieps/fleischschnaka/</link>
-          <guid>https://website-url.com/recieps/fleischschnaka/</guid>
+          <link>https://mothsart.github.io/recieps/fleischschnaka/</link>
+          <guid>https://mothsart.github.io/recieps/fleischschnaka/</guid>
           <description>&lt;h1 id=&quot;ingredients&quot;&gt;Ingrédients&lt;&#x2F;h1&gt;
 &lt;ul&gt;
 &lt;li&gt;1.2 kg de viande hachée&lt;&#x2F;li&gt;
@@ -211,8 +211,8 @@ Souder avec un peu d&#x27;eau et couper des tranches d&#x27;un demi-centimètre.
           <title>Pierogi</title>
           <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
           <author>Unknown</author>
-          <link>https://website-url.com/recieps/pierogi/</link>
-          <guid>https://website-url.com/recieps/pierogi/</guid>
+          <link>https://mothsart.github.io/recieps/pierogi/</link>
+          <guid>https://mothsart.github.io/recieps/pierogi/</guid>
           <description>&lt;h1 id=&quot;ingredients&quot;&gt;Ingrédients&lt;&#x2F;h1&gt;
 &lt;ul&gt;
 &lt;li&gt;500 g de pommes de terre&lt;&#x2F;li&gt;
