@@ -32,7 +32,7 @@
       <div class="d-none d-md-block mb-4 pt-5 px-4 text-center">
         <!--
         <div class="sidebar-avatar mb-2 mx-auto border border-3 rounded-circle">
-          <a href="https://author-url.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://mothsart.github.io/" target="_blank" rel="noopener noreferrer">
     <img
       src="https://mothsart.github.io/images/avatar.png"
       alt="Jérémie Ferry @alias mothsart"
@@ -49,11 +49,9 @@
             Le Labo du Nerd
           </a>
         </div>
-        <!--
         <div class="fw-light">
           Ce dev-blog-draft est celui d'un passionné du #numérique. Souvent dans la remise en question, rarement satisfait, en recherche de singularité. Ce site est avant-tout un réel banc d'essai : un labo ou je m'éclate et écrit au fil de l'eau mes essais... il n'a donc pas de délais de livraison.
         </div>
-        -->
       </div>
 
       <div class="sidebar-nav list-group my-auto rounded-0 text-center"><a
@@ -146,8 +144,60 @@
         </div>
       </div>
     </aside>
-  </div><div class="col mh-100 overflow-auto px-0">
-        <div class="d-flex flex-column h-100"><main class="container">
+  </div><div class="col mh-100 overflow-auto px-0"><nav
+    class="navbar navbar-expand navbar-bg-light sticky-top border-bottom"
+  >
+    <div class="container-fluid"><button
+        type="button"
+        class="btn d-block d-lg-none fs-5"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+        aria-controls="offcanvas"
+      >
+        <span class="bi bi-list"></span>
+      </button>
+      
+      <div class="col-8">
+        
+          <div class="row justify-content-center justify-content-lg-start p-2 ps-xl-3 text-center"><div class="col-auto d-none d-xl-block">
+        <a
+          href="https://mothsart.github.io/"
+          class="text-decoration-none"
+        >
+          Home
+        </a>
+      </div>
+      <div class="col-auto d-none d-xl-block">
+        <span class="text-secondary">
+          »
+        </span>
+      </div><div class="col-auto">
+      <span
+        class="d-inline d-sm-none text-secondary"
+        data-bs-toggle="tooltip"
+        data-bs-title="Recettes"
+      >
+        Recettes
+      </span>
+      <span
+        class="d-none d-sm-inline text-secondary"
+        data-bs-toggle="tooltip"
+        data-bs-title="Recettes"
+      >
+        Recettes
+      </span>
+    </div>
+  </div>
+        
+      </div>
+
+      <button
+    type="button" data-bs-toggle="modal" data-bs-target="#searchModal"
+    class="btn border border-0"
+  >
+    <span class="bi bi-search fs-5"></span>
+  </button>
+    </div>
+  </nav><div class="d-flex flex-column h-100"><main class="container">
     <div class="row justify-content-center mt-4 mb-4">
       <div class="col-11 col-lg-10">
         
@@ -156,7 +206,48 @@
   </main>
   <div class="mt-auto">
     
-  </div></div>
+  </div><footer class="container-fluid mt-auto">
+    <div class="row justify-content-center">
+      <div class="col-10">
+        <div class="row pt-3 pb-4 border-top">
+          <div class="col-12 col-md-6 mb-2 mb-md-0 text-center text-md-start">
+            <small class="text-secondary">
+              © 2023
+              <a 
+                href="https://mothsart.github.io/"
+                target="_blank" rel="noopener noreferrer"
+                class="text-decoration-none"
+              >
+                Jérémie Ferry @alias mothsart&period;
+              </a>
+            </small>
+          </div>
+          <div class="col-12 col-md-6 text-center text-md-end">
+            <small class="text-secondary">
+              Powered by
+              <a 
+                href="https://www.getzola.org/"
+                target="_blank" rel="noopener noreferrer"
+                class="text-decoration-none"
+              >
+                Zola
+              </a>
+              with
+              <a 
+                href="https://github.com/mothsART/devlab-zola"
+                target="_blank" rel="noopener noreferrer"
+                class="text-decoration-none"
+              >
+                DevLab
+              </a>
+              theme.
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+        </div>
       </div>
     </div>
   </div>
@@ -169,8 +260,9 @@
           >
             <aside class="d-flex flex-column justify-content-between h-100">
               <div class="mb-4 pt-5 px-3 text-center">
+                <!--
                 <div class="sidebar-avatar mb-2 mx-auto border border-3 rounded-circle">
-                  <a href="https://author-url.com/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://mothsart.github.io/" target="_blank" rel="noopener noreferrer">
     <img
       src="https://mothsart.github.io/images/avatar.png"
       alt="Jérémie Ferry @alias mothsart"
@@ -178,6 +270,7 @@
     >
   </a>
                 </div>
+                -->
                 <div>
                   <a
                     href="https://mothsart.github.io/"
@@ -268,6 +361,38 @@
       </div>
     </div>
   </div>
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="searchModalLabel">
+          
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div
+          id="searchInput" role="search" 
+          class="d-flex mb-3 border rounded-5 bg-white"
+        >
+          <input
+            id="search" type="search"
+            class="form-control border border-0 rounded-5 rounded-end"
+            placeholder="rechercher"
+            aria-label="rechercher"
+          >
+          <div class="rounded-5 rounded-start py-2 ps-2 pe-3">
+            <span class="bi bi-search"></span>
+          </div>
+        </div>
+        <div class="search-results">
+          <div class="search-results__items">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
   <script src="https://mothsart.github.io/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
   <script>
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
@@ -279,5 +404,8 @@
       myInput.focus()
     });
   </script>
+   <script src="https://mothsart.github.io/elasticlunr.min.js"></script>
+  <script src="https://mothsart.github.io/search_index.fr.js"></script><script src="https://mothsart.github.io/assets/js/search/lunr.stemmer.support.min.js"></script>
+    <script src="https://mothsart.github.io/assets/js/search/lunr.fr.min.js"></script><script src="https://mothsart.github.io/assets/js/search/search.js"></script>
 </body>
 </html>
