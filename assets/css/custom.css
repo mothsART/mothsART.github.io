@@ -10863,4 +10863,16 @@ a:hover {
   background-color: #f1f3f5;
 }
 
+.card-body {
+  padding: 0;
+}
+
+.card-text .text-muted {
+  line-height: 3rem;
+}
+
+.blog-head-left, .blog-head-right {
+  line-height: 3rem;
+}
+
 /*# sourceMappingURL=custom.css.map */

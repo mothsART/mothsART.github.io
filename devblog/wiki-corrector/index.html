@@ -210,42 +210,44 @@
   </nav><div class="d-flex flex-column h-100"><main class="container">
     <div class="row justify-content-center mt-5">
       <div class="col-11 col-lg-10 col-xxl-9">
-        <h1 class="mb-3">
+        <h1>
           Wiki-corrector
         </h1>
-        <div class="row mt-3 mb-2">
-          <div class="col-auto">
-            <small class="text-muted">
-              Par :
-              <a
-                href="https://mothsart.github.io/"
-                target="_blank" rel="noopener noreferrer"
-                class="text-decoration-none"
-              >
-                Jérémie Ferry @alias mothsart
-              </a>
-            </small>
-          </div>
-        </div>
-        <div class="row mb-3">
-          <div class="col-auto mb-2">
-            <small class="text-muted">
-              Posté le
-              <time datetime="2023-03-11">
-                <span
-                  class="text-muted text-decoration-none"
-                >
-                    11 Mars 2023
-                </span>
-              </time>
-            </small>
-          </div>
+        <div class="row">
+            <div class="blog-head-left col-6">
+                <div class="col-auto">
+    <small class="text-muted">
+      Par :
+      <a
+        href="https://mothsart.github.io/"
+        target="_blank" rel="noopener noreferrer"
+        class="text-decoration-none"
+      >
+        Jérémie Ferry @alias mothsart
+      </a>
+    </small>
+  </div>
+
+  <div class="col-auto mb-2">
+    <small class="text-muted">
+      Posté le
+      <time datetime="2023-03-11">
+        <span
+          class="text-muted text-decoration-none"
+        >
+            11 Mars 2023
+        </span>
+      </time>
+    </small>
+  </div>
+
+  
+            </div>
+            <div class="blog-head-right col-6">
+                
+      <div class="col-auto">
+          <span class="bi bi-bookmarks fs-6 me-1"></span>
           
-        
-          <div class="row my-1">
-            <div class="col-auto">
-              <span class="bi bi-bookmarks fs-6 me-1"></span>
-              
     <a
       href="https://mothsart.github.io/categories/linux/"
       class="btn btn-taxonomy btn-sm m-1 border text-decoration-none"
@@ -264,14 +266,13 @@
       </small>
     </a>
   
-            </div>
-          </div>
-        
-        
-          <div class="row mt-1 mb-3">
-            <div class="col-auto">
-              <span class="bi bi-tags fs-6 me-1"></span>
-              
+      </div>
+  
+  
+  
+      <div class="col-auto">
+          <span class="bi bi-tags fs-6 me-1"></span>
+          
     <a
       href="https://mothsart.github.io/tags/ubuntu/"
       class="btn btn-taxonomy btn-sm m-1 border text-decoration-none"
@@ -290,15 +291,15 @@
       </small>
     </a>
   
+      </div>
+  
             </div>
-          </div>
-        
         </div><div class="mb-5">
           <h2 id="intro">Intro</h2>
 <p>J'ai commencé ma découverte de Linux au travers Ubuntu.
 Depuis, j'ai tendance à apporter ma pierre à l'édifice en éditant le wiki d'<a rel="noopener nofollow noreferrer" target="_blank" href="https://doc.ubuntu-fr.org">Ubuntu-fr</a> au fil de mes envies, de mon temps et mes connaissances.</p>
 <p>J'ai remarqué que certains défauts du wiki étaient réccurents et j'ai essayé de m'emparer du sujet.</p>
-<h1 id="comment-ca-fonctionne">Comment ça fonctionne ?</h1>
+<h2 id="comment-ca-fonctionne">Comment ça fonctionne ?</h2>
 <p>C'est une collection de scripts python assez simples.</p>
 <ol>
 <li>
@@ -314,7 +315,7 @@ Depuis, j'ai tendance à apporter ma pierre à l'édifice en éditant le wiki d'
 <p>des scripts d'aide à la correction.</p>
 </li>
 </ol>
-<h1 id="les-verifications">Les vérifications</h1>
+<h2 id="les-verifications">Les vérifications</h2>
 <ol>
 <li>
 <p>De l'orthographe, de la grammaire etc via Grammalect.</p>
@@ -333,7 +334,7 @@ Depuis, j'ai tendance à apporter ma pierre à l'édifice en éditant le wiki d'
 </li>
 </ol>
 <p>Plus le temps avance et plus les vérifications sont mis sous contrôle dans des tests unitaires avec la <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/mothsART/wiki-corrector/actions">CI de github</a> (github actions).</p>
-<h1 id="avancement">Avancement</h1>
+<h2 id="avancement">Avancement</h2>
 <p>Ces travaux sont faits sur mon temps personnel et ne respectent pas un plan bien définit.
 Elles sont itératives : 1 à 2 semaines ou je travaille à fond dessus pour faire avancer le sujet.</p>
 <p>Le plus gros du travail n'est pas foncièrement technique : il suffit de relire bêtement les remontés et corriger au besoin.
@@ -343,7 +344,7 @@ Il y a encore beaucoup de faux-positifs mais l'écart se réduit au fil du temps
 <p>Je communique sur l'avancement ici :</p>
 <p><a rel="noopener nofollow noreferrer" target="_blank" href="https://forum.ubuntu-fr.org/viewtopic.php?id=2067892">ticket forum Ubuntu-fr</a></p>
 <p>et le source est là : <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/mothsART/wiki-corrector">dépôt github</a></p>
-<h1 id="conclusion">Conclusion</h1>
+<h2 id="conclusion">Conclusion</h2>
 <p>Si vous avez lu jusqu'ici, c'est que vous appréciez la documentation d'Ubuntu-fr et que vous êtes sensible aux méthodologie d'amélioration.
 Jusqu'à présent, pas d'IA sophistiqué. Néanmoins, l'outil a déjà rendu de nombreux services et devrait continué à en rendre.</p>
 
