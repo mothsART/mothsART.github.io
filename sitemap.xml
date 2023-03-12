@@ -15,6 +15,48 @@
         <loc>https://mothsart.github.io/categories/</loc>
     </url>
     <url>
+        <loc>https://mothsart.github.io/categories/dessert/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/categories/dessert/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/categories/entree/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/categories/entree/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/categories/linux/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/categories/linux/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/categories/plat/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/categories/plat/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/categories/python/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/categories/python/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/categories/science/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/categories/science/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/categories/web/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/categories/web/page/1/</loc>
+    </url>
+    <url>
         <loc>https://mothsart.github.io/devblog/</loc>
     </url>
     <url>
@@ -23,6 +65,10 @@
     </url>
     <url>
         <loc>https://mothsart.github.io/devblog/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/devblog/wiki-corrector/</loc>
+        <lastmod>2023-03-11</lastmod>
     </url>
     <url>
         <loc>https://mothsart.github.io/jardinage/</loc>
@@ -53,9 +99,95 @@
         <lastmod>2023-02-26</lastmod>
     </url>
     <url>
+        <loc>https://mothsart.github.io/reflexion/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/reflexion/combattre-son-cerveau/</loc>
+        <lastmod>2023-03-11</lastmod>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/reflexion/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/reflexion/sortir-du-siecle-des-lumieres/</loc>
+        <lastmod>2023-03-11</lastmod>
+    </url>
+    <url>
         <loc>https://mothsart.github.io/secret-recieps/</loc>
     </url>
     <url>
         <loc>https://mothsart.github.io/tags/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/alsacien/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/alsacien/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/cerveau/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/cerveau/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/connaissance/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/connaissance/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/croyance/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/croyance/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/poisson/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/poisson/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/pologne/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/pologne/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/primtux/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/primtux/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/svg/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/svg/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/thon/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/thon/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/ubuntu/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/ubuntu/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/viande/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/viande/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/wiki/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/wiki/page/1/</loc>
     </url>
 </urlset>

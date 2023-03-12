@@ -7,7 +7,116 @@
       <generator>Zola</generator>
       <language>fr</language>
       <atom:link href="https://mothsart.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Mon, 06 Mar 2023 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sat, 11 Mar 2023 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Wiki-corrector</title>
+          <pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://mothsart.github.io/devblog/wiki-corrector/</link>
+          <guid>https://mothsart.github.io/devblog/wiki-corrector/</guid>
+          <description>&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;&#x2F;h2&gt;
+&lt;p&gt;J&#x27;ai commencé ma découverte de Linux au travers Ubuntu.
+Depuis, j&#x27;ai tendance à apporter ma pierre à l&#x27;édifice en éditant le wiki d&#x27;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;doc.ubuntu-fr.org&quot;&gt;Ubuntu-fr&lt;&#x2F;a&gt; au fil de mes envies, de mon temps et mes connaissances.&lt;&#x2F;p&gt;
+&lt;p&gt;J&#x27;ai remarqué que certains défauts du wiki étaient réccurents et j&#x27;ai essayé de m&#x27;emparer du sujet.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;comment-ca-fonctionne&quot;&gt;Comment ça fonctionne ?&lt;&#x2F;h1&gt;
+&lt;p&gt;C&#x27;est une collection de scripts python assez simples.&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Un script de récupération des sources au format dokuwiki.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;des algos de vérification qui remontent des anomalies.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;des scripts d&#x27;auto-correction pour les cas les plus simple. Ex : remplacer une liste de lien en http par du https.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;des scripts d&#x27;aide à la correction.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h1 id=&quot;les-verifications&quot;&gt;Les vérifications&lt;&#x2F;h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;De l&#x27;orthographe, de la grammaire etc via Grammalect.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Sur les balises Dokuwiki. Si elles sont mal construitent, l&#x27;affichage peut être cassé.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Sur les liens : timeout, 404, http (au lieu de https) etc.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Sur la construction des instructions en shell&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Sur le contenu : pas de mots grossiers, d&#x27;ordre sexuel etc. &lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;Plus le temps avance et plus les vérifications sont mis sous contrôle dans des tests unitaires avec la &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mothsART&#x2F;wiki-corrector&#x2F;actions&quot;&gt;CI de github&lt;&#x2F;a&gt; (github actions).&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;avancement&quot;&gt;Avancement&lt;&#x2F;h1&gt;
+&lt;p&gt;Ces travaux sont faits sur mon temps personnel et ne respectent pas un plan bien définit.
+Elles sont itératives : 1 à 2 semaines ou je travaille à fond dessus pour faire avancer le sujet.&lt;&#x2F;p&gt;
+&lt;p&gt;Le plus gros du travail n&#x27;est pas foncièrement technique : il suffit de relire bêtement les remontés et corriger au besoin.
+Il y a encore beaucoup de faux-positifs mais l&#x27;écart se réduit au fil du temps.&lt;&#x2F;p&gt;
+&lt;p&gt;Les nouvelles idées d&#x27;amélioration surgissent au fil des corrections et je suis bien évidement preneur de tout ce qui est possible.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;suivre-l-avancement&quot;&gt;suivre l&#x27;avancement&lt;&#x2F;h1&gt;
+&lt;p&gt;Je communique sur l&#x27;avancement ici :&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;forum.ubuntu-fr.org&#x2F;viewtopic.php?id=2067892&quot;&gt;ticket forum Ubuntu-fr&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;et le source est là : &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mothsART&#x2F;wiki-corrector&quot;&gt;dépôt github&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;&#x2F;h1&gt;
+&lt;p&gt;Si vous avez lu jusqu&#x27;ici, c&#x27;est que vous appréciez la documentation d&#x27;Ubuntu-fr et que vous êtes sensible aux méthodologie d&#x27;amélioration.
+Jusqu&#x27;à présent, pas d&#x27;IA sophistiqué. Néanmoins, l&#x27;outil a déjà rendu de nombreux services et devrait continué à en rendre.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Combattre son cerveau</title>
+          <pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://mothsart.github.io/reflexion/combattre-son-cerveau/</link>
+          <guid>https://mothsart.github.io/reflexion/combattre-son-cerveau/</guid>
+          <description>&lt;p&gt;Le cerveau humain à plusieurs bugs qui nécessitent d&#x27;être combattus (non exhaustif) :&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;La croyance par renforcement : plus on croit quelque chose et plus on cherche (et on trouve) des choses qui nous conforte sur sur nos acquis.
+Il est très dur de sortir d&#x27;une croyance même avec des arguments très objectifs.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Les relations de cause à effet. Ce n&#x27;est pas parce qu&#x27;on identifie 2 phénomènes qui se ressemblent que forcément il y a une relation entre les 2.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Une personne qui dira connaitre, même si c&#x27;est faux, passera pour plus instruite qu&#x27;une personne qui dit qu&#x27;elle ne sait pas.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Une réponse simple est forcément plus convaincante qu&#x27;une réponse nuancée.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;ce que nous voyons n&#x27;est pas la réalité mais qu&#x27;un ersatz.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+</description>
+      </item>
+      <item>
+          <title>Sortir du siècle des lumières ?</title>
+          <pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://mothsart.github.io/reflexion/sortir-du-siecle-des-lumieres/</link>
+          <guid>https://mothsart.github.io/reflexion/sortir-du-siecle-des-lumieres/</guid>
+          <description>&lt;p&gt;Depuis Galilée, donc grosso modo 400 ans, l&#x27;Homme a franchi un cap jusqu&#x27;alors inexploré.
+Il est passé de la croyance à la connaissance.&lt;&#x2F;p&gt;
+&lt;p&gt;Cette transition est tout aussi majeur que ne l&#x27;es l&#x27;invention de l&#x27;écriture !&lt;&#x2F;p&gt;
+&lt;p&gt;C&#x27;est la découverte qu&#x27;une partie de ce monde peut être comprise sans qu&#x27;il n&#x27;y ai d&#x27;avis sur la question.
+C&#x27;est factuel et inaliénable.&lt;&#x2F;p&gt;
+&lt;p&gt;On est donc sorti d&#x27;un monde de ténèbres ou toute idée se valait à un monde de lumière ou certains vérités sont connus.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;tout-n-est-pas-connu&quot;&gt;Tout n&#x27;est pas connu&lt;&#x2F;h1&gt;
+&lt;p&gt;La science n&#x27;aura sans doute jamais réponse à tout.
+D&#x27;une part car nous manquons de ressources pour tout comprendre et vérifier.
+De l&#x27;autre, parce qu&#x27;elle n&#x27;a pas d&#x27;intention.&lt;&#x2F;p&gt;
+&lt;p&gt;Il est nécessaire aussi de distinguer connaissances et recherches.
+Chaque découverte a tendance à élargir nos connaissances sur ce que l&#x27;on sait mais aussi sur ce que l&#x27;on ne sait pas.&lt;&#x2F;p&gt;
+&lt;p&gt;Le rôle d&#x27;un chercheur est bien de comprendre ce que nous ne savons pas encore et il est souvent présemptueux d&#x27;anticiper le temps nécessaire pour y parvenir ainsi que les impacts de ces futures découvertes.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;&quot;&gt;&lt;&#x2F;h1&gt;
+</description>
+      </item>
       <item>
           <title>Tips de jardinnage</title>
           <pubDate>Mon, 06 Mar 2023 00:00:00 +0000</pubDate>
@@ -169,13 +278,13 @@ Le résultat se retrouve souvent dans le domaine publique. Ex : &lt;a rel=&quot;
 &lt;li&gt;1 sachet de purée en flocons&lt;&#x2F;li&gt;
 &lt;li&gt;450 ml de lait&lt;&#x2F;li&gt;
 &lt;li&gt;10 g de beurre&lt;&#x2F;li&gt;
-&lt;li&gt;1 grande boite de thon naturel 312 g (154 g égoutté)&lt;&#x2F;li&gt;
+&lt;li&gt;1 grande boite de thon naturel 312 g (154g égoutté)&lt;&#x2F;li&gt;
 &lt;li&gt;2 oeufs durs&lt;&#x2F;li&gt;
 &lt;li&gt;100 ml de vinaigrette&lt;&#x2F;li&gt;
 &lt;li&gt;Sel et poivre&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h1 id=&quot;preparation&quot;&gt;Préparation&lt;&#x2F;h1&gt;
-&lt;p&gt;Faire bouillir du lait, ajouter le beurre et les flocons puis laissé gonfler.&lt;&#x2F;p&gt;
+&lt;p&gt;Faire bouillir du lait, ajouter le beurre et les flocons puis laisser gonflé.&lt;&#x2F;p&gt;
 &lt;p&gt;Passer le thon et les oeufs durs à la moulinettes (moulin à purée : pas de mixer car ça fait &amp;quot;corder le thon&amp;quot;).
 Laisser le jus de la boite de thon pour plus de facilitée.&lt;&#x2F;p&gt;
 &lt;p&gt;Ajouter cette préparation à la purée ainsi que la vinaigrette.&lt;&#x2F;p&gt;
