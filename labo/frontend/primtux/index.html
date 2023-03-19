@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Choisir sa version de PrimTux</title>
+  </head>
+  <body>
+      <div class="container-fluid">
+      <div class="py-5 text-center">
+        <h2>Choisir sa version de PrimTux</h2>
+      </div>
+      <div id="warning-distrotest" class="alert alert-info" role="alert">
+        <div class="row">
+          <div class="col-lg-8">
+            Si vous désirez un aperçu PrimTux avant de l’installer, il vous est possible de tester <strong>PrimTux 3</strong> dans votre navigateur.<br>
+            Pour cela, rendez-vous à cette adresse : <a href="https://distrotest.net/PrimTux/3">https://distrotest.net/PrimTux/3</a> et cliquez sur "System start".<br>
+            Attention : si vous utilisez Adblock, il vous faudra cliquer sur le bouton "Open Vnc-Viewer" dans un second temps.
+          </div>
+          <div class="alert alert-warning col-lg-4" role="alert">
+            <i class="material-icons">warning</i>
+            Distrotest est une plateforme libre permettant de tester des distributions linux : 
+            elle permet uniquement de découvrir et est particulièrement lente.
+          </div>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-10">
+            <div class="card">
+              <div class="card-body col-lg-12">
+                  <form>
+                    <div id="step-1" class="row card">
+                        <span class="badge badge-info badge-pill">1</span>
+                        <div class="form-row align-items-center">
+                          <div class="col-auto my-1">
+                            <label class="mr-sm-2" for="inlineFormCustomSelect">Mon ordinateur : </label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" onclick="">
+                              <option value="1">à été assemblé avant 2004</option>
+                              <option value="2">à été assemblé à partir de 2004</option>
+                              <option value="3">à été assemblé à partir de 2006</option>
+                              <option value="4">est une Raspberry Pi 2, 2B, 3 ou 3B</option>
+                              <option value="5">est une Raspberry Pi 3B+</option>
+                            </select>
+                          </div>
+                          <div class="col-auto my-1">
+                            <div class="custom-control custom-checkbox mr-sm-2">
+                              <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                              <label class="custom-control-label" for="customControlAutosizing">
+                                Mon enfant a des besoins particuliers (Dys)
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-auto my-1 right">
+                            <button class="btn btn-primary btn-lg btn-block" 
+                                    onclick="valid_step_one();"
+                                    type="button">
+                                    Valider
+                            </button>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div id="step-before-2004" class="step row card d-none">
+                      <span class="badge badge-info badge-pill">2</span>
+                      <div class="form-row align-items-center">
+                        <div class="col-auto my-1">
+                          <div class="custom-control custom-checkbox mr-sm-2">
+                            <input type="checkbox" class="custom-control-input" id="2004-processor">
+                            <label class="custom-control-label" for="2004-processor">
+                              Il embarque un processeur de type : 
+                            </label>
+                            <ul>
+                              <li>AMD K7 (Athlon, Athlon XP, Duron ou Sempron)</li>
+                              <li>Intel Pentium 4 5xx, Pentium M, Celeron M et D</li>
+                            </ul>
+                          </div>
+                       </div>
+                       <div class="col-auto my-1">
+                          <div class="custom-control custom-checkbox mr-sm-2">
+                            <input type="checkbox" class="custom-control-input" id="ram512">
+                            <label class="custom-control-label" for="ram512">
+                              Dispose de <strong>512 Mo</strong> de mémoire vive minimum (RAM)
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-auto my-1 right">
+                          <button class="btn btn-primary btn-lg btn-block" 
+                                  onclick="valid_step_before_2004();"
+                                  type="button">
+                                  Valider
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="step-from-2004" class="step row card d-none">
+                      <span class="badge badge-info badge-pill">2</span>
+                      <div class="form-row align-items-center">
+                        <div class="col-auto my-1">
+                          <div>
+                            <div>
+                              Il embarque un processeur de type : 
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                              <input type="radio" id="step-from-2004-processor-before-2004" name="typeProcessor" class="custom-control-input">
+                              <label class="custom-control-label" for="step-from-2004-processor-before-2004">
+                                <ul>
+                                  <li>AMD K7 (Athlon, Athlon XP, Duron ou Sempron)</li>
+                                  <li>Intel Pentium 4 5xx, Pentium M, Celeron M et D</li>
+                                </ul>
+                              </label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                              <input type="radio" id="step-from-2004-processor-from-2004" name="typeProcessor" class="custom-control-input">
+                              <label class="custom-control-label" for="step-from-2004-processor-from-2004">
+                                <ul>
+                                  <li>AMD K8 (Athlon 64, Athlon 64 FX, Sempron 64, Turion, Opteron)</li>
+                                  <li>Intel Pentium 4 6xx, Pentium Extreme Edition, Centrino, Pentium 4-M</li>
+                                </ul>
+                              </label>
+                            </div>
+                          </div>
+                       </div>
+                       <div class="col-auto my-1">
+                            <label class="mr-sm-2" for="inlineFormCustomSelect">Mon PC dispose de : </label> 
+                           <select class="custom-select mr-sm-2" id="ram-step-before-2004" onclick="">
+                            <option value="1">512 Mo</option>
+                            <option value="2">768Mo à 1Go</option>
+                            <option value="3">plus de 1Go</option>
+                            <option value="3">plus de 2Go</option>
+                           </select>
+                           <label class="mr-sm-2" for="inlineFormCustomSelect">de mémoire vive minimum (RAM)</label>
+                         </div>
+                        <div class="col-auto my-1 right">
+                          <button class="btn btn-primary btn-lg btn-block" 
+                                  onclick="valid_step_from_2004();"
+                                  type="button">
+                                  Valider
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="step-from-2006" class="step row card d-none">
+                      <span class="badge badge-info badge-pill">2</span>
+                      <div class="form-row align-items-center">
+                        <div class="col-auto my-1">
+                          <div>
+                            <div>
+                              Il embarque un processeur de type : 
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                              <input type="radio" id="step-from-2006-processor-from-2004" name="processor-step-2006" class="custom-control-input">
+                              <label class="custom-control-label" for="step-from-2006-processor-from-2004">
+                                <ul>
+                                  <li>AMD K8 (Athlon 64, Athlon 64 FX, Sempron 64, Turion, Opteron)</li>
+                                  <li>Intel Pentium 4 6xx, Pentium Extreme Edition, Centrino, Pentium 4-M</li>
+                                </ul>
+                              </label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                              <input type="radio" id="step-from-2006-processor-from-2006" name="processor-step-2006" class="custom-control-input">
+                              <label class="custom-control-label" for="step-from-2006-processor-from-2006">
+                                Il embarque au moins un processeur <strong>double coeur</strong> AMD K10 <br>
+                                (Athlon 64 x2, Phenom, Athlon 6xxx, Athlon LE-1xxx et Sempron LE-1xxx) et supérieurs,<br>
+                                Intel Pentium D séries 8xx ou 9xx, Pentium Dual Core, Intel Core 2 et supérieurs.<br>
+                              </label>
+                            </div>
+                          </div>
+                       <div class="col-auto my-1">
+                            <label class="mr-sm-2" for="inlineFormCustomSelect">Mon PC dispose de : </label> 
+                           <select class="custom-select mr-sm-2" id="ram-step-from-2006" onchange="autoriseVm(this);">
+                            <option value="1">512 Mo</option>
+                            <option value="2">768Mo à 1Go</option>
+                            <option value="3">plus de 1Go</option>
+                            <option value="4">plus de 2Go</option>
+                           </select>
+                           <label class="mr-sm-2" for="inlineFormCustomSelect">de mémoire vive minimum (RAM)</label>
+                         </div>
+                      </div>
+                        <div class="col-auto my-1">
+                          <div class="custom-control custom-checkbox mr-sm-2">
+                            <input type="checkbox" class="custom-control-input" id="install-on-vm" disabled>
+                            <label class="custom-control-label" for="install-on-vm">
+                              Je veux installer PrimTux <strong>dans mon système existant</strong> (windows ou linux)
+                          </div>
+                        </div>
+                        <div class="col-auto my-1 right">
+                          <button class="btn btn-primary btn-lg btn-block" 
+                                  onclick="valid_step_from_2006();"
+                                  type="button">
+                                  Valider
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="no-primtux-available" class="step row card d-none">
+                      <span class="badge badge-info badge-pill">3</span>
+                      Désolé, votre configuration ne semble pas être supporté pour PrimTux.<br>
+                      Dans le doute, il est toujours possible de tester la version de PrimTux 2 et de nous concerter sur le forum.
+                    </div>
+                    
+                    <div id="step-download-primtux2" class="step row card d-none">
+                      <span class="badge badge-info badge-pill">3</span>
+                      <p>
+                        La <strong>Primtux 2 i386</strong> est la version la plus adapté à votre matériel
+                        <div>
+                          <a type="button" 
+                             class="btn btn-success"
+                             target="_blank"
+                             href="https://sourceforge.net/projects/primtux/files/Distribution/PrimTux2-2017-07-26-i386.hybrid.iso/download">
+                            Télécharger
+                          </a>
+                          <span class="padding">
+                            Somme MD5: <strong>44a284a6732f1519c98f96723f7f7c44</strong>
+                          </span>
+                        </div>
+                      </p>
+                    </div>
+
+                    <div id="step-download-primtux3-i386" class="step row card d-none">
+                      <span class="badge badge-info badge-pill">3</span>
+                      <p>
+                        La <strong>Primtux 3 i386</strong> est la version la plus adapté à votre matériel
+                        <div>
+                          <a type="button" 
+                             class="btn btn-success"
+                             target="_blank"
+                             href="https://sourceforge.net/projects/primtux/files/latest/download">
+                            Télécharger
+                          </a>
+                          <span class="padding">
+                            Somme MD5: <strong>93ef32d6c63215a3dd015419bf456eac</strong>
+                          </span>
+                        </div>
+                      </p>
+                    </div>
+
+                    <div id="step-download-primtux3-amd64" class="step row card d-none">
+                      <span class="badge badge-info badge-pill">3</span>
+                      <p>
+                        La <strong>Primtux 3 amd64</strong> est la version la plus adapté à votre matériel
+                        <div>
+                          <a type="button" 
+                             class="btn btn-success"
+                             target="_blank"
+                             href="https://sourceforge.net/projects/primtux/files/Distribution/PrimTux3-2017-12-18-legacy-amd64.hybrid.iso/download">
+                            Télécharger
+                          </a>
+                        </div>
+                      </p>
+                    </div>
+
+                    <div id="step-download-primtux4-amd64" class="step row card d-none">
+                      <span class="badge badge-info badge-pill">3</span>
+                      <p>
+                        La <strong>Primtux 4 amd64</strong> est la version la plus adapté à votre matériel
+                        <div>
+                          <a type="button" 
+                             class="btn btn-success"
+                             target="_blank"
+                             href="https://sourceforge.net/projects/primtux/files/Distribution/Tests/PrimTux4-i386-2018-06-16.hybrid.iso/download">
+                            Télécharger
+                          </a>
+                          <span class="padding">
+                            Somme MD5: <strong>D116B4ADFAE1FB3C90A5DE0256915A77</strong>
+                          </span>
+                        </div>
+                      </p>
+                    </div>
+
+                    <div id="step-install-vm" class="step row card d-none">
+                      <span class="badge badge-info badge-pill">3</span>
+                      <p>
+                        Si je cherche un système prêt à démarrer pour windows : 
+                        <a type="button" 
+                           class="btn btn-success"
+                           target="_blank"
+                           href="https://sourceforge.net/projects/primtux/files/Distribution/PrimTux-Virtuelle.exe/download">
+                          Télécharger
+                        </a>
+                        <span class="padding">
+                          Somme MD5: <strong>D116B4ADFAE1FB3C90A5DE0256915A77</strong>
+                        </span>
+                      </p>
+                      <p>
+                        Si je souhaite installer ma machine virtuelle :
+                        <a type="button" 
+                           class="btn btn-success"
+                           target="_blank"
+                           href="https://sourceforge.net/projects/primtux/files/Distribution/Tests/PrimTux4-i386-2018-06-16.hybrid.iso/download">
+                          Télécharger
+                        </a>
+                      </p>
+                      <span class="alert alert-warning" role="alert">
+                        <i class="material-icons">warning</i>
+                        Attention : vous pouvez subir des lenteurs lié à l'émulation de Primtux sur un autre système d'exploitation.<br>
+                        Vous ne pourez jamais avoir la même réactivité qu'une installation sur disque.
+                      </span>
+                    </div>
+                    
+                    <div id="step-download-primtux2-rpi" class="step row card d-none">
+                      <span class="badge badge-info badge-pill">3</span>
+                      <p>
+                        La <strong>Primtux 2 et 3 pour Raspberry Pi</strong> sont toute les deux adaptés à votre matériel
+                        <div class="row margin-bottom">
+                          <a type="button" 
+                             class="btn btn-success"
+                             target="_blank"
+                             href="https://sourceforge.net/projects/primtux/files/Distribution/primtux2-rpi.img.gz/download">
+                            Télécharger Primtux 2
+                          </a>
+                          <span class="padding">
+                            Somme MD5: <strong>D4D620DE571F3229D1FB9E0958AA6CE3</strong>
+                          </span>
+                        </div>
+                        <div class="row">
+                          <a type="button" 
+                             class="btn btn-success"
+                             target="_blank"
+                             href="https://sourceforge.net/projects/primtux/files/Distribution/primtux3-rpi-05-07-18.img.gz/download">
+                            Télécharger Primtux 3
+                          </a>
+                          <span class="padding">
+                            Somme MD5: <strong>DD39D6BC42508CE33BA2415AC6410E34</strong>
+                          </span>
+                        </div>
+                      </p>
+                    </div>
+                    
+                    <div id="step-download-primtux3-rpi" class="step row card d-none">
+                      <span class="badge badge-info badge-pill">3</span>
+                      <p>
+                        La <strong>Primtux 3 pour Raspberry Pi</strong> est la version la plus adapté à votre matériel
+                        <div class="row">
+                          <a type="button" 
+                             class="btn btn-success"
+                             target="_blank"
+                             href="https://sourceforge.net/projects/primtux/files/Distribution/primtux3-rpi-05-07-18.img.gz/download">
+                            Télécharger
+                          </a>
+                          <span class="padding">
+                            Somme MD5: <strong>DD39D6BC42508CE33BA2415AC6410E34</strong>
+                          </span>
+                        </div>
+                      </p>
+                    </div>
+                    
+                    <div id="step-primtux2-dys" class="step row card d-none">
+                      <span class="badge badge-info badge-pill">3</span>
+                      <p>
+                        La <strong>Primtux 2 Dys</strong> est la version la plus adapté à votre matériel
+                        <div>
+                          <a type="button" 
+                             class="btn btn-success"
+                             target="_blank"
+                             href="https://sourceforge.net/projects/primtux/files/Distribution/PrimTux2-Dys-2017-07-26-i386.hybrid.iso/download">
+                            Télécharger
+                          </a>
+                          <span class="padding">
+                            Somme MD5: <strong>5c4b3097f43f6166ce16675a2016c5b0</strong>
+                          </span>
+                        </div>
+                      </p>
+                    </div>
+                  </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <div class="card-header no-wrap">
+                  Pourquoi autant de versions ?
+              </div>
+              <div class="card-body">
+                  <p class="card-text">
+                      Elle a été construite dans une optique de revaloriser un matériel obsolescent.<br>
+                      Différentes versions existent pour satisfaire cette contrainte technique.
+                  </p>
+                  <div class="alert alert-warning fade show" role="alert">
+                    <i class="material-icons">warning</i>
+                    Pour les initiés qui savent désactiver l’UEFI, toutes les versions i386 fonctionnent très bien sur un ordinateur embarquant un processeur 64 bits en Bios Legacy.
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

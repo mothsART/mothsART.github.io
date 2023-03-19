@@ -1,0 +1,82 @@
+#ink {
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: absolute;
+}
+#ink div {
+  -moz-animation: grow 1s 1;
+  -webkit-animation: grow 1s 1;
+  -ms-animation: grow 1s 1;
+  animation: grow 1s 1;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  background-color: blue;
+  opacity: 0;
+  border-radius: 100%;
+}
+@-moz-keyframes grow {
+  0% {
+    opacity: .4;
+    top: -5px;
+    left: -5px;
+    height: 10px;
+    width: 10px;
+  }
+  100% {
+    opacity: .01;
+    top: -20px;
+    left: -20px;
+    height: 40px;
+    width: 40px;
+  }
+}
+@-webkit-keyframes grow {
+  0% {
+    opacity: .4;
+    top: -5px;
+    left: -5px;
+    height: 10px;
+    width: 10px;
+  }
+  100% {
+    opacity: .01;
+    top: -20px;
+    left: -20px;
+    height: 40px;
+    width: 40px;
+  }
+}
+@-ms-keyframes grow {
+  0% {
+    opacity: .4;
+    top: -5px;
+    left: -5px;
+    height: 10px;
+    width: 10px;
+  }
+  100% {
+    opacity: .01;
+    top: -20px;
+    left: -20px;
+    height: 40px;
+    width: 40px;
+  }
+}
+@keyframes grow {
+  0% {
+    opacity: .4;
+    top: -5px;
+    left: -5px;
+    height: 10px;
+    width: 10px;
+  }
+  100% {
+    opacity: .01;
+    top: -20px;
+    left: -20px;
+    height: 40px;
+    width: 40px;
+  }
+}

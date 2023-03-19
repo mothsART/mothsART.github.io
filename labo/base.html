@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+        {% block head %}
+        <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+
+        <meta name="date" content="2015-11-21 18:00" />
+        <meta name="charset" charset="utf-8" />
+        {% endblock %}
+</head>
+
+<body id="index" class="home">
+
+        {% block content %}
+        {% endblock %}
+        <footer id="contentinfo" class="body">
+        </footer>
+</body>
+</html>
