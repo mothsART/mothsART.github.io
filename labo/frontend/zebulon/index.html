@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Zébulon</title>
+        <link rel="icon" type="image/png" href="favicon.png" />
+        <link rel="stylesheet" href="./static/style.css">
+    </head>
+    <body onload="load_game()">
+        <h1 class="hidden">Zébulon</h1>
+        <div id="game" class="hidden">
+            <div class="container">
+                <canvas id="canvas-background" class="pixelated" width="800" height="600"></canvas>
+
+                <div id="level-1" class="level hidden">
+                    <div id="canvas-cloud-1" class="canvas-cloud"></div>
+                    <div id="canvas-cloud-2" class="canvas-cloud"></div>
+                    <div id="canvas-cloud-3" class="canvas-cloud"></div>
+                </div>
+                <div id="level-2" class="level hidden">
+                </div>
+
+                <canvas id="canvas-ladders" class="pixelated" width="800" height="600"></canvas>
+                <canvas id="canvas-floor" class="pixelated" width="800" height="600"></canvas>
+                <canvas id="canvas-items" class="pixelated" width="800" height="600"></canvas>
+                <canvas id="canvas-translation" class="pixelated" width="800" height="600"></canvas>
+                <canvas id="canvas-gravity" class="pixelated" width="800" height="600"></canvas>
+
+                <canvas id="canvas-gate" class="pixelated" width="800" height="600"></canvas>
+                <canvas id="canvas-slices" class="pixelated" width="800" height="600"></canvas>
+                <div id="score">
+                    <span id="nb-items">0</span>
+                    x
+                </div>
+                <canvas id="canvas-score" class="pixelated" width="800" height="600"></canvas>
+            </div>
+        </div>
+        <div id="level-title">
+            <h2 id="level-title__strong"></h2>
+            <h2 id="level-title__font"></h2>
+        </div>
+        <div id="intro" class="hidden">
+            <div class="container">
+                <div class="start-text">
+                    <p>Tu es prêt ?</p>
+                    <p>
+                        Alors appuie sur 
+                    </p>
+                    <button id="start-game" onclick="start_game();">
+                        commencer
+                    </button>
+                    <p>ou tape sur</p>
+                    <p>la touche <strong>[Entrée]</strong></p>
+                </div>
+                <canvas id="canvas-intro-title" class="pixelated" width="104" height="51"></canvas>
+                <canvas id="canvas-intro" class="pixelated" width="86" height="59"></canvas>
+            </div>
+        </div>
+        <div id="end" class="hidden">
+            <div class="container">
+                <h2 id="end-title">Gagné !</h2>
+                <div class="start-text">
+                    <p>Tu veux rejouer ?</p>
+                    <p>
+                        Alors appuie sur 
+                    </p>
+                    <button id="start-game" onclick="start_game();">
+                        Re-commencer
+                    </button>
+                    <p>ou tape sur</p>
+                    <p>la touche <strong>[Entrée]</strong></p>
+                </div>
+                <img id="zebulon-win" src="./static/zebulon_start.png" class="pixelated">
+            </div>
+        </div>
+        <div class="hidden">
+            <img id="img-ladder-horizontal" src="./static/ladder_horizontal.png">
+            <img id="img-ladder-vertical" src="./static/ladder_vertical.png">
+            <div id="img-level-1">
+                <img id="img-backgroud-level-1" src="./static/step/bg_level_1.png">
+                <img id="img-floor-level-1" src="./static/step/floor-level-1.png">     
+                <img id="img-item-level-1" src="./static/step/item_level_1.png">
+            </div>
+            <div id="img-level-2">
+                <img id="img-backgroud-level-2" src="./static/step/bg_level_2.png">
+                <img id="img-floor-level-2" src="./static/step/floor-level-2.png">
+                <img id="img-item-level-2" src="./static/step/item_level_2.png">
+            </div>
+        </div>
+    </body>
+
+    <script src="./static/loadimages.js"></script>
+    <script src="./static/intro.js"></script>
+
+    <script src="./static/background.js"></script>
+    <script src="./static/colision.js"></script>
+
+    <script src="./static/animation.js"></script>
+    <script src="./static/items.js"></script>
+    <script src="./static/player.js"></script>
+    <script src="./static/score.js"></script>
+    <script src="./static/gate.js"></script>
+    <script src="./static/ladder.js"></script>
+    <script src="./static/floor.js"></script>
+
+    <script src="./static/step/level1.js"></script>
+    <script src="./static/step/level2.js"></script>
+
+    <script src="./static/debug.js"></script>
+</html>

@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block title %}{{ SITENAME }}{% endblock title %}
+
+{% block content %}
+<style>
+pre {
+    box-sizing: content-box;
+    padding: 0;
+}
+</style>
+
+<div>
+    <pre id="editor">function foo(items) {
+        var i;
+        for (i = 0; i &lt; items.length; i++) {
+            alert("Ace Rocks " + items[i]);
+        }
+        javascript
+
+        jkj
+    }</pre>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/chrome");
+    editor.session.setMode("ace/mode/javascript");
+
+    editor.setOption("readOnly", true);
+    editor.setShowInvisibles(true);
+    editor.selection.getCursor();
+    editor.setOptions({
+        maxLines: 50, mode: "ace/mode/javascript",
+        autoScrollEditorIntoView: true
+    });
+    //setOption(readOnly, readOnly);
+
+    // $(document).ready(function(){
+
+    //     var heightUpdateFunction = function() {
+    //         // http://stackoverflow.com/questions/11584061/
+    //         var newHeight =
+    //           editor.getSession().getScreenLength()
+    //           * editor.renderer.lineHeight
+    //           //+ editor.renderer.scrollBar.getWidth();
+
+    //         $('#editor').height(newHeight.toString() + "px");
+    //         $('#editor-section').height(newHeight.toString() + "px");
+
+    //         // This call is required for the editor to fix all of
+    //         // its inner structure for adapting to a change in size
+    //         editor.resize();
+    //     };
+
+    //     // Set initial size to match initial content
+    //     heightUpdateFunction();
+
+    //     // Whenever a change happens inside the ACE editor, update
+    //     // the size again
+    //     editor.getSession().on('change', heightUpdateFunction);
+    // });
+</script>
+{% endblock %}

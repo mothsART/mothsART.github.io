@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- Bootstrap -->
+        {% if BOOTSTRAP_THEME %}
+            <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/bootstrap.{{ BOOTSTRAP_THEME }}.min.css" type="text/css"/>
+        {% else %}
+            <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/bootstrap.min.css" type="text/css"/>
+        {% endif %}
+
+        <style>
+            fieldset {
+                border: solid 1px rgb(229, 229, 229);
+                padding: 5px;
+            }
+            legend {
+                border: none;
+                margin: 0;
+                background: none;
+                margin-left: 5px;
+                padding: 0 5px;
+                font-size: 15px;
+                width: auto;
+            }
+            label:after {
+                content: " :";
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Large modal -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Modernizr</h1>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        Test de compatibilité du navigateur
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-modernizr" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Test de compatibilité du navigateur</h4>
+                </div>
+                <div class="modal-body">
+                    <p id="browser-summary-without-user-agent"></p>
+                    <div id="browser-summary-with-user-agent">
+                        <fieldset>
+                            <legend>
+                                Informations issus du user-agent
+                                <strong class="text-warning">(Attention: cette information est succeptible d'être erronée)</strong>
+                            </legend>
+                            <div></div>
+                        </fieldset>
+                    </div>
+                    <p id="features-summary"></p>
+
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                          <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Liste des fonctionnalités supportées
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                            <table class="table table-bordered" id="features-supported">
+                                <thead>
+                                    <th></th>
+                                    <th>Fonctionnalité</th>
+                                    <th>Supporté ?</th>
+                                    <th>Descriptif</th>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/jquery.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/bootstrap.min.js"></script>
+
+        <script src="./is.js"></script>
+        <script src="./duckTypingBrowserDetection.js"></script>
+        <script src="./pluginDetect.js"></script>
+        <script src="./modernizr-custom.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>

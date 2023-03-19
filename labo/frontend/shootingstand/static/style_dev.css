@@ -1,0 +1,7 @@
+.dev #stand {
+    background: green;
+}
+
+.dev .container {
+    border: solid 1px black;
+}

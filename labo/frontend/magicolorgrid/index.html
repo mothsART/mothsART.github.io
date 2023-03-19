@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+    <head>
+        <title>☆ ~ Magic Color Grid ~ ☆</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="favicon.png" /> 
+        <link rel="stylesheet" type="text/css" href="./static/style.css" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="./static/print.css" media="print">
+    </head>
+    <body>
+        <div class="buttons">
+            <label>Charger des exemples :
+            <select onchange="load_example(value);">
+                <option>--Aucun--</option>
+                <option value="./examples/crab.pixar">Crabe</option>
+                <option value="./examples/duck.pixar">Canard</option>
+            </select>
+            <button onclick="chooseGrid()">Créer une grille</button>
+            <button id="button-print" disabled="disabled" onclick="print()">
+                Imprimer
+            </button>
+            <button id="button-save" disabled="disabled" onclick="save()">
+                Sauvegarder
+            </button>
+        </div>
+        <div id="set-operation-dialog" class="dialog hidden">
+            <div>
+                <label class="modal__close" onclick="closeDialog(this)"></label>
+                <label>Opération</label>
+                <input id="id-row-col" type="hidden">
+                <input id="set-operation" type="text" onkeypress="isEnterKey()"/>
+            </div>
+            <div class="valid">
+                <button class="cancel" onclick="closeDialog(this)">Annuler</button>
+                <button onclick="confirmOperationCloseModal()">Valider</button>
+            </div>
+        </div>
+        <div id="create-grid-dialog" class="dialog create hidden">
+            <label class="modal__close" onclick="closeDialog(this)"></label>
+            <span id="create-warning" class="warning">
+                Attention : en créant une nouvelle grille, vous perdrez votre travaille en cours.
+            </span>
+            <div>
+                <label>Nombre de lignes</label>
+                <input id="nb-lines" type="number" value="10" min="2" max="20"/>
+            </div>
+            <div>
+                <label>Nombre de colonnes</label>
+                <input id="nb-columns" type="number" value="10" min="2" max="20" />
+            </div>
+            <div class="valid">
+                <button class="cancel" onclick="closeDialog(this)">Annuler</button>
+                <button onclick="createGrid()">Valider</button>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div id="grid-container" style="flex-grow: 3">
+            </div>
+            <div id="sidebar" class="hidden" style="flex-grow: 1">
+                <table id="operation-grid">
+                    <thead>
+                        <tr>
+                            <td>opération</td>
+                            <td>résultat</td>
+                            <td>couleur</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <fieldset id="fieldset-color-chooser">
+                    <label>Choisissez votre couleur</label>
+                    <div id="color-chooser">
+                        <button id="eraser"
+                                class="eraser"
+                                onclick="erase()">
+                            Gomme
+                        </button>
+                        <div id="disable-bross"
+                             class="select"
+                             onclick="disableBross()">
+                        </div>
+                    </div>
+                </fieldset>
+                </div>
+            </div>
+            <div id="color-operation">
+            </div>
+        </div>
+        <script src="./static/FileSaver.min.js"></script>
+        <script src="./static/vanilla-picker.min.js"></script>
+        <script src="./static/parseTOML.js"></script>
+        <script src="./static/colors.js"></script>
+        <script src="./static/script.js"></script>
+        <script src="./static/load.js"></script>
+        <script src="./static/export.js"></script>
+    </body>
+</html>
