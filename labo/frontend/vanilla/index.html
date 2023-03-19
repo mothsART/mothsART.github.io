@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./static/bootstrap_3.3.7.min.css" />
+        <link rel="stylesheet" type="text/css" href="./static/style.css" />
+    </head>
+    <body>
+        <div class="container-fluid">
+            <h1 id="title">Vanilla-a-a-a-a</h1>
+            <quote>Spécial dédicasse à Dave avec son vanina</quote>
+            <p>Nombre d'itérations pour chaque test : <strong id="nbOfIteration"></strong></p>
+            <table class="table table-bordered" id="benchmark-table">
+                <thead>
+                    <th>Voir le détail</th>
+                    <th></th>
+                    <th>Jquery (3.1.1)</th>
+                    <th>Vanilla</th>
+                    <th id="thXpath" class="hidden">XPath</th>
+                    <th>Resultat</th>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div class="hidden">
+                <div id="use-strict"></div>
+                <div id="no-strict"></div>
+            </div>
+            <div class="hidden">
+                <a href="#bench-h1">bench first h1</a>
+                <a href="#bench-a">bench count a</a>
+                <a>No link</a>
+
+                <table id="each-table">
+                    <thead>
+                        <tr>
+                            <th>colonne 1</th>
+                            <th>colonne 2</th>
+                            <th>colonne 3</th>
+                            <th>colonne 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>col 1 ligne 1</td>
+                            <td>col 1 ligne 2</td>
+                            <td>col 1 ligne 3</td>
+                            <td>col 1 ligne 4</td>
+                        </tr>
+                        <tr>
+                            <td>col 2 ligne 1</td>
+                            <td>col 2 ligne 2</td>
+                            <td>col 2 ligne 3</td>
+                            <td>col 2 ligne 4</td>
+                        </tr>
+                        <tr>
+                            <td>col 3 ligne 1</td>
+                            <td>col 3 ligne 2</td>
+                            <td>col 3 ligne 3</td>
+                            <td>col 3 ligne 4</td>
+                        </tr>
+                        <tr>
+                            <td>col 4 ligne 1</td>
+                            <td>col 4 ligne 2</td>
+                            <td>col 4 ligne 3</td>
+                            <td>col 4 ligne 4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="./static/jquery-3.1.1.min.js"></script>
+        <script src="./static/bootstrap_3.3.7.min.js"></script>
+        <script src="./static/ace.js"></script>
+        <script src="./static/js-beauty.1.6.8.min.js"></script>
+        <script src="./static/benchmark.js"></script>
+        <script src="./static/script.js"></script>
+    </body>
+</html>
