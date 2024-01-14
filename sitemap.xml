@@ -12,6 +12,10 @@
         <lastmod>2023-02-26</lastmod>
     </url>
     <url>
+        <loc>https://mothsart.github.io/bricolage/idees/</loc>
+        <lastmod>2023-11-25</lastmod>
+    </url>
+    <url>
         <loc>https://mothsart.github.io/categories/</loc>
     </url>
     <url>
@@ -51,6 +55,9 @@
         <loc>https://mothsart.github.io/categories/science/page/1/</loc>
     </url>
     <url>
+        <loc>https://mothsart.github.io/categories/science/page/2/</loc>
+    </url>
+    <url>
         <loc>https://mothsart.github.io/categories/web/</loc>
     </url>
     <url>
@@ -64,7 +71,30 @@
         <lastmod>2023-03-05</lastmod>
     </url>
     <url>
+        <loc>https://mothsart.github.io/devblog/gimp/</loc>
+        <lastmod>2023-03-25</lastmod>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/devblog/ia/</loc>
+        <lastmod>2023-04-22</lastmod>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/devblog/langage-c/</loc>
+        <lastmod>2023-03-26</lastmod>
+    </url>
+    <url>
         <loc>https://mothsart.github.io/devblog/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/devblog/page/2/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/devblog/shell-linux/</loc>
+        <lastmod>2023-11-18</lastmod>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/devblog/un-vrai-langage/</loc>
+        <lastmod>2023-04-22</lastmod>
     </url>
     <url>
         <loc>https://mothsart.github.io/devblog/wiki-corrector/</loc>
@@ -102,6 +132,10 @@
         <loc>https://mothsart.github.io/reflexion/</loc>
     </url>
     <url>
+        <loc>https://mothsart.github.io/reflexion/avenir-humanite/</loc>
+        <lastmod>2023-04-22</lastmod>
+    </url>
+    <url>
         <loc>https://mothsart.github.io/reflexion/combattre-son-cerveau/</loc>
         <lastmod>2023-03-11</lastmod>
     </url>
@@ -110,14 +144,48 @@
         <lastmod>2023-03-11</lastmod>
     </url>
     <url>
+        <loc>https://mothsart.github.io/reflexion/memotechnique/</loc>
+        <lastmod>2023-02-26</lastmod>
+    </url>
+    <url>
         <loc>https://mothsart.github.io/reflexion/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/reflexion/page/2/</loc>
     </url>
     <url>
         <loc>https://mothsart.github.io/reflexion/sortir-du-siecle-des-lumieres/</loc>
         <lastmod>2023-03-11</lastmod>
     </url>
     <url>
+        <loc>https://mothsart.github.io/reflexion/un-vrai-langage/</loc>
+        <lastmod>2024-01-10</lastmod>
+    </url>
+    <url>
         <loc>https://mothsart.github.io/secret-recieps/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/secret/bricolage/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/secret/bricolage/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/secret/bricolage/table-basse/</loc>
+        <lastmod>2023-04-21</lastmod>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/secret/jardinage/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/secret/jardinage/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/secret/jardinage/tips/</loc>
+        <lastmod>2023-03-06</lastmod>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/secret/recettes/</loc>
     </url>
     <url>
         <loc>https://mothsart.github.io/tags/</loc>
@@ -127,6 +195,12 @@
     </url>
     <url>
         <loc>https://mothsart.github.io/tags/alsacien/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/bricolage/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/bricolage/page/1/</loc>
     </url>
     <url>
         <loc>https://mothsart.github.io/tags/cerveau/</loc>
@@ -147,6 +221,24 @@
         <loc>https://mothsart.github.io/tags/croyance/page/1/</loc>
     </url>
     <url>
+        <loc>https://mothsart.github.io/tags/gimp/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/gimp/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/langage/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/langage/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/linux/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/linux/page/1/</loc>
+    </url>
+    <url>
         <loc>https://mothsart.github.io/tags/poisson/</loc>
     </url>
     <url>
@@ -163,6 +255,18 @@
     </url>
     <url>
         <loc>https://mothsart.github.io/tags/primtux/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/programmation/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/programmation/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/shell/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/tags/shell/page/1/</loc>
     </url>
     <url>
         <loc>https://mothsart.github.io/tags/svg/</loc>

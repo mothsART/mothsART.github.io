@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> - Le Labo du Nerd</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+  <link rel="stylesheet" href="https://mothsart.github.io/assets/css/custom.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"><link rel="apple-touch-icon" sizes="180x180" href="https://mothsart.github.io/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://mothsart.github.io/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://mothsart.github.io/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://mothsart.github.io/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="https://mothsart.github.io/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff"><link rel="canonical" href="https://mothsart.github.io/reflexion/memotechnique/" /><link rel="alternate" type="application/rss+xml"
+        title="RSS" href="https://mothsart.github.io/rss.xml"
+      ><meta name="author" content="Jérémie Ferry @alias mothsart"><meta property="article:published_time" content='2023-02-26' /><meta name="generator" content="Zola">
+  <meta property="og:title" content="" />
+  <meta property="og:url" content="https://mothsart.github.io/reflexion/memotechnique/" /><meta property="og:site_name" content="Le Labo du Nerd" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary" /><meta name="twitter:creator" content="@user" />
+  
+</head>
+<body>
+  <div class="container-fluid vh-100">
+    <div class="row h-100"><div
+    class="sidebar d-none d-lg-block col-lg-3 col-xl-2 mh-100 p-0 overflow-auto"
+  >
+    <aside class="d-flex flex-column justify-content-between h-100">
+      <div class="d-none d-md-block mb-4 pt-5 px-4 text-center">
+        <!--
+        <div class="sidebar-avatar mb-2 mx-auto border border-3 rounded-circle">
+          <a href="https://mothsart.github.io/" target="_blank" rel="noopener noreferrer">
+    <img
+      src="https://mothsart.github.io/images/avatar.png"
+      alt="Jérémie Ferry @alias mothsart"
+      class="img-fluid"
+    >
+  </a>
+        </div>
+        -->
+        <div class="mb-1">
+          <a
+            href="https://mothsart.github.io/"
+            class="sidebar-title fs-5 fw-bold text-decoration-none"
+          >
+            Le Labo du Nerd
+          </a>
+        </div>
+        <div class="fw-light">
+          Ce dev-blog-draft est celui d'un passionné du #numérique. Souvent dans la remise en question, rarement satisfait, en recherche de singularité. Ce site est avant-tout un réel banc d'essai : un labo ou je m'éclate et écrit au fil de l'eau mes essais... il n'a donc pas de délais de livraison.
+        </div>
+      </div>
+
+      <div class="sidebar-nav list-group my-auto rounded-0 text-center"><a
+            href="https://mothsart.github.io/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Accueil"
+          >
+            <span class="sidebar-nav-icon bi bi-house fs-4"></span>
+            <span class="sidebar-nav-text d-none d-md-inline">
+              Accueil
+            </span>
+          </a>
+      <a
+            href="https://mothsart.github.io/devblog/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Devblog"
+          >
+            <span class="sidebar-nav-icon bi bi-terminal fs-4"></span>
+            <span class="sidebar-nav-text d-none d-md-inline">
+              Devblog
+            </span>
+          </a>
+      <a
+            href="https://mothsart.github.io/reflexion/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Réflexion"
+          >
+            <span class="sidebar-nav-icon bi bi bi-lightbulb fs-4"></span>
+            <span class="sidebar-nav-text d-none d-md-inline">
+              Réflexion
+            </span>
+          </a>
+      <a
+            href="https://mothsart.github.io/recieps/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Recettes"
+          >
+            <span class="sidebar-nav-icon bi bi-egg-fried fs-4"></span>
+            <span class="sidebar-nav-text d-none d-md-inline">
+              Recettes
+            </span>
+          </a>
+      <a
+            href="https://mothsart.github.io/author/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Auteur"
+          >
+            <span class="sidebar-nav-icon bi bi-person fs-4"></span>
+            <span class="sidebar-nav-text d-none d-md-inline">
+              Auteur
+            </span>
+          </a>
+      <a
+            href="https://mothsart.github.io/about/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="A propos"
+          >
+            <span class="sidebar-nav-icon bi bi-question-octagon fs-4"></span>
+            <span class="sidebar-nav-text d-none d-md-inline">
+              A propos
+            </span>
+          </a>
+      </div>
+
+      <div class="sidebar-social d-none d-md-block mt-4 pb-4 px-4">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-auto px-2">
+        <a
+          href="mailto:jerem.ferry@email.com"
+          target="_blank" rel="noopener noreferrer"
+          data-bs-toggle="tooltip"
+          data-bs-title='Email'
+          class="text-decoration-none"
+        >
+          <span class="bi bi-envelope-fill"></span>
+        </a>
+      </div><div class="col-auto px-2">
+        <a
+          href="https://github.com/mothsart"
+          target="_blank" rel="noopener noreferrer"
+          data-bs-toggle="tooltip"
+          data-bs-title='GitHub'
+          class="text-decoration-none"
+        >
+          <span class="bi bi-github"></span>
+        </a>
+      </div><div class="col-auto px-2">
+        <a
+          href="https://twitter.com/mothsart1"
+          target="_blank" rel="noopener noreferrer"
+          data-bs-toggle="tooltip"
+          data-bs-title='Twitter'
+          class="text-decoration-none"
+        >
+          <span class="bi bi-twitter"></span>
+        </a>
+      </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div><div class="col mh-100 overflow-auto px-0"><nav
+    class="navbar navbar-expand navbar-bg-light sticky-top border-bottom"
+  >
+    <div class="container-fluid"><button
+        type="button"
+        class="btn d-block d-lg-none fs-5"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+        aria-controls="offcanvas"
+      >
+        <span class="bi bi-list"></span>
+      </button>
+      
+      <div class="col-8">
+        
+          <div class="row justify-content-center justify-content-lg-start p-2 ps-xl-3 text-center"><div class="col-auto d-none d-xl-block">
+        <a
+          href="https://mothsart.github.io/reflexion/"
+          class="text-decoration-none"
+        >
+          Réflexion
+        </a>
+      </div>
+      <div class="col-auto d-none d-xl-block">
+        <span class="text-secondary">
+          »
+        </span>
+      </div><div class="col-auto">
+      <span
+        class="d-inline d-sm-none text-secondary"
+        data-bs-toggle="tooltip"
+        data-bs-title=""
+      >
+        
+      </span>
+      <span
+        class="d-none d-sm-inline text-secondary"
+        data-bs-toggle="tooltip"
+        data-bs-title=""
+      >
+        
+      </span>
+    </div>
+  </div>
+        
+      </div>
+
+      <button
+    type="button" data-bs-toggle="modal" data-bs-target="#searchModal"
+    class="btn border border-0"
+  >
+    <span class="bi bi-search fs-5"></span>
+  </button>
+    </div>
+  </nav><div class="d-flex flex-column h-100"><main class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-11 col-lg-10 col-xxl-9">
+        <h1>
+          
+        </h1>
+        <div class="row">
+            <div class="blog-head-left col-6">
+                <div class="col-auto">
+    <small class="text-muted">
+      Par :
+      <a
+        href="https://mothsart.github.io/"
+        target="_blank" rel="noopener noreferrer"
+        class="text-decoration-none"
+      >
+        Jérémie Ferry @alias mothsart
+      </a>
+    </small>
+  </div>
+
+  <div class="col-auto mb-2">
+    <small class="text-muted">
+      Posté le
+      <time datetime="2023-02-26">
+        <span
+          class="text-muted text-decoration-none"
+        >
+            26 Février 2023
+        </span>
+      </time>
+    </small>
+  </div>
+
+  
+            </div>
+            <div class="blog-head-right col-6">
+                
+  
+  
+            </div>
+        </div><div class="mb-5">
+          <h2 id="introduction">Introduction</h2>
+<p>http://villemin.gerard.free.fr/Wwwgvmm/MnemoTe/CodePers.htm</p>
+<p>0 : t'es nul
+1 : hein ?
+2 : yeux
+3 : frères
+4 : 4 mousquetaires
+5 : doigts d'une main
+6 : saw 6
+7 : chiffre parfait, saw sept
+8 : forme du bonhomme de neige
+9 : quoi d'neuf ?</p>
+<p>10 : 10 commandements
+11 : ocean 11
+12 : 
+13 : superstission
+14 : début de la 1ère guerre
+15 : 
+17 : appeler les flics
+18 : adulte
+19 : </p>
+<p>20 : vin
+21 : trisomie, mon anniv
+22 : 
+23 : paires de chromosomes
+25 : Noël
+26 : 
+27 : 
+28 : changement de lune
+29 : crise de 29</p>
+<p>30 :
+31 : se mettre sur son 31
+32 : nombre de cartes
+33 : dites 33 chez le médecin + la mort du christ
+34 :
+35 : 35 heures
+36 : 
+37 : température du corps
+38 : t'as de la température
+39 : début de la seconde guerre</p>
+<p>40 : la crise de la quarantaine
+41 : 
+42 : la réponse à tout
+43 : ma pointure
+44 : 44e division d'infanterie
+45 : 45 tours
+46 : nombre de chromosomes humains
+47 : les 47 ronin
+48 : 48h chrono
+49 : le 49-3 !</p>
+<p>50 : 50 Herz
+51 : le pastis
+52 : 
+53 : 
+54 : la meurthe et moselle
+55 : la meuse
+56 : 
+57 : la moselle
+58 : la mort dans le jeu de l'oie
+59 : le nord</p>
+<p>60 : 
+61 : 
+62 : 
+63 : 
+64 : 
+65 : 
+66 : 
+67 : le bas-rhin
+68 : le haut-rhin
+69 : la position</p>
+<p>70 : 
+71 : 
+72 : 
+73 : 
+74 : 
+75 : 
+76 : 
+77 : 
+78 : 
+79 : </p>
+<p>80 : 4x20
+81 : 
+82 : année de naissance
+83 : 
+84 : 
+85 : année de naissance d'Estelle
+86 : 
+87 : 
+88 : les vosges
+89 : appel en Alsace</p>
+<p>90 : territoire de Belfort
+91 : 
+92 : Haut de Seine
+93 : La Seine saint denis
+94 : 
+95 : 
+96 : 
+97 : le RIB
+98 : la coupe du monde
+99 : pos sex</p>
+
+        </div>
+      </div>
+    </div>
+  </main><div class="container">
+    <div class="row justify-content-center mt-3 mb-4">
+      <div class="col-11 col-lg-10 col-xxl-9"></div>
+    </div>
+  </div><footer class="container-fluid mt-auto">
+    <div class="row justify-content-center">
+      <div class="col-10">
+        <div class="row pt-3 pb-4 border-top">
+          <div class="col-12 col-md-6 mb-2 mb-md-0 text-center text-md-start">
+            <small class="text-secondary">
+              © 2024
+              <a 
+                href="https://mothsart.github.io/"
+                target="_blank" rel="noopener noreferrer"
+                class="text-decoration-none"
+              >
+                Jérémie Ferry @alias mothsart&period;
+              </a>
+            </small>
+          </div>
+          <div class="col-12 col-md-6 text-center text-md-end">
+            <small class="text-secondary">
+              Créé à partir de
+              <a 
+                href="https://www.getzola.org/"
+                target="_blank" rel="noopener noreferrer"
+                class="text-decoration-none"
+              >
+                Zola
+              </a>
+              avec
+              <a 
+                href="https://github.com/mothsART/devlab-zola"
+                target="_blank" rel="noopener noreferrer"
+                class="text-decoration-none"
+              >
+                DevLab
+              </a>
+              theme.
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+    <div class="offcanvas-body p-0">
+      <div class="sidebar container-fluid vh-100">
+        <div class="row h-100">
+          <div
+            class="col mh-100 px-0 overflow-auto"
+          >
+            <aside class="d-flex flex-column justify-content-between h-100">
+              <div class="mb-4 pt-5 px-3 text-center">
+                <!--
+                <div class="sidebar-avatar mb-2 mx-auto border border-3 rounded-circle">
+                  <a href="https://mothsart.github.io/" target="_blank" rel="noopener noreferrer">
+    <img
+      src="https://mothsart.github.io/images/avatar.png"
+      alt="Jérémie Ferry @alias mothsart"
+      class="img-fluid"
+    >
+  </a>
+                </div>
+                -->
+                <div>
+                  <a
+                    href="https://mothsart.github.io/"
+                    class="sidebar-title fs-5 fw-bold text-decoration-none"
+                  >
+                    Le Labo du Nerd
+                  </a>
+                </div>
+              </div>
+
+              <div class="sidebar-nav list-group my-auto rounded-0 text-start"><a
+            href="https://mothsart.github.io/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Accueil"
+          >
+            <span class="sidebar-nav-icon bi bi-house ms-2 me-1 fs-4"></span>
+            <span class="sidebar-nav-text">Accueil</span>
+          </a><a
+            href="https://mothsart.github.io/devblog/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Devblog"
+          >
+            <span class="sidebar-nav-icon bi bi-terminal ms-2 me-1 fs-4"></span>
+            <span class="sidebar-nav-text">Devblog</span>
+          </a><a
+            href="https://mothsart.github.io/reflexion/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Réflexion"
+          >
+            <span class="sidebar-nav-icon bi bi bi-lightbulb ms-2 me-1 fs-4"></span>
+            <span class="sidebar-nav-text">Réflexion</span>
+          </a><a
+            href="https://mothsart.github.io/recieps/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Recettes"
+          >
+            <span class="sidebar-nav-icon bi bi-egg-fried ms-2 me-1 fs-4"></span>
+            <span class="sidebar-nav-text">Recettes</span>
+          </a><a
+            href="https://mothsart.github.io/author/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Auteur"
+          >
+            <span class="sidebar-nav-icon bi bi-person ms-2 me-1 fs-4"></span>
+            <span class="sidebar-nav-text">Auteur</span>
+          </a><a
+            href="https://mothsart.github.io/about/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="A propos"
+          >
+            <span class="sidebar-nav-icon bi bi-question-octagon ms-2 me-1 fs-4"></span>
+            <span class="sidebar-nav-text">A propos</span>
+          </a></div>
+
+              <div class="sidebar-social mt-4 pb-4 px-3">
+                <div class="container-fluid">
+                  <div class="row justify-content-center">
+                    <div class="col-auto px-2">
+        <a
+          href="mailto:jerem.ferry@email.com"
+          target="_blank" rel="noopener noreferrer"
+          data-bs-toggle="tooltip"
+          data-bs-title='Email'
+          class="text-decoration-none"
+        >
+          <span class="bi bi-envelope-fill"></span>
+        </a>
+      </div><div class="col-auto px-2">
+        <a
+          href="https://github.com/mothsart"
+          target="_blank" rel="noopener noreferrer"
+          data-bs-toggle="tooltip"
+          data-bs-title='GitHub'
+          class="text-decoration-none"
+        >
+          <span class="bi bi-github"></span>
+        </a>
+      </div><div class="col-auto px-2">
+        <a
+          href="https://twitter.com/mothsart1"
+          target="_blank" rel="noopener noreferrer"
+          data-bs-toggle="tooltip"
+          data-bs-title='Twitter'
+          class="text-decoration-none"
+        >
+          <span class="bi bi-twitter"></span>
+        </a>
+      </div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="searchModalLabel">
+          
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div
+          id="searchInput" role="search" 
+          class="d-flex mb-3 border rounded-5 bg-white"
+        >
+          <input
+            id="search" type="search"
+            class="form-control border border-0 rounded-5 rounded-end"
+            placeholder="rechercher"
+            aria-label="rechercher"
+          >
+          <div class="rounded-5 rounded-start py-2 ps-2 pe-3">
+            <span class="bi bi-search"></span>
+          </div>
+        </div>
+        <div class="search-results">
+          <div class="search-results__items">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="https://mothsart.github.io/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    const myModal = document.getElementById('searchModal');
+    const myInput = document.getElementById('searchInput');
+
+    myModal.addEventListener('shown.bs.modal', () => {
+      myInput.focus()
+    });
+  </script>
+   <script src="https://mothsart.github.io/elasticlunr.min.js"></script>
+  <script src="https://mothsart.github.io/search_index.fr.js"></script><script src="https://mothsart.github.io/assets/js/search/lunr.stemmer.support.min.js"></script>
+    <script src="https://mothsart.github.io/assets/js/search/lunr.fr.min.js"></script><script src="https://mothsart.github.io/assets/js/search/search.js"></script>
+</body>
+</html>

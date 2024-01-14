@@ -7,14 +7,522 @@
       <generator>Zola</generator>
       <language>fr</language>
       <atom:link href="https://mothsart.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sat, 11 Mar 2023 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Wed, 10 Jan 2024 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>C&#x27;est quoi un vrai langage informatique en 2024 ?</title>
+          <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://mothsart.github.io/reflexion/un-vrai-langage/</link>
+          <guid>https://mothsart.github.io/reflexion/un-vrai-langage/</guid>
+          <description xml:base="https://mothsart.github.io/reflexion/un-vrai-langage/">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;&#x2F;h1&gt;
+&lt;p&gt;On est en 2024 : l&#x27;informatique et les choix technologiques n&#x27;ont jamais été aussi nombreux.
+On est donc en mesure d&#x27;être exigeant.&lt;&#x2F;p&gt;
+&lt;p&gt;Au cours de ma carrière pro, j&#x27;ai appris plusieurs langages et paradigmes et voici la liste des choses qui sont désormais des prérequis :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Un typage, partout, le plus fort possible avec tous les avantages :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sérialisation&#x2F;Déserialisation à partir d&#x27;une structure de données.&lt;&#x2F;li&gt;
+&lt;li&gt;Du pattern matching : de l&#x27;algorithmie la plus simple à  lire et à comprendre.&lt;&#x2F;li&gt;
+&lt;li&gt;Un moteur d&#x27;inférence.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;battery include : j&#x27;exige d&#x27;avoir le maximum d&#x27;outillage sans devoir installer moultes composants car : &lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Je désire faire des tests unitaires, des mocks et du coverage.&lt;&#x2F;li&gt;
+&lt;li&gt;Je devrais être en mesure de créer des benchmarks.&lt;&#x2F;li&gt;
+&lt;li&gt;Je dois être en capacité de documenter une API.&lt;&#x2F;li&gt;
+&lt;li&gt;J&#x27;aime avoir un outil en cli adapté : création de projets, lancement des builds, exec etc.&lt;&#x2F;li&gt;
+&lt;li&gt;Je ne peux me passer de messages d&#x27;erreurs et stacktrace explicite.&lt;&#x2F;li&gt;
+&lt;li&gt;J&#x27;aime avoir des règles fortes d&#x27;indentation (pep8 pour Python, &#x27;cargo fmt&#x27; pour Rust).&lt;&#x2F;li&gt;
+&lt;li&gt;Je suis accro aux contrôles qualités (analyse statique de code) via &lt;code&gt;ruff&lt;&#x2F;code&gt; en Python, &lt;code&gt;cargo clippy&lt;&#x2F;code&gt;en Rust.&lt;&#x2F;li&gt;
+&lt;li&gt;Je ne concois plus un monde sans gestionnaire de dépendances clé en main (pour l&#x27;instant, j&#x27;ai pas vu mieux que &lt;code&gt;cargo&lt;&#x2F;code&gt;).&lt;&#x2F;li&gt;
+&lt;li&gt;Je m&#x27;attends à pouvoir consulter, consommer et alimenter un dépôt dédié aux dépendances. Crates.io pour Rust, Pypi pour Python.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Des sources adapté à du versionning (git bien sur mais pas que). La création d&#x27;un projet devrait être minimaliste. (Le nombre de fichiers à la création de projet que propose C# et Java me semble à proscrire)&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;De l&#x27;asynchronisme et du parralélisme si possible &amp;quot;natif&amp;quot;. (async&#x2F;await)&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;De la performance :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;langage compilé en code &amp;quot;machine&amp;quot;. (pas de machine virtuelle et JIT)&lt;&#x2F;li&gt;
+&lt;li&gt;pas de Garbage collector, si possible. (surprises sur les benchs et le temps réel)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;La capacité à faire du bas comme du haut niveau : parfois on a besoin d&#x27;abstration et parfois de précision.
+Les 2 n&#x27;étant pas du tout incompatible au sein d&#x27;un même projet.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;L&#x27;utilisation de paradigmes éprouvés : interfaces, generator, itérateurs, closures, prog fonctionnel, visibilité et confidentialité, objets non nullable etc.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;-Disposer de la généricité : 
+- possibilité de rendre un objet débuggable, clonable etc.
+- Utilisation de macros.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Manipuler du texte facilitement, naturellement. (également dans la recherche sur des gros volume de données)&lt;&#x2F;li&gt;
+&lt;li&gt;Manipuler des données binaires facilement.&lt;&#x2F;li&gt;
+&lt;li&gt;Avoir un moteur de Regex à sa disposition. (même si je considère que les regex devraient être rares)&lt;&#x2F;li&gt;
+&lt;li&gt;Etre immutable par défaut. Je préfère la logique ou tout est constante par défaut et ou les variables mutables doivent être explicitement déclarés.&lt;&#x2F;li&gt;
+&lt;li&gt;Disposer d&#x27;une structuration propres des projets ainsi que d&#x27;avoir des espaces de nommages (namespaces) limpides.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;un-ecosysteme&quot;&gt;Un écosystème&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;un IDE qui déchire !
+C# et Visual Studio étant pour l&#x27;instant la pointe de ce qui se fait mais Rust avec Visual Studio Code tiens la draguée (grâce à rust-lang&#x2F;rust-analyzer).
+&lt;ul&gt;
+&lt;li&gt;Mettre des points d&#x27;arrêts, parcourir en pas à pas, voir le contenu des variables intermédiaires.&lt;&#x2F;li&gt;
+&lt;li&gt;Faire de la refacto.&lt;&#x2F;li&gt;
+&lt;li&gt;Auto-complétion.&lt;&#x2F;li&gt;
+&lt;li&gt;Détection d&#x27;erreurs.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Faire des outils en CLI. &lt;code&gt;Click_&lt;&#x2F;code&gt; en Python et &lt;code&gt;Clap&lt;&#x2F;code&gt; en Rust.&lt;&#x2F;li&gt;
+&lt;li&gt;Faire du web :
+&lt;ul&gt;
+&lt;li&gt;Payload et Response typés.&lt;&#x2F;li&gt;
+&lt;li&gt;Protocoles récents : http2, websockets.&lt;&#x2F;li&gt;
+&lt;li&gt;gestion des erreurs HTTP.&lt;&#x2F;li&gt;
+&lt;li&gt;gestion des sessions et cookies.&lt;&#x2F;li&gt;
+&lt;li&gt;Routing simplifié&lt;&#x2F;li&gt;
+&lt;li&gt;gestion des fichiers statiques&lt;&#x2F;li&gt;
+&lt;li&gt;auto-reload pendant le dev&lt;&#x2F;li&gt;
+&lt;li&gt;REST&lt;&#x2F;li&gt;
+&lt;li&gt;gestion de cache&lt;&#x2F;li&gt;
+&lt;li&gt;GraphQL&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;De l&#x27;i18n : https:&#x2F;&#x2F;projectfluent.org&#x2F;&lt;&#x2F;li&gt;
+&lt;li&gt;Faire du réseau : TCP&#x2F;UDP en client&#x2F;serveur.&lt;&#x2F;li&gt;
+&lt;li&gt;gérer des formats de fichiers courants : json, toml, xml, markdown.&lt;&#x2F;li&gt;
+&lt;li&gt;interfaçage avec des BDD SQL (https:&#x2F;&#x2F;github.com&#x2F;launchbadge&#x2F;sqlx) et NoSQL.&lt;&#x2F;li&gt;
+&lt;li&gt;du Fuzzing&lt;&#x2F;li&gt;
+&lt;li&gt;Un fiddle pour tester des trucs en rapide.&lt;&#x2F;li&gt;
+&lt;li&gt;API de gestion des fichiers propres.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;les-plus&quot;&gt;les plus&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Accéder à la mémoire de la pile mais aussi sur le tas. (stack et heap)&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Faire du webassembly&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;protobuffer&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Faire du frontend&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Détecter le deadcode&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Eviter nativement si possible les soucis de mémoires (buffer overflow) et de concurrence (data race).&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Eviter un maximum de soucis de CWE à la compilation.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Eviter les try&#x2F;catch de l&#x27;enfer&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;S&#x27;interfacer avec des projets en C. (Zig est très fort sur ce point)&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;les projets pilotes. Ex: ripgrep, fish pour Rust. Request, Flask pour Python.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;libs :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;De logs&lt;&#x2F;li&gt;
+&lt;li&gt;dates et time&lt;&#x2F;li&gt;
+&lt;li&gt;valeurs random&lt;&#x2F;li&gt;
+&lt;li&gt;lancer des requètes : https:&#x2F;&#x2F;hurl.dev&#x2F;player.html?id=hurl&amp;amp;speed=3&lt;&#x2F;li&gt;
+&lt;li&gt;web scrapping&lt;&#x2F;li&gt;
+&lt;li&gt;De template : Jinja pour Python, Tera ou Askama pour Rust.&lt;&#x2F;li&gt;
+&lt;li&gt;De traitement de fichiers étendus : images, svg, pdf.&lt;&#x2F;li&gt;
+&lt;li&gt;Distance de levenstein&lt;&#x2F;li&gt;
+&lt;li&gt;faire de l&#x27;AST&lt;&#x2F;li&gt;
+&lt;li&gt;parseur combinator (Nom en Rust) ou PEG (Pest en Rust)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;programmation logique.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;machine à états.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;interfaçage avec la domotique, robotique etc.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;&#x2F;h1&gt;
+&lt;p&gt;Actuellement, j&#x27;ai jeté mon dévolu sur Rust car il rempli (et de loin) le plus de cases.
+Mais je suis ouvert à toute nouvelle découverte.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Idées de travaux</title>
+          <pubDate>Sat, 25 Nov 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://mothsart.github.io/bricolage/idees/</link>
+          <guid>https://mothsart.github.io/bricolage/idees/</guid>
+          <description xml:base="https://mothsart.github.io/bricolage/idees/">&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;boite aux lettres connecté&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;système de pompes + détecteurs&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;détecteur de fumée (bien choisir et se renseigner)&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+      </item>
+      <item>
+          <title>Shell Linux</title>
+          <pubDate>Sat, 18 Nov 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://mothsart.github.io/devblog/shell-linux/</link>
+          <guid>https://mothsart.github.io/devblog/shell-linux/</guid>
+          <description xml:base="https://mothsart.github.io/devblog/shell-linux/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;&#x2F;h2&gt;
+&lt;p&gt;A la recherche du shell linux parfait, voici le résultat de ma pérégrination.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;zsh-oh-my-zsh&quot;&gt;Zsh + Oh-my-zsh&lt;&#x2F;h2&gt;
+&lt;p&gt;Parce que :&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;l&#x27;auto-complétion est dingue (comparé à Bash).&lt;&#x2F;li&gt;
+&lt;li&gt;la config est juste mieux.&lt;&#x2F;li&gt;
+&lt;li&gt;c&#x27;est plus véloce.&lt;&#x2F;li&gt;
+&lt;li&gt;système d&#x27;alias : globaux + extension de fichiers.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;fish&quot;&gt;Fish&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;L&#x27;auto-complétion : même niveau que Zsh mais sans extension (Oh my Zsh)&lt;&#x2F;li&gt;
+&lt;li&gt;Config encore plus simple que zsh&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;nushell&quot;&gt;Nushell&lt;&#x2F;h2&gt;
+&lt;p&gt;Parce que :&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Mon coeur balance, c&#x27;est quand même le powershell de Linux&lt;&#x2F;li&gt;
+&lt;li&gt;un shell orienté objet&#x2F;tableau&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;starship&quot;&gt;Starship&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;La gestion de git&lt;&#x2F;li&gt;
+&lt;li&gt;La config : un fichier toml tellement propre&lt;&#x2F;li&gt;
+&lt;li&gt;La doc : https:&#x2F;&#x2F;starship.rs&#x2F;config&#x2F;&lt;&#x2F;li&gt;
+&lt;li&gt;L&#x27;info si on est sur nushell ou zsh&lt;&#x2F;li&gt;
+&lt;li&gt;Détection de la version des langages dans un projet (Python, Rust, C etc.)&lt;&#x2F;li&gt;
+&lt;li&gt;Détection de la version des sources d&#x27;un projet&lt;&#x2F;li&gt;
+&lt;li&gt;Gestion de la batterie&lt;&#x2F;li&gt;
+&lt;li&gt;Python : utilisation ou non de de &lt;strong&gt;Venv&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;L&#x27;information sur le temps d&#x27;exec de la dernière commande&lt;&#x2F;li&gt;
+&lt;li&gt;La couleur si on a un stdout ou un stderr&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;A découvrir :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;gestion de docker&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Manque :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;gestion de tmux&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+      </item>
+      <item>
+          <title>Que penser de l&#x27;IA</title>
+          <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://mothsart.github.io/devblog/ia/</link>
+          <guid>https://mothsart.github.io/devblog/ia/</guid>
+          <description xml:base="https://mothsart.github.io/devblog/ia/">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;&#x2F;h1&gt;
+&lt;p&gt;On parle d&#x27;IA un peu partout.
+Bien évidemment, il y a une grande part de fantasme derrière.&lt;&#x2F;p&gt;
+&lt;p&gt;Cet article va essayé de faire le tri.&lt;&#x2F;p&gt;
+&lt;p&gt;LLM ou Large Langage Model est collectivement le modèle d&#x27;IA le plus en vogue.
+Maintenant, est-ce qu&#x27;il est le seul &lt;&#x2F;p&gt;
+&lt;h1 id=&quot;plusieurs-types-d-ia&quot;&gt;Plusieurs types d&#x27;IA&lt;&#x2F;h1&gt;
+&lt;p&gt;On a plusieurs type d&#x27;IA :&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Deep learning (avec ou sans réseaux de neuronnes) :
+On utilise une grande quantité de données (la plus pertinent et neutre possible) qui vont entrainer notre IA.
+Une fois cet entrainement terminé, les requêtes au moteur vont être pondérés au travers de statistiques de réponses.
+Le modèle le plus connus et le plus abouti étant le LLM avec ChatGpt.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Machine learning :
+On établie le champ des possibles et explore jusqu&#x27;à trouver le scénario optimal.
+Sur des ordinateurs classique, ça nécessite une grosse puissance de traitement.
+C&#x27;est un champ d&#x27;exploration ou le quantique pourrait révolutionner la donne.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Algorithme évolutif : c&#x27;est une technique de machine learning amélioré.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Programmation logique&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;inférence (Prolog)
+AST
+Machines à états
+preuves formelles&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;les-risques-et-les-questionnements&quot;&gt;Les risques et les questionnements&lt;&#x2F;h1&gt;
+&lt;p&gt;Les IA de type LVM ont plusieurs soucis :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;la qualité des données d&#x27;entrainement&lt;&#x2F;li&gt;
+&lt;li&gt;le volume de donnée d&#x27;entrainement&lt;&#x2F;li&gt;
+&lt;li&gt;l&#x27;énergie astronomique pour les entrainer&lt;&#x2F;li&gt;
+&lt;li&gt;le contenu rétro-actif&lt;&#x2F;li&gt;
+&lt;li&gt;les halucinations&lt;&#x2F;li&gt;
+&lt;li&gt;les améliorations manuelles : eh oui, on ment beaucoup autour des modèles de ChatGPT. Derrière toute évolution, il y a des actions manuelles... bcp d&#x27;actions manuelles.
+Comme pour les IA de Youtube, ce travail rébarbatif&lt;&#x2F;li&gt;
+&lt;li&gt;les LLM en maths sont très mauvais&lt;&#x2F;li&gt;
+&lt;li&gt;quid du droit d&#x27;auteur ? Il est très difficile de prouver qu&#x27;une IA a aspiré des données dont il n&#x27;a pas les droits. Si l&#x27;on continue dans ce sens, le droit d&#x27;auteur (et des brevets) disparaitra.
+Attention : c&#x27;est peut-être bien au final.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;ma-vision-de-l-avenir&quot;&gt;Ma vision de l&#x27;avenir&lt;&#x2F;h1&gt;
+&lt;p&gt;Toutes ces formes d&#x27;IA me semblent intéressantes et complémentaires.
+Aucune n&#x27;a été exploré intégralement.
+En revanche, j&#x27;aurais une réticence pour les IA trop gourmandes tel que LLM. Le rapport énergie&#x2F;pertinence est démentiel et il faudra bien un jour que cette course s&#x27;arrête.&lt;&#x2F;p&gt;
+&lt;p&gt;ChatGPT est sur-côté à mon sens. Je m&#x27;en sert au final très peu et chacun des résultats fournis nécessite une vérification assidu. 
+J&#x27;ai aussi &lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Que penser de l&#x27;IA</title>
+          <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://mothsart.github.io/devblog/un-vrai-langage/</link>
+          <guid>https://mothsart.github.io/devblog/un-vrai-langage/</guid>
+          <description xml:base="https://mothsart.github.io/devblog/un-vrai-langage/">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;&#x2F;h1&gt;
+&lt;p&gt;On parle d&#x27;IA un peu partout.
+Bien évidemment, il y a une grande part de fantasme derrière.&lt;&#x2F;p&gt;
+&lt;p&gt;Cet article va essayé de faire le tri.&lt;&#x2F;p&gt;
+&lt;p&gt;LLM ou Large Langage Model est collectivement le modèle d&#x27;IA le plus en vogue.
+Maintenant, est-ce qu&#x27;il est le seul &lt;&#x2F;p&gt;
+&lt;h1 id=&quot;plusieurs-types-d-ia&quot;&gt;Plusieurs types d&#x27;IA&lt;&#x2F;h1&gt;
+&lt;p&gt;On a plusieurs type d&#x27;IA :&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Deep learning (avec ou sans réseaux de neuronnes) :
+On utilise une grande quantité de données (la plus pertinent et neutre possible) qui vont entrainer notre IA.
+Une fois cet entrainement terminé, les requêtes au moteur vont être pondérés au travers de statistiques de réponses.
+Le modèle le plus connus et le plus abouti étant le LLM avec ChatGpt.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Machine learning :
+On établie le champ des possibles et explore jusqu&#x27;à trouver le scénario optimal.
+Sur des ordinateurs classique, ça nécessite une grosse puissance de traitement.
+C&#x27;est un champ d&#x27;exploration ou le quantique pourrait révolutionner la donne.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Algorithme évolutif : c&#x27;est une technique de machine learning amélioré.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Programmation logique&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;inférence (Prolog)
+AST
+Machines à états
+preuves formelles&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;les-risques-et-les-questionnements&quot;&gt;Les risques et les questionnements&lt;&#x2F;h1&gt;
+&lt;p&gt;Les IA de type LVM ont plusieurs soucis :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;la qualité des données d&#x27;entrainement&lt;&#x2F;li&gt;
+&lt;li&gt;le volume de donnée d&#x27;entrainement&lt;&#x2F;li&gt;
+&lt;li&gt;l&#x27;énergie astronomique pour les entrainer&lt;&#x2F;li&gt;
+&lt;li&gt;le contenu rétro-actif&lt;&#x2F;li&gt;
+&lt;li&gt;les halucinations&lt;&#x2F;li&gt;
+&lt;li&gt;les améliorations manuelles : eh oui, on ment beaucoup autour des modèles de ChatGPT. Derrière toute évolution, il y a des actions manuelles... bcp d&#x27;actions manuelles.
+Comme pour les IA de Youtube, ce travail rébarbatif&lt;&#x2F;li&gt;
+&lt;li&gt;les LLM en maths sont très mauvais&lt;&#x2F;li&gt;
+&lt;li&gt;quid du droit d&#x27;auteur ? Il est très difficile de prouver qu&#x27;une IA a aspiré des données dont il n&#x27;a pas les droits. Si l&#x27;on continue dans ce sens, le droit d&#x27;auteur (et des brevets) disparaitra.
+Attention : c&#x27;est peut-être bien au final.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;ma-vision-de-l-avenir&quot;&gt;Ma vision de l&#x27;avenir&lt;&#x2F;h1&gt;
+&lt;p&gt;Toutes ces formes d&#x27;IA me semblent intéressantes et complémentaires.
+Aucune n&#x27;a été exploré intégralement.
+En revanche, j&#x27;aurais une réticence pour les IA trop gourmandes tel que LLM. Le rapport énergie&#x2F;pertinence est démentiel et il faudra bien un jour que cette course s&#x27;arrête.&lt;&#x2F;p&gt;
+&lt;p&gt;ChatGPT est sur-côté à mon sens. Je m&#x27;en sert au final très peu et chacun des résultats fournis nécessite une vérification assidu. 
+J&#x27;ai aussi &lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Quel avenir pour l&#x27;humanité ?</title>
+          <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://mothsart.github.io/reflexion/avenir-humanite/</link>
+          <guid>https://mothsart.github.io/reflexion/avenir-humanite/</guid>
+          <description xml:base="https://mothsart.github.io/reflexion/avenir-humanite/">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;&#x2F;h1&gt;
+&lt;p&gt;C&#x27;est un euphémisme de dire l&#x27;Humanité n&#x27;est pas en train de creuser sa propre tombe.
+Cet essai est là pour réfléchir de manière distruptive comment y faire face.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;solutions-biologiques&quot;&gt;Solutions biologiques&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;être petit : une personne 1m50 avec le même régime alimentaire qu&#x27;une de 2m consommera moins&lt;&#x2F;li&gt;
+&lt;li&gt;la pilosité. la consommation d&#x27;énergie pour nous chauffer est non négligeable.&lt;&#x2F;li&gt;
+&lt;li&gt;véganisme : pas très original mais relativement vrai. Consommer de la viande, surtout rouge a un réel impact écologique : CO2, production d&#x27;engrais etc.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+      </item>
+      <item>
+          <title></title>
+          <pubDate>Fri, 21 Apr 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://mothsart.github.io/secret/bricolage/table-basse/</link>
+          <guid>https://mothsart.github.io/secret/bricolage/table-basse/</guid>
+          <description xml:base="https://mothsart.github.io/secret/bricolage/table-basse/">&lt;h2 id=&quot;materiel&quot;&gt;Matériel&lt;&#x2F;h2&gt;
+&lt;p&gt;harniere Table Basse Relevable :&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;www.amazon.fr&#x2F;Charniere-Relevable-Mecanisme-Ressort-Charni%C3%A8re&#x2F;dp&#x2F;B09XMRK75W&#x2F;ref=sr_1_2_sspa?keywords=charni%C3%A8re+table+basse+relevable&amp;amp;qid=1682167213&amp;amp;sr=8-2-spons&amp;amp;sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&amp;amp;psc=1&lt;&#x2F;p&gt;
+&lt;p&gt;Ferrure de portes coulissantes : &lt;&#x2F;p&gt;
+&lt;p&gt;Les roulettes :&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;www.amazon.fr&#x2F;dp&#x2F;B07FM76212&#x2F;ref=emc_b_5_t?th=1&lt;&#x2F;p&gt;
+&lt;p&gt;Les leds :&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;www.amazon.fr&#x2F;dp&#x2F;B00NIXEX90&#x2F;ref=emc_b_5_t&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title></title>
+          <pubDate>Sun, 26 Mar 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://mothsart.github.io/devblog/langage-c/</link>
+          <guid>https://mothsart.github.io/devblog/langage-c/</guid>
+          <description xml:base="https://mothsart.github.io/devblog/langage-c/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;&#x2F;h2&gt;
+&lt;p&gt;Le langage C est omniprésent dans le monde informatique.
+Or, ça faisait de longues années que je n&#x27;en faisait plus.
+Il était temps de remedier à ce problème !&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;constat&quot;&gt;Constat&lt;&#x2F;h2&gt;
+&lt;p&gt;Plus je re-découvre ce langage et plus j&#x27;essai d&#x27;en prendre la mesure.
+Qu&#x27;est-ce qu&#x27;il fait qu&#x27;il est incontournable et pourquoi il est en perte de vitesse ?&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Système de packaging et gestionnaire de dépendances archaïque :
+Je me forme à Meson, ninja et je suis surpris que après autotools, on reste encore à un fonctionnement très bricolage.
+Des fichiers de build de plusieurs centaines de lignes, des variables d&#x27;environnement à édité et des chemins à bien renseigner pour permettre de cloisonner nos devs.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;Quand je compare avec Rust et ces fichiers Toml, je me rend compte du fossé incroyable entre les 2.&lt;&#x2F;p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;Pas d&#x27;UTF-8 règlementé.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Le support du langage C est vraiment présent sur toutes les architectures !
+Le manque de support de certaines archi en Rust pose des soucis pour des projets comme Gimp.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+</description>
+      </item>
+      <item>
+          <title>Gimp</title>
+          <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://mothsart.github.io/devblog/gimp/</link>
+          <guid>https://mothsart.github.io/devblog/gimp/</guid>
+          <description xml:base="https://mothsart.github.io/devblog/gimp/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;&#x2F;h2&gt;
+&lt;p&gt;Participer à Gimp, c&#x27;est presque un rêve gosse.
+C&#x27;est un défi multiple : participer à un gros projet, en langage C, en affinant mon anglais.
+Bref, c&#x27;est une nouvelle aventure !&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;compilation&quot;&gt;Compilation&lt;&#x2F;h2&gt;
+&lt;p&gt;Créer un fichier $GIMP_PREFIX&#x2F;share&#x2F;config.site avec :&lt;&#x2F;p&gt;
+&lt;p&gt;Créer GIMP_PREFIX :&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;GIMP_PREFIX&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;${&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;HOME&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;}&#x2F;gimp_prefix&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;# GIMP_PREFIX has to be exported for this file to work
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;PATH&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;${&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;GIMP_PREFIX&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;}&#x2F;bin:$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;PATH&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;# Used to detect the build dependencies
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;PKG_CONFIG_PATH&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;${&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;GIMP_PREFIX&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;}&#x2F;share&#x2F;pkgconfig:${&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;GIMP_PREFIX&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;}&#x2F;lib&#x2F;pkgconfig${&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;PKG_CONFIG_PATH&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;:+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;:$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;PKG_CONFIG_PATH&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;}&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;# Assuming a 64-bit build. Remove otherwise.
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;PKG_CONFIG_PATH&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;${&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;GIMP_PREFIX&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;}&#x2F;lib64&#x2F;pkgconfig:$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;PKG_CONFIG_PATH&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;# Used to find the glib-introspection dependencies
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;XDG_DATA_DIRS&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;${&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;XDG_DATA_DIRS&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;:+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;XDG_DATA_DIRS&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;:}${&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;GIMP_PREFIX&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;}&#x2F;share:&#x2F;usr&#x2F;local&#x2F;share:&#x2F;usr&#x2F;share&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;# Used to find the libraries at runtime
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;LD_LIBRARY_PATH&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;${&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;GIMP_PREFIX&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;}&#x2F;lib:${&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;LD_LIBRARY_PATH&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;:+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;:$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;LD_LIBRARY_PATH&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;}&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;# Used by Autotools to find its tools
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;ACLOCAL_FLAGS&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;-I $&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;INSTALL_PREFIX&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&#x2F;share&#x2F;aclocal $&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;ACLOCAL_FLAGS&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;# Used to find introspection files
+&lt;&#x2F;span&gt;&lt;span&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;GI_TYPELIB_PATH&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;${&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;GIMP_PREFIX&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;}&#x2F;lib&#x2F;girepository-1.0:${&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;GI_TYPELIB_PATH&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;:+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;:$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;GI_TYPELIB_PATH&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;}&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;arch&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;$(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;dpkg-architecture -qDEB_HOST_MULTIARCH &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt; &#x2F;dev&#x2F;null&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;)&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;PKG_CONFIG_PATH&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;${&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;GIMP_PREFIX&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;}&#x2F;lib&#x2F;${&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;arch&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;}&#x2F;pkgconfig:$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;PKG_CONFIG_PATH&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;LD_LIBRARY_PATH&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;${&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;GIMP_PREFIX&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;}&#x2F;lib&#x2F;${&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;arch&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;}:${&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;LD_LIBRARY_PATH&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;:+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;:$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;LD_LIBRARY_PATH&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;}&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;GI_TYPELIB_PATH&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;${&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;GIMP_PREFIX&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;}&#x2F;lib&#x2F;${&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;arch&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;}&#x2F;girepository-1.0:${&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;GI_TYPELIB_PATH&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;:+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;:$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;GI_TYPELIB_PATH&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;}&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Nécessite de relancer meson :&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;git clean -x -d -f
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Avant de compiler (babl, gegl etc.) :&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;source &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;$GIMP_PREFIX&#x2F;share&#x2F;config.site
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;tester&quot;&gt;Tester&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;ninja -C _build test
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;debug&quot;&gt;Debug&lt;&#x2F;h2&gt;
+&lt;p&gt;Compiler :&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;meson _build --reconfigure &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;&amp;amp;&amp;amp; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;ninja -C _build &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;&amp;amp;&amp;amp; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;ninja -C _build install
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Lancer en mode debug :&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;GIMP_DEBUG&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;xcf &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;gimp-2.99
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;cd &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;$GIMP_PREFIX&#x2F;build&#x2F;babl
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;meson _build \
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;     --prefix&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;${GIMP_PREFIX} \
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;     --buildtype&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;release \
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;     --reconfigure
+&lt;&#x2F;span&gt;&lt;span&gt;     &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;-Db_lto&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;true
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;cd&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt; _build
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;ninja
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;ninja install
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;# copied and pasted into a terminal
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;cd &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;$GIMP_PREFIX&#x2F;build&#x2F;gegl
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;meson _build \
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;     --prefix&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;${GIMP_PREFIX} \
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;     --buildtype&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;release \
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;     --reconfigure
+&lt;&#x2F;span&gt;&lt;span&gt;     &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;-Db_lto&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;true
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;cd&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt; _build
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;ninja
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;ninja install
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;# copied and pasted into a terminal
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;cd &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;$GIMP_PREFIX&#x2F;build&#x2F;gimp
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;meson _build \
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt; --prefix&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;${GIMP_PREFIX} \
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt; --buildtype&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;release \
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt; -Dpython&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;enabled
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;cd&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt; _build
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;ninja
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;ninja install
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;coding-style&quot;&gt;Coding style&lt;&#x2F;h2&gt;
+&lt;p&gt;https:&#x2F;&#x2F;developer.gimp.org&#x2F;core&#x2F;coding_style&#x2F;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;liens&quot;&gt;Liens&lt;&#x2F;h1&gt;
+&lt;p&gt;https:&#x2F;&#x2F;developer.gimp.org&#x2F;core&#x2F;setup&#x2F;build&#x2F;
+https:&#x2F;&#x2F;developer.gimp.org&#x2F;core&#x2F;debug&#x2F;problems_and_solutions&#x2F;
+https:&#x2F;&#x2F;developer.gimp.org&#x2F;core&#x2F;debug&#x2F;debugging-tips&#x2F;&lt;&#x2F;p&gt;
+</description>
+      </item>
       <item>
           <title>Wiki-corrector</title>
           <pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate>
           <author>Unknown</author>
           <link>https://mothsart.github.io/devblog/wiki-corrector/</link>
           <guid>https://mothsart.github.io/devblog/wiki-corrector/</guid>
-          <description>&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;&#x2F;h2&gt;
+          <description xml:base="https://mothsart.github.io/devblog/wiki-corrector/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;&#x2F;h2&gt;
 &lt;p&gt;J&#x27;ai commencé ma découverte de Linux au travers Ubuntu.
 Depuis, j&#x27;ai tendance à apporter ma pierre à l&#x27;édifice en éditant le wiki d&#x27;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;doc.ubuntu-fr.org&quot;&gt;Ubuntu-fr&lt;&#x2F;a&gt; au fil de mes envies, de mon temps et mes connaissances.&lt;&#x2F;p&gt;
 &lt;p&gt;J&#x27;ai remarqué que certains défauts du wiki étaient réccurents et j&#x27;ai essayé de m&#x27;emparer du sujet.&lt;&#x2F;p&gt;
@@ -74,10 +582,10 @@ Jusqu&#x27;à présent, pas d&#x27;IA sophistiqué. Néanmoins, l&#x27;outil a d
           <author>Unknown</author>
           <link>https://mothsart.github.io/reflexion/combattre-son-cerveau/</link>
           <guid>https://mothsart.github.io/reflexion/combattre-son-cerveau/</guid>
-          <description>&lt;p&gt;Le cerveau humain à plusieurs bugs qui nécessitent d&#x27;être combattus (non exhaustif) :&lt;&#x2F;p&gt;
+          <description xml:base="https://mothsart.github.io/reflexion/combattre-son-cerveau/">&lt;p&gt;Le cerveau humain à plusieurs bugs qui nécessitent d&#x27;être combattus (non exhaustif) :&lt;&#x2F;p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;La croyance par renforcement : plus on croit quelque chose et plus on cherche (et on trouve) des choses qui nous conforte sur sur nos acquis.
+&lt;p&gt;La croyance par renforcement (biais cognitifs) : plus on croit quelque chose et plus on cherche (et on trouve) des choses qui nous conforte sur sur nos acquis.
 Il est très dur de sortir d&#x27;une croyance même avec des arguments très objectifs.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
@@ -90,9 +598,14 @@ Il est très dur de sortir d&#x27;une croyance même avec des arguments très ob
 &lt;p&gt;Une réponse simple est forcément plus convaincante qu&#x27;une réponse nuancée.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
-&lt;p&gt;ce que nous voyons n&#x27;est pas la réalité mais qu&#x27;un ersatz.&lt;&#x2F;p&gt;
+&lt;p&gt;Ce que nous voyons n&#x27;est pas la réalité mais qu&#x27;un ersatz.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Il est plus rapide de présenter une idée (potentiellement fausse) que de la démontrer ou la démentir.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;source&quot;&gt;Source&lt;&#x2F;h2&gt;
+&lt;p&gt;La tronche en biais&lt;&#x2F;p&gt;
 </description>
       </item>
       <item>
@@ -101,16 +614,25 @@ Il est très dur de sortir d&#x27;une croyance même avec des arguments très ob
           <author>Unknown</author>
           <link>https://mothsart.github.io/reflexion/demarche-scientifique/</link>
           <guid>https://mothsart.github.io/reflexion/demarche-scientifique/</guid>
-          <description>&lt;p&gt;L&#x27;Homme est par nature un être déraisonné, mu par son instinct, sa culture, ses émotions et ses sentiments.
-Il suffit de comparer le nombre d&#x27;interactions des neurones dans notre cerveau inconscient face au conscient pour s&#x27;en convaincre.&lt;&#x2F;p&gt;
+          <description xml:base="https://mothsart.github.io/reflexion/demarche-scientifique/">&lt;p&gt;L&#x27;Homme est par nature un être déraisonné, mu par son instinct, sa culture, ses émotions et ses sentiments.
+Il suffit de comparer le nombre d&#x27;interactions neuronales inconscientes face à celles conscientes pour s&#x27;en convaincre.&lt;&#x2F;p&gt;
 &lt;p&gt;Néanmoins, nous avons la capacité de raisonner et d&#x27;appliquer des règles qui nous sortent au moins partiellement de ce fatalisme.&lt;&#x2F;p&gt;
-&lt;p&gt;Mais qu&#x27;elles sont ces règles.
-Je vais en lister quelques une qui me semblent essentielles pour mener à bien des démarches scientifiques.&lt;&#x2F;p&gt;
+&lt;p&gt;Mais qu&#x27;elles sont ces règles ?&lt;&#x2F;p&gt;
+&lt;p&gt;Je vais en lister quelques une qui me semblent essentielles pour mener à bien des démarches scientifiques.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;le-rasoir-d-ocam&quot;&gt;Le rasoir d&#x27;Ocam&lt;&#x2F;h1&gt;
+&lt;p&gt;En d&#x27;autre terme :&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;privilégier les raisonnements simples à ceux complexes : la propabilité est plus grande.&lt;&#x2F;li&gt;
+&lt;li&gt;les comportements connus (la science actuelle a déjà découvert beaucoup de principes) sont plus provables que ceux à découvrir.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
 &lt;h1 id=&quot;la-contrapose&quot;&gt;La contraposé&lt;&#x2F;h1&gt;
+&lt;p&gt;Il faut se garder de faire des conclusions trop hatives sur les rapports entre la cause, les effets et les conséquences.
+L&#x27;adage &lt;strong&gt;Ce n&#x27;est pas parce qu&#x27;il y a des grenouilles après la pluie qu&#x27;il pleut des grenouilles&lt;&#x2F;strong&gt; démontre bien par l&#x27;absurde que sans compréhension, il est délicat voir dangereux de faire des corrélation entre cause et conséquence.&lt;&#x2F;p&gt;
 &lt;h1 id=&quot;la-causalite&quot;&gt;la causalité&lt;&#x2F;h1&gt;
 &lt;h1 id=&quot;contradiction-donne-disqualification&quot;&gt;contradiction donne disqualification&lt;&#x2F;h1&gt;
-&lt;p&gt;Un raisonnement qui se contradie est forcément faux.
+&lt;p&gt;Un raisonnement qui se contredie est forcément faux.
 Si il y a incohérence, il y a forcément un loup.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;connaitre-l-histoire-de-la-science&quot;&gt;Connaitre l&#x27;histoire de la science&lt;&#x2F;h1&gt;
 </description>
       </item>
       <item>
@@ -119,7 +641,7 @@ Si il y a incohérence, il y a forcément un loup.&lt;&#x2F;p&gt;
           <author>Unknown</author>
           <link>https://mothsart.github.io/reflexion/sortir-du-siecle-des-lumieres/</link>
           <guid>https://mothsart.github.io/reflexion/sortir-du-siecle-des-lumieres/</guid>
-          <description>&lt;p&gt;Depuis Galilée, donc grosso modo 400 ans, l&#x27;Homme a franchi un cap jusqu&#x27;alors inexploré.
+          <description xml:base="https://mothsart.github.io/reflexion/sortir-du-siecle-des-lumieres/">&lt;p&gt;Depuis Galilée, donc grosso modo 400 ans, l&#x27;Homme a franchi un cap jusqu&#x27;alors inexploré.
 Il est passé de la croyance à la connaissance.&lt;&#x2F;p&gt;
 &lt;p&gt;Cette transition est tout aussi majeur que ne l&#x27;est l&#x27;invention de l&#x27;écriture !&lt;&#x2F;p&gt;
 &lt;p&gt;C&#x27;est la découverte qu&#x27;une partie de ce monde peut être comprise sans qu&#x27;il n&#x27;y ai d&#x27;avis sur la question.
@@ -158,7 +680,17 @@ En revanche, les vérités scientifiques, que l&#x27;on y crois ou non, demeuren
           <author>Unknown</author>
           <link>https://mothsart.github.io/jardinage/tips/</link>
           <guid>https://mothsart.github.io/jardinage/tips/</guid>
-          <description>&lt;h2 id=&quot;quand-planter-des-pommes-de-terre&quot;&gt;Quand planter des pommes de terre ?&lt;&#x2F;h2&gt;
+          <description xml:base="https://mothsart.github.io/jardinage/tips/">&lt;h2 id=&quot;quand-planter-des-pommes-de-terre&quot;&gt;Quand planter des pommes de terre ?&lt;&#x2F;h2&gt;
+&lt;p&gt;10 degré. Pendant la floraison du Lilas.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Tips de jardinnage</title>
+          <pubDate>Mon, 06 Mar 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://mothsart.github.io/secret/jardinage/tips/</link>
+          <guid>https://mothsart.github.io/secret/jardinage/tips/</guid>
+          <description xml:base="https://mothsart.github.io/secret/jardinage/tips/">&lt;h2 id=&quot;quand-planter-des-pommes-de-terre&quot;&gt;Quand planter des pommes de terre ?&lt;&#x2F;h2&gt;
 &lt;p&gt;10 degré. Pendant la floraison du Lilas.&lt;&#x2F;p&gt;
 </description>
       </item>
@@ -168,7 +700,7 @@ En revanche, les vérités scientifiques, que l&#x27;on y crois ou non, demeuren
           <author>Unknown</author>
           <link>https://mothsart.github.io/devblog/editeur-svg-interactif/</link>
           <guid>https://mothsart.github.io/devblog/editeur-svg-interactif/</guid>
-          <description>&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;&#x2F;h2&gt;
+          <description xml:base="https://mothsart.github.io/devblog/editeur-svg-interactif/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;&#x2F;h2&gt;
 &lt;p&gt;L&#x27;objectif est simple : éditer un fichier SVG statique afin de le présenter comme un contenu interactif. 
 Permettre l&#x27;ajout de zones cliquables pouvant être zoomés et enrichies d&#x27;une explication.&lt;&#x2F;p&gt;
 &lt;p&gt;Les fichiers générés (page HTML contenant le SVG) peuvent servir à divers usages :&lt;&#x2F;p&gt;
@@ -271,7 +803,7 @@ Jusqu&#x27;à présent, j&#x27;ai créé les exemples (conception, réalisation 
           <author>Unknown</author>
           <link>https://mothsart.github.io/about/</link>
           <guid>https://mothsart.github.io/about/</guid>
-          <description>&lt;p&gt;Ce site a été créé avec &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;getzola&#x2F;zola&quot;&gt;Zola&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+          <description xml:base="https://mothsart.github.io/about/">&lt;p&gt;Ce site a été créé avec &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;getzola&#x2F;zola&quot;&gt;Zola&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;C&#x27;est ma 3ème tentative de site statique (2 avec &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;getpelican.com&quot;&gt;Pelican&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
 &lt;p&gt;Pour arriver à mes fins, je suis parti d&#x27;un thème &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;themes&#x2F;ataraxia-zola&quot;&gt;https:&#x2F;&#x2F;www.getzola.org&#x2F;themes&#x2F;ataraxia-zola&#x2F;&lt;&#x2F;a&gt; que j&#x27;ai adapté à mes besoins.&lt;&#x2F;p&gt;
 &lt;p&gt;Mes sources :&lt;&#x2F;p&gt;
@@ -290,7 +822,7 @@ Je n&#x27;irais sans doute jamais au bout de la démarche et m&#x27;en excuse pa
           <author>Unknown</author>
           <link>https://mothsart.github.io/author/</link>
           <guid>https://mothsart.github.io/author/</guid>
-          <description>&lt;p&gt;Dev de métier, je suis passionné par tout ce qui touche à la &lt;strong&gt;tech&lt;&#x2F;strong&gt; et à la &lt;strong&gt;science&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+          <description xml:base="https://mothsart.github.io/author/">&lt;p&gt;Dev de métier, je suis passionné par tout ce qui touche à la &lt;strong&gt;tech&lt;&#x2F;strong&gt; et à la &lt;strong&gt;science&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;Quand je parle ici de &lt;strong&gt;technologie&lt;&#x2F;strong&gt;, je parle de progrès raisonnés apportant du sens à l&#x27;Humanité.
 Je suis de plus en plus critique quand à la nature de certaines réalisations technologiques.
 &lt;strong&gt;Ce n&#x27;est pas parce qu&#x27;une technologie est possible qu&#x27;elle doit être réalisé !&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
@@ -308,7 +840,7 @@ Le résultat se retrouve souvent dans le domaine publique. Ex : &lt;a rel=&quot;
           <author>Unknown</author>
           <link>https://mothsart.github.io/recieps/couronne-de-thon/</link>
           <guid>https://mothsart.github.io/recieps/couronne-de-thon/</guid>
-          <description>&lt;h2 id=&quot;ingredients-pour-6-personnes&quot;&gt;Ingrédients (Pour 6 personnes)&lt;&#x2F;h2&gt;
+          <description xml:base="https://mothsart.github.io/recieps/couronne-de-thon/">&lt;h2 id=&quot;ingredients-pour-6-personnes&quot;&gt;Ingrédients (Pour 6 personnes)&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;1 sachet de purée en flocons&lt;&#x2F;li&gt;
 &lt;li&gt;450 ml de lait&lt;&#x2F;li&gt;
@@ -335,7 +867,7 @@ Laisser le jus de la boite de thon pour plus de facilitée.&lt;&#x2F;p&gt;
           <author>Unknown</author>
           <link>https://mothsart.github.io/recieps/fleischschnaka/</link>
           <guid>https://mothsart.github.io/recieps/fleischschnaka/</guid>
-          <description>&lt;h2 id=&quot;ingredients-pour-6-personnes&quot;&gt;Ingrédients (Pour 6 personnes)&lt;&#x2F;h2&gt;
+          <description xml:base="https://mothsart.github.io/recieps/fleischschnaka/">&lt;h2 id=&quot;ingredients-pour-6-personnes&quot;&gt;Ingrédients (Pour 6 personnes)&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;1.2 kg de viande hachée&lt;&#x2F;li&gt;
 &lt;li&gt;1 L de bouillon de boeuf&lt;&#x2F;li&gt;
@@ -368,7 +900,7 @@ Souder avec un peu d&#x27;eau et couper des tranches d&#x27;un demi-centimètre.
           <author>Unknown</author>
           <link>https://mothsart.github.io/recieps/pierogi/</link>
           <guid>https://mothsart.github.io/recieps/pierogi/</guid>
-          <description>&lt;h2 id=&quot;ingredients-pour-6-personnes&quot;&gt;Ingrédients (Pour 6 personnes)&lt;&#x2F;h2&gt;
+          <description xml:base="https://mothsart.github.io/recieps/pierogi/">&lt;h2 id=&quot;ingredients-pour-6-personnes&quot;&gt;Ingrédients (Pour 6 personnes)&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;500 g de pommes de terre&lt;&#x2F;li&gt;
 &lt;li&gt;500 g de fromage dur blanc (Riccota)&lt;&#x2F;li&gt;
@@ -401,6 +933,114 @@ Les retirer dès qu&#x27;ils remontent à la surface et les faire détremper dan
 &lt;li&gt;Pierogi au choux&lt;&#x2F;li&gt;
 &lt;li&gt;Pierogi aux pommes&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+</description>
+      </item>
+      <item>
+          <title></title>
+          <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://mothsart.github.io/reflexion/memotechnique/</link>
+          <guid>https://mothsart.github.io/reflexion/memotechnique/</guid>
+          <description xml:base="https://mothsart.github.io/reflexion/memotechnique/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;&#x2F;h2&gt;
+&lt;p&gt;http:&#x2F;&#x2F;villemin.gerard.free.fr&#x2F;Wwwgvmm&#x2F;MnemoTe&#x2F;CodePers.htm&lt;&#x2F;p&gt;
+&lt;p&gt;0 : t&#x27;es nul
+1 : hein ?
+2 : yeux
+3 : frères
+4 : 4 mousquetaires
+5 : doigts d&#x27;une main
+6 : saw 6
+7 : chiffre parfait, saw sept
+8 : forme du bonhomme de neige
+9 : quoi d&#x27;neuf ?&lt;&#x2F;p&gt;
+&lt;p&gt;10 : 10 commandements
+11 : ocean 11
+12 : 
+13 : superstission
+14 : début de la 1ère guerre
+15 : 
+17 : appeler les flics
+18 : adulte
+19 : &lt;&#x2F;p&gt;
+&lt;p&gt;20 : vin
+21 : trisomie, mon anniv
+22 : 
+23 : paires de chromosomes
+25 : Noël
+26 : 
+27 : 
+28 : changement de lune
+29 : crise de 29&lt;&#x2F;p&gt;
+&lt;p&gt;30 :
+31 : se mettre sur son 31
+32 : nombre de cartes
+33 : dites 33 chez le médecin + la mort du christ
+34 :
+35 : 35 heures
+36 : 
+37 : température du corps
+38 : t&#x27;as de la température
+39 : début de la seconde guerre&lt;&#x2F;p&gt;
+&lt;p&gt;40 : la crise de la quarantaine
+41 : 
+42 : la réponse à tout
+43 : ma pointure
+44 : 44e division d&#x27;infanterie
+45 : 45 tours
+46 : nombre de chromosomes humains
+47 : les 47 ronin
+48 : 48h chrono
+49 : le 49-3 !&lt;&#x2F;p&gt;
+&lt;p&gt;50 : 50 Herz
+51 : le pastis
+52 : 
+53 : 
+54 : la meurthe et moselle
+55 : la meuse
+56 : 
+57 : la moselle
+58 : la mort dans le jeu de l&#x27;oie
+59 : le nord&lt;&#x2F;p&gt;
+&lt;p&gt;60 : 
+61 : 
+62 : 
+63 : 
+64 : 
+65 : 
+66 : 
+67 : le bas-rhin
+68 : le haut-rhin
+69 : la position&lt;&#x2F;p&gt;
+&lt;p&gt;70 : 
+71 : 
+72 : 
+73 : 
+74 : 
+75 : 
+76 : 
+77 : 
+78 : 
+79 : &lt;&#x2F;p&gt;
+&lt;p&gt;80 : 4x20
+81 : 
+82 : année de naissance
+83 : 
+84 : 
+85 : année de naissance d&#x27;Estelle
+86 : 
+87 : 
+88 : les vosges
+89 : appel en Alsace&lt;&#x2F;p&gt;
+&lt;p&gt;90 : territoire de Belfort
+91 : 
+92 : Haut de Seine
+93 : La Seine saint denis
+94 : 
+95 : 
+96 : 
+97 : le RIB
+98 : la coupe du monde
+99 : pos sex&lt;&#x2F;p&gt;
 </description>
       </item>
     </channel>
