@@ -7,7 +7,167 @@
       <generator>Zola</generator>
       <language>fr</language>
       <atom:link href="https://mothsart.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sat, 25 Nov 2023 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Wed, 10 Jan 2024 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>C&#x27;est quoi un vrai langage informatique en 2024 ?</title>
+          <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://mothsart.github.io/devblog/un-vrai-langage-informatique/</link>
+          <guid>https://mothsart.github.io/devblog/un-vrai-langage-informatique/</guid>
+          <description xml:base="https://mothsart.github.io/devblog/un-vrai-langage-informatique/">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;&#x2F;h1&gt;
+&lt;p&gt;On est en 2024 : l&#x27;informatique et les choix technologiques n&#x27;ont jamais été aussi nombreux.
+On est donc en mesure d&#x27;être exigeant.&lt;&#x2F;p&gt;
+&lt;p&gt;Au cours de ma carrière pro, j&#x27;ai appris plusieurs langages et paradigmes et voici la liste des choses qui sont désormais des prérequis :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Un typage, partout, le plus fort possible avec tous les avantages :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sérialisation&#x2F;Déserialisation à partir d&#x27;une structure de données.&lt;&#x2F;li&gt;
+&lt;li&gt;Du pattern matching : de l&#x27;algorithmie la plus simple à  lire et à comprendre.&lt;&#x2F;li&gt;
+&lt;li&gt;Un moteur d&#x27;inférence.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;battery include : j&#x27;exige d&#x27;avoir le maximum d&#x27;outillage sans devoir installer moultes composants car : &lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Je désire faire des tests unitaires, des mocks et du coverage.&lt;&#x2F;li&gt;
+&lt;li&gt;Je devrais être en mesure de créer des benchmarks.&lt;&#x2F;li&gt;
+&lt;li&gt;Je dois être en capacité de documenter une API.&lt;&#x2F;li&gt;
+&lt;li&gt;J&#x27;aime avoir un outil en cli adapté : création de projets, lancement des builds, exec etc.&lt;&#x2F;li&gt;
+&lt;li&gt;Je ne peux me passer de messages d&#x27;erreurs et stacktrace explicite.&lt;&#x2F;li&gt;
+&lt;li&gt;J&#x27;aime avoir des règles fortes d&#x27;indentation (pep8 pour Python, &#x27;cargo fmt&#x27; pour Rust).&lt;&#x2F;li&gt;
+&lt;li&gt;Je suis accro aux contrôles qualités (analyse statique de code) via &lt;code&gt;ruff&lt;&#x2F;code&gt; en Python, &lt;code&gt;cargo clippy&lt;&#x2F;code&gt;en Rust.&lt;&#x2F;li&gt;
+&lt;li&gt;Je ne concois plus un monde sans gestionnaire de dépendances clé en main (pour l&#x27;instant, j&#x27;ai pas vu mieux que &lt;code&gt;cargo&lt;&#x2F;code&gt;).&lt;&#x2F;li&gt;
+&lt;li&gt;Je m&#x27;attends à pouvoir consulter, consommer et alimenter un dépôt dédié aux dépendances. Crates.io pour Rust, Pypi pour Python.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Des sources adapté à du versionning (git bien sur mais pas que). La création d&#x27;un projet devrait être minimaliste. (Le nombre de fichiers à la création de projet que propose C# et Java me semble à proscrire)&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;De l&#x27;asynchronisme et du parralélisme si possible &amp;quot;natif&amp;quot;. (async&#x2F;await)&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;De la performance :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;langage compilé en code &amp;quot;machine&amp;quot;. (pas de machine virtuelle et JIT)&lt;&#x2F;li&gt;
+&lt;li&gt;pas de Garbage collector, si possible. (surprises sur les benchs et le temps réel)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;La capacité à faire du bas comme du haut niveau : parfois on a besoin d&#x27;abstration et parfois de précision.
+Les 2 n&#x27;étant pas du tout incompatible au sein d&#x27;un même projet.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;L&#x27;utilisation de paradigmes éprouvés : interfaces, generator, itérateurs, closures, prog fonctionnel, visibilité et confidentialité, objets non nullable etc.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;-Disposer de la généricité : 
+- possibilité de rendre un objet débuggable, clonable etc.
+- Utilisation de macros.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Manipuler du texte facilitement, naturellement. (également dans la recherche sur des gros volume de données)&lt;&#x2F;li&gt;
+&lt;li&gt;Manipuler des données binaires facilement.&lt;&#x2F;li&gt;
+&lt;li&gt;Avoir un moteur de Regex à sa disposition. (même si je considère que les regex devraient être rares)&lt;&#x2F;li&gt;
+&lt;li&gt;Etre immutable par défaut. Je préfère la logique ou tout est constante par défaut et ou les variables mutables doivent être explicitement déclarés.&lt;&#x2F;li&gt;
+&lt;li&gt;Disposer d&#x27;une structuration propres des projets ainsi que d&#x27;avoir des espaces de nommages (namespaces) limpides.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;un-ecosysteme&quot;&gt;Un écosystème&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;un IDE qui déchire !
+C# et Visual Studio étant pour l&#x27;instant la pointe de ce qui se fait mais Rust avec Visual Studio Code tiens la draguée (grâce à rust-lang&#x2F;rust-analyzer).
+&lt;ul&gt;
+&lt;li&gt;Mettre des points d&#x27;arrêts, parcourir en pas à pas, voir le contenu des variables intermédiaires.&lt;&#x2F;li&gt;
+&lt;li&gt;Faire de la refacto.&lt;&#x2F;li&gt;
+&lt;li&gt;Auto-complétion.&lt;&#x2F;li&gt;
+&lt;li&gt;Détection d&#x27;erreurs.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Faire des outils en CLI. &lt;code&gt;Click_&lt;&#x2F;code&gt; en Python et &lt;code&gt;Clap&lt;&#x2F;code&gt; en Rust.&lt;&#x2F;li&gt;
+&lt;li&gt;Faire du web :
+&lt;ul&gt;
+&lt;li&gt;Payload et Response typés.&lt;&#x2F;li&gt;
+&lt;li&gt;Protocoles récents : http2, websockets.&lt;&#x2F;li&gt;
+&lt;li&gt;gestion des erreurs HTTP.&lt;&#x2F;li&gt;
+&lt;li&gt;gestion des sessions et cookies.&lt;&#x2F;li&gt;
+&lt;li&gt;Routing simplifié&lt;&#x2F;li&gt;
+&lt;li&gt;gestion des fichiers statiques&lt;&#x2F;li&gt;
+&lt;li&gt;auto-reload pendant le dev&lt;&#x2F;li&gt;
+&lt;li&gt;REST&lt;&#x2F;li&gt;
+&lt;li&gt;gestion de cache&lt;&#x2F;li&gt;
+&lt;li&gt;GraphQL&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;De l&#x27;i18n : https:&#x2F;&#x2F;projectfluent.org&#x2F;&lt;&#x2F;li&gt;
+&lt;li&gt;Faire du réseau : TCP&#x2F;UDP en client&#x2F;serveur.&lt;&#x2F;li&gt;
+&lt;li&gt;gérer des formats de fichiers courants : json, toml, xml, markdown.&lt;&#x2F;li&gt;
+&lt;li&gt;interfaçage avec des BDD SQL (https:&#x2F;&#x2F;github.com&#x2F;launchbadge&#x2F;sqlx) et NoSQL.&lt;&#x2F;li&gt;
+&lt;li&gt;du Fuzzing&lt;&#x2F;li&gt;
+&lt;li&gt;Un fiddle pour tester des trucs en rapide.&lt;&#x2F;li&gt;
+&lt;li&gt;API de gestion des fichiers propres.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;les-plus&quot;&gt;les plus&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Accéder à la mémoire de la pile mais aussi sur le tas. (stack et heap)&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Faire du webassembly&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;protobuffer&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Faire du frontend&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Détecter le deadcode&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Eviter nativement si possible les soucis de mémoires (buffer overflow) et de concurrence (data race).&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Eviter un maximum de soucis de CWE à la compilation.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Eviter les try&#x2F;catch de l&#x27;enfer&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;S&#x27;interfacer avec des projets en C. (Zig est très fort sur ce point)&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;les projets pilotes. Ex: ripgrep, fish pour Rust. Request, Flask pour Python.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;libs :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;De logs&lt;&#x2F;li&gt;
+&lt;li&gt;dates et time&lt;&#x2F;li&gt;
+&lt;li&gt;valeurs random&lt;&#x2F;li&gt;
+&lt;li&gt;lancer des requètes : https:&#x2F;&#x2F;hurl.dev&#x2F;player.html?id=hurl&amp;amp;speed=3&lt;&#x2F;li&gt;
+&lt;li&gt;web scrapping&lt;&#x2F;li&gt;
+&lt;li&gt;De template : Jinja pour Python, Tera ou Askama pour Rust.&lt;&#x2F;li&gt;
+&lt;li&gt;De traitement de fichiers étendus : images, svg, pdf.&lt;&#x2F;li&gt;
+&lt;li&gt;Distance de levenstein&lt;&#x2F;li&gt;
+&lt;li&gt;faire de l&#x27;AST&lt;&#x2F;li&gt;
+&lt;li&gt;parseur combinator (Nom en Rust) ou PEG (Pest en Rust)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;programmation logique.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;machine à états.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;interfaçage avec la domotique, robotique etc.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;&#x2F;h1&gt;
+&lt;p&gt;Actuellement, j&#x27;ai jeté mon dévolu sur Rust car il rempli (et de loin) le plus de cases.
+Mais je suis ouvert à toute nouvelle découverte.&lt;&#x2F;p&gt;
+</description>
+      </item>
       <item>
           <title>Idées de travaux</title>
           <pubDate>Sat, 25 Nov 2023 00:00:00 +0000</pubDate>
@@ -138,66 +298,6 @@ J&#x27;ai aussi &lt;&#x2F;p&gt;
 </description>
       </item>
       <item>
-          <title>Que penser de l&#x27;IA</title>
-          <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
-          <author>Unknown</author>
-          <link>https://mothsart.github.io/devblog/un-vrai-langage-informatique/</link>
-          <guid>https://mothsart.github.io/devblog/un-vrai-langage-informatique/</guid>
-          <description xml:base="https://mothsart.github.io/devblog/un-vrai-langage-informatique/">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;&#x2F;h1&gt;
-&lt;p&gt;On parle d&#x27;IA un peu partout.
-Bien évidemment, il y a une grande part de fantasme derrière.&lt;&#x2F;p&gt;
-&lt;p&gt;Cet article va essayé de faire le tri.&lt;&#x2F;p&gt;
-&lt;p&gt;LLM ou Large Langage Model est collectivement le modèle d&#x27;IA le plus en vogue.
-Maintenant, est-ce qu&#x27;il est le seul &lt;&#x2F;p&gt;
-&lt;h1 id=&quot;plusieurs-types-d-ia&quot;&gt;Plusieurs types d&#x27;IA&lt;&#x2F;h1&gt;
-&lt;p&gt;On a plusieurs type d&#x27;IA :&lt;&#x2F;p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Deep learning (avec ou sans réseaux de neuronnes) :
-On utilise une grande quantité de données (la plus pertinent et neutre possible) qui vont entrainer notre IA.
-Une fois cet entrainement terminé, les requêtes au moteur vont être pondérés au travers de statistiques de réponses.
-Le modèle le plus connus et le plus abouti étant le LLM avec ChatGpt.&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;
-&lt;p&gt;Machine learning :
-On établie le champ des possibles et explore jusqu&#x27;à trouver le scénario optimal.
-Sur des ordinateurs classique, ça nécessite une grosse puissance de traitement.
-C&#x27;est un champ d&#x27;exploration ou le quantique pourrait révolutionner la donne.&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;
-&lt;p&gt;Algorithme évolutif : c&#x27;est une technique de machine learning amélioré.&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;
-&lt;p&gt;Programmation logique&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;&#x2F;ol&gt;
-&lt;p&gt;inférence (Prolog)
-AST
-Machines à états
-preuves formelles&lt;&#x2F;p&gt;
-&lt;h1 id=&quot;les-risques-et-les-questionnements&quot;&gt;Les risques et les questionnements&lt;&#x2F;h1&gt;
-&lt;p&gt;Les IA de type LVM ont plusieurs soucis :&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;la qualité des données d&#x27;entrainement&lt;&#x2F;li&gt;
-&lt;li&gt;le volume de donnée d&#x27;entrainement&lt;&#x2F;li&gt;
-&lt;li&gt;l&#x27;énergie astronomique pour les entrainer&lt;&#x2F;li&gt;
-&lt;li&gt;le contenu rétro-actif&lt;&#x2F;li&gt;
-&lt;li&gt;les halucinations&lt;&#x2F;li&gt;
-&lt;li&gt;les améliorations manuelles : eh oui, on ment beaucoup autour des modèles de ChatGPT. Derrière toute évolution, il y a des actions manuelles... bcp d&#x27;actions manuelles.
-Comme pour les IA de Youtube, ce travail rébarbatif&lt;&#x2F;li&gt;
-&lt;li&gt;les LLM en maths sont très mauvais&lt;&#x2F;li&gt;
-&lt;li&gt;quid du droit d&#x27;auteur ? Il est très difficile de prouver qu&#x27;une IA a aspiré des données dont il n&#x27;a pas les droits. Si l&#x27;on continue dans ce sens, le droit d&#x27;auteur (et des brevets) disparaitra.
-Attention : c&#x27;est peut-être bien au final.&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h1 id=&quot;ma-vision-de-l-avenir&quot;&gt;Ma vision de l&#x27;avenir&lt;&#x2F;h1&gt;
-&lt;p&gt;Toutes ces formes d&#x27;IA me semblent intéressantes et complémentaires.
-Aucune n&#x27;a été exploré intégralement.
-En revanche, j&#x27;aurais une réticence pour les IA trop gourmandes tel que LLM. Le rapport énergie&#x2F;pertinence est démentiel et il faudra bien un jour que cette course s&#x27;arrête.&lt;&#x2F;p&gt;
-&lt;p&gt;ChatGPT est sur-côté à mon sens. Je m&#x27;en sert au final très peu et chacun des résultats fournis nécessite une vérification assidu. 
-J&#x27;ai aussi &lt;&#x2F;p&gt;
-</description>
-      </item>
-      <item>
           <title>Quel avenir pour l&#x27;humanité ?</title>
           <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
           <author>Unknown</author>
@@ -231,7 +331,7 @@ Cet essai est là pour réfléchir de manière distruptive comment y faire face.
 </description>
       </item>
       <item>
-          <title></title>
+          <title>Langage C</title>
           <pubDate>Sun, 26 Mar 2023 00:00:00 +0000</pubDate>
           <author>Unknown</author>
           <link>https://mothsart.github.io/devblog/langage-c/</link>
@@ -245,8 +345,8 @@ Il était temps de remedier à ce problème !&lt;&#x2F;p&gt;
 Qu&#x27;est-ce qu&#x27;il fait qu&#x27;il est incontournable et pourquoi il est en perte de vitesse ?&lt;&#x2F;p&gt;
 &lt;ol&gt;
 &lt;li&gt;Système de packaging et gestionnaire de dépendances archaïque :
-Je me forme à Meson, ninja et je suis surpris que après autotools, on reste encore à un fonctionnement très bricolage.
-Des fichiers de build de plusieurs centaines de lignes, des variables d&#x27;environnement à édité et des chemins à bien renseigner pour permettre de cloisonner nos devs.&lt;&#x2F;li&gt;
+Je me forme à Meson, ninja et je suis surpris que après autotools, on reste encore à un fonctionnement très `bricolage``.
+Des fichiers de build de plusieurs centaines de lignes, des variables d&#x27;environnement à éditer et des chemins à bien renseigner pour permettre de cloisonner nos devs.&lt;&#x2F;li&gt;
 &lt;&#x2F;ol&gt;
 &lt;p&gt;Quand je compare avec Rust et ces fichiers Toml, je me rend compte du fossé incroyable entre les 2.&lt;&#x2F;p&gt;
 &lt;ol start=&quot;2&quot;&gt;
