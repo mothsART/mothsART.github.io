@@ -23,7 +23,7 @@ On est donc en mesure d&#x27;être exigeant.&lt;&#x2F;p&gt;
 &lt;p&gt;Un typage, partout, le plus fort possible avec tous les avantages :&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;Sérialisation&#x2F;Déserialisation à partir d&#x27;une structure de données.&lt;&#x2F;li&gt;
-&lt;li&gt;Du pattern matching : de l&#x27;algorithmie la plus simple à  lire et à comprendre.&lt;&#x2F;li&gt;
+&lt;li&gt;Du pattern matching : de l&#x27;algorithmie simple à lire, à comprendre et faire évoluer.&lt;&#x2F;li&gt;
 &lt;li&gt;Un moteur d&#x27;inférence.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;&#x2F;li&gt;
@@ -35,23 +35,24 @@ On est donc en mesure d&#x27;être exigeant.&lt;&#x2F;p&gt;
 &lt;li&gt;Je dois être en capacité de documenter une API.&lt;&#x2F;li&gt;
 &lt;li&gt;J&#x27;aime avoir un outil en cli adapté : création de projets, lancement des builds, exec etc.&lt;&#x2F;li&gt;
 &lt;li&gt;Je ne peux me passer de messages d&#x27;erreurs et stacktrace explicite.&lt;&#x2F;li&gt;
-&lt;li&gt;J&#x27;aime avoir des règles fortes d&#x27;indentation (pep8 pour Python, &#x27;cargo fmt&#x27; pour Rust).&lt;&#x2F;li&gt;
-&lt;li&gt;Je suis accro aux contrôles qualités (analyse statique de code) via &lt;code&gt;ruff&lt;&#x2F;code&gt; en Python, &lt;code&gt;cargo clippy&lt;&#x2F;code&gt;en Rust.&lt;&#x2F;li&gt;
+&lt;li&gt;J&#x27;aime avoir des règles fortes d&#x27;indentation (pep8 pour Python, &lt;code&gt;cargo fmt&lt;&#x2F;code&gt; pour Rust).&lt;&#x2F;li&gt;
+&lt;li&gt;Je suis accro aux contrôles qualités (analyse statique de code) via &lt;code&gt;ruff&lt;&#x2F;code&gt; en Python, &lt;code&gt;cargo clippy&lt;&#x2F;code&gt; en Rust.&lt;&#x2F;li&gt;
 &lt;li&gt;Je ne concois plus un monde sans gestionnaire de dépendances clé en main (pour l&#x27;instant, j&#x27;ai pas vu mieux que &lt;code&gt;cargo&lt;&#x2F;code&gt;).&lt;&#x2F;li&gt;
 &lt;li&gt;Je m&#x27;attends à pouvoir consulter, consommer et alimenter un dépôt dédié aux dépendances. Crates.io pour Rust, Pypi pour Python.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
-&lt;p&gt;Des sources adapté à du versionning (git bien sur mais pas que). La création d&#x27;un projet devrait être minimaliste. (Le nombre de fichiers à la création de projet que propose C# et Java me semble à proscrire)&lt;&#x2F;p&gt;
+&lt;p&gt;Des sources adaptés à du versionning (git bien sur mais pas que). La création d&#x27;un projet devrait être minimaliste. (Le nombre de fichiers à la création de projet que propose C# et Java me semble à proscrire)&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
-&lt;p&gt;De l&#x27;asynchronisme et du parralélisme si possible &amp;quot;natif&amp;quot;. (async&#x2F;await)&lt;&#x2F;p&gt;
+&lt;p&gt;De l&#x27;asynchronisme et du parralélisme si possible &lt;strong&gt;natif&lt;&#x2F;strong&gt;. (async&#x2F;await)&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
 &lt;p&gt;De la performance :&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;langage compilé en code &amp;quot;machine&amp;quot;. (pas de machine virtuelle et JIT)&lt;&#x2F;li&gt;
-&lt;li&gt;pas de Garbage collector, si possible. (surprises sur les benchs et le temps réel)&lt;&#x2F;li&gt;
+&lt;li&gt;pas de Garbage collector, si possible. Par conséquent, pas de mauvaises surprises sur les benchs et le temps réel.
+Voir pire : des benchs en inadéquation avec la production.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
@@ -61,20 +62,32 @@ Les 2 n&#x27;étant pas du tout incompatible au sein d&#x27;un même projet.&lt;
 &lt;li&gt;
 &lt;p&gt;L&#x27;utilisation de paradigmes éprouvés : interfaces, generator, itérateurs, closures, prog fonctionnel, visibilité et confidentialité, objets non nullable etc.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;-Disposer de la généricité : 
-- possibilité de rendre un objet débuggable, clonable etc.
-- Utilisation de macros.&lt;&#x2F;p&gt;
+&lt;li&gt;
+&lt;p&gt;Disposer de la généricité :&lt;&#x2F;p&gt;
 &lt;ul&gt;
-&lt;li&gt;Manipuler du texte facilitement, naturellement. (également dans la recherche sur des gros volume de données)&lt;&#x2F;li&gt;
-&lt;li&gt;Manipuler des données binaires facilement.&lt;&#x2F;li&gt;
-&lt;li&gt;Avoir un moteur de Regex à sa disposition. (même si je considère que les regex devraient être rares)&lt;&#x2F;li&gt;
-&lt;li&gt;Etre immutable par défaut. Je préfère la logique ou tout est constante par défaut et ou les variables mutables doivent être explicitement déclarés.&lt;&#x2F;li&gt;
-&lt;li&gt;Disposer d&#x27;une structuration propres des projets ainsi que d&#x27;avoir des espaces de nommages (namespaces) limpides.&lt;&#x2F;li&gt;
+&lt;li&gt;possibilité de rendre un objet débuggable, clonable etc.&lt;&#x2F;li&gt;
+&lt;li&gt;Utilisation de macros.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Manipuler du texte facilitement, naturellement. (également dans la recherche sur des gros volume de données)&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Manipuler des données binaires facilement.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Avoir un moteur de Regex à sa disposition. (même si je considère que les regex devraient être rares)&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Etre immutable par défaut. Je préfère la logique ou tout est constante par défaut et ou les variables mutables doivent être explicitement déclarés.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Disposer d&#x27;une structuration propres des projets ainsi que d&#x27;avoir des espaces de nommages (namespaces) limpides.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h1 id=&quot;un-ecosysteme&quot;&gt;Un écosystème&lt;&#x2F;h1&gt;
 &lt;ul&gt;
-&lt;li&gt;un IDE qui déchire !
+&lt;li&gt;Avoir un IDE qui déchire !
 C# et Visual Studio étant pour l&#x27;instant la pointe de ce qui se fait mais Rust avec Visual Studio Code tiens la draguée (grâce à rust-lang&#x2F;rust-analyzer).
 &lt;ul&gt;
 &lt;li&gt;Mettre des points d&#x27;arrêts, parcourir en pas à pas, voir le contenu des variables intermédiaires.&lt;&#x2F;li&gt;
@@ -164,8 +177,8 @@ C# et Visual Studio étant pour l&#x27;instant la pointe de ce qui se fait mais 
 &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;&#x2F;h1&gt;
-&lt;p&gt;Actuellement, j&#x27;ai jeté mon dévolu sur Rust car il rempli (et de loin) le plus de cases.
-Mais je suis ouvert à toute nouvelle découverte.&lt;&#x2F;p&gt;
+&lt;p&gt;Actuellement, j&#x27;ai jeté mon dévolu sur Rust car il rempli (et de loin) le plus de cas.&lt;&#x2F;p&gt;
+&lt;p&gt;Je suis, néanmoins ouvert à toute nouvelle découverte.&lt;&#x2F;p&gt;
 </description>
       </item>
       <item>
@@ -248,13 +261,13 @@ Mais je suis ouvert à toute nouvelle découverte.&lt;&#x2F;p&gt;
 Bien évidemment, il y a une grande part de fantasme derrière.&lt;&#x2F;p&gt;
 &lt;p&gt;Cet article va essayé de faire le tri.&lt;&#x2F;p&gt;
 &lt;p&gt;LLM ou Large Langage Model est collectivement le modèle d&#x27;IA le plus en vogue.
-Maintenant, est-ce qu&#x27;il est le seul &lt;&#x2F;p&gt;
+Maintenant, est-ce qu&#x27;il est le seul ?&lt;&#x2F;p&gt;
 &lt;h1 id=&quot;plusieurs-types-d-ia&quot;&gt;Plusieurs types d&#x27;IA&lt;&#x2F;h1&gt;
 &lt;p&gt;On a plusieurs type d&#x27;IA :&lt;&#x2F;p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Deep learning (avec ou sans réseaux de neuronnes) :
-On utilise une grande quantité de données (la plus pertinent et neutre possible) qui vont entrainer notre IA.
+On utilise une grande quantité de données (la plus pertinente et neutre possible) qui va entrainer notre IA.
 Une fois cet entrainement terminé, les requêtes au moteur vont être pondérés au travers de statistiques de réponses.
 Le modèle le plus connus et le plus abouti étant le LLM avec ChatGpt.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
@@ -268,33 +281,34 @@ C&#x27;est un champ d&#x27;exploration ou le quantique pourrait révolutionner l
 &lt;p&gt;Algorithme évolutif : c&#x27;est une technique de machine learning amélioré.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
-&lt;p&gt;Programmation logique&lt;&#x2F;p&gt;
+&lt;p&gt;Programmation logique :&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;&#x2F;ol&gt;
-&lt;p&gt;inférence (Prolog)
-AST
-Machines à états
-preuves formelles&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Inférence (Prolog)&lt;&#x2F;li&gt;
+&lt;li&gt;AST&lt;&#x2F;li&gt;
+&lt;li&gt;Machines à états&lt;&#x2F;li&gt;
+&lt;li&gt;Preuves formelles&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h1 id=&quot;les-risques-et-les-questionnements&quot;&gt;Les risques et les questionnements&lt;&#x2F;h1&gt;
 &lt;p&gt;Les IA de type LVM ont plusieurs soucis :&lt;&#x2F;p&gt;
 &lt;ul&gt;
-&lt;li&gt;la qualité des données d&#x27;entrainement&lt;&#x2F;li&gt;
-&lt;li&gt;le volume de donnée d&#x27;entrainement&lt;&#x2F;li&gt;
-&lt;li&gt;l&#x27;énergie astronomique pour les entrainer&lt;&#x2F;li&gt;
-&lt;li&gt;le contenu rétro-actif&lt;&#x2F;li&gt;
-&lt;li&gt;les halucinations&lt;&#x2F;li&gt;
-&lt;li&gt;les améliorations manuelles : eh oui, on ment beaucoup autour des modèles de ChatGPT. Derrière toute évolution, il y a des actions manuelles... bcp d&#x27;actions manuelles.
-Comme pour les IA de Youtube, ce travail rébarbatif&lt;&#x2F;li&gt;
-&lt;li&gt;les LLM en maths sont très mauvais&lt;&#x2F;li&gt;
-&lt;li&gt;quid du droit d&#x27;auteur ? Il est très difficile de prouver qu&#x27;une IA a aspiré des données dont il n&#x27;a pas les droits. Si l&#x27;on continue dans ce sens, le droit d&#x27;auteur (et des brevets) disparaitra.
+&lt;li&gt;La qualité des données d&#x27;entrainement.&lt;&#x2F;li&gt;
+&lt;li&gt;Le volume de donnée d&#x27;entrainement.&lt;&#x2F;li&gt;
+&lt;li&gt;L&#x27;énergie astronomique nécessaire pour les entrainer.&lt;&#x2F;li&gt;
+&lt;li&gt;Le contenu rétro-actif.&lt;&#x2F;li&gt;
+&lt;li&gt;Les halucinations.&lt;&#x2F;li&gt;
+&lt;li&gt;Les améliorations manuelles : eh oui, on ment beaucoup autour des modèles de ChatGPT. Derrière toute évolution, il y a des actions manuelles... bcp d&#x27;actions manuelles.
+Comme pour les IA de Youtube, ce travail rébarbatif est donné à des travailleurs dans des pays du tiers monde.&lt;&#x2F;li&gt;
+&lt;li&gt;Les LLM sont très mauvais en mathématique.&lt;&#x2F;li&gt;
+&lt;li&gt;Quid du droit d&#x27;auteur ? Il est très difficile de prouver qu&#x27;une IA a aspiré des données dont il n&#x27;a pas les droits. Si l&#x27;on continue dans ce sens, le droit d&#x27;auteur (et des brevets) disparaitra.
 Attention : c&#x27;est peut-être bien au final.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h1 id=&quot;ma-vision-de-l-avenir&quot;&gt;Ma vision de l&#x27;avenir&lt;&#x2F;h1&gt;
 &lt;p&gt;Toutes ces formes d&#x27;IA me semblent intéressantes et complémentaires.
 Aucune n&#x27;a été exploré intégralement.
 En revanche, j&#x27;aurais une réticence pour les IA trop gourmandes tel que LLM. Le rapport énergie&#x2F;pertinence est démentiel et il faudra bien un jour que cette course s&#x27;arrête.&lt;&#x2F;p&gt;
-&lt;p&gt;ChatGPT est sur-côté à mon sens. Je m&#x27;en sert au final très peu et chacun des résultats fournis nécessite une vérification assidu. 
-J&#x27;ai aussi &lt;&#x2F;p&gt;
+&lt;p&gt;ChatGPT est sur-côté à mon sens. Je m&#x27;en sert au final très peu et chacun des résultats fournis nécessite une vérification assidu. &lt;&#x2F;p&gt;
 </description>
       </item>
       <item>

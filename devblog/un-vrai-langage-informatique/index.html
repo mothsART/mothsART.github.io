@@ -272,7 +272,7 @@ On est donc en mesure d'être exigeant.</p>
 <p>Un typage, partout, le plus fort possible avec tous les avantages :</p>
 <ul>
 <li>Sérialisation/Déserialisation à partir d'une structure de données.</li>
-<li>Du pattern matching : de l'algorithmie la plus simple à  lire et à comprendre.</li>
+<li>Du pattern matching : de l'algorithmie simple à lire, à comprendre et faire évoluer.</li>
 <li>Un moteur d'inférence.</li>
 </ul>
 </li>
@@ -284,23 +284,24 @@ On est donc en mesure d'être exigeant.</p>
 <li>Je dois être en capacité de documenter une API.</li>
 <li>J'aime avoir un outil en cli adapté : création de projets, lancement des builds, exec etc.</li>
 <li>Je ne peux me passer de messages d'erreurs et stacktrace explicite.</li>
-<li>J'aime avoir des règles fortes d'indentation (pep8 pour Python, 'cargo fmt' pour Rust).</li>
-<li>Je suis accro aux contrôles qualités (analyse statique de code) via <code>ruff</code> en Python, <code>cargo clippy</code>en Rust.</li>
+<li>J'aime avoir des règles fortes d'indentation (pep8 pour Python, <code>cargo fmt</code> pour Rust).</li>
+<li>Je suis accro aux contrôles qualités (analyse statique de code) via <code>ruff</code> en Python, <code>cargo clippy</code> en Rust.</li>
 <li>Je ne concois plus un monde sans gestionnaire de dépendances clé en main (pour l'instant, j'ai pas vu mieux que <code>cargo</code>).</li>
 <li>Je m'attends à pouvoir consulter, consommer et alimenter un dépôt dédié aux dépendances. Crates.io pour Rust, Pypi pour Python.</li>
 </ul>
 </li>
 <li>
-<p>Des sources adapté à du versionning (git bien sur mais pas que). La création d'un projet devrait être minimaliste. (Le nombre de fichiers à la création de projet que propose C# et Java me semble à proscrire)</p>
+<p>Des sources adaptés à du versionning (git bien sur mais pas que). La création d'un projet devrait être minimaliste. (Le nombre de fichiers à la création de projet que propose C# et Java me semble à proscrire)</p>
 </li>
 <li>
-<p>De l'asynchronisme et du parralélisme si possible &quot;natif&quot;. (async/await)</p>
+<p>De l'asynchronisme et du parralélisme si possible <strong>natif</strong>. (async/await)</p>
 </li>
 <li>
 <p>De la performance :</p>
 <ul>
 <li>langage compilé en code &quot;machine&quot;. (pas de machine virtuelle et JIT)</li>
-<li>pas de Garbage collector, si possible. (surprises sur les benchs et le temps réel)</li>
+<li>pas de Garbage collector, si possible. Par conséquent, pas de mauvaises surprises sur les benchs et le temps réel.
+Voir pire : des benchs en inadéquation avec la production.</li>
 </ul>
 </li>
 <li>
@@ -310,20 +311,32 @@ Les 2 n'étant pas du tout incompatible au sein d'un même projet.</p>
 <li>
 <p>L'utilisation de paradigmes éprouvés : interfaces, generator, itérateurs, closures, prog fonctionnel, visibilité et confidentialité, objets non nullable etc.</p>
 </li>
-</ul>
-<p>-Disposer de la généricité : 
-- possibilité de rendre un objet débuggable, clonable etc.
-- Utilisation de macros.</p>
+<li>
+<p>Disposer de la généricité :</p>
 <ul>
-<li>Manipuler du texte facilitement, naturellement. (également dans la recherche sur des gros volume de données)</li>
-<li>Manipuler des données binaires facilement.</li>
-<li>Avoir un moteur de Regex à sa disposition. (même si je considère que les regex devraient être rares)</li>
-<li>Etre immutable par défaut. Je préfère la logique ou tout est constante par défaut et ou les variables mutables doivent être explicitement déclarés.</li>
-<li>Disposer d'une structuration propres des projets ainsi que d'avoir des espaces de nommages (namespaces) limpides.</li>
+<li>possibilité de rendre un objet débuggable, clonable etc.</li>
+<li>Utilisation de macros.</li>
+</ul>
+</li>
+<li>
+<p>Manipuler du texte facilitement, naturellement. (également dans la recherche sur des gros volume de données)</p>
+</li>
+<li>
+<p>Manipuler des données binaires facilement.</p>
+</li>
+<li>
+<p>Avoir un moteur de Regex à sa disposition. (même si je considère que les regex devraient être rares)</p>
+</li>
+<li>
+<p>Etre immutable par défaut. Je préfère la logique ou tout est constante par défaut et ou les variables mutables doivent être explicitement déclarés.</p>
+</li>
+<li>
+<p>Disposer d'une structuration propres des projets ainsi que d'avoir des espaces de nommages (namespaces) limpides.</p>
+</li>
 </ul>
 <h1 id="un-ecosysteme">Un écosystème</h1>
 <ul>
-<li>un IDE qui déchire !
+<li>Avoir un IDE qui déchire !
 C# et Visual Studio étant pour l'instant la pointe de ce qui se fait mais Rust avec Visual Studio Code tiens la draguée (grâce à rust-lang/rust-analyzer).
 <ul>
 <li>Mettre des points d'arrêts, parcourir en pas à pas, voir le contenu des variables intermédiaires.</li>
@@ -413,8 +426,8 @@ C# et Visual Studio étant pour l'instant la pointe de ce qui se fait mais Rust 
 </li>
 </ul>
 <h1 id="conclusion">Conclusion</h1>
-<p>Actuellement, j'ai jeté mon dévolu sur Rust car il rempli (et de loin) le plus de cases.
-Mais je suis ouvert à toute nouvelle découverte.</p>
+<p>Actuellement, j'ai jeté mon dévolu sur Rust car il rempli (et de loin) le plus de cas.</p>
+<p>Je suis, néanmoins ouvert à toute nouvelle découverte.</p>
 
         </div>
       </div>
