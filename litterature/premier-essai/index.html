@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La croisière - Le Labo du Nerd</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+  <link rel="stylesheet" href="https://mothsart.github.io/assets/css/custom.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"><link rel="apple-touch-icon" sizes="180x180" href="https://mothsart.github.io/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://mothsart.github.io/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://mothsart.github.io/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://mothsart.github.io/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="https://mothsart.github.io/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff"><link rel="canonical" href="https://mothsart.github.io/litterature/premier-essai/" /><meta name="author" content="Jérémie Ferry @alias mothsart"><meta property="article:published_time" content='2025-10-16' /><meta name="keywords" content="essai,"><meta name="generator" content="Zola">
+  <meta property="og:title" content="La croisière" />
+  <meta property="og:url" content="https://mothsart.github.io/litterature/premier-essai/" /><meta property="og:site_name" content="Le Labo du Nerd" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary" /><meta name="twitter:creator" content="@user" />
+  
+</head>
+<body>
+  <div class="container-fluid vh-100">
+    <div class="row h-100"><div
+    class="sidebar d-none d-lg-block col-lg-3 col-xl-2 mh-100 p-0 overflow-auto"
+  >
+    <aside class="d-flex flex-column justify-content-between h-100">
+      <div class="d-none d-md-block mb-4 pt-5 px-4 text-center">
+        <!--
+        <div class="sidebar-avatar mb-2 mx-auto border border-3 rounded-circle">
+          <a href="https://mothsart.github.io/" target="_blank" rel="noopener noreferrer">
+    <img
+      src="https://mothsart.github.io/images/avatar.png"
+      alt="Jérémie Ferry @alias mothsart"
+      class="img-fluid"
+    >
+  </a>
+        </div>
+        -->
+        <div class="mb-1">
+          <a
+            href="https://mothsart.github.io/"
+            class="sidebar-title fs-5 fw-bold text-decoration-none"
+          >
+            Le Labo du Nerd
+          </a>
+        </div>
+        <div class="fw-light">
+          Ce dev-blog-draft est celui d'un passionné du #numérique. Souvent dans la remise en question, rarement satisfait, en recherche de singularité. Ce site est avant-tout un réel banc d'essai : un labo ou je m'éclate et écrit au fil de l'eau mes essais... il n'a donc pas de délais de livraison.
+        </div>
+      </div>
+
+      <div class="sidebar-nav list-group my-auto rounded-0 text-center"><a
+            href="https://mothsart.github.io/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Accueil"
+          >
+            <span class="sidebar-nav-icon bi bi-house fs-4"></span>
+            <span class="sidebar-nav-text d-none d-md-inline">
+              Accueil
+            </span>
+          </a>
+      <a
+            href="https://mothsart.github.io/devblog/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Devblog"
+          >
+            <span class="sidebar-nav-icon bi bi-terminal fs-4"></span>
+            <span class="sidebar-nav-text d-none d-md-inline">
+              Devblog
+            </span>
+          </a>
+      <a
+            href="https://mothsart.github.io/reflexion/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Réflexion"
+          >
+            <span class="sidebar-nav-icon bi bi bi-lightbulb fs-4"></span>
+            <span class="sidebar-nav-text d-none d-md-inline">
+              Réflexion
+            </span>
+          </a>
+      <a
+            href="https://mothsart.github.io/recieps/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Recettes"
+          >
+            <span class="sidebar-nav-icon bi bi-egg-fried fs-4"></span>
+            <span class="sidebar-nav-text d-none d-md-inline">
+              Recettes
+            </span>
+          </a>
+      <a
+            href="https://mothsart.github.io/litterature/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Littérature"
+          >
+            <span class="sidebar-nav-icon bi bi-egg-fried fs-4"></span>
+            <span class="sidebar-nav-text d-none d-md-inline">
+              Littérature
+            </span>
+          </a>
+      <a
+            href="https://mothsart.github.io/author/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Auteur"
+          >
+            <span class="sidebar-nav-icon bi bi-person fs-4"></span>
+            <span class="sidebar-nav-text d-none d-md-inline">
+              Auteur
+            </span>
+          </a>
+      <a
+            href="https://mothsart.github.io/about/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="A propos"
+          >
+            <span class="sidebar-nav-icon bi bi-question-octagon fs-4"></span>
+            <span class="sidebar-nav-text d-none d-md-inline">
+              A propos
+            </span>
+          </a>
+      </div>
+
+      <div class="sidebar-social d-none d-md-block mt-4 pb-4 px-4">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-auto px-2">
+        <a
+          href="mailto:jerem.ferry@email.com"
+          target="_blank" rel="noopener noreferrer"
+          data-bs-toggle="tooltip"
+          data-bs-title='Email'
+          class="text-decoration-none"
+        >
+          <span class="bi bi-envelope-fill"></span>
+        </a>
+      </div><div class="col-auto px-2">
+        <a
+          href="https://github.com/mothsart"
+          target="_blank" rel="noopener noreferrer"
+          data-bs-toggle="tooltip"
+          data-bs-title='GitHub'
+          class="text-decoration-none"
+        >
+          <span class="bi bi-github"></span>
+        </a>
+      </div><div class="col-auto px-2">
+        <a
+          href="https://twitter.com/mothsart1"
+          target="_blank" rel="noopener noreferrer"
+          data-bs-toggle="tooltip"
+          data-bs-title='Twitter'
+          class="text-decoration-none"
+        >
+          <span class="bi bi-twitter"></span>
+        </a>
+      </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div><div class="col mh-100 overflow-auto px-0"><nav
+    class="navbar navbar-expand navbar-bg-light sticky-top border-bottom"
+  >
+    <div class="container-fluid"><button
+        type="button"
+        class="btn d-block d-lg-none fs-5"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+        aria-controls="offcanvas"
+      >
+        <span class="bi bi-list"></span>
+      </button>
+      
+      <div class="col-8">
+        
+          <div class="row justify-content-center justify-content-lg-start p-2 ps-xl-3 text-center"><div class="col-auto d-none d-xl-block">
+        <a
+          href="https://mothsart.github.io/litterature/"
+          class="text-decoration-none"
+        >
+          Littérature
+        </a>
+      </div>
+      <div class="col-auto d-none d-xl-block">
+        <span class="text-secondary">
+          »
+        </span>
+      </div><div class="col-auto">
+      <span
+        class="d-inline d-sm-none text-secondary"
+        data-bs-toggle="tooltip"
+        data-bs-title="La croisière"
+      >
+        La croisière
+      </span>
+      <span
+        class="d-none d-sm-inline text-secondary"
+        data-bs-toggle="tooltip"
+        data-bs-title="La croisière"
+      >
+        La croisière
+      </span>
+    </div>
+  </div>
+        
+      </div>
+
+      <button
+    type="button" data-bs-toggle="modal" data-bs-target="#searchModal"
+    class="btn border border-0"
+  >
+    <span class="bi bi-search fs-5"></span>
+  </button>
+    </div>
+  </nav><div class="d-flex flex-column h-100"><main class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-11 col-lg-10 col-xxl-9">
+        <h1>
+          La croisière
+        </h1>
+        <div class="row">
+            <div class="blog-head-left col-6">
+                <div class="col-auto">
+    <small class="text-muted">
+      Par :
+      <a
+        href="https://mothsart.github.io/"
+        target="_blank" rel="noopener noreferrer"
+        class="text-decoration-none"
+      >
+        Jérémie Ferry @alias mothsart
+      </a>
+    </small>
+  </div>
+
+  <div class="col-auto mb-2">
+    <small class="text-muted">
+      Posté le
+      <time datetime="2025-10-16">
+        <span
+          class="text-muted text-decoration-none"
+        >
+            16 Octobre 2025
+        </span>
+      </time>
+    </small>
+  </div>
+
+  
+            </div>
+            <div class="blog-head-right col-6">
+                
+      <div class="col-auto">
+          <span class="bi bi-bookmarks fs-6 me-1"></span>
+          
+    <a
+      href="https://mothsart.github.io/categories/litterature/"
+      class="btn btn-taxonomy btn-sm m-1 border text-decoration-none"
+    >
+      <small>
+        Littérature
+      </small>
+    </a>
+  
+      </div>
+  
+  
+  
+      <div class="col-auto">
+          <span class="bi bi-tags fs-6 me-1"></span>
+          
+    <a
+      href="https://mothsart.github.io/tags/essai/"
+      class="btn btn-taxonomy btn-sm m-1 border text-decoration-none"
+    >
+      <small>
+        essai
+      </small>
+    </a>
+  
+      </div>
+  
+            </div>
+        </div><div class="mb-5">
+          <h1 id="la-croisiere-partie-1">La croisière : partie 1</h1>
+<p>Adrien était un gars comme il en existe plein d'autres. Rien ne l'identifiait comme spécial. Il n'avait pas de don spécifique, pas un caractère exubérant, pas même un QI hors norme. On pouvait dire sans se tromper qu'il était moyen en tout... aussi bien physiquement, moralement qu'intellectuellement.</p>
+<p>Il était l'incarnation de monsieur tout le monde : invisible aux yeux de la majorité... et étonnement, ça lui allait très bien.
+Il aimait justement se satisfaire d'une vie sans éclat. De son point de vue, point de défauts, bien au contraire. Il savait se contenter des petits plaisirs fugaces de la vie de tous les jours.</p>
+<p>Sa destinée semblait toute tracée : il ne serait jamais une star ni un grand savant mais un homme lambda parmi tant d'autres.
+Inscrirerra-t-il son nom dans l'Histoire avec un grand H. Il savait d'avance que non et au moins il n'aurait pas besoin de luter contre vent et marée pour espéré qu'on se souvienne de lui se disait-t-il.
+Vanité des vanités, tout n'est que vanité.</p>
+<p>Était il prêt a être chamboulé dans sa vie de tous les jours ? Grand dieu, non. Et pourtant...</p>
+<p>Voici qu’un jour, en apparence comme tous les autres, il reçu une réduction indécente de la part de son comité d'entreprise.
+Les places étant limitées et la peur de rater une occasion en or lui força la main. Voila qu'il s’apprêtait à passer 2 semaines de croisière, tout frais payé dans un magnifique paquebot flambant neuf. Les escales se feraient au Maroc, en Algérie, en Tunisie puis se terminerais en Crète. Tout semblait parfait en tout point.
+Seulement voila, Adrien est un fier jeune homme de la trentaine tassé qui c’était habitué à sa seule et unique compagnie. Pas de compagne ni même d'ami assez proche pour l'accompagner dans ce périple.
+Qu'importe, Adrien était bien déterminé à profiter de ces vacances. Il n'était sans doute pas le plus débrouillard pour se tisser des liens mais la petite lueur d'exotisme à sa vie bien rangé avait fait germer quelque chose en lui.</p>
+<p>Le jour tant attendu arriva : Adrien était prêt. Son emploi du temps peu chargé lui avait laissé le luxe de revalider sa valise plusieurs fois.
+Il avait vérifié machinalement les moindres détails.</p>
+<p>L'embarquement se fit sans encombre et le voilà ni une, ni deux, sur la passerelle de la proue, le regard porté sur l'horizon, près au départ.
+Le temps est au beau fixe et le paquebot quitte le port à l'heure.</p>
+<p>Adrien en profite pour regarder les diverses activités proposées à l'intérieur, non sans une escale au buffet à volonté mainte fois recommandé.
+Au restaurant, il renouvelle les plats, tous plus savoureux les uns que les autres.
+Le repas copieux et l'ivresse du premier jour le fatigue et sa journée se fini rapidement.
+Le lendemain, il se contente d'une visite du bateau dans tous les recoins autorisés. Il se perd à plusieurs reprise mais à force de persévérance il commence à faire de ce lieu inospitalié sa maison.</p>
+<p>Cette pérégrination dure jusqu'au soir et la faim le gagne comme jamais.
+Il en profite pour retourner à un buffet ou il se laisse gagner par les joies de la table.
+Après quelques assiettes bien garnis engloutis, il ralentit le rythme.
+Malgré la perfection de l'instant, il est pris d'un micro malaise : il se sent esseulé au milieu d'une foule.
+Tout le monde semble l'ignorer et vivre le moment intensément avec ses proches mais lui se sent observé, laid, tel un dessin grossier sur une toile de maître dénotant avec la finesse de l’ouvrage.
+Il vit ce moment troublant dans une grande salle de réception avec des baies vitrées outrageusement grandes. Dans d'autre circonstance, il aurait trouvé ça majestueux mais aujourd'hui, il est gagné par un sentiment misérable dans une froide réalité.</p>
+<p>Il décide de s'évader de cet endroit en portant son dévolu sur une représentation dans un petit cabaret, 3 étages en contrebas. Pour gagner du temps, il tente l'escalier et descend les marches trois par trois tout en se projetant dans une ambiance plus calfeutré, plus intimiste.
+A peine installé dans une loge, il respire à nouveau tant son instinct semblait le bon.</p>
+<p>Il assiste successivement à des humoristes, danseurs et artistes de toute sorte.
+L'ennui et le sommeil le gagne peu à peu quand soudain il trésaille.
+Une artiste sort de l'ombre du rideau qui se lève et sa voix suave aux vibratos de blues le pétrifie. Le temps s'arrête, il est aspiré dans un vortex ou seul cette artiste et lui semble encore être dans les lieux.
+Chaque note le pénètre, l'envahit.
+Il le sent, il le sait : son existence n'avait de sens que pour vivre enfin ce moment.
+Il le savoure comme le ferais un enfant avec sa première barbe à papa.
+Mais toute chose à une fin et la chanteuse laisse mourir sa voix dans un dernier soupire. Elle remercie son auditoire qui l'applaudit comme jamais.
+Adrien, quant à lui, joint bien les mains l'une contre l'autre afin de respecter le rythme des applaudissements... il es dans un état second, totalement déconnecté de ses semblables.</p>
+<p>Le rideau se referme et s'ouvre à nouveau sur d'autres artistes mais la magie n'opère plus. Tout semble fade et prévisible désormais.
+Comment se satisfaire du monde des mortelles quand on a goûté à l'immortalité ?
+Adrien reste donc avec ce goût sucré en bouche avec un reste d'amertume. Il reste là jusqu'à la fin du spectacle, tel un rocher pétrifié par une chimère.
+Quand le cabaret enfin se vide, il reprend ses esprits, comme si il venait de couper sa respiration jusque là.
+Il regagne son lit en déambulant dans les couloirs tel un zombie qui ne poursuis plus aucun but.
+Une fois qu'il a regagné sa cabine, il s'effondre et laisse les rêves s'emparer de lui. C'est comme si il était dans un labyrinthe ou toutes les issues le renvoyait inlassablement vers ce cabaret.
+Bien évidemment, il retombait nez à nez avec cette artiste magnifique qui l'avait transporté dans une autre dimension.
+Dans son rêve, tout était limpide.
+Il contemplait les cheveux soyeux de cette déesse incarné qui semblait virevolter sous une brise imaginaire.
+Sa peau était semblable à de la soie aux reflets délicats.
+Elle n'était pas parfaitement uniforme comme le serais une poupée ou une image de synthèse, non.
+Elle avait de nombreuses tâche de rousseurs et d'irrégularités de couleurs dans son visage.
+Cela aurait pût être désagréable, mais non. Tout semblait avoir été parfaitement ajusté pour faire d'elle une œuvre d'art frisant la perfection.
+L'intensité qu'elle mettait dans chacune de ses notes, la sudation légère qui en découlait et l'énergie singulière qui l'habitait rendait le moment magistral. Unique.
+Il ne lui manquait que les ailes pour qu'on la confonde avec une créature céleste.</p>
+<p>Bip, bip, bip. Le réveil sonne.
+Adrien tente péniblement de s’extirper de son sommeil.
+C'est une première pour lui qui se réveille toujours avant d'être perturbé par son téléphone.
+Après s'être débarbouillé, il se décide à se rendre au petit déjeuner.</p>
+<p>Une fois sur place, il se choisi machinalement une place avec vue sur la mer.
+Il déjeune seule sur une table pour 4, comme à son habitude.
+Alors qu'il semble voguer entre rêve et réalité, voici qu'une voix féminine familière s'adresse à lui :
+— Merci de m'accueillir à votre table, j'ai désespérément besoin de voir un nouveau visage.
+Adrien sort instantanément de ses pensées. La femme qui se tiens devant elle n'est autre que la diva d'hier soir !
+Il n'a pas le temps de se pincer qu'il se retrouve embarqué dans un dialogue improbable.
+— Bien évidement, prenez place...
+bafouille-t-il péniblement, au bord de la syncope.
+— Merci beaucoup, Monsieur, Monsieur ?
+— euh, Adrien, je m'appelle Adrien.
+— Enchanté Adrien. Moi c'est Isaline... mais tout le monde m'appelle Isa !
+— enchanté, Isa
+répond-t-il, un sourire béa au coin des lèvres.
+Le dialogue continue de plus belle.
+Isaline enchaîne les questions réponses avec un naturel et un aplomb déconcertant.
+Tout est fluide, décontracté et élégant quand elle parle.
+Adrien n'a pas vraiment le temps de comprendre : il est happé par ce flots de paroles incessants comme si il avait pris un train en pleine face.
+Il tente de ne pas perdre la face en donnant le change comme il peut.
+Au bout de 2 heures, les échanges ne se sont pas interrompus.</p>
+<p>Isaline, toujours aussi enjoué, raconte une mésaventure en mer d'il y a quelques années quand tout d'un coup elle s'arrête avec un air inquiet :
+— Quelle heure est-t-il ?
+— 9h15 ?
+— Ah, mais je vais être en retard pour ma répétition ! pardon, il faut que je vous abandonne.</p>
+<p>Aussitôt dit, aussitôt fait. La voici qui disparaît comme l'aurait fait une célèbre princesse des contes de Grim à l'approche de minuit.
+Adrien reste là, sans dire mot, tel un boxeur qui aurait pris un uppercut après un match d'une rare intensité.
+Il ne lui reste plus qu'une assiette vide en face de lui et des effluves d'une fragrance divine pour se rappeler que ce moment c'est bien produit.
+Il se refait le film inlassablement en relevant chaque détails :
+son petit chemisier blanc aux reflets nacrés, sa chevelure châtain claire dont les boucles donnaient le tournis, cette petite mèche de cheveux qui lui retombait inexorablement sur l’œil droit malgré chaque re-coiffage, ses boucles d'oreilles avec un pendentif tortue d'un vert turquoise parfaitement équilibré avec la couleurs de ses iris. Son collier fait de mini coquillages...</p>
+<p>Après des minutes interminables d'introspection, il se ressaisit et se projette dans la journée qui s'annonce.
+Que vais-je bien faire de ma journée après avoir vécu ça ?</p>
+<p>Désabusé, il regarde les sortis possibles pour l'après midi et porte son dévolu sur une promenade en dromadaire.
+La promenade commence, les participants sont nombreux.
+Adrien intègre un groupe avec un guide et se laisse promener.
+Au détour du regard, il voit que Isaline est dans un autre groupe.
+Son cœur s'emballe et ne la quittes plus du regard.
+Il a beau la dévorer des yeux à distance, elle semble ne pas l'avoir calculé et continue son périple comme si de rien n'était.
+La promenade se termine sous un soleil qui commence à flirter avec la mer.</p>
+<p>Comme a son habitude, Adrien regagne juste derrière sa cabine pour enlever le sable qui commence à s'enraciner dans son cuir chevelue et se rafraîchir avec une douche fraiche.
+Des pensées parasites le traverse : tu ne la verras sans doute plus. Tu ne représentes rien pour elle. Oublies la, il vaut mieux.
+L'oublier ? Comment est-ce possible ?</p>
+<p>Pendant qu'il se sèche et rumine, on toque à la porte.
+Adrien s'habille en 4ème vitesse et ouvre les cheveux hirsutes, pensant que c'est encore du personnel de service qui vient troubler son moment.</p>
+<p>Il ouvre et là, stupeur : c'est Isaline qui est devant sa porte !</p>
+<ul>
+<li>
+<p>Rebonjour Adrien, pouvez-vous me faire entrer ?
+Adrien se pose mille questions stupides avant de lui répondre tel que : est-ce que j'ai pas laissé un sous-vêtement traîné ? est-ce que sa sent bon dans ma chambrr ?
+Avant même qu'il ai articulié une réponse que Isaline est entrée.</p>
+</li>
+<li>
+<p>Je suis désolé de vous surprendre ainsi mais j'ai des soucis qui nécessitent la plus grande discrétion.
+J'ai lu en vous quelqu'un d'honnête et de droit... et de toute façon, je ne vais pas passer par quatre chemins, je n'ai que vous.</p>
+</li>
+</ul>
+<p>Adrien ne sait quoi répondre :</p>
+<ul>
+<li>je suis désolé, j'ai beaucoup de mal à vous suivre.</li>
+</ul>
+<p>Isaline reprend son souffle et ralenti le rythme :</p>
+<ul>
+<li>Oui, pardon, je vous dois des explications.
+La raison de ma venue est simple. Vous savez sans doute que je suis une artiste. Nous n'en avons pas parlé ce matin mais votre visage m'était familier.
+Adrien : - En effet, je suis venu au cabaret hier soir.
+Isaline : - Ah oui ? Je devais être affreuse, non ?! Je m'étais préparé à la hate, j'avais un trac incroyable, la robe était bien trop serré...
+Bon, ça n'a pas d'importance. Je disais donc que je suis une jeune artiste qui travaille ici depuis quelques mois.
+C'est mon premier contrat et j'ai le sentiment désagréable que mon agent, Patrick, veut profiter de moi.
+Je m'explique : je compose depuis des années des chansons. J'en ai présenté une à Patrick il y a quelques jours. Depuis, j'ai surpris une de ses conversations téléphonique douteuse hier après-midi et mon ordinateur a disparu dans la soirée.
+Je me demande si Patrick ne cherche pas à me voler mon travail.</li>
+</ul>
+<p>Adrien réfléchit longuement.</p>
+<ul>
+<li>Ok, je comprends mieux votre désarrois. Mais, j'avoue ne pas comprendre en quoi ça me concerne ?</li>
+</ul>
+<p>Isaline : - On va dire que je joue un coup de poker. Je ne connais réellement personne ici. Que des connaissances, aucun amis.
+Patrick, c'est tout l'inverse : il connaît une partie du personnel du paquebot, pleins artistes, des gens du beau monde etc.
+Je ne fais donc confiance à personne. Je ne sais pas vers qui me tourner.
+Puis j'ai badiné avec vous et je me suis dis que vous pourriez peut-être m'aider. Mais est-ce que vous le désirez ?</p>
+<p>Adrien répond à l'instinct : - Bien sur, vous pouvez me faire confiance.
+En réalité, il n'en sait rien : tout va trop vite pour qu'il puisse y réfléchir à tête reposé. La seule assurance qu'il a : il veut passer le plus de temps avec cette exquise créature. Il serait prêt à tout pour passer quelques minutes avec.
+Cette seule perspective lui donne une énergie phénoménale. C'est comme si il avait découvert une ressource infini d'énergie caché derrière une porte et que Isaline lui avait tout simple donné la clé.</p>
+<p>Adrien : - Si vous faites appel à moi, c'est que vous avez déjà quelque chose en tête, non ?
+Isaline : - En effet, vous m'avez percé à jour, hihi.
+Pour être tout a fait honnête, ce matin, je vous ai choisi.
+Vous étiez seul, vous paraissiez bien sous tout rapport et j'ai donc engagé la conversation.
+Avant ça, je me suis assuré que Patrick ne sache pas que j'ai conversé avec vous. Il était occupé très tôt comme jury à des auditions.
+Aucune personne de son entourage ne mange dans votre cafétéria et tout le monde s'attend à ce que j'arrive tard pour le petit dej.
+J'ai donc pris deux petit déjeuners : un avec vous et un dans mon lieu habituelle.
+Patrick ne sait pas non plus que je me suis rendu compte de l'absence de mon ordinateur.
+Il pense a tord, que je me suis endormi comme une souche après ma représentation d'hier soir. Or, il ignore que j'ai une chaîne YouTube qui commence à grossir et que je laisse un short (une vidéo courte) à mes abonnées 1 fois par moi. Ça tombait hier soir et mon ordinateur n'était plus dans sa housse.
+Un autre, similaire avait été mis à sa place. Cependant, je saurais identifier mon ordi parmi mille : déjà, il contient mon travail, ce qui n'est plus le cas et deuxièmement, il a 2 pixels morts sur le haut droit.</p>
+<p>Adrien : - Attendez, vous souhaitez donc que je le récupère ?
+Isaline : - je ne vais pas arrivez à te vouvoyer plus longtemps. On se dit tu ?
+Adrien : - Oui, comme vous... comme tu voudras, haha !
+Isaline : - Hihi, je ne pensais pas vous intimider à ce point Mr Adrien.
+Dans l'idéal, j'aimerais uniquement récupérer mes compositions. J'ai tout un dossier avec mes chansons interprété au piano.
+L'idée c'est de tout poster sur YouTube au plus vite. Si c'est en ligne, il n'y aura plus aucun intérêt financier pour lui.</p>
+<p>Adrien : - Ok, je vois. J'ai quand même quelques zones d'ombres.
+Qu'est-ce qui te garanti que ton agent veuille te la faire à l'envers ?
+Que c'est bien lui le voleur de ton ordinateur ?
+Enfin, comment vais-je pouvoir m'introduire dans sa cabine ?</p>
+<p>Isaline : tout ce que je sais c'est que je l'ai surpris hier après-midi en visio avec son supérieur. Il lui promettait de lui envoyer dans la semaine des maquettes incroyables. Il a évoqué une chanson sur le printemps et là, mon sang n'a fait qu'un tour. C'est un de mes titres phares que je réserve à mes fans.
+Pour ce qui est du vol, je ne vois pas qui d'autre aurais pu être intéressé et au courant.</p>
+<p>Adrien : - Ok, ça se tiens. Mais je ne suis pas un pickpocket moi ?
+En plus, si je récupères ton ordinateur, ton agent le sauras et il risque d'une manière ou d'une autre de te le faire payer.
+Le mieux à mon sens est de récupérer tes vidéos et les supprimer de l'ordinateur. Si ton agent ne trouve pas la matière qu'il voulait te soutirer, il perdra l'intérêt de la garder ton ordi en otage, il te le rendra discrètement ou le détruira.</p>
+<p>Isaline : C'est pas bête ça.
+Pour ce qui d'aller dans la cabine de Patrick. Il y a plusieurs choses à savoir.
+Premièrement, il est dans une suite sur le pont N°1 donc là ou réside les plus riches d'entre nous.
+Je n'y vais pour ainsi dire jamais et donc ma présence risque de ne pas passer inaperçu.
+Deuxièmement, Patrick a une grosse journée d'audition encore demain et à ses petites habitudes. Il se lève tôt et passe en général une bonne heure dans une petite chambre à côté du studio pour faire sa sieste entre 13h et 14h.
+Il laisse son badge négligemment sur la table le temps de cet interlude.
+C'est là ou il va falloir être rapide. Je vais récupérer échanger mon badge avec le sien et te le ramener à un point de rendez-vous.
+Tu te seras habillé en garçon de chambre avant.
+Tu vas jusqu'à sa cabine avec cette tenue, tout le monde n'y verra que du feu.
+Une fois dans sa cabine, tu as environ 20min montre en main pour trouver l'ordinateur, récupérer le dis dossier et le supprimer.
+Si il se réveille avant que tu sois revenu, pas de panique : il y aura tjs mon badge sur le meuble qui pourra faire office de leurre.</p>
+<p>Bon, maintenant que tu sais tout ça... je ne veux rien t'imposer Adrien.
+Tu ne me connais pas vraiment et moi non plus. Je comprendrais tout à fait que tu ne veuilles pas prendre ce genre de risque pour moi.
+Je ne t'en voudrais pas mais j'espère au moins que tu garderas tout ça pour toi.</p>
+<p>Adrien souffle inconsciemment puis répond d'un ton affirmé : Il est vrai que je ne suis qu'un simple touriste. Rien ne m'y oblige.
+Maintenant, ça rajoute une dose de piquant à mon expédition et puis... j'ai toujours été révolté par l'injustice. Si je peux avoir mon rôle pour rééquilibrer l'univers, je suis partant.</p>
+<p>Isaline : c'est très gentille ce que vous faites, merci.</p>
+<p>Vous désirez connaitre la suite ? Elle sera disponible bientôt.</p>
+
+        </div>
+      </div>
+    </div>
+  </main><div class="container">
+    <div class="row justify-content-center mt-3 mb-4">
+      <div class="col-11 col-lg-10 col-xxl-9"></div>
+    </div>
+  </div><footer class="container-fluid mt-auto">
+    <div class="row justify-content-center">
+      <div class="col-10">
+        <div class="row pt-3 pb-4 border-top">
+          <div class="col-12 col-md-6 mb-2 mb-md-0 text-center text-md-start">
+            <small class="text-secondary">
+              © 2025
+              <a 
+                href="https://mothsart.github.io/"
+                target="_blank" rel="noopener noreferrer"
+                class="text-decoration-none"
+              >
+                Jérémie Ferry @alias mothsart&period;
+              </a>
+            </small>
+          </div>
+          <div class="col-12 col-md-6 text-center text-md-end">
+            <small class="text-secondary">
+              Créé à partir de
+              <a 
+                href="https://www.getzola.org/"
+                target="_blank" rel="noopener noreferrer"
+                class="text-decoration-none"
+              >
+                Zola
+              </a>
+              avec
+              <a 
+                href="https://github.com/mothsART/devlab-zola"
+                target="_blank" rel="noopener noreferrer"
+                class="text-decoration-none"
+              >
+                DevLab
+              </a>
+              theme.
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+    <div class="offcanvas-body p-0">
+      <div class="sidebar container-fluid vh-100">
+        <div class="row h-100">
+          <div
+            class="col mh-100 px-0 overflow-auto"
+          >
+            <aside class="d-flex flex-column justify-content-between h-100">
+              <div class="mb-4 pt-5 px-3 text-center">
+                <!--
+                <div class="sidebar-avatar mb-2 mx-auto border border-3 rounded-circle">
+                  <a href="https://mothsart.github.io/" target="_blank" rel="noopener noreferrer">
+    <img
+      src="https://mothsart.github.io/images/avatar.png"
+      alt="Jérémie Ferry @alias mothsart"
+      class="img-fluid"
+    >
+  </a>
+                </div>
+                -->
+                <div>
+                  <a
+                    href="https://mothsart.github.io/"
+                    class="sidebar-title fs-5 fw-bold text-decoration-none"
+                  >
+                    Le Labo du Nerd
+                  </a>
+                </div>
+              </div>
+
+              <div class="sidebar-nav list-group my-auto rounded-0 text-start"><a
+            href="https://mothsart.github.io/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Accueil"
+          >
+            <span class="sidebar-nav-icon bi bi-house ms-2 me-1 fs-4"></span>
+            <span class="sidebar-nav-text">Accueil</span>
+          </a><a
+            href="https://mothsart.github.io/devblog/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Devblog"
+          >
+            <span class="sidebar-nav-icon bi bi-terminal ms-2 me-1 fs-4"></span>
+            <span class="sidebar-nav-text">Devblog</span>
+          </a><a
+            href="https://mothsart.github.io/reflexion/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Réflexion"
+          >
+            <span class="sidebar-nav-icon bi bi bi-lightbulb ms-2 me-1 fs-4"></span>
+            <span class="sidebar-nav-text">Réflexion</span>
+          </a><a
+            href="https://mothsart.github.io/recieps/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Recettes"
+          >
+            <span class="sidebar-nav-icon bi bi-egg-fried ms-2 me-1 fs-4"></span>
+            <span class="sidebar-nav-text">Recettes</span>
+          </a><a
+            href="https://mothsart.github.io/litterature/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Littérature"
+          >
+            <span class="sidebar-nav-icon bi bi-egg-fried ms-2 me-1 fs-4"></span>
+            <span class="sidebar-nav-text">Littérature</span>
+          </a><a
+            href="https://mothsart.github.io/author/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Auteur"
+          >
+            <span class="sidebar-nav-icon bi bi-person ms-2 me-1 fs-4"></span>
+            <span class="sidebar-nav-text">Auteur</span>
+          </a><a
+            href="https://mothsart.github.io/about/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="A propos"
+          >
+            <span class="sidebar-nav-icon bi bi-question-octagon ms-2 me-1 fs-4"></span>
+            <span class="sidebar-nav-text">A propos</span>
+          </a></div>
+
+              <div class="sidebar-social mt-4 pb-4 px-3">
+                <div class="container-fluid">
+                  <div class="row justify-content-center">
+                    <div class="col-auto px-2">
+        <a
+          href="mailto:jerem.ferry@email.com"
+          target="_blank" rel="noopener noreferrer"
+          data-bs-toggle="tooltip"
+          data-bs-title='Email'
+          class="text-decoration-none"
+        >
+          <span class="bi bi-envelope-fill"></span>
+        </a>
+      </div><div class="col-auto px-2">
+        <a
+          href="https://github.com/mothsart"
+          target="_blank" rel="noopener noreferrer"
+          data-bs-toggle="tooltip"
+          data-bs-title='GitHub'
+          class="text-decoration-none"
+        >
+          <span class="bi bi-github"></span>
+        </a>
+      </div><div class="col-auto px-2">
+        <a
+          href="https://twitter.com/mothsart1"
+          target="_blank" rel="noopener noreferrer"
+          data-bs-toggle="tooltip"
+          data-bs-title='Twitter'
+          class="text-decoration-none"
+        >
+          <span class="bi bi-twitter"></span>
+        </a>
+      </div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="searchModalLabel">
+          
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div
+          id="searchInput" role="search" 
+          class="d-flex mb-3 border rounded-5 bg-white"
+        >
+          <input
+            id="search" type="search"
+            class="form-control border border-0 rounded-5 rounded-end"
+            placeholder="rechercher"
+            aria-label="rechercher"
+          >
+          <div class="rounded-5 rounded-start py-2 ps-2 pe-3">
+            <span class="bi bi-search"></span>
+          </div>
+        </div>
+        <div class="search-results">
+          <div class="search-results__items">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="https://mothsart.github.io/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    const myModal = document.getElementById('searchModal');
+    const myInput = document.getElementById('searchInput');
+
+    myModal.addEventListener('shown.bs.modal', () => {
+      myInput.focus()
+    });
+  </script>
+   <script src="https://mothsart.github.io/elasticlunr.min.js"></script>
+  <script src="https://mothsart.github.io/search_index.fr.js"></script><script src="https://mothsart.github.io/assets/js/search/lunr.stemmer.support.min.js"></script>
+    <script src="https://mothsart.github.io/assets/js/search/lunr.fr.min.js"></script><script src="https://mothsart.github.io/assets/js/search/search.js"></script>
+</body>
+</html>
