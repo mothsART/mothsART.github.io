@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pour une IA open source - Le Labo du Nerd</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+  <link rel="stylesheet" href="https://mothsart.github.io/assets/css/custom.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"><link rel="apple-touch-icon" sizes="180x180" href="https://mothsart.github.io/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://mothsart.github.io/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://mothsart.github.io/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://mothsart.github.io/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="https://mothsart.github.io/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff"><link rel="canonical" href="https://mothsart.github.io/devblog/ia-open-source/" /><meta name="author" content="Jérémie Ferry @alias mothsart"><meta property="article:published_time" content='2026-10-18' /><meta name="generator" content="Zola">
+  <meta property="og:title" content="Pour une IA open source" />
+  <meta property="og:url" content="https://mothsart.github.io/devblog/ia-open-source/" /><meta property="og:site_name" content="Le Labo du Nerd" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary" /><meta name="twitter:creator" content="@user" />
+  
+</head>
+<body>
+  <div class="container-fluid vh-100">
+    <div class="row h-100"><div
+    class="sidebar d-none d-lg-block col-lg-3 col-xl-2 mh-100 p-0 overflow-auto"
+  >
+    <aside class="d-flex flex-column justify-content-between h-100">
+      <div class="d-none d-md-block mb-4 pt-5 px-4 text-center">
+        <!--
+        <div class="sidebar-avatar mb-2 mx-auto border border-3 rounded-circle">
+          <a href="https://mothsart.github.io/" target="_blank" rel="noopener noreferrer">
+    <img
+      src="https://mothsart.github.io/images/avatar.png"
+      alt="Jérémie Ferry @alias mothsart"
+      class="img-fluid"
+    >
+  </a>
+        </div>
+        -->
+        <div class="mb-1">
+          <a
+            href="https://mothsart.github.io/"
+            class="sidebar-title fs-5 fw-bold text-decoration-none"
+          >
+            Le Labo du Nerd
+          </a>
+        </div>
+        <div class="fw-light">
+          Ce dev-blog-draft est celui d'un passionné du #numérique. Souvent dans la remise en question, rarement satisfait, en recherche de singularité. Ce site est avant-tout un réel banc d'essai : un labo ou je m'éclate et écrit au fil de l'eau mes essais... il n'a donc pas de délais de livraison.
+        </div>
+      </div>
+
+      <div class="sidebar-nav list-group my-auto rounded-0 text-center"><a
+            href="https://mothsart.github.io/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Accueil"
+          >
+            <span class="sidebar-nav-icon bi bi-house fs-4"></span>
+            <span class="sidebar-nav-text d-none d-md-inline">
+              Accueil
+            </span>
+          </a>
+      <a
+            href="https://mothsart.github.io/devblog/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Devblog"
+          >
+            <span class="sidebar-nav-icon bi bi-terminal fs-4"></span>
+            <span class="sidebar-nav-text d-none d-md-inline">
+              Devblog
+            </span>
+          </a>
+      <a
+            href="https://mothsart.github.io/reflexion/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Réflexion"
+          >
+            <span class="sidebar-nav-icon bi bi bi-lightbulb fs-4"></span>
+            <span class="sidebar-nav-text d-none d-md-inline">
+              Réflexion
+            </span>
+          </a>
+      <a
+            href="https://mothsart.github.io/recieps/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Recettes"
+          >
+            <span class="sidebar-nav-icon bi bi-egg-fried fs-4"></span>
+            <span class="sidebar-nav-text d-none d-md-inline">
+              Recettes
+            </span>
+          </a>
+      <a
+            href="https://mothsart.github.io/litterature/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Littérature"
+          >
+            <span class="sidebar-nav-icon bi bi-egg-fried fs-4"></span>
+            <span class="sidebar-nav-text d-none d-md-inline">
+              Littérature
+            </span>
+          </a>
+      <a
+            href="https://mothsart.github.io/author/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Auteur"
+          >
+            <span class="sidebar-nav-icon bi bi-person fs-4"></span>
+            <span class="sidebar-nav-text d-none d-md-inline">
+              Auteur
+            </span>
+          </a>
+      <a
+            href="https://mothsart.github.io/about/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="A propos"
+          >
+            <span class="sidebar-nav-icon bi bi-question-octagon fs-4"></span>
+            <span class="sidebar-nav-text d-none d-md-inline">
+              A propos
+            </span>
+          </a>
+      </div>
+
+      <div class="sidebar-social d-none d-md-block mt-4 pb-4 px-4">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-auto px-2">
+        <a
+          href="mailto:jerem.ferry@email.com"
+          target="_blank" rel="noopener noreferrer"
+          data-bs-toggle="tooltip"
+          data-bs-title='Email'
+          class="text-decoration-none"
+        >
+          <span class="bi bi-envelope-fill"></span>
+        </a>
+      </div><div class="col-auto px-2">
+        <a
+          href="https://github.com/mothsart"
+          target="_blank" rel="noopener noreferrer"
+          data-bs-toggle="tooltip"
+          data-bs-title='GitHub'
+          class="text-decoration-none"
+        >
+          <span class="bi bi-github"></span>
+        </a>
+      </div><div class="col-auto px-2">
+        <a
+          href="https://twitter.com/mothsart1"
+          target="_blank" rel="noopener noreferrer"
+          data-bs-toggle="tooltip"
+          data-bs-title='Twitter'
+          class="text-decoration-none"
+        >
+          <span class="bi bi-twitter"></span>
+        </a>
+      </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div><div class="col mh-100 overflow-auto px-0"><nav
+    class="navbar navbar-expand navbar-bg-light sticky-top border-bottom"
+  >
+    <div class="container-fluid"><button
+        type="button"
+        class="btn d-block d-lg-none fs-5"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+        aria-controls="offcanvas"
+      >
+        <span class="bi bi-list"></span>
+      </button>
+      
+      <div class="col-8">
+        
+          <div class="row justify-content-center justify-content-lg-start p-2 ps-xl-3 text-center"><div class="col-auto d-none d-xl-block">
+        <a
+          href="https://mothsart.github.io/devblog/"
+          class="text-decoration-none"
+        >
+          Blog
+        </a>
+      </div>
+      <div class="col-auto d-none d-xl-block">
+        <span class="text-secondary">
+          »
+        </span>
+      </div><div class="col-auto">
+      <span
+        class="d-inline d-sm-none text-secondary"
+        data-bs-toggle="tooltip"
+        data-bs-title="Pour une IA open source"
+      >
+        Pour une IA open…
+      </span>
+      <span
+        class="d-none d-sm-inline text-secondary"
+        data-bs-toggle="tooltip"
+        data-bs-title="Pour une IA open source"
+      >
+        Pour une IA open source
+      </span>
+    </div>
+  </div>
+        
+      </div>
+
+      <button
+    type="button" data-bs-toggle="modal" data-bs-target="#searchModal"
+    class="btn border border-0"
+  >
+    <span class="bi bi-search fs-5"></span>
+  </button>
+    </div>
+  </nav><div class="d-flex flex-column h-100"><main class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-11 col-lg-10 col-xxl-9">
+        <h1>
+          Pour une IA open source
+        </h1>
+        <div class="row">
+            <div class="blog-head-left col-6">
+                <div class="col-auto">
+    <small class="text-muted">
+      Par :
+      <a
+        href="https://mothsart.github.io/"
+        target="_blank" rel="noopener noreferrer"
+        class="text-decoration-none"
+      >
+        Jérémie Ferry @alias mothsart
+      </a>
+    </small>
+  </div>
+
+  <div class="col-auto mb-2">
+    <small class="text-muted">
+      Posté le
+      <time datetime="2026-10-18">
+        <span
+          class="text-muted text-decoration-none"
+        >
+            18 Octobre 2026
+        </span>
+      </time>
+    </small>
+  </div>
+
+  
+            </div>
+            <div class="blog-head-right col-6">
+                
+      <div class="col-auto">
+          <span class="bi bi-bookmarks fs-6 me-1"></span>
+          
+    <a
+      href="https://mothsart.github.io/categories/ia/"
+      class="btn btn-taxonomy btn-sm m-1 border text-decoration-none"
+    >
+      <small>
+        ia
+      </small>
+    </a>
+  
+      </div>
+  
+  
+  
+            </div>
+        </div><div class="mb-5">
+          <h2 id="intro">Intro</h2>
+<p>Pourquoi l'IA génératif (un LLM) a besoin d'être open de A à Z et pas que de nom (https://openfatigue.ai) ?
+Peux être pour apporter quelque chose à l'Humanité ?
+L'Humanité = ensemble des humains.
+L'Humanité !== d'une minorité d'humains avec une vision court termiste.</p>
+<h2 id="preambule">Préambule</h2>
+<p>Avant de rentrer dans le vif du sujet, je vais partir d'un postulat :</p>
+<ul>
+<li>Une machine n'a par nature aucune intelligence. L'IA tourne sur une machine donc elle n'en a aucune.
+Je vais le détaillé plus loin mais si vous êtes convaincu du contraire, passez votre chemin.</li>
+<li>Je ne vais parler que de LLM et pas des autres algos que le commun des mortelles classe dans le mot valise IA.</li>
+<li>Un gros LLM ne fonctionne que :
+<ul>
+<li>Si il y a un Internet libre et décentralisé. (il suffit de voir le traffic délirant des bots d'IA actuels pour s'en convaincre)</li>
+<li>Si des cathédrales de savoir comme Wikipédia sont à porté de clic, gratuitement.</li>
+<li>Si on occulte toutes les histoires de droit d'auteur.</li>
+<li>Si des sommes collossales sont accordés à des data-center dimensionnés pour.</li>
+</ul>
+</li>
+<li>Mon exercice est de vulgariser donc de choisir délibérément de faire des raccourcis car il est impossible de tout aborder en profondeur.
+Il est possible de refuter, surtout si vous avez une connaissance fine du sujet pas mal de points car ils sont imprécis.
+Merci de faire l'effort intellectuel de ne pas vous formaliser sur les détails mais sur l'axe générale.</li>
+<li>Je suis humain et faïble : je n'ai pas la prétention de tout comprendre à la perfection.
+Néanmoins, je pense avoir potassé le sujet et amélioré ma compréhension au fil du temps.</li>
+<li>L'exercice d'écriture me permet aussi de formaliser mes connaissances. C'est un exhutoire en quelque sorte.</li>
+</ul>
+<h2 id="postulat-simple-il-n-y-a-aucune-intelligence-dans-l-inference-d-un-llm">Postulat simple : Il n'y a aucune intelligence dans l'inférence d'un LLM</h2>
+<p>Je rappel ce que c'est que l'inférence. C'est quand un utilisateur prompt une LLM et que celle-ci <del>réfléchit</del> calcule et lui donne un résultat.</p>
+<p>Je vais déjà parler de l'intelligence humaine.
+L'intelligence humaine, c'est une intelligence biologique.
+On part du postulat un peu naif que celle humaine est la plus remarquable. (ce qui est foncièrement discutable mais soit)
+On le sait depuis un moment, elle a des biais cognitifs tenaces.
+Plusieurs biais (rétrospectif, résultat, survie, confirmation, illusion de corrélation etc.) font qu'on pense avoir le lien entre cause et conséquence.</p>
+<p>Et pour l'IA, on y échappe pas : si une réponse semble très intelligente, si on arrive pas à comprendre comment elle a été construite, c'est qu'elle provient forcément d'une entité intelligente.
+L'IA est donc le nouveau dieu qui sait tout parce que le résultat est tellement brillant qu'il ne peut pas naitre d'un algoritme totalement imbécile qui ne prédit que le mot suivant, n'est-ce pas ?</p>
+<p>Maintenant, faisons ensemble l'exercice de pensée inverse.
+Les machines, aussi complexes soient-elles sont dépourvus de raisonnement.</p>
+<p>Un LLM, à la base, c'est quoi ?
+C'est 2 algos très simples de quelques milliers de lignes de codes :
+1 algo d'entrainement pour transformer du texte en une liste de valeurs décimales. (des poids en virgule flottante, si vous préférez)
+1 algo d'inférence pour prédire le mot suivant d'un texte n fois. (à chaque opération, il reprend le mot trouvé dans sa sortie et il le rajoute dans son entrée)</p>
+<p>Alors, oui, les puristes me diront qu'il y a du fine tuning, du renforcement, du MoE etc.
+Ce n'est pas faux mais la base c'est ça. Le reste c'est juste des moyens d'améliorer (sans réentrainement très couteux par exemple).</p>
+<p>Une fois qu'on a compris ça, on se rend compte que toute la "valeur" ne se trouve pas dans l'algorithme mais dans la donnée structurée.
+La donnée d'entrainement, on appele ça communément un <strong>data set</strong>.
+Le data set d'un très gros modèle d'IA, c'est quoi ?
+C'est stricto sinsu, toute la donnée textuelle produite par l'Humanité (qui a nécessité beaucoup d'intelligence, en effet) qu'on a pu récolté (piller ?), et qu'on a mis en forme (affinage, tri etc).
+Bien évidemment, dans toute cette matière, on a beaucoup de données à faible valeur. (la discussion de Paulette avec Bernard sur le temps qu'il fera demain sur le forum tartancoin par ex).
+On est donc obligé de faire des réglage fin soit en amont (fine tuning) de l'entrainement soit en aval (renforcement).
+C'est fait par qui ? Des humains qualifiés et surtout pas des LLM !
+Donc l'intelligence produite pour cet exercice est encore humaine.</p>
+<p>Qu'est-ce que l'entrainement va produire ?
+Un modèle composé de paramètres et d'un vocabulaire.</p>
+<p>Le vocabulaire, c'est l'ensemble des tokens.
+Un token, c'est un morceau de texte atomique : mot courant entier, fragment de mot, élément de ponctuation etc.
+Donc le vocabulaire c'est la liste exhaustive et sans doublons des tokens possibles.
+Si on supprimes volontairement le token "con" du vocabulaire du modèle, alors on n'auras plus aucun "con" dans le texte inféré.
+On n'aura plus non plus les mots "construit", "constitution" etc. C'est con ?</p>
+<p>Puis, on a les paramètres. Les paramètres c'est une liste de corrélations entre des tokens avec un poids.
+Imaginons la phrase "c'est con." composé de plusieurs tokens. C'est un association assez forte qu'on retrouvera souvent donc avec un poids élevés.
+La phrase "Macron est loin d'être con." existera sans doute dans le data set mais sera beaucoup moins présent donc poid faible.</p>
+<p>Pour les puristes, je sais qu'il y a des vecteurs, leur dimension, des potentiels biais etc. mais est-ce que c'est vraiment utile, ici, de le mentionner ?</p>
+<p>Donc l'algo d'entrainement va donc parcourir une quantité incroyable de texte n fois et en déduire des paramètres.
+Plus il aura de paramètres et plus il sera gros.
+On peut donc facilement en déduire que plus on aura de paramètres à la sortie pour le même data set et plus on aura de finesse dans l'inférence.
+Le revers de la médaille : plus c'est gros et plus c'est gourmand à produire pendant la phase d'entrainement et pendant la phase d'inférence.
+Ce ratio ne sera pas linéaire mais plutôt quadratique.
+C'est bien pour ça qu'il y a des grandes batailles entre les petits modèles et les plus gros.
+2 modèles (toujours avec le même data set) dont leur taille ont un rapport de 2, auront un impact de consommation avec un rapport de 4... mais leur différence de résultats seront beaucoup plus diffus.
+On pourra pas vraiment dire : c'est 2 fois meilleur. Sur certaines questions, ça aura exactement le même résultat.
+Sur d'autres, le modèle le plus petit halucinera (réponse dénué de sens) alors que le modèle plus gros donnera une réponse acceptable.
+La seule chose qu'on peut garantir c'est que, en moyenne, ça sera meilleur. Mais donner un ratio sera quasiment impossible.</p>
+<p>Qu'est-ce qu'on peut en déduire ?</p>
+<ol>
+<li>Un modèle est tout aussi statique et prédictible qu'un logiciel composé d'une suite de if/else.
+La différence : le champ des possibles est tellement étendues qu'il est impossible pour l'esprit humain de l'anticiper dans une échelle de temps raisonnable.</li>
+<li>On est incapable de faire de la rétro-ingénierie sur un modèle.
+On ne sera pas en capacité de connaitre le data set à partir du modèle (comme on le ferait potentiellement avec un binaire pour connaitre son code source).
+Trop de choses ont été perdus.</li>
+<li>On peut néanmoins retoucher le modèle en ajustant des paramètres. C'est ce qu'on appelle le renforcement.
+Ca marche très bien et ça évite de retoucher au data set et refaire une séance d'entrainement très couteux. (des mois)</li>
+<li>La seule intelligence dans un LLM est humaine. L'intelligence humaine se retrouve dans la construction du modèle et dans le prompt (la personne qui l'interroge).
+On en déduis donc que si la personne qui prompt est intelligente, elle saura formaliser sa pensée de tel manière à obtenir plus facilement des informations interessantes.
+De même, si elle a une compréhension de la réponse, elle saura en tirer mieux avantage.</li>
+</ol>
+<h2 id="mais-si-c-est-aussi-simple-pourquoi-ca-fait-des-choses-aussi-impressionnantes">Mais si c'est aussi simple, pourquoi ça fait des choses aussi impressionnantes ?</h2>
+<p>Repartons d'un postulat simple : on utilise des calculatrices depuis longtemps.
+Personne n'attribut de l'intelligence à une calculatrice. Pourtant, calculer une racine carré de tête par un humain nécessite de grandes capacités intellectuelles.
+A contrario, peu de personnes savent comment fonctionnent une calculatrice.
+Nous avons néanmoins admis collectivement que c'est un objet inerte qui est capable d'inférer des réponses à des problèmes mathématiques.
+Ce qui fait que la calculatrice apporte un gain c'est bien la raison pour laquel elle est employé et l'usage de son résultat, non ?</p>
+<p>Autre postulat : beaucoup de découvertes ne sont pas que le fruit de l'intelligence mais de sa corrélation avec un facteur chance.
+La tarte tatin n'aurait pas été inventé sans oubli. Newton n'aurait peut-être pas découvert certaines lois si il n'avait pas été percuté par une pomme etc.
+Il est communément admis que tout le savoir humain ne peut plus reposer dans un esprit.
+Donc 2 cerveaux brillants ont potentiellement trouvés chacun 2 pièces d'un puzzle (problème mathématique par exemple) plus grand mais pour pouvoir le réaliser, ils ont besoin de confronter leurs savoirs respectifs.</p>
+<p>Mais, je ne comprend pas : si je pose des questions à mon IA, elle va me faire une réponse personnalisé ? C'est qu'elle s'adapte et est donc intelligente, non ?
+Eh non, toujours.</p>
+<ol>
+<li>
+<p>D'une part, elle s'appuie sur une notion qu'on appelle le "contexte window". En réalité, la réponse qu'elle va vous apportez dépendra de vos questions précédentes. (dans une limite physique propre à l'IA employé)
+En fait, à chaque question de votre contexte, elle ne va pas prendre votre dernière question mais l'ensemble du texte (question/réponse) comme entrée pour pouvoir inférer la nouvelle réponse.</p>
+</li>
+<li>
+<p>Elle va tricher. Pour certaines questions, elle va interroger le web en sous-marins. Les résultats qu'elle aura trouvé seront directement injecté dans son prompt interne (non visible par l'utilisateur).
+Et donc, elle va faire des rapprochements entre des données dans son modèle (qui a été entrainé à telle date) et d'autres récentes qu'elle a collecté et injecté dans son entrée.
+C'est donc encore un moyen de collecter de l'intelligence (des données sur des sites sérieux écrit par des neuronnes biologiques) hors de son périmètre en faisant croire que ça vient d'elle.</p>
+</li>
+<li>
+<p>Elle va utiliser des agents.</p>
+</li>
+</ol>
+<h2 id="un-modele-ferme">Un modèle fermé</h2>
+<p>Actuellement, les</p>
+<h2 id=""></h2>
+<p>On peut donc</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>PS : ce texte a été écrit entièrement à la main, sans LLM. Même pas pour la relecture.
+Les fôtes seront en quelque sorte une valeur de preuve (même si, il est factuellement impossible de prouver qu'un texte a été écrit par une IA, on peut raisonnablement en déduire que la probabilité est faible).</p>
+
+        </div>
+      </div>
+    </div>
+  </main><div class="container">
+    <div class="row justify-content-center mt-3 mb-4">
+      <div class="col-11 col-lg-10 col-xxl-9"></div>
+    </div>
+  </div><footer class="container-fluid mt-auto">
+    <div class="row justify-content-center">
+      <div class="col-10">
+        <div class="row pt-3 pb-4 border-top">
+          <div class="col-12 col-md-6 mb-2 mb-md-0 text-center text-md-start">
+            <small class="text-secondary">
+              © 2026
+              <a 
+                href="https://mothsart.github.io/"
+                target="_blank" rel="noopener noreferrer"
+                class="text-decoration-none"
+              >
+                Jérémie Ferry @alias mothsart&period;
+              </a>
+            </small>
+          </div>
+          <div class="col-12 col-md-6 text-center text-md-end">
+            <small class="text-secondary">
+              Créé à partir de
+              <a 
+                href="https://www.getzola.org/"
+                target="_blank" rel="noopener noreferrer"
+                class="text-decoration-none"
+              >
+                Zola
+              </a>
+              avec
+              <a 
+                href="https://github.com/mothsART/devlab-zola"
+                target="_blank" rel="noopener noreferrer"
+                class="text-decoration-none"
+              >
+                DevLab
+              </a>
+              theme.
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+    <div class="offcanvas-body p-0">
+      <div class="sidebar container-fluid vh-100">
+        <div class="row h-100">
+          <div
+            class="col mh-100 px-0 overflow-auto"
+          >
+            <aside class="d-flex flex-column justify-content-between h-100">
+              <div class="mb-4 pt-5 px-3 text-center">
+                <!--
+                <div class="sidebar-avatar mb-2 mx-auto border border-3 rounded-circle">
+                  <a href="https://mothsart.github.io/" target="_blank" rel="noopener noreferrer">
+    <img
+      src="https://mothsart.github.io/images/avatar.png"
+      alt="Jérémie Ferry @alias mothsart"
+      class="img-fluid"
+    >
+  </a>
+                </div>
+                -->
+                <div>
+                  <a
+                    href="https://mothsart.github.io/"
+                    class="sidebar-title fs-5 fw-bold text-decoration-none"
+                  >
+                    Le Labo du Nerd
+                  </a>
+                </div>
+              </div>
+
+              <div class="sidebar-nav list-group my-auto rounded-0 text-start"><a
+            href="https://mothsart.github.io/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Accueil"
+          >
+            <span class="sidebar-nav-icon bi bi-house ms-2 me-1 fs-4"></span>
+            <span class="sidebar-nav-text">Accueil</span>
+          </a><a
+            href="https://mothsart.github.io/devblog/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Devblog"
+          >
+            <span class="sidebar-nav-icon bi bi-terminal ms-2 me-1 fs-4"></span>
+            <span class="sidebar-nav-text">Devblog</span>
+          </a><a
+            href="https://mothsart.github.io/reflexion/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Réflexion"
+          >
+            <span class="sidebar-nav-icon bi bi bi-lightbulb ms-2 me-1 fs-4"></span>
+            <span class="sidebar-nav-text">Réflexion</span>
+          </a><a
+            href="https://mothsart.github.io/recieps/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Recettes"
+          >
+            <span class="sidebar-nav-icon bi bi-egg-fried ms-2 me-1 fs-4"></span>
+            <span class="sidebar-nav-text">Recettes</span>
+          </a><a
+            href="https://mothsart.github.io/litterature/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Littérature"
+          >
+            <span class="sidebar-nav-icon bi bi-egg-fried ms-2 me-1 fs-4"></span>
+            <span class="sidebar-nav-text">Littérature</span>
+          </a><a
+            href="https://mothsart.github.io/author/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="Auteur"
+          >
+            <span class="sidebar-nav-icon bi bi-person ms-2 me-1 fs-4"></span>
+            <span class="sidebar-nav-text">Auteur</span>
+          </a><a
+            href="https://mothsart.github.io/about/"
+            class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+            data-bs-toggle="tooltip" data-bs-title="A propos"
+          >
+            <span class="sidebar-nav-icon bi bi-question-octagon ms-2 me-1 fs-4"></span>
+            <span class="sidebar-nav-text">A propos</span>
+          </a></div>
+
+              <div class="sidebar-social mt-4 pb-4 px-3">
+                <div class="container-fluid">
+                  <div class="row justify-content-center">
+                    <div class="col-auto px-2">
+        <a
+          href="mailto:jerem.ferry@email.com"
+          target="_blank" rel="noopener noreferrer"
+          data-bs-toggle="tooltip"
+          data-bs-title='Email'
+          class="text-decoration-none"
+        >
+          <span class="bi bi-envelope-fill"></span>
+        </a>
+      </div><div class="col-auto px-2">
+        <a
+          href="https://github.com/mothsart"
+          target="_blank" rel="noopener noreferrer"
+          data-bs-toggle="tooltip"
+          data-bs-title='GitHub'
+          class="text-decoration-none"
+        >
+          <span class="bi bi-github"></span>
+        </a>
+      </div><div class="col-auto px-2">
+        <a
+          href="https://twitter.com/mothsart1"
+          target="_blank" rel="noopener noreferrer"
+          data-bs-toggle="tooltip"
+          data-bs-title='Twitter'
+          class="text-decoration-none"
+        >
+          <span class="bi bi-twitter"></span>
+        </a>
+      </div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="searchModalLabel">
+          
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div
+          id="searchInput" role="search" 
+          class="d-flex mb-3 border rounded-5 bg-white"
+        >
+          <input
+            id="search" type="search"
+            class="form-control border border-0 rounded-5 rounded-end"
+            placeholder="rechercher"
+            aria-label="rechercher"
+          >
+          <div class="rounded-5 rounded-start py-2 ps-2 pe-3">
+            <span class="bi bi-search"></span>
+          </div>
+        </div>
+        <div class="search-results">
+          <div class="search-results__items">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="https://mothsart.github.io/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    const myModal = document.getElementById('searchModal');
+    const myInput = document.getElementById('searchInput');
+
+    myModal.addEventListener('shown.bs.modal', () => {
+      myInput.focus()
+    });
+  </script>
+   <script src="https://mothsart.github.io/elasticlunr.min.js"></script>
+  <script src="https://mothsart.github.io/search_index.fr.js"></script><script src="https://mothsart.github.io/assets/js/search/lunr.stemmer.support.min.js"></script>
+    <script src="https://mothsart.github.io/assets/js/search/lunr.fr.min.js"></script><script src="https://mothsart.github.io/assets/js/search/search.js"></script>
+</body>
+</html>

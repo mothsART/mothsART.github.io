@@ -53,6 +53,12 @@
         <loc>https://mothsart.github.io/categories/google/page/1/</loc>
     </url>
     <url>
+        <loc>https://mothsart.github.io/categories/ia/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/categories/ia/page/1/</loc>
+    </url>
+    <url>
         <loc>https://mothsart.github.io/categories/linux/</loc>
     </url>
     <url>
@@ -65,10 +71,22 @@
         <loc>https://mothsart.github.io/categories/litterature/page/1/</loc>
     </url>
     <url>
+        <loc>https://mothsart.github.io/categories/paradoxe/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/categories/paradoxe/page/1/</loc>
+    </url>
+    <url>
         <loc>https://mothsart.github.io/categories/plat/</loc>
     </url>
     <url>
         <loc>https://mothsart.github.io/categories/plat/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/categories/politique/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/categories/politique/page/1/</loc>
     </url>
     <url>
         <loc>https://mothsart.github.io/categories/python/</loc>
@@ -109,6 +127,18 @@
         <lastmod>2023-03-25</lastmod>
     </url>
     <url>
+        <loc>https://mothsart.github.io/devblog/ia-2026/</loc>
+        <lastmod>2026-10-28</lastmod>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/devblog/ia-contre-attaque/</loc>
+        <lastmod>2026-09-22</lastmod>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/devblog/ia-open-source/</loc>
+        <lastmod>2026-10-18</lastmod>
+    </url>
+    <url>
         <loc>https://mothsart.github.io/devblog/ia/</loc>
         <lastmod>2023-04-22</lastmod>
     </url>
@@ -118,6 +148,9 @@
     </url>
     <url>
         <loc>https://mothsart.github.io/devblog/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/devblog/page/2/</loc>
     </url>
     <url>
         <loc>https://mothsart.github.io/devblog/shell-linux/</loc>
@@ -210,6 +243,17 @@
     </url>
     <url>
         <loc>https://mothsart.github.io/reflexion/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/reflexion/page/2/</loc>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/reflexion/paradoxes/</loc>
+        <lastmod>2026-10-18</lastmod>
+    </url>
+    <url>
+        <loc>https://mothsart.github.io/reflexion/politique-et-engagement/</loc>
+        <lastmod>2026-10-18</lastmod>
     </url>
     <url>
         <loc>https://mothsart.github.io/reflexion/sortir-du-siecle-des-lumieres/</loc>
