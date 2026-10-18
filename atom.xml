@@ -5,8 +5,537 @@
     <link rel="self" type="application/atom+xml" href="https://mothsart.github.io/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://mothsart.github.io/"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2025-10-16T00:00:00+00:00</updated>
+    <updated>2026-10-28T00:00:00+00:00</updated>
     <id>https://mothsart.github.io/atom.xml</id>
+    <entry xml:lang="fr">
+        <title>IA en 2026</title>
+        <published>2026-10-28T00:00:00+00:00</published>
+        <updated>2026-10-28T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://mothsart.github.io/devblog/ia-2026/"/>
+        <id>https://mothsart.github.io/devblog/ia-2026/</id>
+        
+        <content type="html" xml:base="https://mothsart.github.io/devblog/ia-2026/">&lt;h1 id=&quot;vocabulaire&quot;&gt;Vocabulaire&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Context window&quot; : la fenêtre de contexte, qui représente tout ce que le modèle &quot;voit&quot; lors d&#x27;un échange&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Perroquet stochastique&quot; : néologisme utilisé par les sceptiques de l&#x27;IA pour signifier que les LLM ne comprennent pas le sens de leurs résultats.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;prompt : l&#x27;art de bien poser votre question.
+Contexte + demande + résultat attendu =&amp;gt; intention&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Chain of Thought CoT (cahine de pensée) :
+La chaîne de pensée (CoT) est une technique de prompt engineering qui améliore les résultats des grands modèles de langage (LLM), en particulier pour les tâches complexes impliquant un raisonnement en plusieurs étapes. Elle facilite la résolution de problèmes en guidant le modèle à travers un processus de raisonnement par étapes à l’aide d’une série cohérente d’étapes logiques.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;raisonnent en espace latent&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;token : séquence de signaux discrets. (environ 100K morceaux de mots possibles)&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;reinforcment learning&quot; :&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&quot;Fine-tuning&quot; : règlage fin&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;collapse = effondrement&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;La méthode d&#x27;alignement (RLHF) : L&#x27;apprentissage par renforcement à partir du feedback humain (RLHF) est une technique de machine learning (ML) qui utilise le feedback humain pour optimiser les modèles ML afin d&#x27;améliorer l&#x27;efficacité de l&#x27;autoapprentissage&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;alignement : en IA, correspondance entre les objectifs d&#x27;une intelligence artificielles et les valeurs ou intentions humaines.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Economie de la connaissance&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;nb de paramètres : en B (billions)&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;MoE : mélange d’experts =&amp;gt; méthode qui permet de n&#x27;activer qu&#x27;une partie des paramètres&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;distillation : principe d&#x27;entrainer un petit modèle avec un plus grand.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;entrainement&#x2F;inférence&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;température : paramètre qui contrôle le degré d&#x27;aléatoire dans les réponses du modèle. Plus la température est faible, plus les réponses sont prévisibles ; plus elle est élevée, plus elles sont variées et créatives.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;MCP : wrapper d&#x27;API pour IA.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;hallucination : le principe du LLM est de prédire les mots suivants. Si il n&#x27;a pas été entrainé sur le sujet, il va tenter des choses approchants mais fausses.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;embedding (ou calcul de l&#x27;embedding): transformation de données complexe en une suite de chiffres. (vecteurs)&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Base vectorielle : stockage conçu poar garder et chercher des données sous forme de listes de nombres.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;réseau convultif != llm&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Poids :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;valeur entre 0 et n (en virgule flotante)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;techniques-d-amelioration&quot;&gt;Techniques d&#x27;amélioration&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;quantisation : réduction de la précision numérique des paramètres (poids) d&#x27;un modèle.
+Ex : 32 bits vers 8 bits.&lt;&#x2F;li&gt;
+&lt;li&gt;Pruning :&lt;&#x2F;li&gt;
+&lt;li&gt;Distillation : réentrainement d&#x27;un petit modèle avec un grand.&lt;&#x2F;li&gt;
+&lt;li&gt;Caching : éviter de recalculer des parties de l&#x27;inférence.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;formules&quot;&gt;Formules&lt;&#x2F;h2&gt;
+&lt;p&gt;Paradoxe de Moravec : le plus difficile en robotique est souvent ce qui est le plus facile pour l&#x27;homme.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;liens-importants&quot;&gt;Liens importants&lt;&#x2F;h2&gt;
+&lt;p&gt;https:&#x2F;&#x2F;epoch.ai&#x2F; : donne un état des lieux neutre sur les IA.
+https:&#x2F;&#x2F;commoncrawl.org&#x2F; : snapshot du web
+https:&#x2F;&#x2F;huggingface.co&#x2F; : Hugging Face : Communauté open-source IA
+Hub =&amp;gt;&lt;br &#x2F;&gt;
+INRIA&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;www.canirun.ai&#x2F;
+llmfi : identifier ce qui peut tourner sur sa machine&lt;&#x2F;p&gt;
+&lt;p&gt;token par secondes&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;orateurs&quot;&gt;Orateurs&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Yann Lecun&lt;&#x2F;li&gt;
+&lt;li&gt;Marine Le Morvan : chercheuse INRIA sur les TFM&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;differentes-ia&quot;&gt;Différentes IA&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;NLP :&lt;&#x2F;li&gt;
+&lt;li&gt;RAG : combinaison de recherche externe de document avec une base de donnée vectiorielle. (permet de rechercher en langage naturel)
+Ex : recherche dans des documents (pdf)&lt;&#x2F;li&gt;
+&lt;li&gt;Agentic IA :&lt;&#x2F;li&gt;
+&lt;li&gt;LLM : Large Langage Model&lt;&#x2F;li&gt;
+&lt;li&gt;Machine learning :&lt;&#x2F;li&gt;
+&lt;li&gt;Deep learning :&lt;&#x2F;li&gt;
+&lt;li&gt;TFM : Les “Tabular Foundation Models”.&lt;&#x2F;li&gt;
+&lt;li&gt;WM : World Models.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="fr">
+        <title>Pour une IA open source</title>
+        <published>2026-10-18T00:00:00+00:00</published>
+        <updated>2026-10-18T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://mothsart.github.io/devblog/ia-open-source/"/>
+        <id>https://mothsart.github.io/devblog/ia-open-source/</id>
+        
+        <content type="html" xml:base="https://mothsart.github.io/devblog/ia-open-source/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;&#x2F;h2&gt;
+&lt;p&gt;Pourquoi l&#x27;IA génératif (un LLM) a besoin d&#x27;être open de A à Z et pas que de nom (https:&#x2F;&#x2F;openfatigue.ai) ?
+Peux être pour apporter quelque chose à l&#x27;Humanité ?
+L&#x27;Humanité = ensemble des humains.
+L&#x27;Humanité !== d&#x27;une minorité d&#x27;humains avec une vision court termiste.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;preambule&quot;&gt;Préambule&lt;&#x2F;h2&gt;
+&lt;p&gt;Avant de rentrer dans le vif du sujet, je vais partir d&#x27;un postulat :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Une machine n&#x27;a par nature aucune intelligence. L&#x27;IA tourne sur une machine donc elle n&#x27;en a aucune.
+Je vais le détaillé plus loin mais si vous êtes convaincu du contraire, passez votre chemin.&lt;&#x2F;li&gt;
+&lt;li&gt;Je ne vais parler que de LLM et pas des autres algos que le commun des mortelles classe dans le mot valise IA.&lt;&#x2F;li&gt;
+&lt;li&gt;Un gros LLM ne fonctionne que :
+&lt;ul&gt;
+&lt;li&gt;Si il y a un Internet libre et décentralisé. (il suffit de voir le traffic délirant des bots d&#x27;IA actuels pour s&#x27;en convaincre)&lt;&#x2F;li&gt;
+&lt;li&gt;Si des cathédrales de savoir comme Wikipédia sont à porté de clic, gratuitement.&lt;&#x2F;li&gt;
+&lt;li&gt;Si on occulte toutes les histoires de droit d&#x27;auteur.&lt;&#x2F;li&gt;
+&lt;li&gt;Si des sommes collossales sont accordés à des data-center dimensionnés pour.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Mon exercice est de vulgariser donc de choisir délibérément de faire des raccourcis car il est impossible de tout aborder en profondeur.
+Il est possible de refuter, surtout si vous avez une connaissance fine du sujet pas mal de points car ils sont imprécis.
+Merci de faire l&#x27;effort intellectuel de ne pas vous formaliser sur les détails mais sur l&#x27;axe générale.&lt;&#x2F;li&gt;
+&lt;li&gt;Je suis humain et faïble : je n&#x27;ai pas la prétention de tout comprendre à la perfection.
+Néanmoins, je pense avoir potassé le sujet et amélioré ma compréhension au fil du temps.&lt;&#x2F;li&gt;
+&lt;li&gt;L&#x27;exercice d&#x27;écriture me permet aussi de formaliser mes connaissances. C&#x27;est un exhutoire en quelque sorte.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;postulat-simple-il-n-y-a-aucune-intelligence-dans-l-inference-d-un-llm&quot;&gt;Postulat simple : Il n&#x27;y a aucune intelligence dans l&#x27;inférence d&#x27;un LLM&lt;&#x2F;h2&gt;
+&lt;p&gt;Je rappel ce que c&#x27;est que l&#x27;inférence. C&#x27;est quand un utilisateur prompt une LLM et que celle-ci &lt;del&gt;réfléchit&lt;&#x2F;del&gt; calcule et lui donne un résultat.&lt;&#x2F;p&gt;
+&lt;p&gt;Je vais déjà parler de l&#x27;intelligence humaine.
+L&#x27;intelligence humaine, c&#x27;est une intelligence biologique.
+On part du postulat un peu naif que celle humaine est la plus remarquable. (ce qui est foncièrement discutable mais soit)
+On le sait depuis un moment, elle a des biais cognitifs tenaces.
+Plusieurs biais (rétrospectif, résultat, survie, confirmation, illusion de corrélation etc.) font qu&#x27;on pense avoir le lien entre cause et conséquence.&lt;&#x2F;p&gt;
+&lt;p&gt;Et pour l&#x27;IA, on y échappe pas : si une réponse semble très intelligente, si on arrive pas à comprendre comment elle a été construite, c&#x27;est qu&#x27;elle provient forcément d&#x27;une entité intelligente.
+L&#x27;IA est donc le nouveau dieu qui sait tout parce que le résultat est tellement brillant qu&#x27;il ne peut pas naitre d&#x27;un algoritme totalement imbécile qui ne prédit que le mot suivant, n&#x27;est-ce pas ?&lt;&#x2F;p&gt;
+&lt;p&gt;Maintenant, faisons ensemble l&#x27;exercice de pensée inverse.
+Les machines, aussi complexes soient-elles sont dépourvus de raisonnement.&lt;&#x2F;p&gt;
+&lt;p&gt;Un LLM, à la base, c&#x27;est quoi ?
+C&#x27;est 2 algos très simples de quelques milliers de lignes de codes :
+1 algo d&#x27;entrainement pour transformer du texte en une liste de valeurs décimales. (des poids en virgule flottante, si vous préférez)
+1 algo d&#x27;inférence pour prédire le mot suivant d&#x27;un texte n fois. (à chaque opération, il reprend le mot trouvé dans sa sortie et il le rajoute dans son entrée)&lt;&#x2F;p&gt;
+&lt;p&gt;Alors, oui, les puristes me diront qu&#x27;il y a du fine tuning, du renforcement, du MoE etc.
+Ce n&#x27;est pas faux mais la base c&#x27;est ça. Le reste c&#x27;est juste des moyens d&#x27;améliorer (sans réentrainement très couteux par exemple).&lt;&#x2F;p&gt;
+&lt;p&gt;Une fois qu&#x27;on a compris ça, on se rend compte que toute la &quot;valeur&quot; ne se trouve pas dans l&#x27;algorithme mais dans la donnée structurée.
+La donnée d&#x27;entrainement, on appele ça communément un &lt;strong&gt;data set&lt;&#x2F;strong&gt;.
+Le data set d&#x27;un très gros modèle d&#x27;IA, c&#x27;est quoi ?
+C&#x27;est stricto sinsu, toute la donnée textuelle produite par l&#x27;Humanité (qui a nécessité beaucoup d&#x27;intelligence, en effet) qu&#x27;on a pu récolté (piller ?), et qu&#x27;on a mis en forme (affinage, tri etc).
+Bien évidemment, dans toute cette matière, on a beaucoup de données à faible valeur. (la discussion de Paulette avec Bernard sur le temps qu&#x27;il fera demain sur le forum tartancoin par ex).
+On est donc obligé de faire des réglage fin soit en amont (fine tuning) de l&#x27;entrainement soit en aval (renforcement).
+C&#x27;est fait par qui ? Des humains qualifiés et surtout pas des LLM !
+Donc l&#x27;intelligence produite pour cet exercice est encore humaine.&lt;&#x2F;p&gt;
+&lt;p&gt;Qu&#x27;est-ce que l&#x27;entrainement va produire ?
+Un modèle composé de paramètres et d&#x27;un vocabulaire.&lt;&#x2F;p&gt;
+&lt;p&gt;Le vocabulaire, c&#x27;est l&#x27;ensemble des tokens.
+Un token, c&#x27;est un morceau de texte atomique : mot courant entier, fragment de mot, élément de ponctuation etc.
+Donc le vocabulaire c&#x27;est la liste exhaustive et sans doublons des tokens possibles.
+Si on supprimes volontairement le token &quot;con&quot; du vocabulaire du modèle, alors on n&#x27;auras plus aucun &quot;con&quot; dans le texte inféré.
+On n&#x27;aura plus non plus les mots &quot;construit&quot;, &quot;constitution&quot; etc. C&#x27;est con ?&lt;&#x2F;p&gt;
+&lt;p&gt;Puis, on a les paramètres. Les paramètres c&#x27;est une liste de corrélations entre des tokens avec un poids.
+Imaginons la phrase &quot;c&#x27;est con.&quot; composé de plusieurs tokens. C&#x27;est un association assez forte qu&#x27;on retrouvera souvent donc avec un poids élevés.
+La phrase &quot;Macron est loin d&#x27;être con.&quot; existera sans doute dans le data set mais sera beaucoup moins présent donc poid faible.&lt;&#x2F;p&gt;
+&lt;p&gt;Pour les puristes, je sais qu&#x27;il y a des vecteurs, leur dimension, des potentiels biais etc. mais est-ce que c&#x27;est vraiment utile, ici, de le mentionner ?&lt;&#x2F;p&gt;
+&lt;p&gt;Donc l&#x27;algo d&#x27;entrainement va donc parcourir une quantité incroyable de texte n fois et en déduire des paramètres.
+Plus il aura de paramètres et plus il sera gros.
+On peut donc facilement en déduire que plus on aura de paramètres à la sortie pour le même data set et plus on aura de finesse dans l&#x27;inférence.
+Le revers de la médaille : plus c&#x27;est gros et plus c&#x27;est gourmand à produire pendant la phase d&#x27;entrainement et pendant la phase d&#x27;inférence.
+Ce ratio ne sera pas linéaire mais plutôt quadratique.
+C&#x27;est bien pour ça qu&#x27;il y a des grandes batailles entre les petits modèles et les plus gros.
+2 modèles (toujours avec le même data set) dont leur taille ont un rapport de 2, auront un impact de consommation avec un rapport de 4... mais leur différence de résultats seront beaucoup plus diffus.
+On pourra pas vraiment dire : c&#x27;est 2 fois meilleur. Sur certaines questions, ça aura exactement le même résultat.
+Sur d&#x27;autres, le modèle le plus petit halucinera (réponse dénué de sens) alors que le modèle plus gros donnera une réponse acceptable.
+La seule chose qu&#x27;on peut garantir c&#x27;est que, en moyenne, ça sera meilleur. Mais donner un ratio sera quasiment impossible.&lt;&#x2F;p&gt;
+&lt;p&gt;Qu&#x27;est-ce qu&#x27;on peut en déduire ?&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Un modèle est tout aussi statique et prédictible qu&#x27;un logiciel composé d&#x27;une suite de if&#x2F;else.
+La différence : le champ des possibles est tellement étendues qu&#x27;il est impossible pour l&#x27;esprit humain de l&#x27;anticiper dans une échelle de temps raisonnable.&lt;&#x2F;li&gt;
+&lt;li&gt;On est incapable de faire de la rétro-ingénierie sur un modèle.
+On ne sera pas en capacité de connaitre le data set à partir du modèle (comme on le ferait potentiellement avec un binaire pour connaitre son code source).
+Trop de choses ont été perdus.&lt;&#x2F;li&gt;
+&lt;li&gt;On peut néanmoins retoucher le modèle en ajustant des paramètres. C&#x27;est ce qu&#x27;on appelle le renforcement.
+Ca marche très bien et ça évite de retoucher au data set et refaire une séance d&#x27;entrainement très couteux. (des mois)&lt;&#x2F;li&gt;
+&lt;li&gt;La seule intelligence dans un LLM est humaine. L&#x27;intelligence humaine se retrouve dans la construction du modèle et dans le prompt (la personne qui l&#x27;interroge).
+On en déduis donc que si la personne qui prompt est intelligente, elle saura formaliser sa pensée de tel manière à obtenir plus facilement des informations interessantes.
+De même, si elle a une compréhension de la réponse, elle saura en tirer mieux avantage.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;mais-si-c-est-aussi-simple-pourquoi-ca-fait-des-choses-aussi-impressionnantes&quot;&gt;Mais si c&#x27;est aussi simple, pourquoi ça fait des choses aussi impressionnantes ?&lt;&#x2F;h2&gt;
+&lt;p&gt;Repartons d&#x27;un postulat simple : on utilise des calculatrices depuis longtemps.
+Personne n&#x27;attribut de l&#x27;intelligence à une calculatrice. Pourtant, calculer une racine carré de tête par un humain nécessite de grandes capacités intellectuelles.
+A contrario, peu de personnes savent comment fonctionnent une calculatrice.
+Nous avons néanmoins admis collectivement que c&#x27;est un objet inerte qui est capable d&#x27;inférer des réponses à des problèmes mathématiques.
+Ce qui fait que la calculatrice apporte un gain c&#x27;est bien la raison pour laquel elle est employé et l&#x27;usage de son résultat, non ?&lt;&#x2F;p&gt;
+&lt;p&gt;Autre postulat : beaucoup de découvertes ne sont pas que le fruit de l&#x27;intelligence mais de sa corrélation avec un facteur chance.
+La tarte tatin n&#x27;aurait pas été inventé sans oubli. Newton n&#x27;aurait peut-être pas découvert certaines lois si il n&#x27;avait pas été percuté par une pomme etc.
+Il est communément admis que tout le savoir humain ne peut plus reposer dans un esprit.
+Donc 2 cerveaux brillants ont potentiellement trouvés chacun 2 pièces d&#x27;un puzzle (problème mathématique par exemple) plus grand mais pour pouvoir le réaliser, ils ont besoin de confronter leurs savoirs respectifs.&lt;&#x2F;p&gt;
+&lt;p&gt;Mais, je ne comprend pas : si je pose des questions à mon IA, elle va me faire une réponse personnalisé ? C&#x27;est qu&#x27;elle s&#x27;adapte et est donc intelligente, non ?
+Eh non, toujours.&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;D&#x27;une part, elle s&#x27;appuie sur une notion qu&#x27;on appelle le &quot;contexte window&quot;. En réalité, la réponse qu&#x27;elle va vous apportez dépendra de vos questions précédentes. (dans une limite physique propre à l&#x27;IA employé)
+En fait, à chaque question de votre contexte, elle ne va pas prendre votre dernière question mais l&#x27;ensemble du texte (question&#x2F;réponse) comme entrée pour pouvoir inférer la nouvelle réponse.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Elle va tricher. Pour certaines questions, elle va interroger le web en sous-marins. Les résultats qu&#x27;elle aura trouvé seront directement injecté dans son prompt interne (non visible par l&#x27;utilisateur).
+Et donc, elle va faire des rapprochements entre des données dans son modèle (qui a été entrainé à telle date) et d&#x27;autres récentes qu&#x27;elle a collecté et injecté dans son entrée.
+C&#x27;est donc encore un moyen de collecter de l&#x27;intelligence (des données sur des sites sérieux écrit par des neuronnes biologiques) hors de son périmètre en faisant croire que ça vient d&#x27;elle.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Elle va utiliser des agents.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;un-modele-ferme&quot;&gt;Un modèle fermé&lt;&#x2F;h2&gt;
+&lt;p&gt;Actuellement, les&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;&quot;&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;On peut donc&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;&#x2F;h2&gt;
+&lt;p&gt;PS : ce texte a été écrit entièrement à la main, sans LLM. Même pas pour la relecture.
+Les fôtes seront en quelque sorte une valeur de preuve (même si, il est factuellement impossible de prouver qu&#x27;un texte a été écrit par une IA, on peut raisonnablement en déduire que la probabilité est faible).&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="fr">
+        <title>Les différents types de paradoxes</title>
+        <published>2026-10-18T00:00:00+00:00</published>
+        <updated>2026-10-18T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://mothsart.github.io/reflexion/paradoxes/"/>
+        <id>https://mothsart.github.io/reflexion/paradoxes/</id>
+        
+        <content type="html" xml:base="https://mothsart.github.io/reflexion/paradoxes/">&lt;h1 id=&quot;les-differents-types-de-paradoxes&quot;&gt;Les différents types de paradoxes&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Paradoxe d&#x27;Olbers : le ciel devrait tout blanc. (Mais l&#x27;univers est jeune)&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Paradoxe de Moravec : l&#x27;observation selon laquelle le raisonnement de haut niveau demande peu de calculs aux ordinateurs, tandis que les compétences sensorimotrices de base exigent des ressources énormes.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Paradoxe de Jevons : l&#x27;effet rebomb.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Paradoxe d&#x27;Abilene : un groupe peut prendre une décession que personne ne voulait individuellement.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Paradoxe de Braess : l&#x27;ajout d&#x27;une nouvelle route dans un réseau routier peut réduire la performance globale, lorsque les entités se déplaçant choisissent leur route individuellement.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Paradoxe de Simpson : un phénomène observé dans plusieurs groupes s&#x27;inverse lorsque les groupes sont combinés.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Paradoxe de Peto (du Cancer)&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="fr">
+        <title>Politique et engagement</title>
+        <published>2026-10-18T00:00:00+00:00</published>
+        <updated>2026-10-18T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://mothsart.github.io/reflexion/politique-et-engagement/"/>
+        <id>https://mothsart.github.io/reflexion/politique-et-engagement/</id>
+        
+        <content type="html" xml:base="https://mothsart.github.io/reflexion/politique-et-engagement/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;&#x2F;h2&gt;
+&lt;p&gt;Comment ne pas en avoir marre de la politique actuelle ?
+Des débats sans fin fait de barratins, de promesses non tenus etc.&lt;&#x2F;p&gt;
+&lt;p&gt;Pas de remise en question, zéro humilité.
+Des oppositions d&#x27;idées (c&#x27;est toujours noir ou blanc) sans jamais de vrai échanges.&lt;&#x2F;p&gt;
+&lt;p&gt;Peu de personnes sont en capacité de suivre et d&#x27;identifier des marqueurs important dans les discussions.&lt;&#x2F;p&gt;
+&lt;p&gt;Au final, le futur votant reste dans un flou qui l&#x27;oblige à suivre ses biais cognitifs.&lt;&#x2F;p&gt;
+&lt;p&gt;PS : Tout le monde devrait savoir ce qu&#x27;est un biais cognitif.
+Un des soucis majeur de l&#x27;espèce humaine est de donner des corrélations entre les causes et les conséquences foireuses : bais rétrospectif, de résultat, de survie, de confirmation, d&#x27;illusion de corrélation etc.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;un-constat&quot;&gt;Un constat&lt;&#x2F;h2&gt;
+&lt;p&gt;Les paroles s&#x27;envolent, les écrits restent.&lt;&#x2F;p&gt;
+&lt;p&gt;On est dans un monde &quot;moderne&quot; donc basé sur l&#x27;écrit et non la parole.
+Les problèmes doivent être compris pour apporter des solutions adéquates.
+Pour ça, il faut des processus de compréhension et de planifications structurées.&lt;&#x2F;p&gt;
+&lt;p&gt;Pourtant, la politique actuelle semble encore suivre un fonctionnement archaïque :
+on parle beaucoup, on propose des mises en pratique de solutions flous.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;une-base-commune&quot;&gt;Une base commune&lt;&#x2F;h2&gt;
+&lt;p&gt;La politique, ça sert à quoi ?&lt;&#x2F;p&gt;
+&lt;p&gt;&quot;A identifier et planifier des solutions de société.&quot;&lt;&#x2F;p&gt;
+&lt;p&gt;Pour ça, il faut une démarche claire.&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;On &lt;strong&gt;constat&lt;&#x2F;strong&gt;e une problématique indiscutable. (chiffres ci besoin à l&#x27;appui)&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;Ex: le taux de chômage a augmenté. On est à 8%.&lt;&#x2F;p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;On donne un &lt;strong&gt;objectif&lt;&#x2F;strong&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;Ex : on baisse le taux de chômage. Idéalement jusqu&#x27;à 5%.&lt;&#x2F;p&gt;
+&lt;p&gt;Pour savoir si on parle bien d&#x27;un objectif, c&#x27;est simple. On part du constat et on se pose la question : Vers &lt;strong&gt;où&lt;&#x2F;strong&gt; on tend ?&lt;&#x2F;p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;On donne le &lt;strong&gt;diagnostique&lt;&#x2F;strong&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;Ex : L&#x27;enseignement n&#x27;est plus en phase avec le travail. L&#x27;IA remplace des métiers etc.&lt;&#x2F;p&gt;
+&lt;p&gt;Le diagnostique répond à la question : &lt;strong&gt;Pourquoi&lt;&#x2F;strong&gt;.
+&lt;strong&gt;Pourquoi&lt;&#x2F;strong&gt; on a ce constat ? &lt;strong&gt;Pourquoi&lt;&#x2F;strong&gt; la polique précédente a échouée ?&lt;&#x2F;p&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;On propose des &lt;strong&gt;solutions&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;Ex : plus de budget dans l&#x27;enseignement pour valoriser le salaire des enseignants.
+Des cours sur la compréhension et l&#x27;utilisation de l&#x27;IA dans les établissements.&lt;&#x2F;p&gt;
+&lt;p&gt;Les solutions répondent à la question : &lt;strong&gt;Comment&lt;&#x2F;strong&gt;.
+&lt;strong&gt;Comment&lt;&#x2F;strong&gt; on trouve une solution à une problématique constatée ?&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;une-proposition-de-democratie-moderne&quot;&gt;Une proposition de démocratie moderne&lt;&#x2F;h2&gt;
+&lt;p&gt;Maintenant qu&#x27;on a cette base, on part d&#x27;une idée simple : utilisons des outils modernes (numérique) pour une démocratie moderne.&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;On établi un périmètre de constats communs pour tous les partis représentés.
+Si un parti n&#x27;est pas d&#x27;accord avec le constat, elle peut dire pourquoi mais elle ne participera pas au reste des échanges sur le sujet.
+En revanche, les électeurs peuvent voter si oui ou non ils sont favorables avec ces constats.
+Si l&#x27;écrasante majorité (ex : 90%) est favorable, on ne peut plus remettre en doute ce constat et il va être considérer comme tel.&lt;&#x2F;li&gt;
+&lt;li&gt;On met en place un espace publique (site internet régit par une entité &quot;indépendante&quot;) pour que tous les partis puissent remplir leurs &lt;strong&gt;objectifs&lt;&#x2F;strong&gt;, leurs &lt;strong&gt;diagnostiques&lt;&#x2F;strong&gt; et leurs &lt;strong&gt;solutions&lt;&#x2F;strong&gt;.
+On pourrait d&#x27;ailleurs apposé aux solutions d&#x27;autres détails comme des propositions de bugdets.&lt;&#x2F;li&gt;
+&lt;li&gt;Une fois que tous les politiques se sont exprimés, on laisse les citoyens les consulter AVEC des outils modernes pour les comparer.&lt;&#x2F;li&gt;
+&lt;li&gt;On passe au vote, un parti (et son candidat) sort.&lt;&#x2F;li&gt;
+&lt;li&gt;Le site s&#x27;actualise avec les &lt;strong&gt;solutions&lt;&#x2F;strong&gt; (et leur budget) réellement mis en place.&lt;&#x2F;li&gt;
+&lt;li&gt;A la fin du mandat :
+&lt;ul&gt;
+&lt;li&gt;les citoyens peuvent voter pour chacun des axes et dire si oui ou non ils sont satisfaits du résultat.&lt;&#x2F;li&gt;
+&lt;li&gt;l&#x27;ancien parti sortant peut se justifier (diagnostique) sur les solutions qui n&#x27;ont pas marchés.&lt;&#x2F;li&gt;
+&lt;li&gt;Les autres partis peuvent donner aussi leur diagnostique sur le mandat écoulé. (attention, si ils avaient des solutions équivalentes et qu&#x27;ils critiques désormais, ça sous-entend qu&#x27;ils changent de point de vue.)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;On repart sur une future élection. Sauf que maintenant, les diagnostiques des partis sont directement en lien avec le mandat précédent.
+Donc pas de bullshit : il faut avoir un discours cohérent. Soit on avoue changer de direction soit on assume continuer dans une voie.
+On peut bien évidemment rajouter, à cette étape des nouveaux périmètres de constats communs.&lt;&#x2F;li&gt;
+&lt;li&gt;On repart à l&#x27;étape 3.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;conclusion-et-piste-d-amelioration&quot;&gt;Conclusion et piste d&#x27;amélioration&lt;&#x2F;h2&gt;
+&lt;p&gt;Ce schéma ne traite pas vraiment des constats non partagés.
+Néanmoins, on peut prévoir aussi de collecter les constats opposés et leur pourcentage d&#x27;adhésion.&lt;&#x2F;p&gt;
+&lt;p&gt;Ma proposition est déjà de donner un cadre, une nouvelle dynamique. Une fois en place, les pistes d&#x27;améliorations sont infinis.&lt;&#x2F;p&gt;
+&lt;p&gt;Toute cette réflexion vient de ma découverte du parti pirate.
+Je ne suis pas en accord avec tout ce qu&#x27;ils proposent et j&#x27;estime qu&#x27;ils ont des trous dans leur programme.&lt;&#x2F;p&gt;
+&lt;p&gt;Mais, néanmoins, ils ont une trame visible, cohérente : https:&#x2F;&#x2F;partipirate.org&#x2F;program
+Ils vivent avec leur temps, à l&#x27;inverse de tous les partis mainstream.
+Et non : les programmes écrit dans un gros pdf statique sur le site d&#x27;un parti, c&#x27;est loin d&#x27;être assez révolutionnaire !&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="fr">
+        <title>Que penser de l&#x27;IA</title>
+        <published>2026-09-22T00:00:00+00:00</published>
+        <updated>2026-09-22T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://mothsart.github.io/devblog/ia-contre-attaque/"/>
+        <id>https://mothsart.github.io/devblog/ia-contre-attaque/</id>
+        
+        <content type="html" xml:base="https://mothsart.github.io/devblog/ia-contre-attaque/">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;&#x2F;h1&gt;
+&lt;p&gt;Ca va bientôt faire 4 ans que ChatGPT a lancé officiellement son premier prototype.
+4 ans qui sont&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;qu-est-ce-qui-a-change&quot;&gt;Qu&#x27;est-ce qui a changé ?&lt;&#x2F;h2&gt;
+&lt;p&gt;On est passé progressivement d&#x27;un outil gratuit, ouvert à tous à :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Des outils avec des versions gratuites et bridés et des versions payantes.&lt;&#x2F;li&gt;
+&lt;li&gt;Du multi agents avec beaucoup de boucles de rétro-actions.&lt;&#x2F;li&gt;
+&lt;li&gt;Des modèles chinois quasiment aussi performant que les modèles américains mais 100x moins énergivores. (basé en grande partie sur de la distillation).&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Est-ce que ça a bouleversé le monde du travail ?
+ça reste mitigé sur les résultats.
+Les rendements sont diffus et difficile à mesurer.&lt;&#x2F;p&gt;
+&lt;p&gt;Les impacts visibles :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Le marché de l&#x27;embauche est morose, surtout pour les juniors.&lt;&#x2F;li&gt;
+&lt;li&gt;L&#x27;exigence est poussé d&#x27;un cran : qualité, sécurité etc.&lt;&#x2F;li&gt;
+&lt;li&gt;Internet et les contenus écrit par des humains est en train de disparaitre. L&#x27;indexation aussi.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;qu-est-ce-que-vraiment-l-ia-generative&quot;&gt;Qu&#x27;est-ce que vraiment l&#x27;IA générative ?&lt;&#x2F;h2&gt;
+&lt;p&gt;Pour ne pas m&#x27;étaller sur les différents type d&#x27;IA, je vais me baser sur ce qui a surtout explosé depuis peu : les LLM.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Premier constat :&lt;&#x2F;strong&gt; elle s&#x27;appui sur un pillage massif de tous les contenus textuels produit par l&#x27;Humanité jusqu&#x27;à présent.
+Ce premier constat nous dit quoi ?
+Il n&#x27;arrivera plus jamais dans l&#x27;Histoire de l&#x27;Humanité :&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Car les prochains pillages contiendront désormais une grande partie textes générés quasi impossible à différentier des contenus originaux.&lt;&#x2F;li&gt;
+&lt;li&gt;Car des textes auront disparus ou ne seront plus accessible par des bots d&#x27;IA.&lt;&#x2F;li&gt;
+&lt;li&gt;Car des contenus sont désormais volontairement altérés pour faire mentir les IA.&lt;&#x2F;li&gt;
+&lt;li&gt;Le coût de l&#x27;accès aux données étaient négligeable.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;Aussi, si il a fallu plusieurs millénaires pour écrire ce contenu, il est impossible de doubler ces écrits en un temps raisonnable.
+Or, on sait tous que pour améliorer significativement la qualité de l&#x27;IA, il faudrait augmenter les données d&#x27;entrainement de manière exponentielle. Ca n&#x27;arriveras pas.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Deuxième constat :&lt;&#x2F;strong&gt; il n&#x27;y a aucune intelligence derrière.
+Sans rentrer dans la technique à outrance : un LLM est un mécanisme pour prédire le prochain mot (token en réalité) et ça, n fois jusqu&#x27;à constituer un texte qui nous semble étonnement porter du sens.&lt;&#x2F;p&gt;
+&lt;p&gt;Avec les agents, il y a des boucles de rétro-actions pour &quot;évité&quot; certaines réponses. (Ex : si il y a un calcul, il y a vérification du résultat)
+Jusqu&#x27;à preuve du contraire, ce n&#x27;est que des statistiques.
+L&#x27;IA n&#x27;a aucune compréhension du monde.
+Elle n&#x27;évolue pas : c&#x27;est l&#x27;humain qui l&#x27;a fait &quot;s&#x27;améliorer&quot; : soit via les données d&#x27;entrainement, soit via les données de renforcement, soit via le prompt lui même.&lt;&#x2F;p&gt;
+&lt;p&gt;Qu&#x27;elle donne une réponse parfaitement sensé à une question ne constitue pas une preuve tangible de son intelligence !
+Ce que ça prouve en revanche : la question posé n&#x27;a, à l&#x27;échelle de l&#x27;Humanité aucune singularité. Beaucoup de personnes se sont déjà posé la question, on réfléchit à la réponse et l&#x27;on même mis à l&#x27;écrit. VOus avez donc, par le biais de l&#x27;IA, la réponse la plus consensuelle que l&#x27;Humanité a pu écrire sur cette question.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Troisième constat :&lt;&#x2F;strong&gt; toute la qualité de l&#x27;IA repose sur la qualité des données.
+Si les données d&#x27;entrainement ou la structure de ces données est mauvaise, alors les poids générés seront mauvais.
+La donnée de qualité est donc à l&#x27;origine de tout.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Quatrième constat :&lt;&#x2F;strong&gt; les premiers piages de données ne valaient rien.
+Je me permet une analogie avec l&#x27;industrie du pétrole : l&#x27;énergie est peu cher si le baril du pétrol l&#x27;est.
+Le jour ou le pétrole sera hors de prix, l&#x27;énergie de transformation sera hors de prix.
+Cqfd : si la ressource première, &lt;strong&gt;la donnée qualifié&lt;&#x2F;strong&gt; s&#x27;envole, les prix de l&#x27;IA s&#x27;envoleront, inévitablement.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Cinquième constat :&lt;&#x2F;strong&gt; seul certaines boites d&#x27;IA ont réellement pu participer aux premiers pillages.
+Si ils perdent, pour une raison x ces données initiales, ils ne les retrouveront plus jamais.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Sixième constat :&lt;&#x2F;strong&gt; les dernières évolutions de l&#x27;IA sur ces dernières années se sont basés principalement sur des ajustements autour de données déjà collectés.
+Avec les mois d&#x27;utilisation gratuite, on a pu identifier les cas ou l&#x27;IA hallucinait.
+Les correctifs ont donc portés sur plusieurs procédés d&#x27;améliorations : fine tuning, reinforcement learning, le principe de température, la MoE.
+Il est difficile de dire si ou quand ces méthodes arriveront à leur plafond mais ils y arriveront.
+Je le rappel, la donnée brut, initiale, elle n&#x27;a et ne changera quasiment plus. (ou si elle change, elle risque de perdre en qualité)
+D&#x27;une certaine manière, on trouve des moyens palliatifs pour gagner du temps.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;est-ce-qu-on-aura-des-ia-de-plus-en-plus-performantes&quot;&gt;Est-ce qu&#x27;on aura des IA de plus en plus performantes ?&lt;&#x2F;h2&gt;
+&lt;p&gt;Déjà, il faut définir &lt;strong&gt;performance&lt;&#x2F;strong&gt;.
+Est-ce la
+Si on reste toujours dans le cadre de l&#x27;IA générative type LLM, on peut se poser la question.
+Comme dis précédement, la quantité et la qualité des données d&#x27;entrainement n&#x27;évolueront plus de façon significative.&lt;&#x2F;p&gt;
+&lt;p&gt;Notre problème est multiple : on voit beaucoup sous le prisme de nos biais cognitifs.
+L&#x27;IA est là depuis 4 ans : elle fait parti de nos acquis et donc, elle ne pourra pas disparaitre.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;vrai-distruption-ou-epiphenomene&quot;&gt;Vrai distruption ou épiphénomène&lt;&#x2F;h2&gt;
+&lt;p&gt;On va partir d&#x27;un exemple avec une liste de prérequis discutables mais qu&#x27;on va volontairement définir comme vérité.&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Notre exemple ne parlera que de la tâche de création de code et partira du postula simple qu&#x27;elle va remplacer une personne dont son travail ne consiste QUE a produire du code. (sans besoins de connaissance métier, sans tâches annexes etc.)&lt;&#x2F;li&gt;
+&lt;li&gt;L&#x27;IA est en capacité de produire un code qui n&#x27;a pas besoin de revue, qui est parfaitement pilotable par quelqu&#x27;un qui ne comprendra pas une seule ligne produite.
+Néanmoins, elle sera, comme pour un humain, faillible. Chaque évolution entrainera des bugs.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;Imaginons donc qu&#x27;un développeur coute actuellement 5K € net par mois, charge comprise à l&#x27;employeur.
+Le côut de l&#x27;IA par mois en illimité (pas de nb de tokens dans l&#x27;équation) est de 500€.&lt;&#x2F;p&gt;
+&lt;p&gt;L&#x27;employeur va donc remplacer 10 développeurs par un prompteur (qu&#x27;il payera 10K).
+En toute logique, il passera donc de 50K à 10.5K par mois.
+Bénéfice net x 5.&lt;&#x2F;p&gt;
+&lt;p&gt;Sur le papier, ça semble simple.
+Maintenant, comment évaluer cette productivité ?
+Le nombre de ligne de code produite ?
+N&#x27;importe quel développeur sénior vous dira que cet indicateur est falacieux : certaines lignes de code sont très couteuse, d&#x27;autres non. La factorisation et la suppression de code sont bien souvent plus souhaitable que l&#x27;ajout.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;est-ce-qu-on-marche-sur-la-tete&quot;&gt;Est-ce qu&#x27;on marche sur la tête ?&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;le-marketing&quot;&gt;Le marketing&lt;&#x2F;h2&gt;
+&lt;p&gt;Il ne se passe pas un jour sans une annonce sur l&#x27;IA totalement démentielle :
+Elle a&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;mon-point-de-vue-sur&quot;&gt;Mon point de vue sur&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;les-derives-societales&quot;&gt;Les dérives sociétales&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;L&#x27;inutilité de l&#x27;apprentissage ?&lt;&#x2F;li&gt;
+&lt;li&gt;Seul le résultat compte ?&lt;&#x2F;li&gt;
+&lt;li&gt;Le retour du sacré, de la magie&lt;&#x2F;li&gt;
+&lt;li&gt;L&#x27;économie de la solitude : les compagnons IA seront potentiellement la réponse.&lt;&#x2F;li&gt;
+&lt;li&gt;Vu que l&#x27;IA a pour principe de réunir les réponses les plus consensuelles, elle va délibérément invilibiliser les idées à la marge.
+Or, l&#x27;Histoire de l&#x27;Humanité nous a bien montré que la pensée la plus partagé n&#x27;est pas forcément la bonne... sinon Galilé, Copernic ou même Einstein aurait tort.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;le-mythe-de-promethee&quot;&gt;Le mythe de Prométhée&lt;&#x2F;h2&gt;
+&lt;p&gt;On en est là.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;les-jobs-que-l-ia-cree-ou-va-creer&quot;&gt;Les jobs que l&#x27;IA crée ou va créer&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Les devs qui rattrapent des projets vibecodé.&lt;&#x2F;li&gt;
+&lt;li&gt;De l&#x27;expertise pour vérifier une information. L&#x27;explosition des fake news, des publications à moitié vrai etc. créé par IA explose.&lt;&#x2F;li&gt;
+&lt;li&gt;Le dev d&#x27;outils pour empêcher le pillage des bots d&#x27;IA.&lt;&#x2F;li&gt;
+&lt;li&gt;des outils de détection d&#x27;IA :&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;ul&gt;
+&lt;li&gt;moteur de recherche Kagi&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="fr">
         <title>La croisière</title>
         <published>2025-10-16T00:00:00+00:00</published>
@@ -124,8 +653,8 @@ Adrien s&#x27;habille en 4ème vitesse et ouvre les cheveux hirsutes, pensant qu
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Rebonjour Adrien, pouvez-vous me faire entrer ?
-Adrien se pose mille questions stupides avant de lui répondre tel que : est-ce que j&#x27;ai pas laissé un sous-vêtement traîné ? est-ce que sa sent bon dans ma chambrr ?
-Avant même qu&#x27;il ai articulié une réponse que Isaline est entrée.&lt;&#x2F;p&gt;
+Adrien se pose mille questions stupides avant de lui répondre tel que : est-ce que j&#x27;ai pas laissé un sous-vêtement traîné ? est-ce que sa sent bon dans ma chambre ?
+Avant même d&#x27;avoir pu finir d&#x27;articulier une réponse, Isaline est déjà à l&#x27;intérieur.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
 &lt;p&gt;Je suis désolé de vous surprendre ainsi mais j&#x27;ai des soucis qui nécessitent la plus grande discrétion.
@@ -157,10 +686,10 @@ Je ne fais donc confiance à personne. Je ne sais pas vers qui me tourner.
 Puis j&#x27;ai badiné avec vous et je me suis dis que vous pourriez peut-être m&#x27;aider. Mais est-ce que vous le désirez ?&lt;&#x2F;p&gt;
 &lt;p&gt;Adrien répond à l&#x27;instinct : - Bien sur, vous pouvez me faire confiance.
 En réalité, il n&#x27;en sait rien : tout va trop vite pour qu&#x27;il puisse y réfléchir à tête reposé. La seule assurance qu&#x27;il a : il veut passer le plus de temps avec cette exquise créature. Il serait prêt à tout pour passer quelques minutes avec.
-Cette seule perspective lui donne une énergie phénoménale. C&#x27;est comme si il avait découvert une ressource infini d&#x27;énergie caché derrière une porte et que Isaline lui avait tout simple donné la clé.&lt;&#x2F;p&gt;
+Cette seule perspective lui donne une énergie phénoménale. C&#x27;est comme si il avait découvert une ressource infini d&#x27;énergie caché derrière une porte et qu&#x27;Isaline lui avait tout simple donné la clé.&lt;&#x2F;p&gt;
 &lt;p&gt;Adrien : - Si vous faites appel à moi, c&#x27;est que vous avez déjà quelque chose en tête, non ?
 Isaline : - En effet, vous m&#x27;avez percé à jour, hihi.
-Pour être tout a fait honnête, ce matin, je vous ai choisi.
+Pour être tout à fait honnête, ce matin, je vous ai choisi.
 Vous étiez seul, vous paraissiez bien sous tout rapport et j&#x27;ai donc engagé la conversation.
 Avant ça, je me suis assuré que Patrick ne sache pas que j&#x27;ai conversé avec vous. Il était occupé très tôt comme jury à des auditions.
 Aucune personne de son entourage ne mange dans votre cafétéria et tout le monde s&#x27;attend à ce que j&#x27;arrive tard pour le petit dej.
@@ -172,14 +701,14 @@ Un autre, similaire avait été mis à sa place. Cependant, je saurais identifie
 Isaline : - je ne vais pas arrivez à te vouvoyer plus longtemps. On se dit tu ?
 Adrien : - Oui, comme vous... comme tu voudras, haha !
 Isaline : - Hihi, je ne pensais pas vous intimider à ce point Mr Adrien.
-Dans l&#x27;idéal, j&#x27;aimerais uniquement récupérer mes compositions. J&#x27;ai tout un dossier avec mes chansons interprété au piano.
+Dans l&#x27;idéal, j&#x27;aimerais uniquement récupérer mes compositions. J&#x27;ai tout un dossier avec mes chansons interprétées au piano.
 L&#x27;idée c&#x27;est de tout poster sur YouTube au plus vite. Si c&#x27;est en ligne, il n&#x27;y aura plus aucun intérêt financier pour lui.&lt;&#x2F;p&gt;
 &lt;p&gt;Adrien : - Ok, je vois. J&#x27;ai quand même quelques zones d&#x27;ombres.
 Qu&#x27;est-ce qui te garanti que ton agent veuille te la faire à l&#x27;envers ?
 Que c&#x27;est bien lui le voleur de ton ordinateur ?
 Enfin, comment vais-je pouvoir m&#x27;introduire dans sa cabine ?&lt;&#x2F;p&gt;
 &lt;p&gt;Isaline : tout ce que je sais c&#x27;est que je l&#x27;ai surpris hier après-midi en visio avec son supérieur. Il lui promettait de lui envoyer dans la semaine des maquettes incroyables. Il a évoqué une chanson sur le printemps et là, mon sang n&#x27;a fait qu&#x27;un tour. C&#x27;est un de mes titres phares que je réserve à mes fans.
-Pour ce qui est du vol, je ne vois pas qui d&#x27;autre aurais pu être intéressé et au courant.&lt;&#x2F;p&gt;
+Pour ce qui est du vol, je ne vois pas qui d&#x27;autre aurait pu être intéressé et au courant.&lt;&#x2F;p&gt;
 &lt;p&gt;Adrien : - Ok, ça se tiens. Mais je ne suis pas un pickpocket moi ?
 En plus, si je récupères ton ordinateur, ton agent le sauras et il risque d&#x27;une manière ou d&#x27;une autre de te le faire payer.
 Le mieux à mon sens est de récupérer tes vidéos et les supprimer de l&#x27;ordinateur. Si ton agent ne trouve pas la matière qu&#x27;il voulait te soutirer, il perdra l&#x27;intérêt de la garder ton ordi en otage, il te le rendra discrètement ou le détruira.&lt;&#x2F;p&gt;
@@ -190,8 +719,8 @@ Je n&#x27;y vais pour ainsi dire jamais et donc ma présence risque de ne pas pa
 Deuxièmement, Patrick a une grosse journée d&#x27;audition encore demain et a ses petites habitudes. Il se lève tôt et passe en général une bonne heure dans une petite chambre à côté du studio pour faire sa sieste entre 13h et 14h.
 Il laisse son badge négligemment sur la table le temps de cet interlude.
 C&#x27;est là ou il va falloir être rapide. Je vais échanger mon badge avec le sien et te le ramener à un point de rendez-vous.
-Tu te seras habillé en garçon de chambre avant. Je sais comment m&#x27;en procurer un au pressing.
-Tu vas jusqu&#x27;à sa cabine avec cette tenue, tout le monde n&#x27;y verra que du feu.
+Tu te seras habillé en garçon de chambre avant. Je sais comment me procurer une tenue au pressing.
+Tu vas jusqu&#x27;à sa cabine accoutré ainsi, tout le monde n&#x27;y verra que du feu.
 Une fois dans sa cabine, tu as environ 20min montre en main pour trouver l&#x27;ordinateur, récupérer le dis dossier et le supprimer.
 Si il se réveille avant que tu sois revenu, pas de panique : il y aura toujours mon badge sur le meuble qui pourra faire office de leurre le temps que je trouve le moment opportun pour refaire l&#x27;échange.&lt;&#x2F;p&gt;
 &lt;p&gt;Bon, maintenant que tu sais tout ça... je ne veux rien t&#x27;imposer Adrien.
@@ -199,7 +728,7 @@ Tu ne me connais pas vraiment et moi non plus. Je comprendrais tout à fait que 
 Je ne t&#x27;en voudrais pas mais j&#x27;espère au moins que tu garderas tout ça pour toi.&lt;&#x2F;p&gt;
 &lt;p&gt;Adrien souffle inconsciemment puis répond d&#x27;un ton affirmé : Il est vrai que je ne suis qu&#x27;un simple touriste. Rien ne m&#x27;y oblige.
 Maintenant, ça rajoute une dose de piquant à mon expédition et puis... j&#x27;ai toujours été révolté par l&#x27;injustice. Si je peux avoir mon rôle pour rééquilibrer l&#x27;univers, je suis partant.&lt;&#x2F;p&gt;
-&lt;p&gt;Isaline : c&#x27;est très gentille ce que vous faites, merci.&lt;&#x2F;p&gt;
+&lt;p&gt;Isaline : c&#x27;est très gentille ce que tu fais, merci.&lt;&#x2F;p&gt;
 &lt;p&gt;Vous désirez connaitre la suite ? Elle sera disponible bientôt.&lt;&#x2F;p&gt;
 </content>
         
